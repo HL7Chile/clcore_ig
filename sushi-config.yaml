@@ -1,0 +1,76 @@
+# ╭─────────────────────────Commonly Used ImplementationGuide Properties───────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. The most commonly   │
+# │  used properties are included. For a list of all supported properties and their functions,     │
+# │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.fhir.cl.clcore
+canonical: https://hl7chile.cl/fhir/ig/clcore
+name: clcore
+title: Guía de Implementación "cl core" FHIR R4, (Versión Evolutiva)
+status: active # draft | active | retired | unknown
+version: 1.8.0
+fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+copyrightYear: 2023+
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+publisher:
+  name: HL7 Chile
+  url: http://hl7chile.cl
+  email: chair@hl7chile.cl
+
+description: "Guía de Implementación Versión de Desarrollo Sobre STU 1, para los perfiles Core que se van a requerir a nivel de desarrollo Nacional para Sistemas que Intercambien datos en estandar FHIR-R4"
+jurisdiction: urn:iso:std:iso:3166#CL "Chile"
+copyright: "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."
+license: CC0-1.0
+
+
+dependencies:
+  hl7.fhir.uv.ips: 1.0.0
+
+pages:
+  index.md:
+    title: Inicio
+  Aspectos-Generales.md:
+    title: Generalidades
+  Alcances-Objetivos.md:
+    title: Objetivos
+  Consolidado-Operaciones.md:
+    title: Operaciones Básicas
+  Extensiones.md:
+  Set-De-Validacion-ValueSets.md:
+    title: CodeSystems/ValueSets
+  Perfiles.md:
+  Set-Ejemplos.md:
+    title: Ejemplos
+  Todas-Descargas.md:
+    title: Descargas
+  Changes.md:
+    title: Historial de Cambios
+
+parameters:
+  apply-publisher: true
+  no-broken-links: true
+  apply-contact: true
+  show-inherited-invariants: false
+  excludettl: true
+  generate: genExamples
+
+
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+menu:
+  Inicio: index.html
+  Objetivos: Alcances-Objetivos.html
+  Generalidades: Aspectos-Generales.html
+  Operaciones: Consolidado-Operaciones.html
+  Artefactos:
+    Perfiles: Perfiles.html
+    Extensiones: Extensiones.html
+    Valuesets: Set-De-Validacion-ValueSets.html
+  Ejemplos: Set-Ejemplos.html
+  Descargas: Todas-Descargas.html
+  Historial de cambios: Changes.html
