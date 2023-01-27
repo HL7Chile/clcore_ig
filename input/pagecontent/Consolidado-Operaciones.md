@@ -653,7 +653,7 @@ Lo anterior es aplicable para un recurso ya creado el cual se alamacena con una 
 
 #### Agregado de Recursos (Creando Recursos para ser almacenados)
 
-POST [base]/Patient En el Body, un recurso paciente compatible con el/los perfiles definidos core definido en el Core-CL (para este caso sería el perfil Paciente-Cl)
+POST [base]/Patient En el Body, un recurso paciente compatible con el/los perfiles definidos core definido en el clcore (para este caso sería el perfil Paciente-Cl)
 
 ### Terminologia
 
