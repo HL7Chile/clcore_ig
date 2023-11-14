@@ -6,3 +6,5 @@ Thumbs.db
 /template
 *jar
 *.jar
+/output
+/output*
