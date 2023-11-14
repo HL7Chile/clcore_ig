@@ -1,0 +1,37 @@
+Prestador
+  fecha nacimiento obligatoriedad | 1..1 -> 0..1
+  obligatoriedad del sexo | 1..1 -> 0..1
+  obligatoriedad del run | 
+  Cambiar cargfinalidad otrosID to *
+
+
+Link
+  poner links a otras Guias
+
+dejar identificador tal como esta en el paciente, igual para el Prestador
+
+
+
+3 extensiones 0..1
+sexo registral consultar si son iguales al biologico
+1	Hombre
+2	Mujer
+3	Intersexual
+99	Desconocido
+
+sexo biologico
+1	Hombre
+2	Mujer
+3	Intersexual
+99	Desconocido
+
+Identidad de Género
+1	Masculino
+2	Femenina
+4	Transgénero Masculino
+5	Transgénero Femenina
+6	No binarie
+7	Otra 
+8	No Revelado
+
+** cambiar en todos los individuos, ya que no se udara mas el gender

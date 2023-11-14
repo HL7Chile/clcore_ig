@@ -1,0 +1,12 @@
+
+  -go-publish -source /Users/jorgemansilla/IGs/GG/clcore_publish/clcore/ -web /Users/jorgemansilla/IGs/GG/clcore_publish/ig/ -registry /Users/jorgemansilla/IGs/GG/clcore_publish/ig-registry-master/fhir-ig-list.json -history /Users/jorgemansilla/IGs/GG/clcore_publish/fhir-ig-history-template-master/ -temp /Users/jorgemansilla/IGs/GG/clcore_publish/temp -templates /Users/jorgemansilla/IGs/GG/clcore_publish/ig/templates
+
+/Users/jorgemansilla/IGs/GG/clcore_publish 
+
+
+
+Exception publishing: package entry in package-registry.json is missing path entry: { "package-id" : "hl7.fhir.cl.clcore", "title" : "Chile Core", "canonical" : "https://hl7chile.cl/fhir/ig/clcore", "category" : "National Base", "ci-build" : "http://build.fhir.org/ig/HL7Chile/clcore", "version-count" : 2, "latest" : { "version" : "1.8.1", "date" : "2023-06-27", "path" : "https://hl7chile.cl/fhir/ig/clcore/1.8.1" } }
+java.lang.IllegalArgumentException: package entry in package-registry.json is missing path entry: { "package-id" : "hl7.fhir.cl.clcore", "title" : "Chile Core", "canonical" : "https://hl7chile.cl/fhir/ig/clcore", "category" : "National Base", "ci-build" : "http://build.fhir.org/ig/HL7Chile/clcore", "version-count" : 2, "latest" : { "version" : "1.8.1", "date" : "2023-06-27", "path" : "https://hl7chile.cl/fhir/ig/clcore/1.8.1" } }
+        at org.hl7.fhir.igtools.web.PackageRegistryBuilder.update(PackageRegistryBuilder.java:39)
+        at org.hl7.fhir.igtools.web.PackageRegistryBuilder.update(PackageRegistryBuilder.java:31)
+        at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:551)
