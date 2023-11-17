@@ -55,10 +55,8 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * telecom.value ^short = "Dato del contato de la ubicación descrita"
 * telecom.value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email del Paciente"
 
-* address MS
-* address only Address or ClAddress
 
-/*
+
 * address and address.use and address.line and address.city and address.district and address.state and address.country MS
 * address ^short = "Dirección de la Localiación"
 * address ^definition = "Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región"
@@ -79,7 +77,8 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * address.country ^short = "Campo para País de Residencia"
 * address.country ^definition = "Campo para País de Residencia"
 * address.country from CodPaises (required)
-*/
+
+
 * position 0..1
 * position and position.longitude and position.latitude MS
 * position.longitude 1..1
