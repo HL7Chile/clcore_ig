@@ -2,9 +2,11 @@ Profile:        MedicamentoCL
 Parent:         Medication
 Id:             CoreMedicamentoCl
 Title:          "CL Medicamento"
-Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica desde la visión del TFC que se usará para poder manejar farmacos ya registrados, y que deberán ser consultados por los prestadores a la hora de prescribir algno."
+Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de definición de un medicamento."
 
-
+* ^version = "1.9.0"
+* ^status = #active
+* ^publisher = "HL7 Chile"
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"

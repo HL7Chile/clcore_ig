@@ -4,6 +4,10 @@ Id: ImmunizationCL
 Title: "CL Inmunización"
 Description: "Definición de un evento de inmunización para las necesidades de interoperabilidad en Chile."
 
+* ^version = "1.9.0"
+* ^status = #active
+* ^publisher = "HL7 Chile"
+
 * extension contains NombreCampanaCL named campana 0..1
 
 
@@ -13,16 +17,16 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 
 * patient MS
 * patient only Reference (PacienteCl)
-* patient ^short = "Quién fue inmunizado"
+* patient ^short = "Paciente inmunizado"
 * patient ^definition = "El paciente que recibió o no recibió la inmunización"
 
 * performer MS
-* performer ^short = "Quién realizó el evento"
+* performer ^short = "Quién realizó la inmunización"
 * performer ^definition = "Indica quién realizó el evento de inmunización"
 * performer.actor MS
 * performer.actor only Reference (PrestadorCL or OrganizacionCL)
-* performer.actor ^short = "Practicante u organización que realizó la acción"
-* performer.actor ^definition = "Practicante u organización que realizó la acción"
+* performer.actor ^short = "Prestador personal u organizacional que realizó la acción"
+* performer.actor ^definition = "Prestador personal u organizacional que realizó la acción"
 
 * programEligibility MS
 * programEligibility ^short = "Indica la elegibilidad de un paciente para un programa de financiamiento"
@@ -48,8 +52,7 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * protocolApplied MS
 * protocolApplied ^short = "Protocolo seguido por el proveedor"
 * protocolApplied ^definition = "El protocolo (conjunto de recomendaciones) que sigue el proveedor que administró la dosis"
-* protocolApplied.doseNumberString MS
-* protocolApplied.doseNumberString ^short = "Número de dosis dentro de la serie"
+
 
 * occurrenceDateTime MS
 * occurrenceDateTime ^short = "Fecha de administración de la vacuna" 
@@ -62,6 +65,7 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * status MS
 * status ^short = "completed | entered-in-error | not-done"
 * status ^definition = "Indica el estado actual del evento de inmunización"
+* status from http://hl7.org/fhir/ValueSet/immunization-status (required)
 
 * statusReason  MS
 * statusReason ^short = "Razón de no realizarse la inmunización"

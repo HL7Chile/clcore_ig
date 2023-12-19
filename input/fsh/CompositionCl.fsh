@@ -4,9 +4,11 @@ Profile: DocumentoCl
 Parent: Composition
 Id: DocumentoCl
 Title: "CL Documento"
-Description: "Definición de un documento para Resumen de Historia o Registro de Encuentro para Historia Clínica, basado en IPS."
+Description: "De un formato genérico para documento clínico en Chile."
 
-
+* ^version = "1.9.0"
+* ^status = #active
+* ^publisher = "HL7 Chile"
 //* text MS
 //* identifier MS
 
@@ -16,36 +18,28 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
 * status MS
 * status ^short = "Estado, valores posibles: preliminary | final | amended | entered-in-error"
 * status ^definition = "Estado del documento"
-* status = #final
+* status from http://hl7.org/fhir/ValueSet/composition-status (required)
+* status ^binding.description = "Códigos requeridos por estándar"
 
 //--- loinc que representa el tipo de documento ----
-* type from VSTiposDocClinic
+* type from VSTiposDocClinic (preferred)
 * type MS
 * type ^short = "Tipo de Documento según especificación de LOINC (Ej para Summarie IPS Loinc = #60591-5"
 * type ^definition = "Especifica el tipo de documento al que refiere este Recurso. Si se desea ajustar a IPS debe ser un resumen con código LOINC 60591-5"
 
 
 //* ---- Paciente ----- 
-* subject only Reference(Patient)
+* subject only Reference(PacienteCl)
 * subject MS
 * subject ^definition = "Paciente sobre el cual se ha generado este documento. Este debe ser basado en el perfil de paciente Chileno."
 * subject ^short = "Paciente sobre el cual se ha generado este documento. Este debe ser basado en el perfil del paciente Chileno."
-* subject.reference MS
-* subject.reference ^short = "Corresponde al paciente"
+
 
 * encounter 0..1 
-* encounter only Reference(Encounter)
+* encounter only Reference(EncounterCL)
 * encounter MS
-* encounter ^definition = "Contexto en el cual se desarrolló el documento."
-* encounter ^short = "Contexto del Documento."
-* encounter.reference MS
-* encounter.reference ^short = "Corresponde al paciente"
-* encounter.display MS
-* encounter.display ^short = "texto que describe el contexto del documento"
-* encounter.display ^definition = "Texto descriptivo que reemplaza el no contar con un recurso a refereciar o con id de encuetro"
-* encounter.identifier MS
-* encounter.identifier ^short = "Identificador, en formato identifier para el encuentro"
-* encounter.identifier ^definition = "Identificador, en su formato correspondiente, que reemplaza el uso de un recurso referenciado en caso de no contar con este"
+* encounter ^definition = "Contexto en el cual se generó  el documento."
+* encounter ^short = "Contexto asistencial en el cual se generó Documento."
 
 
 //* --- Fecha -----
@@ -55,10 +49,10 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
 //* encounter
 
 //* --- Author : referencia a un practitioner----
-* author only Reference(Practitioner) 
+* author only Reference (PrestadorCL|CoreRolClinicoCl|Device|PacienteCl|PrestadorCL|OrganizacionCL)
 * author MS
 * author ^short = "Quien Ha creado el documento"
-* author ^definition = "Identifica al responsable de los datos ingresados al documento, en este caso será el responsable del Resumen."
+* author ^definition = "Identifica al responsable de los datos ingresados al documento."
 
 
 //* --- Titulo de documento -----
@@ -68,11 +62,12 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
 
 // Validador
 * attester 0..* MS
-* attester ^short = "Validadores del documento"
-* attester ^definition = "Validadores del documento"
+* attester ^short = "Profesionales validadores del documento"
+* attester ^definition = "Profesionales validadores del documento"
   * mode MS
   * mode ^short = "Labor del Validador personal|profesional|legal|official"
-  * mode from http://hl7.org/fhir/ValueSet/composition-attestation-mode 
+  * mode from http://hl7.org/fhir/ValueSet/composition-attestation-mode (required)
+  * mode ^binding.description = "Códigos requeridos por FHIR"
   * time MS
   * time ^short = "Fecha y Hora de la validación"
   * time ^definition = "Fecha y Hora de la validación"
@@ -80,21 +75,33 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
   * party ^short = "Quien validó"
   * party ^definition = "Quien validó"
 
+* custodian MS
+  * ^short = "Organización que mantiene los documentos"
+  * ^definition = "Referencia a la organización según perfil nacional"
+
+
 * section 1.. MS
 
-//----- division de secciones -------
-* section ^slicing.discriminator[0].type = #pattern
-* section ^slicing.discriminator[=].path = "code"
-* section ^slicing.ordered = false
-* section ^slicing.rules = #open
+  * ^short = "Sección del documento"
+  * ^definition = "Sección de notificación definida para el documento."
 
-* section ^short = "Sección del documento"
-* section ^definition = "Sección de notificación de datos clínicos."
+  * text MS
+    * ^short = "Texto que describe el título o propósito de la sección."
+    * ^definition = "Texto que describe el título o propósito de la sección."
 
-* section.code 1.. MS
-* section.code from http://hl7.org/fhir/ValueSet/doc-section-codes (example)
+  * code 0.. MS
+  * code from http://hl7.org/fhir/ValueSet/doc-section-codes (example)
+    * ^short = "Código que define el tipo de sección"
+    * ^definition = "Código que define el tipo de sección"
+  
+  * text MS
+    * ^short = "Texto que describe el contenido de la sección"
+    * ^definition = "Texto que describe el contenido de la sección"
 
-
+  * entry MS
+    * ^short = "Recurso referenciado en esta sección"
+    * ^definition = "Puede ser cualquier recurso en función de la sección que se está notificando"
+/*
 //--------- Secciones 
 * section contains
     sectionDiagnosticos 0.. MS and
@@ -198,4 +205,4 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
 
 
 
-
+*/

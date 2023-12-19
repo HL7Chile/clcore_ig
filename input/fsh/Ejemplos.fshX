@@ -449,7 +449,7 @@ Usage: #example
 * agent[0].type = http://terminology.hl7.org/CodeSystem/extra-security-role-type#humanuser "human user"
 * agent[=].who.identifier.value = "95"
 * agent[=].altId = "601847123"
-* agent[=].name = "Grahame Grieve"
+* agent[=].name = "El Nombre"
 * agent[=].requestor = true
 
 * agent[=].network.address = "Workstation1.ehr.familyclinic.com"
@@ -461,7 +461,7 @@ Usage: #example
 
 * entity.what.reference = "Organization/ORG1"
 
-
+/*
 Instance: BundleEx
 InstanceOf: BundleCl
 Title : "Ejemplo Simple de Bundle de Transacción"
@@ -1027,7 +1027,7 @@ Usage : #example
 Instance : DiagnosticoEj
 Title : "Ejemplo de Un Diagnóstico de hipertensión"
 Description: "Diagnóstico Confirmado de Hipertesión"
-InstanceOf : CoreDiagnosticoCl
+InstanceOf : DiagnosticoCl
 Usage : #example
 
 * clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"

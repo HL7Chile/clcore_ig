@@ -173,6 +173,7 @@ Extension: TiposVacunaCL
 Id: TiposVacunaRNI
 Title: "Código de tipos de Vacunas en Chile"
 Description: "Esta extensión incluye códigos de los tipos de vacunas que existe en el Registro Nacional de Inmunizaciones RNI"
+
 * valueCode ^short = "Valor de la extensión"
 * valueCode from VSTiposVacunas (extensible)
 
