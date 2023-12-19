@@ -26,12 +26,11 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
 
 
 //* ---- Paciente ----- 
-* subject 1..1 
 * subject only Reference(Patient)
 * subject MS
 * subject ^definition = "Paciente sobre el cual se ha generado este documento. Este debe ser basado en el perfil de paciente Chileno."
 * subject ^short = "Paciente sobre el cual se ha generado este documento. Este debe ser basado en el perfil del paciente Chileno."
-* subject.reference 1..1 MS
+* subject.reference MS
 * subject.reference ^short = "Corresponde al paciente"
 
 * encounter 0..1 
@@ -39,7 +38,7 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
 * encounter MS
 * encounter ^definition = "Contexto en el cual se desarrolló el documento."
 * encounter ^short = "Contexto del Documento."
-* encounter.reference 1..1 MS
+* encounter.reference MS
 * encounter.reference ^short = "Corresponde al paciente"
 * encounter.display MS
 * encounter.display ^short = "texto que describe el contexto del documento"
@@ -56,7 +55,6 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
 //* encounter
 
 //* --- Author : referencia a un practitioner----
-* author 1..1 
 * author only Reference(Practitioner) 
 * author MS
 * author ^short = "Quien Ha creado el documento"
@@ -72,13 +70,13 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
 * attester 0..* MS
 * attester ^short = "Validadores del documento"
 * attester ^definition = "Validadores del documento"
-  * mode 1..1 MS
+  * mode MS
   * mode ^short = "Labor del Validador personal|profesional|legal|official"
   * mode from http://hl7.org/fhir/ValueSet/composition-attestation-mode 
-  * time 0..1 MS
+  * time MS
   * time ^short = "Fecha y Hora de la validación"
   * time ^definition = "Fecha y Hora de la validación"
-  * party 0..1 MS
+  * party MS
   * party ^short = "Quien validó"
   * party ^definition = "Quien validó"
 
@@ -115,9 +113,9 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
 * section[sectionDiagnosticos].code MS 
 * section[sectionDiagnosticos].code = $loinc#11450-4
 
-* section[sectionDiagnosticos].title 1.. MS
+* section[sectionDiagnosticos].title MS
 
-* section[sectionDiagnosticos].entry 1.. MS
+* section[sectionDiagnosticos].entry MS
 * section[sectionDiagnosticos].entry only Reference(Condition)
 
 * section[sectionDiagnosticos].entry ^slicing.discriminator[0].type = #profile
@@ -133,9 +131,9 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
 * section[sectionMedicamentos].code MS 
 * section[sectionMedicamentos].code = $loinc#10160-0
 
-* section[sectionMedicamentos].title 1.. MS
+* section[sectionMedicamentos].title MS
 
-* section[sectionMedicamentos].entry 1.. MS
+* section[sectionMedicamentos].entry MS
 * section[sectionMedicamentos].entry only Reference(MedicationStatement)
 
 * section[sectionMedicamentos].entry ^slicing.discriminator[0].type = #profile
@@ -170,9 +168,9 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
 * section[sectionObservacionEmbarazo].code MS 
 * section[sectionObservacionEmbarazo].code = $loinc#10162-6
 
-* section[sectionObservacionEmbarazo].title 1.. MS
+* section[sectionObservacionEmbarazo].title MS
 
-* section[sectionObservacionEmbarazo].entry 1.. MS
+* section[sectionObservacionEmbarazo].entry MS
 * section[sectionObservacionEmbarazo].entry only Reference(Observation)
 
 * section[sectionObservacionEmbarazo].entry ^slicing.discriminator[0].type = #profile
@@ -188,9 +186,9 @@ Description: "Definición de un documento para Resumen de Historia o Registro de
 * section[sectionObservacionSignosVitales].code MS 
 * section[sectionObservacionSignosVitales].code = $loinc#8716-3
 
-* section[sectionObservacionSignosVitales].title 1.. MS
+* section[sectionObservacionSignosVitales].title MS
 
-* section[sectionObservacionSignosVitales].entry 1.. MS
+* section[sectionObservacionSignosVitales].entry MS
 * section[sectionObservacionSignosVitales].entry only Reference(Observation)
 
 * section[sectionObservacionSignosVitales].entry ^slicing.discriminator[0].type = #profile

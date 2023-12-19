@@ -8,7 +8,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * active ^definition = "Indicador si una organización sigue vigente en su rol dentro del sistema de salud"
 
 * identifier and identifier.system and identifier.value MS
-* identifier 1..*
 * identifier ^short = "Identificador de organizacion de salud (DEIS, RUT, Códigos para cietos tipos de Recintos, etc.)"
 * identifier ^definition = "Identificador universal de la organización en Chile"
 * identifier.system ^short = "indicador del sistema de indentificación usado pora determinar el valor del identificador"
@@ -36,29 +35,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address MS
 * address only Address or ClAddress
 
-/*
-* address and address.use and address.line and address.city and address.district and address.state and address.country MS
-* address ^short = "Dirección de la Localiación"
-* address ^definition = "Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región"
-* address.line ^short = "Calle o avenida, numero y casa o depto"
-* address.line ^definition = "Aquí se escribe toda la dirección completa"
-* address.city ^short = "Campo para Comuna de residencia"
-* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona."
-* address.city from VSCodigosComunaCL (required)
-* address.city ^binding.description = "Códigos Comuna, Ministerio del Interior, 2018" 
-* address.district ^short = "Campo para Provincia de Residencia"
-* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
-* address.district from VSCodigosProvinciasCL (required)
-* address.district ^binding.description = "Códigos Provincia, Ministerio del Interior, 2018" 
-* address.state ^short = "Campo para la Región"
-* address.state ^definition = "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona."
-* address.state from VSCodigosRegionesCL (required)
-* address.state ^binding.description = "Códigos Regiones, Ministerio del Interior, 2018" 
-* address.country ^short = "Campo para País de Residencia"
-* address.country ^definition = "Campo para País de Residencia"
-* address.country from CodPaises (required)
-*/
-* contact 0..* MS
+
+* contact MS
 * contact ^short = "Contacto de la Organización para ciertos propósitos"
 * contact ^definition = "Contacto de la Organización para ciertos propósitos"
 * contact.purpose MS
@@ -81,7 +59,3 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * contact.telecom.system from  http://hl7.org/fhir/ValueSet/contact-point-system (required)
 * contact.telecom.value ^short = "Dato del contato del paciente descrito"
 * contact.telecom.value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email del Paciente"
-
-
-
-

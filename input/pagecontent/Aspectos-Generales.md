@@ -73,6 +73,72 @@ La existencia de un elemento o ruta con **MS** no determina la obligatoriedad de
   <p>Definición de elementos Must Support</p>
 </div>
 
+### Búsquedas Soportadas
+
+Los Métodos y los parámetros para la consulta de recursos se describen a continuación y se basan en la busqueda sobre recurso Paciente:
+
+1.  En este caso los servidores **DEBEN** soportar buscar un recurso Patient usando el parametro de búsqueda **[`_id`]:
+
+    `GET [base]/Patient[id]`
+
+    Ejemplos
+
+    1.  GET [base]/Patient/1032702
+    2.  GET [base]/Patient?_id=1032702
+
+Lo anterior es aplicable para un recurso ya creado el cual se alamacena con una identificación generada en ese momento    
+
+2.  Los servidores **DEBEN** soportar buscar un recurso Patient por un identificador como el numero RUN de la Cédula de Identidad Nacional, utilizando el parámetro de búsqueda **[`identifier`]:
+
+    `GET [base]/Patient?identifier={system|}[code]`
+
+    Ejemplo:
+
+    1.  <table>
+
+        <tbody>
+
+        <tr>
+
+        <td>GET [base]/Patient?identifier=http://minsal.cl/API/Paciente</td>
+
+        <td>|99999999</td>
+
+        </tr>
+
+        </tbody>
+
+        </table>
+
+    
+
+3.  Ejemplos de búsquedas por otros parámetros
+
+    Ejemplo:
+
+    1.  GET [base]/Patient?name=Villanueva
+
+    
+
+
+### Agregado de Recursos (Creando Recursos para ser almacenados)
+
+POST [base]/Patient En el Body, un recurso paciente compatible con el/los perfiles definidos core definido en el clcore (para este caso sería el perfil Paciente-Cl)
+
+### Vocabularios
+
+_Definición de Medicamentos:_ Se utiliza la Terminología de Farmacos Chilena (TFC), expuesta por medio de un servicio de terminolgía Local o desde MINSAL
+
+_Profesionales de la Salud:_ desplegados a travez de la Super Intendencia y el sistema Midas, este registro se expone por medio del recurso  FHIR Practitioner, y la especialidad por medio dek recurso PractitionerRole.
+
+_Establecimientos de Salud_: utiliza su identificación por medio de código DEIS, y su registro se expone a traves de los recursos FHIR Location y Organization, según corresponda.
+
+_Farmacias_: utiliza el registro de farmacias Farmanet y se expone como como los recursos FHIR Location y Organization.
+
+_Pacientes:_ Se identifican por medio de su número identificador que pude ser cualquier tipo de documento especificado en las tablas de HL7 V3 relcionados con identificadores de personas.
+
+_Tablas Maestras específicas:_ se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional que son expuestas en la GI y que deben ser en muchos casos levantadas a nivel local
+
 
 ### Cardinalidad
 <br>

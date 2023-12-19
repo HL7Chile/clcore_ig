@@ -6,7 +6,7 @@ Description:    "Condicion o Diagnósticos de Pacientes para Registro Clínico E
 
 
 
-* clinicalStatus 1..1 MS
+* clinicalStatus MS
 * clinicalStatus ^short = "El estatus en el cual se encuentra la condición: active| recurrece | relapse | inactive | remission | resolved"
 * clinicalStatus  from 	http://hl7.org/fhir/ValueSet/condition-clinical (required)
 * clinicalStatus ^binding.description = "Códigos requeridos por HL7-FHIR"
@@ -21,7 +21,7 @@ Description:    "Condicion o Diagnósticos de Pacientes para Registro Clínico E
 //---paciente
 * subject only Reference(PacienteCl)
 * subject MS
-* subject.reference 1.. MS
+* subject.reference MS
 * subject.identifier and subject.display MS
 
 * subject ^short = "Paciente sobre al que corresponde la condición." 
@@ -29,18 +29,12 @@ Description:    "Condicion o Diagnósticos de Pacientes para Registro Clínico E
   * reference ^short = "Referencia al recurso del Paciente al cual se indica el diagnóstico o condicón"
   * identifier ^short = "Identificador del paciente"
   * display ^short = "Texto alternativo para el recurso"
-/*
-* code 1..1 MS 
-* code from $CIE10VS (preferred)
-*/
-
-
 
 //----Code
 
 
 
-* code 1..1 MS
+* code MS
   
 
 * code ^definition = "Identificación de la condición, el problema o el diagnóstico o registro del \"problema ausente\" o de los \"problemas desconocidos\"."
@@ -63,7 +57,7 @@ Description:    "Condicion o Diagnósticos de Pacientes para Registro Clínico E
   * coding.display ^short = "Glosa del código en la terminología."
   * coding.display ^definition = "Glosa del código en la terminología."
   
-  * text 1..1 MS
+  * text MS
   * text ^short = "Se debe al menos notificar el diagnóstico o Problema en Texto"
   * text ^definition = "Se debe al menos notificar el diagnóstico o Problema en Texto"
 
@@ -83,14 +77,3 @@ Description:    "Condicion o Diagnósticos de Pacientes para Registro Clínico E
 * onset[x] ^type[=].extension.valueBoolean = true
 	
 
-/*
-* onsetDateTime[onsetDateTime] ^short = "Fecha y Hora de determinación de diagnóstico o condición"
-* onsetDateTime[onsetDateTime] ^definition = "Fecha y Hora de determinación de diagnóstico o condición"
-* onsetDateTime[onsetDateTime] ^sliceName = "onsetDateTime"
-* onsetDateTime[onsetDateTime] ^mustSupport = true
-* onsetPeriod[onsetPeriod] only Period
-* onsetPeriod[onsetPeriod] ^short = "Periodo de tiempo en el cual de definió el Diagnóstico o Condición"
-* onsetPeriod[onsetPeriod] ^definition = "Periodo de tiempo en el cual de definió el Diagnóstico o Condición"
-* onsetPeriod[onsetPeriod] ^sliceName = "onsetPeriod"
-* onsetPeriod[onsetPeriod] ^mustSupport = true
-*/

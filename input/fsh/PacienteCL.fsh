@@ -5,7 +5,7 @@ Title:          "CL Paciente"
 Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"
 
 
-* ^version = "1.7.1"
+* ^version = "1.9.0"
 * ^status = #active
 * ^publisher = "HL7 Chile"
 
@@ -16,21 +16,8 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 * extension contains IdentidadDeGenero named IdentidadDeGenero 0..1 MS
-* extension ^definition = "Extensión para almacenar la identidad de genero de cada paciente"
-
 * extension contains SexoBiologico named SexoBiologico 0..1 MS
-* extension ^definition = "Extensión para almacenar el sexo biologico del paciente"
-
-//* extension contains SexoRegistral named SexoRegistral 0..1 MS
-//* extension ^definition = "Extensión para almacenar el sexo Registral del paciente"
-
-
-
 * extension contains PaisOrigenNacionalidadCl named nacionalidad 0..1 MS
-* extension[nacionalidad].url ^short = "Extensión de Nacionalidad para pacientes extranjeros"
-* extension ^definition = "Para hacer uso de esta extensión se debe agregar el path: extension.url = \"nacionalidad\""
-
-
 
 * identifier and identifier.use and identifier.type and identifier.extension MS
 
@@ -38,7 +25,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier ^definition = "Este es el listado de Identificaciones de un paciente. Se procura como R2 el RUN, pero en caso de no existir ese identificador se debe ocupar otro nacional u otro otorgado por país extranjero"
 * identifier ^comment = "En caso de que el paciente posea una CI con número RUN válido, este debe ser ingresado como identificador, independiente de que tenga otros identificadores, los cuales también pueden ser ingresados. La identificación implica el ingreso del tipo de documento, el país de origen de ese documento y ev valor del identificador"
 
-* identifier 1..* 
 * identifier.use ^short = "usual | official | temp | secondary | old (If known)"
 * identifier.use ^definition = "De contar el Paciente con una Cédula de Identidad Nacional, se sugiere el uso de esta como identificador"
 
@@ -70,7 +56,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
 * identifier.type.extension contains PaisOrigenNacionalidadCl named paises 0..1  MS
-//* identifier.type.extension[paises] from CodPaises (required)
 * identifier.value ^short = "Número o valor de identificación"
 * identifier.value ^definition = "Número o valor de identificación"
 
@@ -97,11 +82,11 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
   * use ^comment = "Para ser considerado como el slice determinado para el uso de nombre completo, el use DEBE ser de valor de código \"official\""
   * family ^short = "1er Apellido"
   * family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
-  * family 0..1 MS
+  * family  MS
   * family.extension contains SegundoApellido named segundoApellido 0..1 MS
   * family.extension ^short = "Extensión para el segundo apellido"
   * family.extension ^definition = "Extensión para la declaracion de un segundo apellido"
-  * given 0..* MS
+  * given MS
   * given ^short = "Primer nombre y nombres del Paciente"
   * given ^definition = "Todos los nombres de los pacientes no necesariamente solo el Primer Nombre"
 
@@ -200,7 +185,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * generalPractitioner ^short = "Proveedor de Salud designado como principal"
 * generalPractitioner ^definition = "Proveedor de Salud designado como principal"
   * reference MS
-  * reference ..1
   * reference ^short = "URI de referencia a la Organización o a un Médico"
   * reference ^definition = "URI de referencia a la Organización o a un Médico"
   * display MS

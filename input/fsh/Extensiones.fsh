@@ -43,6 +43,8 @@ Description: "Esta extensión incluye códigos de paises de origen"
   * code from CodPais
   * system 0..1 MS
   * display 0..1 MS
+
+* url ^short = "Extensión de Nacionalidad para pacientes extranjeros"
 //* valueCodeableConcept.coding.system from CodPaises (extensible)
 
 /* 		Extension 		*/

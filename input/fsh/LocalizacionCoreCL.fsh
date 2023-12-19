@@ -58,32 +58,8 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * address MS
 * address only Address or ClAddress
 
-/*
-* address and address.use and address.line and address.city and address.district and address.state and address.country MS
-* address ^short = "Dirección de la Localiación"
-* address ^definition = "Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región"
-* address.line ^short = "Calle o avenida, numero y casa o depto"
-* address.line ^definition = "Aquí se escribe toda la dirección completa"
-* address.city ^short = "Campo para Comuna de residencia"
-* address.city ^definition = "Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona."
-* address.city from VSCodigosComunaCL (required)
-* address.city ^binding.description = "Códigos Comuna, Ministerio del Interior, 2018" 
-* address.district ^short = "Campo para Provincia de Residencia"
-* address.district ^definition = "Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona."
-* address.district from VSCodigosProvinciasCL (required)
-* address.district ^binding.description = "Códigos Provincia, Ministerio del Interior, 2018" 
-* address.state ^short = "Campo para la Región"
-* address.state ^definition = "Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona."
-* address.state from VSCodigosRegionesCL (required)
-* address.state ^binding.description = "Códigos Regiones, Ministerio del Interior, 2018" 
-* address.country ^short = "Campo para País de Residencia"
-* address.country ^definition = "Campo para País de Residencia"
-* address.country from CodPaises (required)
-*/
 * position 0..1
 * position and position.longitude and position.latitude MS
-* position.longitude 1..1
-* position.latitude 1..1
 * position ^short = "Geoposisionamiento del objeto, infraestructura o evento en longitud y latitud"
 * position ^definition = "La localización geográfica absoluta de la Ubicación, expresada utilizando el datum WGS84 (Este es el mismo sistema de coordenadas utilizado en KML)"
 * position.longitude ^short = "Longitud valor decimal en WGS84 datum (World Geodetic System 1984)"
@@ -92,7 +68,7 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * position.latitude ^definition = "Latitud. El dominio del valor y la interpretación son los mismos que para el texto del elemento latitud en KML"
 
 
-* managingOrganization 0..1 MS
+* managingOrganization  MS
 * managingOrganization ^short = "Organización a la cual la ubicación pertenece, si es el caso. Esta relación se hace en base a una referencia a una Orgaización"
 * managingOrganization ^definition = "La organización responsable de la localización."
 * managingOrganization ^comment = "Se puede usar para indicar la organzación jerárquica superior. Siempre debe existir una Organizacion jerarquicamente sobre la localizacion y en caso de no existir esta jerquia, se debe crear la organizacion, con los mismos datos del location."

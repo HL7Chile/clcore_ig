@@ -31,31 +31,18 @@ dependencies:
 pages:
   index.md:
     title: Inicio
-  Aspectos-Generales.md:
-    title: Generalidades
   Alcances-Objetivos.md:
     title: Objetivos
-  Consolidado-Operaciones.md:
-    title: Operaciones Básicas
+  Aspectos-Generales.md:
+    title: Generalidades
   Extensiones.md:
   Set-De-Validacion-ValueSets.md:
     title: CodeSystems/ValueSets
   Perfiles.md:
-  Set-Ejemplos.md:
-    title: Ejemplos
-  Todas-Descargas.md:
-    title: Descargas
+#  Set-Ejemplos.md:
+#    title: Ejemplos
   changes.md:
     title: Historial de Cambios
-
-parameters:
-  apply-publisher: true
-  apply-contact: true
-  show-inherited-invariants: false
-  excludettl: true
-  generate: genExamples
-
-
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
@@ -63,13 +50,19 @@ parameters:
 
 menu:
   Inicio: index.html
-  Objetivos: Alcances-Objetivos.html
   Generalidades: Aspectos-Generales.html
-  Operaciones: Consolidado-Operaciones.html
+  Objetivos: Alcances-Objetivos.html
   Artefactos: artifacts.html
     #Perfiles: Perfiles.html
     #Extensiones: Extensiones.html
     #Valuesets: Set-De-Validacion-ValueSets.html
-  Ejemplos: Set-Ejemplos.html
-  Descargas: Todas-Descargas.html
+#  Ejemplos: Set-Ejemplos.html
   Historial de cambios: changes.html
+
+
+parameters:
+  apply-publisher: true
+  apply-contact: true
+  show-inherited-invariants: false
+  excludettl: true
+  generate: genExamples
