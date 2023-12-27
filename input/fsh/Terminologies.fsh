@@ -1625,11 +1625,11 @@ Description: "Identidad de Genero"
 
 * #1 "Masculino"
 * #2 "Femenina"
-* #4 "Transgénero Masculino"
-* #5 "Transgénero Femenina"
-* #6 "No binarie"
-* #7 "Otra"
-* #8 "No Revelado"
+* #3 "Transgénero Masculino"
+* #4 "Transgénero Femenina"
+* #5 "No binarie"
+* #6 "Otra"
+* #7 "No Revelado"
 
 ValueSet: VSSexoListadoDeis
 Id: VSSexoListadoDeis
@@ -1660,13 +1660,12 @@ Description: "Sexo Listado Deis"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "Masculino"
-* #2 "Femenina"
-* #4 "Transgénero Masculino"
-* #5 "Transgénero Femenina"
-* #6 "No binarie"
-* #7 "Otra"
-* #8 "No Revelado"
+* #1 "Hombre"
+* #2 "Mujer"
+* #3 "Intersexual"
+* #93 "No Informado"
+* #99 "Desconocido"
+
 
 ValueSet: VSIdentificadores
 Id: VSIdentificadores
