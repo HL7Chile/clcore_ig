@@ -289,3 +289,4 @@ InstanceOf : CoreLocalizacionCl
 * hoursOfOperation.allDay = false
 * hoursOfOperation.openingTime = 09:00:00
 * hoursOfOperation.openingTime = 19:00:00
+
