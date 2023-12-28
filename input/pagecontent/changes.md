@@ -20,7 +20,6 @@
   - [Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)](StructureDefinition-NombreCampana.html)
   - [Razones por las cuales no se pudo realizar la inmunización](StructureDefinition-RazonNOrealizarseInm.html)
   - [Segundo Apellido](StructureDefinition-SegundoApellido.html)
-  
 
 ### Version 1.8.5
 - Prefil [PrestadorCL](StructureDefinition-CorePrestadorCl.html)
