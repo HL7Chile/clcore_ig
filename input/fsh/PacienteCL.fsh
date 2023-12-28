@@ -165,7 +165,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
       //* extension 0..1 MS
       * extension ^short = "Extensión para 2o apellido"
       * extension ^definition = "Extensión para la declaracion de un segundo apellido"
-    * given 0..1 MS
+    * given MS
     * given ^short = "Primer nombre y nombres del Contacto o Representante Legal"
     * given ^definition = "Todos los nombres  no necesariamente solo el Primero"
 
