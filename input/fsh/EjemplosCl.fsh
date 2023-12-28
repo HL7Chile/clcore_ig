@@ -1059,6 +1059,7 @@ Usage : #example
 * location.extension.valueCoding.display = "Servicio de Salud Antofagasta"
 * location.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ServicioSalud"
 
+
 //Vacuna administrada
 * vaccineCode.extension.valueCode = #hep_A 
 //* vaccineCode.extension.valueCode.system = "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposVacunas"
