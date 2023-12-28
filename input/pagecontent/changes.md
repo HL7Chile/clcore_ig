@@ -21,6 +21,7 @@
   - [Razones por las cuales no se pudo realizar la inmunización](StructureDefinition-RazonNOrealizarseInm.html)
   - [Segundo Apellido](StructureDefinition-SegundoApellido.html)
 
+
 ### Version 1.8.5
 - Prefil [PrestadorCL](StructureDefinition-CorePrestadorCl.html)
   - Cambio cardinalidad **birthDate** 1..1 -> 0..1
