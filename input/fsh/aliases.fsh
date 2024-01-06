@@ -15,6 +15,7 @@ Alias: SRT = http://hl7.org/fhir/ValueSet/security-role-type
 Alias: SIT = http://hl7.org/fhir/ValueSet/signature-type
 Alias: MT = http://hl7.org/fhir/ValueSet/mimetypes
 Alias: VSadministrative-gender = http://hl7.org/fhir/ValueSet/administrative-gender
+Alias: Canonical = https://hl7chile.cl/fhir/ig/clcore
 
 Alias:   SCT = http://snomed.info/sct
 Alias:   LOINC = http://loinc.org

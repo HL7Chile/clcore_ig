@@ -10,8 +10,6 @@
   - [Códigos para Provincias en Chile](StructureDefinition-ProvinciasCl.html)
   - [Códigos para Regiones en Chile](StructureDefinition-RegionesCl.html)
   - [Identificación del Contacto de un Paciente](StructureDefinition-IdContacto.html)
-  - [Código de tipos de encuentro remoto](StructureDefinition-TiposEncuentro.html)
-  - [Código de los tipos de servicio que se atiende](StructureDefinition-TiposServicio.html)
   - [Especialidad del médico principal](StructureDefinition-VSEspecialidadesDeisCL.html)
   - [Contacto de los participantes secundarios del encuentro](StructureDefinition-ContactoParticipantes.html)
   - [Código de las razones por la cual no se pudo realizar la atención](StructureDefinition-RazonNOrealizarse.html)
@@ -21,6 +19,9 @@
   - [Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)](StructureDefinition-NombreCampana.html)
   - [Razones por las cuales no se pudo realizar la inmunización](StructureDefinition-RazonNOrealizarseInm.html)
   - [Segundo Apellido](StructureDefinition-SegundoApellido.html)
+  - [Sexo Biológico](StructureDefinition-SexoBiologico.html)
+- El elemento **gender** del perfil [PrestadorCL](StructureDefinition-CorePrestadorCl.html) y [PacienteCl](StructureDefinition-CorePacienteCl.html) es reincluido para el sexo Registral(Registro Civil). Deprecando la extensión **SexoRegistral**
+- Se depreca el perfil **BundleCL**.
 
 
 ### Version 1.8.5
@@ -34,9 +35,9 @@
 - El elemento **gender** del perfil [PrestadorCL](StructureDefinition-CorePrestadorCl.html) y [PacienteCl](StructureDefinition-CorePacienteCl.html) es deprecado y reemplazado por las extensiones:
   - [IdentidadDeGenero](StructureDefinition-IdentidadDeGenero.html)
   - [SexoBiologico](StructureDefinition-SexoBiologico.html)
-  - [SexoRegistral](StructureDefinition-SexoRegistral.html)
+  - **SexoRegistral**
 
-- Prefil [CoreEspecialidadCl](StructureDefinition-CoreEspecialidadCl.html)
+- Prefil [CoreEspecialidadCl](StructureDefinition-CoreRolClinicoCl.html)
 
 - Perfil [PacienteCl](StructureDefinition-CorePacienteCl.html)
   - Cambio cardinalidad **birthDate** 1..1 -> 0..1

@@ -457,4 +457,4 @@ Usage: #inline
 Instance: Masculino
 InstanceOf: SexoBiologico
 Usage: #inline
-* valueCodeableConcept = CSSexoListadoDeis#1 "Masculino"
+* valueCodeableConcept = CSSexoListadoDeis#1 "Hombre"

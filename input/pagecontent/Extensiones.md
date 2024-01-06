@@ -1,3 +1,4 @@
+<!--
 ### Extensiones
 
 Las siguientes son las extensiones generadas para suplir la necesidades locales. Las extensiones estandares se pueden encontrar en el [Registro de Extensiones de HL7 Internacional](https://www.hl7.org/fhir/extensibility-registry.html)
@@ -24,3 +25,4 @@ Estas definen  constraints en los tipos de datos de FHIR para los sistemas que h
 | [Código de tipos de encuentro remoto](StructureDefinition-TiposEncuentro.html "StructureDefinition/TiposEncuentro") | Esta extensión incluye códigos de los tipos de encuentro que se realizan de forma remota |
 | [Código de tipos de Vacunas en Chile](StructureDefinition-TiposVacunaRNI.html "StructureDefinition/TiposVacunaRNI") | Esta extensión incluye códigos de los tipos de vacunas que existe en el Registro Nacional de Inmunizaciones RNI |
 | [Código de los tipos de servicio que se atiende](StructureDefinition-TiposServicio.html "StructureDefinition/TiposServicio") | Esta extensión incluye códigos de servicios que se entregan de forma remota |
+-->

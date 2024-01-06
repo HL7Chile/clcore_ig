@@ -18,8 +18,8 @@ Usage: #example
 
 * agent[=].network.address = "Workstation1.ehr.familyclinic.com"
 * agent[=].network.type = #1
-* source.observer.reference = "Practitioner/3240"
-* entity.what.reference = "Organization/ORG1"
+* source.observer = Reference(Practitioner/3240)
+* entity.what = Reference(Organization/ORG1)
 
 /////////////////////////////////////////////////////////////////////////////////////////
 Instance : DiagnosticoEj
@@ -66,7 +66,7 @@ Usage : #example
 * date = "2022-07-06T14:30:00+01:00"
 
 // Autor del documento, referencia a un profesional
-* author = Reference(Practitioner/3020)
+* author = Reference(PractitionerRole/EspecialidadCL)
 
 // Titulo del documento
 * title = "Resumen para Darth Bader - 06 JUL 2022"
@@ -121,10 +121,6 @@ Usage : #example
 * class.code = #VR 
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.display = "Virtual"
-
-//Tipo de encuentro remoto
-* type.coding.code = #PR
-
 
 //Servicio entregado en el Encuentro
 * serviceType.coding.code = #nutINTA
@@ -340,7 +336,6 @@ Usage : #example
 * occurrenceDateTime = "2022-07-06T14:30:00+01:00"
 
 
-
 Instance : MedicationStatementEj
 Title : "Ejemplo de Recurso MedicationStatement"
 Description: "MedicationStatement ficticio"
@@ -390,6 +385,24 @@ Usage : #example
 
 * id = "1112"
 * subject = Reference(Patient/11)
+* clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
+
+* clinicalStatus.coding.code = #active
+* clinicalStatus.coding.display = "Active"
+
+* verificationStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+* verificationStatus.coding.code = #confirmed
+* verificationStatus.coding.display = "Confirmed"
+
+* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
+* category.text = "Comorbilidad"
+
+* code.text = "Diagnóstico de Asma Confirmada"
+* code.coding.system = "http://snomed.info/sct"
+//* code.coding.version = "http://snomed.info/sct/449081005/version/20230430"
+* code.coding.code = #195967001
+
+* onsetDateTime = "2022-08-07"
 
 Instance : PacienteEj
 Title : "Ejemplo de Recurso Paciente"
@@ -423,9 +436,6 @@ InstanceOf : CoreRolClinicoCl
 * specialty[2].coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"
 * specialty[2].coding.code = #30
 * specialty[2].text = "Médico internista"
-
-
-
 
 Instance : MedicamentoCl
 Title : "Ejemplo de comprimido Tareg - D 160"
@@ -464,8 +474,6 @@ Usage: #example
 * identifier[ConceptId].value = "696681000167108"
 * code.text = "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"
 * code = $description-id#1703591000167111 "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido" 
-
-
 
 
 Instance : OrganizacionCl
@@ -525,9 +533,6 @@ InstanceOf: CodigoPaises
 Usage: #inline
 
 * valueCodeableConcept = CSCodPaises#152 "Chile"
-
-
-
 
 Instance : PrestadorCL
 Title : "Ejemplo de Recurso Prestador como base para un Core Nacional"
@@ -620,12 +625,12 @@ Usage: #inline
 * valueString = "Reyes"
 
 Instance : EjemplValidacionProvCl
-Title : "Ejemplo de la Validación de una Receta por medio del Prescriptor"
-Description: "Ejemplo de una Receta en Request Group que contiene una receta, en la cual el prestador que la ha desarollado genera una validación por medio de una firma" 
+Title : "Ejemplo de la Validación de un documento por medio del Prescriptor"
+Description: "Ejemplo de un documento, en la cual el prestador que la ha desarollado genera una validación por medio de una firma" 
 InstanceOf : ProvenanceCl
 Usage: #example
 
-* target.reference = "RequestGroup/RG12224"
+* target = Reference(Composition/CompositionClEj)
 
 * recorded =  2015-08-27T08:39:24+10:00
 
@@ -636,7 +641,7 @@ Usage: #example
 * agent.type.coding.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type"   
 * agent.type.coding.code = #author
 * agent.type.coding.display = "author"
-* agent.who.reference = "Practitioner/3240"
+* agent.who = Reference(Practitioner/3240)
 
 * signature.type.system = "urn:iso-astm:E1762-95:2013"
 * signature.type.code = #1.2.840.10065.1.12.1.1

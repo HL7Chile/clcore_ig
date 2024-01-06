@@ -1,3 +1,4 @@
+<!--
 ### Perfiles Core
 
 Los siguientes son el listado de perfiles definidos para el Core Nacional
@@ -27,7 +28,6 @@ Los siguientes son el listado de perfiles definidos para el Core Nacional
 <br>
 
 * [CL Encuetro](StructureDefinition-EncounterCL.html)
-* [CL Especialidad_Prestador](StructureDefinition-VSEspecialidadesDeisCL.html)
 <br>
 
 **I**
@@ -60,3 +60,9 @@ Los siguientes son el listado de perfiles definidos para el Core Nacional
 * [CL Paciente](StructureDefinition-CorePacienteCl.html)
 * [CL Prestador](StructureDefinition-CorePrestadorCl.html)
 * [CL Provenance](StructureDefinition-ProvenanceCl.html)
+
+**r**
+<br>
+* [CL RolClinico"](StructureDefinition-CoreRolClinicoCl.html)
+<br>
+-->

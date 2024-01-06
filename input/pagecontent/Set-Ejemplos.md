@@ -1,6 +1,6 @@
 ### Ejemplos
 <br>
-Los siguientes ejemplos se publican con esta Guía y todos están disponibles para su descarga como archivo zip aquí. 
+Los siguientes ejemplos se publican con esta Guía.
 <br>
 
 #### Especialidad Clínica

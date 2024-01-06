@@ -16,8 +16,7 @@ Esta Guía sigue un formato especificado para **FHIR R4**, y se divide en varias
     * [Perfiles](Perfiles.html): Descripción de los perfiles Core generados para Chile
     * [Extensiones](Extensiones.html): Descripción de todas las extensiones creadas para satisfacer las necesidades nacionales para los perfiles creados
     * [ValueSets](Set-De-Validacion-ValueSets.html): Descripción de los sets de valores creados para poder hacer uso dentro de las necesidades locales de los perfiles creados.
-* [Ejemplos](Set-Ejemplos.html): Listado de ejemplos descritos a lo largo de la guía
-* [Descargas](Todas-Descargas.html): Schematrones para descarga local 
+    * [Ejemplos](Set-Ejemplos.html): Listado de ejemplos descritos a lo largo de la guía
 <br>
 <br>
 
@@ -31,11 +30,10 @@ Cada perfil define los elementos obligatorios mínimos, extensiones y requerimie
 Tambien se presenta una tabla jerárquica con una vista lógica del contenido como *Snapshot* y *Differential* . Para cada perfil también expresamos el conjunto de interacciones FHIR Restful asociadas (búsquedas, operaciones u otras interacciones)
 
 * [CL Auditoría](StructureDefinition-AuditEventCl.html)
-* [CL Bundle](StructureDefinition-BundleCl.html)
 * [CL Documento](StructureDefinition-DocumentoCl.html)
 * [CL Diagnóstico-Condición](StructureDefinition-CoreDiagnosticoCl.html)
 * [CL Encuetro](StructureDefinition-EncounterCL.html)
-* [CL Especialidad_Prestador](StructureDefinition-CoreEspecialidadCl.html)
+* [CL RolClinico](StructureDefinition-CoreRolClinicoCl.html)
 * [CL Inmunizacion](StructureDefinition-ImmunizationCL.html)
 * [CL Localización](StructureDefinition-CoreLocalizacionCl.html)
 * [CL Medicamento](StructureDefinition-CoreMedicamentoCl.html) 
