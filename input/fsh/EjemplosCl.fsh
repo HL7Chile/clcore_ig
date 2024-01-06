@@ -66,7 +66,7 @@ Usage : #example
 * date = "2022-07-06T14:30:00+01:00"
 
 // Autor del documento, referencia a un profesional
-* author = Reference(PractitionerRole/EspecialidadCL)
+* author = Reference(Practitioner/3240)
 
 // Titulo del documento
 * title = "Resumen para Darth Bader - 06 JUL 2022"

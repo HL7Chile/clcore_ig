@@ -3,6 +3,9 @@
 Los siguientes ejemplos se publican con esta Guía.
 <br>
 
+### Documento
+* [Documento](Composition-CompositionClEj.html)<br>
+
 #### Especialidad Clínica
 
 * [Especialidad de Cardiología](PractitionerRole-EspecialidadCL.html)
@@ -34,7 +37,7 @@ Los siguientes ejemplos se publican con esta Guía.
 * [Prestador Individual Médico](StructureDefinition-CorePrestadorCl-examples.html)
 
 #### Provenance
-* [Validación de Receta](StructureDefinition-ProvenanceCl-examples.html)
+* [Validación de Documento](StructureDefinition-ProvenanceCl-examples.html)
 
 #### Auditoria
 * [Audit-Event](AuditEvent-AuditEventEx.html)

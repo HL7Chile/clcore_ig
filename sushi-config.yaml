@@ -39,8 +39,9 @@ pages:
   Set-De-Validacion-ValueSets.md:
     title: CodeSystems/ValueSets
   Perfiles.md:
-#  Set-Ejemplos.md:
-#    title: Ejemplos
+    title: Perfiles
+  Set-Ejemplos.md:
+   title: Ejemplos
   changes.md:
     title: Historial de Cambios
 
