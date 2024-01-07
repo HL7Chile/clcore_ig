@@ -1,0 +1,52 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "7b36044e-98b0-47a5-948b-6439e3084879-51",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7b36044e-98b0-47a5-948b-6439e3084879-51",
+  "name" : "IntersectionCSTipoIdentificadorAndCSTipoIdentificador",
+  "title" : "Intersection of Tipo Identificador And Tipo Identificador",
+  "status" : "active",
+  "date" : "2023-12-28T15:41:57-03:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "concept" : [{
+    "code" : "01",
+    "display" : "Run"
+  },
+  {
+    "code" : "02",
+    "display" : "Run materno/progenitor(a)"
+  },
+  {
+    "code" : "03",
+    "display" : "Número de Folio de comprobante de parto"
+  },
+  {
+    "code" : "04",
+    "display" : "Número de pasaporte"
+  },
+  {
+    "code" : "05",
+    "display" : "Número de documento identificador de país de origen"
+  },
+  {
+    "code" : "06",
+    "display" : "Número de identificador FONASA"
+  },
+  {
+    "code" : "07",
+    "display" : "Identificador Provisorio Escolar"
+  },
+  {
+    "code" : "08",
+    "display" : "Identificador Provisorio Apoderado"
+  },
+  {
+    "code" : "09",
+    "display" : "Registro Único de Contribuyentes"
+  }]
+}

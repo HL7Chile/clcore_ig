@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PacienteCl-5"/>
+  <meta>
+    <profile value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Franco Mauricioa Ulloa (OFFICIAL)</b> male, DoB: 1996-08-01 ( Passport Number: P123456789 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li><a href="mailto:Franco@Mauri.cl">Franco@Mauri.cl</a></li><li>Calle 4 Norte, 52, pieza 802 null null null (HOME)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: Next-of-Kin">Next-of-Kin:</td><td colspan="3"><ul><li>Ines Cristina Barraza (OFFICIAL)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Sexo Biologico del paciente"><a href="StructureDefinition-SexoBiologico.html">Sexo Biologico del paciente:</a></td><td colspan="3"><ul><li><span title="Codes: {https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis 1}">Masculino</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Esta extensión incluye códigos de paises de origen"><a href="StructureDefinition-CodigoPaises.html">Codigo de Identificación de países:</a></td><td colspan="3"><ul><li><span title="Codes: {https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais 152}">Chile</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Identidad De Genero"><a href="StructureDefinition-IdentidadDeGenero.html">Identidad De Genero:</a></td><td colspan="3"><ul><li><span title="Codes: {https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero 7}">No Revelado</span></li></ul></td></tr></table></div>
+  </text>
+  <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"/>
+        <code value="152"/>
+        <display value="Chile"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero"/>
+        <code value="7"/>
+        <display value="No Revelado"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis"/>
+        <code value="1"/>
+        <display value="Masculino"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"/>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PPN"/>
+        <display value="Passport Number"/>
+      </coding>
+    </type>
+    <system value="http://regcivil.cl/Validacion/Passport"/>
+    <value value="P123456789"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Ulloa">
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido">
+        <valueString value="Medina"/>
+      </extension>
+    </family>
+    <given value="Franco"/>
+    <given value="Mauricioa"/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="Franco@Mauri.cl"/>
+    <use value="home"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1996-08-01"/>
+  <address>
+    <use value="home"/>
+    <line value="Calle 4 Norte, 52, pieza 802"/>
+    <city>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"/>
+            <code value="13101"/>
+            <display value="Santiago Centro"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <district>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL"/>
+            <code value="131"/>
+            <display value="Santiago"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </district>
+    <state>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"/>
+            <code value="13"/>
+            <display value="Metropolitana de Santiago"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </state>
+    <country>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"/>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </country>
+  </address>
+  <contact>
+    <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto">
+      <extension url="tutId">
+        <valueIdentifier>
+          <type>
+            <coding>
+              <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI"/>
+              <code value="NNCHL"/>
+              <display value="Chile"/>
+            </coding>
+          </type>
+          <system value="http://regcivil.cl/Validacion/RUN"/>
+          <value value="12342451-k"/>
+        </valueIdentifier>
+      </extension>
+      <extension url="docProc">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"/>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </extension>
+    <relationship>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+        <code value="N"/>
+        <display value="Next-of-Kin"/>
+      </coding>
+    </relationship>
+    <name>
+      <use value="official"/>
+      <family value="Barraza">
+        <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido">
+          <valueString value="Sandoval"/>
+        </extension>
+      </family>
+      <given value="Ines"/>
+      <given value="Cristina"/>
+    </name>
+  </contact>
+</Patient>

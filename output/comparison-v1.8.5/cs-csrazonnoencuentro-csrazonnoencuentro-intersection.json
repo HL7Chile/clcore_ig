@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "7b36044e-98b0-47a5-948b-6439e3084879-60",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7b36044e-98b0-47a5-948b-6439e3084879-60",
+  "name" : "IntersectionCSrazonnoencuentroAndCSrazonnoencuentro",
+  "title" : "Intersection of Razón Encuentro Remoto no Realizado And Razón Encuentro Remoto no Realizado",
+  "status" : "active",
+  "date" : "2023-12-28T15:41:57-03:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "concept" : [{
+    "code" : "pierdellam",
+    "display" : "Participante pierde llamada",
+    "definition" : "Indica la pérdida de una llamada con el paciete"
+  },
+  {
+    "code" : "finallam",
+    "display" : "El participante finalizó la llamada abruptamente",
+    "definition" : "Indica la finalización de una llamada de forma abrupta"
+  },
+  {
+    "code" : "problcon",
+    "display" : "El participante tuvo problemas de conexión a internet",
+    "definition" : "Indica que existieron problemas de conexión a internet para conectarse con el médico"
+  },
+  {
+    "code" : "medicoproblcon",
+    "display" : "Tuve problemas de conexión a internet",
+    "definition" : "Indica problemas de conexión a internet que tuvo el médico"
+  },
+  {
+    "code" : "otros",
+    "display" : "Otros, texto libre",
+    "definition" : "Cualquier otro motivo"
+  }]
+}

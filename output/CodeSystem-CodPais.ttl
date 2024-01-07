@@ -1,0 +1,795 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CodPais"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">004<a name=\"CodPais-004\"> </a></td><td>Afghanistan</td></tr><tr><td style=\"white-space:nowrap\">008<a name=\"CodPais-008\"> </a></td><td>Albania</td></tr><tr><td style=\"white-space:nowrap\">010<a name=\"CodPais-010\"> </a></td><td>Antarctica</td></tr><tr><td style=\"white-space:nowrap\">012<a name=\"CodPais-012\"> </a></td><td>Algeria</td></tr><tr><td style=\"white-space:nowrap\">016<a name=\"CodPais-016\"> </a></td><td>American Samoa</td></tr><tr><td style=\"white-space:nowrap\">020<a name=\"CodPais-020\"> </a></td><td>Andorra</td></tr><tr><td style=\"white-space:nowrap\">024<a name=\"CodPais-024\"> </a></td><td>Angola</td></tr><tr><td style=\"white-space:nowrap\">028<a name=\"CodPais-028\"> </a></td><td>Antigua and Barbuda</td></tr><tr><td style=\"white-space:nowrap\">031<a name=\"CodPais-031\"> </a></td><td>Azerbaijan</td></tr><tr><td style=\"white-space:nowrap\">032<a name=\"CodPais-032\"> </a></td><td>Argentina</td></tr><tr><td style=\"white-space:nowrap\">036<a name=\"CodPais-036\"> </a></td><td>Australia</td></tr><tr><td style=\"white-space:nowrap\">040<a name=\"CodPais-040\"> </a></td><td>Austria</td></tr><tr><td style=\"white-space:nowrap\">044<a name=\"CodPais-044\"> </a></td><td>Bahamas</td></tr><tr><td style=\"white-space:nowrap\">048<a name=\"CodPais-048\"> </a></td><td>Bahrain</td></tr><tr><td style=\"white-space:nowrap\">050<a name=\"CodPais-050\"> </a></td><td>Bangladesh</td></tr><tr><td style=\"white-space:nowrap\">051<a name=\"CodPais-051\"> </a></td><td>Armenia</td></tr><tr><td style=\"white-space:nowrap\">052<a name=\"CodPais-052\"> </a></td><td>Barbados</td></tr><tr><td style=\"white-space:nowrap\">056<a name=\"CodPais-056\"> </a></td><td>Belgium</td></tr><tr><td style=\"white-space:nowrap\">060<a name=\"CodPais-060\"> </a></td><td>Bermuda</td></tr><tr><td style=\"white-space:nowrap\">064<a name=\"CodPais-064\"> </a></td><td>Bhutan</td></tr><tr><td style=\"white-space:nowrap\">068<a name=\"CodPais-068\"> </a></td><td>Bolivia, Plurinational State of</td></tr><tr><td style=\"white-space:nowrap\">070<a name=\"CodPais-070\"> </a></td><td>Bosnia and Herzegovina</td></tr><tr><td style=\"white-space:nowrap\">072<a name=\"CodPais-072\"> </a></td><td>Botswana</td></tr><tr><td style=\"white-space:nowrap\">074<a name=\"CodPais-074\"> </a></td><td>Bouvet Island</td></tr><tr><td style=\"white-space:nowrap\">076<a name=\"CodPais-076\"> </a></td><td>Brazil</td></tr><tr><td style=\"white-space:nowrap\">084<a name=\"CodPais-084\"> </a></td><td>Belize</td></tr><tr><td style=\"white-space:nowrap\">086<a name=\"CodPais-086\"> </a></td><td>British Indian Ocean Territory</td></tr><tr><td style=\"white-space:nowrap\">090<a name=\"CodPais-090\"> </a></td><td>Solomon Islands</td></tr><tr><td style=\"white-space:nowrap\">092<a name=\"CodPais-092\"> </a></td><td>Virgin Islands, British</td></tr><tr><td style=\"white-space:nowrap\">096<a name=\"CodPais-096\"> </a></td><td>Brunei Darussalam</td></tr><tr><td style=\"white-space:nowrap\">100<a name=\"CodPais-100\"> </a></td><td>Bulgaria</td></tr><tr><td style=\"white-space:nowrap\">104<a name=\"CodPais-104\"> </a></td><td>Myanmar</td></tr><tr><td style=\"white-space:nowrap\">108<a name=\"CodPais-108\"> </a></td><td>Burundi</td></tr><tr><td style=\"white-space:nowrap\">112<a name=\"CodPais-112\"> </a></td><td>Belarus</td></tr><tr><td style=\"white-space:nowrap\">116<a name=\"CodPais-116\"> </a></td><td>Cambodia</td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"CodPais-120\"> </a></td><td>Cameroon</td></tr><tr><td style=\"white-space:nowrap\">124<a name=\"CodPais-124\"> </a></td><td>Canada</td></tr><tr><td style=\"white-space:nowrap\">132<a name=\"CodPais-132\"> </a></td><td>Cabo Verde</td></tr><tr><td style=\"white-space:nowrap\">136<a name=\"CodPais-136\"> </a></td><td>Cayman Islands</td></tr><tr><td style=\"white-space:nowrap\">140<a name=\"CodPais-140\"> </a></td><td>Central African Republic</td></tr><tr><td style=\"white-space:nowrap\">144<a name=\"CodPais-144\"> </a></td><td>Sri Lanka</td></tr><tr><td style=\"white-space:nowrap\">148<a name=\"CodPais-148\"> </a></td><td>Chad</td></tr><tr><td style=\"white-space:nowrap\">152<a name=\"CodPais-152\"> </a></td><td>Chile</td></tr><tr><td style=\"white-space:nowrap\">156<a name=\"CodPais-156\"> </a></td><td>China</td></tr><tr><td style=\"white-space:nowrap\">158<a name=\"CodPais-158\"> </a></td><td>Taiwan, Province of China</td></tr><tr><td style=\"white-space:nowrap\">162<a name=\"CodPais-162\"> </a></td><td>Christmas Island</td></tr><tr><td style=\"white-space:nowrap\">166<a name=\"CodPais-166\"> </a></td><td>Cocos (Keeling) Islands</td></tr><tr><td style=\"white-space:nowrap\">170<a name=\"CodPais-170\"> </a></td><td>Colombia</td></tr><tr><td style=\"white-space:nowrap\">174<a name=\"CodPais-174\"> </a></td><td>Comoros</td></tr><tr><td style=\"white-space:nowrap\">175<a name=\"CodPais-175\"> </a></td><td>Mayotte</td></tr><tr><td style=\"white-space:nowrap\">178<a name=\"CodPais-178\"> </a></td><td>Congo</td></tr><tr><td style=\"white-space:nowrap\">180<a name=\"CodPais-180\"> </a></td><td>Congo, the Democratic Republic of the</td></tr><tr><td style=\"white-space:nowrap\">184<a name=\"CodPais-184\"> </a></td><td>Cook Islands</td></tr><tr><td style=\"white-space:nowrap\">188<a name=\"CodPais-188\"> </a></td><td>Costa Rica</td></tr><tr><td style=\"white-space:nowrap\">191<a name=\"CodPais-191\"> </a></td><td>Croatia</td></tr><tr><td style=\"white-space:nowrap\">192<a name=\"CodPais-192\"> </a></td><td>Cuba</td></tr><tr><td style=\"white-space:nowrap\">196<a name=\"CodPais-196\"> </a></td><td>Cyprus</td></tr><tr><td style=\"white-space:nowrap\">203<a name=\"CodPais-203\"> </a></td><td>Czechia</td></tr><tr><td style=\"white-space:nowrap\">204<a name=\"CodPais-204\"> </a></td><td>Benin</td></tr><tr><td style=\"white-space:nowrap\">208<a name=\"CodPais-208\"> </a></td><td>Denmark</td></tr><tr><td style=\"white-space:nowrap\">212<a name=\"CodPais-212\"> </a></td><td>Dominica</td></tr><tr><td style=\"white-space:nowrap\">214<a name=\"CodPais-214\"> </a></td><td>Dominican Republic</td></tr><tr><td style=\"white-space:nowrap\">218<a name=\"CodPais-218\"> </a></td><td>Ecuador</td></tr><tr><td style=\"white-space:nowrap\">222<a name=\"CodPais-222\"> </a></td><td>El Salvador</td></tr><tr><td style=\"white-space:nowrap\">226<a name=\"CodPais-226\"> </a></td><td>Equatorial Guinea</td></tr><tr><td style=\"white-space:nowrap\">231<a name=\"CodPais-231\"> </a></td><td>Ethiopia</td></tr><tr><td style=\"white-space:nowrap\">232<a name=\"CodPais-232\"> </a></td><td>Eritrea</td></tr><tr><td style=\"white-space:nowrap\">233<a name=\"CodPais-233\"> </a></td><td>Estonia</td></tr><tr><td style=\"white-space:nowrap\">234<a name=\"CodPais-234\"> </a></td><td>Faroe Islands</td></tr><tr><td style=\"white-space:nowrap\">238<a name=\"CodPais-238\"> </a></td><td>Falkland Islands (Malvinas)</td></tr><tr><td style=\"white-space:nowrap\">239<a name=\"CodPais-239\"> </a></td><td>South Georgia and the South Sandwich Islands</td></tr><tr><td style=\"white-space:nowrap\">242<a name=\"CodPais-242\"> </a></td><td>Fiji</td></tr><tr><td style=\"white-space:nowrap\">246<a name=\"CodPais-246\"> </a></td><td>Finland</td></tr><tr><td style=\"white-space:nowrap\">248<a name=\"CodPais-248\"> </a></td><td>Eland Islands</td></tr><tr><td style=\"white-space:nowrap\">250<a name=\"CodPais-250\"> </a></td><td>France</td></tr><tr><td style=\"white-space:nowrap\">254<a name=\"CodPais-254\"> </a></td><td>French Guiana</td></tr><tr><td style=\"white-space:nowrap\">258<a name=\"CodPais-258\"> </a></td><td>French Polynesia</td></tr><tr><td style=\"white-space:nowrap\">260<a name=\"CodPais-260\"> </a></td><td>French Southern Territories</td></tr><tr><td style=\"white-space:nowrap\">262<a name=\"CodPais-262\"> </a></td><td>Djibouti</td></tr><tr><td style=\"white-space:nowrap\">266<a name=\"CodPais-266\"> </a></td><td>Gabon</td></tr><tr><td style=\"white-space:nowrap\">268<a name=\"CodPais-268\"> </a></td><td>Georgia</td></tr><tr><td style=\"white-space:nowrap\">270<a name=\"CodPais-270\"> </a></td><td>Gambia</td></tr><tr><td style=\"white-space:nowrap\">275<a name=\"CodPais-275\"> </a></td><td>Palestine, State of</td></tr><tr><td style=\"white-space:nowrap\">276<a name=\"CodPais-276\"> </a></td><td>Germany</td></tr><tr><td style=\"white-space:nowrap\">288<a name=\"CodPais-288\"> </a></td><td>Ghana</td></tr><tr><td style=\"white-space:nowrap\">292<a name=\"CodPais-292\"> </a></td><td>Gibraltar</td></tr><tr><td style=\"white-space:nowrap\">296<a name=\"CodPais-296\"> </a></td><td>Kiribati</td></tr><tr><td style=\"white-space:nowrap\">300<a name=\"CodPais-300\"> </a></td><td>Greece</td></tr><tr><td style=\"white-space:nowrap\">304<a name=\"CodPais-304\"> </a></td><td>Greenland</td></tr><tr><td style=\"white-space:nowrap\">308<a name=\"CodPais-308\"> </a></td><td>Grenada</td></tr><tr><td style=\"white-space:nowrap\">312<a name=\"CodPais-312\"> </a></td><td>Guadeloupe</td></tr><tr><td style=\"white-space:nowrap\">316<a name=\"CodPais-316\"> </a></td><td>Guam</td></tr><tr><td style=\"white-space:nowrap\">320<a name=\"CodPais-320\"> </a></td><td>Guatemala</td></tr><tr><td style=\"white-space:nowrap\">324<a name=\"CodPais-324\"> </a></td><td>Guinea</td></tr><tr><td style=\"white-space:nowrap\">328<a name=\"CodPais-328\"> </a></td><td>Guyana</td></tr><tr><td style=\"white-space:nowrap\">332<a name=\"CodPais-332\"> </a></td><td>Haiti</td></tr><tr><td style=\"white-space:nowrap\">334<a name=\"CodPais-334\"> </a></td><td>Heard Island and McDonald Islands</td></tr><tr><td style=\"white-space:nowrap\">336<a name=\"CodPais-336\"> </a></td><td>Holy See</td></tr><tr><td style=\"white-space:nowrap\">340<a name=\"CodPais-340\"> </a></td><td>Honduras</td></tr><tr><td style=\"white-space:nowrap\">344<a name=\"CodPais-344\"> </a></td><td>Hong Kong</td></tr><tr><td style=\"white-space:nowrap\">348<a name=\"CodPais-348\"> </a></td><td>Hungary</td></tr><tr><td style=\"white-space:nowrap\">352<a name=\"CodPais-352\"> </a></td><td>Iceland</td></tr><tr><td style=\"white-space:nowrap\">356<a name=\"CodPais-356\"> </a></td><td>India</td></tr><tr><td style=\"white-space:nowrap\">360<a name=\"CodPais-360\"> </a></td><td>Indonesia</td></tr><tr><td style=\"white-space:nowrap\">364<a name=\"CodPais-364\"> </a></td><td>Iran, Islamic Republic of</td></tr><tr><td style=\"white-space:nowrap\">368<a name=\"CodPais-368\"> </a></td><td>Iraq</td></tr><tr><td style=\"white-space:nowrap\">372<a name=\"CodPais-372\"> </a></td><td>Ireland</td></tr><tr><td style=\"white-space:nowrap\">376<a name=\"CodPais-376\"> </a></td><td>Israel</td></tr><tr><td style=\"white-space:nowrap\">380<a name=\"CodPais-380\"> </a></td><td>Italy</td></tr><tr><td style=\"white-space:nowrap\">384<a name=\"CodPais-384\"> </a></td><td>Ctte d'Ivoire</td></tr><tr><td style=\"white-space:nowrap\">388<a name=\"CodPais-388\"> </a></td><td>Jamaica</td></tr><tr><td style=\"white-space:nowrap\">392<a name=\"CodPais-392\"> </a></td><td>Japan</td></tr><tr><td style=\"white-space:nowrap\">398<a name=\"CodPais-398\"> </a></td><td>Kazakhstan</td></tr><tr><td style=\"white-space:nowrap\">400<a name=\"CodPais-400\"> </a></td><td>Jordan</td></tr><tr><td style=\"white-space:nowrap\">404<a name=\"CodPais-404\"> </a></td><td>Kenya</td></tr><tr><td style=\"white-space:nowrap\">408<a name=\"CodPais-408\"> </a></td><td>Korea, Democratic People's Republic of</td></tr><tr><td style=\"white-space:nowrap\">410<a name=\"CodPais-410\"> </a></td><td>Korea, Republic of</td></tr><tr><td style=\"white-space:nowrap\">414<a name=\"CodPais-414\"> </a></td><td>Kuwait</td></tr><tr><td style=\"white-space:nowrap\">417<a name=\"CodPais-417\"> </a></td><td>Kyrgyzstan</td></tr><tr><td style=\"white-space:nowrap\">418<a name=\"CodPais-418\"> </a></td><td>Lao People's Democratic Republic</td></tr><tr><td style=\"white-space:nowrap\">422<a name=\"CodPais-422\"> </a></td><td>Lebanon</td></tr><tr><td style=\"white-space:nowrap\">426<a name=\"CodPais-426\"> </a></td><td>Lesotho</td></tr><tr><td style=\"white-space:nowrap\">428<a name=\"CodPais-428\"> </a></td><td>Latvia</td></tr><tr><td style=\"white-space:nowrap\">430<a name=\"CodPais-430\"> </a></td><td>Liberia</td></tr><tr><td style=\"white-space:nowrap\">434<a name=\"CodPais-434\"> </a></td><td>Libya</td></tr><tr><td style=\"white-space:nowrap\">438<a name=\"CodPais-438\"> </a></td><td>Liechtenstein</td></tr><tr><td style=\"white-space:nowrap\">440<a name=\"CodPais-440\"> </a></td><td>Lithuania</td></tr><tr><td style=\"white-space:nowrap\">442<a name=\"CodPais-442\"> </a></td><td>Luxembourg</td></tr><tr><td style=\"white-space:nowrap\">446<a name=\"CodPais-446\"> </a></td><td>Macao</td></tr><tr><td style=\"white-space:nowrap\">450<a name=\"CodPais-450\"> </a></td><td>Madagascar</td></tr><tr><td style=\"white-space:nowrap\">454<a name=\"CodPais-454\"> </a></td><td>Malawi</td></tr><tr><td style=\"white-space:nowrap\">458<a name=\"CodPais-458\"> </a></td><td>Malaysia</td></tr><tr><td style=\"white-space:nowrap\">462<a name=\"CodPais-462\"> </a></td><td>Maldives</td></tr><tr><td style=\"white-space:nowrap\">466<a name=\"CodPais-466\"> </a></td><td>Mali</td></tr><tr><td style=\"white-space:nowrap\">470<a name=\"CodPais-470\"> </a></td><td>Malta</td></tr><tr><td style=\"white-space:nowrap\">474<a name=\"CodPais-474\"> </a></td><td>Martinique</td></tr><tr><td style=\"white-space:nowrap\">478<a name=\"CodPais-478\"> </a></td><td>Mauritania</td></tr><tr><td style=\"white-space:nowrap\">480<a name=\"CodPais-480\"> </a></td><td>Mauritius</td></tr><tr><td style=\"white-space:nowrap\">484<a name=\"CodPais-484\"> </a></td><td>Mexico</td></tr><tr><td style=\"white-space:nowrap\">492<a name=\"CodPais-492\"> </a></td><td>Monaco</td></tr><tr><td style=\"white-space:nowrap\">496<a name=\"CodPais-496\"> </a></td><td>Mongolia</td></tr><tr><td style=\"white-space:nowrap\">498<a name=\"CodPais-498\"> </a></td><td>Moldova, Republic of</td></tr><tr><td style=\"white-space:nowrap\">499<a name=\"CodPais-499\"> </a></td><td>Montenegro</td></tr><tr><td style=\"white-space:nowrap\">500<a name=\"CodPais-500\"> </a></td><td>Montserrat</td></tr><tr><td style=\"white-space:nowrap\">504<a name=\"CodPais-504\"> </a></td><td>Morocco</td></tr><tr><td style=\"white-space:nowrap\">508<a name=\"CodPais-508\"> </a></td><td>Mozambique</td></tr><tr><td style=\"white-space:nowrap\">512<a name=\"CodPais-512\"> </a></td><td>Oman</td></tr><tr><td style=\"white-space:nowrap\">516<a name=\"CodPais-516\"> </a></td><td>Namibia</td></tr><tr><td style=\"white-space:nowrap\">520<a name=\"CodPais-520\"> </a></td><td>Nauru</td></tr><tr><td style=\"white-space:nowrap\">524<a name=\"CodPais-524\"> </a></td><td>Nepal</td></tr><tr><td style=\"white-space:nowrap\">528<a name=\"CodPais-528\"> </a></td><td>Netherlands</td></tr><tr><td style=\"white-space:nowrap\">531<a name=\"CodPais-531\"> </a></td><td>Curagao</td></tr><tr><td style=\"white-space:nowrap\">533<a name=\"CodPais-533\"> </a></td><td>Aruba</td></tr><tr><td style=\"white-space:nowrap\">534<a name=\"CodPais-534\"> </a></td><td>Sint Maarten (Dutch part)</td></tr><tr><td style=\"white-space:nowrap\">535<a name=\"CodPais-535\"> </a></td><td>Bonaire, Sint Eustatius and Saba</td></tr><tr><td style=\"white-space:nowrap\">540<a name=\"CodPais-540\"> </a></td><td>New Caledonia</td></tr><tr><td style=\"white-space:nowrap\">548<a name=\"CodPais-548\"> </a></td><td>Vanuatu</td></tr><tr><td style=\"white-space:nowrap\">554<a name=\"CodPais-554\"> </a></td><td>New Zealand</td></tr><tr><td style=\"white-space:nowrap\">558<a name=\"CodPais-558\"> </a></td><td>Nicaragua</td></tr><tr><td style=\"white-space:nowrap\">562<a name=\"CodPais-562\"> </a></td><td>Niger</td></tr><tr><td style=\"white-space:nowrap\">566<a name=\"CodPais-566\"> </a></td><td>Nigeria</td></tr><tr><td style=\"white-space:nowrap\">570<a name=\"CodPais-570\"> </a></td><td>Niue</td></tr><tr><td style=\"white-space:nowrap\">574<a name=\"CodPais-574\"> </a></td><td>Norfolk Island</td></tr><tr><td style=\"white-space:nowrap\">578<a name=\"CodPais-578\"> </a></td><td>Norway</td></tr><tr><td style=\"white-space:nowrap\">580<a name=\"CodPais-580\"> </a></td><td>Northern Mariana Islands</td></tr><tr><td style=\"white-space:nowrap\">581<a name=\"CodPais-581\"> </a></td><td>United States Minor Outlying Islands</td></tr><tr><td style=\"white-space:nowrap\">583<a name=\"CodPais-583\"> </a></td><td>Micronesia, Federated States of</td></tr><tr><td style=\"white-space:nowrap\">584<a name=\"CodPais-584\"> </a></td><td>Marshall Islands</td></tr><tr><td style=\"white-space:nowrap\">585<a name=\"CodPais-585\"> </a></td><td>Palau</td></tr><tr><td style=\"white-space:nowrap\">586<a name=\"CodPais-586\"> </a></td><td>Pakistan</td></tr><tr><td style=\"white-space:nowrap\">591<a name=\"CodPais-591\"> </a></td><td>Panama</td></tr><tr><td style=\"white-space:nowrap\">598<a name=\"CodPais-598\"> </a></td><td>Papua New Guinea</td></tr><tr><td style=\"white-space:nowrap\">600<a name=\"CodPais-600\"> </a></td><td>Paraguay</td></tr><tr><td style=\"white-space:nowrap\">604<a name=\"CodPais-604\"> </a></td><td>Peru</td></tr><tr><td style=\"white-space:nowrap\">608<a name=\"CodPais-608\"> </a></td><td>Philippines</td></tr><tr><td style=\"white-space:nowrap\">612<a name=\"CodPais-612\"> </a></td><td>Pitcairn</td></tr><tr><td style=\"white-space:nowrap\">616<a name=\"CodPais-616\"> </a></td><td>Poland</td></tr><tr><td style=\"white-space:nowrap\">620<a name=\"CodPais-620\"> </a></td><td>Portugal</td></tr><tr><td style=\"white-space:nowrap\">624<a name=\"CodPais-624\"> </a></td><td>Guinea-Bissau</td></tr><tr><td style=\"white-space:nowrap\">626<a name=\"CodPais-626\"> </a></td><td>Timor-Leste</td></tr><tr><td style=\"white-space:nowrap\">630<a name=\"CodPais-630\"> </a></td><td>Puerto Rico</td></tr><tr><td style=\"white-space:nowrap\">634<a name=\"CodPais-634\"> </a></td><td>Qatar</td></tr><tr><td style=\"white-space:nowrap\">638<a name=\"CodPais-638\"> </a></td><td>Riunion</td></tr><tr><td style=\"white-space:nowrap\">642<a name=\"CodPais-642\"> </a></td><td>Romania</td></tr><tr><td style=\"white-space:nowrap\">643<a name=\"CodPais-643\"> </a></td><td>Russian Federation</td></tr><tr><td style=\"white-space:nowrap\">646<a name=\"CodPais-646\"> </a></td><td>Rwanda</td></tr><tr><td style=\"white-space:nowrap\">652<a name=\"CodPais-652\"> </a></td><td>Saint Barthilemy</td></tr><tr><td style=\"white-space:nowrap\">654<a name=\"CodPais-654\"> </a></td><td>Saint Helena, Ascension and Tristan da Cunha</td></tr><tr><td style=\"white-space:nowrap\">659<a name=\"CodPais-659\"> </a></td><td>Saint Kitts and Nevis</td></tr><tr><td style=\"white-space:nowrap\">660<a name=\"CodPais-660\"> </a></td><td>Anguilla</td></tr><tr><td style=\"white-space:nowrap\">662<a name=\"CodPais-662\"> </a></td><td>Saint Lucia</td></tr><tr><td style=\"white-space:nowrap\">663<a name=\"CodPais-663\"> </a></td><td>Saint Martin (French part)</td></tr><tr><td style=\"white-space:nowrap\">666<a name=\"CodPais-666\"> </a></td><td>Saint Pierre and Miquelon</td></tr><tr><td style=\"white-space:nowrap\">670<a name=\"CodPais-670\"> </a></td><td>Saint Vincent and the Grenadines</td></tr><tr><td style=\"white-space:nowrap\">674<a name=\"CodPais-674\"> </a></td><td>San Marino</td></tr><tr><td style=\"white-space:nowrap\">678<a name=\"CodPais-678\"> </a></td><td>Sao Tome and Principe</td></tr><tr><td style=\"white-space:nowrap\">682<a name=\"CodPais-682\"> </a></td><td>Saudi Arabia</td></tr><tr><td style=\"white-space:nowrap\">686<a name=\"CodPais-686\"> </a></td><td>Senegal</td></tr><tr><td style=\"white-space:nowrap\">688<a name=\"CodPais-688\"> </a></td><td>Serbia</td></tr><tr><td style=\"white-space:nowrap\">690<a name=\"CodPais-690\"> </a></td><td>Seychelles</td></tr><tr><td style=\"white-space:nowrap\">694<a name=\"CodPais-694\"> </a></td><td>Sierra Leone</td></tr><tr><td style=\"white-space:nowrap\">702<a name=\"CodPais-702\"> </a></td><td>Singapore</td></tr><tr><td style=\"white-space:nowrap\">703<a name=\"CodPais-703\"> </a></td><td>Slovakia</td></tr><tr><td style=\"white-space:nowrap\">704<a name=\"CodPais-704\"> </a></td><td>Viet Nam</td></tr><tr><td style=\"white-space:nowrap\">705<a name=\"CodPais-705\"> </a></td><td>Slovenia</td></tr><tr><td style=\"white-space:nowrap\">706<a name=\"CodPais-706\"> </a></td><td>Somalia</td></tr><tr><td style=\"white-space:nowrap\">710<a name=\"CodPais-710\"> </a></td><td>South Africa</td></tr><tr><td style=\"white-space:nowrap\">716<a name=\"CodPais-716\"> </a></td><td>Zimbabwe</td></tr><tr><td style=\"white-space:nowrap\">724<a name=\"CodPais-724\"> </a></td><td>Spain</td></tr><tr><td style=\"white-space:nowrap\">728<a name=\"CodPais-728\"> </a></td><td>South Sudan</td></tr><tr><td style=\"white-space:nowrap\">729<a name=\"CodPais-729\"> </a></td><td>Sudan</td></tr><tr><td style=\"white-space:nowrap\">732<a name=\"CodPais-732\"> </a></td><td>Western Sahara</td></tr><tr><td style=\"white-space:nowrap\">740<a name=\"CodPais-740\"> </a></td><td>Suriname</td></tr><tr><td style=\"white-space:nowrap\">744<a name=\"CodPais-744\"> </a></td><td>Svalbard and Jan Mayen</td></tr><tr><td style=\"white-space:nowrap\">748<a name=\"CodPais-748\"> </a></td><td>Swaziland</td></tr><tr><td style=\"white-space:nowrap\">752<a name=\"CodPais-752\"> </a></td><td>Sweden</td></tr><tr><td style=\"white-space:nowrap\">756<a name=\"CodPais-756\"> </a></td><td>Switzerland</td></tr><tr><td style=\"white-space:nowrap\">760<a name=\"CodPais-760\"> </a></td><td>Syrian Arab Republic</td></tr><tr><td style=\"white-space:nowrap\">762<a name=\"CodPais-762\"> </a></td><td>Tajikistan</td></tr><tr><td style=\"white-space:nowrap\">764<a name=\"CodPais-764\"> </a></td><td>Thailand</td></tr><tr><td style=\"white-space:nowrap\">768<a name=\"CodPais-768\"> </a></td><td>Togo</td></tr><tr><td style=\"white-space:nowrap\">772<a name=\"CodPais-772\"> </a></td><td>Tokelau</td></tr><tr><td style=\"white-space:nowrap\">776<a name=\"CodPais-776\"> </a></td><td>Tonga</td></tr><tr><td style=\"white-space:nowrap\">780<a name=\"CodPais-780\"> </a></td><td>Trinidad and Tobago</td></tr><tr><td style=\"white-space:nowrap\">784<a name=\"CodPais-784\"> </a></td><td>United Arab Emirates</td></tr><tr><td style=\"white-space:nowrap\">788<a name=\"CodPais-788\"> </a></td><td>Tunisia</td></tr><tr><td style=\"white-space:nowrap\">792<a name=\"CodPais-792\"> </a></td><td>Turkey</td></tr><tr><td style=\"white-space:nowrap\">795<a name=\"CodPais-795\"> </a></td><td>Turkmenistan</td></tr><tr><td style=\"white-space:nowrap\">796<a name=\"CodPais-796\"> </a></td><td>Turks and Caicos Islands</td></tr><tr><td style=\"white-space:nowrap\">798<a name=\"CodPais-798\"> </a></td><td>Tuvalu</td></tr><tr><td style=\"white-space:nowrap\">800<a name=\"CodPais-800\"> </a></td><td>Uganda</td></tr><tr><td style=\"white-space:nowrap\">804<a name=\"CodPais-804\"> </a></td><td>Ukraine</td></tr><tr><td style=\"white-space:nowrap\">807<a name=\"CodPais-807\"> </a></td><td>Macedonia, the former Yugoslav Republic of</td></tr><tr><td style=\"white-space:nowrap\">818<a name=\"CodPais-818\"> </a></td><td>Egypt</td></tr><tr><td style=\"white-space:nowrap\">826<a name=\"CodPais-826\"> </a></td><td>United Kingdom</td></tr><tr><td style=\"white-space:nowrap\">831<a name=\"CodPais-831\"> </a></td><td>Guernsey</td></tr><tr><td style=\"white-space:nowrap\">832<a name=\"CodPais-832\"> </a></td><td>Jersey</td></tr><tr><td style=\"white-space:nowrap\">833<a name=\"CodPais-833\"> </a></td><td>Isle of Man</td></tr><tr><td style=\"white-space:nowrap\">834<a name=\"CodPais-834\"> </a></td><td>Tanzania, United Republic of</td></tr><tr><td style=\"white-space:nowrap\">840<a name=\"CodPais-840\"> </a></td><td>United States of America</td></tr><tr><td style=\"white-space:nowrap\">850<a name=\"CodPais-850\"> </a></td><td>Virgin Islands, U.S.</td></tr><tr><td style=\"white-space:nowrap\">854<a name=\"CodPais-854\"> </a></td><td>Burkina Faso</td></tr><tr><td style=\"white-space:nowrap\">858<a name=\"CodPais-858\"> </a></td><td>Uruguay</td></tr><tr><td style=\"white-space:nowrap\">860<a name=\"CodPais-860\"> </a></td><td>Uzbekistan</td></tr><tr><td style=\"white-space:nowrap\">862<a name=\"CodPais-862\"> </a></td><td>Venezuela, Bolivarian Republic of</td></tr><tr><td style=\"white-space:nowrap\">876<a name=\"CodPais-876\"> </a></td><td>Wallis and Futuna</td></tr><tr><td style=\"white-space:nowrap\">882<a name=\"CodPais-882\"> </a></td><td>Samoa</td></tr><tr><td style=\"white-space:nowrap\">887<a name=\"CodPais-887\"> </a></td><td>Yemen</td></tr><tr><td style=\"white-space:nowrap\">894<a name=\"CodPais-894\"> </a></td><td>Zambia</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.8.6"] ; # 
+  fhir:name [ fhir:v "CSCodPaises"] ; # 
+  fhir:title [ fhir:v "Códigos de Países"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-01-18T00:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Chile"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Chile" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7chile.cl" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "chair@hl7chile.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codigos definidos para la identificación de países segun norma ISO3166-N"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "All content on ISO Online is copyright protected. The copyright is owned by ISO. Any use of the content, including copying of it in whole or in part, for example to another Internet site, is prohibited and would require written permission from ISO."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "249"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "004" ] ;
+     fhir:display [ fhir:v "Afghanistan" ]
+  ] [
+     fhir:code [ fhir:v "008" ] ;
+     fhir:display [ fhir:v "Albania" ]
+  ] [
+     fhir:code [ fhir:v "010" ] ;
+     fhir:display [ fhir:v "Antarctica" ]
+  ] [
+     fhir:code [ fhir:v "012" ] ;
+     fhir:display [ fhir:v "Algeria" ]
+  ] [
+     fhir:code [ fhir:v "016" ] ;
+     fhir:display [ fhir:v "American Samoa" ]
+  ] [
+     fhir:code [ fhir:v "020" ] ;
+     fhir:display [ fhir:v "Andorra" ]
+  ] [
+     fhir:code [ fhir:v "024" ] ;
+     fhir:display [ fhir:v "Angola" ]
+  ] [
+     fhir:code [ fhir:v "028" ] ;
+     fhir:display [ fhir:v "Antigua and Barbuda" ]
+  ] [
+     fhir:code [ fhir:v "031" ] ;
+     fhir:display [ fhir:v "Azerbaijan" ]
+  ] [
+     fhir:code [ fhir:v "032" ] ;
+     fhir:display [ fhir:v "Argentina" ]
+  ] [
+     fhir:code [ fhir:v "036" ] ;
+     fhir:display [ fhir:v "Australia" ]
+  ] [
+     fhir:code [ fhir:v "040" ] ;
+     fhir:display [ fhir:v "Austria" ]
+  ] [
+     fhir:code [ fhir:v "044" ] ;
+     fhir:display [ fhir:v "Bahamas" ]
+  ] [
+     fhir:code [ fhir:v "048" ] ;
+     fhir:display [ fhir:v "Bahrain" ]
+  ] [
+     fhir:code [ fhir:v "050" ] ;
+     fhir:display [ fhir:v "Bangladesh" ]
+  ] [
+     fhir:code [ fhir:v "051" ] ;
+     fhir:display [ fhir:v "Armenia" ]
+  ] [
+     fhir:code [ fhir:v "052" ] ;
+     fhir:display [ fhir:v "Barbados" ]
+  ] [
+     fhir:code [ fhir:v "056" ] ;
+     fhir:display [ fhir:v "Belgium" ]
+  ] [
+     fhir:code [ fhir:v "060" ] ;
+     fhir:display [ fhir:v "Bermuda" ]
+  ] [
+     fhir:code [ fhir:v "064" ] ;
+     fhir:display [ fhir:v "Bhutan" ]
+  ] [
+     fhir:code [ fhir:v "068" ] ;
+     fhir:display [ fhir:v "Bolivia, Plurinational State of" ]
+  ] [
+     fhir:code [ fhir:v "070" ] ;
+     fhir:display [ fhir:v "Bosnia and Herzegovina" ]
+  ] [
+     fhir:code [ fhir:v "072" ] ;
+     fhir:display [ fhir:v "Botswana" ]
+  ] [
+     fhir:code [ fhir:v "074" ] ;
+     fhir:display [ fhir:v "Bouvet Island" ]
+  ] [
+     fhir:code [ fhir:v "076" ] ;
+     fhir:display [ fhir:v "Brazil" ]
+  ] [
+     fhir:code [ fhir:v "084" ] ;
+     fhir:display [ fhir:v "Belize" ]
+  ] [
+     fhir:code [ fhir:v "086" ] ;
+     fhir:display [ fhir:v "British Indian Ocean Territory" ]
+  ] [
+     fhir:code [ fhir:v "090" ] ;
+     fhir:display [ fhir:v "Solomon Islands" ]
+  ] [
+     fhir:code [ fhir:v "092" ] ;
+     fhir:display [ fhir:v "Virgin Islands, British" ]
+  ] [
+     fhir:code [ fhir:v "096" ] ;
+     fhir:display [ fhir:v "Brunei Darussalam" ]
+  ] [
+     fhir:code [ fhir:v "100" ] ;
+     fhir:display [ fhir:v "Bulgaria" ]
+  ] [
+     fhir:code [ fhir:v "104" ] ;
+     fhir:display [ fhir:v "Myanmar" ]
+  ] [
+     fhir:code [ fhir:v "108" ] ;
+     fhir:display [ fhir:v "Burundi" ]
+  ] [
+     fhir:code [ fhir:v "112" ] ;
+     fhir:display [ fhir:v "Belarus" ]
+  ] [
+     fhir:code [ fhir:v "116" ] ;
+     fhir:display [ fhir:v "Cambodia" ]
+  ] [
+     fhir:code [ fhir:v "120" ] ;
+     fhir:display [ fhir:v "Cameroon" ]
+  ] [
+     fhir:code [ fhir:v "124" ] ;
+     fhir:display [ fhir:v "Canada" ]
+  ] [
+     fhir:code [ fhir:v "132" ] ;
+     fhir:display [ fhir:v "Cabo Verde" ]
+  ] [
+     fhir:code [ fhir:v "136" ] ;
+     fhir:display [ fhir:v "Cayman Islands" ]
+  ] [
+     fhir:code [ fhir:v "140" ] ;
+     fhir:display [ fhir:v "Central African Republic" ]
+  ] [
+     fhir:code [ fhir:v "144" ] ;
+     fhir:display [ fhir:v "Sri Lanka" ]
+  ] [
+     fhir:code [ fhir:v "148" ] ;
+     fhir:display [ fhir:v "Chad" ]
+  ] [
+     fhir:code [ fhir:v "152" ] ;
+     fhir:display [ fhir:v "Chile" ]
+  ] [
+     fhir:code [ fhir:v "156" ] ;
+     fhir:display [ fhir:v "China" ]
+  ] [
+     fhir:code [ fhir:v "158" ] ;
+     fhir:display [ fhir:v "Taiwan, Province of China" ]
+  ] [
+     fhir:code [ fhir:v "162" ] ;
+     fhir:display [ fhir:v "Christmas Island" ]
+  ] [
+     fhir:code [ fhir:v "166" ] ;
+     fhir:display [ fhir:v "Cocos (Keeling) Islands" ]
+  ] [
+     fhir:code [ fhir:v "170" ] ;
+     fhir:display [ fhir:v "Colombia" ]
+  ] [
+     fhir:code [ fhir:v "174" ] ;
+     fhir:display [ fhir:v "Comoros" ]
+  ] [
+     fhir:code [ fhir:v "175" ] ;
+     fhir:display [ fhir:v "Mayotte" ]
+  ] [
+     fhir:code [ fhir:v "178" ] ;
+     fhir:display [ fhir:v "Congo" ]
+  ] [
+     fhir:code [ fhir:v "180" ] ;
+     fhir:display [ fhir:v "Congo, the Democratic Republic of the" ]
+  ] [
+     fhir:code [ fhir:v "184" ] ;
+     fhir:display [ fhir:v "Cook Islands" ]
+  ] [
+     fhir:code [ fhir:v "188" ] ;
+     fhir:display [ fhir:v "Costa Rica" ]
+  ] [
+     fhir:code [ fhir:v "191" ] ;
+     fhir:display [ fhir:v "Croatia" ]
+  ] [
+     fhir:code [ fhir:v "192" ] ;
+     fhir:display [ fhir:v "Cuba" ]
+  ] [
+     fhir:code [ fhir:v "196" ] ;
+     fhir:display [ fhir:v "Cyprus" ]
+  ] [
+     fhir:code [ fhir:v "203" ] ;
+     fhir:display [ fhir:v "Czechia" ]
+  ] [
+     fhir:code [ fhir:v "204" ] ;
+     fhir:display [ fhir:v "Benin" ]
+  ] [
+     fhir:code [ fhir:v "208" ] ;
+     fhir:display [ fhir:v "Denmark" ]
+  ] [
+     fhir:code [ fhir:v "212" ] ;
+     fhir:display [ fhir:v "Dominica" ]
+  ] [
+     fhir:code [ fhir:v "214" ] ;
+     fhir:display [ fhir:v "Dominican Republic" ]
+  ] [
+     fhir:code [ fhir:v "218" ] ;
+     fhir:display [ fhir:v "Ecuador" ]
+  ] [
+     fhir:code [ fhir:v "222" ] ;
+     fhir:display [ fhir:v "El Salvador" ]
+  ] [
+     fhir:code [ fhir:v "226" ] ;
+     fhir:display [ fhir:v "Equatorial Guinea" ]
+  ] [
+     fhir:code [ fhir:v "231" ] ;
+     fhir:display [ fhir:v "Ethiopia" ]
+  ] [
+     fhir:code [ fhir:v "232" ] ;
+     fhir:display [ fhir:v "Eritrea" ]
+  ] [
+     fhir:code [ fhir:v "233" ] ;
+     fhir:display [ fhir:v "Estonia" ]
+  ] [
+     fhir:code [ fhir:v "234" ] ;
+     fhir:display [ fhir:v "Faroe Islands" ]
+  ] [
+     fhir:code [ fhir:v "238" ] ;
+     fhir:display [ fhir:v "Falkland Islands (Malvinas)" ]
+  ] [
+     fhir:code [ fhir:v "239" ] ;
+     fhir:display [ fhir:v "South Georgia and the South Sandwich Islands" ]
+  ] [
+     fhir:code [ fhir:v "242" ] ;
+     fhir:display [ fhir:v "Fiji" ]
+  ] [
+     fhir:code [ fhir:v "246" ] ;
+     fhir:display [ fhir:v "Finland" ]
+  ] [
+     fhir:code [ fhir:v "248" ] ;
+     fhir:display [ fhir:v "Eland Islands" ]
+  ] [
+     fhir:code [ fhir:v "250" ] ;
+     fhir:display [ fhir:v "France" ]
+  ] [
+     fhir:code [ fhir:v "254" ] ;
+     fhir:display [ fhir:v "French Guiana" ]
+  ] [
+     fhir:code [ fhir:v "258" ] ;
+     fhir:display [ fhir:v "French Polynesia" ]
+  ] [
+     fhir:code [ fhir:v "260" ] ;
+     fhir:display [ fhir:v "French Southern Territories" ]
+  ] [
+     fhir:code [ fhir:v "262" ] ;
+     fhir:display [ fhir:v "Djibouti" ]
+  ] [
+     fhir:code [ fhir:v "266" ] ;
+     fhir:display [ fhir:v "Gabon" ]
+  ] [
+     fhir:code [ fhir:v "268" ] ;
+     fhir:display [ fhir:v "Georgia" ]
+  ] [
+     fhir:code [ fhir:v "270" ] ;
+     fhir:display [ fhir:v "Gambia" ]
+  ] [
+     fhir:code [ fhir:v "275" ] ;
+     fhir:display [ fhir:v "Palestine, State of" ]
+  ] [
+     fhir:code [ fhir:v "276" ] ;
+     fhir:display [ fhir:v "Germany" ]
+  ] [
+     fhir:code [ fhir:v "288" ] ;
+     fhir:display [ fhir:v "Ghana" ]
+  ] [
+     fhir:code [ fhir:v "292" ] ;
+     fhir:display [ fhir:v "Gibraltar" ]
+  ] [
+     fhir:code [ fhir:v "296" ] ;
+     fhir:display [ fhir:v "Kiribati" ]
+  ] [
+     fhir:code [ fhir:v "300" ] ;
+     fhir:display [ fhir:v "Greece" ]
+  ] [
+     fhir:code [ fhir:v "304" ] ;
+     fhir:display [ fhir:v "Greenland" ]
+  ] [
+     fhir:code [ fhir:v "308" ] ;
+     fhir:display [ fhir:v "Grenada" ]
+  ] [
+     fhir:code [ fhir:v "312" ] ;
+     fhir:display [ fhir:v "Guadeloupe" ]
+  ] [
+     fhir:code [ fhir:v "316" ] ;
+     fhir:display [ fhir:v "Guam" ]
+  ] [
+     fhir:code [ fhir:v "320" ] ;
+     fhir:display [ fhir:v "Guatemala" ]
+  ] [
+     fhir:code [ fhir:v "324" ] ;
+     fhir:display [ fhir:v "Guinea" ]
+  ] [
+     fhir:code [ fhir:v "328" ] ;
+     fhir:display [ fhir:v "Guyana" ]
+  ] [
+     fhir:code [ fhir:v "332" ] ;
+     fhir:display [ fhir:v "Haiti" ]
+  ] [
+     fhir:code [ fhir:v "334" ] ;
+     fhir:display [ fhir:v "Heard Island and McDonald Islands" ]
+  ] [
+     fhir:code [ fhir:v "336" ] ;
+     fhir:display [ fhir:v "Holy See" ]
+  ] [
+     fhir:code [ fhir:v "340" ] ;
+     fhir:display [ fhir:v "Honduras" ]
+  ] [
+     fhir:code [ fhir:v "344" ] ;
+     fhir:display [ fhir:v "Hong Kong" ]
+  ] [
+     fhir:code [ fhir:v "348" ] ;
+     fhir:display [ fhir:v "Hungary" ]
+  ] [
+     fhir:code [ fhir:v "352" ] ;
+     fhir:display [ fhir:v "Iceland" ]
+  ] [
+     fhir:code [ fhir:v "356" ] ;
+     fhir:display [ fhir:v "India" ]
+  ] [
+     fhir:code [ fhir:v "360" ] ;
+     fhir:display [ fhir:v "Indonesia" ]
+  ] [
+     fhir:code [ fhir:v "364" ] ;
+     fhir:display [ fhir:v "Iran, Islamic Republic of" ]
+  ] [
+     fhir:code [ fhir:v "368" ] ;
+     fhir:display [ fhir:v "Iraq" ]
+  ] [
+     fhir:code [ fhir:v "372" ] ;
+     fhir:display [ fhir:v "Ireland" ]
+  ] [
+     fhir:code [ fhir:v "376" ] ;
+     fhir:display [ fhir:v "Israel" ]
+  ] [
+     fhir:code [ fhir:v "380" ] ;
+     fhir:display [ fhir:v "Italy" ]
+  ] [
+     fhir:code [ fhir:v "384" ] ;
+     fhir:display [ fhir:v "Ctte d'Ivoire" ]
+  ] [
+     fhir:code [ fhir:v "388" ] ;
+     fhir:display [ fhir:v "Jamaica" ]
+  ] [
+     fhir:code [ fhir:v "392" ] ;
+     fhir:display [ fhir:v "Japan" ]
+  ] [
+     fhir:code [ fhir:v "398" ] ;
+     fhir:display [ fhir:v "Kazakhstan" ]
+  ] [
+     fhir:code [ fhir:v "400" ] ;
+     fhir:display [ fhir:v "Jordan" ]
+  ] [
+     fhir:code [ fhir:v "404" ] ;
+     fhir:display [ fhir:v "Kenya" ]
+  ] [
+     fhir:code [ fhir:v "408" ] ;
+     fhir:display [ fhir:v "Korea, Democratic People's Republic of" ]
+  ] [
+     fhir:code [ fhir:v "410" ] ;
+     fhir:display [ fhir:v "Korea, Republic of" ]
+  ] [
+     fhir:code [ fhir:v "414" ] ;
+     fhir:display [ fhir:v "Kuwait" ]
+  ] [
+     fhir:code [ fhir:v "417" ] ;
+     fhir:display [ fhir:v "Kyrgyzstan" ]
+  ] [
+     fhir:code [ fhir:v "418" ] ;
+     fhir:display [ fhir:v "Lao People's Democratic Republic" ]
+  ] [
+     fhir:code [ fhir:v "422" ] ;
+     fhir:display [ fhir:v "Lebanon" ]
+  ] [
+     fhir:code [ fhir:v "426" ] ;
+     fhir:display [ fhir:v "Lesotho" ]
+  ] [
+     fhir:code [ fhir:v "428" ] ;
+     fhir:display [ fhir:v "Latvia" ]
+  ] [
+     fhir:code [ fhir:v "430" ] ;
+     fhir:display [ fhir:v "Liberia" ]
+  ] [
+     fhir:code [ fhir:v "434" ] ;
+     fhir:display [ fhir:v "Libya" ]
+  ] [
+     fhir:code [ fhir:v "438" ] ;
+     fhir:display [ fhir:v "Liechtenstein" ]
+  ] [
+     fhir:code [ fhir:v "440" ] ;
+     fhir:display [ fhir:v "Lithuania" ]
+  ] [
+     fhir:code [ fhir:v "442" ] ;
+     fhir:display [ fhir:v "Luxembourg" ]
+  ] [
+     fhir:code [ fhir:v "446" ] ;
+     fhir:display [ fhir:v "Macao" ]
+  ] [
+     fhir:code [ fhir:v "450" ] ;
+     fhir:display [ fhir:v "Madagascar" ]
+  ] [
+     fhir:code [ fhir:v "454" ] ;
+     fhir:display [ fhir:v "Malawi" ]
+  ] [
+     fhir:code [ fhir:v "458" ] ;
+     fhir:display [ fhir:v "Malaysia" ]
+  ] [
+     fhir:code [ fhir:v "462" ] ;
+     fhir:display [ fhir:v "Maldives" ]
+  ] [
+     fhir:code [ fhir:v "466" ] ;
+     fhir:display [ fhir:v "Mali" ]
+  ] [
+     fhir:code [ fhir:v "470" ] ;
+     fhir:display [ fhir:v "Malta" ]
+  ] [
+     fhir:code [ fhir:v "474" ] ;
+     fhir:display [ fhir:v "Martinique" ]
+  ] [
+     fhir:code [ fhir:v "478" ] ;
+     fhir:display [ fhir:v "Mauritania" ]
+  ] [
+     fhir:code [ fhir:v "480" ] ;
+     fhir:display [ fhir:v "Mauritius" ]
+  ] [
+     fhir:code [ fhir:v "484" ] ;
+     fhir:display [ fhir:v "Mexico" ]
+  ] [
+     fhir:code [ fhir:v "492" ] ;
+     fhir:display [ fhir:v "Monaco" ]
+  ] [
+     fhir:code [ fhir:v "496" ] ;
+     fhir:display [ fhir:v "Mongolia" ]
+  ] [
+     fhir:code [ fhir:v "498" ] ;
+     fhir:display [ fhir:v "Moldova, Republic of" ]
+  ] [
+     fhir:code [ fhir:v "499" ] ;
+     fhir:display [ fhir:v "Montenegro" ]
+  ] [
+     fhir:code [ fhir:v "500" ] ;
+     fhir:display [ fhir:v "Montserrat" ]
+  ] [
+     fhir:code [ fhir:v "504" ] ;
+     fhir:display [ fhir:v "Morocco" ]
+  ] [
+     fhir:code [ fhir:v "508" ] ;
+     fhir:display [ fhir:v "Mozambique" ]
+  ] [
+     fhir:code [ fhir:v "512" ] ;
+     fhir:display [ fhir:v "Oman" ]
+  ] [
+     fhir:code [ fhir:v "516" ] ;
+     fhir:display [ fhir:v "Namibia" ]
+  ] [
+     fhir:code [ fhir:v "520" ] ;
+     fhir:display [ fhir:v "Nauru" ]
+  ] [
+     fhir:code [ fhir:v "524" ] ;
+     fhir:display [ fhir:v "Nepal" ]
+  ] [
+     fhir:code [ fhir:v "528" ] ;
+     fhir:display [ fhir:v "Netherlands" ]
+  ] [
+     fhir:code [ fhir:v "531" ] ;
+     fhir:display [ fhir:v "Curagao" ]
+  ] [
+     fhir:code [ fhir:v "533" ] ;
+     fhir:display [ fhir:v "Aruba" ]
+  ] [
+     fhir:code [ fhir:v "534" ] ;
+     fhir:display [ fhir:v "Sint Maarten (Dutch part)" ]
+  ] [
+     fhir:code [ fhir:v "535" ] ;
+     fhir:display [ fhir:v "Bonaire, Sint Eustatius and Saba" ]
+  ] [
+     fhir:code [ fhir:v "540" ] ;
+     fhir:display [ fhir:v "New Caledonia" ]
+  ] [
+     fhir:code [ fhir:v "548" ] ;
+     fhir:display [ fhir:v "Vanuatu" ]
+  ] [
+     fhir:code [ fhir:v "554" ] ;
+     fhir:display [ fhir:v "New Zealand" ]
+  ] [
+     fhir:code [ fhir:v "558" ] ;
+     fhir:display [ fhir:v "Nicaragua" ]
+  ] [
+     fhir:code [ fhir:v "562" ] ;
+     fhir:display [ fhir:v "Niger" ]
+  ] [
+     fhir:code [ fhir:v "566" ] ;
+     fhir:display [ fhir:v "Nigeria" ]
+  ] [
+     fhir:code [ fhir:v "570" ] ;
+     fhir:display [ fhir:v "Niue" ]
+  ] [
+     fhir:code [ fhir:v "574" ] ;
+     fhir:display [ fhir:v "Norfolk Island" ]
+  ] [
+     fhir:code [ fhir:v "578" ] ;
+     fhir:display [ fhir:v "Norway" ]
+  ] [
+     fhir:code [ fhir:v "580" ] ;
+     fhir:display [ fhir:v "Northern Mariana Islands" ]
+  ] [
+     fhir:code [ fhir:v "581" ] ;
+     fhir:display [ fhir:v "United States Minor Outlying Islands" ]
+  ] [
+     fhir:code [ fhir:v "583" ] ;
+     fhir:display [ fhir:v "Micronesia, Federated States of" ]
+  ] [
+     fhir:code [ fhir:v "584" ] ;
+     fhir:display [ fhir:v "Marshall Islands" ]
+  ] [
+     fhir:code [ fhir:v "585" ] ;
+     fhir:display [ fhir:v "Palau" ]
+  ] [
+     fhir:code [ fhir:v "586" ] ;
+     fhir:display [ fhir:v "Pakistan" ]
+  ] [
+     fhir:code [ fhir:v "591" ] ;
+     fhir:display [ fhir:v "Panama" ]
+  ] [
+     fhir:code [ fhir:v "598" ] ;
+     fhir:display [ fhir:v "Papua New Guinea" ]
+  ] [
+     fhir:code [ fhir:v "600" ] ;
+     fhir:display [ fhir:v "Paraguay" ]
+  ] [
+     fhir:code [ fhir:v "604" ] ;
+     fhir:display [ fhir:v "Peru" ]
+  ] [
+     fhir:code [ fhir:v "608" ] ;
+     fhir:display [ fhir:v "Philippines" ]
+  ] [
+     fhir:code [ fhir:v "612" ] ;
+     fhir:display [ fhir:v "Pitcairn" ]
+  ] [
+     fhir:code [ fhir:v "616" ] ;
+     fhir:display [ fhir:v "Poland" ]
+  ] [
+     fhir:code [ fhir:v "620" ] ;
+     fhir:display [ fhir:v "Portugal" ]
+  ] [
+     fhir:code [ fhir:v "624" ] ;
+     fhir:display [ fhir:v "Guinea-Bissau" ]
+  ] [
+     fhir:code [ fhir:v "626" ] ;
+     fhir:display [ fhir:v "Timor-Leste" ]
+  ] [
+     fhir:code [ fhir:v "630" ] ;
+     fhir:display [ fhir:v "Puerto Rico" ]
+  ] [
+     fhir:code [ fhir:v "634" ] ;
+     fhir:display [ fhir:v "Qatar" ]
+  ] [
+     fhir:code [ fhir:v "638" ] ;
+     fhir:display [ fhir:v "Riunion" ]
+  ] [
+     fhir:code [ fhir:v "642" ] ;
+     fhir:display [ fhir:v "Romania" ]
+  ] [
+     fhir:code [ fhir:v "643" ] ;
+     fhir:display [ fhir:v "Russian Federation" ]
+  ] [
+     fhir:code [ fhir:v "646" ] ;
+     fhir:display [ fhir:v "Rwanda" ]
+  ] [
+     fhir:code [ fhir:v "652" ] ;
+     fhir:display [ fhir:v "Saint Barthilemy" ]
+  ] [
+     fhir:code [ fhir:v "654" ] ;
+     fhir:display [ fhir:v "Saint Helena, Ascension and Tristan da Cunha" ]
+  ] [
+     fhir:code [ fhir:v "659" ] ;
+     fhir:display [ fhir:v "Saint Kitts and Nevis" ]
+  ] [
+     fhir:code [ fhir:v "660" ] ;
+     fhir:display [ fhir:v "Anguilla" ]
+  ] [
+     fhir:code [ fhir:v "662" ] ;
+     fhir:display [ fhir:v "Saint Lucia" ]
+  ] [
+     fhir:code [ fhir:v "663" ] ;
+     fhir:display [ fhir:v "Saint Martin (French part)" ]
+  ] [
+     fhir:code [ fhir:v "666" ] ;
+     fhir:display [ fhir:v "Saint Pierre and Miquelon" ]
+  ] [
+     fhir:code [ fhir:v "670" ] ;
+     fhir:display [ fhir:v "Saint Vincent and the Grenadines" ]
+  ] [
+     fhir:code [ fhir:v "674" ] ;
+     fhir:display [ fhir:v "San Marino" ]
+  ] [
+     fhir:code [ fhir:v "678" ] ;
+     fhir:display [ fhir:v "Sao Tome and Principe" ]
+  ] [
+     fhir:code [ fhir:v "682" ] ;
+     fhir:display [ fhir:v "Saudi Arabia" ]
+  ] [
+     fhir:code [ fhir:v "686" ] ;
+     fhir:display [ fhir:v "Senegal" ]
+  ] [
+     fhir:code [ fhir:v "688" ] ;
+     fhir:display [ fhir:v "Serbia" ]
+  ] [
+     fhir:code [ fhir:v "690" ] ;
+     fhir:display [ fhir:v "Seychelles" ]
+  ] [
+     fhir:code [ fhir:v "694" ] ;
+     fhir:display [ fhir:v "Sierra Leone" ]
+  ] [
+     fhir:code [ fhir:v "702" ] ;
+     fhir:display [ fhir:v "Singapore" ]
+  ] [
+     fhir:code [ fhir:v "703" ] ;
+     fhir:display [ fhir:v "Slovakia" ]
+  ] [
+     fhir:code [ fhir:v "704" ] ;
+     fhir:display [ fhir:v "Viet Nam" ]
+  ] [
+     fhir:code [ fhir:v "705" ] ;
+     fhir:display [ fhir:v "Slovenia" ]
+  ] [
+     fhir:code [ fhir:v "706" ] ;
+     fhir:display [ fhir:v "Somalia" ]
+  ] [
+     fhir:code [ fhir:v "710" ] ;
+     fhir:display [ fhir:v "South Africa" ]
+  ] [
+     fhir:code [ fhir:v "716" ] ;
+     fhir:display [ fhir:v "Zimbabwe" ]
+  ] [
+     fhir:code [ fhir:v "724" ] ;
+     fhir:display [ fhir:v "Spain" ]
+  ] [
+     fhir:code [ fhir:v "728" ] ;
+     fhir:display [ fhir:v "South Sudan" ]
+  ] [
+     fhir:code [ fhir:v "729" ] ;
+     fhir:display [ fhir:v "Sudan" ]
+  ] [
+     fhir:code [ fhir:v "732" ] ;
+     fhir:display [ fhir:v "Western Sahara" ]
+  ] [
+     fhir:code [ fhir:v "740" ] ;
+     fhir:display [ fhir:v "Suriname" ]
+  ] [
+     fhir:code [ fhir:v "744" ] ;
+     fhir:display [ fhir:v "Svalbard and Jan Mayen" ]
+  ] [
+     fhir:code [ fhir:v "748" ] ;
+     fhir:display [ fhir:v "Swaziland" ]
+  ] [
+     fhir:code [ fhir:v "752" ] ;
+     fhir:display [ fhir:v "Sweden" ]
+  ] [
+     fhir:code [ fhir:v "756" ] ;
+     fhir:display [ fhir:v "Switzerland" ]
+  ] [
+     fhir:code [ fhir:v "760" ] ;
+     fhir:display [ fhir:v "Syrian Arab Republic" ]
+  ] [
+     fhir:code [ fhir:v "762" ] ;
+     fhir:display [ fhir:v "Tajikistan" ]
+  ] [
+     fhir:code [ fhir:v "764" ] ;
+     fhir:display [ fhir:v "Thailand" ]
+  ] [
+     fhir:code [ fhir:v "768" ] ;
+     fhir:display [ fhir:v "Togo" ]
+  ] [
+     fhir:code [ fhir:v "772" ] ;
+     fhir:display [ fhir:v "Tokelau" ]
+  ] [
+     fhir:code [ fhir:v "776" ] ;
+     fhir:display [ fhir:v "Tonga" ]
+  ] [
+     fhir:code [ fhir:v "780" ] ;
+     fhir:display [ fhir:v "Trinidad and Tobago" ]
+  ] [
+     fhir:code [ fhir:v "784" ] ;
+     fhir:display [ fhir:v "United Arab Emirates" ]
+  ] [
+     fhir:code [ fhir:v "788" ] ;
+     fhir:display [ fhir:v "Tunisia" ]
+  ] [
+     fhir:code [ fhir:v "792" ] ;
+     fhir:display [ fhir:v "Turkey" ]
+  ] [
+     fhir:code [ fhir:v "795" ] ;
+     fhir:display [ fhir:v "Turkmenistan" ]
+  ] [
+     fhir:code [ fhir:v "796" ] ;
+     fhir:display [ fhir:v "Turks and Caicos Islands" ]
+  ] [
+     fhir:code [ fhir:v "798" ] ;
+     fhir:display [ fhir:v "Tuvalu" ]
+  ] [
+     fhir:code [ fhir:v "800" ] ;
+     fhir:display [ fhir:v "Uganda" ]
+  ] [
+     fhir:code [ fhir:v "804" ] ;
+     fhir:display [ fhir:v "Ukraine" ]
+  ] [
+     fhir:code [ fhir:v "807" ] ;
+     fhir:display [ fhir:v "Macedonia, the former Yugoslav Republic of" ]
+  ] [
+     fhir:code [ fhir:v "818" ] ;
+     fhir:display [ fhir:v "Egypt" ]
+  ] [
+     fhir:code [ fhir:v "826" ] ;
+     fhir:display [ fhir:v "United Kingdom" ]
+  ] [
+     fhir:code [ fhir:v "831" ] ;
+     fhir:display [ fhir:v "Guernsey" ]
+  ] [
+     fhir:code [ fhir:v "832" ] ;
+     fhir:display [ fhir:v "Jersey" ]
+  ] [
+     fhir:code [ fhir:v "833" ] ;
+     fhir:display [ fhir:v "Isle of Man" ]
+  ] [
+     fhir:code [ fhir:v "834" ] ;
+     fhir:display [ fhir:v "Tanzania, United Republic of" ]
+  ] [
+     fhir:code [ fhir:v "840" ] ;
+     fhir:display [ fhir:v "United States of America" ]
+  ] [
+     fhir:code [ fhir:v "850" ] ;
+     fhir:display [ fhir:v "Virgin Islands, U.S." ]
+  ] [
+     fhir:code [ fhir:v "854" ] ;
+     fhir:display [ fhir:v "Burkina Faso" ]
+  ] [
+     fhir:code [ fhir:v "858" ] ;
+     fhir:display [ fhir:v "Uruguay" ]
+  ] [
+     fhir:code [ fhir:v "860" ] ;
+     fhir:display [ fhir:v "Uzbekistan" ]
+  ] [
+     fhir:code [ fhir:v "862" ] ;
+     fhir:display [ fhir:v "Venezuela, Bolivarian Republic of" ]
+  ] [
+     fhir:code [ fhir:v "876" ] ;
+     fhir:display [ fhir:v "Wallis and Futuna" ]
+  ] [
+     fhir:code [ fhir:v "882" ] ;
+     fhir:display [ fhir:v "Samoa" ]
+  ] [
+     fhir:code [ fhir:v "887" ] ;
+     fhir:display [ fhir:v "Yemen" ]
+  ] [
+     fhir:code [ fhir:v "894" ] ;
+     fhir:display [ fhir:v "Zambia" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

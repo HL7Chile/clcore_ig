@@ -1,0 +1,36 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "7b36044e-98b0-47a5-948b-6439e3084879-5",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7b36044e-98b0-47a5-948b-6439e3084879-5",
+  "name" : "UnionCSCodMadurezAndCSCodMadurez",
+  "title" : "Union of Códigos de grado de madurez del artefacto And Códigos de grado de madurez del artefacto",
+  "status" : "active",
+  "date" : "2023-12-28T15:41:57-03:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "concept" : [{
+    "code" : "1",
+    "display" : "1"
+  },
+  {
+    "code" : "2",
+    "display" : "2"
+  },
+  {
+    "code" : "3",
+    "display" : "3"
+  },
+  {
+    "code" : "4",
+    "display" : "4"
+  },
+  {
+    "code" : "N",
+    "display" : "N"
+  }]
+}

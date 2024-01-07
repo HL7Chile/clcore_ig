@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CSIdentificadores"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="CSIdentificadores-1"> </a></td><td>RUN</td><td>Registro Unico Nacional</td></tr><tr><td style="white-space:nowrap">2<a name="CSIdentificadores-2"> </a></td><td>RNPI</td><td>Registro Nacional de Prestadores Individuales</td></tr><tr><td style="white-space:nowrap">3<a name="CSIdentificadores-3"> </a></td><td>PPN</td><td>Pasaporte</td></tr><tr><td style="white-space:nowrap">4<a name="CSIdentificadores-4"> </a></td><td>OTRO</td><td>Otro tipo de identificador</td></tr></table></div>
+  </text>
+  <url value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores"/>
+  <version value="1.8.6"/>
+  <name value="CSIdentificadores"/>
+  <title value="Identificadores"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-01-15"/>
+  <publisher value="HL7 Chile"/>
+  <contact>
+    <name value="HL7 Chile"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7chile.cl"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="chair@hl7chile.cl"/>
+    </telecom>
+  </contact>
+  <description value="Identificadores"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="1"/>
+    <display value="RUN"/>
+    <definition value="Registro Unico Nacional"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="RNPI"/>
+    <definition value="Registro Nacional de Prestadores Individuales"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="PPN"/>
+    <definition value="Pasaporte"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="OTRO"/>
+    <definition value="Otro tipo de identificador"/>
+  </concept>
+</CodeSystem>

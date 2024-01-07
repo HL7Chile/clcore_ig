@@ -1,0 +1,32 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "7b36044e-98b0-47a5-948b-6439e3084879-45",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7b36044e-98b0-47a5-948b-6439e3084879-45",
+  "name" : "IntersectionCSRazonNOinmunizacionCLAndCSRazonNOinmunizacionCL",
+  "title" : "Intersection of Razones no Inmunización And Razones no Inmunización",
+  "status" : "active",
+  "date" : "2023-12-28T15:41:57-03:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "concept" : [{
+    "code" : "solicitudPaci",
+    "display" : "Solicitud del paciente"
+  },
+  {
+    "code" : "otras",
+    "display" : "Otras"
+  },
+  {
+    "code" : "contraindicación",
+    "display" : "Contraindicación"
+  },
+  {
+    "code" : "solicitudPad",
+    "display" : "Solicitud de los Padres"
+  }]
+}

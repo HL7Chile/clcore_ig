@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "7b36044e-98b0-47a5-948b-6439e3084879-182",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/7b36044e-98b0-47a5-948b-6439e3084879-182",
+  "name" : "UnionVSDiagnosticosSCTAndVSDiagnosticosSCT",
+  "title" : "Union of Diagnósticos SNOMED y Ausente o Desconocido And Diagnósticos SNOMED y Ausente o Desconocido",
+  "status" : "active",
+  "date" : "2023-12-28T15:41:57-03:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }]
+}

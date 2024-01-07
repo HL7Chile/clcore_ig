@@ -1,0 +1,183 @@
+{
+  "resourceType" : "Patient",
+  "id" : "PacienteCl-5",
+  "meta" : {
+    "profile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Franco Mauricioa Ulloa (OFFICIAL)</b> male, DoB: 1996-08-01 ( Passport Number:\u00a0P123456789\u00a0(use:\u00a0OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li><a href=\"mailto:Franco@Mauri.cl\">Franco@Mauri.cl</a></li><li>Calle 4 Norte, 52, pieza 802 null null null (HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Next-of-Kin\">Next-of-Kin:</td><td colspan=\"3\"><ul><li>Ines Cristina Barraza (OFFICIAL)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Sexo Biologico del paciente\"><a href=\"StructureDefinition-SexoBiologico.html\">Sexo Biologico del paciente:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis 1}\">Masculino</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de paises de origen\"><a href=\"StructureDefinition-CodigoPaises.html\">Codigo de Identificación de países:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais 152}\">Chile</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Identidad De Genero\"><a href=\"StructureDefinition-IdentidadDeGenero.html\">Identidad De Genero:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero 7}\">No Revelado</span></li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+        "code" : "152",
+        "display" : "Chile"
+      }]
+    }
+  },
+  {
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero",
+        "code" : "7",
+        "display" : "No Revelado"
+      }]
+    }
+  },
+  {
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis",
+        "code" : "1",
+        "display" : "Masculino"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "type" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+            "code" : "152",
+            "display" : "Chile"
+          }]
+        }
+      }],
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "PPN",
+        "display" : "Passport Number"
+      }]
+    },
+    "system" : "http://regcivil.cl/Validacion/Passport",
+    "value" : "P123456789"
+  }],
+  "active" : true,
+  "name" : [{
+    "use" : "official",
+    "family" : "Ulloa",
+    "_family" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+        "valueString" : "Medina"
+      }]
+    },
+    "given" : ["Franco",
+    "Mauricioa"]
+  }],
+  "telecom" : [{
+    "system" : "email",
+    "value" : "Franco@Mauri.cl",
+    "use" : "home"
+  }],
+  "gender" : "male",
+  "birthDate" : "1996-08-01",
+  "address" : [{
+    "use" : "home",
+    "line" : ["Calle 4 Norte, 52, pieza 802"],
+    "_city" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+            "code" : "13101",
+            "display" : "Santiago Centro"
+          }]
+        }
+      }]
+    },
+    "_district" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
+            "code" : "131",
+            "display" : "Santiago"
+          }]
+        }
+      }]
+    },
+    "_state" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+            "code" : "13",
+            "display" : "Metropolitana de Santiago"
+          }]
+        }
+      }]
+    },
+    "_country" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+            "code" : "152",
+            "display" : "Chile"
+          }]
+        }
+      }]
+    }
+  }],
+  "contact" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "tutId",
+        "valueIdentifier" : {
+          "type" : {
+            "coding" : [{
+              "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI",
+              "code" : "NNCHL",
+              "display" : "Chile"
+            }]
+          },
+          "system" : "http://regcivil.cl/Validacion/RUN",
+          "value" : "12342451-k"
+        }
+      },
+      {
+        "url" : "docProc",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+            "code" : "152",
+            "display" : "Chile"
+          }]
+        }
+      }],
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto"
+    }],
+    "relationship" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "code" : "N",
+        "display" : "Next-of-Kin"
+      }]
+    }],
+    "name" : {
+      "use" : "official",
+      "family" : "Barraza",
+      "_family" : {
+        "extension" : [{
+          "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+          "valueString" : "Sandoval"
+        }]
+      },
+      "given" : ["Ines",
+      "Cristina"]
+    }
+  }]
+}
