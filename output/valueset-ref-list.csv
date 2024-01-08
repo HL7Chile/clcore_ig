@@ -1,5 +1,4 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
-http://hl7.org/fhir/ValueSet/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.3.1",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","StructureDefinition/SexoRegistral","hl7.fhir.r4.core"
 http://hl7.org/fhir/ValueSet/audit-event-action,4.0.1,draft,"2.16.840.1.113883.4.642.3.452",AuditEventAction,AuditEventAction,"Indicator for type of action performed during the event that generated the event.","StructureDefinition/AuditEventCl","hl7.fhir.r4.core"
 http://hl7.org/fhir/ValueSet/audit-event-outcome,4.0.1,draft,"2.16.840.1.113883.4.642.3.454",AuditEventOutcome,AuditEventOutcome,"Indicates whether the event succeeded or failed.","StructureDefinition/AuditEventCl","hl7.fhir.r4.core"
 http://hl7.org/fhir/ValueSet/audit-event-sub-type,4.0.1,active,"2.16.840.1.113883.4.642.3.464",AuditEventSub-Type,Audit Event Sub-Type,"More detailed code concerning the type of the audit event - defined by DICOM with some FHIR specific additions.","StructureDefinition/AuditEventCl","DICOM,hl7.fhir.r4.core"

@@ -1,129 +1,118 @@
 ﻿clcore : Validation Results
 =========================================
 
-err = 25, warn = 18, info = 3
+err = 0, warn = 6, info = 5
 IG Publisher Version: 1.5.8
-Generated Thu Dec 28 15:43:36 CLST 2023. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.6 (canonical = https://hl7chile.cl/fhir/ig/clcore)
- Build Errors : 24 / 4 / 0
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/AuditEvent-AuditEventEx : 2 / 0 / 2
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSCodComunasCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSCodMadurez : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSCodProvinciasCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSCodRegionCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSCodSSalud : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSCodigoDNI : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSCodigoServicio : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSCodigoVacunas : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSCodigoslenguaje : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSEspecialidadesDeisCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSIdentidaddeGenero : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSIdentificadores : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSNombreCampana : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSRazonNOT : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSRazonNOTinm : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSSexoListadoDeis : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSTipoIdentificador : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CSTiposEncuentroCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-CodPais : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/CodeSystem-csrazonnoencuentro : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/Composition-CompositionClEj : 7 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/Condition-DiagnosticoEj : 1 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/Encounter-EncounterCL : 3 / 1 / 2
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/Immunization-ImmunizationCL : 4 / 0 / 2
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.clcore : 0 / 1 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/Location-LocalizacionEjemploCL1 : 4 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/Patient-PacienteCL : 1 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/Patient-PacienteCL2 : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/Patient-PacienteCl-3 : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/Patient-PacienteCl-4 : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/Patient-PacienteCl-5 : 3 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-AuditEventCl : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-CodigoPaises : 0 / 1 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-ComunasCl : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-ContactoParticipantes : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-CoreDiagnosticoCl : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-CoreLocalizacionCl : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-CoreMedicamentoCl : 0 / 1 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-CoreOrganizacionCl : 0 / 1 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-CorePacienteCl : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-CorePrestadorCl : 0 / 1 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-CoreRolClinicoCl : 0 / 1 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-DocumentoCl : 0 / 3 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-EncounterCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-IdContacto : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-IdentidadDeGenero : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-ImmunizationCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-NombreCampana : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-NotasEncuentro : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-ObservacionesDiagnostico : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-ProvenanceCl : 0 / 1 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-ProvinciasCl : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-RazonNOrealizarse : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-RazonNOrealizarseInm : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-RegionesCl : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-SegundoApellido : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-ServicioSalud : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-SexoBiologico : 0 / 1 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-SexoRegistral : 0 / 2 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-TiposVacunaRNI : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-VSEspecialidadesDeisCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-cl-address : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-CodPais : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSCodMadurez : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSCodigosComunaCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSCodigosProvinciasCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSCodigosRegionesCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSCodigosServiciosSalud : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSCodigoslenguaje : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSContactosec : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSDiagnosticosSCT : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSEspecialidadesDeisCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSIdentidaddeGenero : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSIdentificadores : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSNombreCampana : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSRazonNOT : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSRazonNOTinm : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSSexoListadoDeis : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSTipoIdentificador : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSTiposDocClinic : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSTiposDocumentos : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSTiposEncuentroCL : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSTiposServicio : 0 / 0 / 1
- /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSTiposVacunas : 0 / 0 / 1
+Generated Mon Jan 08 08:42:54 CLST 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.6 (canonical = https://hl7chile.cl/fhir/ig/clcore)
+ Build Errors : 0 / 4 / 0
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/AllergyIntolerance-222 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/AuditEvent-AuditEventEx : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSCodComunasCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSCodMadurez : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSCodProvinciasCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSCodRegionCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSCodSSalud : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSCodigoDNI : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSCodigoServicio : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSCodigoVacunas : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSCodigoslenguaje : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSEspecialidadesDeisCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSIdentidaddeGenero : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSIdentificadores : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSNombreCampana : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSRazonNOT : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSRazonNOTinm : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSSexoListadoDeis : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSTipoIdentificador : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CSTiposEncuentroCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-CodPais : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/CodeSystem-csrazonnoencuentro : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Composition-CompositionClEj : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Condition-1112 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Condition-DiagnosticoEj : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Encounter-EncounterCL : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Immunization-999 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Immunization-ImmunizationCL : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.clcore : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Location-3333458 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Location-LocalizacionEjemploCL1 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Medication-MedicamentoCl : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Medication-MedicamentoCl-2 : 0 / 0 / 2
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/MedicationStatement-354 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Observation-123 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Organization-ORG1 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Organization-f003 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Patient-11 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Patient-PacienteCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Patient-PacienteCL2 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Patient-PacienteCl-3 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Patient-PacienteCl-4 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Patient-PacienteCl-5 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Practitioner-3020 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Practitioner-3240 : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/PractitionerRole-EspecialidadCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/Provenance-EjemplValidacionProvCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-AuditEventCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-CodigoPaises : 0 / 1 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-ComunasCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-ContactoParticipantes : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-CoreDiagnosticoCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-CoreLocalizacionCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-CoreMedicamentoCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-CoreOrganizacionCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-CorePacienteCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-CorePrestadorCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-CoreRolClinicoCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-DocumentoCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-EncounterCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-IdContacto : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-IdentidadDeGenero : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-ImmunizationCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-NombreCampana : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-NotasEncuentro : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-ObservacionesDiagnostico : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-ProvenanceCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-ProvinciasCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-RazonNOrealizarse : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-RazonNOrealizarseInm : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-RegionesCl : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-SegundoApellido : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-ServicioSalud : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-SexoBiologico : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-TiposVacunaRNI : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-VSEspecialidadesDeisCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/StructureDefinition-cl-address : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-CodPais : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSCodMadurez : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSCodigosComunaCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSCodigosProvinciasCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSCodigosRegionesCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSCodigosServiciosSalud : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSCodigoslenguaje : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSContactosec : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSDiagnosticosSCT : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSEspecialidadesDeisCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSIdentidaddeGenero : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSIdentificadores : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSNombreCampana : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSRazonNOT : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSRazonNOTinm : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSSexoListadoDeis : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSTipoIdentificador : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSTiposDocClinic : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSTiposDocumentos : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSTiposEncuentroCL : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSTiposServicio : 0 / 0 / 1
+ /Users/jorgemansilla/IGs/_HL7CHILE_clcore_publish_hl7/clcore_ig/fsh-generated/resources/ValueSet-VSTiposVacunas : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/searchform.html: Unable to read attribute 'core' value on <iframe> at line 92 column 164
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/AuditEvent-AuditEventEx.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 234, column 1619: The link 'Practitioner/3240' for "Practitioner/3240" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/AuditEvent-AuditEventEx.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 234, column 1824: The link 'Organization/ORG1' for "Organization/ORG1" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Composition-CompositionClEj.html#/html/body/div/div/div/div/div/div/p/a at Line 234, column 747: The link 'Practitioner/3020' for "Practitioner/3020" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Condition-DiagnosticoEj.html#/html/body/div/div/div/div/div/div/p/a at Line 234, column 1264: The link 'Patient/11' for "Patient/11" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Encounter-EncounterCL.html#/html/body/div/div/div/div/div/div/p/a at Line 234, column 1005: The link 'Patient/11' for "Patient/11" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Encounter-EncounterCL.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 234, column 1555: The link 'Practitioner/3020' for "Practitioner/3020" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Encounter-EncounterCL.html#/html/body/div/div/div/div/div/div/p/a at Line 234, column 2688: The link 'Organization/f003' for "Organization/f003" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Extensiones.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 277, column 12: The link 'StructureDefinition-TiposEncuentro.html' for "Código de tipos de encuentro remoto" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Extensiones.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 285, column 12: The link 'StructureDefinition-TiposServicio.html' for "Código de los tipos de servicio que se atiende" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Immunization-ImmunizationCL.html#/html/body/div/div/div/div/div/div/p/a at Line 234, column 1063: The link 'Patient/11' for "Patient/11" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Immunization-ImmunizationCL.html#/html/body/div/div/div/div/div/div/p/a at Line 234, column 1220: The link 'Location/3333458' for "Location/3333458" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Immunization-ImmunizationCL.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 234, column 1484: The link 'Organization/f003' for "Organization/f003" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Location-LocalizacionEjemploCL1.html#/html/body/div/div/div/div/div/div/p/a at Line 234, column 1200: The link 'Organization/ORG1' for "Organization/ORG1" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Patient-PacienteCL.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 234, column 1309: The link 'Organization/ORG1' for "Organization/ORG1: Hospital de la Vida" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/Perfiles.html#/html/body/div/div/div/div/div/ul/li/a at Line 227, column 8: The link 'StructureDefinition-BundleCl.html' for "CL Bundle" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 225, column 21: The link 'Organization-ORG1.html' for "Ejemplo Organización Prestadora de Salud" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/changes.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 233, column 12: The link 'StructureDefinition-TiposEncuentro.html' for "Código de tipos de encuentro remoto" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/changes.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 234, column 12: The link 'StructureDefinition-TiposServicio.html' for "Código de los tipos de servicio que se atiende" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/changes.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 267, column 16: The link 'StructureDefinition-CoreEspecialidadCl.html' for "CoreEspecialidadCl" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 282, column 8: The link 'Set-Ejemplos.html' for "Ejemplos" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 283, column 8: The link 'Todas-Descargas.html' for "Descargas" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 298, column 8: The link 'StructureDefinition-BundleCl.html' for "CL Bundle" cannot be resolved
-ERROR: /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/output/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 302, column 8: The link 'StructureDefinition-CoreEspecialidadCl.html' for "CL Especialidad_Prestador" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/AllergyIntolerance-222.json ==
 == fsh-generated/resources/AuditEvent-AuditEventEx.json ==
 INFORMATION: AuditEvent/AuditEventEx: AuditEvent.agent[0].type: Reference to experimental item http://terminology.hl7.org/CodeSystem/extra-security-role-type|0.2.0
-ERROR: AuditEvent/AuditEventEx: AuditEvent.source.observer: Incapaz de resolver el recurso con la referencia 'Practitioner/3240'
-ERROR: AuditEvent/AuditEventEx: AuditEvent.entity[0].what: Incapaz de resolver el recurso con la referencia 'Organization/ORG1'
 == fsh-generated/resources/CodeSystem-CSCodComunasCL.json ==
 == fsh-generated/resources/CodeSystem-CSCodMadurez.json ==
 == fsh-generated/resources/CodeSystem-CSCodProvinciasCL.json ==
@@ -145,43 +134,35 @@ ERROR: AuditEvent/AuditEventEx: AuditEvent.entity[0].what: Incapaz de resolver e
 == fsh-generated/resources/CodeSystem-CodPais.json ==
 == fsh-generated/resources/CodeSystem-csrazonnoencuentro.json ==
 == fsh-generated/resources/Composition-CompositionClEj.json ==
-ERROR: Composition/CompositionClEj: Composition.subject: Incapaz de resolver el recurso con la referencia 'Patient/11'
-ERROR: Composition/CompositionClEj: Composition.author[0]: Incapaz de resolver el recurso con la referencia 'Practitioner/3020'
-ERROR: Composition/CompositionClEj: Composition.section[0].entry[0]: Incapaz de resolver el recurso con la referencia 'Condition/1112'
-ERROR: Composition/CompositionClEj: Composition.section[1].entry[0]: Incapaz de resolver el recurso con la referencia 'MedicationStatement/354'
-ERROR: Composition/CompositionClEj: Composition.section[2].entry[0]: Incapaz de resolver el recurso con la referencia 'AllergyIntolerance/222'
-ERROR: Composition/CompositionClEj: Composition.section[3].entry[0]: Incapaz de resolver el recurso con la referencia 'Immunization/999'
-ERROR: Composition/CompositionClEj: Composition.section[4].entry[0]: Incapaz de resolver el recurso con la referencia 'Observation/123'
+== fsh-generated/resources/Condition-1112.json ==
 == fsh-generated/resources/Condition-DiagnosticoEj.json ==
-ERROR: Condition/DiagnosticoEj: Condition.subject: Incapaz de resolver el recurso con la referencia 'Patient/11'
 == fsh-generated/resources/Encounter-EncounterCL.json ==
-WARNING: Encounter/EncounterCL: Encounter.type[0].coding[0]: Un código sin sistema no tiene un significado definido. El elemento system debe estar presente
 INFORMATION: Encounter/EncounterCL: Encounter.serviceType.coding[0]: El URI para el Code System 'https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio' es desconocido asi que el código no puede ser validado
-ERROR: Encounter/EncounterCL: Encounter.subject: Incapaz de resolver el recurso con la referencia 'Patient/11'
-ERROR: Encounter/EncounterCL: Encounter.participant[0].individual: Incapaz de resolver el recurso con la referencia 'Practitioner/3020'
-ERROR: Encounter/EncounterCL: Encounter.serviceProvider: Incapaz de resolver el recurso con la referencia 'Organization/f003'
+== fsh-generated/resources/Immunization-999.json ==
 == fsh-generated/resources/Immunization-ImmunizationCL.json ==
-ERROR: Immunization/ImmunizationCL: Immunization.patient: Incapaz de resolver el recurso con la referencia 'Patient/11'
-ERROR: Immunization/ImmunizationCL: Immunization.location: Incapaz de resolver el recurso con la referencia 'Location/3333458'
-ERROR: Immunization/ImmunizationCL: Immunization.location: La extensión https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ServicioSalud no está permitida en este punto (permitido = e:ImmunizationCL.location; este elemento es [Immunization.location, Reference])
 INFORMATION: Immunization/ImmunizationCL: Immunization.location.extension[0].value.ofType(Coding): El URI para el Code System 'https://minsal.cl/fhir/HD/CodeSystem/CSCodSSalud' es desconocido asi que el código no puede ser validado
-ERROR: Immunization/ImmunizationCL: Immunization.performer[0].actor: Incapaz de resolver el recurso con la referencia 'Organization/f003'
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.cl.clcore.json ==
 WARNING: ImplementationGuide/hl7.fhir.cl.clcore: ImplementationGuide: La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló
+== fsh-generated/resources/Location-3333458.json ==
 == fsh-generated/resources/Location-LocalizacionEjemploCL1.json ==
-ERROR: Location/LocalizacionEjemploCL1: Location.address.district.extension[0].value.ofType(CodeableConcept).coding[0]: Código desconocido 05109 en https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL|1.8.6 para 'https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL#05109'
-ERROR: Location/LocalizacionEjemploCL1: Location.address.district.extension[0].value.ofType(CodeableConcept).coding[0].code: El valor provisto ('05109') no está en el conjunto de valores'Códigos de Provincias en Chile' (https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosProvinciasCL|1.8.6), y se requiere un código de este conjunto de valores)  (error message = Código desconocido 05109 en https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL|1.8.6; )
-ERROR: Location/LocalizacionEjemploCL1: Location.address.country.extension[0].value.ofType(CodeableConcept).coding[0].code: El valor provisto ('CL') no está en el conjunto de valores'Códigos de Países' (https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais|1.8.6), y se requiere un código de este conjunto de valores)  (error message = Código desconocido CL en https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais|1.8.6; )
-ERROR: Location/LocalizacionEjemploCL1: Location.managingOrganization: Incapaz de resolver el recurso con la referencia 'Organization/ORG1'
+== fsh-generated/resources/Medication-MedicamentoCl.json ==
+INFORMATION: Medication/MedicamentoCl: Medication.code.coding[0]: El URI para el Code System 'http://minsal.cl/semantikos/description-id' es desconocido asi que el código no puede ser validado
+== fsh-generated/resources/Medication-MedicamentoCl-2.json ==
+INFORMATION: Medication/MedicamentoCl-2: Medication.code.coding[0]: El URI para el Code System 'http://minsal.cl/semantikos/description-id' es desconocido asi que el código no puede ser validado
+== fsh-generated/resources/MedicationStatement-354.json ==
+== fsh-generated/resources/Observation-123.json ==
+== fsh-generated/resources/Organization-ORG1.json ==
+== fsh-generated/resources/Organization-f003.json ==
+== fsh-generated/resources/Patient-11.json ==
 == fsh-generated/resources/Patient-PacienteCL.json ==
-ERROR: Patient/PacienteCL: Patient.generalPractitioner[0]: Incapaz de resolver el recurso con la referencia 'Organization/ORG1'
 == fsh-generated/resources/Patient-PacienteCL2.json ==
 == fsh-generated/resources/Patient-PacienteCl-3.json ==
 == fsh-generated/resources/Patient-PacienteCl-4.json ==
 == fsh-generated/resources/Patient-PacienteCl-5.json ==
-ERROR: Patient/PacienteCl-5: Patient: La extensión https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero no está permitida en este punto (permitido = e:CorePacienteCl, e:PrestadorCL; este elemento es [Patient])
-ERROR: Patient/PacienteCl-5: Patient.extension[2].value.ofType(CodeableConcept): El nombre de display para https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis#1 debe ser ''Hombre'', no 'Masculino'
-ERROR: Patient/PacienteCl-5: Patient.extension[2].value.ofType(CodeableConcept).coding[0]: El nombre de display para https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis#1 debe ser ''Hombre'', no 'Masculino' para 'https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis#1'
+== fsh-generated/resources/Practitioner-3020.json ==
+== fsh-generated/resources/Practitioner-3240.json ==
+== fsh-generated/resources/PractitionerRole-EspecialidadCL.json ==
+== fsh-generated/resources/Provenance-EjemplValidacionProvCl.json ==
 == fsh-generated/resources/StructureDefinition-AuditEventCl.json ==
 == fsh-generated/resources/StructureDefinition-CodigoPaises.json ==
 WARNING: StructureDefinition/CodigoPaises: StructureDefinition.context[0]: Review the extension type for CodigoPaises: extensions should not have a context of Element unless it's really intended that they can be used anywhere
@@ -190,18 +171,11 @@ WARNING: StructureDefinition/CodigoPaises: StructureDefinition.context[0]: Revie
 == fsh-generated/resources/StructureDefinition-CoreDiagnosticoCl.json ==
 == fsh-generated/resources/StructureDefinition-CoreLocalizacionCl.json ==
 == fsh-generated/resources/StructureDefinition-CoreMedicamentoCl.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-CoreOrganizacionCl.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-CorePacienteCl.json ==
 == fsh-generated/resources/StructureDefinition-CorePrestadorCl.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-CoreRolClinicoCl.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-DocumentoCl.json ==
-WARNING: StructureDefinition.differential.element[7]: Cannot check whether the target profile https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl|CoreRolClinicoCl on Composition.author is valid constraint on the base because it is not known
-WARNING: StructureDefinition/DocumentoCl: StructureDefinition.differential.element[7].type[0].targetProfile[0]: Imposible resolver el perfil https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl|CoreRolClinicoCl
-WARNING: StructureDefinition/DocumentoCl: StructureDefinition.snapshot.element[16].type[0].targetProfile[0]: Imposible resolver el perfil https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl|CoreRolClinicoCl
 == fsh-generated/resources/StructureDefinition-EncounterCL.json ==
 == fsh-generated/resources/StructureDefinition-IdContacto.json ==
 == fsh-generated/resources/StructureDefinition-IdentidadDeGenero.json ==
@@ -210,7 +184,6 @@ WARNING: StructureDefinition/DocumentoCl: StructureDefinition.snapshot.element[1
 == fsh-generated/resources/StructureDefinition-NotasEncuentro.json ==
 == fsh-generated/resources/StructureDefinition-ObservacionesDiagnostico.json ==
 == fsh-generated/resources/StructureDefinition-ProvenanceCl.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ProvinciasCl.json ==
 == fsh-generated/resources/StructureDefinition-RazonNOrealizarse.json ==
 == fsh-generated/resources/StructureDefinition-RazonNOrealizarseInm.json ==
@@ -218,10 +191,6 @@ WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/Str
 == fsh-generated/resources/StructureDefinition-SegundoApellido.json ==
 == fsh-generated/resources/StructureDefinition-ServicioSalud.json ==
 == fsh-generated/resources/StructureDefinition-SexoBiologico.json ==
-WARNING: StructureDefinition/SexoBiologico: StructureDefinition.context[0]: Review the extension type for SexoBiologico: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-== fsh-generated/resources/StructureDefinition-SexoRegistral.json ==
-WARNING: StructureDefinition/SexoRegistral: StructureDefinition.context[0]: Review the extension type for SexoRegistral: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoRegistral'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-TiposVacunaRNI.json ==
 == fsh-generated/resources/StructureDefinition-VSEspecialidadesDeisCL.json ==
 == fsh-generated/resources/StructureDefinition-cl-address.json ==

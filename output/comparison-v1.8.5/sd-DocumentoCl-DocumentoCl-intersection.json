@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7b36044e-98b0-47a5-948b-6439e3084879-96",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7b36044e-98b0-47a5-948b-6439e3084879-96",
+  "id" : "3b1267b5-19b8-46a3-aae7-c8cbf9d79baf-96",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3b1267b5-19b8-46a3-aae7-c8cbf9d79baf-96",
   "name" : "IntersectionDocumentoClAndDocumentoCl",
   "title" : "Intersection of CL Documento And CL Documento",
   "status" : "active",
-  "date" : "2023-12-28T15:41:57-03:00",
+  "date" : "2024-01-08T08:41:37-03:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -703,6 +703,15 @@
       "requirements" : "Identifies who is responsible for the content.",
       "min" : 1,
       "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl",
+        "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl",
+        "http://hl7.org/fhir/StructureDefinition/Device",
+        "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl",
+        "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl",
+        "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl"]
+      }],
       "constraint" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/4.0/StructureDefinition/extension-ElementDefinition.constraint.xpath",

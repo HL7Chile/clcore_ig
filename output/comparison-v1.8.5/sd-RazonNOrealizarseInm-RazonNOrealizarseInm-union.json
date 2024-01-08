@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7b36044e-98b0-47a5-948b-6439e3084879-131",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7b36044e-98b0-47a5-948b-6439e3084879-131",
+  "id" : "3b1267b5-19b8-46a3-aae7-c8cbf9d79baf-131",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3b1267b5-19b8-46a3-aae7-c8cbf9d79baf-131",
   "name" : "UnionRazonNOTinmunizacionCLAndRazonNOTinmunizacionCL",
   "title" : "Union of Razones por las cuales no se pudo realizar la inmunización And Razones por las cuales no se pudo realizar la inmunización",
   "status" : "active",
-  "date" : "2023-12-28T15:41:57-03:00",
+  "date" : "2024-01-08T08:41:37-03:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

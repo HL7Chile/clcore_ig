@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="123"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="123"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;123&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: null <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (loinc.org#10244-2)</span></p><p><b>subject</b>: <a href="Patient-11.html">Patient/11</a> &quot;&quot;</p><p><b>effective</b>: 2022-07-06 14:30:00+0100</p><p><b>performer</b>: <a href="Practitioner-3020.html">Practitioner/3020</a> &quot;&quot;</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org#10244-2"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/11"/>
+  </subject>
+  <effectiveDateTime value="2022-07-06T14:30:00+01:00"/>
+  <performer>
+    <reference value="Practitioner/3020"/>
+  </performer>
+</Observation>

@@ -10,7 +10,7 @@
   "name" : "RazonNOTatencionCL",
   "title" : "Código de las razones por la cual no se pudo realizar la atención",
   "status" : "active",
-  "date" : "2023-12-28T15:41:40-03:00",
+  "date" : "2024-01-08T08:41:20-03:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -43,6 +43,10 @@
   "context" : [{
     "type" : "element",
     "expression" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL#Encounter.reasonCode"
+  },
+  {
+    "type" : "element",
+    "expression" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL#Immunization.statusReason"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",

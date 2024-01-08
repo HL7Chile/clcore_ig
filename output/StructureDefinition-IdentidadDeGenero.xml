@@ -15,7 +15,7 @@
   <name value="IdentidadDeGenero"/>
   <title value="Identidad De Genero"/>
   <status value="active"/>
-  <date value="2023-12-28T15:41:40-03:00"/>
+  <date value="2024-01-08T08:41:20-03:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -47,11 +47,11 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="CorePacienteCl"/>
+    <expression value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl#Patient"/>
   </context>
   <context>
     <type value="element"/>
-    <expression value="PrestadorCL"/>
+    <expression value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>

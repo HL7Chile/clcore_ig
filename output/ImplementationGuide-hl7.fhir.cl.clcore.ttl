@@ -15,9 +15,9 @@
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.8.6"] ; # 
   fhir:name [ fhir:v "clcore"] ; # 
-  fhir:title [ fhir:v "Guía de Implementación \"cl core\" FHIR R4, (Versión Evolutiva)"] ; # 
+  fhir:title [ fhir:v "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-12-28T15:41:40-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-08T08:41:20-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;
@@ -1054,17 +1054,17 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Location" ]
+         fhir:value [ fhir:v "Medication" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Location/LocalizacionEjemploCL1> ;
-         fhir:reference [ fhir:v "Location/LocalizacionEjemploCL1" ]
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Medication/MedicamentoCl> ;
+         fhir:reference [ fhir:v "Medication/MedicamentoCl" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de  Localización Farmacia" ] ;
-       fhir:description [ fhir:v "Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar" ] ;
+       fhir:name [ fhir:v "Ejemplo de comprimido Tareg - D 160" ] ;
+       fhir:description [ fhir:v "Medicamento comprimido Tareg -D160 referemciado como medicamento en la TFC, considerando el de 25 comprimidos" ] ;
        fhir:example [
-         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreLocalizacionCl"^^xsd:anyURI ;
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreLocalizacionCl>
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl>
        ]
      ] [
        fhir:extension ( [
@@ -1080,6 +1080,60 @@
        fhir:example [
          fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl"^^xsd:anyURI ;
          fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Provenance" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Provenance/EjemplValidacionProvCl> ;
+         fhir:reference [ fhir:v "Provenance/EjemplValidacionProvCl" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de la Validación de un documento por medio del Prescriptor" ] ;
+       fhir:description [ fhir:v "Ejemplo de un documento, en la cual el prestador que la ha desarollado genera una validación por medio de una firma" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "AllergyIntolerance" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/AllergyIntolerance/222> ;
+         fhir:reference [ fhir:v "AllergyIntolerance/222" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso AllergyIntolerance" ] ;
+       fhir:description [ fhir:v "AllergyIntolerance ficticio" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Condition/1112> ;
+         fhir:reference [ fhir:v "Condition/1112" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Condition" ] ;
+       fhir:description [ fhir:v "Condition ficticio" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PractitionerRole" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/PractitionerRole/EspecialidadCL> ;
+         fhir:reference [ fhir:v "PractitionerRole/EspecialidadCL" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso de especialidad" ] ;
+       fhir:description [ fhir:v "Define el Rol de un Médico durante la Operación de un paciente en Urgencia" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl>
        ]
      ] [
        fhir:extension ( [
@@ -1132,6 +1186,18 @@
          fhir:value [ fhir:v "Immunization" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Immunization/999> ;
+         fhir:reference [ fhir:v "Immunization/999" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Immunization" ] ;
+       fhir:description [ fhir:v "Immunization ficticio" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Immunization" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://hl7chile.cl/fhir/ig/clcore/Immunization/ImmunizationCL> ;
          fhir:reference [ fhir:v "Immunization/ImmunizationCL" ]
        ] ;
@@ -1141,6 +1207,66 @@
          fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL"^^xsd:anyURI ;
          fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Location/3333458> ;
+         fhir:reference [ fhir:v "Location/3333458" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Location" ] ;
+       fhir:description [ fhir:v "Location ficticio" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/MedicationStatement/354> ;
+         fhir:reference [ fhir:v "MedicationStatement/354" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso MedicationStatement" ] ;
+       fhir:description [ fhir:v "MedicationStatement ficticio" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Observation/123> ;
+         fhir:reference [ fhir:v "Observation/123" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Observation" ] ;
+       fhir:description [ fhir:v "Observation ficticio" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Organization/f003> ;
+         fhir:reference [ fhir:v "Organization/f003" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Organización" ] ;
+       fhir:description [ fhir:v "Organización ficticio" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Patient/11> ;
+         fhir:reference [ fhir:v "Patient/11" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Paciente" ] ;
+       fhir:description [ fhir:v "Paciente ficticio" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1174,6 +1300,33 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Practitioner/3240> ;
+         fhir:reference [ fhir:v "Practitioner/3240" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Prestador como base para un Core Nacional" ] ;
+       fhir:description [ fhir:v "Ejemplo de un Prestador no Real con identificadores en Systemas con API\"s no disponibles" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Practitioner/3020> ;
+         fhir:reference [ fhir:v "Practitioner/3020" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Profesional" ] ;
+       fhir:description [ fhir:v "Profesional ficticio" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "AuditEvent" ]
        ] ) ;
        fhir:reference [
@@ -1204,6 +1357,36 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Location" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Location/LocalizacionEjemploCL1> ;
+         fhir:reference [ fhir:v "Location/LocalizacionEjemploCL1" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo Localización Farmacia" ] ;
+       fhir:description [ fhir:v "Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreLocalizacionCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreLocalizacionCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Organization/ORG1> ;
+         fhir:reference [ fhir:v "Organization/ORG1" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo Organización Prestadora de Salud" ] ;
+       fhir:description [ fhir:v "CESFAM Rio Bueno (Ficticio) con ID DEIS no real" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -1225,6 +1408,21 @@
        fhir:name [ fhir:v "Especialidad del médico principal" ] ;
        fhir:description [ fhir:v "Esta extensión incluye los códigos de las especialidades que puede tener el medico principal" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Medication/MedicamentoCl-2> ;
+         fhir:reference [ fhir:v "Medication/MedicamentoCl-2" ]
+       ] ;
+       fhir:name [ fhir:v "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido" ] ;
+       fhir:description [ fhir:v "Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1498,18 +1696,6 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoRegistral> ;
-         fhir:reference [ fhir:v "StructureDefinition/SexoRegistral" ]
-       ] ;
-       fhir:name [ fhir:v "Sexo Registral del paciente" ] ;
-       fhir:description [ fhir:v "Sexo Registral del paciente" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ServicioSalud> ;
          fhir:reference [ fhir:v "StructureDefinition/ServicioSalud" ]
        ] ;
@@ -1680,6 +1866,14 @@
          ] ) ;
          fhir:name [ fhir:v "Perfiles.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Perfiles" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Set-Ejemplos.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "Set-Ejemplos.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Ejemplos" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

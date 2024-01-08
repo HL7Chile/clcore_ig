@@ -245,13 +245,6 @@
       ]
     },
     {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoRegistral",
-      "title": "Sexo Registral del paciente",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
       "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/TiposVacunaRNI",
       "title": "Código de tipos de Vacunas en Chile",
       "types": [
@@ -390,14 +383,18 @@
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises": [
       "Address.country",
       "Location.address.country",
+      "Organization.address.country",
       "Patient",
       "Patient.address.country",
-      "Patient.identifier.type"
+      "Patient.identifier.type",
+      "Practitioner.address.country"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl": [
       "Address.city",
       "Location.address.city",
-      "Patient.address.city"
+      "Organization.address.city",
+      "Patient.address.city",
+      "Practitioner.address.city"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes": [
       "Encounter.participant"
@@ -421,7 +418,9 @@
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl": [
       "Address.district",
       "Location.address.district",
-      "Patient.address.district"
+      "Organization.address.district",
+      "Patient.address.district",
+      "Practitioner.address.district"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarse": [
       "Encounter.reasonCode"
@@ -432,7 +431,9 @@
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl": [
       "Address.state",
       "Location.address.state",
-      "Patient.address.state"
+      "Organization.address.state",
+      "Patient.address.state",
+      "Practitioner.address.state"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido": [
       "Patient.contact.name.family",

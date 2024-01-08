@@ -1,20 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "AdministrativeGender",
-      "title" : "AdministrativeGender",
-      "description" : "The gender of a person used for administrative purposes.",
-      "systems" : ["http://hl7.org/fhir/administrative-gender"],
-      "oids" : ["2.16.840.1.113883.4.642.3.1"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1"],
-      "uses" : {
-      },
-      "StructureDefinition-SexoRegistral.html" : "Sexo Registral del paciente"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/audit-event-action",
       "version" : "4.0.1",
       "status" : "draft",
@@ -387,8 +373,8 @@
       "systems" : ["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"],
       "uses" : {
       },
-      "StructureDefinition-CodigoPaises.html" : "Codigo de Identificación de países",
-      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente"
+      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
+      "StructureDefinition-CodigoPaises.html" : "Codigo de Identificación de países"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodMadurez",
@@ -506,8 +492,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-VSEspecialidadesDeisCL.html" : "Especialidad del médico principal"
+      "StructureDefinition-VSEspecialidadesDeisCL.html" : "Especialidad del médico principal",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero",

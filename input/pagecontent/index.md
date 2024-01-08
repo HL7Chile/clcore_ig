@@ -22,10 +22,8 @@ Esta Guía sigue un formato especificado para **FHIR R4**, y se divide en varias
 
 
 ### Perfiles de la Guía
-<br>
 
 Cada perfil define los elementos obligatorios mínimos, extensiones y requerimientos terminológicos que **DEBEN** cumplirse. Para cada perfil, estos requerimientos se declaran con un sencillo resumen narrativo.
-<br>
 
 Tambien se presenta una tabla jerárquica con una vista lógica del contenido como *Snapshot* y *Differential* . Para cada perfil también expresamos el conjunto de interacciones FHIR Restful asociadas (búsquedas, operaciones u otras interacciones)
 
@@ -42,22 +40,23 @@ Tambien se presenta una tabla jerárquica con una vista lógica del contenido co
 * [CL Prestador](StructureDefinition-CorePrestadorCl.html)
 * [CL Provenance](StructureDefinition-ProvenanceCl.html)
 
-<br>
-<br>
-
 ### Requerimientos de Conformidad
-<br>
+
 Los requerimientos de conformidad describen las expectativas sobre la funcionalidad de las aplicaciones servidor/cliente, identificando los perfiles específicos y las interacciones que deben implementar. Los perfiles individuales identifican los requerimientos estructurales y terminológicos. Las definiciones de parámetros de búsqueda y operaciones especifican cómo son implementados por los servidores.
-<br>
-<br>
-<br> 
 
-**Autores Primarios: Jorge Mansilla (HL7 Chile), César Galindo (HL7 Chile), Pablo Pizarro (MINSAL), Nicolás Soto (MINSAL)**
+###	 Autores y Colaboradores
 
-*Autores Secundarios: Diego Olea (MINSAL), Franco Ulloa (MINSAL), Diego Kaminker (HL7 Argentina), Yanara Salinas (UV)*
+- Autores de la guia:
+  - **Pablo Pizarro (MINSAL)** [ppizarro.delgado@minsal.cl](mailto:ppizarro.delgado@minsal.cl)
+  - **Nicolás Soto (MINSAL)** [nicolas.soto@minsal.cl](mailto:nicolas.soto@minsal.cl)
+  - **César Galindo (HL7 Chile)** [cgalindo@uv.cl](mailto:cgalindo@uv.cl)
+  - **Jorge Mansilla (HL7 Chile)** [jorgemansillas@gmail.com](mailto:jorgemansillas@gmail.com)
 
-
-
+- Colaboradores:
+  - Diego Olea (MINSAL)
+  - Franco Ulloa (MINSAL)
+  - Diego Kaminker (HL7 Internacional)
+  - Yanara Salinas (UV)
 
 ### Recursos a Disposición
 [Ministerio de Salud de Chile](http://www.minsal.cl)

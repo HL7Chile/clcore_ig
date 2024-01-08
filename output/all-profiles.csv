@@ -2578,7 +2578,7 @@ Some reporting work flows require that the original narrative of a final documen
 "DocumentoCl","Composition.date","Composition.date","","","",1,1,"Y","","Y","dateTime {[]} {[]}
 ","Fecha en la cual se editó el documento","Fecha de edición del documento, cuando este fue modificado por el autor","The Last Modified Date on the composition may be after the date of the document was attested without being changed.","dateTime is used for tracking, organizing versions and searching. Note that this is the time of *authoring*. When packaged in a document, [Bundle.timestamp](bundle-definitions.html#Bundle.timestamp) is the date of packaging.","","","","","","","",,,,,"",,,,"Composition.date",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"DocumentoCl","Composition.author","Composition.author","","","",1,*,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl|CoreRolClinicoCl]]}
+"DocumentoCl","Composition.author","Composition.author","","","",1,*,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl], CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl], CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl], CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl]]}
 ","Quien Ha creado el documento","Identifica al responsable de los datos ingresados al documento.","","Identifies who is responsible for the content.","","","","","","","",,,,,"",,,,"Composition.author",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "DocumentoCl","Composition.title","Composition.title","","","",1,1,"Y","","Y","string {[]} {[]}
@@ -4027,21 +4027,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "SexoBiologico","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","SexoBiologico","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"SexoRegistral","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Sexo Registral del paciente","Sexo Registral del paciente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"SexoRegistral","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"SexoRegistral","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"SexoRegistral","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoRegistral""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"SexoRegistral","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","SexoRegistral","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/administrative-gender","",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "TiposVacunaRNI","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Código de tipos de Vacunas en Chile","Esta extensión incluye códigos de los tipos de vacunas que existe en el Registro Nacional de Inmunizaciones RNI","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
