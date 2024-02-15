@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "36026b99-36b2-4178-9228-615f1bf37686-113",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/36026b99-36b2-4178-9228-615f1bf37686-113",
+  "id" : "4c66dd4e-1c54-462b-bdab-bec10c17111f-113",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4c66dd4e-1c54-462b-bdab-bec10c17111f-113",
   "name" : "UnionNombreCampanaCLAndNombreCampanaCL",
   "title" : "Union of Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones) And Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)",
   "status" : "active",
-  "date" : "2024-02-15T09:17:42-03:00",
+  "date" : "2024-02-15T14:15:51-03:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

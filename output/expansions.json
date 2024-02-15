@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "ab2ec07a-f6b9-4b52-b23b-a1d878dfddb9",
+  "id" : "a350a714-fe34-4c4e-95da-e3fd181f4545",
   "meta" : {
-    "lastUpdated" : "2024-02-15T09:17:26.636-03:00"
+    "lastUpdated" : "2024-02-15T14:15:38.076-03:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -28,8 +28,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:11fdf699-9fca-48d4-8556-f10b91febd20",
-        "timestamp" : "2024-02-15T09:18:15-03:00",
+        "identifier" : "urn:uuid:d0ca8f35-fd80-490e-b1d7-0e33b44de407",
+        "timestamp" : "2024-02-15T14:16:23-03:00",
         "total" : 249,
         "offset" : 0,
         "parameter" : [{
@@ -1319,8 +1319,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0cda17b1-780d-41d1-ad1c-38102c75e3b9",
-        "timestamp" : "2024-02-15T09:18:15-03:00",
+        "identifier" : "urn:uuid:3368b91e-0869-43b0-93b2-224b0549a331",
+        "timestamp" : "2024-02-15T14:16:23-03:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1390,8 +1390,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ecd0ea04-1c04-475b-9584-9789463b846d",
-        "timestamp" : "2024-02-15T09:18:15-03:00",
+        "identifier" : "urn:uuid:49e5d7fa-f5b1-4e85-aff0-6ef6a9f9c91a",
+        "timestamp" : "2024-02-15T14:16:23-03:00",
         "total" : 346,
         "offset" : 0,
         "parameter" : [{
@@ -3166,8 +3166,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fc8560c7-2bac-4453-af6e-a821a16d77ec",
-        "timestamp" : "2024-02-15T09:18:16-03:00",
+        "identifier" : "urn:uuid:e0eab09f-af19-471b-850a-c534b8a4b63d",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 56,
         "offset" : 0,
         "parameter" : [{
@@ -3492,8 +3492,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b634205c-8506-432d-95a4-6f145a2a6ccd",
-        "timestamp" : "2024-02-15T09:18:16-03:00",
+        "identifier" : "urn:uuid:978613f6-12a8-4cf2-a290-fa0d4e0a7292",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 16,
         "offset" : 0,
         "parameter" : [{
@@ -3618,8 +3618,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:283f8ffb-981e-4143-9dfe-7264b3668b69",
-        "timestamp" : "2024-02-15T09:18:16-03:00",
+        "identifier" : "urn:uuid:97cd6417-5467-4234-a2b3-14dc81ac1eaf",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 28,
         "offset" : 0,
         "parameter" : [{
@@ -3804,8 +3804,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:55512585-9d1f-462f-b95f-54edcaf9b95a",
-        "timestamp" : "2024-02-15T09:18:16-03:00",
+        "identifier" : "urn:uuid:35a28913-163f-4233-a7cf-2f4392433fef",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 53,
         "offset" : 0,
         "parameter" : [{
@@ -4115,8 +4115,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a944cf40-5175-4a0b-8226-e7ce4469fed5",
-        "timestamp" : "2024-02-15T09:18:16-03:00",
+        "identifier" : "urn:uuid:8b2db957-5b45-48c2-9081-056735306a67",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -4246,8 +4246,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dbb42695-f39a-49a4-9986-3c29748ed51b",
-        "timestamp" : "2024-02-15T09:18:17-03:00",
+        "identifier" : "urn:uuid:215f33f7-8a0c-4534-968a-eff37c0bef45",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 68,
         "offset" : 0,
         "parameter" : [{
@@ -4632,8 +4632,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f1bbd1fc-a189-4a9e-a687-686113c9c468",
-        "timestamp" : "2024-02-15T09:18:17-03:00",
+        "identifier" : "urn:uuid:440bebb4-cb9d-4612-bc3c-c3bbe530e8c5",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -4713,8 +4713,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b8f59167-9d4a-4e60-a371-5db22b26dfaf",
-        "timestamp" : "2024-02-15T09:18:17-03:00",
+        "identifier" : "urn:uuid:291f83b1-e13e-4517-ab0c-db9cf770bcb4",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -4779,8 +4779,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:736d07fd-2b6b-40e8-a64d-d063c3474443",
-        "timestamp" : "2024-02-15T09:18:17-03:00",
+        "identifier" : "urn:uuid:f45c0018-d968-45e7-b9c2-5a2c6869d63b",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 36,
         "offset" : 0,
         "parameter" : [{
@@ -5005,8 +5005,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f6f7a309-76bc-4265-b934-c9d1a82c3d34",
-        "timestamp" : "2024-02-15T09:18:17-03:00",
+        "identifier" : "urn:uuid:793ebc75-8a8f-45ef-8559-bd1aa8532fa9",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -5076,8 +5076,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8fae8e1e-b983-4cb1-b4f3-ab8b7e92847d",
-        "timestamp" : "2024-02-15T09:18:17-03:00",
+        "identifier" : "urn:uuid:67db0014-b32f-4947-9e46-d44785a96f70",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -5142,8 +5142,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2734b8d4-518b-4efd-aade-80d3db7f8ec4",
-        "timestamp" : "2024-02-15T09:18:17-03:00",
+        "identifier" : "urn:uuid:c4397533-32d8-4214-93b5-271cceb55228",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -5213,8 +5213,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a13ec3d2-8e48-47c7-8f48-bdea3220f8ac",
-        "timestamp" : "2024-02-15T09:18:17-03:00",
+        "identifier" : "urn:uuid:0ad6ded9-69f5-4fca-8cd2-7237c6bfebce",
+        "timestamp" : "2024-02-15T14:16:24-03:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -10358,8 +10358,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:18ddc248-997e-4f12-9b7d-a720aeabbfde",
-        "timestamp" : "2024-02-15T09:18:24-03:00",
+        "identifier" : "urn:uuid:740f5389-e85b-43c1-9b19-d4f51e1c8089",
+        "timestamp" : "2024-02-15T14:16:25-03:00",
         "total" : 180,
         "offset" : 0,
         "parameter" : [{
@@ -11312,8 +11312,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0e664d9f-2ae9-4641-83cc-f78f6c7e68b3",
-        "timestamp" : "2024-02-15T09:18:24-03:00",
+        "identifier" : "urn:uuid:d5316a2c-fc9b-4ac2-9d8b-3b3c95f55b95",
+        "timestamp" : "2024-02-15T14:16:25-03:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -11373,8 +11373,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a541bdb1-8a9d-44fd-ac60-dcff68fc2728",
-        "timestamp" : "2024-02-15T09:18:24-03:00",
+        "identifier" : "urn:uuid:17d96b10-a7f1-425c-833b-5120dc384325",
+        "timestamp" : "2024-02-15T14:16:25-03:00",
         "total" : 14,
         "offset" : 0,
         "parameter" : [{
@@ -11489,8 +11489,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c0be24ab-2d5f-40a0-8e4a-2e7f5e1d11a0",
-        "timestamp" : "2024-02-15T09:18:24-03:00",
+        "identifier" : "urn:uuid:abf67d14-808c-4ff9-8b20-dc09054f8eae",
+        "timestamp" : "2024-02-15T14:16:25-03:00",
         "total" : 79,
         "offset" : 0,
         "parameter" : [{
