@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"3240\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;3240&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CorePrestadorCl.html\">CL Prestador</a></p></div><p><b>identifier</b>: RUN:\u00a08336277-3\u00a0(use:\u00a0OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Johanna Rosa null (OFFICIAL)</p><p><b>telecom</b>: ph: 9345666(MOBILE), <a href=\"mailto:DraSilva@mimail.com\">DraSilva@mimail.com</a></p><p><b>address</b>: null null null </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1974-08-12</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"3240\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;3240&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CorePrestadorCl.html\">CL Prestador</a></p></div><p><b>identifier</b>: RUN/8336277-3\u00a0(use:\u00a0OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Johanna Rosa null (OFFICIAL)</p><p><b>telecom</b>: ph: 9345666(MOBILE), <a href=\"mailto:DraSilva@mimail.com\">DraSilva@mimail.com</a></p><p><b>address</b>: null null null </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1974-08-12</p></div>"
   },
   "identifier" : [{
     "use" : "official",

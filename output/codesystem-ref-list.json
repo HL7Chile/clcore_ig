@@ -72,8 +72,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.72"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem",
-      "ValueSet-VSContactosec.html" : "Contacto participantes"
+      "ValueSet-VSContactosec.html" : "Contacto participantes",
+      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem"
     },
     {
       "url" : "http://hl7.org/fhir/contact-point-use",
@@ -167,8 +167,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-VSTiposDocClinic.html" : "Tipos de Documentos Clínicos",
-      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes"
+      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
+      "ValueSet-VSTiposDocClinic.html" : "Tipos de Documentos Clínicos"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -334,8 +334,8 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-      "http://terminology.hl7.org/5.3.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+      "http://terminology.hl7.org/5.3.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
@@ -383,8 +383,8 @@
       "oids" : ["2.16.840.1.113883.5.90"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
       "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
     },
     {

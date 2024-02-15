@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "3b1267b5-19b8-46a3-aae7-c8cbf9d79baf-186",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/3b1267b5-19b8-46a3-aae7-c8cbf9d79baf-186",
+  "id" : "36026b99-36b2-4178-9228-615f1bf37686-186",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/36026b99-36b2-4178-9228-615f1bf37686-186",
   "name" : "IntersectionVSIdentificadoresAndVSIdentificadores",
   "title" : "Intersection of Identificadores And Identificadores",
   "status" : "active",
-  "date" : "2024-01-08T08:41:37-03:00",
+  "date" : "2024-02-15T09:17:42-03:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

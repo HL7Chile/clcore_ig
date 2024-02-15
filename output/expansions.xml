@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="f65570f5-de8c-4a2c-a28d-542aa3c63a0f"/>
+  <id value="ab2ec07a-f6b9-4b52-b23b-a1d878dfddb9"/>
   <meta>
-    <lastUpdated value="2024-01-08T08:41:20.981-03:00"/>
+    <lastUpdated value="2024-02-15T09:17:26.636-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CodPais.html">codesystem Códigos de Países v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 249 concepts</p>
+            <p>This value set contains 249 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -2039,9 +2039,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:87c1548b-73ad-464b-8945-02fbe48887b7"/>
-          <timestamp value="2024-01-08T08:42:04-03:00"/>
+          <identifier value="urn:uuid:11fdf699-9fca-48d4-8556-f10b91febd20"/>
+          <timestamp value="2024-02-15T09:18:15-03:00"/>
           <total value="249"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -3309,7 +3318,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSCodMadurez.html">codesystem Códigos de grado de madurez del artefacto v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 5 concepts</p>
+            <p>This value set contains 5 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -3380,9 +3389,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:124aa045-98f0-46c0-95af-80f49b92d5d0"/>
-          <timestamp value="2024-01-08T08:42:04-03:00"/>
+          <identifier value="urn:uuid:0cda17b1-780d-41d1-ad1c-38102c75e3b9"/>
+          <timestamp value="2024-02-15T09:18:15-03:00"/>
           <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -3430,7 +3448,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSCodComunasCL.html">codesystem Códigos de Comunas en Chile v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 346 concepts</p>
+            <p>This value set contains 346 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -6229,9 +6247,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6e92c48d-a599-41b9-8134-ada3963bc143"/>
-          <timestamp value="2024-01-08T08:42:04-03:00"/>
+          <identifier value="urn:uuid:ecd0ea04-1c04-475b-9584-9789463b846d"/>
+          <timestamp value="2024-02-15T09:18:15-03:00"/>
           <total value="346"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -7984,7 +8011,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSCodProvinciasCL.html">codesystem Códigos de Provincias en Chile v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 56 concepts</p>
+            <p>This value set contains 56 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -8463,9 +8490,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2ffed5ee-7716-4c75-8727-5c4db141c8a8"/>
-          <timestamp value="2024-01-08T08:42:04-03:00"/>
+          <identifier value="urn:uuid:fc8560c7-2bac-4453-af6e-a821a16d77ec"/>
+          <timestamp value="2024-02-15T09:18:16-03:00"/>
           <total value="56"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -8768,7 +8804,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSCodRegionCL.html">codesystem Códigos de Regiones en Chile v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 16 concepts</p>
+            <p>This value set contains 16 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -8927,9 +8963,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:10a6d214-c635-449b-b4c4-c2365dfacc8b"/>
-          <timestamp value="2024-01-08T08:42:04-03:00"/>
+          <identifier value="urn:uuid:b634205c-8506-432d-95a4-6f145a2a6ccd"/>
+          <timestamp value="2024-02-15T09:18:16-03:00"/>
           <total value="16"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -9032,7 +9077,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSCodSSalud.html">codesystem Servicios de Salud Chile v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 28 concepts</p>
+            <p>This value set contains 28 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -9287,9 +9332,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fbda4ea5-c15c-4e73-869b-c158a7364530"/>
-          <timestamp value="2024-01-08T08:42:04-03:00"/>
+          <identifier value="urn:uuid:283f8ffb-981e-4143-9dfe-7264b3668b69"/>
+          <timestamp value="2024-02-15T09:18:16-03:00"/>
           <total value="28"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -9452,7 +9506,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSCodigoslenguaje.html">codesystem Codigos Lenguaje v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 53 concepts</p>
+            <p>This value set contains 53 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -10228,9 +10282,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0dede9a1-1879-405c-9e5f-4431b13b0ecc"/>
-          <timestamp value="2024-01-08T08:42:04-03:00"/>
+          <identifier value="urn:uuid:55512585-9d1f-462f-b95f-54edcaf9b95a"/>
+          <timestamp value="2024-02-15T09:18:16-03:00"/>
           <total value="53"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -10518,7 +10581,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html">codesystem ContactPointSystem v4.0.1 (CodeSystem)</a>
             </p>
-            <p>This value set contains 7 concepts</p>
+            <p>This value set contains 7 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -10650,9 +10713,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a6fe2353-a959-4dac-953c-b929b84e9f59"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:a944cf40-5175-4a0b-8226-e7ce4469fed5"/>
+          <timestamp value="2024-02-15T09:18:16-03:00"/>
           <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -10707,10 +10779,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html">codesystem Absent and Unknown Data - IPS v1.0.0 (CodeSystem)</a>
-            </p>
-            <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
+            <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set cannot be expanded because of the way it is defined - it has an infinite number of members.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -10721,219 +10790,6 @@
                 </td>
                 <td>
                   <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-allergy-info"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-allergy-info">no-allergy-info</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No information about allergies</td>
-                <td>
-                  <div>
-                    <p>There is no information available regarding the subject's allergy conditions.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-known-allergies"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-known-allergies">no-known-allergies</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No known allergies</td>
-                <td>
-                  <div>
-                    <p>The subject has no known allergy conditions.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-known-medication-allergies"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-known-medication-allergies">no-known-medication-allergies</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No known medication allergies</td>
-                <td>
-                  <div>
-                    <p>The subject has no known medication allergy conditions.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-known-environmental-allergies"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-known-environmental-allergies">no-known-environmental-allergies</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No known environmental allergies</td>
-                <td>
-                  <div>
-                    <p>The subject has no known environmental allergy conditions.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-known-food-allergies"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-known-food-allergies">no-known-food-allergies</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No known food allergies</td>
-                <td>
-                  <div>
-                    <p>The subject has no known food allergy conditions.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-device-info"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-device-info">no-device-info</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No information about devices</td>
-                <td>
-                  <div>
-                    <p>There is no information available regarding implanted or external devices for the subject.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-known-devices"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-known-devices">no-known-devices</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No known devices in use</td>
-                <td>
-                  <div>
-                    <p>There are no devices known to be implanted in or used by the subject that have to be reported in this record. This can mean either that there are none known, or that those known are not relevant for the purpose of this record.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-immunization-info"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-immunization-info">no-immunization-info</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No information about immunizations</td>
-                <td>
-                  <div>
-                    <p>The subject's history of previous immunizations is not known.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-known-immunizations"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-known-immunizations">no-known-immunizations</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No known immunizations</td>
-                <td>
-                  <div>
-                    <p>There is no history of previous immunizations for the subject that have to be reported in this record. This can mean either that there are none known, or that those known are not relevant for the purpose of this record.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-medication-info"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-medication-info">no-medication-info</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No information about medications</td>
-                <td>
-                  <div>
-                    <p>There is no information available about the subject's medication use or administration.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-known-medications"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-known-medications">no-known-medications</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No known medications</td>
-                <td>
-                  <div>
-                    <p>There are no medications for the subject that have to be reported in this record. This can mean either that there are none known, or that those known are not relevant for the purpose of this record.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-problem-info"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-problem-info">no-problem-info</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No information about problems</td>
-                <td>
-                  <div>
-                    <p>There is no information available about the subject's health problems or disabilities.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-known-problems"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-known-problems">no-known-problems</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No known problems</td>
-                <td>
-                  <div>
-                    <p>The subject is not known to have any health problems or disabilities that have to be reported in this record. This can mean either that there are none known, or that those known are not relevant for the purpose of this record.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-procedure-info"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-procedure-info">no-procedure-info</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No information about past history of procedures</td>
-                <td>
-                  <div>
-                    <p>There is no information available about the subject's past history of procedures.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-uv-ips-CodeSystem-absent-unknown-uv-ips-no-known-procedures"> </a>  
-                  <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html#absent-unknown-uv-ips-no-known-procedures">no-known-procedures</a>
-                </td>
-                <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-                <td>No known procedures</td>
-                <td>
-                  <div>
-                    <p>The subject has no history of procedures that have to be reported in this record. This can mean either that there are none known, or that those known are not relevant for the purpose of this record.</p>
-
-                  </div>
                 </td>
               </tr>
             </table>
@@ -10957,100 +10813,26 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:a27312b6-68aa-4d66-805d-7b1c8e9aaef7"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
-          <total value="15"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
+          <identifier value="urn:uuid:83fec85b-6b58-4689-abbd-6b8ba3a5785a"/>
+          <timestamp value="2024-02-15T12:18:17.199Z"/>
+          <total value="0"/>
+          <offset value="0"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips|1.0.0"/>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
           </parameter>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-allergy-info"/>
-            <display value="No information about allergies"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-known-allergies"/>
-            <display value="No known allergies"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-known-medication-allergies"/>
-            <display value="No known medication allergies"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-known-environmental-allergies"/>
-            <display value="No known environmental allergies"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-known-food-allergies"/>
-            <display value="No known food allergies"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-device-info"/>
-            <display value="No information about devices"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-known-devices"/>
-            <display value="No known devices in use"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-immunization-info"/>
-            <display value="No information about immunizations"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-known-immunizations"/>
-            <display value="No known immunizations"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-medication-info"/>
-            <display value="No information about medications"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-known-medications"/>
-            <display value="No known medications"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-problem-info"/>
-            <display value="No information about problems"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-known-problems"/>
-            <display value="No known problems"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-procedure-info"/>
-            <display value="No information about past history of procedures"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-            <code value="no-known-procedures"/>
-            <display value="No known procedures"/>
-          </contains>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
         </expansion>
       </ValueSet>
     </resource>
@@ -11065,7 +10847,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSEspecialidadesDeisCL.html">codesystem Códigos de Especialidades v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 68 concepts</p>
+            <p>This value set contains 68 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -11640,9 +11422,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4f0a83a7-57d6-4eda-a276-07e71e0156e4"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:dbb42695-f39a-49a4-9986-3c29748ed51b"/>
+          <timestamp value="2024-02-15T09:18:17-03:00"/>
           <total value="68"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -12005,7 +11796,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSIdentidaddeGenero.html">codesystem Identidad de Genero v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 7 concepts</p>
+            <p>This value set contains 7 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -12092,9 +11883,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1eef3b85-e264-4d36-92df-652ab2070bbe"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:f1bbd1fc-a189-4a9e-a687-686113c9c468"/>
+          <timestamp value="2024-02-15T09:18:17-03:00"/>
           <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -12152,7 +11952,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSIdentificadores.html">codesystem Identificadores v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 4 concepts</p>
+            <p>This value set contains 4 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -12242,9 +12042,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a1a12d6c-20be-4032-a722-a47f23d2b9c2"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:b8f59167-9d4a-4e60-a371-5db22b26dfaf"/>
+          <timestamp value="2024-02-15T09:18:17-03:00"/>
           <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -12287,7 +12096,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSNombreCampana.html">codesystem Campañas Inmunización v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 36 concepts</p>
+            <p>This value set contains 36 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -12606,9 +12415,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ac3ecd6f-d8ad-4dd6-8f53-76ea93120804"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:736d07fd-2b6b-40e8-a64d-d063c3474443"/>
+          <timestamp value="2024-02-15T09:18:17-03:00"/>
           <total value="36"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -12811,7 +12629,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-csrazonnoencuentro.html">codesystem Razón Encuentro Remoto no Realizado v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 5 concepts</p>
+            <p>This value set contains 5 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -12915,9 +12733,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:15d30b7c-39ee-44eb-b82d-e41c51d922bf"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:f6f7a309-76bc-4265-b934-c9d1a82c3d34"/>
+          <timestamp value="2024-02-15T09:18:17-03:00"/>
           <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -12965,7 +12792,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSRazonNOTinm.html">codesystem Razones no Inmunización v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 4 concepts</p>
+            <p>This value set contains 4 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -13028,9 +12855,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:628d6278-87ce-480c-9ab7-4198e3296d95"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:8fae8e1e-b983-4cb1-b4f3-ab8b7e92847d"/>
+          <timestamp value="2024-02-15T09:18:17-03:00"/>
           <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -13073,7 +12909,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSSexoListadoDeis.html">codesystem Sexo Listado Deis v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 5 concepts</p>
+            <p>This value set contains 5 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -13144,9 +12980,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d63d55cd-d018-4477-8d0a-efd814c9451f"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:2734b8d4-518b-4efd-aade-80d3db7f8ec4"/>
+          <timestamp value="2024-02-15T09:18:17-03:00"/>
           <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -13194,7 +13039,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSTipoIdentificador.html">codesystem Tipo Identificador v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 9 concepts</p>
+            <p>This value set contains 9 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -13297,9 +13142,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4a27f341-de83-4995-8ab9-1d6c895d28ff"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:a13ec3d2-8e48-47c7-8f48-bdea3220f8ac"/>
+          <timestamp value="2024-02-15T09:18:17-03:00"/>
           <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -13364,14 +13218,8 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>Loinc v2.74</li>
-                <li>Loinc v2.74</li>
-              </ul>
-            </div>
-            <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
+            <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has 0 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -21402,23 +21250,25 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
+          <identifier value="urn:uuid:2ee4d243-1f38-4805-b8e4-df5498eaca0b"/>
+          <timestamp value="2024-02-15T12:18:18.246Z"/>
+          <total value="0"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
-          </extension>
-          <identifier value="urn:uuid:35127c05-951c-4526-85a1-054fae196907"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
-          <total value="1000"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
+            <name value="offset"/>
+            <valueInteger value="0"/>
           </parameter>
           <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
+            <name value="count"/>
+            <valueInteger value="1000"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -26453,7 +26303,7 @@
                 </li>
               </ul>
             </div>
-            <p>This value set contains 180 concepts</p>
+            <p>This value set contains 180 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -28881,9 +28731,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9b65e59a-c059-4f1c-8bc5-387813487d40"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:18ddc248-997e-4f12-9b7d-a720aeabbfde"/>
+          <timestamp value="2024-02-15T09:18:24-03:00"/>
           <total value="180"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -29814,7 +29673,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSTiposEncuentroCL.html">codesystem Tipos de Encuentro v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 3 concepts</p>
+            <p>This value set contains 3 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -29869,9 +29728,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0e0e88c9-f2a3-4131-a882-4d296dc086ca"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:0e664d9f-2ae9-4641-83cc-f78f6c7e68b3"/>
+          <timestamp value="2024-02-15T09:18:24-03:00"/>
           <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -29909,7 +29777,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSCodigoServicio.html">codesystem Tipos de Servicios Remotos v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 14 concepts</p>
+            <p>This value set contains 14 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -30052,9 +29920,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4faf56b6-0422-407c-9d20-3bd65db6eaae"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:a541bdb1-8a9d-44fd-ac60-dcff68fc2728"/>
+          <timestamp value="2024-02-15T09:18:24-03:00"/>
           <total value="14"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -30147,7 +30024,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-CSCodigoVacunas.html">codesystem Códigos de Vacunas RNI v1.8.6 (CodeSystem)</a>
             </p>
-            <p>This value set contains 79 concepts</p>
+            <p>This value set contains 79 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -30810,9 +30687,18 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a0a595dd-2aa5-4603-8727-aa52336527f8"/>
-          <timestamp value="2024-01-08T08:42:05-03:00"/>
+          <identifier value="urn:uuid:c0be24ab-2d5f-40a0-8e4a-2e7f5e1d11a0"/>
+          <timestamp value="2024-02-15T09:18:24-03:00"/>
           <total value="79"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>

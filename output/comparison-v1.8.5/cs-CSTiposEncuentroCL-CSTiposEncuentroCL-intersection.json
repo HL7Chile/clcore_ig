@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "3b1267b5-19b8-46a3-aae7-c8cbf9d79baf-54",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3b1267b5-19b8-46a3-aae7-c8cbf9d79baf-54",
+  "id" : "36026b99-36b2-4178-9228-615f1bf37686-54",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/36026b99-36b2-4178-9228-615f1bf37686-54",
   "name" : "IntersectionCSTiposEncuentroCLAndCSTiposEncuentroCL",
   "title" : "Intersection of Tipos de Encuentro And Tipos de Encuentro",
   "status" : "active",
-  "date" : "2024-01-08T08:41:37-03:00",
+  "date" : "2024-02-15T09:17:42-03:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
