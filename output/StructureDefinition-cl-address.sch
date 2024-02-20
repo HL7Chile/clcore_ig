@@ -12,6 +12,7 @@
   <sch:pattern>
     <sch:title>f:Address</sch:title>
     <sch:rule context="f:Address">
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/geolocation']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/geolocation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:line) &lt;= 1">line: maximum cardinality of 'line' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

@@ -1,0 +1,67 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CSPrevision",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"CSPrevision-01\"> </a></td><td>FONASA</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"CSPrevision-02\"> </a></td><td>ISAPRE</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"CSPrevision-03\"> </a></td><td>CAPREDENA</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"CSPrevision-04\"> </a></td><td>DIPRECA</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"CSPrevision-05\"> </a></td><td>SISA</td></tr><tr><td style=\"white-space:nowrap\">96<a name=\"CSPrevision-96\"> </a></td><td>NINGUNA</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"CSPrevision-99\"> </a></td><td>DESCONOCIDO</td></tr></table></div>"
+  },
+  "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision",
+  "version" : "1.8.7",
+  "name" : "CSPrevision",
+  "title" : "Prevision",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-01-15",
+  "publisher" : "HL7 Chile",
+  "contact" : [{
+    "name" : "HL7 Chile",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7chile.cl"
+    },
+    {
+      "system" : "email",
+      "value" : "chair@hl7chile.cl"
+    }]
+  }],
+  "description" : "Prevision",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "copyright" : "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional.",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "01",
+    "display" : "FONASA"
+  },
+  {
+    "code" : "02",
+    "display" : "ISAPRE"
+  },
+  {
+    "code" : "03",
+    "display" : "CAPREDENA"
+  },
+  {
+    "code" : "04",
+    "display" : "DIPRECA"
+  },
+  {
+    "code" : "05",
+    "display" : "SISA"
+  },
+  {
+    "code" : "96",
+    "display" : "NINGUNA"
+  },
+  {
+    "code" : "99",
+    "display" : "DESCONOCIDO"
+  }]
+}

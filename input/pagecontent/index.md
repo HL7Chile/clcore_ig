@@ -58,6 +58,23 @@ Los requerimientos de conformidad describen las expectativas sobre la funcionali
   - Diego Kaminker (HL7 Internacional)
   - Yanara Salinas (UV)
 
+### Dependencias
+
+{% include dependency-table.xhtml %}
+
+### Analisis de versiones cruzadas
+
+{% include cross-version-analysis.xhtml %}
+
+### Perfiles globales
+
+{% include globals-table.xhtml %}
+
+### Declaracion de propiedad intelectual
+
+{% include ip-statements.xhtml %}
+
+
 ### Recursos a Disposición
 [Ministerio de Salud de Chile](http://www.minsal.cl)
 
@@ -74,3 +91,4 @@ Los requerimientos de conformidad describen las expectativas sobre la funcionali
 [SUSHI code repository](https://github.com/FHIR/sushi)
 
 [Zulip](https://chat.fhir.org) channel: #shorthand
+

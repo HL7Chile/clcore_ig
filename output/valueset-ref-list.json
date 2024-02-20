@@ -1,6 +1,20 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-SexoBiologico.html" : "Sexo Biologico del paciente"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/audit-event-action",
       "version" : "4.0.1",
       "status" : "draft",
@@ -365,7 +379,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "CodPaises",
       "title" : "Códigos de Países",
@@ -378,7 +392,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodMadurez",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSCodMadurez",
       "title" : "Códigos de grado de madurez del artefacto",
@@ -387,7 +401,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosComunaCL",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSCodigosComunaCL",
       "title" : "Códigos de Comunas en Chile",
@@ -401,7 +415,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosProvinciasCL",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSCodigosProvinciasCL",
       "title" : "Códigos de Provincias en Chile",
@@ -415,7 +429,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosRegionesCL",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSCodigosRegionesCL",
       "title" : "Códigos de Regiones en Chile",
@@ -429,7 +443,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSCodigosServiciosSaludCL",
       "title" : "Servicos de Salud en Chile",
@@ -441,7 +455,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigoslenguaje",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSCodigoslenguaje",
       "title" : "Codigos Lenguaje",
@@ -455,7 +469,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSContactoSecundario",
       "title" : "Contacto participantes",
@@ -467,7 +481,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSDiagnosticosSCT",
       "title" : "Diagnósticos SNOMED y Ausente o Desconocido",
@@ -482,7 +496,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSEspecialidadesDeisCL",
       "title" : "Códigos de Especialidades",
@@ -492,12 +506,12 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-VSEspecialidadesDeisCL.html" : "Especialidad del médico principal"
+      "StructureDefinition-VSEspecialidadesDeisCL.html" : "Especialidad del médico principal",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSIdentidaddeGenero",
       "title" : "Identidad de Genero",
@@ -511,7 +525,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentificadores",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSIdentificadores",
       "title" : "Identificadores",
@@ -525,7 +539,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSNombreCampana",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSNombreCampanaCL",
       "title" : "Campañas de Vacunación",
@@ -538,8 +552,17 @@
       "StructureDefinition-NombreCampana.html" : "Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)"
     },
     {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSPrevision",
+      "version" : "1.8.7",
+      "status" : "active",
+      "name" : "VSPrevision",
+      "title" : "Prevision",
+      "description" : "Prevision",
+      "systems" : ["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"]
+    },
+    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSRazonNOencuentro",
       "title" : "Razones no Atención Remota",
@@ -553,7 +576,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSRazonNOTinmCL",
       "title" : "Razones no Inmunización",
@@ -567,21 +590,18 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSSexoListadoDeis",
       "title" : "Sexo Listado Deis",
       "description" : "Sexo Listado Deis",
       "systems" : [
         "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-SexoBiologico.html" : "Sexo Biologico del paciente"
+      ]
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTipoIdentificador",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSTipoIdentificador",
       "title" : "Tipo Identificador",
@@ -591,10 +611,10 @@
       ]
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinic",
-      "version" : "1.8.6",
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinico",
+      "version" : "1.8.7",
       "status" : "active",
-      "name" : "VSTiposDocClinic",
+      "name" : "VSTiposDocClinico",
       "title" : "Tipos de Documentos Clínicos",
       "description" : "Tipos de Documentos clínicos para Composition. Se trae todo Loinc, se requerirá un VS específico",
       "systems" : ["http://loinc.org"],
@@ -604,7 +624,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocumentos",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSTiposDocumentos",
       "title" : "Tipos de Documentos",
@@ -620,7 +640,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposEncuentroCL",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSTiposEncuentroCL",
       "title" : "Tipos de Encuentro",
@@ -631,7 +651,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposServicio",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSTiposServicioCL",
       "title" : "Tipos de Servicios Remotos",
@@ -642,7 +662,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposVacunas",
-      "version" : "1.8.6",
+      "version" : "1.8.7",
       "status" : "active",
       "name" : "VSTiposVacunasCL",
       "title" : "Tipos de Vacunas RNI",

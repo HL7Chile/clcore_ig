@@ -3,10 +3,10 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="VSDiagnosticosSCT"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a></li><li>Include all codes defined in <a href="http://hl7.org/fhir/uv/ips/STU1/CodeSystem-absent-unknown-uv-ips.html"><code>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a></li><li>Include all codes defined in <code>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</code></li></ul></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT"/>
-  <version value="1.8.6"/>
+  <version value="1.8.7"/>
   <name value="VSDiagnosticosSCT"/>
   <title value="Diagnósticos SNOMED y Ausente o Desconocido"/>
   <status value="active"/>

@@ -1026,8 +1026,8 @@ Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoria
 * #16109 "Yungay"
 * #05405 "Zapallar"
 
-ValueSet: VSTiposDocClinic
-Id: VSTiposDocClinic
+ValueSet: VSTiposDocClinico
+Id: VSTiposDocClinico
 Title: "Tipos de Documentos Clínicos"
 Description: "Tipos de Documentos clínicos para Composition. Se trae todo Loinc, se requerirá un VS específico"
 * ^experimental = false
@@ -1583,15 +1583,19 @@ Description: "Tipo Identificador"
 * ^contact.telecom.value = "interoperabilidad@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "Run"
-* #02 "Run materno/progenitor(a)"
-* #03 "Número de Folio de comprobante de parto"
-* #04 "Número de pasaporte"
-* #05 "Número de documento identificador de país de origen"
-* #06 "Número de identificador FONASA"
-* #07 "Identificador Provisorio Escolar"
-* #08 "Identificador Provisorio Apoderado"
-* #09 "Registro Único de Contribuyentes"
+* #01 "Rol Único Nacional o RUN"
+* #02 "RUN provisorio (Artículo 44)"
+* #03 "RUN madre (para recién nacido)"
+* #04 "Número Folio Comprobante de Parto chileno"
+* #05 "Pasaporte"
+* #06 "Documento de identificación del país de origen"
+* #07 "Acta de nacimiento del país de origen"
+* #08 "Número de Identificación Provisorio (NIP)"
+* #09 "Número Identificatorio para cotizar (NIC)"
+* #10 "Identificación Provisoria del Apoderado (IPA)"
+* #11 "Identificación Provisoria del Escolar (IPE)"
+* #12 "Número de Ficha Clínica Sistema Local"
+
 
 
 ValueSet: VSIdentidaddeGenero
@@ -1700,3 +1704,42 @@ Description: "Identificadores"
 * #2 "RNPI" "Registro Nacional de Prestadores Individuales"
 * #3 "PPN" "Pasaporte"
 * #4 "OTRO" "Otro tipo de identificador"
+
+ValueSet: VSPrevision
+Id: VSPrevision
+Title: "Prevision"
+Description: "Prevision"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSPrevision
+
+CodeSystem: CSPrevision
+Id: CSPrevision
+Title: "Prevision"
+Description: "Prevision"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #01	"FONASA" 
+* #02	"ISAPRE"  
+* #03	"CAPREDENA" 
+* #04	"DIPRECA" 
+* #05	"SISA" 
+* #96	"NINGUNA"
+* #99	"DESCONOCIDO"
+
+

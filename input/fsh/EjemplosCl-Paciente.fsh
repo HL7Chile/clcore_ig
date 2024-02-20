@@ -352,6 +352,7 @@ Usage: #inline
 
 * valueString = "Callejas"
 
+/*
 Instance: PacienteCl-5
 InstanceOf: CorePacienteCl
 Title : "Ejemplo de Recurso de paciente Nacional con contacto declarado y extensión en dirección"
@@ -458,3 +459,4 @@ Instance: Masculino
 InstanceOf: SexoBiologico
 Usage: #inline
 * valueCodeableConcept = CSSexoListadoDeis#1 "Hombre"
+*/

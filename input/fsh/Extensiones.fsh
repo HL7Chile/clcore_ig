@@ -20,8 +20,7 @@ Description: "Sexo Biologico del paciente"
 Context: CorePacienteCl, PrestadorCL
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "SexoBiologico"
-* valueCodeableConcept from VSSexoListadoDeis
-
+* valueCodeableConcept from VSadministrative-gender
 
 // Extension: SexoRegistral
 // Id: SexoRegistral
@@ -36,6 +35,7 @@ Extension:   PaisOrigenNacionalidadCl
 Id:          CodigoPaises
 Title:       "Codigo de Identificación de países"
 Description: "Esta extensión incluye códigos de paises de origen"
+//Context: CorePacienteCl, ClAddress.country.extension.paises, Location, Organization
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
 //* url 1..1 MS
@@ -254,4 +254,6 @@ Title: "Segundo Apellido"
 Description: "Segundo Apellido"
 Context: HumanName.family
 * value[x] only string
+
+
 

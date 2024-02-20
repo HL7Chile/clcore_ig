@@ -22,12 +22,12 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1519
 content-type:application/fhir+json
-date:Thu, 15 Feb 2024 17:15:31 GMT
+date:Mon, 19 Feb 2024 19:06:39 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-390108
+x-request-id:100-822553
 
-{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.2.3","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-02-15T17:15:31.026Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.2.3","releaseDate" : "2024-02-08T05:52:57.808Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
+{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.2.3","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-02-19T19:06:39.200Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.2.3","releaseDate" : "2024-02-08T05:52:57.808Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
 
 </pre><hr/>
 <a name="l2"> </a><h3>2</h3>
@@ -40,7 +40,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio","code":"nutINTA"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"e1823771-23a6-4b2f-844d-2f6560a3cdc9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio","code":"nutINTA"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60162302-9169-4b9b-b415-6a46ff69e618"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -53,11 +53,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:963
 content-type:application/fhir+json
-date:Thu, 15 Feb 2024 17:15:41 GMT
-last-modified:Thu, 15 Feb 2024 17:15:41 GMT
+date:Mon, 19 Feb 2024 19:06:48 GMT
+last-modified:Mon, 19 Feb 2024 19:06:48 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-390110
+x-request-id:100-822554
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio"},{"name" : "code","valueCode" : "nutINTA"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -72,7 +72,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://minsal.cl/semantikos/description-id","code":"1703591000167111","display":"Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"e1823771-23a6-4b2f-844d-2f6560a3cdc9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://minsal.cl/semantikos/description-id","code":"1703591000167111","display":"Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60162302-9169-4b9b-b415-6a46ff69e618"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -85,11 +85,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:928
 content-type:application/fhir+json
-date:Thu, 15 Feb 2024 17:15:52 GMT
-last-modified:Thu, 15 Feb 2024 17:15:52 GMT
+date:Mon, 19 Feb 2024 19:06:59 GMT
+last-modified:Mon, 19 Feb 2024 19:06:59 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-390115
+x-request-id:100-822555
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://minsal.cl/semantikos/description-id"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://minsal.cl/semantikos/description-id"},{"name" : "code","valueCode" : "1703591000167111"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://minsal.cl/semantikos/description-id' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://minsal.cl/semantikos/description-id' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -104,7 +104,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org#10244-2"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"e1823771-23a6-4b2f-844d-2f6560a3cdc9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org#10244-2"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60162302-9169-4b9b-b415-6a46ff69e618"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -117,11 +117,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:805
 content-type:application/fhir+json
-date:Thu, 15 Feb 2024 17:15:53 GMT
-last-modified:Thu, 15 Feb 2024 17:15:53 GMT
+date:Mon, 19 Feb 2024 19:06:59 GMT
+last-modified:Mon, 19 Feb 2024 19:06:59 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-390116
+x-request-id:100-822556
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://loinc.org#10244-2"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://loinc.org#10244-2"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://loinc.org#10244-2' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://loinc.org#10244-2' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -145,12 +145,12 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1519
 content-type:application/fhir+json
-date:Thu, 15 Feb 2024 17:15:31 GMT
+date:Mon, 19 Feb 2024 19:06:39 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-390108
+x-request-id:100-822553
 
-{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.2.3","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-02-15T17:15:31.026Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.2.3","releaseDate" : "2024-02-08T05:52:57.808Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
+{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.2.3","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-02-19T19:06:39.200Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.2.3","releaseDate" : "2024-02-08T05:52:57.808Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
 
 --- 2 -----------------
 Request: 
@@ -161,7 +161,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio","code":"nutINTA"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"e1823771-23a6-4b2f-844d-2f6560a3cdc9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio","code":"nutINTA"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60162302-9169-4b9b-b415-6a46ff69e618"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -174,11 +174,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:963
 content-type:application/fhir+json
-date:Thu, 15 Feb 2024 17:15:41 GMT
-last-modified:Thu, 15 Feb 2024 17:15:41 GMT
+date:Mon, 19 Feb 2024 19:06:48 GMT
+last-modified:Mon, 19 Feb 2024 19:06:48 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-390110
+x-request-id:100-822554
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio"},{"name" : "code","valueCode" : "nutINTA"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -191,7 +191,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://minsal.cl/semantikos/description-id","code":"1703591000167111","display":"Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"e1823771-23a6-4b2f-844d-2f6560a3cdc9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://minsal.cl/semantikos/description-id","code":"1703591000167111","display":"Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60162302-9169-4b9b-b415-6a46ff69e618"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -204,11 +204,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:928
 content-type:application/fhir+json
-date:Thu, 15 Feb 2024 17:15:52 GMT
-last-modified:Thu, 15 Feb 2024 17:15:52 GMT
+date:Mon, 19 Feb 2024 19:06:59 GMT
+last-modified:Mon, 19 Feb 2024 19:06:59 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-390115
+x-request-id:100-822555
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://minsal.cl/semantikos/description-id"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://minsal.cl/semantikos/description-id"},{"name" : "code","valueCode" : "1703591000167111"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://minsal.cl/semantikos/description-id' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://minsal.cl/semantikos/description-id' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -221,7 +221,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org#10244-2"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"e1823771-23a6-4b2f-844d-2f6560a3cdc9"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org#10244-2"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"60162302-9169-4b9b-b415-6a46ff69e618"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -234,11 +234,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:805
 content-type:application/fhir+json
-date:Thu, 15 Feb 2024 17:15:53 GMT
-last-modified:Thu, 15 Feb 2024 17:15:53 GMT
+date:Mon, 19 Feb 2024 19:06:59 GMT
+last-modified:Mon, 19 Feb 2024 19:06:59 GMT
 pragma:no-cache
 server:nginx
-x-request-id:100-390116
+x-request-id:100-822556
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://loinc.org#10244-2"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://loinc.org#10244-2"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://loinc.org#10244-2' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://loinc.org#10244-2' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 </pre></head></html>
