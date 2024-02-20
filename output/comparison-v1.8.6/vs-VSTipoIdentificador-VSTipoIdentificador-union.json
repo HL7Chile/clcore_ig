@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "6b3eec63-f5a0-496c-aa73-d5d610d3ce8a-209",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/6b3eec63-f5a0-496c-aa73-d5d610d3ce8a-209",
+  "name" : "UnionVSTipoIdentificadorAndVSTipoIdentificador",
+  "title" : "Union of Tipo Identificador And Tipo Identificador",
+  "status" : "active",
+  "date" : "2024-02-19T16:06:58-03:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }]
+}

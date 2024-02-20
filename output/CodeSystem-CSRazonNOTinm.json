@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">solicitudPaci<a name=\"CSRazonNOTinm-solicitudPaci\"> </a></td><td>Solicitud del paciente</td></tr><tr><td style=\"white-space:nowrap\">otras<a name=\"CSRazonNOTinm-otras\"> </a></td><td>Otras</td></tr><tr><td style=\"white-space:nowrap\">contraindicación<a name=\"CSRazonNOTinm-contraindicaci.243n\"> </a></td><td>Contraindicación</td></tr><tr><td style=\"white-space:nowrap\">solicitudPad<a name=\"CSRazonNOTinm-solicitudPad\"> </a></td><td>Solicitud de los Padres</td></tr></table></div>"
   },
   "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
-  "version" : "1.8.6",
+  "version" : "1.8.7",
   "name" : "CSRazonNOinmunizacionCL",
   "title" : "Razones no Inmunización",
   "status" : "active",

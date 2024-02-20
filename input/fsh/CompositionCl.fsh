@@ -22,7 +22,7 @@ Description: "De un formato genérico para documento clínico en Chile."
 * status ^binding.description = "Códigos requeridos por estándar"
 
 //--- loinc que representa el tipo de documento ----
-* type from VSTiposDocClinic (preferred)
+* type from VSTiposDocClinico (preferred)
 * type MS
 * type ^short = "Tipo de Documento según especificación de LOINC (Ej para Summarie IPS Loinc = #60591-5"
 * type ^definition = "Especifica el tipo de documento al que refiere este Recurso. Si se desea ajustar a IPS debe ser un resumen con código LOINC 60591-5"

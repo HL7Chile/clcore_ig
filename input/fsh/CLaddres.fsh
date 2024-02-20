@@ -48,3 +48,5 @@ Description: "Variable dirección"
 * country.extension contains CodigoPaises named paises  1..1  MS
 * country.extension ^short = "Código de Países"
 * country.extension ^definition = "Código de Países"
+
+* extension contains http://hl7.org/fhir/StructureDefinition/geolocation named Geolocalizacion 0..1 MS

@@ -31,7 +31,9 @@ Los siguientes ejemplos se publican con esta Guía.
 
 * [Ejemplo de Recurso de paciente Nacional con contacto declarado](Patient-PacienteCl-4.html)
 
+<!--
 * [Ejemplo de Recurso de paciente Nacional con contacto declarado y extensión en dirección](Patient-PacienteCl-5.html)
+-->
 
 #### Prestador
 * [Prestador Individual Médico](StructureDefinition-CorePrestadorCl-examples.html)

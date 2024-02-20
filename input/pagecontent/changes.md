@@ -1,3 +1,13 @@
+### Version 1.8.7
+- CodeSystem "Tipo Identificador", se modifican los valores.
+- ClAddress se agrega la extension geolocalizacion
+- PaisOrigenNacionalidadCl -> se le agrega contexto
+- Se agrega en la pagina inicial la lista de dependencias 
+- se agrega ValueSet codicion Actividad segun regulacion DEIS
+- Se crea extensión "CondicionActidad"
+- Se crea extensión "TramoFonasa"
+- Se elimina la dependencia de la guia IPS v1.0.0
+
 ### Version 1.8.6
 - Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
   - Se incluyeron los ejemplos

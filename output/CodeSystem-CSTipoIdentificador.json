@@ -3,10 +3,10 @@
   "id" : "CSTipoIdentificador",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"CSTipoIdentificador-01\"> </a></td><td>Run</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"CSTipoIdentificador-02\"> </a></td><td>Run materno/progenitor(a)</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"CSTipoIdentificador-03\"> </a></td><td>Número de Folio de comprobante de parto</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"CSTipoIdentificador-04\"> </a></td><td>Número de pasaporte</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"CSTipoIdentificador-05\"> </a></td><td>Número de documento identificador de país de origen</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"CSTipoIdentificador-06\"> </a></td><td>Número de identificador FONASA</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"CSTipoIdentificador-07\"> </a></td><td>Identificador Provisorio Escolar</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"CSTipoIdentificador-08\"> </a></td><td>Identificador Provisorio Apoderado</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"CSTipoIdentificador-09\"> </a></td><td>Registro Único de Contribuyentes</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"CSTipoIdentificador-01\"> </a></td><td>Rol Único Nacional o RUN</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"CSTipoIdentificador-02\"> </a></td><td>RUN provisorio (Artículo 44)</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"CSTipoIdentificador-03\"> </a></td><td>RUN madre (para recién nacido)</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"CSTipoIdentificador-04\"> </a></td><td>Número Folio Comprobante de Parto chileno</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"CSTipoIdentificador-05\"> </a></td><td>Pasaporte</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"CSTipoIdentificador-06\"> </a></td><td>Documento de identificación del país de origen</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"CSTipoIdentificador-07\"> </a></td><td>Acta de nacimiento del país de origen</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"CSTipoIdentificador-08\"> </a></td><td>Número de Identificación Provisorio (NIP)</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"CSTipoIdentificador-09\"> </a></td><td>Número Identificatorio para cotizar (NIC)</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"CSTipoIdentificador-10\"> </a></td><td>Identificación Provisoria del Apoderado (IPA)</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"CSTipoIdentificador-11\"> </a></td><td>Identificación Provisoria del Escolar (IPE)</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"CSTipoIdentificador-12\"> </a></td><td>Número de Ficha Clínica Sistema Local</td></tr></table></div>"
   },
   "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
-  "version" : "1.8.6",
+  "version" : "1.8.7",
   "name" : "CSTipoIdentificador",
   "title" : "Tipo Identificador",
   "status" : "active",
@@ -35,41 +35,53 @@
   "copyright" : "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional.",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 9,
+  "count" : 12,
   "concept" : [{
     "code" : "01",
-    "display" : "Run"
+    "display" : "Rol Único Nacional o RUN"
   },
   {
     "code" : "02",
-    "display" : "Run materno/progenitor(a)"
+    "display" : "RUN provisorio (Artículo 44)"
   },
   {
     "code" : "03",
-    "display" : "Número de Folio de comprobante de parto"
+    "display" : "RUN madre (para recién nacido)"
   },
   {
     "code" : "04",
-    "display" : "Número de pasaporte"
+    "display" : "Número Folio Comprobante de Parto chileno"
   },
   {
     "code" : "05",
-    "display" : "Número de documento identificador de país de origen"
+    "display" : "Pasaporte"
   },
   {
     "code" : "06",
-    "display" : "Número de identificador FONASA"
+    "display" : "Documento de identificación del país de origen"
   },
   {
     "code" : "07",
-    "display" : "Identificador Provisorio Escolar"
+    "display" : "Acta de nacimiento del país de origen"
   },
   {
     "code" : "08",
-    "display" : "Identificador Provisorio Apoderado"
+    "display" : "Número de Identificación Provisorio (NIP)"
   },
   {
     "code" : "09",
-    "display" : "Registro Único de Contribuyentes"
+    "display" : "Número Identificatorio para cotizar (NIC)"
+  },
+  {
+    "code" : "10",
+    "display" : "Identificación Provisoria del Apoderado (IPA)"
+  },
+  {
+    "code" : "11",
+    "display" : "Identificación Provisoria del Escolar (IPE)"
+  },
+  {
+    "code" : "12",
+    "display" : "Número de Ficha Clínica Sistema Local"
   }]
 }

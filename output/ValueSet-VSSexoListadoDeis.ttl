@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSSexoListadoDeis.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.8.6"] ; # 
+  fhir:version [ fhir:v "1.8.7"] ; # 
   fhir:name [ fhir:v "VSSexoListadoDeis"] ; # 
   fhir:title [ fhir:v "Sexo Listado Deis"] ; # 
   fhir:status [ fhir:v "active"] ; # 

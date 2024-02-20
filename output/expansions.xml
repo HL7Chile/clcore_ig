@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a350a714-fe34-4c4e-95da-e3fd181f4545"/>
+  <id value="8f5f943b-83ad-4362-ac8c-b0de592461b6"/>
   <meta>
-    <lastUpdated value="2024-02-15T14:15:38.076-03:00"/>
+    <lastUpdated value="2024-02-19T16:06:45.511-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,7 +14,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CodPais.html">codesystem Códigos de Países v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CodPais.html">codesystem Códigos de Países v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 249 concepts.</p>
             <table class="codes">
@@ -2025,7 +2025,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="CodPaises"/>
         <title value="Códigos de Países"/>
         <status value="active"/>
@@ -2039,8 +2039,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d0ca8f35-fd80-490e-b1d7-0e33b44de407"/>
-          <timestamp value="2024-02-15T14:16:23-03:00"/>
+          <identifier value="urn:uuid:8fa8e0bb-db7d-4d58-99b6-b377ef711e26"/>
+          <timestamp value="2024-02-19T16:07:25-03:00"/>
           <total value="249"/>
           <offset value="0"/>
           <parameter>
@@ -2057,7 +2057,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"/>
@@ -3316,7 +3316,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodMadurez.html">codesystem Códigos de grado de madurez del artefacto v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodMadurez.html">codesystem Códigos de grado de madurez del artefacto v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts.</p>
             <table class="codes">
@@ -3375,7 +3375,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodMadurez"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSCodMadurez"/>
         <title value="Códigos de grado de madurez del artefacto"/>
         <status value="active"/>
@@ -3389,8 +3389,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3368b91e-0869-43b0-93b2-224b0549a331"/>
-          <timestamp value="2024-02-15T14:16:23-03:00"/>
+          <identifier value="urn:uuid:b92ac0d1-b74b-4100-84bc-ea4b58106e09"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -3407,7 +3407,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez"/>
@@ -3446,7 +3446,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodComunasCL.html">codesystem Códigos de Comunas en Chile v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodComunasCL.html">codesystem Códigos de Comunas en Chile v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 346 concepts.</p>
             <table class="codes">
@@ -6233,7 +6233,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosComunaCL"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSCodigosComunaCL"/>
         <title value="Códigos de Comunas en Chile"/>
         <status value="active"/>
@@ -6247,8 +6247,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:49e5d7fa-f5b1-4e85-aff0-6ef6a9f9c91a"/>
-          <timestamp value="2024-02-15T14:16:23-03:00"/>
+          <identifier value="urn:uuid:7903eb65-bb21-409a-9027-701056b8733a"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="346"/>
           <offset value="0"/>
           <parameter>
@@ -6265,7 +6265,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"/>
@@ -8009,7 +8009,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodProvinciasCL.html">codesystem Códigos de Provincias en Chile v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodProvinciasCL.html">codesystem Códigos de Provincias en Chile v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 56 concepts.</p>
             <table class="codes">
@@ -8476,7 +8476,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosProvinciasCL"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSCodigosProvinciasCL"/>
         <title value="Códigos de Provincias en Chile"/>
         <status value="active"/>
@@ -8490,8 +8490,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e0eab09f-af19-471b-850a-c534b8a4b63d"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
+          <identifier value="urn:uuid:6aaa48bc-4b72-4d15-b879-0469bb225a03"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="56"/>
           <offset value="0"/>
           <parameter>
@@ -8508,7 +8508,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL"/>
@@ -8802,7 +8802,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodRegionCL.html">codesystem Códigos de Regiones en Chile v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodRegionCL.html">codesystem Códigos de Regiones en Chile v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 16 concepts.</p>
             <table class="codes">
@@ -8949,7 +8949,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosRegionesCL"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSCodigosRegionesCL"/>
         <title value="Códigos de Regiones en Chile"/>
         <status value="active"/>
@@ -8963,8 +8963,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:978613f6-12a8-4cf2-a290-fa0d4e0a7292"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
+          <identifier value="urn:uuid:2e8efbc2-9abc-47f8-946b-8a1054f6b74e"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="16"/>
           <offset value="0"/>
           <parameter>
@@ -8981,7 +8981,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"/>
@@ -9075,7 +9075,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodSSalud.html">codesystem Servicios de Salud Chile v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodSSalud.html">codesystem Servicios de Salud Chile v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 28 concepts.</p>
             <table class="codes">
@@ -9318,7 +9318,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSCodigosServiciosSaludCL"/>
         <title value="Servicos de Salud en Chile"/>
         <status value="active"/>
@@ -9332,8 +9332,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:97cd6417-5467-4234-a2b3-14dc81ac1eaf"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
+          <identifier value="urn:uuid:04786f15-77bd-4cfc-8d48-910e6c200de1"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="28"/>
           <offset value="0"/>
           <parameter>
@@ -9350,7 +9350,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
@@ -9504,7 +9504,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodigoslenguaje.html">codesystem Codigos Lenguaje v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodigoslenguaje.html">codesystem Codigos Lenguaje v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 53 concepts.</p>
             <table class="codes">
@@ -10268,7 +10268,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigoslenguaje"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSCodigoslenguaje"/>
         <title value="Codigos Lenguaje"/>
         <status value="active"/>
@@ -10282,8 +10282,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:35a28913-163f-4233-a7cf-2f4392433fef"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
+          <identifier value="urn:uuid:7a4cb3fe-06ef-412b-8818-c783bf2bd27a"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="53"/>
           <offset value="0"/>
           <parameter>
@@ -10300,7 +10300,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje"/>
@@ -10699,7 +10699,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSContactoSecundario"/>
         <title value="Contacto participantes"/>
         <status value="active"/>
@@ -10713,8 +10713,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8b2db957-5b45-48c2-9081-056735306a67"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
+          <identifier value="urn:uuid:e3b9c95c-578f-468f-ac5a-0c0e28d880bf"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -10796,7 +10796,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSDiagnosticosSCT"/>
         <title value="Diagnósticos SNOMED y Ausente o Desconocido"/>
         <status value="active"/>
@@ -10813,8 +10813,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:83fec85b-6b58-4689-abbd-6b8ba3a5785a"/>
-          <timestamp value="2024-02-15T12:18:17.199Z"/>
+          <identifier value="urn:uuid:5f4bda78-9496-4c89-ae7a-270cfc402ec0"/>
+          <timestamp value="2024-02-19T14:39:19.150Z"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -10845,7 +10845,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSEspecialidadesDeisCL.html">codesystem Códigos de Especialidades v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSEspecialidadesDeisCL.html">codesystem Códigos de Especialidades v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 68 concepts.</p>
             <table class="codes">
@@ -11408,7 +11408,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSEspecialidadesDeisCL"/>
         <title value="Códigos de Especialidades"/>
         <status value="active"/>
@@ -11422,8 +11422,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:215f33f7-8a0c-4534-968a-eff37c0bef45"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
+          <identifier value="urn:uuid:d0b1739f-c3cc-404c-8d86-3c3279cf6cce"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="68"/>
           <offset value="0"/>
           <parameter>
@@ -11440,7 +11440,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"/>
@@ -11794,7 +11794,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSIdentidaddeGenero.html">codesystem Identidad de Genero v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSIdentidaddeGenero.html">codesystem Identidad de Genero v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 7 concepts.</p>
             <table class="codes">
@@ -11869,7 +11869,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSIdentidaddeGenero"/>
         <title value="Identidad de Genero"/>
         <status value="active"/>
@@ -11883,8 +11883,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:440bebb4-cb9d-4612-bc3c-c3bbe530e8c5"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
+          <identifier value="urn:uuid:302046dd-6e53-4377-89fd-953dd364a7fb"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -11901,7 +11901,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero"/>
@@ -11950,7 +11950,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSIdentificadores.html">codesystem Identificadores v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSIdentificadores.html">codesystem Identificadores v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts.</p>
             <table class="codes">
@@ -12028,7 +12028,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentificadores"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSIdentificadores"/>
         <title value="Identificadores"/>
         <status value="active"/>
@@ -12042,8 +12042,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:291f83b1-e13e-4517-ab0c-db9cf770bcb4"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
+          <identifier value="urn:uuid:35876a76-ce21-4648-84d8-e4388d1e2a06"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -12060,7 +12060,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores"/>
@@ -12094,7 +12094,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSNombreCampana.html">codesystem Campañas Inmunización v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSNombreCampana.html">codesystem Campañas Inmunización v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 36 concepts.</p>
             <table class="codes">
@@ -12401,7 +12401,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSNombreCampana"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSNombreCampanaCL"/>
         <title value="Campañas de Vacunación"/>
         <status value="active"/>
@@ -12415,8 +12415,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f45c0018-d968-45e7-b9c2-5a2c6869d63b"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
+          <identifier value="urn:uuid:30c6b1e6-97b6-4dd3-991d-99161b08ff6f"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="36"/>
           <offset value="0"/>
           <parameter>
@@ -12433,7 +12433,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana"/>
@@ -12620,6 +12620,162 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSPrevision"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSPrevision.html">codesystem Prevision v1.8.7 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 7 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-01"> </a>  
+                  <a href="CodeSystem-CSPrevision.html#CSPrevision-01">01</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
+                <td>FONASA</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-02"> </a>  
+                  <a href="CodeSystem-CSPrevision.html#CSPrevision-02">02</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
+                <td>ISAPRE</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-03"> </a>  
+                  <a href="CodeSystem-CSPrevision.html#CSPrevision-03">03</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
+                <td>CAPREDENA</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-04"> </a>  
+                  <a href="CodeSystem-CSPrevision.html#CSPrevision-04">04</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
+                <td>DIPRECA</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-05"> </a>  
+                  <a href="CodeSystem-CSPrevision.html#CSPrevision-05">05</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
+                <td>SISA</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-96"> </a>  
+                  <a href="CodeSystem-CSPrevision.html#CSPrevision-96">96</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
+                <td>NINGUNA</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-99"> </a>  
+                  <a href="CodeSystem-CSPrevision.html#CSPrevision-99">99</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
+                <td>DESCONOCIDO</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSPrevision"/>
+        <version value="1.8.7"/>
+        <name value="VSPrevision"/>
+        <title value="Prevision"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-01-15"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:1bb91d70-4d83-4a58-baae-e3a4a485c4fb"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision|1.8.7"/>
+          </parameter>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
+            <code value="01"/>
+            <display value="FONASA"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
+            <code value="02"/>
+            <display value="ISAPRE"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
+            <code value="03"/>
+            <display value="CAPREDENA"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
+            <code value="04"/>
+            <display value="DIPRECA"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
+            <code value="05"/>
+            <display value="SISA"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
+            <code value="96"/>
+            <display value="NINGUNA"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
+            <code value="99"/>
+            <display value="DESCONOCIDO"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT"/>
     <resource>
       <ValueSet>
@@ -12627,7 +12783,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-csrazonnoencuentro.html">codesystem Razón Encuentro Remoto no Realizado v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-csrazonnoencuentro.html">codesystem Razón Encuentro Remoto no Realizado v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts.</p>
             <table class="codes">
@@ -12719,7 +12875,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSRazonNOencuentro"/>
         <title value="Razones no Atención Remota"/>
         <status value="active"/>
@@ -12733,8 +12889,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:793ebc75-8a8f-45ef-8559-bd1aa8532fa9"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
+          <identifier value="urn:uuid:e851c069-0574-4106-8fc6-804b08cc144b"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -12751,7 +12907,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro"/>
@@ -12790,7 +12946,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSRazonNOTinm.html">codesystem Razones no Inmunización v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSRazonNOTinm.html">codesystem Razones no Inmunización v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts.</p>
             <table class="codes">
@@ -12841,7 +12997,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSRazonNOTinmCL"/>
         <title value="Razones no Inmunización"/>
         <status value="active"/>
@@ -12855,8 +13011,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:67db0014-b32f-4947-9e46-d44785a96f70"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
+          <identifier value="urn:uuid:4d9ff8dd-791c-4761-9aaa-0508ed7b02a5"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -12873,7 +13029,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"/>
@@ -12907,7 +13063,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSSexoListadoDeis.html">codesystem Sexo Listado Deis v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSSexoListadoDeis.html">codesystem Sexo Listado Deis v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts.</p>
             <table class="codes">
@@ -12966,7 +13122,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSSexoListadoDeis"/>
         <title value="Sexo Listado Deis"/>
         <status value="active"/>
@@ -12980,8 +13136,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c4397533-32d8-4214-93b5-271cceb55228"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
+          <identifier value="urn:uuid:58acfe15-57d0-4df9-9477-c7f439753934"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -12998,7 +13154,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis"/>
@@ -13037,9 +13193,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSTipoIdentificador.html">codesystem Tipo Identificador v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSTipoIdentificador.html">codesystem Tipo Identificador v1.8.7 (CodeSystem)</a>
             </p>
-            <p>This value set contains 9 concepts.</p>
+            <p>This value set contains 12 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -13058,7 +13214,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-01">01</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Run</td>
+                <td>Rol Único Nacional o RUN</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13066,7 +13222,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-02">02</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Run materno/progenitor(a)</td>
+                <td>RUN provisorio (Artículo 44)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13074,7 +13230,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-03">03</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Número de Folio de comprobante de parto</td>
+                <td>RUN madre (para recién nacido)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13082,7 +13238,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-04">04</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Número de pasaporte</td>
+                <td>Número Folio Comprobante de Parto chileno</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13090,7 +13246,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-05">05</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Número de documento identificador de país de origen</td>
+                <td>Pasaporte</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13098,7 +13254,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-06">06</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Número de identificador FONASA</td>
+                <td>Documento de identificación del país de origen</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13106,7 +13262,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-07">07</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Identificador Provisorio Escolar</td>
+                <td>Acta de nacimiento del país de origen</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13114,7 +13270,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-08">08</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Identificador Provisorio Apoderado</td>
+                <td>Número de Identificación Provisorio (NIP)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -13122,13 +13278,37 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-09">09</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Registro Único de Contribuyentes</td>
+                <td>Número Identificatorio para cotizar (NIC)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSTipoIdentificador-10"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-10">10</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
+                <td>Identificación Provisoria del Apoderado (IPA)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSTipoIdentificador-11"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-11">11</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
+                <td>Identificación Provisoria del Escolar (IPE)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSTipoIdentificador-12"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-12">12</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
+                <td>Número de Ficha Clínica Sistema Local</td>
               </tr>
             </table>
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTipoIdentificador"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSTipoIdentificador"/>
         <title value="Tipo Identificador"/>
         <status value="active"/>
@@ -13142,9 +13322,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0ad6ded9-69f5-4fca-8cd2-7237c6bfebce"/>
-          <timestamp value="2024-02-15T14:16:24-03:00"/>
-          <total value="9"/>
+          <identifier value="urn:uuid:728e5437-dc93-4413-b37c-fa7f7dc6f8ed"/>
+          <timestamp value="2024-02-19T16:07:26-03:00"/>
+          <total value="12"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -13160,59 +13340,74 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="01"/>
-            <display value="Run"/>
+            <display value="Rol Único Nacional o RUN"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="02"/>
-            <display value="Run materno/progenitor(a)"/>
+            <display value="RUN provisorio (Artículo 44)"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="03"/>
-            <display value="Número de Folio de comprobante de parto"/>
+            <display value="RUN madre (para recién nacido)"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="04"/>
-            <display value="Número de pasaporte"/>
+            <display value="Número Folio Comprobante de Parto chileno"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="05"/>
-            <display value="Número de documento identificador de país de origen"/>
+            <display value="Pasaporte"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="06"/>
-            <display value="Número de identificador FONASA"/>
+            <display value="Documento de identificación del país de origen"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="07"/>
-            <display value="Identificador Provisorio Escolar"/>
+            <display value="Acta de nacimiento del país de origen"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="08"/>
-            <display value="Identificador Provisorio Apoderado"/>
+            <display value="Número de Identificación Provisorio (NIP)"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="09"/>
-            <display value="Registro Único de Contribuyentes"/>
+            <display value="Número Identificatorio para cotizar (NIC)"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
+            <code value="10"/>
+            <display value="Identificación Provisoria del Apoderado (IPA)"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
+            <code value="11"/>
+            <display value="Identificación Provisoria del Escolar (IPE)"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
+            <code value="12"/>
+            <display value="Número de Ficha Clínica Sistema Local"/>
           </contains>
         </expansion>
       </ValueSet>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinic"/>
+    <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinico"/>
     <resource>
       <ValueSet>
         <text>
@@ -21235,9 +21430,9 @@
             </table>
           </div>
         </text>
-        <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinic"/>
-        <version value="1.8.6"/>
-        <name value="VSTiposDocClinic"/>
+        <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinico"/>
+        <version value="1.8.7"/>
+        <name value="VSTiposDocClinico"/>
         <title value="Tipos de Documentos Clínicos"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -21250,8 +21445,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2ee4d243-1f38-4805-b8e4-df5498eaca0b"/>
-          <timestamp value="2024-02-15T12:18:18.246Z"/>
+          <identifier value="urn:uuid:4af7c3d5-a9ea-4a78-8605-f55a061c2cc1"/>
+          <timestamp value="2024-02-19T14:39:19.759Z"/>
           <total value="0"/>
           <offset value="0"/>
           <parameter>
@@ -26296,14 +26491,14 @@
                   <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0203.html">codesystem identifierType v3.0.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-CSCodigoDNI.html">codesystem Códigos de Documentos DNI para LATAM y el Caribe v1.8.6 (CodeSystem)</a>
+                  <a href="CodeSystem-CSCodigoDNI.html">codesystem Códigos de Documentos DNI para LATAM y el Caribe v1.8.7 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-CSTipoIdentificador.html">codesystem Tipo Identificador v1.8.6 (CodeSystem)</a>
+                  <a href="CodeSystem-CSTipoIdentificador.html">codesystem Tipo Identificador v1.8.7 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
-            <p>This value set contains 180 concepts.</p>
+            <p>This value set contains 183 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -28620,7 +28815,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-01">01</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Run</td>
+                <td>Rol Único Nacional o RUN</td>
                 <td>
                   <div/>
                 </td>
@@ -28631,7 +28826,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-02">02</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Run materno/progenitor(a)</td>
+                <td>RUN provisorio (Artículo 44)</td>
                 <td>
                   <div/>
                 </td>
@@ -28642,7 +28837,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-03">03</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Número de Folio de comprobante de parto</td>
+                <td>RUN madre (para recién nacido)</td>
                 <td>
                   <div/>
                 </td>
@@ -28653,7 +28848,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-04">04</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Número de pasaporte</td>
+                <td>Número Folio Comprobante de Parto chileno</td>
                 <td>
                   <div/>
                 </td>
@@ -28664,7 +28859,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-05">05</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Número de documento identificador de país de origen</td>
+                <td>Pasaporte</td>
                 <td>
                   <div/>
                 </td>
@@ -28675,7 +28870,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-06">06</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Número de identificador FONASA</td>
+                <td>Documento de identificación del país de origen</td>
                 <td>
                   <div/>
                 </td>
@@ -28686,7 +28881,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-07">07</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Identificador Provisorio Escolar</td>
+                <td>Acta de nacimiento del país de origen</td>
                 <td>
                   <div/>
                 </td>
@@ -28697,7 +28892,7 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-08">08</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Identificador Provisorio Apoderado</td>
+                <td>Número de Identificación Provisorio (NIP)</td>
                 <td>
                   <div/>
                 </td>
@@ -28708,7 +28903,40 @@
                   <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-09">09</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
-                <td>Registro Único de Contribuyentes</td>
+                <td>Número Identificatorio para cotizar (NIC)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSTipoIdentificador-10"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-10">10</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
+                <td>Identificación Provisoria del Apoderado (IPA)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSTipoIdentificador-11"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-11">11</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
+                <td>Identificación Provisoria del Escolar (IPE)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSTipoIdentificador-12"> </a>  
+                  <a href="CodeSystem-CSTipoIdentificador.html#CSTipoIdentificador-12">12</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
+                <td>Número de Ficha Clínica Sistema Local</td>
                 <td>
                   <div/>
                 </td>
@@ -28717,7 +28945,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocumentos"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSTiposDocumentos"/>
         <title value="Tipos de Documentos"/>
         <status value="active"/>
@@ -28731,9 +28959,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:740f5389-e85b-43c1-9b19-d4f51e1c8089"/>
-          <timestamp value="2024-02-15T14:16:25-03:00"/>
-          <total value="180"/>
+          <identifier value="urn:uuid:5812717b-c5a6-4b78-aa81-1095332f9205"/>
+          <timestamp value="2024-02-19T16:07:27-03:00"/>
+          <total value="183"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -28749,7 +28977,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI|1.8.7"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -28757,7 +28985,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI"/>
@@ -29617,47 +29845,62 @@
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="01"/>
-            <display value="Run"/>
+            <display value="Rol Único Nacional o RUN"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="02"/>
-            <display value="Run materno/progenitor(a)"/>
+            <display value="RUN provisorio (Artículo 44)"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="03"/>
-            <display value="Número de Folio de comprobante de parto"/>
+            <display value="RUN madre (para recién nacido)"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="04"/>
-            <display value="Número de pasaporte"/>
+            <display value="Número Folio Comprobante de Parto chileno"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="05"/>
-            <display value="Número de documento identificador de país de origen"/>
+            <display value="Pasaporte"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="06"/>
-            <display value="Número de identificador FONASA"/>
+            <display value="Documento de identificación del país de origen"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="07"/>
-            <display value="Identificador Provisorio Escolar"/>
+            <display value="Acta de nacimiento del país de origen"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="08"/>
-            <display value="Identificador Provisorio Apoderado"/>
+            <display value="Número de Identificación Provisorio (NIP)"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
             <code value="09"/>
-            <display value="Registro Único de Contribuyentes"/>
+            <display value="Número Identificatorio para cotizar (NIC)"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
+            <code value="10"/>
+            <display value="Identificación Provisoria del Apoderado (IPA)"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
+            <code value="11"/>
+            <display value="Identificación Provisoria del Escolar (IPE)"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
+            <code value="12"/>
+            <display value="Número de Ficha Clínica Sistema Local"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -29671,7 +29914,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSTiposEncuentroCL.html">codesystem Tipos de Encuentro v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSTiposEncuentroCL.html">codesystem Tipos de Encuentro v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts.</p>
             <table class="codes">
@@ -29714,7 +29957,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposEncuentroCL"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSTiposEncuentroCL"/>
         <title value="Tipos de Encuentro"/>
         <status value="active"/>
@@ -29728,8 +29971,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d5316a2c-fc9b-4ac2-9d8b-3b3c95f55b95"/>
-          <timestamp value="2024-02-15T14:16:25-03:00"/>
+          <identifier value="urn:uuid:7c58de96-e2be-492b-b907-50b8f165ac1c"/>
+          <timestamp value="2024-02-19T16:07:27-03:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -29746,7 +29989,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL"/>
@@ -29775,7 +30018,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodigoServicio.html">codesystem Tipos de Servicios Remotos v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodigoServicio.html">codesystem Tipos de Servicios Remotos v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 14 concepts.</p>
             <table class="codes">
@@ -29906,7 +30149,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposServicio"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSTiposServicioCL"/>
         <title value="Tipos de Servicios Remotos"/>
         <status value="active"/>
@@ -29920,8 +30163,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:17d96b10-a7f1-425c-833b-5120dc384325"/>
-          <timestamp value="2024-02-15T14:16:25-03:00"/>
+          <identifier value="urn:uuid:65d3fd0d-fc40-4021-9f53-22fd20106278"/>
+          <timestamp value="2024-02-19T16:07:27-03:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -29938,7 +30181,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio"/>
@@ -30022,7 +30265,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodigoVacunas.html">codesystem Códigos de Vacunas RNI v1.8.6 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodigoVacunas.html">codesystem Códigos de Vacunas RNI v1.8.7 (CodeSystem)</a>
             </p>
             <p>This value set contains 79 concepts.</p>
             <table class="codes">
@@ -30673,7 +30916,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposVacunas"/>
-        <version value="1.8.6"/>
+        <version value="1.8.7"/>
         <name value="VSTiposVacunasCL"/>
         <title value="Tipos de Vacunas RNI"/>
         <status value="active"/>
@@ -30687,8 +30930,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:abf67d14-808c-4ff9-8b20-dc09054f8eae"/>
-          <timestamp value="2024-02-15T14:16:25-03:00"/>
+          <identifier value="urn:uuid:a6fe254c-ac1d-4e5a-a47d-42fd760beb36"/>
+          <timestamp value="2024-02-19T16:07:27-03:00"/>
           <total value="79"/>
           <offset value="0"/>
           <parameter>
@@ -30705,7 +30948,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas|1.8.6"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas|1.8.7"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas"/>
