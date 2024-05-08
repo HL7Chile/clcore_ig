@@ -39,9 +39,9 @@ Description: "Esta extensión incluye códigos de paises de origen"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
 //* url 1..1 MS
+* valueCodeableConcept from CodPais
 * valueCodeableConcept.coding 0..1 MS
   * code 0..1 MS
-  * code from CodPais
   * system 0..1 MS
   * display 0..1 MS
 
@@ -58,9 +58,9 @@ Context: Address.city
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de Comunas"
 * url 1..1 MS
+* valueCodeableConcept from VSCodigosComunaCL
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSCodigosComunaCL
   * system 0..1 MS
   * display 0..1 MS
 //* valueCodeableConcept.coding.system from VSCodigosComunaCL (extensible)
@@ -75,9 +75,9 @@ Context: Address.district
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de Provincias"
 * url 1..1 MS
+* valueCodeableConcept from VSCodigosProvinciasCL
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSCodigosProvinciasCL
   * system 0..1 MS
   * display 0..1 MS
 //* valueCodeableConcept.coding.system  from CSCodProvinciasCL (extensible)
@@ -92,9 +92,9 @@ Context: Address.state
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de Provincias"
 * url 1..1 MS
+* valueCodeableConcept from VSCodigosRegionesCL
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSCodigosRegionesCL
   * system 0..1 MS
   * display 0..1 MS
 //* valueCodeableConcept.coding.system  from CSCodRegionCL (required)
