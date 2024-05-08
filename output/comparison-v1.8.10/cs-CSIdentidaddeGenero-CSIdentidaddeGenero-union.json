@@ -1,0 +1,48 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "b3fb4de6-2b32-4ed2-88c4-51afd43cce9c-32",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/b3fb4de6-2b32-4ed2-88c4-51afd43cce9c-32",
+  "name" : "UnionCSIdentidaddeGeneroAndCSIdentidaddeGenero",
+  "title" : "Union of Identidad de Genero And Identidad de Genero",
+  "status" : "active",
+  "date" : "2024-05-08T11:33:09-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "concept" : [{
+    "code" : "1",
+    "display" : "Masculino"
+  },
+  {
+    "code" : "2",
+    "display" : "Femenina"
+  },
+  {
+    "code" : "4",
+    "display" : "Transgénero Masculino"
+  },
+  {
+    "code" : "5",
+    "display" : "Transgénero Femenina"
+  },
+  {
+    "code" : "6",
+    "display" : "No binarie"
+  },
+  {
+    "code" : "7",
+    "display" : "Otra"
+  },
+  {
+    "code" : "8",
+    "display" : "No Revelado"
+  },
+  {
+    "code" : "3",
+    "display" : "Transgénero Masculino"
+  }]
+}

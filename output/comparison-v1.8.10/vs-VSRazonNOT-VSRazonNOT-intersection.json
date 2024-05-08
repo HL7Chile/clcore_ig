@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "b3fb4de6-2b32-4ed2-88c4-51afd43cce9c-198",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/b3fb4de6-2b32-4ed2-88c4-51afd43cce9c-198",
+  "name" : "IntersectionVSRazonNOencuentroAndVSRazonNOencuentro",
+  "title" : "Intersection of Razones no Atención Remota And Razones no Atención Remota",
+  "status" : "active",
+  "date" : "2024-05-08T11:33:09-04:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }]
+}

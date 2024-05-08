@@ -6,11 +6,14 @@
   "status" : "active",
   "package-id" : "hl7.fhir.cl.clcore",
   "ig-ver" : "1.8.7",
-  "date" : "Mon, 19 Feb, 2024 16:06:45 -0300",
-  "errs" : 1,
-  "warnings" : 4,
+  "date" : "Wed, 08 May, 2024 11:32:37 -0400",
+  "dateISO8601" : "2024-05-08T11:32:37-04:00",
+  "errs" : 2,
+  "warnings" : 9,
   "hints" : 7,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2416112608
+  "maxMemory" : 2493149512
 }
