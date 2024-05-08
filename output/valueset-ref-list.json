@@ -506,8 +506,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-VSEspecialidadesDeisCL.html" : "Especialidad del médico principal",
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico"
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
+      "StructureDefinition-VSEspecialidadesDeisCL.html" : "Especialidad del médico principal"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero",

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "CoreRolClinicoCl"] ; # 
   fhir:title [ fhir:v "CL RolClinico"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-05-08T11:32:37-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-08T11:46:20-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;

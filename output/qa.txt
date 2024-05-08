@@ -1,10 +1,10 @@
 clcore : Validation Results
 =========================================
 
-err = 2, warn = 9, info = 7
+err = 1, warn = 9, info = 7
 IG Publisher Version: 1.6.6
-Generated Wed May 08 11:36:26 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.7 (canonical = https://hl7chile.cl/fhir/ig/clcore)
- Build Errors : 1 / 0 / 0
+Generated Wed May 08 11:49:21 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.7 (canonical = https://hl7chile.cl/fhir/ig/clcore)
+ Build Errors : 0 / 0 / 0
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\AllergyIntolerance-222 : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\AuditEvent-AuditEventEx : 0 / 0 / 2
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodComunasCL : 0 / 0 / 1
@@ -107,7 +107,6 @@ Generated Wed May 08 11:36:26 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSTiposVacunas : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\Alcances-Objetivos.html#/html/script at Line 46, column 2: The <script> tag containing the javascript 'window.dataLayer = w'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 651 other files)
 == fsh-generated\resources\AllergyIntolerance-222.json ==
 == fsh-generated\resources\AuditEvent-AuditEventEx.json ==
 INFORMATION: AuditEvent/AuditEventEx: AuditEvent.agent[0].type: Reference to experimental CodeSystem http://terminology.hl7.org/CodeSystem/extra-security-role-type|1.0.0

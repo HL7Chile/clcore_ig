@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for clcore</h1>
- <p>Generated Wed May 08 11:36:26 CLT 2024, FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.7 (canonical = <a href="https://hl7chile.cl/fhir/ig/clcore">https://hl7chile.cl/fhir/ig/clcore</a> (<a href="https://hl7chile.cl/fhir/ig/clcore/history.html">history</a>))</p>
+ <p>Generated Wed May 08 11:49:21 CLT 2024, FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.7 (canonical = <a href="https://hl7chile.cl/fhir/ig/clcore">https://hl7chile.cl/fhir/ig/clcore</a> (<a href="https://hl7chile.cl/fhir/ig/clcore/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -23,15 +23,11 @@
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
 <ul>
   <li>Request for system [https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud|1.8.7 includes multiple systems [https://minsal.cl/fhir/HD/CodeSystem/CSCodSSalud, https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud] best handled by multiple servers: [auth = , candidates=, auth = , candidates=]. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>Request for system [http://minsal.cl/semantikos/description-id] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>Request for system [http://loinc.org#10244-2] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>http://hl7.org/fhir/ValueSet/identifier-type|4.0.1 includes multiple systems [https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI, http://terminology.hl7.org/CodeSystem/v2-0203] best handled by multiple servers: [auth = , candidates=, auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir]. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>http://hl7.org/fhir/ValueSet/identifier-type|4.0.1 includes multiple systems [https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores, http://terminology.hl7.org/CodeSystem/v2-0203] best handled by multiple servers: [auth = , candidates=, auth = http://tx.fhir.org/r4, candidates=https://tx.ontoserver.csiro.au/fhir]. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT|1.8.7 includes multiple systems [http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips, http://snomed.info/sct] best handled by multiple servers: [auth = , candidates=, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]. Using master @ 'http://tx.fhir.org/r4'</li>
 </ul>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
-<p>Use Count: 34. Code Systems used: </p>
+<p>Use Count: 3. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -48,20 +44,6 @@
     </th>
   </tr>
   <tr>
-    <td>http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips</td>
-    <td>1</td>
-    <td>0</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>http://loinc.org</td>
-    <td>2</td>
-    <td>8</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
-    </td>
-  </tr>
-  <tr>
     <td>http://loinc.org#10244-2</td>
     <td>0</td>
     <td>1</td>
@@ -76,84 +58,10 @@
     <td></td>
   </tr>
   <tr>
-    <td>http://snomed.info/sct</td>
-    <td>2</td>
-    <td>5</td>
-    <td>
-      <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://terminology.hl7.org/CodeSystem/v2-0203</td>
-    <td>0</td>
-    <td>2</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v2-0203.html">identifierType</a>
-    </td>
-  </tr>
-  <tr>
-    <td>http://unstats.un.org/unsd/methods/m49/m49.htm</td>
-    <td>0</td>
-    <td>1</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-    <td>0</td>
-    <td>1</td>
-    <td>
-      <a href="CodeSystem-CSCodSSalud.html">Servicios de Salud Chile</a>
-    </td>
-  </tr>
-  <tr>
-    <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI</td>
-    <td>0</td>
-    <td>1</td>
-    <td>
-      <a href="CodeSystem-CSCodigoDNI.html">Códigos de Documentos DNI para LATAM y el Caribe</a>
-    </td>
-  </tr>
-  <tr>
-    <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores</td>
-    <td>0</td>
-    <td>1</td>
-    <td>
-      <a href="CodeSystem-CSIdentificadores.html">Identificadores</a>
-    </td>
-  </tr>
-  <tr>
-    <td>https://minsal.cl/fhir/HD/CodeSystem/CSCodSSalud</td>
-    <td>0</td>
-    <td>1</td>
-    <td></td>
-  </tr>
-  <tr>
     <td>https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio</td>
     <td>0</td>
     <td>1</td>
     <td></td>
-  </tr>
-  <tr>
-    <td>urn:ietf:bcp:13</td>
-    <td>0</td>
-    <td>2</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>urn:iso:std:iso:3166</td>
-    <td>3</td>
-    <td>5</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
-    </td>
-  </tr>
-  <tr>
-    <td>urn:iso:std:iso:3166:-2</td>
-    <td>1</td>
-    <td>1</td>
-    <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-iso3166-2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
-    </td>
   </tr>
 </table>
 </body>

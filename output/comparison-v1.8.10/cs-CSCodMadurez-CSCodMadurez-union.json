@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "b3fb4de6-2b32-4ed2-88c4-51afd43cce9c-5",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/b3fb4de6-2b32-4ed2-88c4-51afd43cce9c-5",
+  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-5",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7dc7aa62-b1bf-43b5-afed-156a0896b780-5",
   "name" : "UnionCSCodMadurezAndCSCodMadurez",
   "title" : "Union of Códigos de grado de madurez del artefacto And Códigos de grado de madurez del artefacto",
   "status" : "active",
-  "date" : "2024-05-08T11:33:09-04:00",
+  "date" : "2024-05-08T11:46:42-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

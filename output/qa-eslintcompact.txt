@@ -1,7 +1,6 @@
 clcore
 =========================================
 
-Generic: line 0, col 0, Error - The <script> tag containing the javascript 'window.dataLayer = w'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 651 other files) (INVALID)
 C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\AuditEvent-AuditEventEx.json: line 26, col 8, Info - Reference to experimental CodeSystem http://terminology.hl7.org/CodeSystem/extra-security-role-type|1.0.0 (BUSINESSRULE)
 C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Encounter-EncounterCL.json: line 93, col 4, Info - El URI para el Code System 'https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio' es desconocido asi que el código no puede ser validado (NOTFOUND)
 C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Immunization-ImmunizationCL.json: line 43, col 10, Info - El URI para el Code System 'https://minsal.cl/fhir/HD/CodeSystem/CSCodSSalud' es desconocido asi que el código no puede ser validado (UNKNOWN)
@@ -20,5 +19,5 @@ C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Structur
 C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSDiagnosticosSCT.json: line 1, col 1402, Error - El valor URL 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' no puede resolverse (INVALID)
 C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSTiposDocClinico.json: line 0, col 0, Info - The value set expansion is too large, and only a subset has been displayed (INFORMATIONAL)
 
-err = 2, warn = 9, info = 7
+err = 1, warn = 9, info = 7
 IG Publisher Version: 1.6.6
