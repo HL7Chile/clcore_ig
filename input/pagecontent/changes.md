@@ -7,6 +7,7 @@
 - Se crea extensión "CondicionActidad"
 - Se crea extensión "TramoFonasa"
 - Se elimina la dependencia de la guia IPS v1.0.0
+- Corrrección de los binding de las extensiones
 
 ### Version 1.8.6
 - Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
