@@ -2,8 +2,8 @@ clcore : Validation Results
 =========================================
 
 err = 1, warn = 4, info = 7
-IG Publisher Version: 1.5.16
-Generated Mon Feb 19 16:08:07 CLST 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.7 (canonical = https://hl7chile.cl/fhir/ig/clcore)
+IG Publisher Version: 1.6.0
+Generated Mon Mar 04 15:30:32 CLST 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.7 (canonical = https://hl7chile.cl/fhir/ig/clcore)
  Build Errors : 0 / 0 / 0
  /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/AllergyIntolerance-222 : 0 / 0 / 1
  /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/AuditEvent-AuditEventEx : 0 / 0 / 2
@@ -214,7 +214,7 @@ ERROR: ValueSet/VSDiagnosticosSCT: ValueSet.compose.include[1].system: URL value
 == fsh-generated/resources/ValueSet-VSSexoListadoDeis.json ==
 == fsh-generated/resources/ValueSet-VSTipoIdentificador.json ==
 == fsh-generated/resources/ValueSet-VSTiposDocClinico.json ==
-INFORMATION: ValueSet.where(id = 'VSTiposDocClinico'): The value set expansion is incomplete
+INFORMATION: ValueSet.where(id = 'VSTiposDocClinico'): The value set expansion is too large, and only a subset has been displayed
 == fsh-generated/resources/ValueSet-VSTiposDocumentos.json ==
 == fsh-generated/resources/ValueSet-VSTiposEncuentroCL.json ==
 == fsh-generated/resources/ValueSet-VSTiposServicio.json ==

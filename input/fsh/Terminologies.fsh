@@ -55,7 +55,7 @@ Description: "Diagnósticos definidos en Snomed-CT."
 * ^experimental = false //dependera del uso que le den al codesystem
 
 * codes from system http://snomed.info/sct 
-* codes from system http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
+* codes from system https://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html
 
 ValueSet: VSTiposDocumentos
 Id: VSTiposDocumentos
@@ -1583,19 +1583,20 @@ Description: "Tipo Identificador"
 * ^contact.telecom.value = "interoperabilidad@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "Rol Único Nacional o RUN"
-* #02 "RUN provisorio (Artículo 44)"
-* #03 "RUN madre (para recién nacido)"
-* #04 "Número Folio Comprobante de Parto chileno"
-* #05 "Pasaporte"
-* #06 "Documento de identificación del país de origen"
-* #07 "Acta de nacimiento del país de origen"
-* #08 "Número de Identificación Provisorio (NIP)"
-* #09 "Número Identificatorio para cotizar (NIC)"
-* #10 "Identificación Provisoria del Apoderado (IPA)"
-* #11 "Identificación Provisoria del Escolar (IPE)"
-* #12 "Número de Ficha Clínica Sistema Local"
-
+* #01 "RUN" "Rol Único Nacional"
+* #02 "RUN Provisorio" "RUN provisorio (Artículo 44)"
+* #03 "RUN Madre" "RUN Madre (para recién nacido)"
+* #04 "Número Folio" "Número Folio Comprobante de Parto chileno"
+* #05 "PPN" "Pasaporte"
+* #06 "Documento de identificación del país de origen" "Documento de identificación del país de origen"
+* #07 "Acta de nacimiento del país de origen" "Acta de nacimiento del país de origen"
+* #08 "NIP" "Número de Identificación Provisorio (NIP)"
+* #09 "NIC" "Número Identificatorio para cotizar (NIC)"
+* #10 "IPA" "Identificación Provisoria del Apoderado (IPA)"
+* #11 "IPE" "Identificación Provisoria del Escolar (IPE)"
+* #12 "Número de Ficha Clínica Sistema Local" "Número de Ficha Clínica Sistema Local"
+* #13 "RNPI" "Registro Nacional de Prestadores Individuales"
+* #14 "OTRO" "Otro tipo de identificador"
 
 
 ValueSet: VSIdentidaddeGenero
@@ -1670,40 +1671,6 @@ Description: "Sexo Listado Deis"
 * #93 "No Informado"
 * #99 "Desconocido"
 
-
-ValueSet: VSIdentificadores
-Id: VSIdentificadores
-Title: "Identificadores"
-Description: "Identificadores"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSIdentificadores
-
-CodeSystem: CSIdentificadores
-Id: CSIdentificadores
-Title: "Identificadores"
-Description: "Identificadores"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #1 "RUN" "Registro Unico Nacional"
-* #2 "RNPI" "Registro Nacional de Prestadores Individuales"
-* #3 "PPN" "Pasaporte"
-* #4 "OTRO" "Otro tipo de identificador"
 
 ValueSet: VSPrevision
 Id: VSPrevision

@@ -39,9 +39,10 @@ Description: "Esta extensión incluye códigos de paises de origen"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
 //* url 1..1 MS
+* valueCodeableConcept from CodPais
 * valueCodeableConcept.coding 0..1 MS
   * code 0..1 MS
-  * code from CodPais
+
   * system 0..1 MS
   * display 0..1 MS
 

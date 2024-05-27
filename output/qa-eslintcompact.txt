@@ -12,7 +12,7 @@ clcore
 /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-IdentidadDeGenero.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/StructureDefinition-SexoBiologico.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 /Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSDiagnosticosSCT.json: line 1, col 1402, Error - URL value 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' does not resolve (INVALID)
-/Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSTiposDocClinico.json: line 0, col 0, Info - The value set expansion is incomplete (INFORMATIONAL)
+/Users/jorgemansilla/IGs/_HL7CHILE_clcore_ig/fsh-generated/resources/ValueSet-VSTiposDocClinico.json: line 0, col 0, Info - The value set expansion is too large, and only a subset has been displayed (INFORMATIONAL)
 
 err = 1, warn = 4, info = 7
-IG Publisher Version: 1.5.16
+IG Publisher Version: 1.6.0

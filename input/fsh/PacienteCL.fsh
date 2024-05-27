@@ -55,7 +55,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 * identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
-* identifier.type.extension contains PaisOrigenNacionalidadCl named paises 0..1  MS
+* identifier.type.extension contains PaisOrigenNacionalidadCl named paisEmisionDocumento 0..1  MS
 * identifier.value ^short = "Número o valor de identificación"
 * identifier.value ^definition = "Número o valor de identificación"
 
