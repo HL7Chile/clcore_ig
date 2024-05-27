@@ -62,5 +62,4 @@ Alias: $patient-birthTime = http://hl7.org/fhir/StructureDefinition/patient-birt
 Alias: $be-civilstate = https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-civilstate
 Alias: $be-contactperson = https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-contactperson
 Alias: $be-vs-score = https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/be-vs-score
-
-
+Alias: $hl7chile = http://www.hl7chile.cl
