@@ -1,0 +1,462 @@
+Instance : PacienteCL
+Title : "Ejemplo de Recurso Paciente Nacional"
+Description: "Paciente ficticio nacional CI Chilena, sin sistema de validación \"http://regcivil.cl/Validacion/RUN\" ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real"
+InstanceOf : CorePacienteCl
+Usage : #example
+
+//Identificación por Cédula Chilena
+* identifier.use = #official    //obligado
+* identifier.type.extension[paisEmisionDocumento].valueCodeableConcept.coding.system =  "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* identifier.type.extension[paisEmisionDocumento].valueCodeableConcept.coding.code = #152
+* identifier.type.extension[paisEmisionDocumento].valueCodeableConcept.coding.display = "Chile"
+* identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI"
+* identifier.type.coding.code = #NNCHL
+* identifier.type.coding.display = "Chile"
+
+* identifier.system = "http://regcivil.cl/Validacion/RUN"
+* identifier.value = "15.236.327-k"
+
+//registro de paciente activo
+* active = true
+
+//Nombre Oficial
+* name[NombreOficial].use = #official
+* name[NombreOficial].family = "Rosales"
+* name[NombreOficial].family.extension[segundoApellido] = Bosh //uso de la extensión
+* name[NombreOficial].given[0] = "Marietta"
+* name[NombreOficial].given[+] = "María"
+* name[NombreOficial].given[+] = "Ximena"
+
+//nombre social
+* name[NombreSocial].use = #usual
+* name[NombreSocial].given = "Xime"
+
+//dos contactos, un celular y un email
+* telecom.system = #phone
+* telecom.use = #mobile
+* telecom.value = "943561833"
+
+* telecom[1].system = #email
+* telecom[1].use = #work
+* telecom[1].value = "mariRosal@mimail.com"
+
+//sexo registrado al nacer y fecha de nacimiento
+* gender = #female
+* birthDate = "1983-03-24"
+
+// Una sola dirección
+* address.use = #home
+* address.line = "Av Los Chirimoyos, 32, casa 4"
+
+
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #05602
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Algarrobo"
+
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #056 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "San Antonio"
+
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #05 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Valparaíso"
+
+* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #152
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
+
+
+* contact.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto"
+
+* contact.extension.extension[0].url = "tutId"
+* contact.extension.extension[=].valueIdentifier.type = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI#NNCHL "Chile"
+* contact.extension.extension[=].valueIdentifier.system = "http://regcivil.cl/Validacion/RUN"
+* contact.extension.extension[=].valueIdentifier.value = "8987321-7"
+
+* contact.extension.extension[+].url = "docProc"
+* contact.extension.extension[=].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* contact.extension.extension[=].valueCodeableConcept.coding.code = #152 
+* contact.extension.extension[=].valueCodeableConcept.coding.display = "Chile"
+
+
+* contact.relationship = http://terminology.hl7.org/CodeSystem/v2-0131#N "Next-of-Kin"
+* contact.name.use = #official
+* contact.name.family = "Calleja"
+* contact.name.family.extension[segundoApellido] = Morales
+* contact.name.given[0] = "Juana"
+* contact.name.given[+] = "Josefa"
+
+* communication.language.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje"
+* communication.language.coding.code = #es-CL "Spanish"
+* communication.language.coding.display = "Spanish"
+
+* generalPractitioner.reference = "Organization/ORG1"
+* generalPractitioner.display = "Hospital de la Vida"
+
+Instance: Bosh
+InstanceOf: SegundoApellido
+Usage: #inline
+
+* valueString = "Bosh"
+
+Instance: Morales
+InstanceOf: SegundoApellido
+Usage: #inline
+
+* valueString = "Morales"
+
+Instance : PacienteCL2
+Title : "Ejemplo de Recurso Paciente Extranjero"
+Description: "Paciente ficticio extrangero, con identificación Pasaporte de origen Salvadoreño sin sistema real de validación del número de Pasaporte."
+InstanceOf : CorePacienteCl
+Usage : #example
+
+// Nacionalidad por medio de la extensión
+* extension[nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* extension[nacionalidad].valueCodeableConcept.coding.code = #222
+* extension[nacionalidad].valueCodeableConcept.coding.display = "El Salvador"
+
+//Identificación por Pasaporte Salvadoreño
+* identifier.use = #official    //obligado
+* identifier.type.extension[paisEmisionDocumento].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* identifier.type.extension[paisEmisionDocumento].valueCodeableConcept.coding.code = #222
+* identifier.type.extension[paisEmisionDocumento].valueCodeableConcept.coding.display = "El Salvador"
+* identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier.type.coding.code = #PPN
+* identifier.type.coding.display = "Passport number"
+* identifier.system = "http://Pasaportes.cl/Validacion/Pass"
+* identifier.value = "P3334521.2"
+
+
+//registro de paciente activo
+* active = true
+
+//Nombre Oficial
+* name[NombreOficial].use = #official
+* name[NombreOficial].family = "Cabrales"
+* name[NombreOficial].family.extension[segundoApellido] = Rivas
+* name[NombreOficial].given = "Wilmer"
+* name[NombreOficial].given[1] = "Andres"
+* name[NombreOficial].given[2] = "de Dios"
+
+
+//un contactos, un email
+
+* telecom.system = #email
+* telecom.use = #home
+* telecom.value = "wilCAB12l@wilmermail.com"
+
+//sexo registrado al nacer y fecha de nacimiento
+* gender = #male
+* birthDate = "1968-11-03"
+
+// Una sola dirección
+
+* address.use = #temp
+* address.line = "Calle 4 Norte, 52, pieza 802"
+
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #15101
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Arica"
+
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #151
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "Arica"
+
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #15 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica y Parinacota"
+
+* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #152 
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
+
+
+Instance: Rivas
+InstanceOf: SegundoApellido
+Usage: #inline
+
+* valueString = "Rivas"
+
+Instance: PacienteCl-3
+InstanceOf: CorePacienteCl
+Description: "Paciente ficticio nacional CI Chilena con sistema de validación no real, cuyo nombre es solo el oficial. La dirección tampoco es Real"
+Title : "Paciente Nacional, con datos actualizados, declarando nacionalidad"
+Usage: #example
+
+* extension[nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* extension[nacionalidad].valueCodeableConcept.coding.code = #152
+* extension[nacionalidad].valueCodeableConcept.coding.display = "Chile"
+
+
+* identifier.use = #official
+* identifier.type.extension[paisEmisionDocumento].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* identifier.type.extension[paisEmisionDocumento].valueCodeableConcept.coding.code = #152
+* identifier.type.extension[paisEmisionDocumento].valueCodeableConcept.coding.display = "Chile"
+* identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI"
+* identifier.type.coding.code = #NNCHL
+* identifier.type.coding.display = "Chile"
+* identifier.system = "http://regcivil.cl/Validacion/RUN"
+* identifier.value = "15602754-5"
+
+* active = true
+* name[NombreOficial].use = #official
+* name[NombreOficial].family = "PIZARRO"
+
+* name[NombreOficial].family.extension = DELGADO //uso de la extensión
+
+* name[NombreOficial].given[0] = "PABLO"
+* name[NombreOficial].given[+] = "RODRIGO"
+
+* telecom.system = #email
+* telecom.value = "ppizarro.delgado@minsal.cl"
+* telecom.use = #work
+
+* gender = #male
+* birthDate = "1983-08-04"
+
+* address.use = #home
+* address.city = "13120"
+* address.district = "131"
+* address.state = "13"
+* address.country = #152
+
+* address.use = #home
+//* address.line = "Calle 4 Norte, 52, pieza 802"
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #15101
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Arica"
+
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #151
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "Arica"
+
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #15 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica y Parinacota"
+
+* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #152 
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
+
+* deceasedBoolean = false 
+
+Instance: DELGADO
+InstanceOf: SegundoApellido
+Usage: #inline
+
+* valueString = "DELGADO"
+
+
+
+Instance: PacienteCl-4
+InstanceOf: CorePacienteCl
+Title : "Ejemplo de Recurso de paciente Nacional con contacto declarado"
+Description: """Paciente ficticio nacional CI Chilena, 
+     * sin sistema de validación \"http://regcivil.cl/Validacion/RUN\" ficticio , 
+     * cuyo nombre se decribe mediante el oficial y uno social. 
+     * La dirección tampoco es Real.
+     * Se agrega al paciente un acompañante patiente."""
+Usage: #example
+
+* extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
+* extension.valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* extension.valueCodeableConcept.coding.code  = #152
+* extension.valueCodeableConcept.coding.display  = "Chile"
+
+* identifier.use = #official
+* identifier.type.extension[paisEmisionDocumento].valueCodeableConcept.coding.system =  "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* identifier.type.extension[paisEmisionDocumento].valueCodeableConcept.coding.code = #152
+* identifier.type.extension[paisEmisionDocumento].valueCodeableConcept.coding.display = "Chile"
+
+
+* identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier.type.coding.code = #PPN
+* identifier.type.coding.display = "Passport Number"
+
+* identifier.system = "http://regcivil.cl/Validacion/Passport"
+* identifier.value = "P102145874"
+
+* active = true
+* name[NombreOficial].use = #official
+* name[NombreOficial].family = "Ortega"
+* name[NombreOficial].family.extension = Callejas
+* name[NombreOficial].given[0] = "Juan"
+* name[NombreOficial].given[+] = "José"
+* name[NombreSocial].use = #usual
+* name[NombreSocial].given = "JuanJo"
+* telecom.system = #email
+* telecom.value = "juan@jo.cl"
+* telecom.use = #home
+* gender = #male
+* birthDate = "1980-08-04"
+
+
+* address.use = #home
+* address.line = "Calle 4 Norte, 52, pieza 802"
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #15101
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Arica"
+
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #151
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "Arica"
+
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #15 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Arica y Parinacota"
+
+* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #152
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
+
+
+
+* contact.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto"
+* contact.extension.extension[0].url = "tutId"
+* contact.extension.extension[=].valueIdentifier.type = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI#NNCHL "Chile"
+* contact.extension.extension[=].valueIdentifier.system = "http://regcivil.cl/Validacion/RUN"
+* contact.extension.extension[=].valueIdentifier.value = "8987321-7"
+
+* contact.extension.extension[+].url = "docProc"
+* contact.extension.extension[=].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* contact.extension.extension[=].valueCodeableConcept.coding.code = #152 
+* contact.extension.extension[=].valueCodeableConcept.coding.display = "Chile"
+
+* contact.relationship = http://terminology.hl7.org/CodeSystem/v2-0131#N "Next-of-Kin"
+* contact.name.use = #official
+* contact.name.family = "Calleja"
+* contact.name.family.extension = Morales
+* contact.name.given[0] = "Juana"
+* contact.name.given[+] = "Josefa"
+
+Instance: Callejas
+InstanceOf: SegundoApellido
+Usage: #inline
+
+* valueString = "Callejas"
+
+/*
+Instance: PacienteCl-5
+InstanceOf: CorePacienteCl
+Title : "Ejemplo de Recurso de paciente Nacional con contacto declarado y extensión en dirección"
+Description: """Paciente ficticio nacional CI Chilena, 
+     * sin sistema de validación \"http://regcivil.cl/Validacion/RUN\" ficticio , 
+     * cuyo nombre se decribe mediante el oficial y uno social. 
+     * La dirección tampoco es Real.
+     * Se agrega al paciente un acompañante patiente
+     * La dirección se declara con códigos por extensión."""
+Usage: #example
+
+* extension[IdentidadDeGenero] = NoRevelado
+* extension[SexoBiologico] = Masculino
+* extension[nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
+* extension[nacionalidad].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* extension[nacionalidad].valueCodeableConcept.coding.code  = #152
+* extension[nacionalidad].valueCodeableConcept.coding.display  = "Chile"
+
+* identifier.use = #official
+* identifier.type.extension[paises].valueCodeableConcept.coding.system =  "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* identifier.type.extension[paises].valueCodeableConcept.coding.code = #152
+* identifier.type.extension[paises].valueCodeableConcept.coding.display = "Chile"
+
+
+* identifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* identifier.type.coding.code = #PPN
+* identifier.type.coding.display = "Passport Number"
+
+* identifier.system = "http://regcivil.cl/Validacion/Passport"
+* identifier.value = "P123456789"
+
+* active = true
+* name[NombreOficial].use = #official
+* name[NombreOficial].family = "Ulloa"
+* name[NombreOficial].family.extension = Medina
+* name[NombreOficial].given[0] = "Franco"
+* name[NombreOficial].given[+] = "Mauricioa"
+* telecom.system = #email
+* telecom.value = "Franco@Mauri.cl"
+* telecom.use = #home
+* gender = #male
+* birthDate = "1996-08-01"
+
+
+* address.use = #home
+* address.line = "Calle 4 Norte, 52, pieza 802"
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #13101
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Santiago Centro"
+
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #131
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "Santiago"
+
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #13
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Metropolitana de Santiago"
+
+* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #152 
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
+
+* contact.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto"
+* contact.extension.extension[0].url = "tutId"
+* contact.extension.extension[=].valueIdentifier.type = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI#NNCHL "Chile"
+* contact.extension.extension[=].valueIdentifier.system = "http://regcivil.cl/Validacion/RUN"
+* contact.extension.extension[=].valueIdentifier.value = "12342451-k"
+
+* contact.extension.extension[+].url = "docProc"
+* contact.extension.extension[=].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* contact.extension.extension[=].valueCodeableConcept.coding.code = #152 
+* contact.extension.extension[=].valueCodeableConcept.coding.display = "Chile"
+
+* contact.relationship = http://terminology.hl7.org/CodeSystem/v2-0131#N "Next-of-Kin"
+* contact.name.use = #official
+* contact.name.family = "Barraza"
+* contact.name.family.extension = Sandoval
+* contact.name.given[0] = "Ines"
+* contact.name.given[+] = "Cristina"
+
+Instance: Medina
+InstanceOf: SegundoApellido
+Usage: #inline
+
+* valueString = "Medina"
+
+Instance: Sandoval
+InstanceOf: SegundoApellido
+Usage: #inline
+
+* valueString = "Sandoval"
+
+Instance: NoRevelado
+InstanceOf: IdentidadDeGenero
+Usage: #inline
+
+* valueCodeableConcept = CSIdentidaddeGenero#7 "No Revelado"
+
+Instance: Masculino
+InstanceOf: SexoBiologico
+Usage: #inline
+* valueCodeableConcept = CSSexoListadoDeis#1 "Hombre"
+*/
