@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-90",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7dc7aa62-b1bf-43b5-afed-156a0896b780-90",
+  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-90",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/675236fb-5fc5-4109-b3e1-7bcf58b352c7-90",
   "name" : "IntersectionOrganizacionCLAndOrganizacionCL",
   "title" : "Intersection of CL Organización And CL Organización",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-13T17:23:50-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -213,10 +213,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -367,7 +363,7 @@
       "short" : "Identificador de organizacion de salud (DEIS, RUT, Códigos para cietos tipos de Recintos, etc.)",
       "definition" : "Identificador universal de la organización en Chile",
       "requirements" : "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Identifier"
@@ -1169,15 +1165,16 @@
     },
     {
       "path" : "Organization.address",
-      "short" : "left: Dirección de la Localiación; right: Tipo de dato para agragar la dirección de un paciente",
-      "definition" : "left: Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región; right: An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.",
-      "comment" : "left: Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used.; right: Variable dirección",
+      "short" : "Tipo de dato para agragar la dirección de un paciente",
+      "definition" : "An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.",
+      "comment" : "Variable dirección",
       "requirements" : "May need to keep track of the organization's addresses for contacting, billing or reporting requirements.",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Address",
-        "profile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-address"]
+        "profile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-address",
+        "#sd-cl-address-cl-address"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -1205,18 +1202,6 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
-        "identity" : "v2",
-        "map" : "ORC-23?"
-      },
-      {
-        "identity" : "rim",
-        "map" : ".address"
-      },
-      {
-        "identity" : "servd",
-        "map" : "./PrimaryAddress and ./OtherAddresses"
-      },
-      {
         "identity" : "rim",
         "map" : "n/a"
       },

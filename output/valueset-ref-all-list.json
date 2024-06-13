@@ -40,9 +40,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
       "StructureDefinition-SexoBiologico.html" : "Sexo Biologico del paciente",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/audit-entity-type",
@@ -276,9 +276,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -292,10 +292,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
       "StructureDefinition-ContactoParticipantes.html" : "Contacto de los participantes secundarios del encuentro",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -323,8 +323,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico"
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
+      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
@@ -559,10 +559,10 @@
       "uses" : {
       },
       "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
-      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
+      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente"
+      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -577,11 +577,11 @@
       "uses" : {
       },
       "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
-      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente"
+      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
@@ -761,16 +761,16 @@
       "uses" : {
       },
       "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
-      "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
-      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
-      "StructureDefinition-DocumentoCl.html" : "CL Documento",
-      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización",
-      "StructureDefinition-AuditEventCl.html" : "CL Auditoria",
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico",
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-AuditEventCl.html" : "CL Auditoria",
+      "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
+      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización",
+      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-DocumentoCl.html" : "CL Documento",
+      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
       "StructureDefinition-ProvenanceCl.html" : "CL Provenance"
     },
     {
@@ -857,8 +857,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
+      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico",
+      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -973,8 +973,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/network-type",
@@ -1149,11 +1149,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
-      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización",
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
+      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
       "StructureDefinition-ProvenanceCl.html" : "CL Provenance"
     },
     {
@@ -1291,8 +1291,8 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
       "uses" : {
       },
-      "StructureDefinition-DocumentoCl.html" : "CL Documento",
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
+      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico",
+      "StructureDefinition-DocumentoCl.html" : "CL Documento"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
@@ -1367,7 +1367,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "CodPaises",
       "title" : "Códigos de Países",
@@ -1380,7 +1380,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodMadurez",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSCodMadurez",
       "title" : "Códigos de grado de madurez del artefacto",
@@ -1389,7 +1389,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosComunaCL",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSCodigosComunaCL",
       "title" : "Códigos de Comunas en Chile",
@@ -1403,7 +1403,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosProvinciasCL",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSCodigosProvinciasCL",
       "title" : "Códigos de Provincias en Chile",
@@ -1417,7 +1417,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosRegionesCL",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSCodigosRegionesCL",
       "title" : "Códigos de Regiones en Chile",
@@ -1431,7 +1431,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSCodigosServiciosSaludCL",
       "title" : "Servicos de Salud en Chile",
@@ -1443,7 +1443,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigoslenguaje",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSCodigoslenguaje",
       "title" : "Codigos Lenguaje",
@@ -1457,7 +1457,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSContactoSecundario",
       "title" : "Contacto participantes",
@@ -1469,13 +1469,13 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSDiagnosticosSCT",
       "title" : "Diagnósticos SNOMED y Ausente o Desconocido",
       "description" : "Diagnósticos definidos en Snomed-CT.",
       "systems" : [
-        "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+        "https://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html",
         "http://snomed.info/sct"
       ],
       "uses" : {
@@ -1484,7 +1484,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSEspecialidadesDeisCL",
       "title" : "Códigos de Especialidades",
@@ -1494,12 +1494,12 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-VSEspecialidadesDeisCL.html" : "Especialidad del médico principal"
+      "StructureDefinition-VSEspecialidadesDeisCL.html" : "Especialidad del médico principal",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSIdentidaddeGenero",
       "title" : "Identidad de Genero",
@@ -1512,22 +1512,8 @@
       "StructureDefinition-IdentidadDeGenero.html" : "Identidad De Genero"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentificadores",
-      "version" : "1.8.7",
-      "status" : "active",
-      "name" : "VSIdentificadores",
-      "title" : "Identificadores",
-      "description" : "Identificadores",
-      "systems" : [
-        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSNombreCampana",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSNombreCampanaCL",
       "title" : "Campañas de Vacunación",
@@ -1541,7 +1527,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSPrevision",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSPrevision",
       "title" : "Prevision",
@@ -1550,7 +1536,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSRazonNOencuentro",
       "title" : "Razones no Atención Remota",
@@ -1564,7 +1550,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSRazonNOTinmCL",
       "title" : "Razones no Inmunización",
@@ -1578,7 +1564,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSSexoListadoDeis",
       "title" : "Sexo Listado Deis",
@@ -1589,18 +1575,21 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTipoIdentificador",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSTipoIdentificador",
       "title" : "Tipo Identificador",
       "description" : "Tipo Identificador",
       "systems" : [
         "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinico",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSTiposDocClinico",
       "title" : "Tipos de Documentos Clínicos",
@@ -1612,7 +1601,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocumentos",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSTiposDocumentos",
       "title" : "Tipos de Documentos",
@@ -1628,7 +1617,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposEncuentroCL",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSTiposEncuentroCL",
       "title" : "Tipos de Encuentro",
@@ -1639,7 +1628,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposServicio",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSTiposServicioCL",
       "title" : "Tipos de Servicios Remotos",
@@ -1650,7 +1639,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposVacunas",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSTiposVacunasCL",
       "title" : "Tipos de Vacunas RNI",

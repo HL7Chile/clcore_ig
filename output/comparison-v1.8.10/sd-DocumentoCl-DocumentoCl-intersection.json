@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-96",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7dc7aa62-b1bf-43b5-afed-156a0896b780-96",
+  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-102",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/675236fb-5fc5-4109-b3e1-7bcf58b352c7-102",
   "name" : "IntersectionDocumentoClAndDocumentoCl",
   "title" : "Intersection of CL Documento And CL Documento",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-13T17:23:50-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -207,10 +207,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -428,7 +424,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "description" : "left: The workflow/clinical status of the composition.; right: Códigos requeridos por estándar",
+        "description" : "Códigos requeridos por estándar",
         "valueSet" : "http://hl7.org/fhir/ValueSet/composition-status"
       },
       "mapping" : [{
@@ -478,8 +474,8 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinic"
+        "strength" : "preferred",
+        "valueSet" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinico"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -563,11 +559,12 @@
       "definition" : "Paciente sobre el cual se ha generado este documento. Este debe ser basado en el perfil de paciente Chileno.",
       "comment" : "For clinical documents, this is usually the patient.",
       "requirements" : "Essential metadata for searching for the composition. Identifies who and/or what the composition/document is about.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"]
+        "targetProfile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl",
+        "#sd-CorePacienteCl-CorePacienteCl"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -606,14 +603,15 @@
     },
     {
       "path" : "Composition.encounter",
-      "short" : "left: Contexto del Documento.; right: Contexto asistencial en el cual se generó Documento.",
-      "definition" : "left: Contexto en el cual se desarrolló el documento.; right: Contexto en el cual se generó  el documento.",
+      "short" : "Contexto asistencial en el cual se generó Documento.",
+      "definition" : "Contexto en el cual se generó  el documento.",
       "requirements" : "Provides context for the composition and supports searching.",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL"]
+        "targetProfile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL",
+        "#sd-EncounterCL-EncounterCL"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -699,10 +697,10 @@
     {
       "path" : "Composition.author",
       "short" : "Quien Ha creado el documento",
-      "definition" : "left: Identifica al responsable de los datos ingresados al documento, en este caso será el responsable del Resumen.; right: Identifica al responsable de los datos ingresados al documento.",
+      "definition" : "Identifica al responsable de los datos ingresados al documento.",
       "requirements" : "Identifies who is responsible for the content.",
       "min" : 1,
-      "max" : "1",
+      "max" : "*",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl",
@@ -710,7 +708,8 @@
         "http://hl7.org/fhir/StructureDefinition/Device",
         "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl",
         "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl",
-        "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl"]
+        "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl",
+        "#sd-CorePrestadorCl-CorePrestadorCl"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -828,8 +827,8 @@
     },
     {
       "path" : "Composition.attester",
-      "short" : "left: Validadores del documento; right: Profesionales validadores del documento",
-      "definition" : "left: Validadores del documento; right: Profesionales validadores del documento",
+      "short" : "Profesionales validadores del documento",
+      "definition" : "Profesionales validadores del documento",
       "comment" : "Only list each attester once.",
       "requirements" : "Identifies responsibility for the accuracy of the composition content.",
       "min" : 0,
@@ -1087,8 +1086,8 @@
     },
     {
       "path" : "Composition.custodian",
-      "short" : "left: Organization which maintains the composition; right: Organización que mantiene los documentos",
-      "definition" : "left: Identifies the organization or group who is responsible for ongoing maintenance of and access to the composition/document information.; right: Referencia a la organización según perfil nacional",
+      "short" : "Organización que mantiene los documentos",
+      "definition" : "Referencia a la organización según perfil nacional",
       "comment" : "This is useful when documents are derived from a composition - provides guidance for how to get the latest version of the document. This is optional because this is sometimes not known by the authoring system, and can be inferred by context. However, it is important that this information be known when working with a derived document, so providing a custodian is encouraged.",
       "requirements" : "Identifies where to go to find the current version, where to report issues, etc.",
       "min" : 0,
@@ -1616,7 +1615,7 @@
     {
       "path" : "Composition.section",
       "short" : "Sección del documento",
-      "definition" : "left: Sección de notificación de datos clínicos.; right: Sección de notificación definida para el documento.",
+      "definition" : "Sección de notificación definida para el documento.",
       "min" : 1,
       "max" : "*",
       "type" : [{
@@ -1814,11 +1813,11 @@
     },
     {
       "path" : "Composition.section.code",
-      "short" : "left: Classification of section (recommended); right: Código que define el tipo de sección",
-      "definition" : "left: A code identifying the kind of content contained within the section. This must be consistent with the section title.; right: Código que define el tipo de sección",
+      "short" : "Código que define el tipo de sección",
+      "definition" : "Código que define el tipo de sección",
       "comment" : "The code identifies the section for an automated processor of the document. This is particularly relevant when using profiles to control the structure of the document.   \n\nIf the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code.",
       "requirements" : "Provides computable standardized labels to topics within the document.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
@@ -1925,8 +1924,8 @@
     },
     {
       "path" : "Composition.section.text",
-      "short" : "left: Text summary of the section, for human interpretation; right: Texto que describe el contenido de la sección",
-      "definition" : "left: A human-readable narrative that contains the attested content of the section, used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it \"clinically safe\" for a human to just read the narrative.; right: Texto que describe el contenido de la sección",
+      "short" : "Texto que describe el contenido de la sección",
+      "definition" : "Texto que describe el contenido de la sección",
       "comment" : "Document profiles may define what content should be represented in the narrative to ensure clinical safety.",
       "min" : 0,
       "max" : "1",
@@ -2044,8 +2043,8 @@
     },
     {
       "path" : "Composition.section.entry",
-      "short" : "left: A reference to data that supports this section; right: Recurso referenciado en esta sección",
-      "definition" : "left: A reference to the actual resource from which the narrative in the section is derived.; right: Puede ser cualquier recurso en función de la sección que se está notificando",
+      "short" : "Recurso referenciado en esta sección",
+      "definition" : "Puede ser cualquier recurso en función de la sección que se está notificando",
       "comment" : "If there are no entries in the list, an emptyReason SHOULD be provided.",
       "min" : 0,
       "max" : "*",

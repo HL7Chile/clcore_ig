@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-78",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7dc7aa62-b1bf-43b5-afed-156a0896b780-78",
+  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-78",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/675236fb-5fc5-4109-b3e1-7bcf58b352c7-78",
   "name" : "IntersectionPacienteClAndPacienteCl",
   "title" : "Intersection of CL Paciente And CL Paciente",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-13T17:23:50-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -199,10 +199,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -266,7 +262,7 @@
     {
       "path" : "Patient.extension",
       "short" : "Extension",
-      "definition" : "left: Para hacer uso de esta extensión se debe agregar el path: extension.url = \"nacionalidad\"; right: An Extension",
+      "definition" : "An Extension",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -347,7 +343,7 @@
       "definition" : "Este es el listado de Identificaciones de un paciente. Se procura como R2 el RUN, pero en caso de no existir ese identificador se debe ocupar otro nacional u otro otorgado por país extranjero",
       "comment" : "En caso de que el paciente posea una CI con número RUN válido, este debe ser ingresado como identificador, independiente de que tenga otros identificadores, los cuales también pueden ser ingresados. La identificación implica el ingreso del tipo de documento, el país de origen de ese documento y ev valor del identificador",
       "requirements" : "Patients are almost always assigned specific numerical identifiers.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Identifier"
@@ -1104,7 +1100,7 @@
       "definition" : "Nombre del Paciente considerando, según el caso: 1er Nombre, Nombres, 1er Apellido y 2o Apellido",
       "comment" : "A patient may have multiple names with different uses or applicable periods. For animals, the name is a \"HumanName\" in the sense that is assigned and used by humans and has the same patterns.",
       "requirements" : "Need to be able to track the patient by multiple names. Examples are your official name and a partner name.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "HumanName"
@@ -1430,11 +1426,11 @@
     },
     {
       "path" : "Patient.gender",
-      "short" : "left: Sexo de nacimiento Registrado, male | female | other | unknown (requerido); right: Sexo Registrado. (male | female | other | unknown (requerido))",
-      "definition" : "left: Sexo de nacimiento Registrado; right: Sexo Registrado",
+      "short" : "Sexo Registrado. (male | female | other | unknown (requerido))",
+      "definition" : "Sexo Registrado",
       "comment" : "The gender might not match the biological sex as determined by genetics or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than male and female, though the vast majority of systems and contexts only support male and female.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific sex or gender aspect of interest (anatomical, chromosomal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosomal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overridable error, not a \"hard\" error.  See the Patient Gender and Sex section for additional information about communicating patient gender and sex.",
       "requirements" : "Needed for identification of the individual, in combination with (at least) name and birth date.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "code"
@@ -1473,11 +1469,11 @@
     },
     {
       "path" : "Patient.birthDate",
-      "short" : "left: Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD; right: Fecha de nacimiento del Paciente.",
-      "definition" : "left: Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21); right: Fecha de nacimiento del Paciente.",
+      "short" : "Fecha de nacimiento del Paciente.",
+      "definition" : "Fecha de nacimiento del Paciente.",
       "comment" : "At least an estimated year should be provided as a guess if the real DOB is unknown  There is a standard extension \"patient-birthTime\" available that should be used where Time is required (such as in maternity/infant care systems).",
       "requirements" : "Age of the individual drives many clinical processes.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "date"
@@ -1790,7 +1786,7 @@
       "path" : "Patient.contact.extension",
       "short" : "Extension",
       "definition" : "An Extension",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Extension"
@@ -1870,8 +1866,8 @@
       "short" : "Relación legal o de paretezco entre el contacto y el paciente",
       "definition" : "The nature of the relationship between the patient and the contact person.",
       "requirements" : "Used to determine which contact person is the most relevant to approach, depending on circumstances.",
-      "min" : 1,
-      "max" : "1",
+      "min" : 0,
+      "max" : "*",
       "type" : [{
         "code" : "CodeableConcept"
       }],
@@ -1977,8 +1973,8 @@
       "definition" : "A reference to a code defined by a terminology system.",
       "comment" : "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.",
       "requirements" : "Allows for alternative encodings within a code system, and translations to other code systems.",
-      "min" : 1,
-      "max" : "1",
+      "min" : 0,
+      "max" : "*",
       "type" : [{
         "code" : "Coding"
       }],
@@ -2052,7 +2048,7 @@
       "short" : "Nombre del Contacto",
       "definition" : "Nombre del contacto asociado al paciente",
       "requirements" : "Contact persons need to be identified by name, but it is uncommon to need details about multiple other names for that contact person.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "HumanName"
@@ -2231,7 +2227,7 @@
       "definition" : "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil",
       "comment" : "Family Name may be decomposed into specific parts using extensions (de, nl, es related cultures).",
       "alias" : ["surname"],
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "string"
@@ -2285,8 +2281,8 @@
       "path" : "Patient.contact.name.family.extension",
       "short" : "Extensión para 2o apellido",
       "definition" : "Extensión para la declaracion de un segundo apellido",
-      "min" : 1,
-      "max" : "1",
+      "min" : 0,
+      "max" : "*",
       "type" : [{
         "code" : "Extension"
       }],
@@ -2312,7 +2308,7 @@
         "expression" : "extension.exists() != value.exists()",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : false
     },
@@ -2346,7 +2342,7 @@
       "comment" : "If only initials are recorded, they may be used in place of the full name parts. Initials may be separated into multiple given names but often aren't due to paractical limitations.  This element is not called \"first name\" since given names do not always come first.",
       "alias" : ["first name",
       "middle name"],
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "string"

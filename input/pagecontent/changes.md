@@ -1,5 +1,10 @@
 - Se modifica y agregan nuevos terminos en "CSTipoIdentificador"
+### Version 1.8.12
+- Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
+  - Se cambio referencia de **generalPractitioner** de Organization -> OrganizacionCL y Practitioner -> PrestadorCL
 
+- Perfil [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html)
+  - Se creo ejemplo [Ejemplo Organización Prestadora de Salud](Organization-OrganizacionClEjemplo1.html)
 
 ### Version 1.8.9
 - Version de prueba debido a cambios en los publicadores
@@ -21,11 +26,9 @@
     - Esp -> EspecialidadMedica
     - SubEsp -> Subespecialidad
 
-
-
 - El elemento **addresss** debe cumplir con **ClAddress** para las direcciones de los perfiles [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html) y [LocalizacionCL](StructureDefinition-CoreLocalizacionCl.html)
-- Cambio en el [Ejemplo Organización Prestadora de Salud](Organization-ORG1.html) para cumplir con el perfil [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html)
-- Cambio en el [Ejemplo Localización Farmacia](Location-LocalizacionEjemploCL1.html) para cumplir con el perfil [LocalizacionCL](StructureDefinition-CoreLocalizacionCl.html)
+- Cambio en el **Ejemplo Organización Prestadora de Salud** para cumplir con el perfil [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html)
+- Cambio en el **Ejemplo Localización Farmacia** para cumplir con el perfil [LocalizacionCL](StructureDefinition-CoreLocalizacionCl.html)
 - Se incluyo el context en las siguientes extensiones:
   - [Códigos para Comunas en Chile](StructureDefinition-ComunasCl.html)
   - [Códigos para Provincias en Chile](StructureDefinition-ProvinciasCl.html)

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-84",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7dc7aa62-b1bf-43b5-afed-156a0896b780-84",
+  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-84",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/675236fb-5fc5-4109-b3e1-7bcf58b352c7-84",
   "name" : "IntersectionLocalizacionCLAndLocalizacionCL",
   "title" : "Intersection of CL Localización And CL Localización",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-13T17:23:50-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -194,10 +194,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -520,8 +516,8 @@
     },
     {
       "path" : "Location.identifier.system",
-      "short" : "left: URI  en donde se encuentran los VS de ubicaciones.; right: The namespace for the identifier value",
-      "definition" : "left: URL en donde se indican el conjunto de ubicaciones deseadas; right: Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
+      "short" : "The namespace for the identifier value",
+      "definition" : "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
       "comment" : "Identifier.system is always case sensitive.",
       "requirements" : "There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.",
       "min" : 0,
@@ -562,8 +558,8 @@
     },
     {
       "path" : "Location.identifier.value",
-      "short" : "left: Número identificador; right: The value that is unique",
-      "definition" : "left: Valor de identificación con el cual se asigna un identificador a este recurso; right: The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
+      "short" : "The value that is unique",
+      "definition" : "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
       "comment" : "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension]. Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
       "min" : 0,
       "max" : "1",
@@ -755,8 +751,8 @@
     },
     {
       "path" : "Location.name",
-      "short" : "left: Nombre oficial de la localizacion; right: Name of the location as used by humans",
-      "definition" : "left: Nombre de la localizacion, ya sea del edificio, del la zona gegráfica como un parque o de un sector específico llamado de cierta forma; right: Name of the location as used by humans. Does not need to be unique.",
+      "short" : "Name of the location as used by humans",
+      "definition" : "Name of the location as used by humans. Does not need to be unique.",
       "comment" : "If the name of a location changes, consider putting the old name in the alias column so that it can still be located through searches.",
       "min" : 0,
       "max" : "1",
@@ -1085,8 +1081,8 @@
     },
     {
       "path" : "Location.type.coding.system",
-      "short" : "left: Sistema de códigos bajo el cual se identifica el tipo o función de la localización; right: Identity of the terminology system",
-      "definition" : "left: Tipos de localización segun tabla de HL7 Internacional. Es de tipo extensible para poder agregar mas elementos en caso de ser requerido; right: The identification of the code system that defines the meaning of the symbol in the code.",
+      "short" : "Identity of the terminology system",
+      "definition" : "The identification of the code system that defines the meaning of the symbol in the code.",
       "comment" : "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.",
       "requirements" : "Need to be unambiguous about the source of the definition of the symbol.",
       "min" : 0,
@@ -1108,11 +1104,6 @@
       "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
-      "binding" : {
-        "strength" : "extensible",
-        "description" : "Códigos V3 de Servicios brindados",
-        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType"
-      },
       "mapping" : [{
         "identity" : "v2",
         "map" : "C*E.3"
@@ -1165,8 +1156,8 @@
     },
     {
       "path" : "Location.type.coding.code",
-      "short" : "left: Código del tipo; right: Symbol in syntax defined by the system",
-      "definition" : "left: Valor del Código; right: A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+      "short" : "Symbol in syntax defined by the system",
+      "definition" : "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
       "requirements" : "Need to refer to a particular code in the system.",
       "min" : 0,
       "max" : "1",
@@ -1202,8 +1193,8 @@
     },
     {
       "path" : "Location.type.coding.display",
-      "short" : "left: Glosa del código; right: Representation defined by the system",
-      "definition" : "left: Texto que identifica en glosa al código expresado; right: A representation of the meaning of the code in the system, following the rules of the system.",
+      "short" : "Representation defined by the system",
+      "definition" : "A representation of the meaning of the code in the system, following the rules of the system.",
       "requirements" : "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
       "min" : 0,
       "max" : "1",
@@ -1343,15 +1334,16 @@
     },
     {
       "path" : "Location.address",
-      "short" : "left: Dirección de la Localiación; right: Tipo de dato para agragar la dirección de un paciente",
-      "definition" : "left: Se definirá la dirección en una línea y se podría codificar en city la comuna, en district la provincia y en state la región; right: An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.",
-      "comment" : "left: Additional addresses should be recorded using another instance of the Location resource, or via the Organization.; right: Variable dirección",
+      "short" : "Tipo de dato para agragar la dirección de un paciente",
+      "definition" : "An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.",
+      "comment" : "Variable dirección",
       "requirements" : "If locations can be visited, we need to keep track of their address.",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Address",
-        "profile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-address"]
+        "profile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-address",
+        "#sd-cl-address-cl-address"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -1368,10 +1360,6 @@
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
-        "identity" : "rim",
-        "map" : ".addr"
-      },
-      {
         "identity" : "rim",
         "map" : "n/a"
       },

@@ -1,6 +1,6 @@
 {
-  "version" : "1.8.7",
-  "date" : "20240508114532",
+  "version" : "1.8.11",
+  "date" : "20240613172240",
   "notForPublication" : true,
   "name" : "hl7.fhir.cl.clcore.r4"
 }

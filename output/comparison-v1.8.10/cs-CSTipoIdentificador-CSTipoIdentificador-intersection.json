@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-51",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7dc7aa62-b1bf-43b5-afed-156a0896b780-51",
+  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-51",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/675236fb-5fc5-4109-b3e1-7bcf58b352c7-51",
   "name" : "IntersectionCSTipoIdentificadorAndCSTipoIdentificador",
   "title" : "Intersection of Tipo Identificador And Tipo Identificador",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-13T17:23:50-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -15,38 +15,50 @@
   }],
   "concept" : [{
     "code" : "01",
-    "display" : "Run"
+    "display" : "Rol Único Nacional o RUN"
   },
   {
     "code" : "02",
-    "display" : "Run materno/progenitor(a)"
+    "display" : "RUN provisorio (Artículo 44)"
   },
   {
     "code" : "03",
-    "display" : "Número de Folio de comprobante de parto"
+    "display" : "RUN madre (para recién nacido)"
   },
   {
     "code" : "04",
-    "display" : "Número de pasaporte"
+    "display" : "Número Folio Comprobante de Parto chileno"
   },
   {
     "code" : "05",
-    "display" : "Número de documento identificador de país de origen"
+    "display" : "Pasaporte"
   },
   {
     "code" : "06",
-    "display" : "Número de identificador FONASA"
+    "display" : "Documento de identificación del país de origen"
   },
   {
     "code" : "07",
-    "display" : "Identificador Provisorio Escolar"
+    "display" : "Acta de nacimiento del país de origen"
   },
   {
     "code" : "08",
-    "display" : "Identificador Provisorio Apoderado"
+    "display" : "Número de Identificación Provisorio (NIP)"
   },
   {
     "code" : "09",
-    "display" : "Registro Único de Contribuyentes"
+    "display" : "Número Identificatorio para cotizar (NIC)"
+  },
+  {
+    "code" : "10",
+    "display" : "Identificación Provisoria del Apoderado (IPA)"
+  },
+  {
+    "code" : "11",
+    "display" : "Identificación Provisoria del Escolar (IPE)"
+  },
+  {
+    "code" : "12",
+    "display" : "Número de Ficha Clínica Sistema Local"
   }]
 }

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-111",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7dc7aa62-b1bf-43b5-afed-156a0896b780-111",
+  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-114",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/675236fb-5fc5-4109-b3e1-7bcf58b352c7-114",
   "name" : "IntersectionImmunizationCLAndImmunizationCL",
   "title" : "Intersection of CL Inmunización And CL Inmunización",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-13T17:23:50-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -202,10 +202,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -270,7 +266,7 @@
       "path" : "Immunization.extension",
       "short" : "Extension",
       "definition" : "An Extension",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Extension"
@@ -410,7 +406,6 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "description" : "A set of codes indicating the current status of an Immunization.",
         "valueSet" : "http://hl7.org/fhir/ValueSet/immunization-status"
       },
       "mapping" : [{
@@ -494,7 +489,7 @@
       "path" : "Immunization.statusReason.extension",
       "short" : "Motivo de no realizar la inmunización",
       "definition" : "An Extension",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Extension"
@@ -789,7 +784,7 @@
     },
     {
       "path" : "Immunization.patient",
-      "short" : "left: Quién fue inmunizado; right: Paciente inmunizado",
+      "short" : "Paciente inmunizado",
       "definition" : "El paciente que recibió o no recibió la inmunización",
       "min" : 1,
       "max" : "1",
@@ -883,6 +878,9 @@
       "max" : "1",
       "type" : [{
         "code" : "dateTime"
+      },
+      {
+        "code" : "string"
       }],
       "constraint" : [{
         "extension" : [{
@@ -1102,7 +1100,7 @@
       "path" : "Immunization.location.extension",
       "short" : "Extensión para los Sistemas de Salud, por ejemplo: S.S Viña del mar Quillota",
       "definition" : "An Extension",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "Extension"
@@ -1331,7 +1329,7 @@
       "path" : "Immunization.expirationDate",
       "short" : "Fecha de caducidad de la vacuna",
       "definition" : "Fecha de vencimiento del lote de la vacuna",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "date"
@@ -1485,10 +1483,10 @@
     },
     {
       "path" : "Immunization.performer",
-      "short" : "left: Quién realizó el evento; right: Quién realizó la inmunización",
+      "short" : "Quién realizó la inmunización",
       "definition" : "Indica quién realizó el evento de inmunización",
-      "min" : 1,
-      "max" : "1",
+      "min" : 0,
+      "max" : "*",
       "type" : [{
         "code" : "BackboneElement"
       }],
@@ -1666,8 +1664,8 @@
     },
     {
       "path" : "Immunization.performer.actor",
-      "short" : "left: Practicante u organización que realizó la acción; right: Prestador personal u organizacional que realizó la acción",
-      "definition" : "left: Practicante u organización que realizó la acción; right: Prestador personal u organizacional que realizó la acción",
+      "short" : "Prestador personal u organizacional que realizó la acción",
+      "definition" : "Prestador personal u organizacional que realizó la acción",
       "comment" : "When the individual practitioner who performed the action is known, it is best to send.",
       "min" : 1,
       "max" : "1",
@@ -2474,7 +2472,7 @@
       "short" : "Protocolo seguido por el proveedor",
       "definition" : "El protocolo (conjunto de recomendaciones) que sigue el proveedor que administró la dosis",
       "min" : 0,
-      "max" : "1",
+      "max" : "*",
       "type" : [{
         "code" : "BackboneElement"
       }],
@@ -2707,6 +2705,9 @@
       "min" : 1,
       "max" : "1",
       "type" : [{
+        "code" : "positiveInt"
+      },
+      {
         "code" : "string"
       }],
       "constraint" : [{

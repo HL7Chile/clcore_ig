@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-75",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7dc7aa62-b1bf-43b5-afed-156a0896b780-75",
+  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-75",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/675236fb-5fc5-4109-b3e1-7bcf58b352c7-75",
   "name" : "IntersectionDiagnosticoClAndDiagnosticoCl",
   "title" : "Intersection of CL Condición-Diagnóstico And CL Condición-Diagnóstico",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-13T17:23:50-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -247,10 +247,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -439,7 +435,7 @@
       "short" : "El estatus en el cual se encuentra la condición: active| recurrece | relapse | inactive | remission | resolved",
       "definition" : "El estatus en el cual se encuentra la condición de un Paciente",
       "comment" : "The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
@@ -460,7 +456,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "description" : "left: Códigos requeridos por HL7-FHIR; right: Códigos definidos por estándar",
+        "description" : "Códigos definidos por estándar",
         "valueSet" : "http://hl7.org/fhir/ValueSet/condition-clinical"
       },
       "mapping" : [{
@@ -486,7 +482,7 @@
     },
     {
       "path" : "Condition.verificationStatus",
-      "short" : "left: Estado de verificación de la condición o Diagnóstico; right: Estado de verificación de la condición o diagnóstico: unconfirmed | provisional | differential | confirmed | refuted | entered-in-error",
+      "short" : "Estado de verificación de la condición o diagnóstico: unconfirmed | provisional | differential | confirmed | refuted | entered-in-error",
       "definition" : "Estado de verificación de la condición o Diagnóstico",
       "comment" : "verificationStatus is not required.  For example, when a patient has abdominal pain in the ED, there is not likely going to be a verification status.\nThe data type is CodeableConcept because verificationStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.",
       "min" : 0,
@@ -510,7 +506,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "description" : "left: unconfirmed | provisional | differential | confirmed | refuted | entered-in-error; right: Códigos definidos por estándar",
+        "description" : "Códigos definidos por estándar",
         "valueSet" : "http://hl7.org/fhir/ValueSet/condition-ver-status"
       },
       "mapping" : [{
@@ -641,11 +637,11 @@
     {
       "path" : "Condition.code",
       "short" : "Códigos de SOMED-CT y adicionales de ausente o desconocido",
-      "definition" : "left: Códigos de toda la Terminología.; right: Identificación de la condición, el problema o el diagnóstico o registro del \"problema ausente\" o de los \"problemas desconocidos\".",
+      "definition" : "Identificación de la condición, el problema o el diagnóstico o registro del \"problema ausente\" o de los \"problemas desconocidos\".",
       "comment" : "Se agregan los códigos no conocido o no presente",
       "requirements" : "0..1 to account for primarily narrative only resources.",
       "alias" : ["type"],
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
@@ -665,11 +661,7 @@
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-          "valueString" : "DiagnosticosSCT + Ausente o Desconocido"
-        }],
-        "strength" : "preferred",
+        "strength" : "example",
         "description" : "Diagósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido",
         "valueSet" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT"
       },
@@ -861,7 +853,7 @@
       "short" : "Referencia al recurso del Paciente al cual se indica el diagnóstico o condicón",
       "definition" : "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.",
       "comment" : "Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure \"/[type]/[id]\" then it should be assumed that the reference is to a FHIR RESTful server.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "string"

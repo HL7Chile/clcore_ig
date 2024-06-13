@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-63",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7dc7aa62-b1bf-43b5-afed-156a0896b780-63",
+  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-63",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/675236fb-5fc5-4109-b3e1-7bcf58b352c7-63",
   "name" : "IntersectionAuditEventClAndAuditEventCl",
   "title" : "Intersection of CL Auditoria And CL Auditoria",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-13T17:23:50-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -203,10 +203,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -378,7 +374,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "description" : "left: Eventos de auditoría descritos en DICOM; right: Eventos de auditoría descritos en FHIR para DICOM",
+        "description" : "Eventos de auditoría descritos en FHIR para DICOM",
         "valueSet" : "http://hl7.org/fhir/ValueSet/audit-event-type"
       },
       "mapping" : [{
@@ -468,8 +464,8 @@
     },
     {
       "path" : "AuditEvent.type.system",
-      "short" : "left: CodeSystem de los códigos para tipo de Evento; right: Identity of the terminology system",
-      "definition" : "left: Es el Sistema de Codificación sugerido por FHIR extensible a necesidades locales; right: The identification of the code system that defines the meaning of the symbol in the code.",
+      "short" : "Identity of the terminology system",
+      "definition" : "The identification of the code system that defines the meaning of the symbol in the code.",
       "comment" : "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.",
       "requirements" : "Need to be unambiguous about the source of the definition of the symbol.",
       "min" : 0,
@@ -543,8 +539,8 @@
     },
     {
       "path" : "AuditEvent.type.code",
-      "short" : "left: Código del tipo de registro; right: Symbol in syntax defined by the system",
-      "definition" : "left: Display del código del ejemplo; right: A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+      "short" : "Symbol in syntax defined by the system",
+      "definition" : "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
       "requirements" : "Need to refer to a particular code in the system.",
       "min" : 0,
       "max" : "1",
@@ -562,7 +558,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -580,7 +576,7 @@
     },
     {
       "path" : "AuditEvent.type.display",
-      "short" : "left: RESTful Operation; right: Representation defined by the system",
+      "short" : "Representation defined by the system",
       "definition" : "A representation of the meaning of the code in the system, following the rules of the system.",
       "requirements" : "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
       "min" : 0,
@@ -599,7 +595,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -679,7 +675,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "description" : "left: Códigos de DICOM; right: Códigos de desarrollados para DICOM",
+        "description" : "Códigos de desarrollados para DICOM",
         "valueSet" : "http://hl7.org/fhir/ValueSet/audit-event-sub-type"
       },
       "mapping" : [{
@@ -836,10 +832,10 @@
     },
     {
       "path" : "AuditEvent.subtype.code",
-      "short" : "left: Codigo; right: Symbol in syntax defined by the system",
-      "definition" : "left: Codigo del Subtipo; right: A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+      "short" : "Symbol in syntax defined by the system",
+      "definition" : "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
       "requirements" : "Need to refer to a particular code in the system.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "code"
@@ -873,8 +869,8 @@
     },
     {
       "path" : "AuditEvent.subtype.display",
-      "short" : "left: Nombre de la desripción del evento; right: Representation defined by the system",
-      "definition" : "left: Nombre de la desripción del evento; right: A representation of the meaning of the code in the system, following the rules of the system.",
+      "short" : "Representation defined by the system",
+      "definition" : "A representation of the meaning of the code in the system, following the rules of the system.",
       "requirements" : "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
       "min" : 0,
       "max" : "1",
@@ -892,7 +888,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -951,7 +947,7 @@
       "short" : "Create| Read/View/Print | Update | Delete | Execute",
       "definition" : "Código de la acción",
       "requirements" : "This broadly indicates what kind of action was done on the AuditEvent.entity by the AuditEvent.agent.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "code"
@@ -972,7 +968,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "description" : "left: Códigos fijos extraídos de DICOM; right: Códigos fijos extraídos de un set de DICOM por FHIR",
+        "description" : "Códigos fijos extraídos de un set de DICOM por FHIR",
         "valueSet" : "http://hl7.org/fhir/ValueSet/audit-event-action"
       },
       "mapping" : [{
@@ -1485,7 +1481,7 @@
       "comment" : "Where a User ID is available it will go into who.identifier.",
       "requirements" : "This field ties an audit event to a specific resource or identifier.",
       "alias" : ["userId"],
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Reference",
@@ -1930,7 +1926,7 @@
       "definition" : "Un identificador para el tipo de punto de acceso a la red que originó el evento de auditoría.",
       "comment" : "This could be a device id, IP address or some other identifier associated with a device.",
       "requirements" : "This datum identifies the user's network access point, which may be distinct from the server that performed the action. It is an optional value that may be used to group events recorded on separate servers for analysis of a specific network access point's data access across all servers.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "string"
@@ -1992,7 +1988,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "required",
-        "description" : "left: Códigos extraídos de DICOM; right: Códigos extraídos de un set  DICOM por FHIR",
+        "description" : "Códigos extraídos de un set  DICOM por FHIR",
         "valueSet" : "http://hl7.org/fhir/ValueSet/network-type"
       },
       "mapping" : [{
@@ -2326,8 +2322,8 @@
       "comment" : "Required unless the values for event identification, agent identification, and audit source identification are sufficient to document the entire auditable event. Because events may have more than one entity, this group can be a repeating set of values.",
       "requirements" : "The event may have other entities involved.",
       "alias" : ["ParticipantObject"],
-      "min" : 1,
-      "max" : "1",
+      "min" : 0,
+      "max" : "*",
       "type" : [{
         "code" : "BackboneElement"
       }],
@@ -2489,7 +2485,7 @@
       "path" : "AuditEvent.entity.what",
       "short" : "Recurso o identificación de la entidad que registra la ocurrencia del evento",
       "definition" : "Recurso o identificación de la entidad que registra la ocurrencia del evento",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Reference",

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-110",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7dc7aa62-b1bf-43b5-afed-156a0896b780-110",
+  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-113",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/675236fb-5fc5-4109-b3e1-7bcf58b352c7-113",
   "name" : "UnionImmunizationCLAndImmunizationCL",
   "title" : "Union of CL Inmunización And CL Inmunización",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-13T17:23:50-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -398,7 +398,6 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "description" : "A set of codes indicating the current status of an Immunization.",
         "valueSet" : "http://hl7.org/fhir/ValueSet/immunization-status"
       },
       "mapping" : [{
@@ -769,7 +768,7 @@
     },
     {
       "path" : "Immunization.patient",
-      "short" : "left: Quién fue inmunizado; right: Paciente inmunizado",
+      "short" : "Paciente inmunizado",
       "definition" : "El paciente que recibió o no recibió la inmunización",
       "min" : 1,
       "max" : "1",
@@ -1455,7 +1454,7 @@
     },
     {
       "path" : "Immunization.performer",
-      "short" : "left: Quién realizó el evento; right: Quién realizó la inmunización",
+      "short" : "Quién realizó la inmunización",
       "definition" : "Indica quién realizó el evento de inmunización",
       "min" : 0,
       "max" : "*",
@@ -1636,8 +1635,8 @@
     },
     {
       "path" : "Immunization.performer.actor",
-      "short" : "left: Practicante u organización que realizó la acción; right: Prestador personal u organizacional que realizó la acción",
-      "definition" : "left: Practicante u organización que realizó la acción; right: Prestador personal u organizacional que realizó la acción",
+      "short" : "Prestador personal u organizacional que realizó la acción",
+      "definition" : "Prestador personal u organizacional que realizó la acción",
       "comment" : "When the individual practitioner who performed the action is known, it is best to send.",
       "min" : 1,
       "max" : "1",
@@ -2661,10 +2660,10 @@
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "string"
+        "code" : "positiveInt"
       },
       {
-        "code" : "positiveInt"
+        "code" : "string"
       }],
       "constraint" : [{
         "extension" : [{

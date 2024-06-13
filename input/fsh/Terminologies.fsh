@@ -54,7 +54,7 @@ Description: "Diagnósticos definidos en Snomed-CT."
 
 * ^experimental = false //dependera del uso que le den al codesystem
 
-* codes from system http://snomed.info/sct 
+* codes from system http://snomed.info/sct where concept descendent-of 404684003
 * codes from system https://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html
 
 ValueSet: VSTiposDocumentos

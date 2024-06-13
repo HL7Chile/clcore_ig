@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-102",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7dc7aa62-b1bf-43b5-afed-156a0896b780-102",
+  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-105",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/675236fb-5fc5-4109-b3e1-7bcf58b352c7-105",
   "name" : "IntersectionEncounterCLAndEncounterCL",
-  "title" : "Intersection of CL Encuentro And Encuentro Clínico",
+  "title" : "Intersection of Encuentro Clínico And Encuentro Clínico",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-13T17:23:50-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -199,10 +199,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
@@ -407,7 +403,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "description" : "left: Current state of the encounter.; right: Códigos requeridos por FHIR",
+        "description" : "Códigos requeridos por FHIR",
         "valueSet" : "http://hl7.org/fhir/ValueSet/encounter-status"
       },
       "mapping" : [{
@@ -628,7 +624,7 @@
     {
       "path" : "Encounter.class",
       "short" : "Clasificación del encuentro con el paciente",
-      "definition" : "left: Clasificación del encuentro con el paciente en este caso encuentro remoto; right: Clasificación del encuentro con el paciente",
+      "definition" : "Clasificación del encuentro con el paciente",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -865,9 +861,9 @@
     {
       "path" : "Encounter.type",
       "short" : "Tipo específico de Encuentro",
-      "definition" : "left: Específica el tipo de encuentro que se ha generado de forma remota; right: Específica el tipo de encuentro",
+      "definition" : "Específica el tipo de encuentro",
       "comment" : "Since there are many ways to further classify encounters, this element is 0..*.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "CodeableConcept"
@@ -916,7 +912,7 @@
       "path" : "Encounter.serviceType",
       "short" : "Tipo de servicio que se realiza en el Encuentro",
       "definition" : "Categorización del servicio que se va a prestar en el encuentro (por ejemplo, servicio de Ginecología)",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
@@ -1005,10 +1001,10 @@
     {
       "path" : "Encounter.subject",
       "short" : "Referencia al paciente del encuentro",
-      "definition" : "left: La referencia al paciente que está presente en el encuentro clínico remoto; right: La referencia al paciente que está presente en el encuentro clínico sobre un paciente nacional.",
+      "definition" : "La referencia al paciente que está presente en el encuentro clínico sobre un paciente nacional.",
       "comment" : "While the encounter is always about the patient, the patient might not actually be known in all contexts of use, and there may be a group of patients that could be anonymous (such as in a group therapy for Alcoholics Anonymous - where the recording of the encounter could be used for billing on the number of people/staff and not important to the context of the specific patients) or alternately in veterinary care a herd of sheep receiving treatment (where the animals are not individually tracked).",
       "alias" : ["patient"],
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Reference",
@@ -1129,7 +1125,7 @@
       "path" : "Encounter.participant",
       "short" : "Participantes involucrados en el encuentro sin considerar al paciente",
       "definition" : "The list of people responsible for providing the service.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "BackboneElement"
@@ -1533,7 +1529,7 @@
       "short" : "Hora de inicio",
       "definition" : "The start of the period. The boundary is inclusive.",
       "comment" : "If the low element is missing, the meaning is that the low boundary is not known.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "dateTime"
@@ -1566,7 +1562,7 @@
       "short" : "Hora de finalización",
       "definition" : "The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.",
       "comment" : "The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "dateTime"
@@ -1600,7 +1596,7 @@
       "short" : "Cantidad de tiempo que duró el encuentro (menos tiempo ausente)",
       "definition" : "Cantidad de tiempo que duró el encuentro (menos tiempo ausente)",
       "comment" : "May differ from the time the Encounter.period lasted because of leave of absence.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Duration"
@@ -1639,8 +1635,8 @@
       "comment" : "For systems that need to know which was the primary diagnosis, these will be marked with the standard extension primaryDiagnosis (which is a sequence value rather than a flag, 1 = primary diagnosis).",
       "alias" : ["Indication",
       "Admission diagnosis"],
-      "min" : 1,
-      "max" : "1",
+      "min" : 0,
+      "max" : "*",
       "type" : [{
         "code" : "CodeableConcept"
       }],
@@ -1781,11 +1777,11 @@
     },
     {
       "path" : "Encounter.reasonCode.text",
-      "short" : "left: Razón por la que tiene lugar el Encuentro; right: Plain text representation of the concept",
+      "short" : "Plain text representation of the concept",
       "definition" : "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.",
       "comment" : "Very often the text is the same as a displayName of one of the codings.",
       "requirements" : "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "string"
@@ -1801,7 +1797,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -2005,7 +2001,8 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl"]
+        "targetProfile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl",
+        "#sd-CoreDiagnosticoCl-CoreDiagnosticoCl"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -2065,10 +2062,6 @@
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "DiagnosisRole"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "The type of diagnosis this condition represents.",
@@ -2896,7 +2889,7 @@
       "path" : "Encounter.serviceProvider",
       "short" : "La organización (instalación) responsable de este encuentro",
       "definition" : "The organization that is primarily responsible for this Encounter's services. This MAY be the same as the organization on the Patient record, however it could be different, such as if the actor performing the services was from an external organization (which may be billed seperately) for an external consultation.  Refer to the example bundle showing an abbreviated set of Encounters for a colonoscopy.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "Reference",

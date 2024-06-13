@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSNombreCampana.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSNombreCampana"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.8.7"] ; # 
+  fhir:version [ fhir:v "1.8.11"] ; # 
   fhir:name [ fhir:v "VSNombreCampanaCL"] ; # 
   fhir:title [ fhir:v "Campañas de Vacunación"] ; # 
   fhir:status [ fhir:v "active"] ; # 
