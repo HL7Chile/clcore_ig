@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodSSalud.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.8.11"] ; # 
+  fhir:version [ fhir:v "1.8.12"] ; # 
   fhir:name [ fhir:v "VSCodigosServiciosSaludCL"] ; # 
   fhir:title [ fhir:v "Servicos de Salud en Chile"] ; # 
   fhir:status [ fhir:v "active"] ; # 

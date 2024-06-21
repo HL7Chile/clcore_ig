@@ -46,7 +46,6 @@ Description: "Definición de encuentro clínico genérico para Chile"
   * ^short = "Reserva de un evento de atención médica entre paciente(s), profesional(es), persona(s) relacionada(s) y/o dispositivo(s)" 
   * ^definition = "Cita o agendamiento médico, la cual es resultado de un encuentro"
 
-
 * participant ^slicing.discriminator.type = #value
 * participant ^slicing.discriminator.path = "type.coding.code"
 * participant ^slicing.rules = #open

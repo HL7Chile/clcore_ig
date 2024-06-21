@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSEspecialidadesDeisCL.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL</code></a></li></ul></div>"
   },
   "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL",
-  "version" : "1.8.11",
+  "version" : "1.8.12",
   "name" : "VSEspecialidadesDeisCL",
   "title" : "Códigos de Especialidades",
   "status" : "active",

@@ -10,14 +10,10 @@
   fhir:id [ fhir:v "VSDiagnosticosSCT"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-<<<<<<< HEAD
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 404684003 (Clinical finding (finding))</li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/160245001\">160245001</a></td><td>No current problems or disability</td></tr></table></li></ul></div>"
-=======
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a></li><li>Include all codes defined in <code>https://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html</code></li></ul></div>"
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.8.11"] ; # 
+  fhir:version [ fhir:v "1.8.12"] ; # 
   fhir:name [ fhir:v "VSDiagnosticosSCT"] ; # 
   fhir:title [ fhir:v "Diagnósticos SNOMED y Ausente o Desconocido"] ; # 
   fhir:status [ fhir:v "active"] ; # 
@@ -52,15 +48,11 @@
          fhir:value [ fhir:v "404684003" ]
        ] )
      ] [
-<<<<<<< HEAD
        fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "160245001" ] ;
          fhir:display [ fhir:v "No current problems or disability" ]
        ] )
-=======
-       fhir:system [ fhir:v "https://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html"^^xsd:anyURI ]
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
      ] )
   ] . # 
 

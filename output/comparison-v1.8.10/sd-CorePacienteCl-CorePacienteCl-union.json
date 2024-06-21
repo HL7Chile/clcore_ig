@@ -1,20 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-<<<<<<< HEAD
-  "id" : "9c9e5dae-fe4d-4da8-aca8-01902e4f5b2a-77",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9c9e5dae-fe4d-4da8-aca8-01902e4f5b2a-77",
+  "id" : "e8d03331-55ec-4e79-a0ba-4f2c2583ed7e-77",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e8d03331-55ec-4e79-a0ba-4f2c2583ed7e-77",
   "name" : "UnionPacienteClAndPacienteCl",
   "title" : "Union of CL Paciente And CL Paciente",
   "status" : "active",
-  "date" : "2024-06-17T14:21:50-04:00",
-=======
-  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-77",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/675236fb-5fc5-4109-b3e1-7bcf58b352c7-77",
-  "name" : "UnionPacienteClAndPacienteCl",
-  "title" : "Union of CL Paciente And CL Paciente",
-  "status" : "active",
-  "date" : "2024-06-13T17:23:50-04:00",
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+  "date" : "2024-06-21T18:30:42-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -404,8 +395,11 @@
     },
     {
       "path" : "Patient.identifier.extension",
-      "short" : "Extension",
-      "definition" : "An Extension",
+      "short" : "left: Extension; right: Additional content defined by implementations",
+      "definition" : "left: An Extension; right: May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -435,12 +429,16 @@
       }],
       "mustSupport" : true,
       "isModifier" : false,
-      "isSummary" : false
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
     },
     {
       "path" : "Patient.identifier.use",
       "short" : "usual | official | temp | secondary | old (If known)",
-      "definition" : "Se definirá este uso siempre como \"official\" debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo",
+      "definition" : "left: Se definirá este uso siempre como \"official\" debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo; right: De contar el Paciente con una Cédula de Identidad Nacional, se sugiere el uso de esta como identificador",
       "comment" : "Se definirá como official pues en una primera etapa solo se considerarán los identidicadores en esa categoría. Para una segunda etapa se abrirá este elemento para cualquier clase de identificador",
       "requirements" : "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
       "min" : 0,
@@ -2148,7 +2146,7 @@
       "path" : "Patient.contact.name.use",
       "short" : "uso del nombre del paciente",
       "definition" : "Nombre registrado oficialmente en el Registro Civil",
-      "comment" : "El use DEBE ser de valor de código ´official´",
+      "comment" : "left: El use DEBE ser de valor de código ´official´; right: El use DEBE ser de valor de código \"official\"",
       "requirements" : "Allows the appropriate name for a particular context of use to be selected from among a set of names.",
       "min" : 0,
       "max" : "1",

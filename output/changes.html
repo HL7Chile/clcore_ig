@@ -94,7 +94,7 @@
             <div id="ig-status">
                 <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)</span>
                     <br/>
-                    <span style="display:inline-block;">1.8.11 - draft
+                    <span style="display:inline-block;">1.8.12 - draft
 
 
 
@@ -184,7 +184,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva) - Local Development build (v1.8.11) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://hl7chile.cl/fhir/ig/clcore/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva) - Local Development build (v1.8.12) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://hl7chile.cl/fhir/ig/clcore/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Historial de Cambios</h2>
   
 
@@ -202,10 +202,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-<<<<<<< HEAD
   <li><a href="#versión-1812" id="markdown-toc-versión-1812">Versión 1.8.12</a></li>
-=======
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
   <li><a href="#version-189" id="markdown-toc-version-189">Version 1.8.9</a></li>
   <li><a href="#version-186" id="markdown-toc-version-186">Version 1.8.6</a></li>
   <li><a href="#version-185" id="markdown-toc-version-185">Version 1.8.5</a></li>
@@ -215,11 +212,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<<<<<<< HEAD
 <h3 id="versión-1812">Versión 1.8.12</h3>
 
 <ul>
-  <li><a name="l310">​</a>Perfil <a href="StructureDefinition-MedicamentoCL.html">CoreMedicamentoCl</a>
+  <li>Perfil <a href="StructureDefinition-CoreMedicamentoCl.html">MedicamentoCL</a>
     <ul>
       <li>Se elimina los Slice de <strong>DescriptionID</strong> y <strong>ConceptID</strong>.</li>
       <li>Se cambian las descripciones y definiciones que referencien a la TFC.</li>
@@ -236,10 +232,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p>Value set de problemas sin informar o desconocidos</p>
   </li>
-=======
-<ul>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
   <li>Se modifica y agregan nuevos terminos en “CSTipoIdentificador”</li>
+  <li>Perfil <a href="StructureDefinition-CorePacienteCl.html">PacienteCL</a>
+    <ul>
+      <li>Se cambio referencia de <strong>generalPractitioner</strong> de Organization -&gt; OrganizacionCL y Practitioner -&gt; PrestadorCL</li>
+      <li>Se genera ejemplo [Patient-]</li>
+    </ul>
+  </li>
+  <li><a name="l391">​</a>Perfil<a href="StructureDefinition-CoreRolClinico.html">CoreRolClinicoCl</a>
+    <ul>
+      <li>Se modifica la referencia organization al <strong>OrganizationCL</strong></li>
+      <li>Se modifica la referencia location al <strong>CoreLocalizacionCl</strong></li>
+    </ul>
+  </li>
+  <li>Perfil <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a>
+    <ul>
+      <li>Se creo ejemplo <a href="Organization-OrganizacionClEjemplo1.html">Ejemplo Organización Prestadora de Salud</a></li>
+    </ul>
+  </li>
+  <li>Se generan nuevas extensiones para resolver errores dentro de la guía
+    <ul>
+      <li><a href="StructureDefinition-PaisEmision.html">PaisEmision</a>: Para la emisión de documentos</li>
+      <li><a href="StructureDefinition-Nacionalidad.html">Nacionalidad</a>: Para la nacionalidad de un paciente</li>
+    </ul>
+  </li>
+  <li>Se incluye contexto para <a href="StructureDefinition-CodigoPaises.html">CodigoPaises</a> a Address.country</li>
 </ul>
 
 <h3 id="version-189">Version 1.8.9</h3>
@@ -273,13 +290,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </ul>
   </li>
   <li>El elemento <strong>addresss</strong> debe cumplir con <strong>ClAddress</strong> para las direcciones de los perfiles <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a> y <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
-<<<<<<< HEAD
-  <li><a name="l455">​</a>Cambio en el <a href="Organization-ORG1.html">Ejemplo Organización Prestadora de Salud</a> para cumplir con el perfil <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a></li>
-  <li><a name="l463">​</a>Cambio en el <a href="Location-LocalizacionEjemploCL1.html">Ejemplo Localización Farmacia</a> para cumplir con el perfil <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
-=======
-  <li><a name="l388">​</a>Cambio en el <a href="Organization-ORG1.html">Ejemplo Organización Prestadora de Salud</a> para cumplir con el perfil <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a></li>
-  <li><a name="l396">​</a>Cambio en el <a href="Location-LocalizacionEjemploCL1.html">Ejemplo Localización Farmacia</a> para cumplir con el perfil <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+  <li>Cambio en el <strong>Ejemplo Organización Prestadora de Salud</strong> para cumplir con el perfil <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a></li>
+  <li>Cambio en el <strong>Ejemplo Localización Farmacia</strong> para cumplir con el perfil <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
   <li>Se incluyo el context en las siguientes extensiones:
     <ul>
       <li><a href="StructureDefinition-ComunasCl.html">Códigos para Comunas en Chile</a></li>
@@ -291,9 +303,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li><a href="StructureDefinition-RazonNOrealizarse.html">Código de las razones por la cual no se pudo realizar la atención</a></li>
       <li><a href="StructureDefinition-NotasEncuentro.html">Notas realizadas en un encuentro por Comité</a></li>
       <li><a href="StructureDefinition-ObservacionesDiagnostico.html">Observaciones o comentarios simples respecto a un diagnóstico</a></li>
-      <li><a name="l511">​</a><a href="StructureDefinition-TiposVacunaRNI.html">Código de tipos de Vacunas en Chile</a></li>
-      <li><a name="l515">​</a><a href="StructureDefinition-NombreCampana.html">Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)</a></li>
-      <li><a name="l519">​</a><a href="StructureDefinition-RazonNOrealizarseInm.html">Razones por las cuales no se pudo realizar la inmunización</a></li>
+      <li><strong>Código de tipos de Vacunas en Chile</strong></li>
+      <li><strong>Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)</strong></li>
+      <li><strong>Razones por las cuales no se pudo realizar la inmunización</strong></li>
       <li><a href="StructureDefinition-SegundoApellido.html">Segundo Apellido</a></li>
       <li><a href="StructureDefinition-SexoBiologico.html">Sexo Biológico</a></li>
     </ul>
@@ -310,7 +322,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Prefil <a href="StructureDefinition-CorePrestadorCl.html">PrestadorCL</a>
     <ul>
       <li>Cambio cardinalidad <strong>birthDate</strong> 1..1 -&gt; 0..1</li>
-      <li>Cambio cardinalidad <strong>geder</strong> 1..1 -&gt; 0..1</li>
+      <li>Cambio cardinalidad <strong>gender</strong> 1..1 -&gt; 0..1</li>
       <li>Cambio cardinalidad <strong>qualification:Cert.code.text</strong>  1..1 -&gt; 0..1</li>
       <li>Cambio cardinalidad <strong>qualification:Esp.code.text</strong>  1..1 -&gt; 0..1</li>
       <li>Cambio cardinalidad <strong>qualification:SubEsp.code.text</strong>  1..1 -&gt; 0..1</li>
@@ -370,11 +382,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-<<<<<<< HEAD
-          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.11 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 17, 2024 14:21-0400">2024-06-17</span>
-=======
-          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.11 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 13, 2024 17:23-0400">2024-06-13</span>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 21, 2024 18:30-0400">2024-06-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

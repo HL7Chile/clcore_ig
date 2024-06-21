@@ -11,6 +11,9 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier MS
 * identifier ^short  = "Identificadores de fármacos"
 
+* code MS
+* code ^short = "Códificación de para describir un fármaco"
+
 // * identifier ^slicing.discriminator.type = #value
 // * identifier ^slicing.discriminator.path = "system"
 // * identifier ^slicing.rules = #open
@@ -40,9 +43,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 // * identifier[ConceptId].system ^definition  = "http://minsal.cl/semantikos/concept-id DEBE ser usada para este slice. Estos EndPoint deberán estar disponibles pronto"
 // * identifier[ConceptId].value ^short = "Valor del código"
 // * identifier[ConceptId].value ^definition = "Valor del código"
-
-* code MS
-* code ^short = "Códificación de para describir un fármaco"
 
 // * code.text ^short = "Descripción del Fármaco según TFC. Se fuerza en este momento TFC"
 // * code.text ^short = "Esto código define el fármaco que contiene el recurso. El código corresponde al determinado en la Termnología Frarmaceutica Chilena (TFC)"

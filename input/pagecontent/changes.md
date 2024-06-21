@@ -15,6 +15,7 @@
 - Se modifica y agregan nuevos terminos en "CSTipoIdentificador"
 - Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
   - Se cambio referencia de **generalPractitioner** de Organization -> OrganizacionCL y Practitioner -> PrestadorCL
+  - Se genera ejemplo [Patient-PAcienteCL.html]
 
 - Perfil[CoreRolClinicoCl](StructureDefinition-CoreRolClinico.html)
   - Se modifica la referencia organization al **OrganizationCL**
@@ -22,6 +23,7 @@
 
 - Perfil [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html)
   - Se creo ejemplo [Ejemplo Organización Prestadora de Salud](Organization-OrganizacionClEjemplo1.html)
+
 
 ### Version 1.8.9
 - Version de prueba debido a cambios en los publicadores

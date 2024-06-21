@@ -1,11 +1,7 @@
 {
-  "version" : "1.8.11",
+  "version" : "1.8.12",
   "fhirVersion" : ["4.0.1"],
-<<<<<<< HEAD
-  "date" : "20240617141851",
-=======
-  "date" : "20240613172240",
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+  "date" : "20240621182921",
   "name" : "hl7.fhir.cl.clcore",
   "jurisdiction" : "urn:iso:std:iso:3166#CL"
 }

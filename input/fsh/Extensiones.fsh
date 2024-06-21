@@ -3,7 +3,7 @@ Extension: IdentidadDeGenero
 Id: IdentidadDeGenero
 Title: "Identidad De Genero"
 Description: "Identidad De Genero"
-//Context: CorePacienteCl, PrestadorCL
+Context: CorePacienteCl, PrestadorCL
 //Context: Patient, RelatedPerson, Person, Practitioner, FamilyMemberHistory
 * ^context[0].type = #element
 * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl#Patient"
@@ -31,22 +31,55 @@ Context: CorePacienteCl, PrestadorCL
 // * valueCodeableConcept ^short = "SexoRegistral"
 // * valueCodeableConcept from http://hl7.org/fhir/ValueSet/administrative-gender
 
-Extension:   PaisOrigenNacionalidadCl
+// Extensiones necesarias para evitar errores de QA y malos contextos de las extensiones
+
+// Extension:   PaisEmision
+// Id:          PaisEmision
+// Title:       "Código de la Emición de un Identificador"
+// Description: "Esta extensión incluye los códigos de paises de emición de un documento"
+// Context: Identifier.type
+// * value[x] only CodeableConcept
+// * value[x] ^short = "Código de País de Emición"
+// //* url 1..1 MS
+// * valueCodeableConcept from CodPais
+// * valueCodeableConcept.coding 0..1 MS
+//   * code 0..1 MS
+//   * system 0..1 MS
+//   * display 0..1 MS
+// * url ^short = "Extensión de país de Emición de un documento"
+
+// Extension:   PaisNacionalidadCl
+// Id:          Nacionalidad
+// Title:       "Codigo de Nacionalidad"
+// Description: "Esta extensión incluye códigos de nacionalidad que pueda tener un pacient"
+// //Context: CorePacienteCl, ClAddress.country.extension.paises, Location, Organization
+// Context: CorePacienteCl
+// * value[x] only CodeableConcept
+// * value[x] ^short = "Código de País"
+// //* url 1..1 MS
+// * valueCodeableConcept from CodPais
+// * valueCodeableConcept.coding 0..1 MS
+//   * code 0..1 MS
+//   * system 0..1 MS
+//   * display 0..1 MS
+// * url ^short = "Extensión de Nacionalidad para pacientes"
+
+Extension:   PaisDireccion
 Id:          CodigoPaises
-Title:       "Codigo de Identificación de países"
-Description: "Esta extensión incluye códigos de paises de origen"
-//Context: CorePacienteCl, ClAddress.country.extension.paises, Location, Organization
+Title:       "Codigo de Paises"
+Description: "Esta extensión incluye códigos de paises"
+//Context: Address.country
 * value[x] only CodeableConcept
-* value[x] ^short = "Código de País"
+* value[x] ^short = "Código del País"
 //* url 1..1 MS
 * valueCodeableConcept from CodPais
 * valueCodeableConcept.coding 0..1 MS
   * code 0..1 MS
-
   * system 0..1 MS
   * display 0..1 MS
 
-* url ^short = "Extensión de Nacionalidad para pacientes extranjeros"
+* url ^short = "Extensión de dirección del país"
+
 //* valueCodeableConcept.coding.system from CodPaises (extensible)
 
 /* 		Extension 		*/
@@ -59,9 +92,9 @@ Context: Address.city
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de Comunas"
 * url 1..1 MS
+* valueCodeableConcept from VSCodigosComunaCL
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSCodigosComunaCL
   * system 0..1 MS
   * display 0..1 MS
 //* valueCodeableConcept.coding.system from VSCodigosComunaCL (extensible)
@@ -76,9 +109,9 @@ Context: Address.district
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de Provincias"
 * url 1..1 MS
+* valueCodeableConcept from VSCodigosProvinciasCL
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSCodigosProvinciasCL
   * system 0..1 MS
   * display 0..1 MS
 //* valueCodeableConcept.coding.system  from CSCodProvinciasCL (extensible)
@@ -93,9 +126,10 @@ Context: Address.state
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de Provincias"
 * url 1..1 MS
+* valueCodeableConcept from VSCodigosRegionesCL
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSCodigosRegionesCL
+  * code 
   * system 0..1 MS
   * display 0..1 MS
 //* valueCodeableConcept.coding.system  from CSCodRegionCL (required)

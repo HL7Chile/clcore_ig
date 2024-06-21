@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSTiposEncuentroCL.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposEncuentroCL"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.8.11"] ; # 
+  fhir:version [ fhir:v "1.8.12"] ; # 
   fhir:name [ fhir:v "VSTiposEncuentroCL"] ; # 
   fhir:title [ fhir:v "Tipos de Encuentro"] ; # 
   fhir:status [ fhir:v "active"] ; # 

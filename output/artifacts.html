@@ -98,7 +98,7 @@
             <div id="ig-status">
                 <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación &#39;&#39;cl core&#39;&#39; FHIR R4, (Versión Evolutiva)</span>
                     <br/>
-                    <span style="display:inline-block;">1.8.11 - draft
+                    <span style="display:inline-block;">1.8.12 - draft
 
 
 
@@ -188,7 +188,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva) - Local Development build (v1.8.11) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://hl7chile.cl/fhir/ig/clcore/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva) - Local Development build (v1.8.12) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://hl7chile.cl/fhir/ig/clcore/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -213,6 +213,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </li>
       <li>
          <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -361,11 +364,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-CodigoPaises.html"
-                  title="StructureDefinition/CodigoPaises">Codigo de Identificación de países</a>
+               <a href="StructureDefinition-Nacionalidad.html"
+                  title="StructureDefinition/Nacionalidad">Codigo de Nacionalidad</a>
             </td>
             <td>
-<p>Esta extensión incluye códigos de paises de origen</p>
+<p>Esta extensión incluye códigos de nacionalidad que pueda tener un pacient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-CodigoPaises.html"
+                  title="StructureDefinition/CodigoPaises">Codigo de Paises</a>
+            </td>
+            <td>
+<p>Esta extensión incluye códigos de paises</p>
 </td>
          </tr>
          <tr>
@@ -375,6 +387,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PaisEmision.html"
+                  title="StructureDefinition/PaisEmision">Código de la Emición de un Identificador</a>
+            </td>
+            <td>
+<p>Esta extensión incluye los códigos de paises de emición de un documento</p>
 </td>
          </tr>
          <tr>
@@ -854,8 +875,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-<<<<<<< HEAD
-=======
    <a name="6"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
@@ -864,16 +883,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Organization-OrganizacionCl.html"
-                  title="Organization/OrganizacionCl">Ejemplo Organización Prestadora de Salud</a>
+               <a href="Organization-OrganizacionClEjemplo1.html"
+                  title="Organization/OrganizacionClEjemplo1">Ejemplo Organización Prestadora de Salud</a>
             </td>
             <td>
 <p>CESFAM Rio Bueno (Ficticio) con ID DEIS no real</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PacienteCL.html" title="Patient/PacienteCL">Ejemplo de Recurso Paciente Nacional</a>
+            </td>
+            <td>
+<p>Paciente ficticio nacional CI Chilena, sin sistema de validación “http://regcivil.cl/Validacion/RUN” ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real</p>
+</td>
+         </tr>
       </tbody>
    </table>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
 </div>
 
 </div>
@@ -892,11 +918,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-<<<<<<< HEAD
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.11 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 17, 2024 14:21-0400">2024-06-17</span>
-=======
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.11 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 13, 2024 17:23-0400">2024-06-13</span>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 21, 2024 18:30-0400">2024-06-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

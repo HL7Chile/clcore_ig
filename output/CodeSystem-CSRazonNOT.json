@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOT</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">pierdeLlam<a name=\"CSRazonNOT-pierdeLlam\"> </a></td><td>El participante pierde la llamada</td></tr><tr><td style=\"white-space:nowrap\">finaLlam<a name=\"CSRazonNOT-finaLlam\"> </a></td><td>El participante finalizó la llamada abruptamente</td></tr><tr><td style=\"white-space:nowrap\">problConex<a name=\"CSRazonNOT-problConex\"> </a></td><td>El participante tuvo problemas de conexión a internet</td></tr><tr><td style=\"white-space:nowrap\">medproblConex<a name=\"CSRazonNOT-medproblConex\"> </a></td><td>Tuve problemas de conexión a internet</td></tr><tr><td style=\"white-space:nowrap\">otros<a name=\"CSRazonNOT-otros\"> </a></td><td>Otros / texto libre</td></tr></table></div>"
   },
   "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOT",
-  "version" : "1.8.11",
+  "version" : "1.8.12",
   "name" : "CSRazonNOencuentroCL",
   "title" : "Razones Cancelación Atención Remota",
   "status" : "active",

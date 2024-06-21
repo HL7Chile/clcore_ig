@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-<<<<<<< HEAD
-  <id value="48c01d26-324f-4229-ab8e-6e0f18581a9b"/>
+  <id value="a5744937-3a1f-451e-9596-4b1600e5bcb0"/>
   <meta>
-    <lastUpdated value="2024-06-17T14:21:27.388-04:00"/>
-=======
-  <id value="9e938c4f-68ce-495a-86cd-c6cabebeed87"/>
-  <meta>
-    <lastUpdated value="2024-06-13T17:23:26.181-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+    <lastUpdated value="2024-06-21T18:30:18.625-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -20,7 +14,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CodPais.html">codesystem Códigos de Países v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CodPais.html">codesystem Códigos de Países v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 249 concepts</p>
             <table class="codes">
@@ -2031,7 +2025,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="CodPaises"/>
         <title value="Códigos de Países"/>
         <status value="active"/>
@@ -2045,13 +2039,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:e5686121-47ae-417c-af38-a71aadb1524d"/>
-          <timestamp value="2024-06-17T14:22:53-04:00"/>
-=======
-          <identifier value="urn:uuid:d3a74559-ba96-4c7d-98f2-60f660cdeda1"/>
-          <timestamp value="2024-06-13T17:24:44-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:d25af06c-8d01-4545-8810-5dab3399af10"/>
+          <timestamp value="2024-06-21T18:31:38-04:00"/>
           <total value="249"/>
           <offset value="0"/>
           <parameter>
@@ -2068,7 +2057,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"/>
@@ -3327,7 +3316,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodMadurez.html">codesystem Códigos de grado de madurez del artefacto v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodMadurez.html">codesystem Códigos de grado de madurez del artefacto v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
             <table class="codes">
@@ -3386,7 +3375,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodMadurez"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSCodMadurez"/>
         <title value="Códigos de grado de madurez del artefacto"/>
         <status value="active"/>
@@ -3400,13 +3389,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:c3a6744f-7b91-4549-aea7-a2f996cc4b2c"/>
-          <timestamp value="2024-06-17T14:22:54-04:00"/>
-=======
-          <identifier value="urn:uuid:05f922a1-e12a-4c50-a2f7-0a585ef4dc40"/>
-          <timestamp value="2024-06-13T17:24:45-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:b8664674-f444-4624-b9f3-1128735785f3"/>
+          <timestamp value="2024-06-21T18:31:40-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -3423,7 +3407,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez"/>
@@ -3462,7 +3446,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodComunasCL.html">codesystem Códigos de Comunas en Chile v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodComunasCL.html">codesystem Códigos de Comunas en Chile v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 346 concepts</p>
             <table class="codes">
@@ -6249,7 +6233,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosComunaCL"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSCodigosComunaCL"/>
         <title value="Códigos de Comunas en Chile"/>
         <status value="active"/>
@@ -6263,13 +6247,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:d2196357-e531-4b31-9472-eb79b5845069"/>
-          <timestamp value="2024-06-17T14:22:55-04:00"/>
-=======
-          <identifier value="urn:uuid:dc5f7bf9-073f-4461-b229-1c401a1ecfcd"/>
-          <timestamp value="2024-06-13T17:24:46-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:2efb42b2-dff9-4445-8174-db0a6e79ecdc"/>
+          <timestamp value="2024-06-21T18:31:40-04:00"/>
           <total value="346"/>
           <offset value="0"/>
           <parameter>
@@ -6286,7 +6265,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"/>
@@ -8030,7 +8009,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodProvinciasCL.html">codesystem Códigos de Provincias en Chile v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodProvinciasCL.html">codesystem Códigos de Provincias en Chile v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 56 concepts</p>
             <table class="codes">
@@ -8497,7 +8476,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosProvinciasCL"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSCodigosProvinciasCL"/>
         <title value="Códigos de Provincias en Chile"/>
         <status value="active"/>
@@ -8511,13 +8490,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:84319ebe-3f2c-4b42-b750-384a88d41674"/>
-          <timestamp value="2024-06-17T14:22:57-04:00"/>
-=======
-          <identifier value="urn:uuid:e7d31afd-6625-434d-b352-d094c4bb3fe7"/>
-          <timestamp value="2024-06-13T17:24:48-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:ed9bb8f8-9b9b-462a-a46d-880e821cd590"/>
+          <timestamp value="2024-06-21T18:31:42-04:00"/>
           <total value="56"/>
           <offset value="0"/>
           <parameter>
@@ -8534,7 +8508,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL"/>
@@ -8828,7 +8802,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodRegionCL.html">codesystem Códigos de Regiones en Chile v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodRegionCL.html">codesystem Códigos de Regiones en Chile v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 16 concepts</p>
             <table class="codes">
@@ -8975,7 +8949,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosRegionesCL"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSCodigosRegionesCL"/>
         <title value="Códigos de Regiones en Chile"/>
         <status value="active"/>
@@ -8989,13 +8963,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:7ed83e78-542a-4071-a1d0-0642e6c76537"/>
-          <timestamp value="2024-06-17T14:22:57-04:00"/>
-=======
-          <identifier value="urn:uuid:2a14f5db-fe0b-40bf-9a57-ccdebc88a542"/>
-          <timestamp value="2024-06-13T17:24:48-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:db0be567-ecc7-4bf4-922e-55784d37a29e"/>
+          <timestamp value="2024-06-21T18:31:43-04:00"/>
           <total value="16"/>
           <offset value="0"/>
           <parameter>
@@ -9012,7 +8981,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"/>
@@ -9106,7 +9075,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodSSalud.html">codesystem Servicios de Salud Chile v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodSSalud.html">codesystem Servicios de Salud Chile v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 28 concepts</p>
             <table class="codes">
@@ -9349,7 +9318,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSCodigosServiciosSaludCL"/>
         <title value="Servicos de Salud en Chile"/>
         <status value="active"/>
@@ -9363,13 +9332,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:bd4efd3c-c980-4af6-9731-6e0258db184c"/>
-          <timestamp value="2024-06-17T14:22:57-04:00"/>
-=======
-          <identifier value="urn:uuid:886fe64e-ead4-4385-9bac-0abdf2f8f652"/>
-          <timestamp value="2024-06-13T17:24:48-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:901187fe-8a65-401c-82ee-8d5d49c9cd7d"/>
+          <timestamp value="2024-06-21T18:31:43-04:00"/>
           <total value="28"/>
           <offset value="0"/>
           <parameter>
@@ -9386,7 +9350,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
@@ -9540,7 +9504,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodigoslenguaje.html">codesystem Codigos Lenguaje v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodigoslenguaje.html">codesystem Codigos Lenguaje v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 53 concepts</p>
             <table class="codes">
@@ -10304,7 +10268,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigoslenguaje"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSCodigoslenguaje"/>
         <title value="Codigos Lenguaje"/>
         <status value="active"/>
@@ -10318,13 +10282,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:1b4f3230-34da-4261-b690-dce640a5ad0a"/>
-          <timestamp value="2024-06-17T14:22:57-04:00"/>
-=======
-          <identifier value="urn:uuid:2fd2f3fe-5135-43d6-9ef9-3659e29bbad9"/>
-          <timestamp value="2024-06-13T17:24:48-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:a95df948-4003-49af-9bf0-60addaea47c7"/>
+          <timestamp value="2024-06-21T18:31:43-04:00"/>
           <total value="53"/>
           <offset value="0"/>
           <parameter>
@@ -10341,7 +10300,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje"/>
@@ -10740,7 +10699,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSContactoSecundario"/>
         <title value="Contacto participantes"/>
         <status value="active"/>
@@ -10754,13 +10713,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:77503c58-fa79-452d-a47a-ffb0f8bec8c2"/>
-          <timestamp value="2024-06-17T14:22:58-04:00"/>
-=======
-          <identifier value="urn:uuid:bb35fff0-7d66-4450-bc9a-6dfafdef9375"/>
-          <timestamp value="2024-06-13T17:24:49-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:1a788240-157f-4ab5-8735-ea367fdaef55"/>
+          <timestamp value="2024-06-21T18:31:43-04:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -10825,12 +10779,8 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-<<<<<<< HEAD
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-feb 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-feb. 2024</p>
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
-=======
-            <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set cannot be expanded because the terminology server(s) deemed it too costly to do so</p>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -18847,7 +18797,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSDiagnosticosSCT"/>
         <title value="Diagnósticos SNOMED y Ausente o Desconocido"/>
         <status value="active"/>
@@ -18864,14 +18814,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:f2380af5-5414-476b-a006-271cf3961c7a"/>
-          <timestamp value="2024-06-17T14:22:58-04:00"/>
-=======
-          <identifier value="urn:uuid:b51021b4-dd6c-44d7-b421-1ab948f5d6c3"/>
-          <timestamp value="2024-06-13T21:24:57.252Z"/>
-          <total value="0"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:94a9a3ee-85c7-4dc5-98d0-8f76fb5e3029"/>
+          <timestamp value="2024-06-21T18:31:44-04:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -23913,7 +23857,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSEspecialidadesDeisCL.html">codesystem Códigos de Especialidades v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSEspecialidadesDeisCL.html">codesystem Códigos de Especialidades v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 68 concepts</p>
             <table class="codes">
@@ -24476,7 +24420,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSEspecialidadesDeisCL"/>
         <title value="Códigos de Especialidades"/>
         <status value="active"/>
@@ -24490,13 +24434,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:ce2f3f26-4ba3-4371-ac8d-8f5ca5d5c374"/>
-          <timestamp value="2024-06-17T14:23:24-04:00"/>
-=======
-          <identifier value="urn:uuid:b744bed5-f5bd-4160-b31e-3f7884575164"/>
-          <timestamp value="2024-06-13T17:24:50-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:12e74e6b-b781-4480-a0a0-ffd6fe5c17bb"/>
+          <timestamp value="2024-06-21T18:31:49-04:00"/>
           <total value="68"/>
           <offset value="0"/>
           <parameter>
@@ -24513,7 +24452,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"/>
@@ -24867,7 +24806,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSIdentidaddeGenero.html">codesystem Identidad de Genero v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSIdentidaddeGenero.html">codesystem Identidad de Genero v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 7 concepts</p>
             <table class="codes">
@@ -24942,7 +24881,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSIdentidaddeGenero"/>
         <title value="Identidad de Genero"/>
         <status value="active"/>
@@ -24956,13 +24895,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:f7dd5ee4-a0e2-4495-955c-fa85412e3812"/>
-          <timestamp value="2024-06-17T14:23:25-04:00"/>
-=======
-          <identifier value="urn:uuid:9bd97488-41c4-4513-8db3-e5841378cd2b"/>
-          <timestamp value="2024-06-13T17:24:51-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:dfbb386e-853e-484d-8cf0-d8f7f144393c"/>
+          <timestamp value="2024-06-21T18:31:50-04:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -24979,7 +24913,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero"/>
@@ -25028,7 +24962,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSNombreCampana.html">codesystem Campañas Inmunización v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSNombreCampana.html">codesystem Campañas Inmunización v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 36 concepts</p>
             <table class="codes">
@@ -25335,7 +25269,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSNombreCampana"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSNombreCampanaCL"/>
         <title value="Campañas de Vacunación"/>
         <status value="active"/>
@@ -25349,13 +25283,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:64b1658e-d699-46ef-a47c-f2c88f48b158"/>
-          <timestamp value="2024-06-17T14:23:25-04:00"/>
-=======
-          <identifier value="urn:uuid:451a1b88-5051-45ce-a567-c02ec3793c5d"/>
-          <timestamp value="2024-06-13T17:24:51-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:ac618879-26e7-442f-a261-a25f9b8dd7b0"/>
+          <timestamp value="2024-06-21T18:31:50-04:00"/>
           <total value="36"/>
           <offset value="0"/>
           <parameter>
@@ -25372,7 +25301,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana"/>
@@ -25566,7 +25495,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSPrevision.html">codesystem Prevision v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSPrevision.html">codesystem Prevision v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 7 concepts</p>
             <table class="codes">
@@ -25641,7 +25570,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSPrevision"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSPrevision"/>
         <title value="Prevision"/>
         <status value="active"/>
@@ -25655,13 +25584,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:6bf93b78-826f-46ac-b8ff-5171b33ced1f"/>
-          <timestamp value="2024-06-17T14:23:25-04:00"/>
-=======
-          <identifier value="urn:uuid:40cac45e-3c35-43d5-ac03-c7d2e1c65273"/>
-          <timestamp value="2024-06-13T17:24:52-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:fd860e9e-6b9a-4678-b5aa-ac43b47b87a2"/>
+          <timestamp value="2024-06-21T18:31:50-04:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -25678,7 +25602,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
@@ -25727,7 +25651,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-csrazonnoencuentro.html">codesystem Razón Encuentro Remoto no Realizado v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-csrazonnoencuentro.html">codesystem Razón Encuentro Remoto no Realizado v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
             <table class="codes">
@@ -25819,7 +25743,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSRazonNOencuentro"/>
         <title value="Razones no Atención Remota"/>
         <status value="active"/>
@@ -25833,13 +25757,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:1c33ec28-8d9c-4401-b76e-a3f6c6acf8cd"/>
-          <timestamp value="2024-06-17T14:23:25-04:00"/>
-=======
-          <identifier value="urn:uuid:9ab18cfc-ddc6-4248-8973-057ccdc32ebf"/>
-          <timestamp value="2024-06-13T17:24:52-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:37d14d5b-62d4-4abf-9010-6ca1cd1f7aec"/>
+          <timestamp value="2024-06-21T18:31:50-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -25856,7 +25775,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro"/>
@@ -25895,7 +25814,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSRazonNOTinm.html">codesystem Razones no Inmunización v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSRazonNOTinm.html">codesystem Razones no Inmunización v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
@@ -25946,7 +25865,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSRazonNOTinmCL"/>
         <title value="Razones no Inmunización"/>
         <status value="active"/>
@@ -25960,13 +25879,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:f2d833ce-2855-42f1-85dc-423153ff39dc"/>
-          <timestamp value="2024-06-17T14:23:25-04:00"/>
-=======
-          <identifier value="urn:uuid:f72c521c-72ab-4ef1-8887-8a82f45a8520"/>
-          <timestamp value="2024-06-13T17:24:52-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:eb457ad2-e08b-4e0a-a193-fc254ba4e809"/>
+          <timestamp value="2024-06-21T18:31:50-04:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -25983,7 +25897,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"/>
@@ -26017,7 +25931,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSSexoListadoDeis.html">codesystem Sexo Listado Deis v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSSexoListadoDeis.html">codesystem Sexo Listado Deis v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 5 concepts</p>
             <table class="codes">
@@ -26076,7 +25990,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSSexoListadoDeis"/>
         <title value="Sexo Listado Deis"/>
         <status value="active"/>
@@ -26090,13 +26004,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:aa9d45c8-00a5-4526-93e3-46b5b5d1b834"/>
-          <timestamp value="2024-06-17T14:23:25-04:00"/>
-=======
-          <identifier value="urn:uuid:944788b1-6155-4981-b735-3e1988afa0f0"/>
-          <timestamp value="2024-06-13T17:24:52-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:551c3bb4-58e1-44e7-9eb4-0d5992c5d504"/>
+          <timestamp value="2024-06-21T18:31:51-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -26113,7 +26022,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis"/>
@@ -26152,7 +26061,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSTipoIdentificador.html">codesystem Tipo Identificador v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSTipoIdentificador.html">codesystem Tipo Identificador v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 14 concepts</p>
             <table class="codes">
@@ -26370,7 +26279,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTipoIdentificador"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSTipoIdentificador"/>
         <title value="Tipo Identificador"/>
         <status value="active"/>
@@ -26384,13 +26293,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:f46de63d-0b08-4e86-a182-e7189080aa35"/>
-          <timestamp value="2024-06-17T14:23:25-04:00"/>
-=======
-          <identifier value="urn:uuid:b3027c73-e5bd-4135-a866-cbf2cf7b669f"/>
-          <timestamp value="2024-06-13T17:24:52-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:fdd4a423-d9e3-4c5f-8f38-0f958757f4c1"/>
+          <timestamp value="2024-06-21T18:31:51-04:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -26407,7 +26311,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"/>
@@ -34508,7 +34412,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinico"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSTiposDocClinico"/>
         <title value="Tipos de Documentos Clínicos"/>
         <status value="active"/>
@@ -34522,13 +34426,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:1e43a915-d05d-432d-ac8a-52a215ba2762"/>
-          <timestamp value="2024-06-13T19:36:24.439Z"/>
-=======
-          <identifier value="urn:uuid:6ac8cbfb-d3e3-4739-be99-cc67eeb290d8"/>
-          <timestamp value="2024-06-13T21:25:00.189Z"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:7e79504e-8e98-45da-8fc8-bf258884ae1e"/>
+          <timestamp value="2024-06-21T22:09:38.052Z"/>
           <offset value="0"/>
           <parameter>
             <name value="limitedExpansion"/>
@@ -39572,10 +39471,10 @@
                   <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v2-0203.html">codesystem identifierType v4.0.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-CSCodigoDNI.html">codesystem Códigos de Documentos DNI para LATAM y el Caribe v1.8.11 (CodeSystem)</a>
+                  <a href="CodeSystem-CSCodigoDNI.html">codesystem Códigos de Documentos DNI para LATAM y el Caribe v1.8.12 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-CSTipoIdentificador.html">codesystem Tipo Identificador v1.8.11 (CodeSystem)</a>
+                  <a href="CodeSystem-CSTipoIdentificador.html">codesystem Tipo Identificador v1.8.12 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -42090,7 +41989,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocumentos"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSTiposDocumentos"/>
         <title value="Tipos de Documentos"/>
         <status value="active"/>
@@ -42104,13 +42003,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:c722c12f-b0e6-4d35-8817-9aa2a5786a3c"/>
-          <timestamp value="2024-06-17T14:23:30-04:00"/>
-=======
-          <identifier value="urn:uuid:e48e8645-495b-4b55-8877-99ec81c8be25"/>
-          <timestamp value="2024-06-13T17:25:00-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:3ab83a81-f27f-4bc2-9761-ebd2f31f5c15"/>
+          <timestamp value="2024-06-21T18:31:57-04:00"/>
           <total value="185"/>
           <offset value="0"/>
           <parameter>
@@ -42127,7 +42021,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI|1.8.12"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -42135,7 +42029,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI"/>
@@ -43074,7 +42968,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSTiposEncuentroCL.html">codesystem Tipos de Encuentro v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSTiposEncuentroCL.html">codesystem Tipos de Encuentro v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 3 concepts</p>
             <table class="codes">
@@ -43117,7 +43011,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposEncuentroCL"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSTiposEncuentroCL"/>
         <title value="Tipos de Encuentro"/>
         <status value="active"/>
@@ -43131,13 +43025,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:5aa36995-c2c1-4712-9521-ec81a6a5ab03"/>
-          <timestamp value="2024-06-17T14:23:31-04:00"/>
-=======
-          <identifier value="urn:uuid:8617aaf4-3ca9-47ed-b2fa-4377e5e29453"/>
-          <timestamp value="2024-06-13T17:25:02-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:83783831-5e43-4ad3-8a4e-80f52e2a6c56"/>
+          <timestamp value="2024-06-21T18:31:58-04:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -43154,7 +43043,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL"/>
@@ -43183,7 +43072,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodigoServicio.html">codesystem Tipos de Servicios Remotos v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodigoServicio.html">codesystem Tipos de Servicios Remotos v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 14 concepts</p>
             <table class="codes">
@@ -43314,7 +43203,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposServicio"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSTiposServicioCL"/>
         <title value="Tipos de Servicios Remotos"/>
         <status value="active"/>
@@ -43328,13 +43217,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:c18f011c-becd-40eb-b049-7a060bd4910e"/>
-          <timestamp value="2024-06-17T14:23:31-04:00"/>
-=======
-          <identifier value="urn:uuid:a61ac7b0-e633-4d96-a288-d14004f34ba6"/>
-          <timestamp value="2024-06-13T17:25:02-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:25ea9c05-e330-4d58-9f0f-7abe45a56755"/>
+          <timestamp value="2024-06-21T18:31:58-04:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -43351,7 +43235,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio"/>
@@ -43435,7 +43319,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodigoVacunas.html">codesystem Códigos de Vacunas RNI v1.8.11 (CodeSystem)</a>
+              <a href="CodeSystem-CSCodigoVacunas.html">codesystem Códigos de Vacunas RNI v1.8.12 (CodeSystem)</a>
             </p>
             <p>This value set contains 79 concepts</p>
             <table class="codes">
@@ -44086,7 +43970,7 @@
           </div>
         </text>
         <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposVacunas"/>
-        <version value="1.8.11"/>
+        <version value="1.8.12"/>
         <name value="VSTiposVacunasCL"/>
         <title value="Tipos de Vacunas RNI"/>
         <status value="active"/>
@@ -44100,13 +43984,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-<<<<<<< HEAD
-          <identifier value="urn:uuid:d9ab20de-04be-4b15-9668-5abde8368b0d"/>
-          <timestamp value="2024-06-17T14:23:31-04:00"/>
-=======
-          <identifier value="urn:uuid:0ff7755d-14fa-4dbe-b53c-7841d4a9f852"/>
-          <timestamp value="2024-06-13T17:25:02-04:00"/>
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+          <identifier value="urn:uuid:83998a44-a1e8-449f-aff9-efd6180683bf"/>
+          <timestamp value="2024-06-21T18:31:58-04:00"/>
           <total value="79"/>
           <offset value="0"/>
           <parameter>
@@ -44123,7 +44002,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas|1.8.11"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas|1.8.12"/>
           </parameter>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas"/>

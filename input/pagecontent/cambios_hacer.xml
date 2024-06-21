@@ -1,3 +1,9 @@
+Habilitar extensiones de nacionalidad y Emision de paises para poder crear un contexto a la de paises
+- Se generan nuevas extensiones para resolver errores dentro de la guía
+  - [PaisEmision](StructureDefinition-PaisEmision.html): Para la emisión de documentos
+  - [Nacionalidad](StructureDefinition-Nacionalidad.html): Para la nacionalidad de un paciente
+
+- Se incluye contexto para [CodigoPaises](StructureDefinition-CodigoPaises.html) a Address.country
 Prestador
   fecha nacimiento obligatoriedad | 1..1 -> 0..1
   obligatoriedad del sexo | 1..1 -> 0..1
@@ -9,8 +15,6 @@ Link
   poner links a otras Guias
 
 dejar identificador tal como esta en el paciente, igual para el Prestador
-
-
 
 3 extensiones 0..1
 sexo registral consultar si son iguales al biologico

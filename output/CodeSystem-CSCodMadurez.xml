@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">1<a name="CSCodMadurez-1"> </a></td></tr><tr><td style="white-space:nowrap">2<a name="CSCodMadurez-2"> </a></td></tr><tr><td style="white-space:nowrap">3<a name="CSCodMadurez-3"> </a></td></tr><tr><td style="white-space:nowrap">4<a name="CSCodMadurez-4"> </a></td></tr><tr><td style="white-space:nowrap">N<a name="CSCodMadurez-N"> </a></td></tr></table></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez"/>
-  <version value="1.8.11"/>
+  <version value="1.8.12"/>
   <name value="CSCodMadurez"/>
   <title value="Códigos de grado de madurez del artefacto"/>
   <status value="active"/>

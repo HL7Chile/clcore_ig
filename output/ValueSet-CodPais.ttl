@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CodPais.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.8.11"] ; # 
+  fhir:version [ fhir:v "1.8.12"] ; # 
   fhir:name [ fhir:v "CodPaises"] ; # 
   fhir:title [ fhir:v "Códigos de Países"] ; # 
   fhir:status [ fhir:v "active"] ; # 

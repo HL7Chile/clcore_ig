@@ -1,103 +1,10 @@
 clcore : Validation Results
 =========================================
 
-<<<<<<< HEAD
-err = 0, warn = 28, info = 0
+err = 0, warn = 20, info = 0
 IG Publisher Version: 1.6.11
-Generated Mon Jun 17 14:24:52 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.11 (canonical = https://hl7chile.cl/fhir/ig/clcore)
- Build Errors : 16 / 0 / 0
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodComunasCL : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodMadurez : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodProvinciasCL : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodRegionCL : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodSSalud : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodigoDNI : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodigoServicio : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodigoVacunas : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodigoslenguaje : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSEspecialidadesDeisCL : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSIdentidaddeGenero : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSNombreCampana : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSPrevision : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSRazonNOT : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSRazonNOTinm : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSSexoListadoDeis : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSTipoIdentificador : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSTiposEncuentroCL : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CodPais : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-csrazonnoencuentro : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.clcore : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-AuditEventCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CodigoPaises : 0 / 2 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-ComunasCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-ContactoParticipantes : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreDiagnosticoCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreLocalizacionCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreMedicamentoCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreOrganizacionCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CorePacienteCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CorePrestadorCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreRolClinicoCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-DocumentoCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-EncounterCL : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-IdContacto : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-IdentidadDeGenero : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-ImmunizationCL : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-NotasEncuentro : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-ObservacionesDiagnostico : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-ProvenanceCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-ProvinciasCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-RazonNOrealizarse : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-RegionesCl : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-SegundoApellido : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-SexoBiologico : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-VSEspecialidadesDeisCL : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-cl-address : 0 / 1 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-CodPais : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSCodMadurez : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSCodigosComunaCL : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSCodigosProvinciasCL : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSCodigosRegionesCL : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSCodigosServiciosSalud : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSCodigoslenguaje : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSContactosec : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSDiagnosticosSCT : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSEspecialidadesDeisCL : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSIdentidaddeGenero : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSNombreCampana : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSPrevision : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSRazonNOT : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSRazonNOTinm : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSSexoListadoDeis : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSTipoIdentificador : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSTiposDocClinico : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSTiposDocumentos : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSTiposEncuentroCL : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSTiposServicio : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSTiposVacunas : 0 / 0 / 1
-</table>
-== n/a ==
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/a at Line 221, column 8: The link 'Composition-CompositionClEj.html' for "Documento" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/a at Line 227, column 8: The link 'PractitionerRole-EspecialidadCL.html' for "Especialidad de Cardiología" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/a at Line 233, column 8: The link 'Location-LocalizacionEjemploCL1.html' for "Localización de Farmacia" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 239, column 9: The link 'Medication-MedicamentoCl.html' for "Medicamento comprimido Tareg - D 160" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 242, column 9: The link 'Medication-MedicamentoCl-2.html' for "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 254, column 9: The link 'Patient-PacienteCL.html' for "Paciente Chileno" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 257, column 9: The link 'Patient-PacienteCL2.html' for "Paciente Extranjero" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 260, column 9: The link 'Patient-PacienteCl-3.html' for "Paciente Nacional, con datos actualizados, declarando nacionalidad" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 263, column 9: The link 'Patient-PacienteCl-4.html' for "Ejemplo de Recurso de paciente Nacional con contacto declarado" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/a at Line 283, column 8: The link 'AuditEvent-AuditEventEx.html' for "Audit-Event" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 222, column 15: The link 'StructureDefinition-MedicamentoCL.html' for "CoreMedicamentoCl" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 273, column 21: The link 'Organization-ORG1.html' for "Ejemplo Organización Prestadora de Salud" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 274, column 21: The link 'Location-LocalizacionEjemploCL1.html' for "Ejemplo Localización Farmacia" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\changes.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 286, column 12: The link 'StructureDefinition-TiposVacunaRNI.html' for "Código de tipos de Vacunas en Chile" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\changes.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 287, column 12: The link 'StructureDefinition-NombreCampana.html' for "Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)" cannot be resolved
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\changes.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 288, column 12: The link 'StructureDefinition-RazonNOrealizarseInm.html' for "Razones por las cuales no se pudo realizar la inmunización" cannot be resolved
-=======
-err = 0, warn = 26, info = 0
-IG Publisher Version: 1.6.11
-Generated Thu Jun 13 17:27:23 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.11 (canonical = https://hl7chile.cl/fhir/ig/clcore)
- Build Errors : 12 / 0 / 0
+Generated Fri Jun 21 18:33:42 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.12 (canonical = https://hl7chile.cl/fhir/ig/clcore)
+ Build Errors : 10 / 0 / 0
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\CodeSystem-CSCodComunasCL : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\CodeSystem-CSCodMadurez : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\CodeSystem-CSCodProvinciasCL : 0 / 0 / 1
@@ -119,16 +26,17 @@ Generated Thu Jun 13 17:27:23 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\CodeSystem-CodPais : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\CodeSystem-csrazonnoencuentro : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.clcore : 0 / 1 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Organization-OrganizacionCl : 0 / 0 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Organization-OrganizacionClEjemplo1 : 0 / 0 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Patient-PacienteCL : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-AuditEventCl : 0 / 1 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CodigoPaises : 0 / 1 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CodigoPaises : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ComunasCl : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ContactoParticipantes : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreDiagnosticoCl : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreLocalizacionCl : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreMedicamentoCl : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreOrganizacionCl : 0 / 0 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CorePacienteCl : 0 / 1 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CorePacienteCl : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CorePrestadorCl : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreRolClinicoCl : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-DocumentoCl : 0 / 1 / 1
@@ -136,18 +44,16 @@ Generated Thu Jun 13 17:27:23 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-IdContacto : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-IdentidadDeGenero : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ImmunizationCL : 0 / 1 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-NombreCampana : 0 / 1 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-Nacionalidad : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-NotasEncuentro : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ObservacionesDiagnostico : 0 / 1 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-PaisEmision : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ProvenanceCl : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ProvinciasCl : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-RazonNOrealizarse : 0 / 1 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-RazonNOrealizarseInm : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-RegionesCl : 0 / 0 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-SegundoApellido : 0 / 1 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ServicioSalud : 0 / 1 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-SegundoApellido : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-SexoBiologico : 0 / 1 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-TiposVacunaRNI : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-VSEspecialidadesDeisCL : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-cl-address : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\ValueSet-CodPais : 0 / 0 / 1
@@ -179,14 +85,11 @@ ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/htm
 ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/a at Line 233, column 8: The link 'Location-LocalizacionEjemploCL1.html' for "Localización de Farmacia" cannot be resolved
 ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 239, column 9: The link 'Medication-MedicamentoCl.html' for "Medicamento comprimido Tareg - D 160" cannot be resolved
 ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 242, column 9: The link 'Medication-MedicamentoCl-2.html' for "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido" cannot be resolved
-ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 254, column 9: The link 'Patient-PacienteCL.html' for "Paciente Chileno" cannot be resolved
 ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 257, column 9: The link 'Patient-PacienteCL2.html' for "Paciente Extranjero" cannot be resolved
 ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 260, column 9: The link 'Patient-PacienteCl-3.html' for "Paciente Nacional, con datos actualizados, declarando nacionalidad" cannot be resolved
 ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 263, column 9: The link 'Patient-PacienteCl-4.html' for "Ejemplo de Recurso de paciente Nacional con contacto declarado" cannot be resolved
 ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/a at Line 283, column 8: The link 'AuditEvent-AuditEventEx.html' for "Audit-Event" cannot be resolved
-ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 253, column 21: The link 'Organization-ORG1.html' for "Ejemplo Organización Prestadora de Salud" cannot be resolved
-ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 254, column 21: The link 'Location-LocalizacionEjemploCL1.html' for "Ejemplo Localización Farmacia" cannot be resolved
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 246, column 14: The link 'StructureDefinition-CoreRolClinico.html' for "CoreRolClinicoCl" cannot be resolved
 == fsh-generated\resources\CodeSystem-CSCodComunasCL.json ==
 == fsh-generated\resources\CodeSystem-CSCodMadurez.json ==
 == fsh-generated\resources\CodeSystem-CSCodProvinciasCL.json ==
@@ -209,17 +112,12 @@ ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\changes.html#/html/bod
 == fsh-generated\resources\CodeSystem-csrazonnoencuentro.json ==
 == fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.clcore.json ==
 WARNING: ImplementationGuide/hl7.fhir.cl.clcore: ImplementationGuide: !!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló
-<<<<<<< HEAD
-=======
-== fsh-generated\resources\Organization-OrganizacionCl.json ==
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+== fsh-generated\resources\Organization-OrganizacionClEjemplo1.json ==
+== fsh-generated\resources\Patient-PacienteCL.json ==
 == fsh-generated\resources\StructureDefinition-AuditEventCl.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/AuditEventCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-CodigoPaises.json ==
-WARNING: StructureDefinition/CodigoPaises: StructureDefinition.context[0]: Review the extension type for CodigoPaises: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-ComunasCl.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-ContactoParticipantes.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-CoreDiagnosticoCl.json ==
@@ -229,9 +127,7 @@ WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/Str
 == fsh-generated\resources\StructureDefinition-CoreMedicamentoCl.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-CoreOrganizacionCl.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-CorePacienteCl.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-CorePrestadorCl.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-CoreRolClinicoCl.json ==
@@ -246,45 +142,25 @@ WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/Str
 WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-ImmunizationCL.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL'): The Implementation Guide contains no examples for this profile
-<<<<<<< HEAD
-=======
-== fsh-generated\resources\StructureDefinition-NombreCampana.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreCampana'): The Implementation Guide contains no examples for this extension
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+== fsh-generated\resources\StructureDefinition-Nacionalidad.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/Nacionalidad'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-NotasEncuentro.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NotasEncuentro'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-ObservacionesDiagnostico.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ObservacionesDiagnostico'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-PaisEmision.json ==
 == fsh-generated\resources\StructureDefinition-ProvenanceCl.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-ProvinciasCl.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-RazonNOrealizarse.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarse'): The Implementation Guide contains no examples for this extension
-<<<<<<< HEAD
-=======
-== fsh-generated\resources\StructureDefinition-RazonNOrealizarseInm.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarseInm'): The Implementation Guide contains no examples for this extension
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
 == fsh-generated\resources\StructureDefinition-RegionesCl.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-SegundoApellido.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido'): The Implementation Guide contains no examples for this extension
-<<<<<<< HEAD
 == fsh-generated\resources\StructureDefinition-SexoBiologico.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico'): The Implementation Guide contains no examples for this extension
-=======
-== fsh-generated\resources\StructureDefinition-ServicioSalud.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ServicioSalud'): The Implementation Guide contains no examples for this extension
-== fsh-generated\resources\StructureDefinition-SexoBiologico.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico'): The Implementation Guide contains no examples for this extension
-== fsh-generated\resources\StructureDefinition-TiposVacunaRNI.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/TiposVacunaRNI'): The Implementation Guide contains no examples for this extension
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
 == fsh-generated\resources\StructureDefinition-VSEspecialidadesDeisCL.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/VSEspecialidadesDeisCL'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-cl-address.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-address'): The Implementation Guide contains no examples for this data type profile
 == fsh-generated\resources\ValueSet-CodPais.json ==
 == fsh-generated\resources\ValueSet-VSCodMadurez.json ==
 == fsh-generated\resources\ValueSet-VSCodigosComunaCL.json ==

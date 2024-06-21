@@ -1,20 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-<<<<<<< HEAD
-  "id" : "9c9e5dae-fe4d-4da8-aca8-01902e4f5b2a-66",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9c9e5dae-fe4d-4da8-aca8-01902e4f5b2a-66",
-  "name" : "IntersectionPaisOrigenNacionalidadClAndPaisOrigenNacionalidadCl",
-  "title" : "Intersection of Codigo de Identificación de países And Codigo de Identificación de países",
+  "id" : "e8d03331-55ec-4e79-a0ba-4f2c2583ed7e-66",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e8d03331-55ec-4e79-a0ba-4f2c2583ed7e-66",
+  "name" : "IntersectionPaisOrigenNacionalidadClAndPaisDireccion",
+  "title" : "Intersection of Codigo de Identificación de países And Codigo de Paises",
   "status" : "active",
-  "date" : "2024-06-17T14:21:50-04:00",
-=======
-  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-66",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/675236fb-5fc5-4109-b3e1-7bcf58b352c7-66",
-  "name" : "IntersectionPaisOrigenNacionalidadClAndPaisOrigenNacionalidadCl",
-  "title" : "Intersection of Codigo de Identificación de países And Codigo de Identificación de países",
-  "status" : "active",
-  "date" : "2024-06-13T17:23:50-04:00",
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+  "date" : "2024-06-21T18:30:42-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -25,8 +16,8 @@
   "snapshot" : {
     "element" : [{
       "path" : "Extension",
-      "short" : "Codigo de Identificación de países",
-      "definition" : "Esta extensión incluye códigos de paises de origen",
+      "short" : "left: Codigo de Identificación de países; right: Codigo de Paises",
+      "definition" : "left: Esta extensión incluye códigos de paises de origen; right: Esta extensión incluye códigos de paises",
       "min" : 0,
       "max" : "*",
       "constraint" : [{
@@ -115,7 +106,7 @@
     {
       "path" : "Extension.url",
       "representation" : ["xmlAttr"],
-      "short" : "Extensión de Nacionalidad para pacientes extranjeros",
+      "short" : "left: Extensión de Nacionalidad para pacientes extranjeros; right: Extensión de dirección del país",
       "definition" : "Source of the definition for the extension code - a logical name or a URL.",
       "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
       "min" : 1,
@@ -137,7 +128,7 @@
     },
     {
       "path" : "Extension.value[x]",
-      "short" : "Código de País",
+      "short" : "left: Código de País; right: Código del País",
       "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility] for a list).",
       "min" : 0,
       "max" : "1",

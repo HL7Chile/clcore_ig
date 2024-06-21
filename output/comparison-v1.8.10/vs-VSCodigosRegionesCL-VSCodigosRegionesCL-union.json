@@ -1,20 +1,11 @@
 {
   "resourceType" : "ValueSet",
-<<<<<<< HEAD
-  "id" : "9c9e5dae-fe4d-4da8-aca8-01902e4f5b2a-158",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/9c9e5dae-fe4d-4da8-aca8-01902e4f5b2a-158",
+  "id" : "e8d03331-55ec-4e79-a0ba-4f2c2583ed7e-158",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e8d03331-55ec-4e79-a0ba-4f2c2583ed7e-158",
   "name" : "UnionVSCodigosRegionesCLAndVSCodigosRegionesCL",
   "title" : "Union of Códigos de Regiones en Chile And Códigos de Regiones en Chile",
   "status" : "active",
-  "date" : "2024-06-17T14:21:50-04:00",
-=======
-  "id" : "675236fb-5fc5-4109-b3e1-7bcf58b352c7-170",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/675236fb-5fc5-4109-b3e1-7bcf58b352c7-170",
-  "name" : "UnionVSCodigosRegionesCLAndVSCodigosRegionesCL",
-  "title" : "Union of Códigos de Regiones en Chile And Códigos de Regiones en Chile",
-  "status" : "active",
-  "date" : "2024-06-13T17:23:50-04:00",
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+  "date" : "2024-06-21T18:30:42-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

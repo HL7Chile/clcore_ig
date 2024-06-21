@@ -85,7 +85,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "PractitionerRole.practitioner.display","PractitionerRole.practitioner.display","","","",0,1,"Y","","Y","string {[]} {[]}
 ","Nombre del prestador de salud","Nombre completo del prestador de salud","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"PractitionerRole.organization","PractitionerRole.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+"PractitionerRole.organization","PractitionerRole.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl]]}
 ","Referencia a la organización donde el presador cumple roles","La referencia a la organización en donde el prestador individual cumple roles.","","","","","","","","","",,,,,"",,,,"PractitionerRole.organization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scoper"
 "PractitionerRole.organization.id","PractitionerRole.organization.id","","","",0,1,"","","","string {[]} {[]}
@@ -122,7 +122,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 "PractitionerRole.specialty","PractitionerRole.specialty","","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
 ","Definición de la especialidad médica según DEIS","Definición de la especialidad médica según DEIS, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta","","","","","","","","","",,"required","Códigos de Especialidad DEIS","https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL","",,,,"PractitionerRole.specialty",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRA-5",".player.HealthCareProvider[@classCode = 'PROV'].code","./Specialty"
-"PractitionerRole.location","PractitionerRole.location","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
+"PractitionerRole.location","PractitionerRole.location","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreLocalizacionCl]]}
 ","Referencia a la ubicación donde el presador cumple roles","La referencia a la ubicación en donde el prestador individual cumple roles.","","","","","","","","","",,,,,"",,,,"PractitionerRole.location",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".performance.ActDefinitionOrEvent.ServiceDeliveryLocation[@classCode = 'SDLOC']","(ServD maps Practitioners and Organizations via another entity, so this concept is not available)<br/> However these are accessed via the Site.ServiceSite.ServiceSiteProvider record. (The Site has the location)","FiveWs.where[x]"
 "PractitionerRole.location.id","PractitionerRole.location.id","","","",0,1,"","","","string {[]} {[]}
