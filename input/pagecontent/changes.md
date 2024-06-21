@@ -13,18 +13,15 @@
  - Value set de problemas sin informar o desconocidos
 
 - Se modifica y agregan nuevos terminos en "CSTipoIdentificador"
-### Version 1.8.12
 - Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
   - Se cambio referencia de **generalPractitioner** de Organization -> OrganizacionCL y Practitioner -> PrestadorCL
 
-<<<<<<< HEAD
 - Perfil[CoreRolClinicoCl](StructureDefinition-CoreRolClinico.html)
   - Se modifica la referencia organization al **OrganizationCL**
   - Se modifica la referencia location al **CoreLocalizacionCl**
-=======
+
 - Perfil [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html)
   - Se creo ejemplo [Ejemplo Organización Prestadora de Salud](Organization-OrganizacionClEjemplo1.html)
->>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
 
 ### Version 1.8.9
 - Version de prueba debido a cambios en los publicadores
