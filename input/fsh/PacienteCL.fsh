@@ -133,8 +133,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address only Address or ClAddress
 * address MS
 
-
-
 * contact MS 
 * contact.relationship.coding and contact.relationship MS
 
@@ -181,7 +179,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 * generalPractitioner 0..* MS
-* generalPractitioner only Reference(Organization or Practitioner)
+* generalPractitioner only Reference(OrganizacionCL or PrestadorCL)
 * generalPractitioner ^short = "Proveedor de Salud designado como principal"
 * generalPractitioner ^definition = "Proveedor de Salud designado como principal"
   * reference MS

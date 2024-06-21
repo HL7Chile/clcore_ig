@@ -17,7 +17,11 @@
   fhir:name [ fhir:v "clcore"] ; # 
   fhir:title [ fhir:v "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
+<<<<<<< HEAD
   fhir:date [ fhir:v "2024-06-17T14:21:27-04:00"^^xsd:dateTime] ; # 
+=======
+  fhir:date [ fhir:v "2024-06-13T17:23:26-04:00"^^xsd:dateTime] ; # 
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;
@@ -1034,6 +1038,24 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+<<<<<<< HEAD
+=======
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Organization/OrganizacionCl> ;
+         fhir:reference [ fhir:v "Organization/OrganizacionCl" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo Organización Prestadora de Salud" ] ;
+       fhir:description [ fhir:v "CESFAM Rio Bueno (Ficticio) con ID DEIS no real" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -1106,6 +1128,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+<<<<<<< HEAD
+=======
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreCampana> ;
+         fhir:reference [ fhir:v "StructureDefinition/NombreCampana" ]
+       ] ;
+       fhir:name [ fhir:v "Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)" ] ;
+       fhir:description [ fhir:v "Esta extensión incluye los nombres de las distintas Campañas que se realizan y estan registradas en el RNI" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [

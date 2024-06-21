@@ -52,6 +52,9 @@ Description: "Diagnósticos definidos en Snomed-CT."
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement" 
 
+* ^experimental = false //dependera del uso que le den al codesystem
+
+// * codes from system https://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html
 * include codes from system http://snomed.info/sct where concept descendent-of #404684003
 //* include codes from valueset http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips
 * http://snomed.info/sct#160245001 "No current problems or disability"

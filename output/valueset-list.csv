@@ -7,7 +7,11 @@ https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosRegionesCL,1.8.11,active,,V
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud,1.8.11,active,,VSCodigosServiciosSaludCL,Servicos de Salud en Chile,"Códigos de Servicios de Salud que existen en Chile",,"Internal"
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigoslenguaje,1.8.11,active,,VSCodigoslenguaje,Codigos Lenguaje,"Códigos de leguaje",,"Internal"
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec,1.8.11,active,,VSContactoSecundario,Contacto participantes,"Contacto telefónico o correo de los participantes",,"hl7.fhir.r4.core"
+<<<<<<< HEAD
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT,1.8.11,active,,VSDiagnosticosSCT,Diagnósticos SNOMED y Ausente o Desconocido,"Diagnósticos definidos en Snomed-CT.",,"SCT"
+=======
+https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT,1.8.11,active,,VSDiagnosticosSCT,Diagnósticos SNOMED y Ausente o Desconocido,"Diagnósticos definidos en Snomed-CT.",,"SCT,Other"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL,1.8.11,active,,VSEspecialidadesDeisCL,Códigos de Especialidades,"Códigos de especialidades médicas descritas según DEIS",,"Internal"
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero,1.8.11,active,,VSIdentidaddeGenero,Identidad de Genero,"Identidad de Genero",,"Internal"
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSNombreCampana,1.8.11,active,,VSNombreCampanaCL,Campañas de Vacunación,"Campañas de Inmunización utilizada en Chile según CodeSystem local",,"Internal"

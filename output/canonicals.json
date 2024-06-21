@@ -259,6 +259,16 @@
     "name" : "ImmunizationCL"
   },
   {
+<<<<<<< HEAD
+=======
+    "id" : "NombreCampana",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreCampana",
+    "version" : "1.8.11",
+    "name" : "NombreCampanaCL"
+  },
+  {
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     "id" : "NotasEncuentro",
     "type" : "StructureDefinition",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NotasEncuentro",
@@ -294,6 +304,16 @@
     "name" : "RazonNOTatencionCL"
   },
   {
+<<<<<<< HEAD
+=======
+    "id" : "RazonNOrealizarseInm",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarseInm",
+    "version" : "1.8.11",
+    "name" : "RazonNOTinmunizacionCL"
+  },
+  {
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     "id" : "RegionesCl",
     "type" : "StructureDefinition",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl",
@@ -308,6 +328,16 @@
     "name" : "SegundoApellido"
   },
   {
+<<<<<<< HEAD
+=======
+    "id" : "ServicioSalud",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ServicioSalud",
+    "version" : "1.8.11",
+    "name" : "ServicioSaludCL"
+  },
+  {
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     "id" : "SexoBiologico",
     "type" : "StructureDefinition",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico",
@@ -315,6 +345,16 @@
     "name" : "SexoBiologico"
   },
   {
+<<<<<<< HEAD
+=======
+    "id" : "TiposVacunaRNI",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/TiposVacunaRNI",
+    "version" : "1.8.11",
+    "name" : "TiposVacunaCL"
+  },
+  {
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     "id" : "VSEspecialidadesDeisCL",
     "type" : "StructureDefinition",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/VSEspecialidadesDeisCL",

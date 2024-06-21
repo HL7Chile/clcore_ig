@@ -10,11 +10,19 @@
       "oids" : ["1.2.840.10008.2.16.4"],
       "uses" : {
       },
+<<<<<<< HEAD
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
       "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
       "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code",
       "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
+=======
+      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
+      "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code",
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     },
     {
       "url" : "http://hl7.org/fhir/CodeSystem/medication-status",
@@ -122,8 +130,8 @@
       "oids" : ["2.16.840.1.113883.4.642.4.72"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem",
-      "ValueSet-VSContactosec.html" : "Contacto participantes"
+      "ValueSet-VSContactosec.html" : "Contacto participantes",
+      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem"
     },
     {
       "url" : "http://hl7.org/fhir/contact-point-use",
@@ -352,6 +360,7 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+<<<<<<< HEAD
       "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
       "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
@@ -365,6 +374,21 @@
       "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
       "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
       "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage"
+=======
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "ValueSet-VSDiagnosticosSCT.html" : "Diagnósticos SNOMED y Ausente o Desconocido",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -460,8 +484,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1201"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
@@ -543,8 +567,8 @@
       "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/immunization-funding-source",
@@ -772,8 +796,8 @@
       "oids" : ["2.16.840.1.113883.18.108"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
-      "ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos"
+      "ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos",
+      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0443",
@@ -797,9 +821,15 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
+<<<<<<< HEAD
       "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
       "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
       "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+=======
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -823,8 +853,8 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse",
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActSite",
@@ -921,8 +951,8 @@
       "oids" : ["2.16.840.1.113883.5.88"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
@@ -935,9 +965,15 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+<<<<<<< HEAD
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
       "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+=======
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
@@ -949,8 +985,8 @@
       "oids" : ["2.16.840.1.113883.5.110"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -963,8 +999,13 @@
       "uses" : {
       },
       "http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+<<<<<<< HEAD
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+=======
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",

@@ -40,8 +40,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
+<<<<<<< HEAD
       "StructureDefinition-SexoBiologico.html" : "Sexo Biologico del paciente",
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+=======
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-SexoBiologico.html" : "Sexo Biologico del paciente",
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
     },
     {
@@ -277,8 +282,13 @@
       "uses" : {
       },
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+<<<<<<< HEAD
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
+=======
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -293,9 +303,15 @@
       "uses" : {
       },
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+<<<<<<< HEAD
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-ContactoParticipantes.html" : "Contacto de los participantes secundarios del encuentro"
+=======
+      "StructureDefinition-ContactoParticipantes.html" : "Contacto de los participantes secundarios del encuentro",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -558,9 +574,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
+<<<<<<< HEAD
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
+=======
+      "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
+      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
       "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización"
     },
     {
@@ -575,10 +598,18 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+<<<<<<< HEAD
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
+=======
+      "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
       "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización"
     },
     {
@@ -760,6 +791,7 @@
       },
       "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+<<<<<<< HEAD
       "StructureDefinition-ProvenanceCl.html" : "CL Provenance",
       "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
       "StructureDefinition-AuditEventCl.html" : "CL Auditoria",
@@ -770,6 +802,18 @@
       "StructureDefinition-EncounterCL.html" : "Encuentro Clínico",
       "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
       "StructureDefinition-ImmunizationCL.html" : "CL Inmunización"
+=======
+      "StructureDefinition-AuditEventCl.html" : "CL Auditoria",
+      "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
+      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización",
+      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-DocumentoCl.html" : "CL Documento",
+      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
+      "StructureDefinition-ProvenanceCl.html" : "CL Provenance"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -1148,10 +1192,18 @@
       "uses" : {
       },
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+<<<<<<< HEAD
       "StructureDefinition-ProvenanceCl.html" : "CL Provenance",
       "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
       "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
+=======
+      "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
+      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
+      "StructureDefinition-ProvenanceCl.html" : "CL Provenance"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -1468,7 +1520,14 @@
       "name" : "VSDiagnosticosSCT",
       "title" : "Diagnósticos SNOMED y Ausente o Desconocido",
       "description" : "Diagnósticos definidos en Snomed-CT.",
+<<<<<<< HEAD
       "systems" : ["http://snomed.info/sct"],
+=======
+      "systems" : [
+        "https://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html",
+        "http://snomed.info/sct"
+      ],
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
       "uses" : {
       },
       "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico"
@@ -1485,8 +1544,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-VSEspecialidadesDeisCL.html" : "Especialidad del médico principal"
+      "StructureDefinition-VSEspecialidadesDeisCL.html" : "Especialidad del médico principal",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero",

@@ -170,6 +170,8 @@
         "Annotation",
         "Attachment",
         "CodeableConcept",
+<<<<<<< HEAD
+=======
         "Coding",
         "ContactPoint",
         "Count",
@@ -197,6 +199,68 @@
         "Dosage",
         "Meta",
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreCampana",
+      "title": "Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+<<<<<<< HEAD
+        "CodeableConcept"
+=======
+        "Coding"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
       ]
     },
     {
@@ -264,6 +328,66 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ServicioSalud",
+      "title": "Sistema Nacional de Servicios de Salud",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Coding"
+      ]
+    },
+    {
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
       "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico",
       "title": "Sexo Biologico del paciente",
       "types": [
@@ -271,6 +395,66 @@
       ]
     },
     {
+<<<<<<< HEAD
+=======
+      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/TiposVacunaRNI",
+      "title": "Código de tipos de Vacunas en Chile",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "code"
+      ]
+    },
+    {
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
       "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/VSEspecialidadesDeisCL",
       "title": "Especialidad del médico principal",
       "types": [
@@ -452,11 +636,20 @@
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises": [
       "Address.country",
+<<<<<<< HEAD
+=======
+      "Organization.address.country",
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
       "Patient",
       "Patient.identifier.type"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl": [
+<<<<<<< HEAD
       "Address.city"
+=======
+      "Address.city",
+      "Organization.address.city"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes": [
       "Encounter.participant"
@@ -475,13 +668,23 @@
       "Encounter.diagnosis"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl": [
+<<<<<<< HEAD
       "Address.district"
+=======
+      "Address.district",
+      "Organization.address.district"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarse": [
       "Encounter.reasonCode"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl": [
+<<<<<<< HEAD
       "Address.state"
+=======
+      "Address.state",
+      "Organization.address.state"
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido": [
       "Patient.contact.name.family",

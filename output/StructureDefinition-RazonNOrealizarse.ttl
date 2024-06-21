@@ -17,7 +17,11 @@
   fhir:name [ fhir:v "RazonNOTatencionCL"] ; # 
   fhir:title [ fhir:v "Código de las razones por la cual no se pudo realizar la atención"] ; # 
   fhir:status [ fhir:v "active"] ; # 
+<<<<<<< HEAD
   fhir:date [ fhir:v "2024-06-17T14:21:27-04:00"^^xsd:dateTime] ; # 
+=======
+  fhir:date [ fhir:v "2024-06-13T17:23:26-04:00"^^xsd:dateTime] ; # 
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;

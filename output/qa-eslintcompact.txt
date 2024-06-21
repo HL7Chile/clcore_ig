@@ -11,6 +11,7 @@ Generic: line 0, col 0, Error - The link 'Patient-PacienteCL2.html' for "Pacient
 Generic: line 0, col 0, Error - The link 'Patient-PacienteCl-3.html' for "Paciente Nacional, con datos actualizados, declarando nacionalidad" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'Patient-PacienteCl-4.html' for "Ejemplo de Recurso de paciente Nacional con contacto declarado" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'AuditEvent-AuditEventEx.html' for "Audit-Event" cannot be resolved (NOTFOUND)
+<<<<<<< HEAD
 Generic: line 0, col 0, Error - The link 'StructureDefinition-MedicamentoCL.html' for "CoreMedicamentoCl" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'Organization-ORG1.html' for "Ejemplo Organización Prestadora de Salud" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'Location-LocalizacionEjemploCL1.html' for "Ejemplo Localización Farmacia" cannot be resolved (NOTFOUND)
@@ -47,4 +48,36 @@ C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Structur
 C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-cl-address.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this data type profile (BUSINESSRULE)
 
 err = 0, warn = 28, info = 0
+=======
+Generic: line 0, col 0, Error - The link 'Organization-ORG1.html' for "Ejemplo Organización Prestadora de Salud" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'Location-LocalizacionEjemploCL1.html' for "Ejemplo Localización Farmacia" cannot be resolved (NOTFOUND)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.clcore.json: line 1, col 39412, Warning - !!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló (INVARIANT)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-AuditEventCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CodigoPaises.json: line 0, col 0, Warning - Review the extension type for CodigoPaises: extensions should not have a context of Element unless it's really intended that they can be used anywhere (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ContactoParticipantes.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreDiagnosticoCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreLocalizacionCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreMedicamentoCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CorePacienteCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CorePrestadorCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreRolClinicoCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-DocumentoCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-EncounterCL.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-IdContacto.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-IdentidadDeGenero.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ImmunizationCL.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-NombreCampana.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-NotasEncuentro.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ObservacionesDiagnostico.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ProvenanceCl.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-RazonNOrealizarse.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-RazonNOrealizarseInm.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-SegundoApellido.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ServicioSalud.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-SexoBiologico.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-TiposVacunaRNI.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-VSEspecialidadesDeisCL.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
+
+err = 0, warn = 26, info = 0
+>>>>>>> 564b980b95a8e705142a618484a7da21ea496a96
 IG Publisher Version: 1.6.11
