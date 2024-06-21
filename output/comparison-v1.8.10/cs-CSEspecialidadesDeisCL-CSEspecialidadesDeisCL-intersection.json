@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-30",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7dc7aa62-b1bf-43b5-afed-156a0896b780-30",
+  "id" : "9c9e5dae-fe4d-4da8-aca8-01902e4f5b2a-30",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/9c9e5dae-fe4d-4da8-aca8-01902e4f5b2a-30",
   "name" : "IntersectionCSEspecialidadesDeisCLAndCSEspecialidadesDeisCL",
   "title" : "Intersection of Códigos de Especialidades And Códigos de Especialidades",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-17T14:21:50-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

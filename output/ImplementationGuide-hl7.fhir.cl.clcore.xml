@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"/>
-  <version value="1.8.7"/>
+  <version value="1.8.11"/>
   <name value="clcore"/>
   <title value="Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"/>
   <status value="active"/>
-  <date value="2024-05-08T11:46:20-04:00"/>
+  <date value="2024-06-17T14:21:27-04:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -66,7 +66,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="draft"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -293,7 +293,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="draft"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -726,17 +726,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TiposVacunaRNI"/>
-      </reference>
-      <name value="Código de tipos de Vacunas en Chile"/>
-      <description value="Esta extensión incluye códigos de los tipos de vacunas que existe en el Registro Nacional de Inmunizaciones RNI"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -935,259 +924,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/MedicamentoCl"/>
-      </reference>
-      <name value="Ejemplo de comprimido Tareg - D 160"/>
-      <description value="Medicamento comprimido Tareg -D160 referemciado como medicamento en la TFC, considerando el de 25 comprimidos"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Composition"/>
-      </extension>
-      <reference>
-        <reference value="Composition/CompositionClEj"/>
-      </reference>
-      <name value="Ejemplo de Documento Clínico"/>
-      <description value="Ejemplo de documento para resumen de historia clínica"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Provenance"/>
-      </extension>
-      <reference>
-        <reference value="Provenance/EjemplValidacionProvCl"/>
-      </reference>
-      <name value="Ejemplo de la Validación de un documento por medio del Prescriptor"/>
-      <description value="Ejemplo de un documento, en la cual el prestador que la ha desarollado genera una validación por medio de una firma"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="AllergyIntolerance"/>
-      </extension>
-      <reference>
-        <reference value="AllergyIntolerance/222"/>
-      </reference>
-      <name value="Ejemplo de Recurso AllergyIntolerance"/>
-      <description value="AllergyIntolerance ficticio"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/1112"/>
-      </reference>
-      <name value="Ejemplo de Recurso Condition"/>
-      <description value="Condition ficticio"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PractitionerRole"/>
-      </extension>
-      <reference>
-        <reference value="PractitionerRole/EspecialidadCL"/>
-      </reference>
-      <name value="Ejemplo de Recurso de especialidad"/>
-      <description value="Define el Rol de un Médico durante la Operación de un paciente en Urgencia"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/PacienteCl-4"/>
-      </reference>
-      <name value="Ejemplo de Recurso de paciente Nacional con contacto declarado"/>
-      <description value="Paciente ficticio nacional CI Chilena, &#xA;     * sin sistema de validación \&quot;http://regcivil.cl/Validacion/RUN\&quot; ficticio , &#xA;     * cuyo nombre se decribe mediante el oficial y uno social. &#xA;     * La dirección tampoco es Real.&#xA;     * Se agrega al paciente un acompañante patiente."/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
-      </extension>
-      <reference>
-        <reference value="Encounter/EncounterCL"/>
-      </reference>
-      <name value="Ejemplo de Recurso Encuentro"/>
-      <description value="Encuentro remoto ficticio del paciente"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/999"/>
-      </reference>
-      <name value="Ejemplo de Recurso Immunization"/>
-      <description value="Immunization ficticio"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/ImmunizationCL"/>
-      </reference>
-      <name value="Ejemplo de Recurso Inmunización"/>
-      <description value="Registro de inmunización ficticio"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/3333458"/>
-      </reference>
-      <name value="Ejemplo de Recurso Location"/>
-      <description value="Location ficticio"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MedicationStatement"/>
-      </extension>
-      <reference>
-        <reference value="MedicationStatement/354"/>
-      </reference>
-      <name value="Ejemplo de Recurso MedicationStatement"/>
-      <description value="MedicationStatement ficticio"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/123"/>
-      </reference>
-      <name value="Ejemplo de Recurso Observation"/>
-      <description value="Observation ficticio"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/f003"/>
-      </reference>
-      <name value="Ejemplo de Recurso Organización"/>
-      <description value="Organización ficticio"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/11"/>
-      </reference>
-      <name value="Ejemplo de Recurso Paciente"/>
-      <description value="Paciente ficticio"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/PacienteCL2"/>
-      </reference>
-      <name value="Ejemplo de Recurso Paciente Extranjero"/>
-      <description value="Paciente ficticio extrangero, con identificación Pasaporte de origen Salvadoreño sin sistema real de validación del número de Pasaporte."/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/PacienteCL"/>
-      </reference>
-      <name value="Ejemplo de Recurso Paciente Nacional"/>
-      <description value="Paciente ficticio nacional CI Chilena, sin sistema de validación &quot;http://regcivil.cl/Validacion/RUN&quot; ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/3240"/>
-      </reference>
-      <name value="Ejemplo de Recurso Prestador como base para un Core Nacional"/>
-      <description value="Ejemplo de un Prestador no Real con identificadores en Systemas con API&quot;s no disponibles"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/3020"/>
-      </reference>
-      <name value="Ejemplo de Recurso Profesional"/>
-      <description value="Profesional ficticio"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="AuditEvent"/>
-      </extension>
-      <reference>
-        <reference value="AuditEvent/AuditEventEx"/>
-      </reference>
-      <name value="Ejemplo de un Audit-Event Search."/>
-      <description value="Log de Audición de una operacion Search."/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/AuditEventCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/DiagnosticoEj"/>
-      </reference>
-      <name value="Ejemplo de Un Diagnóstico de hipertensión"/>
-      <description value="Diagnóstico Confirmado de Hipertesión"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/LocalizacionEjemploCL1"/>
-      </reference>
-      <name value="Ejemplo Localización Farmacia"/>
-      <description value="Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreLocalizacionCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/ORG1"/>
-      </reference>
-      <name value="Ejemplo Organización Prestadora de Salud"/>
-      <description value="CESFAM Rio Bueno (Ficticio) con ID DEIS no real"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1207,17 +943,6 @@
       <name value="Especialidad del médico principal"/>
       <description value="Esta extensión incluye los códigos de las especialidades que puede tener el medico principal"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/MedicamentoCl-2"/>
-      </reference>
-      <name value="Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"/>
-      <description value="Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1265,39 +990,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSIdentificadores"/>
-      </reference>
-      <name value="Identificadores"/>
-      <description value="Identificadores"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSIdentificadores"/>
-      </reference>
-      <name value="Identificadores"/>
-      <description value="Identificadores"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/NombreCampana"/>
-      </reference>
-      <name value="Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)"/>
-      <description value="Esta extensión incluye los nombres de las distintas Campañas que se realizan y estan registradas en el RNI"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1317,17 +1009,6 @@
       <name value="Observaciones o comentarios simples respecto a un diagnóstico"/>
       <description value="Esta extensión sirve para insertar comentarios acerca a un diagnóstico médico realizado en un encuentro remoto"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/PacienteCl-3"/>
-      </reference>
-      <name value="Paciente Nacional, con datos actualizados, declarando nacionalidad"/>
-      <description value="Paciente ficticio nacional CI Chilena con sistema de validación no real, cuyo nombre es solo el oficial. La dirección tampoco es Real"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1393,17 +1074,6 @@
       </reference>
       <name value="Razones no Inmunización"/>
       <description value="Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/RazonNOrealizarseInm"/>
-      </reference>
-      <name value="Razones por las cuales no se pudo realizar la inmunización"/>
-      <description value="Esta extensión incluye las razones por la cuales no pudo llevarse a cabo la inmunización"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1481,17 +1151,6 @@
       </reference>
       <name value="Sexo Listado Deis"/>
       <description value="Sexo Listado Deis"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ServicioSalud"/>
-      </reference>
-      <name value="Sistema Nacional de Servicios de Salud"/>
-      <description value="Esta extensión incluye los códigos de los Servicios de Salud que existen en el país"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

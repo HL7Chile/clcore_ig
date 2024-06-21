@@ -4,12 +4,11 @@ Id: ImmunizationCL
 Title: "CL Inmunización"
 Description: "Definición de un evento de inmunización para las necesidades de interoperabilidad en Chile."
 
-* ^version = "1.9.0"
+* ^version = "1.10.0"
 * ^status = #active
 * ^publisher = "HL7 Chile"
 
-* extension contains NombreCampanaCL named campana 0..1
-
+//* extension contains NombreCampanaCL named campana 0..1
 
 * identifier MS
 * identifier ^short = "Identificador(es) por los que se conoce este registro de Inmunización"
@@ -36,10 +35,8 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * vaccineCode MS
 * vaccineCode ^short = "Vacuna que se administró o se iba a administrar"
 * vaccineCode ^definition = "Vacuna que se administró o se iba a administrar. Se proporciona valores que utilizan en el RNI (Registro Nacional de Inmunizaciones)"
-* vaccineCode.extension ^short = "Nombre de vacuna administrada"
-* vaccineCode.extension contains TiposVacunaCL named tipov 1..1 
-
-
+//* vaccineCode.extension ^short = "Nombre de vacuna administrada"
+//* vaccineCode.extension contains TiposVacunaCL named tipov 1..1 
 
 * lotNumber 0..1 MS
 * lotNumber ^short = "Número de lote de la vacuna"
@@ -53,13 +50,15 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * protocolApplied ^short = "Protocolo seguido por el proveedor"
 * protocolApplied ^definition = "El protocolo (conjunto de recomendaciones) que sigue el proveedor que administró la dosis"
 
+* occurrence[x] MS
+* occurrence[x] ^short = "Momento de administración de la vacuna" 
+* occurrence[x] ^definition = "Momento en la que se realiza la inmunización o se administra la vacuna"
 
-* occurrenceDateTime MS
-* occurrenceDateTime ^short = "Fecha de administración de la vacuna" 
-* occurrenceDateTime ^definition = "Fecha y hora en la que se realiza la inmunización o se administra la vacuna"
+* occurrenceDateTime ^short = "Fecha y hora de la administración"
+* occurrenceString ^short = "Momento de la administración"
 
 * recorded MS
-* recorded ^short = "Cuando la inmunización se capturó por primera vez en el registro del sujeto"
+* recorded ^short = "Cuando se realizo el regstro del la inmunización"
 * recorded ^definition = "La fecha en que se registró por primera vez la ocurrencia de la inmunización, potencialmente significativamente después de la ocurrencia del evento"
 
 * status MS
@@ -70,21 +69,21 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * statusReason  MS
 * statusReason ^short = "Razón de no realizarse la inmunización"
 * statusReason ^definition = "Indica la razón por la que no se realizó el evento de inmunización"
-* statusReason.extension ^short = "Motivo de no realizar la inmunización"
-* statusReason.extension contains RazonNOTinmunizacionCL named statusReason 0..1
+// * statusReason.extension ^short = "Motivo de no realizar la inmunización"
+// * statusReason.extension contains RazonNOTinmunizacionCL named statusReason 0..1
 
 * reaction MS
 * reaction ^short = "Detalles de una reacción que proviene de la inmunización"
 * reaction.date ^short = "Cuándo comenzó la reacción"
 * reaction.date ^definition = "Fecha de reacción a la inmunización"
 
-* location 1..1 MS
+* location 0..1 MS
 * location ^short = "Dónde se produjo la inmunización"
 * location ^definition = "El lugar donde se produjo la administración de la vacuna"
 * location only Reference (LocalizacionCL)
 
-* location.extension ^short = "Extensión para los Sistemas de Salud, por ejemplo: S.S Viña del mar Quillota"
-* location.extension contains ServicioSaludCL named ssalud 0..1 
+// * location.extension ^short = "Extensión para los Sistemas de Salud, por ejemplo: S.S Viña del mar Quillota"
+// * location.extension contains ServicioSaludCL named ssalud 0..1 
 
 
 

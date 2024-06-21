@@ -1,5 +1,22 @@
+### Versión 1.8.12
+
+- Perfil [MedicamentoCL](StructureDefinition-CoreMedicamentoCl.html)
+  - Se elimina los Slice de **DescriptionID** y **ConceptID**.
+  - Se cambian las descripciones y definiciones que referencien a la TFC.
+
+- Perfil [ImmunizationCL](StructureDefinition-ImmunizationCL.html)
+  - Se deprecan las extensiones de **TiposVacunaCL**, **NombreCampanaCL**, **RazonNOTinmunizacionCL** y **ServicioSaludCL**  junto con su obligatoriedadad
+  - Se amplia los ocurrence[x] a DateTime o String
+ 
+- ValueSet [SDiagnosticosSCT] (ValueSet-SDiagnosticosSCT.html)
+ - Se filtra a solo hallazgos clínicos
+ - Value set de problemas sin informar o desconocidos
+
 - Se modifica y agregan nuevos terminos en "CSTipoIdentificador"
 
+- Perfil[CoreRolClinicoCl](StructureDefinition-CoreRolClinico.html)
+  - Se modifica la referencia organization al **OrganizationCL**
+  - Se modifica la referencia location al **CoreLocalizacionCl**
 
 ### Version 1.8.9
 - Version de prueba debido a cambios en los publicadores
@@ -21,8 +38,6 @@
     - Esp -> EspecialidadMedica
     - SubEsp -> Subespecialidad
 
-
-
 - El elemento **addresss** debe cumplir con **ClAddress** para las direcciones de los perfiles [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html) y [LocalizacionCL](StructureDefinition-CoreLocalizacionCl.html)
 - Cambio en el [Ejemplo Organización Prestadora de Salud](Organization-ORG1.html) para cumplir con el perfil [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html)
 - Cambio en el [Ejemplo Localización Farmacia](Location-LocalizacionEjemploCL1.html) para cumplir con el perfil [LocalizacionCL](StructureDefinition-CoreLocalizacionCl.html)
@@ -36,9 +51,9 @@
   - [Código de las razones por la cual no se pudo realizar la atención](StructureDefinition-RazonNOrealizarse.html)
   - [Notas realizadas en un encuentro por Comité](StructureDefinition-NotasEncuentro.html)
   - [Observaciones o comentarios simples respecto a un diagnóstico](StructureDefinition-ObservacionesDiagnostico.html)
-  - [Código de tipos de Vacunas en Chile](StructureDefinition-TiposVacunaRNI.html)
-  - [Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)](StructureDefinition-NombreCampana.html)
-  - [Razones por las cuales no se pudo realizar la inmunización](StructureDefinition-RazonNOrealizarseInm.html)
+  - **Código de tipos de Vacunas en Chile**
+  - **Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)**
+  - **Razones por las cuales no se pudo realizar la inmunización**
   - [Segundo Apellido](StructureDefinition-SegundoApellido.html)
   - [Sexo Biológico](StructureDefinition-SexoBiologico.html)
 - El elemento **gender** del perfil [PrestadorCL](StructureDefinition-CorePrestadorCl.html) y [PacienteCl](StructureDefinition-CorePacienteCl.html) es reincluido para el sexo Registral(Registro Civil). Deprecando la extensión **SexoRegistral**
@@ -50,7 +65,7 @@
 ### Version 1.8.5
 - Prefil [PrestadorCL](StructureDefinition-CorePrestadorCl.html)
   - Cambio cardinalidad **birthDate** 1..1 -> 0..1
-  - Cambio cardinalidad **geder** 1..1 -> 0..1
+  - Cambio cardinalidad **gender** 1..1 -> 0..1
   - Cambio cardinalidad **qualification:Cert.code.text**  1..1 -> 0..1
   - Cambio cardinalidad **qualification:Esp.code.text**  1..1 -> 0..1
   - Cambio cardinalidad **qualification:SubEsp.code.text**  1..1 -> 0..1

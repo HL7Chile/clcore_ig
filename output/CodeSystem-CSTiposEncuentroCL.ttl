@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PR<a name=\"CSTiposEncuentroCL-PR\"> </a></td><td>Programada</td></tr><tr><td style=\"white-space:nowrap\">SP<a name=\"CSTiposEncuentroCL-SP\"> </a></td><td>Espontánea</td></tr><tr><td style=\"white-space:nowrap\">CO<a name=\"CSTiposEncuentroCL-CO\"> </a></td><td>Comité</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.8.7"] ; # 
+  fhir:version [ fhir:v "1.8.11"] ; # 
   fhir:name [ fhir:v "CSTiposEncuentroCL"] ; # 
   fhir:title [ fhir:v "Tipos de Encuentro"] ; # 
   fhir:status [ fhir:v "active"] ; # 

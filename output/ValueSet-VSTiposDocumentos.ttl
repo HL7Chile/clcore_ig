@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodigoDNI.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v2-0203.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0203</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-CSTipoIdentificador.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocumentos"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.8.7"] ; # 
+  fhir:version [ fhir:v "1.8.11"] ; # 
   fhir:name [ fhir:v "VSTiposDocumentos"] ; # 
   fhir:title [ fhir:v "Tipos de Documentos"] ; # 
   fhir:status [ fhir:v "active"] ; # 

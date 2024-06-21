@@ -64,7 +64,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","País de Origen del Documento de Id","Se usa esta extensión para agregarle al tipo de documento el país de origen de este","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.identifier.type.extension:paises","Patient.identifier.type.extension","paises","","",0,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises]]} {[]}
+"Patient.identifier.type.extension:paisEmisionDocumento","Patient.identifier.type.extension","paisEmisionDocumento","","",0,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises]]} {[]}
 ","Codigo de Identificación de países","Esta extensión incluye códigos de paises de origen","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.identifier.type.coding","Patient.identifier.type.coding","","","",0,*,"Y","","Y","Coding {[]} {[]}

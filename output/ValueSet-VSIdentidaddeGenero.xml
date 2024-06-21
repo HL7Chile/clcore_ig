@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSIdentidaddeGenero.html"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero</code></a></li></ul></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero"/>
-  <version value="1.8.7"/>
+  <version value="1.8.11"/>
   <name value="VSIdentidaddeGenero"/>
   <title value="Identidad de Genero"/>
   <status value="active"/>

@@ -4,5 +4,6 @@ Thumbs.db
 /input-cache
 /temp
 /template
+/output
 *jar
 *.jar

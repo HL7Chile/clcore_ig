@@ -19,7 +19,6 @@ Description:    "Condicion o Diagnósticos de Pacientes"
 * verificationStatus from http://hl7.org/fhir/ValueSet/condition-ver-status (required)
 * verificationStatus ^binding.description = "Códigos definidos por estándar"
 
-
 //---paciente
 * subject only Reference(PacienteCl)
 * subject MS
@@ -34,8 +33,7 @@ Description:    "Condicion o Diagnósticos de Pacientes"
 
 //----Code
 
-* code MS
-  
+* code MS  
 
 * code ^definition = "Identificación de la condición, el problema o el diagnóstico o registro del \"problema ausente\" o de los \"problemas desconocidos\"."
 * code ^short = "Condición de la persona en Código o no conocido"
@@ -44,8 +42,6 @@ Description:    "Condicion o Diagnósticos de Pacientes"
 * code from VSDiagnosticosSCT (example)
 * code ^short = "Códigos de SOMED-CT y adicionales de ausente o desconocido"
 * code ^binding.description = "Diagósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido"
-
-
 
 * onset[x] MS
 * onset[x] ^short = "Fecha para determinación Diagnóstica a definir entre fecha única o período"

@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSCodRegionCL.html"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL</code></a></li></ul></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosRegionesCL"/>
-  <version value="1.8.7"/>
+  <version value="1.8.11"/>
   <name value="VSCodigosRegionesCL"/>
   <title value="Códigos de Regiones en Chile"/>
   <status value="active"/>

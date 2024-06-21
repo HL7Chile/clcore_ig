@@ -207,47 +207,47 @@ Context: EncounterCL.diagnosis
 
 * value[x] only string 
 
-Extension: TiposVacunaCL
-Id: TiposVacunaRNI
-Title: "Código de tipos de Vacunas en Chile"
-Description: "Esta extensión incluye códigos de los tipos de vacunas que existe en el Registro Nacional de Inmunizaciones RNI"
-Context: ImmunizationCL.vaccineCode
+// Extension: TiposVacunaCL
+// Id: TiposVacunaRNI
+// Title: "Código de tipos de Vacunas en Chile"
+// Description: "Esta extensión incluye códigos de los tipos de vacunas que existe en el Registro Nacional de Inmunizaciones RNI"
+// Context: ImmunizationCL.vaccineCode
 
 // * ^context.type = #element
 // * ^context.expression = "ImmunizationCL.vaccineCode"
-* valueCode ^short = "Valor de la extensión"
-* valueCode from VSTiposVacunas (extensible)
+// * valueCode ^short = "Valor de la extensión"
+// * valueCode from VSTiposVacunas (extensible)
 
-Extension:  NombreCampanaCL
-Id: NombreCampana
-Title: "Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)"
-Description: "Esta extensión incluye los nombres de las distintas Campañas que se realizan y estan registradas en el RNI"
-Context: ImmunizationCL
+// Extension:  NombreCampanaCL
+// Id: NombreCampana
+// Title: "Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)"
+// Description: "Esta extensión incluye los nombres de las distintas Campañas que se realizan y estan registradas en el RNI"
+// Context: ImmunizationCL
 
 // * ^context.type = #element
 // * ^context.expression = "ImmunizationCL"
-* valueCoding ^short = "Valor de la extensión"
-* valueCoding from VSNombreCampana (extensible)
+// * valueCoding ^short = "Valor de la extensión"
+// * valueCoding from VSNombreCampana (extensible)
 
-Extension: RazonNOTinmunizacionCL
-Id: RazonNOrealizarseInm
-Title: "Razones por las cuales no se pudo realizar la inmunización"
-Description: "Esta extensión incluye las razones por la cuales no pudo llevarse a cabo la inmunización" 
-Context: ImmunizationCL.statusReason
-* value[x] only code
-* value[x] ^short = "Códigos de razones por la cual la inmunización no se pudo realizar"
-* valueCode from VSRazonNOTinm (extensible)
+// Extension: RazonNOTinmunizacionCL
+// Id: RazonNOrealizarseInm
+// Title: "Razones por las cuales no se pudo realizar la inmunización"
+// Description: "Esta extensión incluye las razones por la cuales no pudo llevarse a cabo la inmunización" 
+// Context: ImmunizationCL.statusReason
+// * value[x] only code
+// * value[x] ^short = "Códigos de razones por la cual la inmunización no se pudo realizar"
+// * valueCode from VSRazonNOTinm (extensible)
 
-Extension: ServicioSaludCL
-Id: ServicioSalud 
-Title: "Sistema Nacional de Servicios de Salud"
-Description: "Esta extensión incluye los códigos de los Servicios de Salud que existen en el país"
-Context: ImmunizationCL.location
+// Extension: ServicioSaludCL
+// Id: ServicioSalud 
+// Title: "Sistema Nacional de Servicios de Salud"
+// Description: "Esta extensión incluye los códigos de los Servicios de Salud que existen en el país"
+// Context: ImmunizationCL.location
 
 // * ^context.type = #element
 // * ^context.expression = "ImmunizationCL.location"
-* valueCoding ^short = "Servicios de Salud de Chile"
-* valueCoding from VSCodigosServiciosSalud (extensible)
+// * valueCoding ^short = "Servicios de Salud de Chile"
+// * valueCoding from VSCodigosServiciosSalud (extensible)
 
 Extension: SegundoApellido
 Id: SegundoApellido

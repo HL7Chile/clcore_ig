@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-33",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7dc7aa62-b1bf-43b5-afed-156a0896b780-33",
+  "id" : "9c9e5dae-fe4d-4da8-aca8-01902e4f5b2a-33",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/9c9e5dae-fe4d-4da8-aca8-01902e4f5b2a-33",
   "name" : "IntersectionCSIdentidaddeGeneroAndCSIdentidaddeGenero",
   "title" : "Intersection of Identidad de Genero And Identidad de Genero",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-17T14:21:50-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -22,19 +22,23 @@
     "display" : "Femenina"
   },
   {
-    "code" : "4",
+    "code" : "3",
     "display" : "Transgénero Masculino"
   },
   {
-    "code" : "5",
+    "code" : "4",
     "display" : "Transgénero Femenina"
   },
   {
-    "code" : "6",
+    "code" : "5",
     "display" : "No binarie"
   },
   {
-    "code" : "7",
+    "code" : "6",
     "display" : "Otra"
+  },
+  {
+    "code" : "7",
+    "display" : "No Revelado"
   }]
 }

@@ -145,8 +145,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -160,8 +160,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -379,7 +379,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "CodPaises",
       "title" : "Códigos de Países",
@@ -387,12 +387,12 @@
       "systems" : ["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"],
       "uses" : {
       },
-      "StructureDefinition-CodigoPaises.html" : "Codigo de Identificación de países",
-      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente"
+      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
+      "StructureDefinition-CodigoPaises.html" : "Codigo de Identificación de países"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodMadurez",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSCodMadurez",
       "title" : "Códigos de grado de madurez del artefacto",
@@ -401,7 +401,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosComunaCL",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSCodigosComunaCL",
       "title" : "Códigos de Comunas en Chile",
@@ -415,7 +415,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosProvinciasCL",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSCodigosProvinciasCL",
       "title" : "Códigos de Provincias en Chile",
@@ -429,7 +429,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosRegionesCL",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSCodigosRegionesCL",
       "title" : "Códigos de Regiones en Chile",
@@ -443,19 +443,16 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSCodigosServiciosSaludCL",
       "title" : "Servicos de Salud en Chile",
       "description" : "Códigos de Servicios de Salud que existen en Chile",
-      "systems" : ["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"],
-      "uses" : {
-      },
-      "StructureDefinition-ServicioSalud.html" : "Sistema Nacional de Servicios de Salud"
+      "systems" : ["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"]
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigoslenguaje",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSCodigoslenguaje",
       "title" : "Codigos Lenguaje",
@@ -469,7 +466,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSContactoSecundario",
       "title" : "Contacto participantes",
@@ -481,22 +478,19 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSDiagnosticosSCT",
       "title" : "Diagnósticos SNOMED y Ausente o Desconocido",
       "description" : "Diagnósticos definidos en Snomed-CT.",
-      "systems" : [
-        "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
-        "http://snomed.info/sct"
-      ],
+      "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
       "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSEspecialidadesDeisCL",
       "title" : "Códigos de Especialidades",
@@ -511,7 +505,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSIdentidaddeGenero",
       "title" : "Identidad de Genero",
@@ -524,36 +518,19 @@
       "StructureDefinition-IdentidadDeGenero.html" : "Identidad De Genero"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentificadores",
-      "version" : "1.8.7",
-      "status" : "active",
-      "name" : "VSIdentificadores",
-      "title" : "Identificadores",
-      "description" : "Identificadores",
-      "systems" : [
-        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSNombreCampana",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSNombreCampanaCL",
       "title" : "Campañas de Vacunación",
       "description" : "Campañas de Inmunización utilizada en Chile según CodeSystem local",
       "systems" : [
         "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-NombreCampana.html" : "Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)"
+      ]
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSPrevision",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSPrevision",
       "title" : "Prevision",
@@ -562,7 +539,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSRazonNOencuentro",
       "title" : "Razones no Atención Remota",
@@ -576,21 +553,18 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSRazonNOTinmCL",
       "title" : "Razones no Inmunización",
       "description" : "Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local",
       "systems" : [
         "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-RazonNOrealizarseInm.html" : "Razones por las cuales no se pudo realizar la inmunización"
+      ]
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSSexoListadoDeis",
       "title" : "Sexo Listado Deis",
@@ -601,18 +575,21 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTipoIdentificador",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSTipoIdentificador",
       "title" : "Tipo Identificador",
       "description" : "Tipo Identificador",
       "systems" : [
         "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinico",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSTiposDocClinico",
       "title" : "Tipos de Documentos Clínicos",
@@ -624,7 +601,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocumentos",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSTiposDocumentos",
       "title" : "Tipos de Documentos",
@@ -640,7 +617,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposEncuentroCL",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSTiposEncuentroCL",
       "title" : "Tipos de Encuentro",
@@ -651,7 +628,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposServicio",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSTiposServicioCL",
       "title" : "Tipos de Servicios Remotos",
@@ -662,17 +639,14 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposVacunas",
-      "version" : "1.8.7",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "VSTiposVacunasCL",
       "title" : "Tipos de Vacunas RNI",
       "description" : "Tipos de Vacunas utilizadas en Chile según CodeSystem local",
       "systems" : [
         "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-TiposVacunaRNI.html" : "Código de tipos de Vacunas en Chile"
+      ]
     }
   ]
 }

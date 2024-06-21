@@ -5,15 +5,15 @@
   "description" : "Guía de Implementación Versión de Desarrollo Sobre STU 1, para los perfiles Core que se van a requerir a nivel de desarrollo Nacional para Sistemas que Intercambien datos en estandar FHIR-R4",
   "status" : "active",
   "package-id" : "hl7.fhir.cl.clcore",
-  "ig-ver" : "1.8.7",
-  "date" : "Wed, 08 May, 2024 11:46:20 -0400",
-  "dateISO8601" : "2024-05-08T11:46:20-04:00",
-  "errs" : 1,
-  "warnings" : 9,
-  "hints" : 7,
+  "ig-ver" : "1.8.11",
+  "date" : "Mon, 17 Jun, 2024 14:21:27 -0400",
+  "dateISO8601" : "2024-06-17T14:21:27-04:00",
+  "errs" : 0,
+  "warnings" : 28,
+  "hints" : 0,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2308014656
+  "maxMemory" : 2646315824
 }

@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CodPais.html"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais</code></a></li></ul></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais"/>
-  <version value="1.8.7"/>
+  <version value="1.8.11"/>
   <name value="CodPaises"/>
   <title value="Códigos de Países"/>
   <status value="active"/>

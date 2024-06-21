@@ -59,7 +59,7 @@
     gtag('config', 'G-KDP1SHWXWT');
 </script>
 -->
-
+<!-- Franco: Nota Para Mansilla Revisa este script genera errores al subir en Build -->
 
 
 
@@ -102,7 +102,7 @@
             <div id="ig-status">
                 <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación &#39;&#39;cl core&#39;&#39; FHIR R4, (Versión Evolutiva)</span>
                     <br/>
-                    <span style="display:inline-block;">1.8.7 - ci-build
+                    <span style="display:inline-block;">1.8.11 - draft
 
 
 
@@ -185,7 +185,7 @@
             <div class="row">
                 <div class="inner-wrapper">
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva) - Local Development build (v1.8.7) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://hl7chile.cl/fhir/ig/clcore/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva) - Local Development build (v1.8.11) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://hl7chile.cl/fhir/ig/clcore/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -223,16 +223,6 @@
 
 
 
-  
-    
-      <li>
-        <a href="StructureDefinition-ImmunizationCL-examples.html">Examples</a>
-      </li>
-    
-  
-
-
-
 
   
     <li>
@@ -262,7 +252,7 @@
         
           Active
           
-            as of 2024-05-08
+            as of 2024-06-17
           
         
       </td>
@@ -289,6 +279,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>Event.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x]</td><td>Event.occurrence[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x] (occurrenceDateTime)</td><td>Event.occurrence[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x] (occurrenceString)</td><td>Event.occurrence[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;location</td><td>Event.location</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;performer</td><td>Event.performer</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function</td><td>Event.performer.function</td> </tr>
@@ -300,16 +291,12 @@
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>ImmunizationCL</b></td></tr>
  <tr><td>Immunization</td><td>VXU_V04</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;vaccineCode</td><td>RXA-5</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>PID-3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>PV1-19</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x]</td><td>RXA-3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x] (occurrenceDateTime)</td><td>RXA-3</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x] (occurrenceString)</td><td>RXA-3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;primarySource</td><td>RXA-9</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reportOrigin</td><td>RXA-9</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;location</td><td>RXA-27  (or RXA-11, deprecated as of v2.7)</td> </tr>
@@ -337,30 +324,21 @@
  <tr><td>Immunization</td><td>Entity. Role, or Act, SubstanceAdministration</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>statusCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>.inboundRelationship[typeCode=SUBJ].source[classCode=CACT, moodCode=EVN].reasonCOde</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;vaccineCode</td><td>.code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>.partipication[ttypeCode=].role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>component-&gt;EncounterEvent</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x]</td><td>.effectiveTime</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x] (occurrenceDateTime)</td><td>.effectiveTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x] (occurrenceString)</td><td>.effectiveTime</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;recorded</td><td>.participation[typeCode=AUT].time</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;primarySource</td><td>immunization.uncertaintycode (if primary source=false, uncertainty=U)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reportOrigin</td><td>.participation[typeCode=INF].role[classCode=PAT] (this syntax for self-reported) .participation[typeCode=INF].role[classCode=LIC] (this syntax for health care professional) .participation[typeCode=INF].role[classCode=PRS] (this syntax for family member)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;location</td><td>.participation[typeCode=LOC].COCT_MT240000UV</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reference</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier</td><td>.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;manufacturer</td><td>.participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=ORG]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;lotNumber</td><td>.participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;expirationDate</td><td>.participation[typeCode=CSM].role[classCode=INST].scopedRole.scoper[classCode=MMAT].expirationTime</td> </tr>
@@ -415,6 +393,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>FiveWs.context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x]</td><td>FiveWs.done[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x] (occurrenceDateTime)</td><td>FiveWs.done[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x] (occurrenceString)</td><td>FiveWs.done[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;recorded</td><td>FiveWs.recorded</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;primarySource</td><td>FiveWs.source</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reportOrigin</td><td>FiveWs.source</td> </tr>
@@ -429,6 +408,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;vaccineCode</td><td>ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/consumable/manfacturedProduct/manufacturedMaterial/realmCode/code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x]</td><td>ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/effectiveTime/value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x] (occurrenceDateTime)</td><td>ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/effectiveTime/value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;occurrence[x] (occurrenceString)</td><td>ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/effectiveTime/value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;manufacturer</td><td>ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/consumable/manfacturedProduct/manufacuturerOrganization/name</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;lotNumber</td><td>ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/consumable/manfacturedProduct/manufacturedMaterial/lotNumberText</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;site</td><td>ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/approachSiteCode/code</td> </tr>
@@ -460,7 +440,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 8, 2024 11:46-0400">2024-05-08</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.11 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 17, 2024 14:21-0400">2024-06-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
