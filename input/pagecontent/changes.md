@@ -41,6 +41,9 @@
   - Se elimina el uso de slice del participant
   - Se actualiza periodo de 1..1 -> 0..1
 
+- Perfil[CL Condición-Diagnóstico](StructureDefinition-CoreDiagnosticoCl.html)
+  - Paso el verification Status a MS
+
 - Se vuelve habilitar los siguientes ejemplos corregidos:
  *  [Localización de Farmacia](Location-LocalizacionEjemploCL1.html)
  *  [Inmunización](Inmunization-ImmunizationEj.html)

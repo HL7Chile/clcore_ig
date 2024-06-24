@@ -1,16 +1,38 @@
-// Instance : EncounterCL
-// Title : "Ejemplo de Recurso Encuentro"
-// Description: "Encuentro remoto ficticio del paciente"
-// InstanceOf : EncounterCL
-// Usage : #example
+Instance : EncounterCL
+Title : "Ejemplo de Recurso Encuentro"
+Description: "Encuentro remoto ficticio del paciente"
+InstanceOf : EncounterCL
+Usage : #example
 
-// // Estado del encuentro
-// * status = #planned 
+// Estado del encuentro
+* status = #planned 
 
-// //Clase de encuentro, en este caso es Virtual
-// * class.code = #VR 
-// * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-// * class.display = "Virtual"
+//Clase de encuentro, en este caso es Virtual
+* class.code = #VR 
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* class.display = "Virtual"
+
+* serviceType
+  * coding[0] = http://terminology.hl7.org/CodeSystem/service-type#76 "Health Counselling"
+  * text = "Consulta Médica"
+
+* subject = Reference(PacienteCL)
+
+* participant[0]
+  * type
+    * coding = http://terminology.hl7.org/CodeSystem/participant-type#ATND "attender"
+    * text = "Atendedor"
+  * individual = Reference(EjemploEspecialidadCL2)
+
+//Periodo
+* period
+  * start = "2022-06-23T00:00:00-03:00"
+  * end = "2022-06-23T00:50:00-03:00"
+
+* diagnosis
+  * condition = Reference(DiagnosticoEj2)
+
+* serviceProvider = Reference(OrganizacionClEjemplo1)
 
 // //Servicio entregado en el Encuentro
 // * serviceType.coding.code = #nutINTA
