@@ -200,24 +200,6 @@
       ]
     },
     {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/Nacionalidad",
-      "title": "Codigo de Nacionalidad",
-      "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
-      ]
-    },
-    {
       "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NotasEncuentro",
       "title": "Notas realizadas en un encuentro por Comité",
       "types": [
@@ -228,24 +210,6 @@
       "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ObservacionesDiagnostico",
       "title": "Observaciones o comentarios simples respecto a un diagnóstico",
       "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/PaisEmision",
-      "title": "Código de la Emición de un Identificador",
-      "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
         "string"
       ]
     },
@@ -470,6 +434,10 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
     ],
@@ -488,16 +456,19 @@
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises": [
       "Address.country",
+      "Location.address.country",
       "Organization.address.country",
-      "Patient.address.country"
+      "Patient",
+      "Patient.address.country",
+      "Patient.identifier.type",
+      "Practitioner.address.country"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl": [
       "Address.city",
+      "Location.address.city",
       "Organization.address.city",
-      "Patient.address.city"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes": [
-      "Encounter.participant"
+      "Patient.address.city",
+      "Practitioner.address.city"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto": [
       "Patient.contact"
@@ -506,30 +477,19 @@
       "Patient",
       "Practitioner"
     ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/Nacionalidad": [
-      "Patient"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NotasEncuentro": [
-      "Encounter"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ObservacionesDiagnostico": [
-      "Encounter.diagnosis"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/PaisEmision": [
-      "Patient.identifier.type"
-    ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl": [
       "Address.district",
+      "Location.address.district",
       "Organization.address.district",
-      "Patient.address.district"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarse": [
-      "Encounter.reasonCode"
+      "Patient.address.district",
+      "Practitioner.address.district"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl": [
       "Address.state",
+      "Location.address.state",
       "Organization.address.state",
-      "Patient.address.state"
+      "Patient.address.state",
+      "Practitioner.address.state"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido": [
       "Patient.contact.name.family",
@@ -539,9 +499,6 @@
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico": [
       "Patient",
       "Practitioner"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/VSEspecialidadesDeisCL": [
-      "Encounter.participant"
     ]
   }
 }

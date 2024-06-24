@@ -259,13 +259,6 @@
     "name" : "ImmunizationCL"
   },
   {
-    "id" : "Nacionalidad",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/Nacionalidad",
-    "version" : "1.8.12",
-    "name" : "PaisNacionalidadCl"
-  },
-  {
     "id" : "NotasEncuentro",
     "type" : "StructureDefinition",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NotasEncuentro",
@@ -278,13 +271,6 @@
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ObservacionesDiagnostico",
     "version" : "1.8.12",
     "name" : "ObservacionesNotas"
-  },
-  {
-    "id" : "PaisEmision",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/PaisEmision",
-    "version" : "1.8.12",
-    "name" : "PaisEmision"
   },
   {
     "id" : "ProvenanceCl",

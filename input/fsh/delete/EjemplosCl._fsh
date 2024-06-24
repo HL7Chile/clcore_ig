@@ -1,0 +1,894 @@
+Instance: AuditEventEx
+InstanceOf: AuditEventCl
+Title : "Ejemplo de un Audit-Event Search."
+Description: "Log de Audición de una operacion Search."
+
+
+Usage: #example
+* type.system = "http://dicom.nema.org/resources/ontology/DCM"
+* type.code = #110100
+* type.display = "Application Activity"
+* subtype = http://hl7.org/fhir/restful-interaction#search "search"
+* action = #E
+* recorded = "2021-08-22T23:42:24Z"
+* outcome = #0
+* agent[0].type = http://terminology.hl7.org/CodeSystem/extra-security-role-type#humanuser "human user"
+* agent[=].who.identifier.value = "95"
+* agent[=].altId = "601847123"
+* agent[=].name = "El Nombre"
+* agent[=].requestor = true
+
+* agent[=].network.address = "Workstation1.ehr.familyclinic.com"
+* agent[=].network.type = #1
+* source.observer = Reference(Practitioner/3240)
+* entity.what = Reference(Organization/ORG1)
+
+/////////////////////////////////////////////////////////////////////////////////////////
+Instance : DiagnosticoEj
+Title : "Ejemplo de Un Diagnóstico de hipertensión"
+Description: "Diagnóstico Confirmado de Hipertesión"
+InstanceOf : DiagnosticoCl
+Usage : #example
+
+* clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
+
+* clinicalStatus.coding.code = #active
+* clinicalStatus.coding.display = "Active"
+
+* verificationStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+* verificationStatus.coding.code = #confirmed
+* verificationStatus.coding.display = "Confirmed"
+
+* code.text = "Diagnóstico de Hipertensión Confirmada"
+* code.coding.system = "http://snomed.info/sct"
+* code.coding.code = #38341003
+* code.coding.display = "High blood pressure"
+* subject.reference = "Patient/11"
+
+* onsetDateTime = "2022-08-07"
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Instance : CompositionClEj
+Title : "Ejemplo de Documento Clínico"
+Description: "Ejemplo de documento para resumen de historia clínica" 
+InstanceOf : DocumentoCl
+Usage : #example
+
+// Estado del documento
+* status = #final
+
+// Tipo de documento
+* type = http://loinc.org#60591-5 "Patient Summary Document"
+
+// Paciente
+* subject = Reference(Patient/11)
+
+// Fecha 
+* date = "2022-07-06T14:30:00+01:00"
+
+// Autor del documento, referencia a un profesional
+* author = Reference(Practitioner/3240)
+
+// Titulo del documento
+* title = "Resumen para Darth Bader - 06 JUL 2022"
+
+// --- Sección Diagnóstico ---
+* section[0].title = "Diagnósticos"
+* section[=].code = http://loinc.org#11450-4 "Problem list - Reported"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Asma</div>"
+* section[=].entry = Reference(Condition/1112)
+
+// --- Sección Medicamentos ---
+* section[+].title = "Medicamentos"
+* section[=].code = http://loinc.org#10160-0 "Hx of Medication use"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Anastrozole/Cimicifuga</div>"
+* section[=].entry[0] = Reference(MedicationStatement/354)
+
+// --- Sección Alergias ---
+* section[+].title = "Alergias"
+* section[=].code = http://loinc.org#48765-2 "Allergies and adverse reactions Document"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality, active</div>"
+* section[=].entry = Reference(AllergyIntolerance/222)
+
+// --- Sección Vacunas ---
+* section[+].title = "Vacunas"
+* section[=].code = http://loinc.org#11369-6 "Hx of Immunization"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lista de las vacunas recibidas</div>"
+* section[=].entry = Reference(Immunization/999)
+
+// --- Sección Signos vitales y Mediciones Fisiológicas ---
+* section[+].title = "Signos Vitales y Mediciones Fisiológicas"
+* section[=].code = http://loinc.org#8716-3 "Vital signs"
+* section[=].text.status = #generated
+* section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vital signs</div>"
+* section[=].entry = Reference(Observation/123)
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+Instance : EncounterCL
+Title : "Ejemplo de Recurso Encuentro"
+Description: "Encuentro remoto ficticio del paciente"
+InstanceOf : EncounterCL
+Usage : #example
+
+// Estado del encuentro
+* status = #planned 
+
+//Clase de encuentro, en este caso es Virtual
+* class.code = #VR 
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* class.display = "Virtual"
+
+//Servicio entregado en el Encuentro
+* serviceType.coding.code = #nutINTA
+* serviceType.coding.system = "https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio"
+
+
+//Razon de no realizarse
+* reasonCode.extension[reasonCode].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarse"
+* reasonCode.extension[reasonCode].valueCode = #pierdellam
+
+//Notas del encuentro entre Profesionales
+* extension[notas].valueString = "Encuentro exitoso"
+
+//Paciente referenciado
+* subject.reference = "Patient/11"
+
+//Participante principal
+* participant[partPrincipal].extension[especialidad].valueCoding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"
+* participant[partPrincipal].extension[especialidad].valueCoding.code = #01
+* participant[partPrincipal].extension[especialidad].valueCoding.display = "Anatomía Patológica"
+* participant[partPrincipal].type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+* participant[partPrincipal].type.coding.code = #PPRF 
+* participant[partPrincipal].individual.reference = "Practitioner/3020"
+
+//Participante secundario
+* participant[partSecundario].type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+* participant[partSecundario].type.coding.code = #SPRF
+* participant[partSecundario].extension[contact].valueContactPoint.value = "jose.12@gmail.com"
+* participant[partSecundario].extension[contact].valueContactPoint.system = #email
+
+//Periodo
+* period.start = "2022-06-23T00:00:00-03:00"
+* period.end = "2022-06-23T00:50:00-03:00"
+* length.value = 50
+
+//Razón por la que se realiza el encuentro
+* reasonCode.text = "Consulta médica sobre nutrición de alimentos"
+
+//Diagnóstico
+* diagnosis.extension[observaciones].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ObservacionesDiagnostico"
+* diagnosis.extension[observaciones].valueString = "Buena atención"
+* diagnosis.condition.display = "Condition IPS"
+
+//Organización que provee el Encuentro 
+* serviceProvider.reference = "Organization/f003"
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Instance : ImmunizationCL
+Title : "Ejemplo de Recurso Inmunización"
+Description: "Registro de inmunización ficticio"
+InstanceOf : ImmunizationCL
+Usage : #example
+
+//Extensión para nombre campaña
+* extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreCampana"
+* extension.valueCoding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana"
+* extension.valueCoding.code = #hepatiA
+* extension.valueCoding.display = "Hepatitis A" 
+
+//Id
+* identifier.system = "http://sgi.gob.cl/identifier/inmunization/rni/"
+* identifier.value = "136588279"
+
+//Estado
+* status = #completed 
+
+//Razón de no realizarse la inmunización
+* statusReason.extension[statusReason].valueCode = #solicitudPaci
+
+
+//Paciente inmunizado
+* patient = Reference(Patient/11)
+
+//Fecha de administración de la vacuna
+* occurrenceDateTime = "2022-04-07T00:00:00-04:00"
+* recorded = "2021-06-24T00:00:00-04:00"
+
+//Localización
+* location = Reference(Location/3333458)
+
+//Localizacion Sistema Salud
+* location.extension.valueCoding.code = #SSAN
+* location.extension.valueCoding.system = "https://minsal.cl/fhir/HD/CodeSystem/CSCodSSalud"
+* location.extension.valueCoding.display = "Servicio de Salud Antofagasta"
+* location.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ServicioSalud"
+
+//Vacuna administrada
+* vaccineCode.extension.valueCode = #hep_A 
+//* vaccineCode.extension.valueCode.system = "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposVacunas"
+* vaccineCode.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/TiposVacunaRNI"
+//Organización 
+* performer.actor = Reference(Organization/f003)
+
+//Dosis
+* protocolApplied.doseNumberString = "1º dosis"
+
+//Lote
+* lotNumber = "T3E881V"
+
+//Fecha de expiración
+* expirationDate = "2022-03-31"
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7}
+
+Instance : LocalizacionEjemploCL1
+Title : "Ejemplo Localización Farmacia"
+Description: "Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar"
+InstanceOf : CoreLocalizacionCl
+
+* identifier.value = "23144561"
+* identifier.system = "http://miderfarm.cl/validador_id"
+* status = #active
+* name = "Gran Farmacia Gran"
+* alias = "La gran"
+
+* type.coding.code = #PHARM
+* type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+* type.coding.display = "Pharmacy"
+
+* telecom.system = #phone
+* telecom.value = "(+56) 234221678"
+* telecom.use = #work
+
+* address = AddressLocation
+
+* position.longitude = 42.2565
+* position.latitude = -71.550261
+
+* managingOrganization.reference = "Organization/ORG1"
+
+* hoursOfOperation.daysOfWeek = #mon
+* hoursOfOperation.daysOfWeek = #tue
+* hoursOfOperation.daysOfWeek = #wed
+* hoursOfOperation.daysOfWeek = #thu
+* hoursOfOperation.daysOfWeek = #fri
+* hoursOfOperation.daysOfWeek = #sat
+* hoursOfOperation.allDay = false
+* hoursOfOperation.openingTime = 09:00:00
+* hoursOfOperation.openingTime = 19:00:00
+
+Instance: AddressLocation
+InstanceOf: ClAddress
+Usage: #inline
+* line = "Calle 10 Norte, 1240, Viña del Mar"
+* city = "Viña del Mar"
+* city.extension = ComunasClLocation
+* district = "Valparaíso"
+* district.extension = ProvinciasClLocation
+* state = "Valparaíso"
+* state.extension = RegionesClLocation
+* country = "Chile"
+* country.extension = CodigoPaisesLocation
+
+Instance: ComunasClLocation
+InstanceOf: ComunasCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodComunasCL#05109 "Viña del Mar"
+
+Instance: ProvinciasClLocation
+InstanceOf: ProvinciasCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodProvinciasCL#051 "Valparaíso"
+
+Instance: RegionesClLocation
+InstanceOf: RegionesCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodRegionCL#05 "Valparaíso"
+
+Instance: CodigoPaisesLocation
+InstanceOf: CodigoPaises
+Usage: #inline
+
+* valueCodeableConcept = CSCodPaises#152 "Chile"
+
+
+Instance : LocationEj
+Title : "Ejemplo de Recurso Location"
+Description: "Location ficticio"
+InstanceOf : Location
+Usage : #example
+
+* id = "3333458"
+
+Instance : ObservationEj
+Title : "Ejemplo de Recurso Observation"
+Description: "Observation ficticio"
+InstanceOf : Observation
+Usage : #example
+
+* status = #final 
+* id = "123"
+* code.coding.system = "http://loinc.org#10244-2"
+* subject = Reference(Patient/11)
+* performer = Reference(Practitioner/3020)
+* effectiveDateTime = "2022-07-06T14:30:00+01:00"
+
+Instance : ImmunizationEj
+Title : "Ejemplo de Recurso Immunization"
+Description: "Immunization ficticio"
+InstanceOf : Immunization
+Usage : #example
+
+* status = #completed
+* patient = Reference(Patient/11)
+* id = "999"
+* vaccineCode = #66071002 
+* vaccineCode.coding.system = "http://snomed.info/sct"
+* occurrenceDateTime = "2022-07-06T14:30:00+01:00"
+
+
+Instance : MedicationStatementEj
+Title : "Ejemplo de Recurso MedicationStatement"
+Description: "MedicationStatement ficticio"
+InstanceOf : MedicationStatement
+Usage : #example
+
+* id = "354"
+* status = #active 
+* subject = Reference(Patient/11)
+* medicationCodeableConcept.coding = http://snomed.info/sct#27658006 
+* medicationCodeableConcept.coding.display = "Product containing amoxicillin (medicinal product)"
+
+Instance : AllergyIntoleranceEj
+Title : "Ejemplo de Recurso AllergyIntolerance"
+Description: "AllergyIntolerance ficticio"
+InstanceOf : AllergyIntolerance
+Usage : #example
+
+* patient = Reference(Patient/11)
+* id = "222"
+* clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+* clinicalStatus.coding.code = #active      
+
+Instance : OrganizacionEj
+Title : "Ejemplo de Recurso Organización"
+Description: "Organización ficticio"
+InstanceOf : Organization
+Usage : #example
+
+* id = "f003"
+* name = "Hospital Nueva Aurora"
+
+Instance : ProfesionalEj
+Title : "Ejemplo de Recurso Profesional"
+Description: "Profesional ficticio"
+InstanceOf : Practitioner
+Usage : #example
+
+* id = "3020"
+* name.given = "Fernanda Soto"
+
+Instance : ConditionEj
+Title : "Ejemplo de Recurso Condition"
+Description: "Condition ficticio"
+InstanceOf : Condition
+Usage : #example
+
+* id = "1112"
+* subject = Reference(Patient/11)
+* clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
+
+* clinicalStatus.coding.code = #active
+* clinicalStatus.coding.display = "Active"
+
+* verificationStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+* verificationStatus.coding.code = #confirmed
+* verificationStatus.coding.display = "Confirmed"
+
+* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
+* category.text = "Comorbilidad"
+
+* code.text = "Diagnóstico de Asma Confirmada"
+* code.coding.system = "http://snomed.info/sct"
+//* code.coding.version = "http://snomed.info/sct/449081005/version/20230430"
+* code.coding.code = #195967001
+
+* onsetDateTime = "2022-08-07"
+
+Instance : PacienteEj
+Title : "Ejemplo de Recurso Paciente"
+Description: "Paciente ficticio"
+InstanceOf : Patient
+Usage : #example
+
+* id = "11"
+* name.given = "Yanara Salinas"
+* gender = #female
+* birthDate = "1990-01-02"
+
+Instance : EspecialidadCL
+Title : "Ejemplo de Recurso de especialidad"
+Description: "Define el Rol de un Médico durante la Operación de un paciente en Urgencia"
+InstanceOf : CoreRolClinicoCl
+
+* active = true
+
+* practitioner.reference = "Practitioner/3240"
+* practitioner.display = "Johanna Rosa Silva Reyes"
+
+* specialty.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"
+* specialty.coding.code = #06
+* specialty.text = "Cirujano Cardiovascular"
+
+* specialty[1].coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"
+* specialty[1].coding.code = #03
+* specialty[1].text = "Médico Cardiólogo"
+
+* specialty[2].coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"
+* specialty[2].coding.code = #30
+* specialty[2].text = "Médico internista"
+
+Instance : MedicamentoCl
+Title : "Ejemplo de comprimido Tareg - D 160"
+Description: "Medicamento comprimido Tareg -D160 referemciado como medicamento en la TFC, considerando el de 25 comprimidos"
+InstanceOf : CoreMedicamentoCl
+
+	
+* identifier[DescripcionId].use = #official
+* identifier[DescripcionId].system = "http://minsal.cl/semantikos/description-id"
+* identifier[DescripcionId].value = "1991971000167110"
+
+* identifier[ConceptId].use = #official
+* identifier[ConceptId].system = "http://minsal.cl/semantikos/concept-id"
+* identifier[ConceptId].value = "840851000167103"
+
+* code.text = "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
+* code.coding.system = "http://minsal.cl/semantikos/description-id"
+* code.coding.code = #1991971000167110  
+* code.coding.display = "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
+
+
+
+Alias: $description-id = http://minsal.cl/semantikos/description-id
+
+Instance: MedicamentoCl-2
+Title : "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"
+Description: "Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC"
+InstanceOf: CoreMedicamentoCl
+Usage: #example
+
+* identifier[DescripcionId].use = #official
+* identifier[DescripcionId].system = "http://minsal.cl/semantikos/description-id"
+* identifier[DescripcionId].value = "1703591000167111"
+* identifier[ConceptId].use = #official
+* identifier[ConceptId].system = "http://minsal.cl/semantikos/concept-id"
+* identifier[ConceptId].value = "696681000167108"
+* code.text = "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"
+* code = $description-id#1703591000167111 "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido" 
+
+
+Instance : OrganizacionCl
+Title : "Ejemplo Organización Prestadora de Salud"
+Description: "CESFAM Rio Bueno (Ficticio) con ID DEIS no real"
+InstanceOf : CoreOrganizacionCl
+Usage : #example
+
+	 
+* id = "ORG1"	
+* active = true
+* identifier.system = "http://minsal.cl/deis/codigodeis"
+* identifier.value = "1233"
+
+* name = "Centro de Salud Familiar Rio Bueno de Linares"	
+* alias = "Rio Bueno CESFAM"
+
+* telecom.system = #phone
+* telecom.use = #work
+* telecom.value = "45325775"
+	
+* address = AddressOrganization
+	
+Instance: AddressOrganization
+InstanceOf: ClAddress
+Usage: #inline
+
+* city = "Linares"
+* city.extension = ComunasClOrganization
+* district = "Linares"
+* district.extension = ProvinciasClOrganization
+* state = "Del Maule"
+* state.extension = RegionesClOrganization
+* country = "Chile"
+* country.extension = CodigoPaisesOrganization
+
+Instance: ComunasClOrganization
+InstanceOf: ComunasCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodComunasCL#07401 "Linares"
+
+Instance: ProvinciasClOrganization
+InstanceOf: ProvinciasCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodProvinciasCL#074 "Linares"
+
+Instance: RegionesClOrganization
+InstanceOf: RegionesCl
+Usage: #inline
+
+* valueCodeableConcept = CSCodRegionCL#07 "Del Maule"
+
+Instance: CodigoPaisesOrganization
+InstanceOf: CodigoPaises
+Usage: #inline
+
+* valueCodeableConcept = CSCodPaises#152 "Chile"
+
+Instance : PrestadorCL
+Title : "Ejemplo de Recurso Prestador como base para un Core Nacional"
+Description: "Ejemplo de un Prestador no Real con identificadores en Systemas con API\"s no disponibles"
+InstanceOf : CorePrestadorCl
+
+* id = "3240"	
+ 
+//Identificación por Cédula Chilena
+* identifier[run].use = #official    //obligado
+//* identifier[RUN].system = "https://api.minsal.cl/v1/personas/datos/basicos/run"
+* identifier[run].value = "8336277-3" // endPoint definido por perfil
+* identifier[run].system = "http://registrocivil.cl/run"
+* identifier[run].type.coding = CSIdentificadores#1 "RUN"
+
+//registro de prestador activo
+* active = true
+
+//Nombre Prestador
+* name.use = #official
+
+
+* name.family.extension[segundoApellido] = Reyes
+
+* name.given = "Johanna"
+* name.given[1] = "Rosa"
+
+
+//dos contactos, un celular y un email
+
+* telecom.system = #phone
+* telecom.use = #mobile
+* telecom.value = "9345666"
+
+* telecom[1].system = #email
+* telecom[1].use = #work
+* telecom[1].value = "DraSilva@mimail.com"
+
+//sexo registrado al nacer y fecha de nacimiento
+* gender = #female
+* birthDate = "1974-08-12"
+
+// Una sola dirección
+
+* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #05602
+* address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Algarrobo"
+
+* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl"
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL" 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #056 
+* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "San Antonio"
+
+* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL" 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #05 
+* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Valparaíso"
+
+* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #152 
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
+
+//un titulo y una especialidad
+/*
+* qualification[Cert].identifier.value = "cert"
+* qualification[Cert].code.coding.system = "https://api.minsal.cl/v1/catalogos/profesiones/"
+* qualification[Cert].code.coding.code = #2112  // endPoint definido por perfil
+* qualification[Cert].code.coding.display = "Certificado Profesional Médico Cirujano" //codigo de título profesional Universitario
+* qualification[Cert].code.text = "Certificado(s)"
+
+* qualification[Esp][0].identifier.value = "esp"
+* qualification[Esp][0].code.coding.system = "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"
+* qualification[Esp][0].code.coding.code = #122  // endPoint definido por perfil
+* qualification[Esp][0].code.coding.display = "Cardiólogia"
+* qualification[Esp][0].code.text = "Especialidad(es)" 
+
+* qualification[Esp][+].identifier.value = "esp"
+* qualification[Esp][=].code.coding.system = "https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/"
+* qualification[Esp][=].code.coding.code = #1234  // endPoint definido por perfil
+* qualification[Esp][=].code.coding.display = "Medicina interna"
+* qualification[Esp][=].code.text = "Especialidad(es)" 
+*/
+
+Instance: Reyes
+InstanceOf: SegundoApellido
+Usage: #inline
+
+* valueString = "Reyes"
+
+Instance : EjemplValidacionProvCl
+Title : "Ejemplo de la Validación de un documento por medio del Prescriptor"
+Description: "Ejemplo de un documento, en la cual el prestador que la ha desarollado genera una validación por medio de una firma" 
+InstanceOf : ProvenanceCl
+Usage: #example
+
+* target = Reference(Composition/CompositionClEj)
+
+* recorded =  2015-08-27T08:39:24+10:00
+
+* activity.coding.system = "http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion"
+* activity.coding.code = #LA
+* activity.coding.display = "legally authenticated"
+
+* agent.type.coding.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type"   
+* agent.type.coding.code = #author
+* agent.type.coding.display = "author"
+* agent.who = Reference(Practitioner/3240)
+
+* signature.type.system = "urn:iso-astm:E1762-95:2013"
+* signature.type.code = #1.2.840.10065.1.12.1.1
+* signature.when = 2015-08-27T08:39:24+10:00
+
+* signature.who = Reference(Practitioner/3240)
+
+* signature.sigFormat = #application/signature+xml
+* signature.data = "Li4u"
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+Instance : EjemplValidacionProvCl
+Title : "Ejemplo de la Validación de una Receta por medio del Prescriptor"
+Description: "Ejemplo de una Receta en Request Group que contiene una receta, en la cual el prestador que la ha desarollado genera una validación por medio de una firma" 
+InstanceOf : ProvenanceCl
+Usage: #example
+
+* target.reference = "RequestGroup/RG12224"
+
+* recorded =  2015-08-27T08:39:24+10:00
+
+* activity.coding.system = "http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion"
+* activity.coding.code = #LA
+* activity.coding.display = "legally authenticated"
+
+* agent.type.coding.system = "http://terminology.hl7.org/CodeSystem/provenance-participant-type"   
+* agent.type.coding.code = #author
+* agent.type.coding.display = "author"
+* agent.who.reference = "Practitioner/3240"
+
+* signature.type.system = "urn:iso-astm:E1762-95:2013"
+* signature.type.code = #1.2.840.10065.1.12.1.1
+* signature.when = 2015-08-27T08:39:24+10:00
+
+* signature.who = Reference(Practitioner/3240)
+
+* signature.sigFormat = #application/signature+xml
+* signature.data = "Li4u"
+
+
+Instance: example
+InstanceOf: RequestGroup
+Description: "Solo un ejemplo"
+Usage: #example
+
+* id = "RG12224"
+
+* status = #draft
+* intent = #plan
+
+
+Instance : EncounterCL
+Title : "Ejemplo de Recurso Encuentro"
+Description: "Encuentro remoto ficticio del paciente"
+InstanceOf : EncounterCL
+Usage : #example
+
+// Estado del encuentro
+* status = #planned 
+
+//Clase de encuentro, en este caso es Virtual
+* class.code = #VR 
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* class.display = "Virtual"
+
+//Tipo de encuentro remoto
+* type.coding.code = #PR
+* type.extension[type].valueCode = #PR
+* type.coding.system = "https://minsal.cl/fhir/HD/CodeSystem/CSTiposEncuentroCL"
+
+//Servicio entregado en el Encuentro
+* serviceType.coding.code = #nutINTA
+* serviceType.coding.system = "https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio"
+* serviceType.extension[serviceType].valueCode = #nutINTA
+
+//Razon de no realizarse
+* reasonCode.extension[reasonCode].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarse"
+* reasonCode.extension[reasonCode].valueCode = #pierdellam
+
+//Notas del encuentro entre Profesionales
+* extension[notas].valueString = "Encuentro exitoso"
+
+//Paciente referenciado
+* subject.reference = "Patient/11"
+
+//Participante principal
+* participant[partPrincipal].extension[especialidad].valueCoding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"
+* participant[partPrincipal].extension[especialidad].valueCoding.code = #01
+* participant[partPrincipal].extension[especialidad].valueCoding.display = "Anatomía Patológica"
+* participant[partPrincipal].type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+* participant[partPrincipal].type.coding.code = #PPRF 
+* participant[partPrincipal].individual.reference = "Practitioner/3020"
+
+//Participante secundario
+* participant[partSecundario].type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+* participant[partSecundario].type.coding.code = #SPRF
+* participant[partSecundario].extension[contact].valueContactPoint.value = "jose.12@gmail.com"
+* participant[partSecundario].extension[contact].valueContactPoint.system = #email
+
+//Periodo
+* period.start = "2022-06-23T00:00:00-03:00"
+* period.end = "2022-06-23T00:50:00-03:00"
+* length.value = 50
+
+//Razón por la que se realiza el encuentro
+* reasonCode.text = "Consulta médica sobre nutrición de alimentos"
+
+//Diagnóstico
+* diagnosis.extension[observaciones].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ObservacionesDiagnostico"
+* diagnosis.extension[observaciones].valueString = "Buena atención"
+* diagnosis.condition.display = "Condition IPS"
+
+//Organización que provee el Encuentro 
+* serviceProvider.reference = "Organization/f003"
+
+
+Instance : CompositionCl-CarlosSalas
+Title : "Ejemplo de Recurso CompositionCl"
+Description: "Composición de un documento para resumen de historia clínica" 
+InstanceOf : DocumentoCl
+Usage : #example
+
+// Estado del documento
+* status = #final
+
+// Tipo de documento
+* type = http://loinc.org#60591-5 "Patient Summary Document"
+
+// Paciente
+* subject = Reference(Patient/11)
+
+// Fecha 
+* date = "2022-07-06T14:30:00+01:00"
+
+// Autor del documento, referencia a un profesional
+* author = Reference(Practitioner/3020)
+
+// Titulo del documento
+* title = "Resumen IPS para Carlos Salas - 06 JUL 2022"
+
+// --- Sección Diagnóstico ---
+* section[sectionDiagnosticos].title = "Diagnósticos"
+* section[sectionDiagnosticos].code = http://loinc.org#11450-4 "Problem list - Reported"
+* section[sectionDiagnosticos].text.status = #generated
+* section[sectionDiagnosticos].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Asma</div>"
+* section[sectionDiagnosticos].entry = Reference(Condition/1112)
+
+// --- Sección Medicamentos ---
+* section[sectionMedicamentos].title = "Medicamentos"
+* section[sectionMedicamentos].code = http://loinc.org#10160-0 "Hx of Medication use"
+* section[sectionMedicamentos].text.status = #generated
+* section[sectionMedicamentos].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Anastrozole/Cimicifuga</div>"
+* section[sectionMedicamentos].entry[0] = Reference(MedicationStatement/354)
+
+// --- Sección Alergias ---
+* section[sectionAlergias].title = "Alergias"
+* section[sectionAlergias].code = http://loinc.org#48765-2 "Allergies and adverse reactions Document"
+* section[sectionAlergias].text.status = #generated
+* section[sectionAlergias].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality, active</div>"
+* section[sectionAlergias].entry = Reference(AllergyIntolerance/222)
+
+// --- Sección Vacunas ---
+* section[sectionInmunizacion].title = "Vacunas"
+* section[sectionInmunizacion].code = http://loinc.org#11369-6 "Hx of Immunization"
+* section[sectionInmunizacion].text.status = #generated
+* section[sectionInmunizacion].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lista de las vacunas recibidas</div>"
+* section[sectionInmunizacion].entry = Reference(Immunization/999)
+
+// --- Sección Signos vitales y Mediciones Fisiológicas ---
+* section[sectionObservacionSignosVitales].title = "Signos Vitales y Mediciones Fisiológicas"
+* section[sectionObservacionSignosVitales].code = http://loinc.org#8716-3 "Vital signs"
+* section[sectionObservacionSignosVitales].text.status = #generated
+* section[sectionObservacionSignosVitales].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vital signs</div>"
+* section[sectionObservacionSignosVitales].entry = Reference(Observation/123)
+
+
+Instance : ImmunizationCL
+Title : "Ejemplo de Recurso Inmunización"
+Description: "Registro de inmunización ficticio"
+InstanceOf : ImmunizationCL
+Usage : #example
+
+//Extensión para nombre campaña
+* extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreCampana"
+* extension.valueCoding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana"
+* extension.valueCoding.code = #hepatiA
+* extension.valueCoding.display = "Hepatitis A" 
+
+//Id
+* identifier.system = "http://sgi.gob.cl/identifier/inmunization/rni/"
+* identifier.value = "136588279"
+
+//Estado
+* status = #completed 
+
+//Razón de no realizarse la inmunización
+* statusReason.extension[statusReason].valueCode = #solicitudPaci
+
+
+//Paciente inmunizado
+* patient = Reference(Patient/11)
+
+//Fecha de administración de la vacuna
+* occurrenceDateTime = "2022-04-07T00:00:00-04:00"
+* recorded = "2021-06-24T00:00:00-04:00"
+
+//Localización
+* location = Reference(Location/3333458)
+
+//Localizacion Sistema Salud
+* location.extension.valueCoding.code = #SSAN
+* location.extension.valueCoding.system = "https://minsal.cl/fhir/HD/CodeSystem/CSCodSSalud"
+* location.extension.valueCoding.display = "Servicio de Salud Antofagasta"
+* location.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ServicioSalud"
+
+
+//Vacuna administrada
+* vaccineCode.extension.valueCode = #hep_A 
+//* vaccineCode.extension.valueCode.system = "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposVacunas"
+* vaccineCode.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/TiposVacunaRNI"
+//Organización 
+* performer.actor = Reference(Organization/f003)
+
+//Dosis
+* protocolApplied.doseNumberString = "1º dosis"
+
+//Lote
+* lotNumber = "T3E881V"
+
+//Fecha de expiración
+* expirationDate = "2022-03-31"
+
+*/

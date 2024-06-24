@@ -3,6 +3,9 @@
 - Perfil [MedicamentoCL](StructureDefinition-CoreMedicamentoCl.html)
   - Se elimina los Slice de **DescriptionID** y **ConceptID**.
   - Se cambian las descripciones y definiciones que referencien a la TFC.
+  - Se habilitan los ejemplo:
+    * [Medicamento comprimido Tareg - D 160](Medication-MedicamentoCl.html)
+    * [Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido](Medication-MedicamentoCl-2.html)
 
 - Perfil [ImmunizationCL](StructureDefinition-ImmunizationCL.html)
   - Se deprecan las extensiones de **TiposVacunaCL**, **NombreCampanaCL**, **RazonNOTinmunizacionCL** y **ServicioSaludCL**  junto con su obligatoriedadad
@@ -15,14 +18,32 @@
 - Se modifica y agregan nuevos terminos en "CSTipoIdentificador"
 - Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
   - Se cambio referencia de **generalPractitioner** de Organization -> OrganizacionCL y Practitioner -> PrestadorCL
-  - Se genera ejemplo [Patient-PAcienteCL.html]
+  - Se genera ejemplo [Patient-PacienteCL.html]
 
-- Perfil[CoreRolClinicoCl](StructureDefinition-CoreRolClinico.html)
+- Perfil[CoreRolClinicoCl](StructureDefinition-CoreRolClinicoCl.html)
   - Se modifica la referencia organization al **OrganizationCL**
   - Se modifica la referencia location al **CoreLocalizacionCl**
+  - Se genera ejemplo [Ejemplo de Recurso de especialidad](PractitionerRole-EjemploEspecialidadCL.html)
 
 - Perfil [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html)
   - Se creo ejemplo [Ejemplo Organización Prestadora de Salud](Organization-OrganizacionClEjemplo1.html)
+
+- Perfil [PrestadorCL](StructureDefinition-CorePrestadorCl.html)
+  - Se corrije los identifier.type según el code nuevo correspondiente del codesystem
+  - Se genera Ejemplo [Ejemplo de un profecional de salud](Practitioner-EjemploPrestadorCL.html)
+
+- Perfil[AuditEventCl](StructureDefinition-AuditEventCl.html)
+  - Subtype.system y Type.system se elimina MS
+  - Subtype.code MS se elimina
+
+- Perfil[EncounterCL](StructureDefinition-EncounterCL.html)
+  - Se depreca el uso de extensiones en el perfil
+  - Se elimina el uso de slice del participant
+  - Se actualiza periodo de 1..1 -> 0..1
+
+- Se vuelve habilitar los siguientes ejemplos corregidos:
+ *  [Localización de Farmacia](Location-LocalizacionEjemploCL1.html)
+ *  [Inmunización](Inmunization-ImmunizationEj.html)
 
 
 ### Version 1.8.9

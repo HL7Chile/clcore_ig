@@ -10,7 +10,7 @@
   "name" : "clcore",
   "title" : "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)",
   "status" : "active",
-  "date" : "2024-06-21T18:30:18-04:00",
+  "date" : "2024-06-23T21:41:08-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -850,18 +850,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Nacionalidad"
-      },
-      "name" : "Codigo de Nacionalidad",
-      "description" : "Esta extensión incluye códigos de nacionalidad que pueda tener un pacient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/CodigoPaises"
       },
       "name" : "Codigo de Paises",
@@ -914,18 +902,6 @@
       },
       "name" : "Contacto participantes",
       "description" : "Contacto telefónico o correo de los participantes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PaisEmision"
-      },
-      "name" : "Código de la Emición de un Identificador",
-      "description" : "Esta extensión incluye los códigos de paises de emición de un documento",
       "exampleBoolean" : false
     },
     {
@@ -1159,6 +1135,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/MedicamentoCl"
+      },
+      "name" : "Ejemplo de comprimido Tareg - D 160",
+      "description" : "Medicamento comprimido Tareg -D160 referemciado como medicamento en la TFC, considerando el de 25 comprimidos",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/EjemploEspecialidadCL"
+      },
+      "name" : "Ejemplo de Recurso de especialidad",
+      "description" : "Define la especialidad que cumnple en un establecimiento de salud",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Immunization"
+      }],
+      "reference" : {
+        "reference" : "Immunization/ImmunizationEj"
+      },
+      "name" : "Ejemplo de Recurso Immunization",
+      "description" : "Immunization ficticio",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -1167,6 +1179,54 @@
       "name" : "Ejemplo de Recurso Paciente Nacional",
       "description" : "Paciente ficticio nacional CI Chilena, sin sistema de validación \"http://regcivil.cl/Validacion/RUN\" ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real",
       "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/EjemploPrestadorCL"
+      },
+      "name" : "Ejemplo de Recurso Prestador como base para un Core Nacional",
+      "description" : "Ejemplo de un Prestador no Real con identificadores en Systemas con API\"s no disponibles",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AuditEvent"
+      }],
+      "reference" : {
+        "reference" : "AuditEvent/AuditEventEx"
+      },
+      "name" : "Ejemplo de un Audit-Event Search.",
+      "description" : "Log de Audición de una operacion Search.",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/AuditEventCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/DiagnosticoEj"
+      },
+      "name" : "Ejemplo de Un Diagnóstico de hipertensión",
+      "description" : "Diagnóstico Confirmado de Hipertesión",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/LocalizacionEjemploCL1"
+      },
+      "name" : "Ejemplo Localización Farmacia",
+      "description" : "Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreLocalizacionCl"
     },
     {
       "extension" : [{
@@ -1203,6 +1263,18 @@
       "name" : "Especialidad del médico principal",
       "description" : "Esta extensión incluye los códigos de las especialidades que puede tener el medico principal",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/MedicamentoCl-2"
+      },
+      "name" : "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido",
+      "description" : "Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"
     },
     {
       "extension" : [{

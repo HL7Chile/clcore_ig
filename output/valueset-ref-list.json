@@ -209,6 +209,20 @@
       "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
       "version" : "4.0.1",
       "status" : "draft",
@@ -388,9 +402,7 @@
       "uses" : {
       },
       "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
-      "StructureDefinition-PaisEmision.html" : "Código de la Emición de un Identificador",
-      "StructureDefinition-CodigoPaises.html" : "Codigo de Paises",
-      "StructureDefinition-Nacionalidad.html" : "Codigo de Nacionalidad"
+      "StructureDefinition-CodigoPaises.html" : "Codigo de Paises"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodMadurez",

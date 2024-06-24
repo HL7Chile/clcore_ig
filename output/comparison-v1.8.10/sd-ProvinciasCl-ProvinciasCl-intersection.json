@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "e8d03331-55ec-4e79-a0ba-4f2c2583ed7e-129",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/e8d03331-55ec-4e79-a0ba-4f2c2583ed7e-129",
+  "id" : "c408b120-c75a-4203-9d9a-ee9149424ce4-129",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c408b120-c75a-4203-9d9a-ee9149424ce4-129",
   "name" : "IntersectionProvinciasClAndProvinciasCl",
   "title" : "Intersection of Códigos para Provincias en Chile And Códigos para Provincias en Chile",
   "status" : "active",
-  "date" : "2024-06-21T18:30:42-04:00",
+  "date" : "2024-06-23T21:41:37-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

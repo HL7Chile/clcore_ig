@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "e8d03331-55ec-4e79-a0ba-4f2c2583ed7e-21",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/e8d03331-55ec-4e79-a0ba-4f2c2583ed7e-21",
+  "id" : "c408b120-c75a-4203-9d9a-ee9149424ce4-21",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/c408b120-c75a-4203-9d9a-ee9149424ce4-21",
   "name" : "IntersectionCSCodServicioCLAndCSCodServicioCL",
   "title" : "Intersection of Tipos de Servicios Remotos And Tipos de Servicios Remotos",
   "status" : "active",
-  "date" : "2024-06-21T18:30:42-04:00",
+  "date" : "2024-06-23T21:41:37-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

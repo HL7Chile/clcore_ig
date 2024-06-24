@@ -11,7 +11,7 @@
   <name value="clcore"/>
   <title value="Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"/>
   <status value="active"/>
-  <date value="2024-06-21T18:30:18-04:00"/>
+  <date value="2024-06-23T21:41:08-04:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -663,17 +663,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Nacionalidad"/>
-      </reference>
-      <name value="Codigo de Nacionalidad"/>
-      <description value="Esta extensión incluye códigos de nacionalidad que pueda tener un pacient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/CodigoPaises"/>
       </reference>
       <name value="Codigo de Paises"/>
@@ -722,17 +711,6 @@
       </reference>
       <name value="Contacto participantes"/>
       <description value="Contacto telefónico o correo de los participantes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PaisEmision"/>
-      </reference>
-      <name value="Código de la Emición de un Identificador"/>
-      <description value="Esta extensión incluye los códigos de paises de emición de un documento"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -946,6 +924,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/MedicamentoCl"/>
+      </reference>
+      <name value="Ejemplo de comprimido Tareg - D 160"/>
+      <description value="Medicamento comprimido Tareg -D160 referemciado como medicamento en la TFC, considerando el de 25 comprimidos"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/EjemploEspecialidadCL"/>
+      </reference>
+      <name value="Ejemplo de Recurso de especialidad"/>
+      <description value="Define la especialidad que cumnple en un establecimiento de salud"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/ImmunizationEj"/>
+      </reference>
+      <name value="Ejemplo de Recurso Immunization"/>
+      <description value="Immunization ficticio"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -954,6 +965,50 @@
       <name value="Ejemplo de Recurso Paciente Nacional"/>
       <description value="Paciente ficticio nacional CI Chilena, sin sistema de validación &quot;http://regcivil.cl/Validacion/RUN&quot; ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real"/>
       <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/EjemploPrestadorCL"/>
+      </reference>
+      <name value="Ejemplo de Recurso Prestador como base para un Core Nacional"/>
+      <description value="Ejemplo de un Prestador no Real con identificadores en Systemas con API&quot;s no disponibles"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AuditEvent"/>
+      </extension>
+      <reference>
+        <reference value="AuditEvent/AuditEventEx"/>
+      </reference>
+      <name value="Ejemplo de un Audit-Event Search."/>
+      <description value="Log de Audición de una operacion Search."/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/AuditEventCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/DiagnosticoEj"/>
+      </reference>
+      <name value="Ejemplo de Un Diagnóstico de hipertensión"/>
+      <description value="Diagnóstico Confirmado de Hipertesión"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/LocalizacionEjemploCL1"/>
+      </reference>
+      <name value="Ejemplo Localización Farmacia"/>
+      <description value="Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreLocalizacionCl"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -987,6 +1042,17 @@
       <name value="Especialidad del médico principal"/>
       <description value="Esta extensión incluye los códigos de las especialidades que puede tener el medico principal"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/MedicamentoCl-2"/>
+      </reference>
+      <name value="Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"/>
+      <description value="Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

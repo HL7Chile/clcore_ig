@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "e8d03331-55ec-4e79-a0ba-4f2c2583ed7e-164",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/e8d03331-55ec-4e79-a0ba-4f2c2583ed7e-164",
+  "id" : "c408b120-c75a-4203-9d9a-ee9149424ce4-164",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/c408b120-c75a-4203-9d9a-ee9149424ce4-164",
   "name" : "UnionVSCodigoslenguajeAndVSCodigoslenguaje",
   "title" : "Union of Codigos Lenguaje And Codigos Lenguaje",
   "status" : "active",
-  "date" : "2024-06-21T18:30:42-04:00",
+  "date" : "2024-06-23T21:41:37-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

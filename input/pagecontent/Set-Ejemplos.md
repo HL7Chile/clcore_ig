@@ -8,8 +8,11 @@ Los siguientes ejemplos se publican con esta Guía.
 
 #### Especialidad Clínica
 
-* [Especialidad de Cardiología](PractitionerRole-EspecialidadCL.html)
+* [Especialidad de Oncología](PractitionerRole-EjemploEspecialidadCL.html)
 <br>
+
+#### Inmunización
+* [Inmunización](Inmunization-ImmunizationEj.html)<br>
 
 #### Localización
 * [Localización de Farmacia](Location-LocalizacionEjemploCL1.html)     

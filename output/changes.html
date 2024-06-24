@@ -219,6 +219,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <ul>
       <li>Se elimina los Slice de <strong>DescriptionID</strong> y <strong>ConceptID</strong>.</li>
       <li>Se cambian las descripciones y definiciones que referencien a la TFC.</li>
+      <li>Se habilitan los ejemplo:
+        <ul>
+          <li><a href="Medication-MedicamentoCl.html">Medicamento comprimido Tareg - D 160</a></li>
+          <li><a href="Medication-MedicamentoCl-2.html">Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido</a></li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>Perfil <a href="StructureDefinition-ImmunizationCL.html">ImmunizationCL</a>
@@ -236,13 +242,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Perfil <a href="StructureDefinition-CorePacienteCl.html">PacienteCL</a>
     <ul>
       <li>Se cambio referencia de <strong>generalPractitioner</strong> de Organization -&gt; OrganizacionCL y Practitioner -&gt; PrestadorCL</li>
-      <li>Se genera ejemplo [Patient-]</li>
+      <li>Se genera ejemplo [Patient-PacienteCL.html]</li>
     </ul>
   </li>
-  <li><a name="l391">​</a>Perfil<a href="StructureDefinition-CoreRolClinico.html">CoreRolClinicoCl</a>
+  <li>Perfil<a href="StructureDefinition-CoreRolClinicoCl.html">CoreRolClinicoCl</a>
     <ul>
       <li>Se modifica la referencia organization al <strong>OrganizationCL</strong></li>
       <li>Se modifica la referencia location al <strong>CoreLocalizacionCl</strong></li>
+      <li>Se genera ejemplo <a href="PractitionerRole-EjemploEspecialidadCL.html">Ejemplo de Recurso de especialidad</a></li>
     </ul>
   </li>
   <li>Perfil <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a>
@@ -250,13 +257,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se creo ejemplo <a href="Organization-OrganizacionClEjemplo1.html">Ejemplo Organización Prestadora de Salud</a></li>
     </ul>
   </li>
-  <li>Se generan nuevas extensiones para resolver errores dentro de la guía
+  <li>Perfil <a href="StructureDefinition-CorePrestadorCl.html">PrestadorCL</a>
     <ul>
-      <li><a href="StructureDefinition-PaisEmision.html">PaisEmision</a>: Para la emisión de documentos</li>
-      <li><a href="StructureDefinition-Nacionalidad.html">Nacionalidad</a>: Para la nacionalidad de un paciente</li>
+      <li>Se corrije los identifier.type según el code nuevo correspondiente del codesystem</li>
+      <li>Se genera Ejemplo <a href="Practitioner-EjemploPrestadorCL.html">Ejemplo de un profecional de salud</a></li>
     </ul>
   </li>
-  <li>Se incluye contexto para <a href="StructureDefinition-CodigoPaises.html">CodigoPaises</a> a Address.country</li>
+  <li>Perfil<a href="StructureDefinition-AuditEventCl.html">AuditEventCl</a>
+    <ul>
+      <li>Subtype.system y Type.system se elimina MS</li>
+      <li>Subtype.code MS se elimina</li>
+    </ul>
+  </li>
+  <li>Perfil<a href="StructureDefinition-EncounterCL.html">EncounterCL</a>
+    <ul>
+      <li>Se depreca el uso de extensiones en el perfil</li>
+      <li>Se elimina el uso de slice del participant</li>
+      <li>Se actualiza periodo de 1..1 -&gt; 0..1</li>
+    </ul>
+  </li>
+  <li>Se vuelve habilitar los siguientes ejemplos corregidos:</li>
+  <li><a href="Location-LocalizacionEjemploCL1.html">Localización de Farmacia</a></li>
+  <li><a name="l500">​</a><a href="Inmunization-ImmunizationEj.html">Inmunización</a></li>
 </ul>
 
 <h3 id="version-189">Version 1.8.9</h3>
@@ -382,7 +404,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 21, 2024 18:30-0400">2024-06-21</span>
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 23, 2024 21:41-0400">2024-06-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

@@ -33,8 +33,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Sexo Biologico del paciente","Sexo Biologico del paciente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension:nacionalidad","Patient.extension","nacionalidad","","",0,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/Nacionalidad]]} {[]}
-","Codigo de Nacionalidad","Esta extensión incluye códigos de nacionalidad que pueda tener un pacient","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Patient.extension:nacionalidad","Patient.extension","nacionalidad","","",0,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises]]} {[]}
+","Codigo de Paises","Esta extensión incluye códigos de paises","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.modifierExtension","Patient.modifierExtension","","extensions
@@ -65,8 +65,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","País de Origen del Documento de Id","Se usa esta extensión para agregarle al tipo de documento el país de origen de este","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.identifier.type.extension:paisEmisionDocumento","Patient.identifier.type.extension","paisEmisionDocumento","","",0,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/PaisEmision]]} {[]}
-","Código de la Emición de un Identificador","Esta extensión incluye los códigos de paises de emición de un documento","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Patient.identifier.type.extension:paisEmisionDocumento","Patient.identifier.type.extension","paisEmisionDocumento","","",0,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises]]} {[]}
+","Codigo de Paises","Esta extensión incluye códigos de paises","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.identifier.type.coding","Patient.identifier.type.coding","","","",0,*,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

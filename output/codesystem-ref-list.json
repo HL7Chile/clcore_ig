@@ -10,9 +10,9 @@
       "oids" : ["1.2.840.10008.2.16.4"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
       "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type"
     },
     {
       "url" : "http://hl7.org/fhir/administrative-gender",
@@ -181,7 +181,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-VSDiagnosticosSCT.html" : "Diagnósticos SNOMED y Ausente o Desconocido"
+      "ValueSet-VSDiagnosticosSCT.html" : "Diagnósticos SNOMED y Ausente o Desconocido",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/audit-event-type",
@@ -335,8 +336,8 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
-      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
@@ -384,9 +385,9 @@
       "oids" : ["2.16.840.1.113883.5.90"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
@@ -586,8 +587,8 @@
       "description" : "Tipo Identificador",
       "uses" : {
       },
-      "ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos",
-      "ValueSet-VSTipoIdentificador.html" : "Tipo Identificador"
+      "ValueSet-VSTipoIdentificador.html" : "Tipo Identificador",
+      "ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL",
