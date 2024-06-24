@@ -55,13 +55,13 @@ InstanceOf : CorePrestadorCl
   * identifier
     * value = "esp"
   * code 
-    * text = "Medicina Familiar"
+    * text = "Medicina Interna"
 
 * qualification[Subespecialidad]
   * identifier
     * value = "subesp"
   * code 
-    * text = "Medicina Interna"
+    * text = "Medicina Familiar"
 
 //un titulo y una especialidad
 /*

@@ -24,6 +24,7 @@
   - Se modifica la referencia organization al **OrganizationCL**
   - Se modifica la referencia location al **CoreLocalizacionCl**
   - Se genera ejemplo [Ejemplo de Recurso de especialidad](PractitionerRole-EjemploEspecialidadCL.html)
+  - Se genera ejemplo [Ejemplo de Especialidad Medicina Familiar](PractitionerRole-EjemploEspecialidadCL2.html)
 
 - Perfil [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html)
   - Se creo ejemplo [Ejemplo Organización Prestadora de Salud](Organization-OrganizacionClEjemplo1.html)
@@ -31,6 +32,7 @@
 - Perfil [PrestadorCL](StructureDefinition-CorePrestadorCl.html)
   - Se corrije los identifier.type según el code nuevo correspondiente del codesystem
   - Se genera Ejemplo [Ejemplo de un profecional de salud](Practitioner-EjemploPrestadorCL.html)
+  - Se genera Ejemplo [Ejemplo de Recurso Prestador 2 como base para un Core Nacional](Practitioner-EjemploPrestadorCL2.html)
 
 - Perfil[AuditEventCl](StructureDefinition-AuditEventCl.html)
   - Subtype.system y Type.system se elimina MS
@@ -43,6 +45,8 @@
 
 - Perfil[CL Condición-Diagnóstico](StructureDefinition-CoreDiagnosticoCl.html)
   - Paso el verification Status a MS
+  - Ejemplo: [Ejemplo de Un Diagnóstico de hipertensión](Condition-DiagnosticoEj.html)
+  - Ejemplo: [Ejemplo de Un Diagnóstico de Faringoamigdalitis](Condition-DiagnosticoEj2.html)
 
 - Se vuelve habilitar los siguientes ejemplos corregidos:
  *  [Localización de Farmacia](Location-LocalizacionEjemploCL1.html)
