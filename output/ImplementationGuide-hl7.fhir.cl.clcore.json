@@ -10,7 +10,7 @@
   "name" : "clcore",
   "title" : "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)",
   "status" : "active",
-  "date" : "2024-06-23T21:41:08-04:00",
+  "date" : "2024-06-24T20:56:59-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -883,18 +883,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ContactoParticipantes"
-      },
-      "name" : "Contacto de los participantes secundarios del encuentro",
-      "description" : "Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -902,18 +890,6 @@
       },
       "name" : "Contacto participantes",
       "description" : "Contacto telefónico o correo de los participantes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/RazonNOrealizarse"
-      },
-      "name" : "Código de las razones por la cual no se pudo realizar la atención",
-      "description" : "Esta extensión incluye códigos de razones por la cuales no pudo llevarse a cabo el encuentro remoto",
       "exampleBoolean" : false
     },
     {
@@ -1135,6 +1111,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/DocumentoEjemplo1"
+      },
+      "name" : "Ejemplo de Cabecera de Documento",
+      "description" : "Este es el ejemplo de la cabecera de un documento",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Medication"
       }],
       "reference" : {
@@ -1150,11 +1138,47 @@
         "valueString" : "PractitionerRole"
       }],
       "reference" : {
+        "reference" : "PractitionerRole/EjemploEspecialidadCL2"
+      },
+      "name" : "Ejemplo de Especialidad Medicina Familiar",
+      "description" : "Define la especialidad de medicina familiar que cumnple un profesional en un establecimiento de salud",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/EjemplValidacionProvCl"
+      },
+      "name" : "Ejemplo de la Validación de un documento por medio del Autor",
+      "description" : "Ejemplo de un documento, en la cual el prestador que la ha desarollado genera una validación por medio de una firma",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
         "reference" : "PractitionerRole/EjemploEspecialidadCL"
       },
       "name" : "Ejemplo de Recurso de especialidad",
       "description" : "Define la especialidad que cumnple en un establecimiento de salud",
       "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/EjemploEncounterCL"
+      },
+      "name" : "Ejemplo de Recurso Encuentro",
+      "description" : "Encuentro remoto ficticio del paciente",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL"
     },
     {
       "extension" : [{
@@ -1186,6 +1210,18 @@
         "valueString" : "Practitioner"
       }],
       "reference" : {
+        "reference" : "Practitioner/EjemploPrestadorCL2"
+      },
+      "name" : "Ejemplo de Recurso Prestador 2 como base para un Core Nacional",
+      "description" : "Ejemplo de un Prestador no Real con identificadores en Systemas con APIs \"no disponibles\"",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
         "reference" : "Practitioner/EjemploPrestadorCL"
       },
       "name" : "Ejemplo de Recurso Prestador como base para un Core Nacional",
@@ -1203,6 +1239,18 @@
       "name" : "Ejemplo de un Audit-Event Search.",
       "description" : "Log de Audición de una operacion Search.",
       "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/AuditEventCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/DiagnosticoEj2"
+      },
+      "name" : "Ejemplo de Un Diagnóstico de Faringoamigdalitis",
+      "description" : "Diagnóstico Confirmado de Faringoamigdalitis",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl"
     },
     {
       "extension" : [{
@@ -1250,18 +1298,6 @@
       },
       "name" : "Encuentro Clínico",
       "description" : "Definición de encuentro clínico genérico para Chile",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/VSEspecialidadesDeisCL"
-      },
-      "name" : "Especialidad del médico principal",
-      "description" : "Esta extensión incluye los códigos de las especialidades que puede tener el medico principal",
       "exampleBoolean" : false
     },
     {
@@ -1322,30 +1358,6 @@
       },
       "name" : "Identificación del Contacto de un Paciente",
       "description" : "Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NotasEncuentro"
-      },
-      "name" : "Notas realizadas en un encuentro por Comité",
-      "description" : "Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ObservacionesDiagnostico"
-      },
-      "name" : "Observaciones o comentarios simples respecto a un diagnóstico",
-      "description" : "Esta extensión sirve para insertar comentarios acerca a un diagnóstico médico realizado en un encuentro remoto",
       "exampleBoolean" : false
     },
     {

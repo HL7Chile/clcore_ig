@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c408b120-c75a-4203-9d9a-ee9149424ce4-75",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c408b120-c75a-4203-9d9a-ee9149424ce4-75",
+  "id" : "0bc6e5c8-ac3b-46fa-8ac0-7abe9a36b279-72",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0bc6e5c8-ac3b-46fa-8ac0-7abe9a36b279-72",
   "name" : "IntersectionDiagnosticoClAndDiagnosticoCl",
   "title" : "Intersection of CL Condición-Diagnóstico And CL Condición-Diagnóstico",
   "status" : "active",
-  "date" : "2024-06-23T21:41:37-04:00",
+  "date" : "2024-06-24T20:57:20-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -501,7 +501,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : true,
       "isSummary" : true,
       "binding" : {

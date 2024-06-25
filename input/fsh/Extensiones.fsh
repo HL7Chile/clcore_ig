@@ -184,7 +184,7 @@ Context: EncounterCL.serviceType
 * value[x] only code
 * value[x] ^short = "Códigos de Tipos de Servicios de Salud"
 * valueCode from VSTiposServicio (extensible)
-*/
+
 Extension: EspecialidadCL
 Id: VSEspecialidadesDeisCL
 Title: "Especialidad del médico principal"
@@ -212,10 +212,6 @@ Id: RazonNOrealizarse
 Title: "Código de las razones por la cual no se pudo realizar la atención"
 Description: "Esta extensión incluye códigos de razones por la cuales no pudo llevarse a cabo el encuentro remoto"
 Context: EncounterCL.reasonCode, ImmunizationCL.statusReason
-// * ^context[0].type = #element
-// * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL#Encounter.reasonCode"
-// * ^context[+].type = #element
-// * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL#Immunization.statusReason"
 * value[x] only code
 * value[x] ^short = "Códigos de razones por la cual el encuentro remoto no se pudo realizar"
 * valueCode from VSRazonNOT (extensible)
@@ -225,9 +221,6 @@ Id: NotasEncuentro
 Title: "Notas realizadas en un encuentro por Comité"
 Description: "Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios"
 Context: EncounterCL
-
-// * ^context.type = #element
-// * ^context.expression = "EncounterCL"
 * value[x] only string
 * value[x] ^short = "Notas realizadas en un encuentro por Comité"
 
@@ -236,11 +229,8 @@ Id: ObservacionesDiagnostico
 Title: "Observaciones o comentarios simples respecto a un diagnóstico"
 Description: "Esta extensión sirve para insertar comentarios acerca a un diagnóstico médico realizado en un encuentro remoto"
 Context: EncounterCL.diagnosis
-// * ^context.type = #element
-// * ^context.expression = "EncounterCL.diagnosis"
-
 * value[x] only string 
-
+*/
 // Extension: TiposVacunaCL
 // Id: TiposVacunaRNI
 // Title: "Código de tipos de Vacunas en Chile"

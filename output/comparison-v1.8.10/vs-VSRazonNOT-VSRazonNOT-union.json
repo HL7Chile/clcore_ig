@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "c408b120-c75a-4203-9d9a-ee9149424ce4-185",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/c408b120-c75a-4203-9d9a-ee9149424ce4-185",
+  "id" : "0bc6e5c8-ac3b-46fa-8ac0-7abe9a36b279-170",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/0bc6e5c8-ac3b-46fa-8ac0-7abe9a36b279-170",
   "name" : "UnionVSRazonNOencuentroAndVSRazonNOencuentro",
   "title" : "Union of Razones no Atención Remota And Razones no Atención Remota",
   "status" : "active",
-  "date" : "2024-06-23T21:41:37-04:00",
+  "date" : "2024-06-24T20:57:20-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

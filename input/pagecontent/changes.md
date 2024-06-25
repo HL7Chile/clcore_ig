@@ -48,9 +48,14 @@
   - Ejemplo: [Ejemplo de Un Diagnóstico de hipertensión](Condition-DiagnosticoEj.html)
   - Ejemplo: [Ejemplo de Un Diagnóstico de Faringoamigdalitis](Condition-DiagnosticoEj2.html)
 
+- Perfil[CL Provenance](StructureDefinition-ProvenanceCl.html)
+  - Se cambia la referencia de location al perfil de la guía
+  - Se cambia la referencia de agent.who y signature.who a los perfiles que existan en la guía y aquellos que no, se referencian al estandar.
+
 - Se vuelve habilitar los siguientes ejemplos corregidos:
  *  [Localización de Farmacia](Location-LocalizacionEjemploCL1.html)
- *  [Inmunización](Inmunization-ImmunizationEj.html)
+ *  [Inmunización](Immunization-ImmunizationEj.html)
+ *  [Documento](Composition-DocumentoEjemplo1.html)
 
 
 ### Version 1.8.9
@@ -81,11 +86,11 @@
   - [Códigos para Provincias en Chile](StructureDefinition-ProvinciasCl.html)
   - [Códigos para Regiones en Chile](StructureDefinition-RegionesCl.html)
   - [Identificación del Contacto de un Paciente](StructureDefinition-IdContacto.html)
-  - [Especialidad del médico principal](StructureDefinition-VSEspecialidadesDeisCL.html)
-  - [Contacto de los participantes secundarios del encuentro](StructureDefinition-ContactoParticipantes.html)
-  - [Código de las razones por la cual no se pudo realizar la atención](StructureDefinition-RazonNOrealizarse.html)
-  - [Notas realizadas en un encuentro por Comité](StructureDefinition-NotasEncuentro.html)
-  - [Observaciones o comentarios simples respecto a un diagnóstico](StructureDefinition-ObservacionesDiagnostico.html)
+  - **Especialidad del médico principal**
+  - **Contacto de los participantes secundarios del encuentro**
+  - **Código de las razones por la cual no se pudo realizar la atención**
+  - **Notas realizadas en un encuentro por Comité**
+  - **Observaciones o comentarios simples respecto a un diagnóstico**
   - **Código de tipos de Vacunas en Chile**
   - **Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)**
   - **Razones por las cuales no se pudo realizar la inmunización**
@@ -114,7 +119,7 @@
 
 - Perfil [PacienteCl](StructureDefinition-CorePacienteCl.html)
   - Cambio cardinalidad **birthDate** 1..1 -> 0..1
-  - Cambio cardinalidad **geder** 1..1 -> 0..1
+  - Cambio cardinalidad **gender** 1..1 -> 0..1
 
 ### Version 1.8.2
 - Se agrega CodeSystem y ValueSet *Tipo Identificador*, segun tabla maestra DEIS

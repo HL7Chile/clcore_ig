@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 6, errors = 6, warn = 13, info = 1-->
+<!-- broken links = 0, errors = 0, warn = 2, info = 2-->
 <head>
   <title>clcore : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for clcore</h1>
- <p>Generated Sun Jun 23 21:45:39 CLT 2024, FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.12 (canonical = <a href="https://hl7chile.cl/fhir/ig/clcore">https://hl7chile.cl/fhir/ig/clcore</a> (<a href="https://hl7chile.cl/fhir/ig/clcore/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Mon Jun 24 21:00:03 CLT 2024, FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.12 (canonical = <a href="https://hl7chile.cl/fhir/ig/clcore">https://hl7chile.cl/fhir/ig/clcore</a> (<a href="https://hl7chile.cl/fhir/ig/clcore/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.11</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.cl.clcore, Canonical = https://hl7chile.cl/fhir/ig/clcore</td></tr>
@@ -59,19 +59,20 @@
  <tr><td>Draft Dependencies:</td><td><ul>
   <li>
 hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
- (15 uses),     <a href="http://hl7.org/fhir/R4/auditevent.html">AuditEvent</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/codesystem-signature-type.html">SignatureTypeCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/auditevent.html">AuditEvent</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
  (13 uses),     <a href="http://hl7.org/fhir/R4/valueset-audit-event-action.html">AuditEventAction</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-audit-event-outcome.html">AuditEventOutcome</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-participation-role-type.html">ParticipationRoleType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a>
  (4 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
- (11 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
- (11 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
- (38 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
- (9 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
- (11 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
- (7 uses),     <a href="http://hl7.org/fhir/R4/valueset-network-type.html">AuditEventAgentNetworkType</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (36 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (13 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-network-type.html">AuditEventAgentNetworkType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-audit-entity-type.html">AuditEventEntityType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-object-role.html">AuditEventEntityRole</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
@@ -116,7 +117,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-diagnosis-role.html">DiagnosisRole</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
@@ -151,12 +152,15 @@ hl7.fhir.uv.extensions.r4#5.1.0:     <a href="http://hl7.org/fhir/extensions/5.1
   </li>
   <li>
 hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (78 uses)
+ (79 uses)
   </li>
   <li>
 hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSystem-audit-event-outcome.html">AuditEventOutcome</a>
  (1 uses),     <a href="http://terminology.hl7.org/5.5.0/CodeSystem-extra-security-role-type.html">SecurityRoleType</a>
  (1 uses),     <a href="http://terminology.hl7.org/5.5.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>
+ (2 uses),     <a href="http://terminology.hl7.org/5.5.0/CodeSystem-condition-category.html">ConditionCategoryCodes</a>
+ (1 uses),     <a href="http://terminology.hl7.org/5.5.0/CodeSystem-service-type.html">ServiceType</a>
+ (1 uses),     <a href="http://terminology.hl7.org/5.5.0/CodeSystem-provenance-participant-type.html">ProvenanceParticipantType</a>
  (1 uses)
   </li>
 </ul>
@@ -165,14 +169,14 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
  <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v1.8.10/index.html">Comparison with version 1.8.10</a></td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 6, warn = 13, info = 1, broken links = 6</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 2, info = 2, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>6</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_ImplementationGuide-hl7.fhir.cl.clcore"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.clcore</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -180,63 +184,12 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-CodigoPaises"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CodigoPaises</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-ContactoParticipantes"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ContactoParticipantes</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-DocumentoCl"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-DocumentoCl</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-EncounterCL"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-EncounterCL</b></a></td><td><b>6</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-IdContacto"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-IdContacto</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-IdentidadDeGenero"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-IdentidadDeGenero</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-NotasEncuentro"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-NotasEncuentro</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-ObservacionesDiagnostico"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ObservacionesDiagnostico</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-ProvenanceCl"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ProvenanceCl</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-RazonNOrealizarse"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-RazonNOrealizarse</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-SexoBiologico"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-SexoBiologico</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-VSEspecialidadesDeisCL"><b>C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-VSEspecialidadesDeisCL</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
 <h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="Set-Ejemplos.html#l298">output\Set-Ejemplos&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 221, column 8</a></b></td><td><b>error</b></td><td><b>The link 'Composition-CompositionClEj.html' for &quot;Documento&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="Set-Ejemplos.html#l321">output\Set-Ejemplos&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 233, column 8</a></b></td><td><b>error</b></td><td><b>The link 'Inmunization-ImmunizationEj.html' for &quot;Inmunización&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="Set-Ejemplos.html#l384">output\Set-Ejemplos&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/p&#8203;/a at Line 262, column 9</a></b></td><td><b>error</b></td><td><b>The link 'Patient-PacienteCL2.html' for &quot;Paciente Extranjero&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="Set-Ejemplos.html#l392">output\Set-Ejemplos&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/p&#8203;/a at Line 265, column 9</a></b></td><td><b>error</b></td><td><b>The link 'Patient-PacienteCl-3.html' for &quot;Paciente Nacional, con datos actualizados, declarando nacionalidad&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="Set-Ejemplos.html#l399">output\Set-Ejemplos&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/p&#8203;/a at Line 268, column 9</a></b></td><td><b>error</b></td><td><b>The link 'Patient-PacienteCl-4.html' for &quot;Ejemplo de Recurso de paciente Nacional con contacto declarado&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="changes.html#l500">output\changes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 285, column 8</a></b></td><td><b>error</b></td><td><b>The link 'Inmunization-ImmunizationEj.html' for &quot;Inmunización&quot; cannot be resolved</b></td>
-   </tr>
 </table>
 <hr/>
 <a name="C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_ImplementationGuide-hl7.fhir.cl.clcore"> </a>
@@ -248,7 +201,7 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide (l1/c41592)</b></td><td><b>warning</b></td><td title=""><b>!!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló</b></td>
+     <td><b>ImplementationGuide (l1/c42030)</b></td><td><b>warning</b></td><td title=""><b>!!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló</b></td>
    </tr>
 </table>
 <hr/>
@@ -264,180 +217,16 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
      <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type for CodigoPaises: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
    </tr>
 </table>
-<hr/>
-<a name="C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-ContactoParticipantes"> </a>
-<h2><a href="StructureDefinition-ContactoParticipantes.html">fsh-generated\resources\StructureDefinition-ContactoParticipantes.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/ContactoParticipantes')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-DocumentoCl"> </a>
-<h2><a href="StructureDefinition-DocumentoCl.html">fsh-generated\resources\StructureDefinition-DocumentoCl.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/DocumentoCl')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-EncounterCL"> </a>
-<h2><a href="StructureDefinition-EncounterCL.html">fsh-generated\resources\StructureDefinition-EncounterCL.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[44]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c99214)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Extension#ext-1"><b>Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[44]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c99214)</b></td><td><b>error</b></td><td title="Extension_EXT_Type"><b>La definición para la Extensión 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding' permite los tipos  [] pero se encontró string</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[44]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c99214)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Extension.value[x]: max permitido = 0, pero se han encontrado 1 (de http://hl7.org/fhir/tools/StructureDefinition/additional-binding|0.2.0)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c142069)</b></td><td><b>error</b></td><td title="http://hl7.org/fhir/StructureDefinition/Extension#ext-1"><b>Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c142069)</b></td><td><b>error</b></td><td title="Extension_EXT_Type"><b>La definición para la Extensión 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding' permite los tipos  [] pero se encontró string</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c142069)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>Extension.value[x]: max permitido = 0, pero se han encontrado 1 (de http://hl7.org/fhir/tools/StructureDefinition/additional-binding|0.2.0)</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/EncounterCL')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-IdContacto"> </a>
-<h2><a href="StructureDefinition-IdContacto.html">fsh-generated\resources\StructureDefinition-IdContacto.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/IdContacto')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-IdentidadDeGenero"> </a>
-<h2><a href="StructureDefinition-IdentidadDeGenero.html">fsh-generated\resources\StructureDefinition-IdentidadDeGenero.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/IdentidadDeGenero')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-NotasEncuentro"> </a>
-<h2><a href="StructureDefinition-NotasEncuentro.html">fsh-generated\resources\StructureDefinition-NotasEncuentro.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/NotasEncuentro')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-ObservacionesDiagnostico"> </a>
-<h2><a href="StructureDefinition-ObservacionesDiagnostico.html">fsh-generated\resources\StructureDefinition-ObservacionesDiagnostico.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/ObservacionesDiagnostico')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-ProvenanceCl"> </a>
-<h2><a href="StructureDefinition-ProvenanceCl.html">fsh-generated\resources\StructureDefinition-ProvenanceCl.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/ProvenanceCl')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-RazonNOrealizarse"> </a>
-<h2><a href="StructureDefinition-RazonNOrealizarse.html">fsh-generated\resources\StructureDefinition-RazonNOrealizarse.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/RazonNOrealizarse')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-SexoBiologico"> </a>
-<h2><a href="StructureDefinition-SexoBiologico.html">fsh-generated\resources\StructureDefinition-SexoBiologico.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/SexoBiologico')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_Franco-Trabajo_Documents_clcore_ig_fsh-generated_resources_StructureDefinition-VSEspecialidadesDeisCL"> </a>
-<h2><a href="StructureDefinition-VSEspecialidadesDeisCL.html">fsh-generated\resources\StructureDefinition-VSEspecialidadesDeisCL.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/VSEspecialidadesDeisCL')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
-   </tr>
-</table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
-<a name="Extension_EXT_Type"> </a>
-<h2>Extension_EXT_Type</h2>
+<a name="MSG_DRAFT"> </a>
+<h2>MSG_DRAFT</h2>
  <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-EncounterCL.html">fsh-generated\resources\StructureDefinition-EncounterCL.json</a></td><td><b>La definición para la Extensión 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding' permite los tipos  [] pero se encontró string</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-EncounterCL.html">fsh-generated\resources\StructureDefinition-EncounterCL.json</a></td><td><b>La definición para la Extensión 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding' permite los tipos  [] pero se encontró string</b></td>
+   <tr style="background-color: #fffff2">
+     <td><a href="Encounter-EjemploEncounterCL.html">fsh-generated\resources\Encounter-EjemploEncounterCL.json</a></td><td><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/service-type|1.1.0</b></td>
    </tr>
 </table>
 <hr/>
@@ -446,17 +235,6 @@ hl7.terminology.r4#5.5.0:     <a href="http://terminology.hl7.org/5.5.0/CodeSyst
  <table class="grid">
    <tr style="background-color: #fffff2">
      <td><a href="AuditEvent-AuditEventEx.html">fsh-generated\resources\AuditEvent-AuditEventEx.json</a></td><td><b>Reference to experimental CodeSystem http://terminology.hl7.org/CodeSystem/extra-security-role-type|1.0.0</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Validation_VAL_Profile_Maximum"> </a>
-<h2>Validation_VAL_Profile_Maximum</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-EncounterCL.html">fsh-generated\resources\StructureDefinition-EncounterCL.json</a></td><td><b>Extension.value[x]: max permitido = 0, pero se han encontrado 1 (de http://hl7.org/fhir/tools/StructureDefinition/additional-binding|0.2.0)</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-EncounterCL.html">fsh-generated\resources\StructureDefinition-EncounterCL.json</a></td><td><b>Extension.value[x]: max permitido = 0, pero se han encontrado 1 (de http://hl7.org/fhir/tools/StructureDefinition/additional-binding|0.2.0)</b></td>
    </tr>
 </table>
 </body>

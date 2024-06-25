@@ -5,6 +5,8 @@ Description: "Paciente ficticio nacional CI Chilena, sin sistema de validación 
 InstanceOf : CorePacienteCl
 Usage : #example
 
+* extension[IdentidadDeGenero] = IdentidadDeGeneroPacienteCl
+* extension[SexoBiologico] = SexoBiologicoPacienteCl
 //Identificación por Cédula Chilena
 * identifier.use = #official    //obligado
 * identifier.type.extension[paisEmisionDocumento] = PaisEmisionDocumentoPacienteCL
@@ -47,7 +49,7 @@ Usage : #example
 
 * address = AddressPacienteCL
 
-* contact.extension[IdContacto]
+* contact.extension[IdContacto] = IdentificacionContactoPacienteCL
 * contact.relationship = http://terminology.hl7.org/CodeSystem/v2-0131#N "Next-of-Kin"
 * contact.name.use = #official
 * contact.name.family = "Calleja"
@@ -123,3 +125,15 @@ Usage: #inline
 
 * valueString = "Morales"
 
+Instance: IdentidadDeGeneroPacienteCl
+InstanceOf: IdentidadDeGenero
+Usage: #inline
+
+* valueCodeableConcept = CSIdentidaddeGenero#1 "Masculino"
+
+
+Instance: SexoBiologicoPacienteCl
+InstanceOf: SexoBiologico
+Usage: #inline
+
+* valueCodeableConcept = CSadministrative-gender#male "Male"

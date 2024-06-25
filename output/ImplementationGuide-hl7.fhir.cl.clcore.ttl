@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "clcore"] ; # 
   fhir:title [ fhir:v "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-23T21:41:08-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-24T20:56:59-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;
@@ -782,18 +782,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes> ;
-         fhir:reference [ fhir:v "StructureDefinition/ContactoParticipantes" ]
-       ] ;
-       fhir:name [ fhir:v "Contacto de los participantes secundarios del encuentro" ] ;
-       fhir:description [ fhir:v "Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -802,18 +790,6 @@
        ] ;
        fhir:name [ fhir:v "Contacto participantes" ] ;
        fhir:description [ fhir:v "Contacto telefónico o correo de los participantes" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarse> ;
-         fhir:reference [ fhir:v "StructureDefinition/RazonNOrealizarse" ]
-       ] ;
-       fhir:name [ fhir:v "Código de las razones por la cual no se pudo realizar la atención" ] ;
-       fhir:description [ fhir:v "Esta extensión incluye códigos de razones por la cuales no pudo llevarse a cabo el encuentro remoto" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1034,6 +1010,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Composition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Composition/DocumentoEjemplo1> ;
+         fhir:reference [ fhir:v "Composition/DocumentoEjemplo1" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Cabecera de Documento" ] ;
+       fhir:description [ fhir:v "Este es el ejemplo de la cabecera de un documento" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Medication" ]
        ] ) ;
        fhir:reference [
@@ -1052,6 +1043,36 @@
          fhir:value [ fhir:v "PractitionerRole" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/PractitionerRole/EjemploEspecialidadCL2> ;
+         fhir:reference [ fhir:v "PractitionerRole/EjemploEspecialidadCL2" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Especialidad Medicina Familiar" ] ;
+       fhir:description [ fhir:v "Define la especialidad de medicina familiar que cumnple un profesional en un establecimiento de salud" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Provenance" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Provenance/EjemplValidacionProvCl> ;
+         fhir:reference [ fhir:v "Provenance/EjemplValidacionProvCl" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de la Validación de un documento por medio del Autor" ] ;
+       fhir:description [ fhir:v "Ejemplo de un documento, en la cual el prestador que la ha desarollado genera una validación por medio de una firma" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PractitionerRole" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://hl7chile.cl/fhir/ig/clcore/PractitionerRole/EjemploEspecialidadCL> ;
          fhir:reference [ fhir:v "PractitionerRole/EjemploEspecialidadCL" ]
        ] ;
@@ -1060,6 +1081,21 @@
        fhir:example [
          fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl"^^xsd:anyURI ;
          fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Encounter/EjemploEncounterCL> ;
+         fhir:reference [ fhir:v "Encounter/EjemploEncounterCL" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Encuentro" ] ;
+       fhir:description [ fhir:v "Encuentro remoto ficticio del paciente" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL>
        ]
      ] [
        fhir:extension ( [
@@ -1097,6 +1133,21 @@
          fhir:value [ fhir:v "Practitioner" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Practitioner/EjemploPrestadorCL2> ;
+         fhir:reference [ fhir:v "Practitioner/EjemploPrestadorCL2" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Recurso Prestador 2 como base para un Core Nacional" ] ;
+       fhir:description [ fhir:v "Ejemplo de un Prestador no Real con identificadores en Systemas con APIs \"no disponibles\"" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://hl7chile.cl/fhir/ig/clcore/Practitioner/EjemploPrestadorCL> ;
          fhir:reference [ fhir:v "Practitioner/EjemploPrestadorCL" ]
        ] ;
@@ -1120,6 +1171,21 @@
        fhir:example [
          fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/AuditEventCl"^^xsd:anyURI ;
          fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/AuditEventCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Condition/DiagnosticoEj2> ;
+         fhir:reference [ fhir:v "Condition/DiagnosticoEj2" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Un Diagnóstico de Faringoamigdalitis" ] ;
+       fhir:description [ fhir:v "Diagnóstico Confirmado de Faringoamigdalitis" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl>
        ]
      ] [
        fhir:extension ( [
@@ -1177,18 +1243,6 @@
        ] ;
        fhir:name [ fhir:v "Encuentro Clínico" ] ;
        fhir:description [ fhir:v "Definición de encuentro clínico genérico para Chile" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/VSEspecialidadesDeisCL> ;
-         fhir:reference [ fhir:v "StructureDefinition/VSEspecialidadesDeisCL" ]
-       ] ;
-       fhir:name [ fhir:v "Especialidad del médico principal" ] ;
-       fhir:description [ fhir:v "Esta extensión incluye los códigos de las especialidades que puede tener el medico principal" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1252,30 +1306,6 @@
        ] ;
        fhir:name [ fhir:v "Identificación del Contacto de un Paciente" ] ;
        fhir:description [ fhir:v "Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NotasEncuentro> ;
-         fhir:reference [ fhir:v "StructureDefinition/NotasEncuentro" ]
-       ] ;
-       fhir:name [ fhir:v "Notas realizadas en un encuentro por Comité" ] ;
-       fhir:description [ fhir:v "Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ObservacionesDiagnostico> ;
-         fhir:reference [ fhir:v "StructureDefinition/ObservacionesDiagnostico" ]
-       ] ;
-       fhir:name [ fhir:v "Observaciones o comentarios simples respecto a un diagnóstico" ] ;
-       fhir:description [ fhir:v "Esta extensión sirve para insertar comentarios acerca a un diagnóstico médico realizado en un encuentro remoto" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

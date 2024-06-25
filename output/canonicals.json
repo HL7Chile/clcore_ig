@@ -168,13 +168,6 @@
     "name" : "ComunasCl"
   },
   {
-    "id" : "ContactoParticipantes",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes",
-    "version" : "1.8.12",
-    "name" : "ContactopartCL"
-  },
-  {
     "id" : "CoreDiagnosticoCl",
     "type" : "StructureDefinition",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl",
@@ -259,20 +252,6 @@
     "name" : "ImmunizationCL"
   },
   {
-    "id" : "NotasEncuentro",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NotasEncuentro",
-    "version" : "1.8.12",
-    "name" : "NotasCL"
-  },
-  {
-    "id" : "ObservacionesDiagnostico",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ObservacionesDiagnostico",
-    "version" : "1.8.12",
-    "name" : "ObservacionesNotas"
-  },
-  {
     "id" : "ProvenanceCl",
     "type" : "StructureDefinition",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl",
@@ -285,13 +264,6 @@
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
     "version" : "1.8.12",
     "name" : "ProvinciasCl"
-  },
-  {
-    "id" : "RazonNOrealizarse",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarse",
-    "version" : "1.8.12",
-    "name" : "RazonNOTatencionCL"
   },
   {
     "id" : "RegionesCl",
@@ -313,13 +285,6 @@
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico",
     "version" : "1.8.12",
     "name" : "SexoBiologico"
-  },
-  {
-    "id" : "VSEspecialidadesDeisCL",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/VSEspecialidadesDeisCL",
-    "version" : "1.8.12",
-    "name" : "EspecialidadCL"
   },
   {
     "id" : "cl-address",

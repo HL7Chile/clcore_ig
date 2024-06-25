@@ -41,20 +41,6 @@
       ]
     },
     {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes",
-      "title": "Contacto de los participantes secundarios del encuentro",
-      "types": [
-        "ContactPoint",
-        "string",
-        "Extension",
-        "code",
-        "string",
-        "code",
-        "positiveInt",
-        "Period"
-      ]
-    },
-    {
       "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto",
       "title": "Identificación del Contacto de un Paciente",
       "types": [
@@ -200,20 +186,6 @@
       ]
     },
     {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NotasEncuentro",
-      "title": "Notas realizadas en un encuentro por Comité",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ObservacionesDiagnostico",
-      "title": "Observaciones o comentarios simples respecto a un diagnóstico",
-      "types": [
-        "string"
-      ]
-    },
-    {
       "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
       "title": "Códigos para Provincias en Chile",
       "types": [
@@ -229,13 +201,6 @@
         "string",
         "boolean",
         "string"
-      ]
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarse",
-      "title": "Código de las razones por la cual no se pudo realizar la atención",
-      "types": [
-        "code"
       ]
     },
     {
@@ -268,63 +233,6 @@
       "title": "Sexo Biologico del paciente",
       "types": [
         "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/VSEspecialidadesDeisCL",
-      "title": "Especialidad del médico principal",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Coding"
       ]
     }
   ],
@@ -433,10 +341,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
-      "StructureDefinition.differential.element.binding",
-      "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"

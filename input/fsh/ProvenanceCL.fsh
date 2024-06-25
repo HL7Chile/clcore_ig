@@ -19,6 +19,7 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 
 // ubicación
 * location MS
+* location only Reference(CoreLocalizacionCl)
 * location ^short = "Referencia o identificación de la localización de donde ocurrió la actividad"
 * location ^definition = "Donde la actividad ocurrió"
 
@@ -49,10 +50,12 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 * agent.role ^definition = "La función del agente con respecto a la actividad. La función de seguridad que habilita al agente con respecto a la actividad."
 
 * agent.who MS
+* agent.who  only Reference(CorePrestadorCl or CoreRolClinicoCl or RelatedPerson or CorePacienteCl or Device or CoreOrganizacionCl)
 * agent.who ^short = "Quien emite el recurso"
 * agent.who ^definition = "Definición mediate la id de un recurso al emisor de receta"
 * agent.who.reference ^short = "Referencia al misor del recurso"
 * agent.who.reference ^definition = "Recurso que indica al practitioner que genera el recurso a validar"
+
 
 * signature MS
 * signature ^short = "firma del target"
@@ -69,6 +72,7 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 * signature.when ^definition = "Hora y Fecha de cuando se firmó la validacion"
 
 * signature.who MS
+* signature.who  only Reference(CorePrestadorCl or CoreRolClinicoCl or RelatedPerson or CorePacienteCl or Device or CoreOrganizacionCl)
 * signature.who ^short = "Referencia al firmante"
 * signature.who ^definition = "Referencia al recurso del validador mediante la firma"
 
@@ -79,7 +83,6 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 * signature.sigFormat ^short = "Formato técnico de la firma"
 * signature.sigFormat ^definition = "Un tipo mime que indica el formato técnico de la firma. Los tipos mime importantes son application/signature+xml para X ML DigSig, application/jose para JWS, e image/* para una imagen gráfica de una firma, etc"
 * signature.sigFormat ^comment = "Se sugiere hacer uso de application/jose" 
-
 
 * signature.data 1..1 MS
 * signature.data ^short = "Contenido de la firma (XML DigSig.JWS, imagem, etc.)"

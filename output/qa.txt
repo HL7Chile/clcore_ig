@@ -1,10 +1,10 @@
 clcore : Validation Results
 =========================================
 
-err = 6, warn = 13, info = 1
+err = 0, warn = 2, info = 2
 IG Publisher Version: 1.6.11
-Generated Sun Jun 23 21:45:39 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.12 (canonical = https://hl7chile.cl/fhir/ig/clcore)
- Build Errors : 6 / 0 / 0
+Generated Mon Jun 24 21:00:03 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.8.12 (canonical = https://hl7chile.cl/fhir/ig/clcore)
+ Build Errors : 0 / 0 / 0
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\AuditEvent-AuditEventEx : 0 / 0 / 2
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\CodeSystem-CSCodComunasCL : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\CodeSystem-CSCodMadurez : 0 / 0 / 1
@@ -26,7 +26,10 @@ Generated Sun Jun 23 21:45:39 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\CodeSystem-CSTiposEncuentroCL : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\CodeSystem-CodPais : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\CodeSystem-csrazonnoencuentro : 0 / 0 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Composition-DocumentoEjemplo1 : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Condition-DiagnosticoEj : 0 / 0 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Condition-DiagnosticoEj2 : 0 / 0 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Encounter-EjemploEncounterCL : 0 / 0 / 2
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Immunization-ImmunizationEj : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.clcore : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Location-LocalizacionEjemploCL1 : 0 / 0 / 1
@@ -35,11 +38,13 @@ Generated Sun Jun 23 21:45:39 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Organization-OrganizacionClEjemplo1 : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Patient-PacienteCL : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Practitioner-EjemploPrestadorCL : 0 / 0 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Practitioner-EjemploPrestadorCL2 : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\PractitionerRole-EjemploEspecialidadCL : 0 / 0 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\PractitionerRole-EjemploEspecialidadCL2 : 0 / 0 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\Provenance-EjemplValidacionProvCl : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-AuditEventCl : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CodigoPaises : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ComunasCl : 0 / 0 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ContactoParticipantes : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreDiagnosticoCl : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreLocalizacionCl : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreMedicamentoCl : 0 / 0 / 1
@@ -47,20 +52,16 @@ Generated Sun Jun 23 21:45:39 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CorePacienteCl : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CorePrestadorCl : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-CoreRolClinicoCl : 0 / 0 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-DocumentoCl : 0 / 1 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-EncounterCL : 6 / 1 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-IdContacto : 0 / 1 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-IdentidadDeGenero : 0 / 1 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-DocumentoCl : 0 / 0 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-EncounterCL : 0 / 0 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-IdContacto : 0 / 0 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-IdentidadDeGenero : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ImmunizationCL : 0 / 0 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-NotasEncuentro : 0 / 1 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ObservacionesDiagnostico : 0 / 1 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ProvenanceCl : 0 / 1 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ProvenanceCl : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-ProvinciasCl : 0 / 0 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-RazonNOrealizarse : 0 / 1 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-RegionesCl : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-SegundoApellido : 0 / 0 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-SexoBiologico : 0 / 1 / 1
- C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-VSEspecialidadesDeisCL : 0 / 1 / 1
+ C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-SexoBiologico : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\StructureDefinition-cl-address : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\ValueSet-CodPais : 0 / 0 / 1
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\ValueSet-VSCodMadurez : 0 / 0 / 1
@@ -86,12 +87,6 @@ Generated Sun Jun 23 21:45:39 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\Franco-Trabajo\Documents\clcore_ig\fsh-generated\resources\ValueSet-VSTiposVacunas : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/a at Line 221, column 8: The link 'Composition-CompositionClEj.html' for "Documento" cannot be resolved
-ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/a at Line 233, column 8: The link 'Inmunization-ImmunizationEj.html' for "Inmunización" cannot be resolved
-ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 262, column 9: The link 'Patient-PacienteCL2.html' for "Paciente Extranjero" cannot be resolved
-ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 265, column 9: The link 'Patient-PacienteCl-3.html' for "Paciente Nacional, con datos actualizados, declarando nacionalidad" cannot be resolved
-ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\Set-Ejemplos.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 268, column 9: The link 'Patient-PacienteCl-4.html' for "Ejemplo de Recurso de paciente Nacional con contacto declarado" cannot be resolved
-ERROR: C:\Users\Franco-Trabajo\Documents\clcore_ig\output\changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 285, column 8: The link 'Inmunization-ImmunizationEj.html' for "Inmunización" cannot be resolved
 == fsh-generated\resources\AuditEvent-AuditEventEx.json ==
 INFORMATION: AuditEvent/AuditEventEx: AuditEvent.agent[0].type: Reference to experimental CodeSystem http://terminology.hl7.org/CodeSystem/extra-security-role-type|1.0.0
 == fsh-generated\resources\CodeSystem-CSCodComunasCL.json ==
@@ -114,7 +109,11 @@ INFORMATION: AuditEvent/AuditEventEx: AuditEvent.agent[0].type: Reference to exp
 == fsh-generated\resources\CodeSystem-CSTiposEncuentroCL.json ==
 == fsh-generated\resources\CodeSystem-CodPais.json ==
 == fsh-generated\resources\CodeSystem-csrazonnoencuentro.json ==
+== fsh-generated\resources\Composition-DocumentoEjemplo1.json ==
 == fsh-generated\resources\Condition-DiagnosticoEj.json ==
+== fsh-generated\resources\Condition-DiagnosticoEj2.json ==
+== fsh-generated\resources\Encounter-EjemploEncounterCL.json ==
+INFORMATION: Encounter/EjemploEncounterCL: Encounter.serviceType: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/service-type|1.1.0
 == fsh-generated\resources\Immunization-ImmunizationEj.json ==
 == fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.clcore.json ==
 WARNING: ImplementationGuide/hl7.fhir.cl.clcore: ImplementationGuide: !!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló
@@ -124,13 +123,14 @@ WARNING: ImplementationGuide/hl7.fhir.cl.clcore: ImplementationGuide: !!La regla
 == fsh-generated\resources\Organization-OrganizacionClEjemplo1.json ==
 == fsh-generated\resources\Patient-PacienteCL.json ==
 == fsh-generated\resources\Practitioner-EjemploPrestadorCL.json ==
+== fsh-generated\resources\Practitioner-EjemploPrestadorCL2.json ==
 == fsh-generated\resources\PractitionerRole-EjemploEspecialidadCL.json ==
+== fsh-generated\resources\PractitionerRole-EjemploEspecialidadCL2.json ==
+== fsh-generated\resources\Provenance-EjemplValidacionProvCl.json ==
 == fsh-generated\resources\StructureDefinition-AuditEventCl.json ==
 == fsh-generated\resources\StructureDefinition-CodigoPaises.json ==
 WARNING: StructureDefinition/CodigoPaises: StructureDefinition.context[0]: Review the extension type for CodigoPaises: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated\resources\StructureDefinition-ComunasCl.json ==
-== fsh-generated\resources\StructureDefinition-ContactoParticipantes.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-CoreDiagnosticoCl.json ==
 == fsh-generated\resources\StructureDefinition-CoreLocalizacionCl.json ==
 == fsh-generated\resources\StructureDefinition-CoreMedicamentoCl.json ==
@@ -139,35 +139,15 @@ WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/Str
 == fsh-generated\resources\StructureDefinition-CorePrestadorCl.json ==
 == fsh-generated\resources\StructureDefinition-CoreRolClinicoCl.json ==
 == fsh-generated\resources\StructureDefinition-DocumentoCl.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-EncounterCL.json ==
-ERROR: StructureDefinition/EncounterCL: StructureDefinition.snapshot.element[44].binding.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: StructureDefinition/EncounterCL: StructureDefinition.snapshot.element[44].binding.extension[0]: La definición para la Extensión 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding' permite los tipos  [] pero se encontró string
-ERROR: StructureDefinition/EncounterCL: StructureDefinition.snapshot.element[44].binding.extension[0]: Extension.value[x]: max permitido = 0, pero se han encontrado 1 (de http://hl7.org/fhir/tools/StructureDefinition/additional-binding|0.2.0)
-ERROR: StructureDefinition/EncounterCL: StructureDefinition.differential.element[14].binding.extension[0]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
-ERROR: StructureDefinition/EncounterCL: StructureDefinition.differential.element[14].binding.extension[0]: La definición para la Extensión 'http://hl7.org/fhir/tools/StructureDefinition/additional-binding' permite los tipos  [] pero se encontró string
-ERROR: StructureDefinition/EncounterCL: StructureDefinition.differential.element[14].binding.extension[0]: Extension.value[x]: max permitido = 0, pero se han encontrado 1 (de http://hl7.org/fhir/tools/StructureDefinition/additional-binding|0.2.0)
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-IdContacto.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-IdentidadDeGenero.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-ImmunizationCL.json ==
-== fsh-generated\resources\StructureDefinition-NotasEncuentro.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NotasEncuentro'): The Implementation Guide contains no examples for this extension
-== fsh-generated\resources\StructureDefinition-ObservacionesDiagnostico.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ObservacionesDiagnostico'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-ProvenanceCl.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-ProvinciasCl.json ==
-== fsh-generated\resources\StructureDefinition-RazonNOrealizarse.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarse'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-RegionesCl.json ==
 == fsh-generated\resources\StructureDefinition-SegundoApellido.json ==
 == fsh-generated\resources\StructureDefinition-SexoBiologico.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico'): The Implementation Guide contains no examples for this extension
-== fsh-generated\resources\StructureDefinition-VSEspecialidadesDeisCL.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/VSEspecialidadesDeisCL'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-cl-address.json ==
 == fsh-generated\resources\ValueSet-CodPais.json ==
 == fsh-generated\resources\ValueSet-VSCodMadurez.json ==

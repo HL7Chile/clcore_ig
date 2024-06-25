@@ -1,4 +1,4 @@
-Instance : EncounterCL
+Instance : EjemploEncounterCL
 Title : "Ejemplo de Recurso Encuentro"
 Description: "Encuentro remoto ficticio del paciente"
 InstanceOf : EncounterCL
@@ -20,7 +20,7 @@ Usage : #example
 
 * participant[0]
   * type
-    * coding = http://terminology.hl7.org/CodeSystem/participant-type#ATND "attender"
+    * coding = 	http://terminology.hl7.org/CodeSystem/v3-ParticipationType#ATND "attender"
     * text = "Atendedor"
   * individual = Reference(EjemploEspecialidadCL2)
 

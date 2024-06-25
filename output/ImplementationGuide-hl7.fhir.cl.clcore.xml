@@ -11,7 +11,7 @@
   <name value="clcore"/>
   <title value="Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"/>
   <status value="active"/>
-  <date value="2024-06-23T21:41:08-04:00"/>
+  <date value="2024-06-24T20:56:59-04:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -693,17 +693,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ContactoParticipantes"/>
-      </reference>
-      <name value="Contacto de los participantes secundarios del encuentro"/>
-      <description value="Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -711,17 +700,6 @@
       </reference>
       <name value="Contacto participantes"/>
       <description value="Contacto telefónico o correo de los participantes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/RazonNOrealizarse"/>
-      </reference>
-      <name value="Código de las razones por la cual no se pudo realizar la atención"/>
-      <description value="Esta extensión incluye códigos de razones por la cuales no pudo llevarse a cabo el encuentro remoto"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -924,6 +902,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/DocumentoEjemplo1"/>
+      </reference>
+      <name value="Ejemplo de Cabecera de Documento"/>
+      <description value="Este es el ejemplo de la cabecera de un documento"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Medication"/>
       </extension>
       <reference>
@@ -938,11 +927,44 @@
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
+        <reference value="PractitionerRole/EjemploEspecialidadCL2"/>
+      </reference>
+      <name value="Ejemplo de Especialidad Medicina Familiar"/>
+      <description value="Define la especialidad de medicina familiar que cumnple un profesional en un establecimiento de salud"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/EjemplValidacionProvCl"/>
+      </reference>
+      <name value="Ejemplo de la Validación de un documento por medio del Autor"/>
+      <description value="Ejemplo de un documento, en la cual el prestador que la ha desarollado genera una validación por medio de una firma"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
         <reference value="PractitionerRole/EjemploEspecialidadCL"/>
       </reference>
       <name value="Ejemplo de Recurso de especialidad"/>
       <description value="Define la especialidad que cumnple en un establecimiento de salud"/>
       <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/EjemploEncounterCL"/>
+      </reference>
+      <name value="Ejemplo de Recurso Encuentro"/>
+      <description value="Encuentro remoto ficticio del paciente"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -971,6 +993,17 @@
         <valueString value="Practitioner"/>
       </extension>
       <reference>
+        <reference value="Practitioner/EjemploPrestadorCL2"/>
+      </reference>
+      <name value="Ejemplo de Recurso Prestador 2 como base para un Core Nacional"/>
+      <description value="Ejemplo de un Prestador no Real con identificadores en Systemas con APIs &quot;no disponibles&quot;"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
         <reference value="Practitioner/EjemploPrestadorCL"/>
       </reference>
       <name value="Ejemplo de Recurso Prestador como base para un Core Nacional"/>
@@ -987,6 +1020,17 @@
       <name value="Ejemplo de un Audit-Event Search."/>
       <description value="Log de Audición de una operacion Search."/>
       <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/AuditEventCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/DiagnosticoEj2"/>
+      </reference>
+      <name value="Ejemplo de Un Diagnóstico de Faringoamigdalitis"/>
+      <description value="Diagnóstico Confirmado de Faringoamigdalitis"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1030,17 +1074,6 @@
       </reference>
       <name value="Encuentro Clínico"/>
       <description value="Definición de encuentro clínico genérico para Chile"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/VSEspecialidadesDeisCL"/>
-      </reference>
-      <name value="Especialidad del médico principal"/>
-      <description value="Esta extensión incluye los códigos de las especialidades que puede tener el medico principal"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1096,28 +1129,6 @@
       </reference>
       <name value="Identificación del Contacto de un Paciente"/>
       <description value="Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/NotasEncuentro"/>
-      </reference>
-      <name value="Notas realizadas en un encuentro por Comité"/>
-      <description value="Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservacionesDiagnostico"/>
-      </reference>
-      <name value="Observaciones o comentarios simples respecto a un diagnóstico"/>
-      <description value="Esta extensión sirve para insertar comentarios acerca a un diagnóstico médico realizado en un encuentro remoto"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

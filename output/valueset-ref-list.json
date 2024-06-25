@@ -145,8 +145,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -160,8 +160,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -204,20 +204,6 @@
       ],
       "oids" : ["2.16.840.1.113883.4.642.3.250"],
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
-      "uses" : {
-      },
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "EncounterReasonCodes",
-      "title" : "Encounter Reason Codes",
-      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.3.261"],
-      "sources" : ["2.16.840.1.113883.4.642.3.261"],
       "uses" : {
       },
       "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
@@ -485,10 +471,7 @@
       "name" : "VSContactoSecundario",
       "title" : "Contacto participantes",
       "description" : "Contacto telefónico o correo de los participantes",
-      "systems" : ["http://hl7.org/fhir/contact-point-system"],
-      "uses" : {
-      },
-      "StructureDefinition-ContactoParticipantes.html" : "Contacto de los participantes secundarios del encuentro"
+      "systems" : ["http://hl7.org/fhir/contact-point-system"]
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT",
@@ -514,8 +497,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-VSEspecialidadesDeisCL.html" : "Especialidad del médico principal"
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero",
@@ -560,10 +542,7 @@
       "description" : "Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local",
       "systems" : [
         "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-RazonNOrealizarse.html" : "Código de las razones por la cual no se pudo realizar la atención"
+      ]
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",

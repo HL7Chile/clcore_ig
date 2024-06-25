@@ -4,7 +4,7 @@ Los siguientes ejemplos se publican con esta Guía.
 <br>
 
 ### Documento
-* [Documento](Composition-CompositionClEj.html)<br>
+* [Documento](Composition-DocumentoEjemplo1.html)<br>
 
 #### Especialidad Clínica
 
@@ -12,7 +12,7 @@ Los siguientes ejemplos se publican con esta Guía.
 <br>
 
 #### Inmunización
-* [Inmunización](Inmunization-ImmunizationEj.html)<br>
+* [Inmunización](Immunization-ImmunizationEj.html)<br>
 
 #### Localización
 * [Localización de Farmacia](Location-LocalizacionEjemploCL1.html)     
@@ -28,13 +28,14 @@ Los siguientes ejemplos se publican con esta Guía.
 #### Paciente
 * [Paciente Chileno](Patient-PacienteCL.html) <br>
 
+<!--
 * [Paciente Extranjero](Patient-PacienteCL2.html)<br>
 
 * [Paciente Nacional, con datos actualizados, declarando nacionalidad](Patient-PacienteCl-3.html)
 
 * [Ejemplo de Recurso de paciente Nacional con contacto declarado](Patient-PacienteCl-4.html)
 
-<!--
+
 * [Ejemplo de Recurso de paciente Nacional con contacto declarado y extensión en dirección](Patient-PacienteCl-5.html)
 -->
 
