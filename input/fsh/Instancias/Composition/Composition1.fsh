@@ -15,7 +15,7 @@ Description: "Este es el ejemplo de la cabecera de un documento"
 * encounter = Reference(EjemploEncounterCL)
 * date = "2022-08-07T10:30:00-03:00"
 * author = Reference(EjemploEspecialidadCL2)
-* title = "Estudio Diagnostico del Paciente"
+* title = "Registro Médico de Una Condición al Paciente"
 * custodian = Reference(OrganizacionClEjemplo1)
 * section[0]
   * code
