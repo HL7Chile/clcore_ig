@@ -145,8 +145,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -160,8 +160,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -221,22 +221,6 @@
       "uses" : {
       },
       "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/immunization-program-eligibility",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ImmunizationProgramEligibility",
-      "title" : "Immunization Program Eligibility",
-      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the patient's eligibility for a vaccination program. This value set is provided as a suggestive example.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.291"],
-      "sources" : ["2.16.840.1.113883.4.642.3.291"],
-      "uses" : {
-      },
-      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
@@ -442,15 +426,6 @@
       "StructureDefinition-RegionesCl.html" : "Códigos para Regiones en Chile"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "VSCodigosServiciosSaludCL",
-      "title" : "Servicos de Salud en Chile",
-      "description" : "Códigos de Servicios de Salud que existen en Chile",
-      "systems" : ["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"]
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigoslenguaje",
       "version" : "1.8.12",
       "status" : "active",
@@ -463,15 +438,6 @@
       "uses" : {
       },
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
-    },
-    {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "VSContactoSecundario",
-      "title" : "Contacto participantes",
-      "description" : "Contacto telefónico o correo de los participantes",
-      "systems" : ["http://hl7.org/fhir/contact-point-system"]
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT",
@@ -522,38 +488,10 @@
       "description" : "Campañas de Inmunización utilizada en Chile según CodeSystem local",
       "systems" : [
         "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana"
-      ]
-    },
-    {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSPrevision",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "VSPrevision",
-      "title" : "Prevision",
-      "description" : "Prevision",
-      "systems" : ["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"]
-    },
-    {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "VSRazonNOencuentro",
-      "title" : "Razones no Atención Remota",
-      "description" : "Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local",
-      "systems" : [
-        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro"
-      ]
-    },
-    {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "VSRazonNOTinmCL",
-      "title" : "Razones no Inmunización",
-      "description" : "Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local",
-      "systems" : [
-        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis",
@@ -617,7 +555,10 @@
       "description" : "Códigos de Encuentros según MINSAL",
       "systems" : [
         "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposServicio",
@@ -628,7 +569,10 @@
       "description" : "Tipos de Servicios para encuentro remoto según CodeSystem local",
       "systems" : [
         "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposVacunas",
@@ -639,7 +583,10 @@
       "description" : "Tipos de Vacunas utilizadas en Chile según CodeSystem local",
       "systems" : [
         "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización"
     }
   ]
 }

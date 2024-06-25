@@ -12,9 +12,13 @@ Usage : #example
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.display = "Virtual"
 
+* type 
+  * coding[0] = CSTiposEncuentroCL#PR "Programada"
+  * text = "Programada"
+
 * serviceType
-  * coding[0] = http://terminology.hl7.org/CodeSystem/service-type#76 "Health Counselling"
-  * text = "Consulta Médica"
+  * coding[0] = CSCodServicioCL#medGen "Medicina General"
+  * text = "Medicina General"
 
 * subject = Reference(PacienteCL)
 

@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "0bc6e5c8-ac3b-46fa-8ac0-7abe9a36b279-56",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/0bc6e5c8-ac3b-46fa-8ac0-7abe9a36b279-56",
+  "id" : "f07773fd-a62c-443b-9d8b-9c1cd3a80f69-44",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/f07773fd-a62c-443b-9d8b-9c1cd3a80f69-44",
   "name" : "UnionCSCodPaisesAndCSCodPaises",
   "title" : "Union of Códigos de Países And Códigos de Países",
   "status" : "active",
-  "date" : "2024-06-24T20:57:20-04:00",
+  "date" : "2024-06-25T09:03:25-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

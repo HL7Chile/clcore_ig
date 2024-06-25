@@ -53,10 +53,17 @@
   - Se cambia la referencia de agent.who y signature.who a los perfiles que existan en la guía y aquellos que no, se referencian al estandar.
 
 - Se vuelve habilitar los siguientes ejemplos corregidos:
- *  [Localización de Farmacia](Location-LocalizacionEjemploCL1.html)
- *  [Inmunización](Immunization-ImmunizationEj.html)
- *  [Documento](Composition-DocumentoEjemplo1.html)
+ - [Localización de Farmacia](Location-LocalizacionEjemploCL1.html)
+ - [Inmunización](Immunization-ImmunizationEj.html)
+ - [Documento](Composition-DocumentoEjemplo1.html)
 
+- ValueSet deprecados:
+  - Códigos de Servicos de Salud en Chile
+  - Contacto participantes
+  - Razones por la que no se pudieron realizar la atención
+- CodeSystem deprecados:
+  - Códigos del Sistema Nacional de Servicios de Salud
+  - Códigos de razones por la cuales el encuentro remoto no se pudo llevar a cabo
 
 ### Version 1.8.9
 - Version de prueba debido a cambios en los publicadores

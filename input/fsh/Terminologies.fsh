@@ -1036,7 +1036,7 @@ Description: "Tipos de Documentos clínicos para Composition. Se trae todo Loinc
 
 * codes from system http://loinc.org
 
-
+/*
 CodeSystem: CSRazonNOencuentroCL
 Id: CSRazonNOT
 Title: "Razones Cancelación Atención Remota"
@@ -1056,7 +1056,7 @@ Description: "Códigos de las razones por la cual un encuentro remoto no pudo re
 * #problConex "El participante tuvo problemas de conexión a internet"
 * #medproblConex "Tuve problemas de conexión a internet"
 * #otros "Otros / texto libre"
-
+*/
 
 ValueSet: VSTiposVacunasCL
 Id: VSTiposVacunas
@@ -1267,10 +1267,7 @@ Description: "Códigos de las razones por la cual el registro de inmunización n
 * #otras "Otras"
 * #contraindicación "Contraindicación"
 * #solicitudPad "Solicitud de los Padres"
-
-
-
-
+/*
 ValueSet: VSCodigosServiciosSaludCL
 Id: VSCodigosServiciosSalud
 Title: "Servicos de Salud en Chile"
@@ -1328,6 +1325,7 @@ Description:  "Códigos del Sistema Nacional de Servicios de Salud"
 * #SSCH "Servicio de Salud Chiloé"
 * #SSAY "Servicio de Salud Aysén"
 * #SSMA "Servicio de Salud Magallanes"
+*/
 
 ValueSet: VSCodigoslenguaje
 Id: VSCodigoslenguaje
@@ -1479,7 +1477,7 @@ Description: "Códigos para los Servicios realizados en un encuentro remoto seg�
 * #nutINTA	"Nutrición INTA"
 * #nedINTA	"Medicina INTA"
 * #medInt	"Medicina Interna"
-* #saludMDigital	"Salud Mental Digital"
+* #saludMDigital "Salud Mental Digital"
 * #medGen	"Medicina General"
 * #derm	"Dermatología"
 * #telDiabetes	"Telemedicina Diabetes"
@@ -1491,7 +1489,7 @@ Description: "Códigos para los Servicios realizados en un encuentro remoto seg�
 * #geri	"Geriatría"
 * #gine	"Ginecología"
 
-
+/*
 ValueSet: VSContactoSecundario
 Id: VSContactosec
 Title: "Contacto participantes"
@@ -1507,7 +1505,6 @@ Description: "Contacto telefónico o correo de los participantes"
 
 * include codes from system ContactPointSystem
 	
-
 ValueSet: VSRazonNOencuentro
 Id: VSRazonNOT
 Title: "Razones no Atención Remota"
@@ -1542,7 +1539,7 @@ Description: "Códigos de las razones por la cual un encuentro remoto no pudo re
 * #problcon "El participante tuvo problemas de conexión a internet" "Indica que existieron problemas de conexión a internet para conectarse con el médico"
 * #medicoproblcon "Tuve problemas de conexión a internet" "Indica problemas de conexión a internet que tuvo el médico"
 * #otros "Otros, texto libre" "Cualquier otro motivo"
-
+*/
 
 ValueSet: VSTipoIdentificador
 Id: VSTipoIdentificador
@@ -1587,7 +1584,6 @@ Description: "Tipo Identificador"
 * #12 "Número de Ficha Clínica Sistema Local" "Número de Ficha Clínica Sistema Local"
 * #13 "RNPI" "Registro Nacional de Prestadores Individuales"
 * #14 "OTRO" "Otro tipo de identificador"
-
 
 ValueSet: VSIdentidaddeGenero
 Id: VSIdentidaddeGenero
@@ -1661,7 +1657,7 @@ Description: "Sexo Listado Deis"
 * #93 "No Informado"
 * #99 "Desconocido"
 
-
+/*
 ValueSet: VSPrevision
 Id: VSPrevision
 Title: "Prevision"
@@ -1698,5 +1694,5 @@ Description: "Prevision"
 * #05	"SISA" 
 * #96	"NINGUNA"
 * #99	"DESCONOCIDO"
-
+*/
 

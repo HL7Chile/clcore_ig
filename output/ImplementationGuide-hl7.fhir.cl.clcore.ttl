@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "clcore"] ; # 
   fhir:title [ fhir:v "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-24T20:56:59-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-25T09:03:09-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;
@@ -785,18 +785,6 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec> ;
-         fhir:reference [ fhir:v "ValueSet/VSContactosec" ]
-       ] ;
-       fhir:name [ fhir:v "Contacto participantes" ] ;
-       fhir:description [ fhir:v "Contacto telefónico o correo de los participantes" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosComunaCL> ;
          fhir:reference [ fhir:v "ValueSet/VSCodigosComunaCL" ]
        ] ;
@@ -1055,6 +1043,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Medication/MedicamentoCl-2> ;
+         fhir:reference [ fhir:v "Medication/MedicamentoCl-2" ]
+       ] ;
+       fhir:name [ fhir:v "Ejemplo de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido" ] ;
+       fhir:description [ fhir:v "Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Provenance" ]
        ] ) ;
        fhir:reference [
@@ -1247,21 +1250,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Medication" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Medication/MedicamentoCl-2> ;
-         fhir:reference [ fhir:v "Medication/MedicamentoCl-2" ]
-       ] ;
-       fhir:name [ fhir:v "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido" ] ;
-       fhir:description [ fhir:v "Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC" ] ;
-       fhir:example [
-         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"^^xsd:anyURI ;
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -1310,90 +1298,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSPrevision> ;
-         fhir:reference [ fhir:v "ValueSet/VSPrevision" ]
-       ] ;
-       fhir:name [ fhir:v "Prevision" ] ;
-       fhir:description [ fhir:v "Prevision" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision> ;
-         fhir:reference [ fhir:v "CodeSystem/CSPrevision" ]
-       ] ;
-       fhir:name [ fhir:v "Prevision" ] ;
-       fhir:description [ fhir:v "Prevision" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOT> ;
-         fhir:reference [ fhir:v "CodeSystem/CSRazonNOT" ]
-       ] ;
-       fhir:name [ fhir:v "Razones Cancelación Atención Remota" ] ;
-       fhir:description [ fhir:v "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT> ;
-         fhir:reference [ fhir:v "ValueSet/VSRazonNOT" ]
-       ] ;
-       fhir:name [ fhir:v "Razones no Atención Remota" ] ;
-       fhir:description [ fhir:v "Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm> ;
-         fhir:reference [ fhir:v "ValueSet/VSRazonNOTinm" ]
-       ] ;
-       fhir:name [ fhir:v "Razones no Inmunización" ] ;
-       fhir:description [ fhir:v "Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm> ;
-         fhir:reference [ fhir:v "CodeSystem/CSRazonNOTinm" ]
-       ] ;
-       fhir:name [ fhir:v "Razones no Inmunización" ] ;
-       fhir:description [ fhir:v "Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro> ;
-         fhir:reference [ fhir:v "CodeSystem/csrazonnoencuentro" ]
-       ] ;
-       fhir:name [ fhir:v "Razón Encuentro Remoto no Realizado" ] ;
-       fhir:description [ fhir:v "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -1402,30 +1306,6 @@
        ] ;
        fhir:name [ fhir:v "Segundo Apellido" ] ;
        fhir:description [ fhir:v "Segundo Apellido" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud> ;
-         fhir:reference [ fhir:v "CodeSystem/CSCodSSalud" ]
-       ] ;
-       fhir:name [ fhir:v "Servicios de Salud Chile" ] ;
-       fhir:description [ fhir:v "Códigos del Sistema Nacional de Servicios de Salud" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud> ;
-         fhir:reference [ fhir:v "ValueSet/VSCodigosServiciosSalud" ]
-       ] ;
-       fhir:name [ fhir:v "Servicos de Salud en Chile" ] ;
-       fhir:description [ fhir:v "Códigos de Servicios de Salud que existen en Chile" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

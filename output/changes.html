@@ -246,10 +246,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Perfil <a href="StructureDefinition-CorePacienteCl.html">PacienteCL</a>
     <ul>
       <li>Se cambio referencia de <strong>generalPractitioner</strong> de Organization -&gt; OrganizacionCL y Practitioner -&gt; PrestadorCL</li>
-      <li>Se genera ejemplo [Patient-PacienteCL.html]</li>
+      <li>Se genera <a href="Patient-PacienteCL.html">Ejemplo de Recurso Paciente Nacional</a></li>
     </ul>
   </li>
-  <li>Perfil<a href="StructureDefinition-CoreRolClinicoCl.html">CoreRolClinicoCl</a>
+  <li>Perfil <a href="StructureDefinition-CoreRolClinicoCl.html">CoreRolClinicoCl</a>
     <ul>
       <li>Se modifica la referencia organization al <strong>OrganizationCL</strong></li>
       <li>Se modifica la referencia location al <strong>CoreLocalizacionCl</strong></li>
@@ -269,27 +269,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se genera Ejemplo <a href="Practitioner-EjemploPrestadorCL2.html">Ejemplo de Recurso Prestador 2 como base para un Core Nacional</a></li>
     </ul>
   </li>
-  <li>Perfil<a href="StructureDefinition-AuditEventCl.html">AuditEventCl</a>
+  <li>Perfil <a href="StructureDefinition-AuditEventCl.html">AuditEventCl</a>
     <ul>
       <li>Subtype.system y Type.system se elimina MS</li>
       <li>Subtype.code MS se elimina</li>
     </ul>
   </li>
-  <li>Perfil<a href="StructureDefinition-EncounterCL.html">EncounterCL</a>
+  <li>Perfil <a href="StructureDefinition-EncounterCL.html">EncounterCL</a>
     <ul>
       <li>Se depreca el uso de extensiones en el perfil</li>
       <li>Se elimina el uso de slice del participant</li>
       <li>Se actualiza periodo de 1..1 -&gt; 0..1</li>
     </ul>
   </li>
-  <li>Perfil<a href="StructureDefinition-CoreDiagnosticoCl.html">CL Condición-Diagnóstico</a>
+  <li>Perfil <a href="StructureDefinition-CoreDiagnosticoCl.html">CL Condición-Diagnóstico</a>
     <ul>
       <li>Paso el verification Status a MS</li>
       <li>Ejemplo: <a href="Condition-DiagnosticoEj.html">Ejemplo de Un Diagnóstico de hipertensión</a></li>
       <li>Ejemplo: <a href="Condition-DiagnosticoEj2.html">Ejemplo de Un Diagnóstico de Faringoamigdalitis</a></li>
     </ul>
   </li>
-  <li>Perfil<a href="StructureDefinition-ProvenanceCl.html">CL Provenance</a>
+  <li>Perfil <a href="StructureDefinition-ProvenanceCl.html">CL Provenance</a>
     <ul>
       <li>Se cambia la referencia de location al perfil de la guía</li>
       <li>Se cambia la referencia de agent.who y signature.who a los perfiles que existan en la guía y aquellos que no, se referencian al estandar.</li>
@@ -298,7 +298,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Se vuelve habilitar los siguientes ejemplos corregidos:</li>
   <li><a href="Location-LocalizacionEjemploCL1.html">Localización de Farmacia</a></li>
   <li><a href="Immunization-ImmunizationEj.html">Inmunización</a></li>
-  <li><a href="Composition-DocumentoEjemplo1.html">Documento</a></li>
+  <li>
+    <p><a href="Composition-DocumentoEjemplo1.html">Documento</a></p>
+  </li>
+  <li>valueSet deprecados:
+    <ul>
+      <li>Códigos de Servicos de Salud en Chile</li>
+      <li>Contacto participantes</li>
+      <li></li>
+    </ul>
+  </li>
 </ul>
 
 <h3 id="version-189">Version 1.8.9</h3>
@@ -424,7 +433,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 24, 2024 20:56-0400">2024-06-24</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 25, 2024 09:03-0400">2024-06-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

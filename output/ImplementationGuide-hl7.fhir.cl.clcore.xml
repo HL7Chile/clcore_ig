@@ -11,7 +11,7 @@
   <name value="clcore"/>
   <title value="Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"/>
   <status value="active"/>
-  <date value="2024-06-24T20:56:59-04:00"/>
+  <date value="2024-06-25T09:03:09-04:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -696,17 +696,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VSContactosec"/>
-      </reference>
-      <name value="Contacto participantes"/>
-      <description value="Contacto telefónico o correo de los participantes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/VSCodigosComunaCL"/>
       </reference>
       <name value="Códigos de Comunas en Chile"/>
@@ -935,6 +924,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/MedicamentoCl-2"/>
+      </reference>
+      <name value="Ejemplo de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"/>
+      <description value="Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC"/>
+      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Provenance"/>
       </extension>
       <reference>
@@ -1078,17 +1078,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Medication"/>
-      </extension>
-      <reference>
-        <reference value="Medication/MedicamentoCl-2"/>
-      </reference>
-      <name value="Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"/>
-      <description value="Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC"/>
-      <exampleCanonical value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1133,83 +1122,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSPrevision"/>
-      </reference>
-      <name value="Prevision"/>
-      <description value="Prevision"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSPrevision"/>
-      </reference>
-      <name value="Prevision"/>
-      <description value="Prevision"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSRazonNOT"/>
-      </reference>
-      <name value="Razones Cancelación Atención Remota"/>
-      <description value="Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSRazonNOT"/>
-      </reference>
-      <name value="Razones no Atención Remota"/>
-      <description value="Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSRazonNOTinm"/>
-      </reference>
-      <name value="Razones no Inmunización"/>
-      <description value="Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSRazonNOTinm"/>
-      </reference>
-      <name value="Razones no Inmunización"/>
-      <description value="Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/csrazonnoencuentro"/>
-      </reference>
-      <name value="Razón Encuentro Remoto no Realizado"/>
-      <description value="Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1217,28 +1129,6 @@
       </reference>
       <name value="Segundo Apellido"/>
       <description value="Segundo Apellido"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSCodSSalud"/>
-      </reference>
-      <name value="Servicios de Salud Chile"/>
-      <description value="Códigos del Sistema Nacional de Servicios de Salud"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSCodigosServiciosSalud"/>
-      </reference>
-      <name value="Servicos de Salud en Chile"/>
-      <description value="Códigos de Servicios de Salud que existen en Chile"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

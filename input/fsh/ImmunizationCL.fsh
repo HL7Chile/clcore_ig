@@ -30,11 +30,12 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * programEligibility MS
 * programEligibility ^short = "Indica la elegibilidad de un paciente para un programa de financiamiento"
 * programEligibility ^definition = "Indica la elegibilidad de un paciente para un programa de financiamiento"
-* programEligibility from http://hl7.org/fhir/ValueSet/immunization-program-eligibility (example)
+* programEligibility from VSNombreCampanaCL (example)
 
 * vaccineCode MS
 * vaccineCode ^short = "Vacuna que se administró o se iba a administrar"
 * vaccineCode ^definition = "Vacuna que se administró o se iba a administrar. Se proporciona valores que utilizan en el RNI (Registro Nacional de Inmunizaciones)"
+* vaccineCode from VSTiposVacunasCL (example)
 //* vaccineCode.extension ^short = "Nombre de vacuna administrada"
 //* vaccineCode.extension contains TiposVacunaCL named tipov 1..1 
 
@@ -69,6 +70,7 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * statusReason  MS
 * statusReason ^short = "Razón de no realizarse la inmunización"
 * statusReason ^definition = "Indica la razón por la que no se realizó el evento de inmunización"
+* statusReason from VSRazonNOTinm (example)
 // * statusReason.extension ^short = "Motivo de no realizar la inmunización"
 // * statusReason.extension contains RazonNOTinmunizacionCL named statusReason 0..1
 

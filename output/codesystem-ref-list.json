@@ -11,8 +11,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
-      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
     },
     {
       "url" : "http://hl7.org/fhir/administrative-gender",
@@ -84,8 +84,7 @@
       "oids" : ["2.16.840.1.113883.4.642.4.72"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem",
-      "ValueSet-VSContactosec.html" : "Contacto participantes"
+      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem"
     },
     {
       "url" : "http://hl7.org/fhir/contact-point-use",
@@ -255,18 +254,6 @@
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "ImmunizationProgramEligibility",
-      "title" : "Immunization Program Eligibility",
-      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the patient's eligibility for a vaccination program. This value set is provided as a suggestive example.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1099"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-immunization-program-eligibility.html" : "Immunization Program Eligibility"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
       "version" : "1.0.0",
       "status" : "active",
@@ -335,8 +322,8 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
-      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
@@ -457,17 +444,6 @@
       "ValueSet-VSCodigosRegionesCL.html" : "Códigos de Regiones en Chile"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "CSCodSSaludCL",
-      "title" : "Servicios de Salud Chile",
-      "description" : "Códigos del Sistema Nacional de Servicios de Salud",
-      "uses" : {
-      },
-      "ValueSet-VSCodigosServiciosSalud.html" : "Servicos de Salud en Chile"
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI",
       "version" : "1.8.12",
       "status" : "active",
@@ -545,28 +521,6 @@
       "ValueSet-VSNombreCampana.html" : "Campañas de Vacunación"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "CSPrevision",
-      "title" : "Prevision",
-      "description" : "Prevision",
-      "uses" : {
-      },
-      "ValueSet-VSPrevision.html" : "Prevision"
-    },
-    {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "CSRazonNOinmunizacionCL",
-      "title" : "Razones no Inmunización",
-      "description" : "Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud",
-      "uses" : {
-      },
-      "ValueSet-VSRazonNOTinm.html" : "Razones no Inmunización"
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis",
       "version" : "1.8.12",
       "status" : "active",
@@ -586,8 +540,8 @@
       "description" : "Tipo Identificador",
       "uses" : {
       },
-      "ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos",
-      "ValueSet-VSTipoIdentificador.html" : "Tipo Identificador"
+      "ValueSet-VSTipoIdentificador.html" : "Tipo Identificador",
+      "ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL",
@@ -610,17 +564,6 @@
       "uses" : {
       },
       "ValueSet-CodPais.html" : "Códigos de Países"
-    },
-    {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "CSrazonnoencuentro",
-      "title" : "Razón Encuentro Remoto no Realizado",
-      "description" : "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud",
-      "uses" : {
-      },
-      "ValueSet-VSRazonNOT.html" : "Razones no Atención Remota"
     },
     {
       "url" : "urn:iso-astm:E1762-95:2013",

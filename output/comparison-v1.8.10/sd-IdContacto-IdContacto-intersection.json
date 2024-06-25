@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "0bc6e5c8-ac3b-46fa-8ac0-7abe9a36b279-105",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0bc6e5c8-ac3b-46fa-8ac0-7abe9a36b279-105",
+  "id" : "f07773fd-a62c-443b-9d8b-9c1cd3a80f69-96",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/f07773fd-a62c-443b-9d8b-9c1cd3a80f69-96",
   "name" : "IntersectionIdentificacionContactoClAndIdentificacionContactoCl",
   "title" : "Intersection of Identificación del Contacto de un Paciente And Identificación del Contacto de un Paciente",
   "status" : "active",
-  "date" : "2024-06-24T20:57:20-04:00",
+  "date" : "2024-06-25T09:03:25-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

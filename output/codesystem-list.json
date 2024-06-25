@@ -33,14 +33,6 @@
       "description" : "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "CSCodSSaludCL",
-      "title" : "Servicios de Salud Chile",
-      "description" : "Códigos del Sistema Nacional de Servicios de Salud"
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI",
       "version" : "1.8.12",
       "status" : "active",
@@ -97,30 +89,6 @@
       "description" : "Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "CSPrevision",
-      "title" : "Prevision",
-      "description" : "Prevision"
-    },
-    {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOT",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "CSRazonNOencuentroCL",
-      "title" : "Razones Cancelación Atención Remota",
-      "description" : "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"
-    },
-    {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "CSRazonNOinmunizacionCL",
-      "title" : "Razones no Inmunización",
-      "description" : "Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud"
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis",
       "version" : "1.8.12",
       "status" : "active",
@@ -151,14 +119,6 @@
       "name" : "CSCodPaises",
       "title" : "Códigos de Países",
       "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N"
-    },
-    {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro",
-      "version" : "1.8.12",
-      "status" : "active",
-      "name" : "CSrazonnoencuentro",
-      "title" : "Razón Encuentro Remoto no Realizado",
-      "description" : "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"
     }
   ]
 }

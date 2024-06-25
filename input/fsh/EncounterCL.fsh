@@ -23,11 +23,13 @@ Description: "Definición de encuentro clínico genérico para Chile"
 
 * type MS
   * ^short = "Tipo específico de Encuentro"
-  * ^definition = "Específica el tipo de encuentro"
+  * ^definition = "Específica el tipo de encuentro" 
+* type from VSTiposEncuentroCL (example)
 
 * serviceType MS
   * ^short = "Tipo de servicio que se realiza en el Encuentro"
   * ^definition = "Categorización del servicio que se va a prestar en el encuentro (por ejemplo, servicio de Ginecología)"
+* serviceType from VSTiposServicioCL (example)
 
 * reasonCode MS
 * reasonCode ^short = "Razón codificada por la que tiene lugar el Encuentro"

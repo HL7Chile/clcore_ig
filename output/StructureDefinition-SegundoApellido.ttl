@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "SegundoApellido"] ; # 
   fhir:title [ fhir:v "Segundo Apellido"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-24T20:56:59-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-25T09:03:09-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;

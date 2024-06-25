@@ -28,13 +28,6 @@
     "name" : "CSCodRegionCL"
   },
   {
-    "id" : "CSCodSSalud",
-    "type" : "CodeSystem",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud",
-    "version" : "1.8.12",
-    "name" : "CSCodSSaludCL"
-  },
-  {
     "id" : "CSCodigoDNI",
     "type" : "CodeSystem",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI",
@@ -84,27 +77,6 @@
     "name" : "CSNombreCampanaCL"
   },
   {
-    "id" : "CSPrevision",
-    "type" : "CodeSystem",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision",
-    "version" : "1.8.12",
-    "name" : "CSPrevision"
-  },
-  {
-    "id" : "CSRazonNOT",
-    "type" : "CodeSystem",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOT",
-    "version" : "1.8.12",
-    "name" : "CSRazonNOencuentroCL"
-  },
-  {
-    "id" : "CSRazonNOTinm",
-    "type" : "CodeSystem",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
-    "version" : "1.8.12",
-    "name" : "CSRazonNOinmunizacionCL"
-  },
-  {
     "id" : "CSSexoListadoDeis",
     "type" : "CodeSystem",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis",
@@ -131,13 +103,6 @@
     "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
     "version" : "1.8.12",
     "name" : "CSCodPaises"
-  },
-  {
-    "id" : "csrazonnoencuentro",
-    "type" : "CodeSystem",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro",
-    "version" : "1.8.12",
-    "name" : "CSrazonnoencuentro"
   },
   {
     "id" : "hl7.fhir.cl.clcore",
@@ -329,25 +294,11 @@
     "name" : "VSCodigosRegionesCL"
   },
   {
-    "id" : "VSCodigosServiciosSalud",
-    "type" : "ValueSet",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud",
-    "version" : "1.8.12",
-    "name" : "VSCodigosServiciosSaludCL"
-  },
-  {
     "id" : "VSCodigoslenguaje",
     "type" : "ValueSet",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigoslenguaje",
     "version" : "1.8.12",
     "name" : "VSCodigoslenguaje"
-  },
-  {
-    "id" : "VSContactosec",
-    "type" : "ValueSet",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec",
-    "version" : "1.8.12",
-    "name" : "VSContactoSecundario"
   },
   {
     "id" : "VSDiagnosticosSCT",
@@ -376,27 +327,6 @@
     "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSNombreCampana",
     "version" : "1.8.12",
     "name" : "VSNombreCampanaCL"
-  },
-  {
-    "id" : "VSPrevision",
-    "type" : "ValueSet",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSPrevision",
-    "version" : "1.8.12",
-    "name" : "VSPrevision"
-  },
-  {
-    "id" : "VSRazonNOT",
-    "type" : "ValueSet",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT",
-    "version" : "1.8.12",
-    "name" : "VSRazonNOencuentro"
-  },
-  {
-    "id" : "VSRazonNOTinm",
-    "type" : "ValueSet",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",
-    "version" : "1.8.12",
-    "name" : "VSRazonNOTinmCL"
   },
   {
     "id" : "VSSexoListadoDeis",

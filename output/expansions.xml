@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a04b2ced-3008-48cf-95e3-791eedb4116b"/>
+  <id value="55074fca-4f2a-42a2-849d-018afd53aa3a"/>
   <meta>
-    <lastUpdated value="2024-06-24T20:56:59.261-04:00"/>
+    <lastUpdated value="2024-06-25T09:03:09.907-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -2039,8 +2039,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e503d556-a7d0-49c1-87f5-f13418ec65c9"/>
-          <timestamp value="2024-06-24T20:58:16-04:00"/>
+          <identifier value="urn:uuid:d907b816-14e1-46a9-bd31-f9414d333ba7"/>
+          <timestamp value="2024-06-25T09:04:09-04:00"/>
           <total value="249"/>
           <offset value="0"/>
           <parameter>
@@ -3389,8 +3389,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3317e51e-1d9b-473d-9192-af9878aee8f7"/>
-          <timestamp value="2024-06-24T20:58:17-04:00"/>
+          <identifier value="urn:uuid:c56c9c87-f3f0-4d2f-91bb-2b5bd2f48391"/>
+          <timestamp value="2024-06-25T09:04:10-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -6247,8 +6247,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6ba6ba79-e3ca-4f41-8468-609be139817a"/>
-          <timestamp value="2024-06-24T20:58:18-04:00"/>
+          <identifier value="urn:uuid:e2eb4810-dd5f-4322-b1ac-5d8111f5b2b8"/>
+          <timestamp value="2024-06-25T09:04:10-04:00"/>
           <total value="346"/>
           <offset value="0"/>
           <parameter>
@@ -8490,8 +8490,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8d91ec2f-29bf-4bba-aaf4-8f5bc4b2a40e"/>
-          <timestamp value="2024-06-24T20:58:20-04:00"/>
+          <identifier value="urn:uuid:9af8e6cd-96e5-4d7e-a375-3d8b08794c31"/>
+          <timestamp value="2024-06-25T09:04:11-04:00"/>
           <total value="56"/>
           <offset value="0"/>
           <parameter>
@@ -8963,8 +8963,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:299b219d-2e13-49a4-be00-81241d303874"/>
-          <timestamp value="2024-06-24T20:58:20-04:00"/>
+          <identifier value="urn:uuid:cf1363ab-4aaa-4e95-957f-ac21c356befc"/>
+          <timestamp value="2024-06-25T09:04:12-04:00"/>
           <total value="16"/>
           <offset value="0"/>
           <parameter>
@@ -9062,435 +9062,6 @@
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"/>
             <code value="16"/>
             <display value="Ñuble"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSCodSSalud.html">codesystem Servicios de Salud Chile v1.8.12 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 28 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSA"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSA">SSA</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Arica</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSAN"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSAN">SSAN</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Antofagasta</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSAT"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSAT">SSAT</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Atacama</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSC"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSC">SSC</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Coquimbo</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSVSA"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSVSA">SSVSA</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Valparaíso-San Antonio</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSVQ"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSVQ">SSVQ</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Viña del Mar-Quillota</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSAC"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSAC">SSAC</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Aconcagua</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSMN"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSMN">SSMN</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Metropolitano Norte (SSMN)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSMOC"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSMOC">SSMOC</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Metropolitano Occidente (SSMOC)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSMC"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSMC">SSMC</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Metropolitano Central (SSMC)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSMS"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSMS">SSMS</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Metropolitano Sur (SSMS)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSMO"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSMO">SSMO</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Metropolitano Oriente (SSMO)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSMSO"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSMSO">SSMSO</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Metropolitano Sur Oriente (SSMSO)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSOH"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSOH">SSOH</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Libertador B. OHiggins</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSM"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSM">SSM</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud del Maule</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSÑ"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SS.209">SSÑ</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Ñuble</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSCO"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSCO">SSCO</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Concepción</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSAR"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSAR">SSAR</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Arauco</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SST"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SST">SST</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Talcahuano</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSB"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSB">SSB</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Bíobío</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSARN"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSARN">SSARN</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Araucanía Norte</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSAS"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSAS">SSAS</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Araucanía Sur</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSV"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSV">SSV</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Valdivia</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSO"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSO">SSO</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Osorno</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSR"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSR">SSR</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Reloncaví</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSCH"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSCH">SSCH</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Chiloé</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSAY"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSAY">SSAY</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Aysén</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSCodSSalud-SSMA"> </a>  
-                  <a href="CodeSystem-CSCodSSalud.html#CSCodSSalud-SSMA">SSMA</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud</td>
-                <td>Servicio de Salud Magallanes</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosServiciosSalud"/>
-        <version value="1.8.12"/>
-        <name value="VSCodigosServiciosSaludCL"/>
-        <title value="Servicos de Salud en Chile"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2022-06-10T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:c72260ba-4dad-48ee-a431-f93d1762d1d4"/>
-          <timestamp value="2024-06-24T20:58:20-04:00"/>
-          <total value="28"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud|1.8.12"/>
-          </parameter>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSA"/>
-            <display value="Servicio de Salud Arica"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSAN"/>
-            <display value="Servicio de Salud Antofagasta"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSAT"/>
-            <display value="Servicio de Salud Atacama"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSC"/>
-            <display value="Servicio de Salud Coquimbo"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSVSA"/>
-            <display value="Servicio de Salud Valparaíso-San Antonio"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSVQ"/>
-            <display value="Servicio de Salud Viña del Mar-Quillota"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSAC"/>
-            <display value="Servicio de Salud Aconcagua"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSMN"/>
-            <display value="Servicio de Salud Metropolitano Norte (SSMN)"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSMOC"/>
-            <display value="Servicio de Salud Metropolitano Occidente (SSMOC)"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSMC"/>
-            <display value="Servicio de Salud Metropolitano Central (SSMC)"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSMS"/>
-            <display value="Servicio de Salud Metropolitano Sur (SSMS)"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSMO"/>
-            <display value="Servicio de Salud Metropolitano Oriente (SSMO)"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSMSO"/>
-            <display value="Servicio de Salud Metropolitano Sur Oriente (SSMSO)"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSOH"/>
-            <display value="Servicio de Salud Libertador B. OHiggins"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSM"/>
-            <display value="Servicio de Salud del Maule"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSÑ"/>
-            <display value="Servicio de Salud Ñuble"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSCO"/>
-            <display value="Servicio de Salud Concepción"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSAR"/>
-            <display value="Servicio de Salud Arauco"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SST"/>
-            <display value="Servicio de Salud Talcahuano"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSB"/>
-            <display value="Servicio de Salud Bíobío"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSARN"/>
-            <display value="Servicio de Salud Araucanía Norte"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSAS"/>
-            <display value="Servicio de Salud Araucanía Sur"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSV"/>
-            <display value="Servicio de Salud Valdivia"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSO"/>
-            <display value="Servicio de Salud Osorno"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSR"/>
-            <display value="Servicio de Salud Reloncaví"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSCH"/>
-            <display value="Servicio de Salud Chiloé"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSAY"/>
-            <display value="Servicio de Salud Aysén"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud"/>
-            <code value="SSMA"/>
-            <display value="Servicio de Salud Magallanes"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -10282,8 +9853,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e7d4b884-b5e1-4faa-b0ab-c0a395e51d80"/>
-          <timestamp value="2024-06-24T20:58:20-04:00"/>
+          <identifier value="urn:uuid:0d8a213d-c255-45b1-a129-94602ed2a18f"/>
+          <timestamp value="2024-06-25T09:04:12-04:00"/>
           <total value="53"/>
           <offset value="0"/>
           <parameter>
@@ -10572,214 +10143,13 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html">codesystem ContactPointSystem v4.0.1 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 7 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-contact-point-system-phone"> </a>  
-                  <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-phone">phone</a>
-                </td>
-                <td>http://hl7.org/fhir/contact-point-system</td>
-                <td>Phone</td>
-                <td>
-                  <div>
-                    <p>The value is a telephone number used for voice calls. Use of full international numbers starting with + is recommended to enable automatic dialing support but not required.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-contact-point-system-fax"> </a>  
-                  <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-fax">fax</a>
-                </td>
-                <td>http://hl7.org/fhir/contact-point-system</td>
-                <td>Fax</td>
-                <td>
-                  <div>
-                    <p>The value is a fax machine. Use of full international numbers starting with + is recommended to enable automatic dialing support but not required.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-contact-point-system-email"> </a>  
-                  <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-email">email</a>
-                </td>
-                <td>http://hl7.org/fhir/contact-point-system</td>
-                <td>Email</td>
-                <td>
-                  <div>
-                    <p>The value is an email address.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-contact-point-system-pager"> </a>  
-                  <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-pager">pager</a>
-                </td>
-                <td>http://hl7.org/fhir/contact-point-system</td>
-                <td>Pager</td>
-                <td>
-                  <div>
-                    <p>The value is a pager number. These may be local pager numbers that are only usable on a particular pager system.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-contact-point-system-url"> </a>  
-                  <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-url">url</a>
-                </td>
-                <td>http://hl7.org/fhir/contact-point-system</td>
-                <td>URL</td>
-                <td>
-                  <div>
-                    <p>A contact that is not a phone, fax, pager or email address and is expressed as a URL.  This is intended for various institutional or personal contacts including web sites, blogs, Skype, Twitter, Facebook, etc. Do not use for email addresses.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-contact-point-system-sms"> </a>  
-                  <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-sms">sms</a>
-                </td>
-                <td>http://hl7.org/fhir/contact-point-system</td>
-                <td>SMS</td>
-                <td>
-                  <div>
-                    <p>A contact that can be used for sending an sms message (e.g. mobile phones, some landlines).</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-contact-point-system-other"> </a>  
-                  <a href="http://hl7.org/fhir/R4/codesystem-contact-point-system.html#contact-point-system-other">other</a>
-                </td>
-                <td>http://hl7.org/fhir/contact-point-system</td>
-                <td>Other</td>
-                <td>
-                  <div>
-                    <p>A contact that is not a phone, fax, page or email address and is not expressible as a URL.  E.g. Internal mail address.  This SHOULD NOT be used for contacts that are expressible as a URL (e.g. Skype, Twitter, Facebook, etc.)  Extensions may be used to distinguish &quot;other&quot; contact types.</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSContactosec"/>
-        <version value="1.8.12"/>
-        <name value="VSContactoSecundario"/>
-        <title value="Contacto participantes"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2022-05-25T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:56612a67-a353-4420-b108-122d344ab707"/>
-          <timestamp value="2024-06-24T20:58:21-04:00"/>
-          <total value="7"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://hl7.org/fhir/contact-point-system|4.0.1"/>
-          </parameter>
-          <contains>
-            <system value="http://hl7.org/fhir/contact-point-system"/>
-            <code value="phone"/>
-            <display value="Phone"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/contact-point-system"/>
-            <code value="fax"/>
-            <display value="Fax"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/contact-point-system"/>
-            <code value="email"/>
-            <display value="Email"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/contact-point-system"/>
-            <code value="pager"/>
-            <display value="Pager"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/contact-point-system"/>
-            <code value="url"/>
-            <display value="URL"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/contact-point-system"/>
-            <code value="sms"/>
-            <display value="SMS"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/contact-point-system"/>
-            <code value="other"/>
-            <display value="Other"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-feb. 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-feb 2024</p>
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
             <table class="codes">
               <tr>
@@ -18814,8 +18184,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:20fca7a4-fcaf-43bb-b72f-bbc71ba1e4a5"/>
-          <timestamp value="2024-06-24T20:58:21-04:00"/>
+          <identifier value="urn:uuid:73327900-be15-43fe-8360-bde2c7f3d67f"/>
+          <timestamp value="2024-06-25T09:04:12-04:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -24434,8 +23804,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9b18cd7d-a4fa-4ba6-a160-fe751f18b1a5"/>
-          <timestamp value="2024-06-24T20:58:27-04:00"/>
+          <identifier value="urn:uuid:a807242f-20b6-44a3-8d7a-3f1a03cb6006"/>
+          <timestamp value="2024-06-25T09:04:15-04:00"/>
           <total value="68"/>
           <offset value="0"/>
           <parameter>
@@ -24895,8 +24265,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4ae3e434-4633-4f73-9de3-2c447531b30a"/>
-          <timestamp value="2024-06-24T20:58:27-04:00"/>
+          <identifier value="urn:uuid:35c4f1cc-c0b2-4d73-9cd3-0898c164a3ac"/>
+          <timestamp value="2024-06-25T09:04:16-04:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -25283,8 +24653,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:060edaa6-7225-4ffb-9dc5-d3cea7c66852"/>
-          <timestamp value="2024-06-24T20:58:27-04:00"/>
+          <identifier value="urn:uuid:914c8d48-dc97-48ce-b739-77bdd6861c61"/>
+          <timestamp value="2024-06-25T09:04:16-04:00"/>
           <total value="36"/>
           <offset value="0"/>
           <parameter>
@@ -25488,442 +24858,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSPrevision"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSPrevision.html">codesystem Prevision v1.8.12 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 7 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-01"> </a>  
-                  <a href="CodeSystem-CSPrevision.html#CSPrevision-01">01</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
-                <td>FONASA</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-02"> </a>  
-                  <a href="CodeSystem-CSPrevision.html#CSPrevision-02">02</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
-                <td>ISAPRE</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-03"> </a>  
-                  <a href="CodeSystem-CSPrevision.html#CSPrevision-03">03</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
-                <td>CAPREDENA</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-04"> </a>  
-                  <a href="CodeSystem-CSPrevision.html#CSPrevision-04">04</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
-                <td>DIPRECA</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-05"> </a>  
-                  <a href="CodeSystem-CSPrevision.html#CSPrevision-05">05</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
-                <td>SISA</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-96"> </a>  
-                  <a href="CodeSystem-CSPrevision.html#CSPrevision-96">96</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
-                <td>NINGUNA</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSPrevision-99"> </a>  
-                  <a href="CodeSystem-CSPrevision.html#CSPrevision-99">99</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision</td>
-                <td>DESCONOCIDO</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSPrevision"/>
-        <version value="1.8.12"/>
-        <name value="VSPrevision"/>
-        <title value="Prevision"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2023-01-15"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:cb6eea38-1462-435a-b981-2d1a9768fe53"/>
-          <timestamp value="2024-06-24T20:58:28-04:00"/>
-          <total value="7"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision|1.8.12"/>
-          </parameter>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
-            <code value="01"/>
-            <display value="FONASA"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
-            <code value="02"/>
-            <display value="ISAPRE"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
-            <code value="03"/>
-            <display value="CAPREDENA"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
-            <code value="04"/>
-            <display value="DIPRECA"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
-            <code value="05"/>
-            <display value="SISA"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
-            <code value="96"/>
-            <display value="NINGUNA"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision"/>
-            <code value="99"/>
-            <display value="DESCONOCIDO"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-csrazonnoencuentro.html">codesystem Razón Encuentro Remoto no Realizado v1.8.12 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 5 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-csrazonnoencuentro-pierdellam"> </a>  
-                  <a href="CodeSystem-csrazonnoencuentro.html#csrazonnoencuentro-pierdellam">pierdellam</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro</td>
-                <td>Participante pierde llamada</td>
-                <td>
-                  <div>
-                    <p>Indica la pérdida de una llamada con el paciete</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-csrazonnoencuentro-finallam"> </a>  
-                  <a href="CodeSystem-csrazonnoencuentro.html#csrazonnoencuentro-finallam">finallam</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro</td>
-                <td>El participante finalizó la llamada abruptamente</td>
-                <td>
-                  <div>
-                    <p>Indica la finalización de una llamada de forma abrupta</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-csrazonnoencuentro-problcon"> </a>  
-                  <a href="CodeSystem-csrazonnoencuentro.html#csrazonnoencuentro-problcon">problcon</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro</td>
-                <td>El participante tuvo problemas de conexión a internet</td>
-                <td>
-                  <div>
-                    <p>Indica que existieron problemas de conexión a internet para conectarse con el médico</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-csrazonnoencuentro-medicoproblcon"> </a>  
-                  <a href="CodeSystem-csrazonnoencuentro.html#csrazonnoencuentro-medicoproblcon">medicoproblcon</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro</td>
-                <td>Tuve problemas de conexión a internet</td>
-                <td>
-                  <div>
-                    <p>Indica problemas de conexión a internet que tuvo el médico</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-csrazonnoencuentro-otros"> </a>  
-                  <a href="CodeSystem-csrazonnoencuentro.html#csrazonnoencuentro-otros">otros</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro</td>
-                <td>Otros, texto libre</td>
-                <td>
-                  <div>
-                    <p>Cualquier otro motivo</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT"/>
-        <version value="1.8.12"/>
-        <name value="VSRazonNOencuentro"/>
-        <title value="Razones no Atención Remota"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2022-05-22T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:afd036ca-fb3e-4910-84d0-d4ba89a13159"/>
-          <timestamp value="2024-06-24T20:58:28-04:00"/>
-          <total value="5"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro|1.8.12"/>
-          </parameter>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro"/>
-            <code value="pierdellam"/>
-            <display value="Participante pierde llamada"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro"/>
-            <code value="finallam"/>
-            <display value="El participante finalizó la llamada abruptamente"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro"/>
-            <code value="problcon"/>
-            <display value="El participante tuvo problemas de conexión a internet"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro"/>
-            <code value="medicoproblcon"/>
-            <display value="Tuve problemas de conexión a internet"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro"/>
-            <code value="otros"/>
-            <display value="Otros, texto libre"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-CSRazonNOTinm.html">codesystem Razones no Inmunización v1.8.12 (CodeSystem)</a>
-            </p>
-            <p>This value set contains 4 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSRazonNOTinm-solicitudPaci"> </a>  
-                  <a href="CodeSystem-CSRazonNOTinm.html#CSRazonNOTinm-solicitudPaci">solicitudPaci</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</td>
-                <td>Solicitud del paciente</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSRazonNOTinm-otras"> </a>  
-                  <a href="CodeSystem-CSRazonNOTinm.html#CSRazonNOTinm-otras">otras</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</td>
-                <td>Otras</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSRazonNOTinm-contraindicación"> </a>  
-                  <a href="CodeSystem-CSRazonNOTinm.html#CSRazonNOTinm-contraindicaci.243n">contraindicación</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</td>
-                <td>Contraindicación</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSRazonNOTinm-solicitudPad"> </a>  
-                  <a href="CodeSystem-CSRazonNOTinm.html#CSRazonNOTinm-solicitudPad">solicitudPad</a>
-                </td>
-                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</td>
-                <td>Solicitud de los Padres</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm"/>
-        <version value="1.8.12"/>
-        <name value="VSRazonNOTinmCL"/>
-        <title value="Razones no Inmunización"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2022-06-08T00:00:00-03:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="CL"/>
-            <display value="Chile"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:7c8f9c2b-3875-48df-9821-94bb096cc2ca"/>
-          <timestamp value="2024-06-24T20:58:28-04:00"/>
-          <total value="4"/>
-          <offset value="0"/>
-          <parameter>
-            <name value="count"/>
-            <valueInteger value="1000"/>
-          </parameter>
-          <parameter>
-            <name value="offset"/>
-            <valueInteger value="0"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm|1.8.12"/>
-          </parameter>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"/>
-            <code value="solicitudPaci"/>
-            <display value="Solicitud del paciente"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"/>
-            <code value="otras"/>
-            <display value="Otras"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"/>
-            <code value="contraindicación"/>
-            <display value="Contraindicación"/>
-          </contains>
-          <contains>
-            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"/>
-            <code value="solicitudPad"/>
-            <display value="Solicitud de los Padres"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis"/>
     <resource>
       <ValueSet>
@@ -26004,8 +24938,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8f0a49c8-4973-40ab-a3e6-9f1a8a7df73f"/>
-          <timestamp value="2024-06-24T20:58:28-04:00"/>
+          <identifier value="urn:uuid:cc45a47e-9163-442c-80f0-513c136b4109"/>
+          <timestamp value="2024-06-25T09:04:16-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -26293,8 +25227,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f669e730-4df3-4893-a41d-d0bdc585dbf7"/>
-          <timestamp value="2024-06-24T20:58:28-04:00"/>
+          <identifier value="urn:uuid:8a256ef5-74f4-45e7-b0b9-0fd7bfcba8d1"/>
+          <timestamp value="2024-06-25T09:04:16-04:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -34426,8 +33360,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7e79504e-8e98-45da-8fc8-bf258884ae1e"/>
-          <timestamp value="2024-06-21T22:09:38.052Z"/>
+          <identifier value="urn:uuid:508e9c00-fe81-413d-8d6c-4ce267cecea7"/>
+          <timestamp value="2024-06-24T20:59:11.550Z"/>
           <offset value="0"/>
           <parameter>
             <name value="limitedExpansion"/>
@@ -42003,8 +40937,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:323a54be-879d-4b3f-ab75-947df125e27e"/>
-          <timestamp value="2024-06-24T20:58:34-04:00"/>
+          <identifier value="urn:uuid:17a58e0c-a191-4cc6-a347-044c225ec359"/>
+          <timestamp value="2024-06-25T09:04:20-04:00"/>
           <total value="185"/>
           <offset value="0"/>
           <parameter>
@@ -43025,8 +41959,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6cecd902-450f-4b15-81c8-fb3ad0c7d11c"/>
-          <timestamp value="2024-06-24T20:58:35-04:00"/>
+          <identifier value="urn:uuid:26f9b56b-809f-48f4-a605-a3a5f9a71f4b"/>
+          <timestamp value="2024-06-25T09:04:20-04:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -43217,8 +42151,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fd4c4fd4-3e4c-4acb-8331-194fca348080"/>
-          <timestamp value="2024-06-24T20:58:36-04:00"/>
+          <identifier value="urn:uuid:399ada33-f760-41f4-96c1-f46be5992524"/>
+          <timestamp value="2024-06-25T09:04:20-04:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -43984,8 +42918,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f359e749-3fa5-420e-afb2-80175300f8f4"/>
-          <timestamp value="2024-06-24T20:58:36-04:00"/>
+          <identifier value="urn:uuid:90a587bf-e0a9-4506-bf63-64011687d06f"/>
+          <timestamp value="2024-06-25T09:04:21-04:00"/>
           <total value="79"/>
           <offset value="0"/>
           <parameter>

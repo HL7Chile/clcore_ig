@@ -10,7 +10,7 @@
   "name" : "clcore",
   "title" : "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)",
   "status" : "active",
-  "date" : "2024-06-24T20:56:59-04:00",
+  "date" : "2024-06-25T09:03:09-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -886,18 +886,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/VSContactosec"
-      },
-      "name" : "Contacto participantes",
-      "description" : "Contacto telefónico o correo de los participantes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/VSCodigosComunaCL"
       },
       "name" : "Códigos de Comunas en Chile",
@@ -1147,6 +1135,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/MedicamentoCl-2"
+      },
+      "name" : "Ejemplo de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido",
+      "description" : "Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Provenance"
       }],
       "reference" : {
@@ -1303,18 +1303,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Medication"
-      }],
-      "reference" : {
-        "reference" : "Medication/MedicamentoCl-2"
-      },
-      "name" : "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido",
-      "description" : "Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC",
-      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1363,90 +1351,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSPrevision"
-      },
-      "name" : "Prevision",
-      "description" : "Prevision",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSPrevision"
-      },
-      "name" : "Prevision",
-      "description" : "Prevision",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSRazonNOT"
-      },
-      "name" : "Razones Cancelación Atención Remota",
-      "description" : "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSRazonNOT"
-      },
-      "name" : "Razones no Atención Remota",
-      "description" : "Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSRazonNOTinm"
-      },
-      "name" : "Razones no Inmunización",
-      "description" : "Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSRazonNOTinm"
-      },
-      "name" : "Razones no Inmunización",
-      "description" : "Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/csrazonnoencuentro"
-      },
-      "name" : "Razón Encuentro Remoto no Realizado",
-      "description" : "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1454,30 +1358,6 @@
       },
       "name" : "Segundo Apellido",
       "description" : "Segundo Apellido",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSCodSSalud"
-      },
-      "name" : "Servicios de Salud Chile",
-      "description" : "Códigos del Sistema Nacional de Servicios de Salud",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSCodigosServiciosSalud"
-      },
-      "name" : "Servicos de Salud en Chile",
-      "description" : "Códigos de Servicios de Salud que existen en Chile",
       "exampleBoolean" : false
     },
     {

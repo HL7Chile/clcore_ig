@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "0bc6e5c8-ac3b-46fa-8ac0-7abe9a36b279-110",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0bc6e5c8-ac3b-46fa-8ac0-7abe9a36b279-110",
+  "id" : "f07773fd-a62c-443b-9d8b-9c1cd3a80f69-101",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/f07773fd-a62c-443b-9d8b-9c1cd3a80f69-101",
   "name" : "UnionImmunizationCLAndImmunizationCL",
   "title" : "Union of CL Inmunización And CL Inmunización",
   "status" : "active",
-  "date" : "2024-06-24T20:57:20-04:00",
+  "date" : "2024-06-25T09:03:25-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -649,7 +649,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "The code for vaccine product administered.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/vaccine-code"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/f07773fd-a62c-443b-9d8b-9c1cd3a80f69-104"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2262,7 +2262,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "example",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/immunization-program-eligibility"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/f07773fd-a62c-443b-9d8b-9c1cd3a80f69-110"
       },
       "mapping" : [{
         "identity" : "v2",
