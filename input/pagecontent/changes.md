@@ -18,9 +18,9 @@
 - Se modifica y agregan nuevos terminos en "CSTipoIdentificador"
 - Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
   - Se cambio referencia de **generalPractitioner** de Organization -> OrganizacionCL y Practitioner -> PrestadorCL
-  - Se genera ejemplo [Patient-PacienteCL.html]
+  - Se genera [Ejemplo de Recurso Paciente Nacional](Patient-PacienteCL.html)
 
-- Perfil[CoreRolClinicoCl](StructureDefinition-CoreRolClinicoCl.html)
+- Perfil [CoreRolClinicoCl](StructureDefinition-CoreRolClinicoCl.html)
   - Se modifica la referencia organization al **OrganizationCL**
   - Se modifica la referencia location al **CoreLocalizacionCl**
   - Se genera ejemplo [Ejemplo de Recurso de especialidad](PractitionerRole-EjemploEspecialidadCL.html)
@@ -34,21 +34,21 @@
   - Se genera Ejemplo [Ejemplo de un profecional de salud](Practitioner-EjemploPrestadorCL.html)
   - Se genera Ejemplo [Ejemplo de Recurso Prestador 2 como base para un Core Nacional](Practitioner-EjemploPrestadorCL2.html)
 
-- Perfil[AuditEventCl](StructureDefinition-AuditEventCl.html)
+- Perfil [AuditEventCl](StructureDefinition-AuditEventCl.html)
   - Subtype.system y Type.system se elimina MS
   - Subtype.code MS se elimina
 
-- Perfil[EncounterCL](StructureDefinition-EncounterCL.html)
+- Perfil [EncounterCL](StructureDefinition-EncounterCL.html)
   - Se depreca el uso de extensiones en el perfil
   - Se elimina el uso de slice del participant
   - Se actualiza periodo de 1..1 -> 0..1
 
-- Perfil[CL Condición-Diagnóstico](StructureDefinition-CoreDiagnosticoCl.html)
+- Perfil [CL Condición-Diagnóstico](StructureDefinition-CoreDiagnosticoCl.html)
   - Paso el verification Status a MS
   - Ejemplo: [Ejemplo de Un Diagnóstico de hipertensión](Condition-DiagnosticoEj.html)
   - Ejemplo: [Ejemplo de Un Diagnóstico de Faringoamigdalitis](Condition-DiagnosticoEj2.html)
 
-- Perfil[CL Provenance](StructureDefinition-ProvenanceCl.html)
+- Perfil [CL Provenance](StructureDefinition-ProvenanceCl.html)
   - Se cambia la referencia de location al perfil de la guía
   - Se cambia la referencia de agent.who y signature.who a los perfiles que existan en la guía y aquellos que no, se referencian al estandar.
 
