@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="55074fca-4f2a-42a2-849d-018afd53aa3a"/>
+  <id value="732d4802-7304-484e-ae95-0acd8b7a427c"/>
   <meta>
-    <lastUpdated value="2024-06-25T09:03:09.907-04:00"/>
+    <lastUpdated value="2024-06-25T09:29:41.743-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -2039,8 +2039,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d907b816-14e1-46a9-bd31-f9414d333ba7"/>
-          <timestamp value="2024-06-25T09:04:09-04:00"/>
+          <identifier value="urn:uuid:a0aff942-b477-4286-92c7-261afcc4430e"/>
+          <timestamp value="2024-06-25T09:30:45-04:00"/>
           <total value="249"/>
           <offset value="0"/>
           <parameter>
@@ -3389,8 +3389,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c56c9c87-f3f0-4d2f-91bb-2b5bd2f48391"/>
-          <timestamp value="2024-06-25T09:04:10-04:00"/>
+          <identifier value="urn:uuid:707e7556-c82c-4cbd-99c9-185ea281a13e"/>
+          <timestamp value="2024-06-25T09:30:46-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -6247,8 +6247,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e2eb4810-dd5f-4322-b1ac-5d8111f5b2b8"/>
-          <timestamp value="2024-06-25T09:04:10-04:00"/>
+          <identifier value="urn:uuid:b6c43fb5-3bfd-4656-99ed-4d2fe23f2d03"/>
+          <timestamp value="2024-06-25T09:30:46-04:00"/>
           <total value="346"/>
           <offset value="0"/>
           <parameter>
@@ -8490,8 +8490,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9af8e6cd-96e5-4d7e-a375-3d8b08794c31"/>
-          <timestamp value="2024-06-25T09:04:11-04:00"/>
+          <identifier value="urn:uuid:f4bd3ccb-6886-4f25-9778-2c2460ab6d9b"/>
+          <timestamp value="2024-06-25T09:30:48-04:00"/>
           <total value="56"/>
           <offset value="0"/>
           <parameter>
@@ -8963,8 +8963,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cf1363ab-4aaa-4e95-957f-ac21c356befc"/>
-          <timestamp value="2024-06-25T09:04:12-04:00"/>
+          <identifier value="urn:uuid:736df2e1-30f4-4ae3-9e86-a5cd8ddf050e"/>
+          <timestamp value="2024-06-25T09:30:49-04:00"/>
           <total value="16"/>
           <offset value="0"/>
           <parameter>
@@ -9853,8 +9853,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0d8a213d-c255-45b1-a129-94602ed2a18f"/>
-          <timestamp value="2024-06-25T09:04:12-04:00"/>
+          <identifier value="urn:uuid:8cd41498-58ee-4533-a6d9-e5f5e818ae81"/>
+          <timestamp value="2024-06-25T09:30:49-04:00"/>
           <total value="53"/>
           <offset value="0"/>
           <parameter>
@@ -18184,8 +18184,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:73327900-be15-43fe-8360-bde2c7f3d67f"/>
-          <timestamp value="2024-06-25T09:04:12-04:00"/>
+          <identifier value="urn:uuid:497cf6b2-ed3d-4901-b455-ca6b38237b0e"/>
+          <timestamp value="2024-06-25T09:30:49-04:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -23804,8 +23804,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a807242f-20b6-44a3-8d7a-3f1a03cb6006"/>
-          <timestamp value="2024-06-25T09:04:15-04:00"/>
+          <identifier value="urn:uuid:24aaca57-3cab-4ad7-a848-089348ec043f"/>
+          <timestamp value="2024-06-25T09:30:55-04:00"/>
           <total value="68"/>
           <offset value="0"/>
           <parameter>
@@ -24265,8 +24265,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:35c4f1cc-c0b2-4d73-9cd3-0898c164a3ac"/>
-          <timestamp value="2024-06-25T09:04:16-04:00"/>
+          <identifier value="urn:uuid:38e8ea8c-c10d-4eaa-a76a-bd8611310cdf"/>
+          <timestamp value="2024-06-25T09:30:55-04:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -24653,8 +24653,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:914c8d48-dc97-48ce-b739-77bdd6861c61"/>
-          <timestamp value="2024-06-25T09:04:16-04:00"/>
+          <identifier value="urn:uuid:1734e2f3-786a-4f1e-a3f3-6a1cead880fd"/>
+          <timestamp value="2024-06-25T09:30:55-04:00"/>
           <total value="36"/>
           <offset value="0"/>
           <parameter>
@@ -24858,6 +24858,123 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-CSRazonNOTinm.html">codesystem Razones no Inmunización v1.8.12 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSRazonNOTinm-solicitudPaci"> </a>  
+                  <a href="CodeSystem-CSRazonNOTinm.html#CSRazonNOTinm-solicitudPaci">solicitudPaci</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</td>
+                <td>Solicitud del paciente</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSRazonNOTinm-otras"> </a>  
+                  <a href="CodeSystem-CSRazonNOTinm.html#CSRazonNOTinm-otras">otras</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</td>
+                <td>Otras</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSRazonNOTinm-contraindicación"> </a>  
+                  <a href="CodeSystem-CSRazonNOTinm.html#CSRazonNOTinm-contraindicaci.243n">contraindicación</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</td>
+                <td>Contraindicación</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSRazonNOTinm-solicitudPad"> </a>  
+                  <a href="CodeSystem-CSRazonNOTinm.html#CSRazonNOTinm-solicitudPad">solicitudPad</a>
+                </td>
+                <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</td>
+                <td>Solicitud de los Padres</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm"/>
+        <version value="1.8.12"/>
+        <name value="VSRazonNOTinmCL"/>
+        <title value="Razones no Inmunización"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2022-06-08T00:00:00-03:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CL"/>
+            <display value="Chile"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:1756bcf0-5958-44a1-b679-1293e05a2c09"/>
+          <timestamp value="2024-06-25T09:30:55-04:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm|1.8.12"/>
+          </parameter>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"/>
+            <code value="solicitudPaci"/>
+            <display value="Solicitud del paciente"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"/>
+            <code value="otras"/>
+            <display value="Otras"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"/>
+            <code value="contraindicación"/>
+            <display value="Contraindicación"/>
+          </contains>
+          <contains>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"/>
+            <code value="solicitudPad"/>
+            <display value="Solicitud de los Padres"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis"/>
     <resource>
       <ValueSet>
@@ -24938,8 +25055,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cc45a47e-9163-442c-80f0-513c136b4109"/>
-          <timestamp value="2024-06-25T09:04:16-04:00"/>
+          <identifier value="urn:uuid:6e074f6f-4044-406d-a1d2-7bee4afff34f"/>
+          <timestamp value="2024-06-25T09:30:56-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -25227,8 +25344,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8a256ef5-74f4-45e7-b0b9-0fd7bfcba8d1"/>
-          <timestamp value="2024-06-25T09:04:16-04:00"/>
+          <identifier value="urn:uuid:aeaaa6a2-a841-4599-95b3-d69ef13d0df7"/>
+          <timestamp value="2024-06-25T09:30:56-04:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -40937,8 +41054,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:17a58e0c-a191-4cc6-a347-044c225ec359"/>
-          <timestamp value="2024-06-25T09:04:20-04:00"/>
+          <identifier value="urn:uuid:3d8a36ff-f182-4a17-a825-f454f67d0de0"/>
+          <timestamp value="2024-06-25T09:31:01-04:00"/>
           <total value="185"/>
           <offset value="0"/>
           <parameter>
@@ -41959,8 +42076,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:26f9b56b-809f-48f4-a605-a3a5f9a71f4b"/>
-          <timestamp value="2024-06-25T09:04:20-04:00"/>
+          <identifier value="urn:uuid:13d43f0c-4985-4ece-98d9-e56f81e01c99"/>
+          <timestamp value="2024-06-25T09:31:02-04:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -42151,8 +42268,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:399ada33-f760-41f4-96c1-f46be5992524"/>
-          <timestamp value="2024-06-25T09:04:20-04:00"/>
+          <identifier value="urn:uuid:4c5bc6c3-072b-4f27-8a53-f6462abff38d"/>
+          <timestamp value="2024-06-25T09:31:02-04:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -42918,8 +43035,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:90a587bf-e0a9-4506-bf63-64011687d06f"/>
-          <timestamp value="2024-06-25T09:04:21-04:00"/>
+          <identifier value="urn:uuid:46577269-9eb7-4b3f-90eb-cc5bceb4fdeb"/>
+          <timestamp value="2024-06-25T09:31:03-04:00"/>
           <total value="79"/>
           <offset value="0"/>
           <parameter>

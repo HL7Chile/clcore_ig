@@ -494,6 +494,20 @@
       "StructureDefinition-ImmunizationCL.html" : "CL Inmunización"
     },
     {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",
+      "version" : "1.8.12",
+      "status" : "active",
+      "name" : "VSRazonNOTinmCL",
+      "title" : "Razones no Inmunización",
+      "description" : "Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local",
+      "systems" : [
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización"
+    },
+    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis",
       "version" : "1.8.12",
       "status" : "active",

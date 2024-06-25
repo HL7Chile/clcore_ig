@@ -10,6 +10,7 @@ https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje,1.8.12,active,,C
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL,1.8.12,active,,CSEspecialidadesDeisCL,Códigos de Especialidades,"Códigos de especialidades médicas descritas según DEIS",
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero,1.8.12,active,,CSIdentidaddeGenero,Identidad de Genero,"Identidad de Genero",
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana,1.8.12,active,,CSNombreCampanaCL,Campañas Inmunización,"Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud",
+https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm,1.8.12,active,,CSRazonNOinmunizacionCL,Razones no Inmunización,"Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud",
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis,1.8.12,active,,CSSexoListadoDeis,Sexo Listado Deis,"Sexo Listado Deis",
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador,1.8.12,active,,CSTipoIdentificador,Tipo Identificador,"Tipo Identificador",
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL,1.8.12,active,,CSTiposEncuentroCL,Tipos de Encuentro,"Códigos de Encuentros según MINSAL",

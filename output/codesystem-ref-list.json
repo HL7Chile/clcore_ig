@@ -10,9 +10,9 @@
       "oids" : ["1.2.840.10008.2.16.4"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
       "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://hl7.org/fhir/administrative-gender",
@@ -167,8 +167,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
-      "ValueSet-VSTiposDocClinico.html" : "Tipos de Documentos Clínicos"
+      "ValueSet-VSTiposDocClinico.html" : "Tipos de Documentos Clínicos",
+      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -322,8 +322,8 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
@@ -371,9 +371,9 @@
       "oids" : ["2.16.840.1.113883.5.90"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
       "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
@@ -521,6 +521,17 @@
       "ValueSet-VSNombreCampana.html" : "Campañas de Vacunación"
     },
     {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
+      "version" : "1.8.12",
+      "status" : "active",
+      "name" : "CSRazonNOinmunizacionCL",
+      "title" : "Razones no Inmunización",
+      "description" : "Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud",
+      "uses" : {
+      },
+      "ValueSet-VSRazonNOTinm.html" : "Razones no Inmunización"
+    },
+    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis",
       "version" : "1.8.12",
       "status" : "active",
@@ -540,8 +551,8 @@
       "description" : "Tipo Identificador",
       "uses" : {
       },
-      "ValueSet-VSTipoIdentificador.html" : "Tipo Identificador",
-      "ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos"
+      "ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos",
+      "ValueSet-VSTipoIdentificador.html" : "Tipo Identificador"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL",

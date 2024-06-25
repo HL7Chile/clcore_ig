@@ -89,6 +89,14 @@
       "description" : "Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud"
     },
     {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
+      "version" : "1.8.12",
+      "status" : "active",
+      "name" : "CSRazonNOinmunizacionCL",
+      "title" : "Razones no Inmunización",
+      "description" : "Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud"
+    },
+    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis",
       "version" : "1.8.12",
       "status" : "active",

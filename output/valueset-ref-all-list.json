@@ -40,9 +40,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-SexoBiologico.html" : "Sexo Biologico del paciente",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
+      "StructureDefinition-SexoBiologico.html" : "Sexo Biologico del paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/audit-entity-type",
@@ -277,8 +277,8 @@
       "uses" : {
       },
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -293,8 +293,8 @@
       "uses" : {
       },
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -322,8 +322,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización"
+      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
@@ -544,8 +544,8 @@
       "uses" : {
       },
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
       "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización"
     },
     {
@@ -561,9 +561,9 @@
       "uses" : {
       },
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización"
     },
     {
@@ -669,23 +669,6 @@
       "StructureDefinition-ImmunizationCL.html" : "CL Inmunización"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ImmunizationStatusReasonCodes",
-      "title" : "Immunization Status Reason Codes",
-      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was not administered. This value set is provided as a suggestive example.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-        "http://snomed.info/sct"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.992"],
-      "sources" : ["2.16.840.1.113883.4.642.3.992"],
-      "uses" : {
-      },
-      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-subpotent-reason",
       "version" : "4.0.1",
       "status" : "draft",
@@ -727,18 +710,18 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-AuditEventCl.html" : "CL Auditoria",
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-AuditEventCl.html" : "CL Auditoria",
       "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
-      "StructureDefinition-DocumentoCl.html" : "CL Documento",
       "StructureDefinition-ImmunizationCL.html" : "CL Inmunización",
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico",
+      "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
       "StructureDefinition-ProvenanceCl.html" : "CL Provenance",
       "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
+      "StructureDefinition-DocumentoCl.html" : "CL Documento"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -824,8 +807,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
+      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico",
+      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -940,8 +923,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/network-type",
@@ -1116,11 +1099,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
-      "StructureDefinition-ProvenanceCl.html" : "CL Provenance"
+      "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-ProvenanceCl.html" : "CL Provenance",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -1229,8 +1212,8 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
       "uses" : {
       },
-      "StructureDefinition-DocumentoCl.html" : "CL Documento",
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
+      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico",
+      "StructureDefinition-DocumentoCl.html" : "CL Documento"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
@@ -1430,6 +1413,20 @@
       "description" : "Campañas de Inmunización utilizada en Chile según CodeSystem local",
       "systems" : [
         "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",
+      "version" : "1.8.12",
+      "status" : "active",
+      "name" : "VSRazonNOTinmCL",
+      "title" : "Razones no Inmunización",
+      "description" : "Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local",
+      "systems" : [
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm"
       ],
       "uses" : {
       },

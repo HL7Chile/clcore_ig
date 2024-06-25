@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "55074fca-4f2a-42a2-849d-018afd53aa3a",
+  "id" : "732d4802-7304-484e-ae95-0acd8b7a427c",
   "meta" : {
-    "lastUpdated" : "2024-06-25T09:03:09.907-04:00"
+    "lastUpdated" : "2024-06-25T09:29:41.743-04:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -28,8 +28,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d907b816-14e1-46a9-bd31-f9414d333ba7",
-        "timestamp" : "2024-06-25T09:04:09-04:00",
+        "identifier" : "urn:uuid:a0aff942-b477-4286-92c7-261afcc4430e",
+        "timestamp" : "2024-06-25T09:30:45-04:00",
         "total" : 249,
         "offset" : 0,
         "parameter" : [{
@@ -1319,8 +1319,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c56c9c87-f3f0-4d2f-91bb-2b5bd2f48391",
-        "timestamp" : "2024-06-25T09:04:10-04:00",
+        "identifier" : "urn:uuid:707e7556-c82c-4cbd-99c9-185ea281a13e",
+        "timestamp" : "2024-06-25T09:30:46-04:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1390,8 +1390,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e2eb4810-dd5f-4322-b1ac-5d8111f5b2b8",
-        "timestamp" : "2024-06-25T09:04:10-04:00",
+        "identifier" : "urn:uuid:b6c43fb5-3bfd-4656-99ed-4d2fe23f2d03",
+        "timestamp" : "2024-06-25T09:30:46-04:00",
         "total" : 346,
         "offset" : 0,
         "parameter" : [{
@@ -3166,8 +3166,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9af8e6cd-96e5-4d7e-a375-3d8b08794c31",
-        "timestamp" : "2024-06-25T09:04:11-04:00",
+        "identifier" : "urn:uuid:f4bd3ccb-6886-4f25-9778-2c2460ab6d9b",
+        "timestamp" : "2024-06-25T09:30:48-04:00",
         "total" : 56,
         "offset" : 0,
         "parameter" : [{
@@ -3492,8 +3492,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cf1363ab-4aaa-4e95-957f-ac21c356befc",
-        "timestamp" : "2024-06-25T09:04:12-04:00",
+        "identifier" : "urn:uuid:736df2e1-30f4-4ae3-9e86-a5cd8ddf050e",
+        "timestamp" : "2024-06-25T09:30:49-04:00",
         "total" : 16,
         "offset" : 0,
         "parameter" : [{
@@ -3618,8 +3618,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0d8a213d-c255-45b1-a129-94602ed2a18f",
-        "timestamp" : "2024-06-25T09:04:12-04:00",
+        "identifier" : "urn:uuid:8cd41498-58ee-4533-a6d9-e5f5e818ae81",
+        "timestamp" : "2024-06-25T09:30:49-04:00",
         "total" : 53,
         "offset" : 0,
         "parameter" : [{
@@ -3933,8 +3933,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:73327900-be15-43fe-8360-bde2c7f3d67f",
-        "timestamp" : "2024-06-25T09:04:12-04:00",
+        "identifier" : "urn:uuid:497cf6b2-ed3d-4901-b455-ca6b38237b0e",
+        "timestamp" : "2024-06-25T09:30:49-04:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "count",
@@ -8990,8 +8990,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a807242f-20b6-44a3-8d7a-3f1a03cb6006",
-        "timestamp" : "2024-06-25T09:04:15-04:00",
+        "identifier" : "urn:uuid:24aaca57-3cab-4ad7-a848-089348ec043f",
+        "timestamp" : "2024-06-25T09:30:55-04:00",
         "total" : 68,
         "offset" : 0,
         "parameter" : [{
@@ -9376,8 +9376,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:35c4f1cc-c0b2-4d73-9cd3-0898c164a3ac",
-        "timestamp" : "2024-06-25T09:04:16-04:00",
+        "identifier" : "urn:uuid:38e8ea8c-c10d-4eaa-a76a-bd8611310cdf",
+        "timestamp" : "2024-06-25T09:30:55-04:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -9457,8 +9457,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:914c8d48-dc97-48ce-b739-77bdd6861c61",
-        "timestamp" : "2024-06-25T09:04:16-04:00",
+        "identifier" : "urn:uuid:1734e2f3-786a-4f1e-a3f3-6a1cead880fd",
+        "timestamp" : "2024-06-25T09:30:55-04:00",
         "total" : 36,
         "offset" : 0,
         "parameter" : [{
@@ -9661,6 +9661,72 @@
     }
   },
   {
+    "fullUrl" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-CSRazonNOTinm.html\">codesystem Razones no Inmunización v1.8.12 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSRazonNOTinm-solicitudPaci\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSRazonNOTinm.html#CSRazonNOTinm-solicitudPaci\">solicitudPaci</a></td><td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</td><td>Solicitud del paciente</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSRazonNOTinm-otras\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSRazonNOTinm.html#CSRazonNOTinm-otras\">otras</a></td><td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</td><td>Otras</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSRazonNOTinm-contraindicación\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSRazonNOTinm.html#CSRazonNOTinm-contraindicaci.243n\">contraindicación</a></td><td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</td><td>Contraindicación</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---hl7chile.cl-fhir-ig-clcore-CodeSystem-CSRazonNOTinm-solicitudPad\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CSRazonNOTinm.html#CSRazonNOTinm-solicitudPad\">solicitudPad</a></td><td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm</td><td>Solicitud de los Padres</td></tr></table></div>"
+      },
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",
+      "version" : "1.8.12",
+      "name" : "VSRazonNOTinmCL",
+      "title" : "Razones no Inmunización",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2022-06-08T00:00:00-03:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "CL",
+          "display" : "Chile"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1756bcf0-5958-44a1-b679-1293e05a2c09",
+        "timestamp" : "2024-06-25T09:30:55-04:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm|1.8.12"
+        }],
+        "contains" : [{
+          "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
+          "code" : "solicitudPaci",
+          "display" : "Solicitud del paciente"
+        },
+        {
+          "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
+          "code" : "otras",
+          "display" : "Otras"
+        },
+        {
+          "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
+          "code" : "contraindicación",
+          "display" : "Contraindicación"
+        },
+        {
+          "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
+          "code" : "solicitudPad",
+          "display" : "Solicitud de los Padres"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -9683,8 +9749,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cc45a47e-9163-442c-80f0-513c136b4109",
-        "timestamp" : "2024-06-25T09:04:16-04:00",
+        "identifier" : "urn:uuid:6e074f6f-4044-406d-a1d2-7bee4afff34f",
+        "timestamp" : "2024-06-25T09:30:56-04:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -9754,8 +9820,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8a256ef5-74f4-45e7-b0b9-0fd7bfcba8d1",
-        "timestamp" : "2024-06-25T09:04:16-04:00",
+        "identifier" : "urn:uuid:aeaaa6a2-a841-4599-95b3-d69ef13d0df7",
+        "timestamp" : "2024-06-25T09:30:56-04:00",
         "total" : 14,
         "offset" : 0,
         "parameter" : [{
@@ -14923,8 +14989,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:17a58e0c-a191-4cc6-a347-044c225ec359",
-        "timestamp" : "2024-06-25T09:04:20-04:00",
+        "identifier" : "urn:uuid:3d8a36ff-f182-4a17-a825-f454f67d0de0",
+        "timestamp" : "2024-06-25T09:31:01-04:00",
         "total" : 185,
         "offset" : 0,
         "parameter" : [{
@@ -15902,8 +15968,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:26f9b56b-809f-48f4-a605-a3a5f9a71f4b",
-        "timestamp" : "2024-06-25T09:04:20-04:00",
+        "identifier" : "urn:uuid:13d43f0c-4985-4ece-98d9-e56f81e01c99",
+        "timestamp" : "2024-06-25T09:31:02-04:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -15963,8 +16029,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:399ada33-f760-41f4-96c1-f46be5992524",
-        "timestamp" : "2024-06-25T09:04:20-04:00",
+        "identifier" : "urn:uuid:4c5bc6c3-072b-4f27-8a53-f6462abff38d",
+        "timestamp" : "2024-06-25T09:31:02-04:00",
         "total" : 14,
         "offset" : 0,
         "parameter" : [{
@@ -16079,8 +16145,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:90a587bf-e0a9-4506-bf63-64011687d06f",
-        "timestamp" : "2024-06-25T09:04:21-04:00",
+        "identifier" : "urn:uuid:46577269-9eb7-4b3f-90eb-cc5bceb4fdeb",
+        "timestamp" : "2024-06-25T09:31:03-04:00",
         "total" : 79,
         "offset" : 0,
         "parameter" : [{

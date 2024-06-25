@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "f07773fd-a62c-443b-9d8b-9c1cd3a80f69-38",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/f07773fd-a62c-443b-9d8b-9c1cd3a80f69-38",
+  "id" : "e2aa87b2-eed2-44a5-a4a7-81b71de56106-41",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/e2aa87b2-eed2-44a5-a4a7-81b71de56106-41",
   "name" : "UnionCSTipoIdentificadorAndCSTipoIdentificador",
   "title" : "Union of Tipo Identificador And Tipo Identificador",
   "status" : "active",
-  "date" : "2024-06-25T09:03:25-04:00",
+  "date" : "2024-06-25T09:29:57-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

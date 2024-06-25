@@ -77,6 +77,13 @@
     "name" : "CSNombreCampanaCL"
   },
   {
+    "id" : "CSRazonNOTinm",
+    "type" : "CodeSystem",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
+    "version" : "1.8.12",
+    "name" : "CSRazonNOinmunizacionCL"
+  },
+  {
     "id" : "CSSexoListadoDeis",
     "type" : "CodeSystem",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis",
@@ -327,6 +334,13 @@
     "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSNombreCampana",
     "version" : "1.8.12",
     "name" : "VSNombreCampanaCL"
+  },
+  {
+    "id" : "VSRazonNOTinm",
+    "type" : "ValueSet",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",
+    "version" : "1.8.12",
+    "name" : "VSRazonNOTinmCL"
   },
   {
     "id" : "VSSexoListadoDeis",

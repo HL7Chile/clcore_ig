@@ -1,5 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Used
-http://dicom.nema.org/resources/ontology/DCM,01,active,"1.2.840.10008.2.16.4",DICOM Controlled Terminology Definitions,null,"DICOM Code Definitions (Coding Scheme Designator ""DCM"" Coding Scheme Version ""01"")","ValueSet/audit-event-sub-type,ValueSet/security-role-type,ValueSet/audit-event-type"
+http://dicom.nema.org/resources/ontology/DCM,01,active,"1.2.840.10008.2.16.4",DICOM Controlled Terminology Definitions,null,"DICOM Code Definitions (Coding Scheme Designator ""DCM"" Coding Scheme Version ""01"")","ValueSet/audit-event-sub-type,ValueSet/audit-event-type,ValueSet/security-role-type"
 http://hl7.org/fhir/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.4.2",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","ValueSet/administrative-gender"
 http://hl7.org/fhir/audit-event-action,4.0.1,draft,"2.16.840.1.113883.4.642.4.453",AuditEventAction,AuditEventAction,"Indicator for type of action performed during the event that generated the event.","ValueSet/audit-event-action"
 http://hl7.org/fhir/audit-event-outcome,4.0.1,draft,"2.16.840.1.113883.4.642.4.455",AuditEventOutcome,AuditEventOutcome,"Indicates whether the event succeeded or failed.","ValueSet/audit-event-outcome"
@@ -43,6 +43,7 @@ https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje,1.8.12,active,,C
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL,1.8.12,active,,CSEspecialidadesDeisCL,Códigos de Especialidades,"Códigos de especialidades médicas descritas según DEIS","ValueSet/VSEspecialidadesDeisCL"
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero,1.8.12,active,,CSIdentidaddeGenero,Identidad de Genero,"Identidad de Genero","ValueSet/VSIdentidaddeGenero"
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana,1.8.12,active,,CSNombreCampanaCL,Campañas Inmunización,"Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud","ValueSet/VSNombreCampana"
+https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm,1.8.12,active,,CSRazonNOinmunizacionCL,Razones no Inmunización,"Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud","ValueSet/VSRazonNOTinm"
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis,1.8.12,active,,CSSexoListadoDeis,Sexo Listado Deis,"Sexo Listado Deis","ValueSet/VSSexoListadoDeis"
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador,1.8.12,active,,CSTipoIdentificador,Tipo Identificador,"Tipo Identificador","ValueSet/VSTiposDocumentos,ValueSet/VSTipoIdentificador"
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL,1.8.12,active,,CSTiposEncuentroCL,Tipos de Encuentro,"Códigos de Encuentros según MINSAL","ValueSet/VSTiposEncuentroCL"

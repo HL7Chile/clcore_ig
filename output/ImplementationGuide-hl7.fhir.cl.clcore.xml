@@ -11,7 +11,7 @@
   <name value="clcore"/>
   <title value="Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"/>
   <status value="active"/>
-  <date value="2024-06-25T09:03:09-04:00"/>
+  <date value="2024-06-25T09:29:41-04:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -1118,6 +1118,28 @@
       </reference>
       <name value="Identificación del Contacto de un Paciente"/>
       <description value="Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSRazonNOTinm"/>
+      </reference>
+      <name value="Razones no Inmunización"/>
+      <description value="Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSRazonNOTinm"/>
+      </reference>
+      <name value="Razones no Inmunización"/>
+      <description value="Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
