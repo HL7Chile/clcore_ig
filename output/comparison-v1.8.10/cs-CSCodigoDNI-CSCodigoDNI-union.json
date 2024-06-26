@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "e2aa87b2-eed2-44a5-a4a7-81b71de56106-14",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/e2aa87b2-eed2-44a5-a4a7-81b71de56106-14",
+  "id" : "3e9e585c-f011-4231-bfae-839bd19a21d7-14",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3e9e585c-f011-4231-bfae-839bd19a21d7-14",
   "name" : "UnionCSCodigoDNIAndCSCodigoDNI",
   "title" : "Union of Códigos de Documentos DNI para LATAM y el Caribe And Códigos de Documentos DNI para LATAM y el Caribe",
   "status" : "active",
-  "date" : "2024-06-25T09:29:57-04:00",
+  "date" : "2024-06-26T18:33:49-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

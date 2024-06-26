@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "e2aa87b2-eed2-44a5-a4a7-81b71de56106-155",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/e2aa87b2-eed2-44a5-a4a7-81b71de56106-155",
+  "id" : "3e9e585c-f011-4231-bfae-839bd19a21d7-155",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3e9e585c-f011-4231-bfae-839bd19a21d7-155",
   "name" : "UnionVSEspecialidadesDeisCLAndVSEspecialidadesDeisCL",
   "title" : "Union of Códigos de Especialidades And Códigos de Especialidades",
   "status" : "active",
-  "date" : "2024-06-25T09:29:57-04:00",
+  "date" : "2024-06-26T18:33:49-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

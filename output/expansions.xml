@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="732d4802-7304-484e-ae95-0acd8b7a427c"/>
+  <id value="9a8f2e90-12ab-4b74-b0f2-732d616e390b"/>
   <meta>
-    <lastUpdated value="2024-06-25T09:29:41.743-04:00"/>
+    <lastUpdated value="2024-06-26T18:33:17.788-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -2039,8 +2039,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a0aff942-b477-4286-92c7-261afcc4430e"/>
-          <timestamp value="2024-06-25T09:30:45-04:00"/>
+          <identifier value="urn:uuid:9819bb4b-e1b5-4a1f-9658-64bd8aa28188"/>
+          <timestamp value="2024-06-26T18:35:23-04:00"/>
           <total value="249"/>
           <offset value="0"/>
           <parameter>
@@ -3389,8 +3389,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:707e7556-c82c-4cbd-99c9-185ea281a13e"/>
-          <timestamp value="2024-06-25T09:30:46-04:00"/>
+          <identifier value="urn:uuid:2a24fb4b-59ff-4d2e-8232-710b4b44e785"/>
+          <timestamp value="2024-06-26T18:35:25-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -6247,8 +6247,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b6c43fb5-3bfd-4656-99ed-4d2fe23f2d03"/>
-          <timestamp value="2024-06-25T09:30:46-04:00"/>
+          <identifier value="urn:uuid:7d09f98e-ffde-4aa6-af23-f09d668925c9"/>
+          <timestamp value="2024-06-26T18:35:25-04:00"/>
           <total value="346"/>
           <offset value="0"/>
           <parameter>
@@ -8490,8 +8490,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f4bd3ccb-6886-4f25-9778-2c2460ab6d9b"/>
-          <timestamp value="2024-06-25T09:30:48-04:00"/>
+          <identifier value="urn:uuid:07d4d4c6-9d57-4ae8-8d7e-c05dcd03bfc1"/>
+          <timestamp value="2024-06-26T18:35:27-04:00"/>
           <total value="56"/>
           <offset value="0"/>
           <parameter>
@@ -8963,8 +8963,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:736df2e1-30f4-4ae3-9e86-a5cd8ddf050e"/>
-          <timestamp value="2024-06-25T09:30:49-04:00"/>
+          <identifier value="urn:uuid:b5388c16-27f8-4c88-8a9a-1f852392ab35"/>
+          <timestamp value="2024-06-26T18:35:28-04:00"/>
           <total value="16"/>
           <offset value="0"/>
           <parameter>
@@ -9853,8 +9853,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8cd41498-58ee-4533-a6d9-e5f5e818ae81"/>
-          <timestamp value="2024-06-25T09:30:49-04:00"/>
+          <identifier value="urn:uuid:b68337c2-8f1b-441d-952a-c2c19d1b7d70"/>
+          <timestamp value="2024-06-26T18:35:28-04:00"/>
           <total value="53"/>
           <offset value="0"/>
           <parameter>
@@ -10149,7 +10149,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-feb 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-feb. 2024</p>
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
             <table class="codes">
               <tr>
@@ -18184,8 +18184,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:497cf6b2-ed3d-4901-b455-ca6b38237b0e"/>
-          <timestamp value="2024-06-25T09:30:49-04:00"/>
+          <identifier value="urn:uuid:01ca9dad-6943-4941-ba84-557573e631a5"/>
+          <timestamp value="2024-06-26T18:35:29-04:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -23804,8 +23804,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:24aaca57-3cab-4ad7-a848-089348ec043f"/>
-          <timestamp value="2024-06-25T09:30:55-04:00"/>
+          <identifier value="urn:uuid:d43b696a-baeb-4c7d-a911-c244aeaff1ed"/>
+          <timestamp value="2024-06-26T18:35:35-04:00"/>
           <total value="68"/>
           <offset value="0"/>
           <parameter>
@@ -24265,8 +24265,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:38e8ea8c-c10d-4eaa-a76a-bd8611310cdf"/>
-          <timestamp value="2024-06-25T09:30:55-04:00"/>
+          <identifier value="urn:uuid:1c11184d-fea0-4b68-acfb-ec2a6e0aeb46"/>
+          <timestamp value="2024-06-26T18:35:36-04:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -24653,8 +24653,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1734e2f3-786a-4f1e-a3f3-6a1cead880fd"/>
-          <timestamp value="2024-06-25T09:30:55-04:00"/>
+          <identifier value="urn:uuid:61dd3767-e1b0-43ed-afca-de15752eb531"/>
+          <timestamp value="2024-06-26T18:35:36-04:00"/>
           <total value="36"/>
           <offset value="0"/>
           <parameter>
@@ -24930,8 +24930,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1756bcf0-5958-44a1-b679-1293e05a2c09"/>
-          <timestamp value="2024-06-25T09:30:55-04:00"/>
+          <identifier value="urn:uuid:3134f619-84ee-4868-bd5c-90c2db4d3622"/>
+          <timestamp value="2024-06-26T18:35:36-04:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -25055,8 +25055,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6e074f6f-4044-406d-a1d2-7bee4afff34f"/>
-          <timestamp value="2024-06-25T09:30:56-04:00"/>
+          <identifier value="urn:uuid:0bda987e-4502-4e65-8adf-62a7cc6da0a3"/>
+          <timestamp value="2024-06-26T18:35:36-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -25344,8 +25344,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:aeaaa6a2-a841-4599-95b3-d69ef13d0df7"/>
-          <timestamp value="2024-06-25T09:30:56-04:00"/>
+          <identifier value="urn:uuid:7f64cfe2-523b-457c-af55-2e249302a803"/>
+          <timestamp value="2024-06-26T18:35:36-04:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -33477,8 +33477,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:508e9c00-fe81-413d-8d6c-4ce267cecea7"/>
-          <timestamp value="2024-06-24T20:59:11.550Z"/>
+          <identifier value="urn:uuid:7e79504e-8e98-45da-8fc8-bf258884ae1e"/>
+          <timestamp value="2024-06-21T22:09:38.052Z"/>
           <offset value="0"/>
           <parameter>
             <name value="limitedExpansion"/>
@@ -41054,8 +41054,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3d8a36ff-f182-4a17-a825-f454f67d0de0"/>
-          <timestamp value="2024-06-25T09:31:01-04:00"/>
+          <identifier value="urn:uuid:e510d488-09b2-4e01-9934-8e418f1abc2e"/>
+          <timestamp value="2024-06-26T18:35:43-04:00"/>
           <total value="185"/>
           <offset value="0"/>
           <parameter>
@@ -42076,8 +42076,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:13d43f0c-4985-4ece-98d9-e56f81e01c99"/>
-          <timestamp value="2024-06-25T09:31:02-04:00"/>
+          <identifier value="urn:uuid:5d857619-688a-4183-a3dd-372b3f48c998"/>
+          <timestamp value="2024-06-26T18:35:44-04:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -42268,8 +42268,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4c5bc6c3-072b-4f27-8a53-f6462abff38d"/>
-          <timestamp value="2024-06-25T09:31:02-04:00"/>
+          <identifier value="urn:uuid:d977a437-26fc-40c9-afe5-814eb1a0a355"/>
+          <timestamp value="2024-06-26T18:35:44-04:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -43035,8 +43035,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:46577269-9eb7-4b3f-90eb-cc5bceb4fdeb"/>
-          <timestamp value="2024-06-25T09:31:03-04:00"/>
+          <identifier value="urn:uuid:c5c387f5-e6a1-499b-a2c7-a0a822a4be91"/>
+          <timestamp value="2024-06-26T18:35:45-04:00"/>
           <total value="79"/>
           <offset value="0"/>
           <parameter>

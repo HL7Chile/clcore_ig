@@ -10,7 +10,7 @@
   "name" : "IdentificacionContactoCl",
   "title" : "Identificación del Contacto de un Paciente",
   "status" : "active",
-  "date" : "2024-06-25T09:29:41-04:00",
+  "date" : "2024-06-26T18:33:17-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -42,7 +42,7 @@
   "abstract" : false,
   "context" : [{
     "type" : "element",
-    "expression" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl#Patient.contact"
+    "expression" : "Patient.contact"
   }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",

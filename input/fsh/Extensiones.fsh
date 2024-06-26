@@ -1,14 +1,14 @@
-/*Por un bug o falta de desarrollo en la versión no permite más de un contexto, debería permitirse en un futuro*/
+/*Por problemas en más de un servidor las extensiones deben utilizar el recurso base en los contextos*/
 Extension: IdentidadDeGenero
 Id: IdentidadDeGenero
 Title: "Identidad De Genero"
 Description: "Identidad De Genero"
-Context: CorePacienteCl, PrestadorCL
+Context: Patient, Practitioner
 //Context: Patient, RelatedPerson, Person, Practitioner, FamilyMemberHistory
-* ^context[0].type = #element
-* ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl#Patient"
-* ^context[+].type = #element
-* ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner"
+// * ^context[0].type = #element
+// * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl#Patient"
+// * ^context[+].type = #element
+// * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner"
 * valueCodeableConcept ^short = "Identidad De Genero"
 * valueCodeableConcept from  VSIdentidaddeGenero
 
@@ -16,8 +16,8 @@ Extension: SexoBiologico
 Id: SexoBiologico
 Title: "Sexo Biologico del paciente"
 Description: "Sexo Biologico del paciente"
-//Context: CorePacienteCl
-Context: CorePacienteCl, PrestadorCL
+//Context: Patient
+Context: Patient, Practitioner
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "SexoBiologico"
 * valueCodeableConcept from VSadministrative-gender
@@ -138,7 +138,7 @@ Extension:   IdentificacionContactoCl
 Id:          IdContacto
 Title:       "Identificación del Contacto de un Paciente"
 Description: "Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal"
-Context: CorePacienteCl.contact
+Context: Patient.contact
 * extension contains
 	tutId 1..* MS and
 	docProc 0..1 MS

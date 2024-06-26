@@ -34,7 +34,7 @@
   <name value="IdentificacionContactoCl"/>
   <title value="Identificación del Contacto de un Paciente"/>
   <status value="active"/>
-  <date value="2024-06-25T09:29:41-04:00"/>
+  <date value="2024-06-26T18:33:17-04:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -66,7 +66,7 @@
   <abstract value="false"/>
   <context>
     <type value="element"/>
-    <expression value="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl#Patient.contact"/>
+    <expression value="Patient.contact"/>
   </context>
   <type value="Extension"/>
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
