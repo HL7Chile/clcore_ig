@@ -57,7 +57,7 @@
  - [Inmunización](Immunization-ImmunizationEj.html)
  - [Documento](Composition-DocumentoEjemplo1.html)
 
-- A las extensiones se cambian los contextos por los recursos bases
+- A las extensiones se adjusta los contextos en los recursos bases
 
 - ValueSet deprecados:
   - Códigos de Servicos de Salud en Chile

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3e9e585c-f011-4231-bfae-839bd19a21d7-132",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3e9e585c-f011-4231-bfae-839bd19a21d7-132",
+  "id" : "73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-132",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-132",
   "name" : "IntersectionSexoBiologicoAndSexoBiologico",
   "title" : "Intersection of Sexo Biologico del paciente And Sexo Biologico del paciente",
   "status" : "active",
-  "date" : "2024-06-26T18:33:49-04:00",
+  "date" : "2024-06-27T08:59:40-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

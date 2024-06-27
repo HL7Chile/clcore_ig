@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ProvenanceCL"] ; # 
   fhir:title [ fhir:v "CL Provenance"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-06-26T18:33:17-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-27T08:59:20-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;
