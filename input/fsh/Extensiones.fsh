@@ -9,6 +9,7 @@ Context: Patient, Practitioner
 // * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl#Patient"
 // * ^context[+].type = #element
 // * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner"
+* value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Identidad De Genero"
 * valueCodeableConcept from  VSIdentidaddeGenero
 
@@ -279,6 +280,7 @@ Title: "Segundo Apellido"
 Description: "Segundo Apellido"
 Context: HumanName.family
 * value[x] only string
+* valueString ^short = "Segundo apellido de la persona"
 
 
 
