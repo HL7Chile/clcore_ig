@@ -2,22 +2,8 @@ clcore
 =========================================
 
 C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\AuditEvent-AuditEventEx.json: line 26, col 8, Info - Reference to experimental CodeSystem http://terminology.hl7.org/CodeSystem/extra-security-role-type|1.0.0 (BUSINESSRULE)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Encounter-EncounterCL.json: line 93, col 4, Info - El URI para el Code System 'https://minsal.cl/fhir/HD/CodeSystem/CSCodigoServicio' es desconocido asi que el código no puede ser validado (NOTFOUND)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Immunization-ImmunizationCL.json: line 43, col 10, Info - El URI para el Code System 'https://minsal.cl/fhir/HD/CodeSystem/CSCodSSalud' es desconocido asi que el código no puede ser validado (UNKNOWN)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.clcore.json: line 1, col 48935, Warning - La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló (INVARIANT)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Medication-MedicamentoCl.json: line 21, col 4, Info - El URI para el Code System 'http://minsal.cl/semantikos/description-id' es desconocido asi que el código no puede ser validado (NOTFOUND)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Medication-MedicamentoCl-2.json: line 21, col 4, Info - A definition for CodeSystem 'http://minsal.cl/semantikos/description-id' could not be found, so the code cannot be validated (NOTFOUND)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Observation-123.json: line 5, col 4, Info - A definition for CodeSystem 'http://loinc.org#10244-2' could not be found, so the code cannot be validated (NOTFOUND)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Patient-PacienteCL.json: line 11, col 8, Warning - A definition for CodeSystem 'https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI' could not be found, so the code cannot be validated (NOTFOUND)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Patient-PacienteCL.json: line 161, col 18, Warning - A definition for CodeSystem 'https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI' could not be found, so the code cannot be validated (NOTFOUND)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Patient-PacienteCl-3.json: line 25, col 8, Warning - A definition for CodeSystem 'https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI' could not be found, so the code cannot be validated (NOTFOUND)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Patient-PacienteCl-4.json: line 160, col 18, Warning - A definition for CodeSystem 'https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI' could not be found, so the code cannot be validated (NOTFOUND)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Practitioner-3240.json: line 11, col 8, Warning - A definition for CodeSystem 'https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores' could not be found, so the code cannot be validated (NOTFOUND)
+C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.clcore.json: line 1, col 39605, Warning - !!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló (INVARIANT)
 C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CodigoPaises.json: line 0, col 0, Warning - Review the extension type for CodigoPaises: extensions should not have a context of Element unless it's really intended that they can be used anywhere (BUSINESSRULE)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-IdentidadDeGenero.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-SexoBiologico.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSDiagnosticosSCT.json: line 1, col 1402, Error - El valor URL 'http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips' no puede resolverse (INVALID)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSTiposDocClinico.json: line 0, col 0, Info - The value set expansion is too large, and only a subset has been displayed (INFORMATIONAL)
 
-err = 1, warn = 9, info = 7
-IG Publisher Version: 1.6.6
+err = 0, warn = 2, info = 1
+IG Publisher Version: 1.6.11

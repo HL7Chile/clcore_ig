@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-150",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/7dc7aa62-b1bf-43b5-afed-156a0896b780-150",
-  "name" : "IntersectionVSSexoListadoDeisAndAdministrativeGender",
-  "title" : "Intersection of Sexo Listado Deis And AdministrativeGender",
-  "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00"
-}

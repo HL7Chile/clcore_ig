@@ -55,7 +55,7 @@
     gtag('config', 'G-KDP1SHWXWT');
 </script>
 -->
-
+<!-- Franco: Nota Para Mansilla Revisa este script genera errores al subir en Build -->
 
 
 
@@ -98,7 +98,7 @@
             <div id="ig-status">
                 <p><span style="font-size:12pt;font-weight:bold">Guía de Implementación &#39;&#39;cl core&#39;&#39; FHIR R4, (Versión Evolutiva)</span>
                     <br/>
-                    <span style="display:inline-block;">1.8.7 - ci-build
+                    <span style="display:inline-block;">1.8.12 - draft
 
 
 
@@ -188,7 +188,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva) - Local Development build (v1.8.7) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://hl7chile.cl/fhir/ig/clcore/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva) - Local Development build (v1.8.12) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://hl7chile.cl/fhir/ig/clcore/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -365,37 +365,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-CodigoPaises.html"
-                  title="StructureDefinition/CodigoPaises">Codigo de Identificación de países</a>
+                  title="StructureDefinition/CodigoPaises">Codigo de Paises</a>
             </td>
             <td>
-<p>Esta extensión incluye códigos de paises de origen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ContactoParticipantes.html"
-                  title="StructureDefinition/ContactoParticipantes">Contacto de los participantes secundarios del encuentro</a>
-            </td>
-            <td>
-<p>Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-RazonNOrealizarse.html"
-                  title="StructureDefinition/RazonNOrealizarse">Código de las razones por la cual no se pudo realizar la atención</a>
-            </td>
-            <td>
-<p>Esta extensión incluye códigos de razones por la cuales no pudo llevarse a cabo el encuentro remoto</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-TiposVacunaRNI.html"
-                  title="StructureDefinition/TiposVacunaRNI">Código de tipos de Vacunas en Chile</a>
-            </td>
-            <td>
-<p>Esta extensión incluye códigos de los tipos de vacunas que existe en el Registro Nacional de Inmunizaciones RNI</p>
+<p>Esta extensión incluye códigos de paises</p>
 </td>
          </tr>
          <tr>
@@ -427,15 +400,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-VSEspecialidadesDeisCL.html"
-                  title="StructureDefinition/VSEspecialidadesDeisCL">Especialidad del médico principal</a>
-            </td>
-            <td>
-<p>Esta extensión incluye los códigos de las especialidades que puede tener el medico principal</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-IdentidadDeGenero.html"
                   title="StructureDefinition/IdentidadDeGenero">Identidad De Genero</a>
             </td>
@@ -454,42 +418,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-NombreCampana.html"
-                  title="StructureDefinition/NombreCampana">Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)</a>
-            </td>
-            <td>
-<p>Esta extensión incluye los nombres de las distintas Campañas que se realizan y estan registradas en el RNI</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-NotasEncuentro.html"
-                  title="StructureDefinition/NotasEncuentro">Notas realizadas en un encuentro por Comité</a>
-            </td>
-            <td>
-<p>Esta extensión incluye los códigos de los medios de contacto que se tiene para los participantes secundarios</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ObservacionesDiagnostico.html"
-                  title="StructureDefinition/ObservacionesDiagnostico">Observaciones o comentarios simples respecto a un diagnóstico</a>
-            </td>
-            <td>
-<p>Esta extensión sirve para insertar comentarios acerca a un diagnóstico médico realizado en un encuentro remoto</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-RazonNOrealizarseInm.html"
-                  title="StructureDefinition/RazonNOrealizarseInm">Razones por las cuales no se pudo realizar la inmunización</a>
-            </td>
-            <td>
-<p>Esta extensión incluye las razones por la cuales no pudo llevarse a cabo la inmunización</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-SegundoApellido.html"
                   title="StructureDefinition/SegundoApellido">Segundo Apellido</a>
             </td>
@@ -504,15 +432,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Sexo Biologico del paciente</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ServicioSalud.html"
-                  title="StructureDefinition/ServicioSalud">Sistema Nacional de Servicios de Salud</a>
-            </td>
-            <td>
-<p>Esta extensión incluye los códigos de los Servicios de Salud que existen en el país</p>
 </td>
          </tr>
       </tbody>
@@ -538,14 +457,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Códigos de leguaje</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-VSContactosec.html" title="ValueSet/VSContactosec">Contacto participantes</a>
-            </td>
-            <td>
-<p>Contacto telefónico o correo de los participantes</p>
 </td>
          </tr>
          <tr>
@@ -620,44 +531,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-VSIdentificadores.html"
-                  title="ValueSet/VSIdentificadores">Identificadores</a>
-            </td>
-            <td>
-<p>Identificadores</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-VSPrevision.html" title="ValueSet/VSPrevision">Prevision</a>
-            </td>
-            <td>
-<p>Prevision</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-VSRazonNOT.html" title="ValueSet/VSRazonNOT">Razones no Atención Remota</a>
-            </td>
-            <td>
-<p>Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-VSRazonNOTinm.html" title="ValueSet/VSRazonNOTinm">Razones no Inmunización</a>
             </td>
             <td>
 <p>Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-VSCodigosServiciosSalud.html"
-                  title="ValueSet/VSCodigosServiciosSalud">Servicos de Salud en Chile</a>
-            </td>
-            <td>
-<p>Códigos de Servicios de Salud que existen en Chile</p>
 </td>
          </tr>
          <tr>
@@ -825,52 +702,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-CSIdentificadores.html"
-                  title="CodeSystem/CSIdentificadores">Identificadores</a>
-            </td>
-            <td>
-<p>Identificadores</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-CSPrevision.html" title="CodeSystem/CSPrevision">Prevision</a>
-            </td>
-            <td>
-<p>Prevision</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-CSRazonNOT.html" title="CodeSystem/CSRazonNOT">Razones Cancelación Atención Remota</a>
-            </td>
-            <td>
-<p>Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-CSRazonNOTinm.html" title="CodeSystem/CSRazonNOTinm">Razones no Inmunización</a>
             </td>
             <td>
 <p>Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-csrazonnoencuentro.html"
-                  title="CodeSystem/csrazonnoencuentro">Razón Encuentro Remoto no Realizado</a>
-            </td>
-            <td>
-<p>Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-CSCodSSalud.html" title="CodeSystem/CSCodSSalud">Servicios de Salud Chile</a>
-            </td>
-            <td>
-<p>Códigos del Sistema Nacional de Servicios de Salud</p>
 </td>
          </tr>
          <tr>
@@ -928,7 +763,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Organization-ORG1.html" title="Organization/ORG1">Ejemplo Organización Prestadora de Salud</a>
+               <a href="Organization-OrganizacionClEjemplo1.html"
+                  title="Organization/OrganizacionClEjemplo1">Ejemplo Organización Prestadora de Salud</a>
             </td>
             <td>
 <p>CESFAM Rio Bueno (Ficticio) con ID DEIS no real</p>
@@ -936,32 +772,35 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Composition-CompositionClEj.html"
-                  title="Composition/CompositionClEj">Ejemplo de Documento Clínico</a>
+               <a href="Composition-DocumentoEjemplo1.html"
+                  title="Composition/DocumentoEjemplo1">Ejemplo de Cabecera de Documento</a>
             </td>
             <td>
-<p>Ejemplo de documento para resumen de historia clínica</p>
+<p>Este es el ejemplo de la cabecera de un documento</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="AllergyIntolerance-222.html" title="AllergyIntolerance/222">Ejemplo de Recurso AllergyIntolerance</a>
+               <a href="PractitionerRole-EjemploEspecialidadCL2.html"
+                  title="PractitionerRole/EjemploEspecialidadCL2">Ejemplo de Especialidad Medicina Familiar</a>
             </td>
             <td>
-<p>AllergyIntolerance ficticio</p>
+<p>Define la especialidad de medicina familiar que cumnple un profesional en un establecimiento de salud</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Condition-1112.html" title="Condition/1112">Ejemplo de Recurso Condition</a>
+               <a href="Medication-MedicamentoCl-2.html"
+                  title="Medication/MedicamentoCl-2">Ejemplo de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido</a>
             </td>
             <td>
-<p>Condition ficticio</p>
+<p>Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Encounter-EncounterCL.html" title="Encounter/EncounterCL">Ejemplo de Recurso Encuentro</a>
+               <a href="Encounter-EjemploEncounterCL.html"
+                  title="Encounter/EjemploEncounterCL">Ejemplo de Recurso Encuentro</a>
             </td>
             <td>
 <p>Encuentro remoto ficticio del paciente</p>
@@ -969,67 +808,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Immunization-999.html" title="Immunization/999">Ejemplo de Recurso Immunization</a>
+               <a href="Immunization-ImmunizationEj.html"
+                  title="Immunization/ImmunizationEj">Ejemplo de Recurso Immunization</a>
             </td>
             <td>
 <p>Immunization ficticio</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Immunization-ImmunizationCL.html"
-                  title="Immunization/ImmunizationCL">Ejemplo de Recurso Inmunización</a>
-            </td>
-            <td>
-<p>Registro de inmunización ficticio</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Location-3333458.html" title="Location/3333458">Ejemplo de Recurso Location</a>
-            </td>
-            <td>
-<p>Location ficticio</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="MedicationStatement-354.html" title="MedicationStatement/354">Ejemplo de Recurso MedicationStatement</a>
-            </td>
-            <td>
-<p>MedicationStatement ficticio</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-123.html" title="Observation/123">Ejemplo de Recurso Observation</a>
-            </td>
-            <td>
-<p>Observation ficticio</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-f003.html" title="Organization/f003">Ejemplo de Recurso Organización</a>
-            </td>
-            <td>
-<p>Organización ficticio</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-11.html" title="Patient/11">Ejemplo de Recurso Paciente</a>
-            </td>
-            <td>
-<p>Paciente ficticio</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-PacienteCL2.html" title="Patient/PacienteCL2">Ejemplo de Recurso Paciente Extranjero</a>
-            </td>
-            <td>
-<p>Paciente ficticio extrangero, con identificación Pasaporte de origen Salvadoreño sin sistema real de validación del número de Pasaporte.</p>
 </td>
          </tr>
          <tr>
@@ -1042,7 +825,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Practitioner-3240.html" title="Practitioner/3240">Ejemplo de Recurso Prestador como base para un Core Nacional</a>
+               <a href="Practitioner-EjemploPrestadorCL2.html"
+                  title="Practitioner/EjemploPrestadorCL2">Ejemplo de Recurso Prestador 2 como base para un Core Nacional</a>
+            </td>
+            <td>
+<p>Ejemplo de un Prestador no Real con identificadores en Systemas con APIs “no disponibles”</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-EjemploPrestadorCL.html"
+                  title="Practitioner/EjemploPrestadorCL">Ejemplo de Recurso Prestador como base para un Core Nacional</a>
             </td>
             <td>
 <p>Ejemplo de un Prestador no Real con identificadores en Systemas con API”s no disponibles</p>
@@ -1050,31 +843,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Practitioner-3020.html" title="Practitioner/3020">Ejemplo de Recurso Profesional</a>
+               <a href="PractitionerRole-EjemploEspecialidadCL.html"
+                  title="PractitionerRole/EjemploEspecialidadCL">Ejemplo de Recurso de especialidad</a>
             </td>
             <td>
-<p>Profesional ficticio</p>
+<p>Define la especialidad que cumnple en un establecimiento de salud</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="PractitionerRole-EspecialidadCL.html"
-                  title="PractitionerRole/EspecialidadCL">Ejemplo de Recurso de especialidad</a>
+               <a href="Condition-DiagnosticoEj2.html" title="Condition/DiagnosticoEj2">Ejemplo de Un Diagnóstico de Faringoamigdalitis</a>
             </td>
             <td>
-<p>Define el Rol de un Médico durante la Operación de un paciente en Urgencia</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-PacienteCl-4.html" title="Patient/PacienteCl-4">Ejemplo de Recurso de paciente Nacional con contacto declarado</a>
-            </td>
-            <td>
-<p>Paciente ficticio nacional CI Chilena, 
-     * sin sistema de validación "http://regcivil.cl/Validacion/RUN" ficticio , 
-     * cuyo nombre se decribe mediante el oficial y uno social. 
-     * La dirección tampoco es Real.
-     * Se agrega al paciente un acompañante patiente.</p>
+<p>Diagnóstico Confirmado de Faringoamigdalitis</p>
 </td>
          </tr>
          <tr>
@@ -1096,7 +877,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="Provenance-EjemplValidacionProvCl.html"
-                  title="Provenance/EjemplValidacionProvCl">Ejemplo de la Validación de un documento por medio del Prescriptor</a>
+                  title="Provenance/EjemplValidacionProvCl">Ejemplo de la Validación de un documento por medio del Autor</a>
             </td>
             <td>
 <p>Ejemplo de un documento, en la cual el prestador que la ha desarollado genera una validación por medio de una firma</p>
@@ -1108,23 +889,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Log de Audición de una operacion Search.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Medication-MedicamentoCl-2.html"
-                  title="Medication/MedicamentoCl-2">Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido</a>
-            </td>
-            <td>
-<p>Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido Código de descripción = 1703591000167111 y de Cocepto = 696681000167108 según TFC</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-PacienteCl-3.html" title="Patient/PacienteCl-3">Paciente Nacional, con datos actualizados, declarando nacionalidad</a>
-            </td>
-            <td>
-<p>Paciente ficticio nacional CI Chilena con sistema de validación no real, cuyo nombre es solo el oficial. La dirección tampoco es Real</p>
 </td>
          </tr>
       </tbody>
@@ -1147,7 +911,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 8, 2024 11:46-0400">2024-05-08</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 27, 2024 08:59-0400">2024-06-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

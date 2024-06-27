@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodComunasCL",
       "title" : "Códigos de Comunas en Chile",
@@ -10,7 +10,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodMadurez",
       "title" : "Códigos de grado de madurez del artefacto",
@@ -18,7 +18,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodProvinciasCL",
       "title" : "Códigos de Provincias en Chile",
@@ -26,23 +26,15 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodRegionCL",
       "title" : "Códigos de Regiones en Chile",
       "description" : "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud",
-      "version" : "1.8.7",
-      "status" : "active",
-      "name" : "CSCodSSaludCL",
-      "title" : "Servicios de Salud Chile",
-      "description" : "Códigos del Sistema Nacional de Servicios de Salud"
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodigoDNI",
       "title" : "Códigos de Documentos DNI para LATAM y el Caribe",
@@ -50,7 +42,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodServicioCL",
       "title" : "Tipos de Servicios Remotos",
@@ -58,7 +50,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSTiposVacunaCL",
       "title" : "Códigos de Vacunas RNI",
@@ -66,7 +58,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodigoslenguaje",
       "title" : "Codigos Lenguaje",
@@ -74,7 +66,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSEspecialidadesDeisCL",
       "title" : "Códigos de Especialidades",
@@ -82,47 +74,23 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSIdentidaddeGenero",
       "title" : "Identidad de Genero",
       "description" : "Identidad de Genero"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores",
-      "version" : "1.8.7",
-      "status" : "active",
-      "name" : "CSIdentificadores",
-      "title" : "Identificadores",
-      "description" : "Identificadores"
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSNombreCampanaCL",
       "title" : "Campañas Inmunización",
       "description" : "Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision",
-      "version" : "1.8.7",
-      "status" : "active",
-      "name" : "CSPrevision",
-      "title" : "Prevision",
-      "description" : "Prevision"
-    },
-    {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOT",
-      "version" : "1.8.7",
-      "status" : "active",
-      "name" : "CSRazonNOencuentroCL",
-      "title" : "Razones Cancelación Atención Remota",
-      "description" : "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSRazonNOinmunizacionCL",
       "title" : "Razones no Inmunización",
@@ -130,7 +98,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSSexoListadoDeis",
       "title" : "Sexo Listado Deis",
@@ -138,7 +106,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSTipoIdentificador",
       "title" : "Tipo Identificador",
@@ -146,7 +114,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSTiposEncuentroCL",
       "title" : "Tipos de Encuentro",
@@ -154,19 +122,11 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodPaises",
       "title" : "Códigos de Países",
       "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N"
-    },
-    {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro",
-      "version" : "1.8.7",
-      "status" : "active",
-      "name" : "CSrazonnoencuentro",
-      "title" : "Razón Encuentro Remoto no Realizado",
-      "description" : "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"
     }
   ]
 }

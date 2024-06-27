@@ -38,7 +38,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 con-4con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.status","< 303105007 |Disease phases|","PRB-14","Observation ACT
 .inboundRelationship[typeCode=COMP].source[classCode=OBS, code=""clinicalStatus"", moodCode=EVN].value","FiveWs.status"
-"Condition.verificationStatus","Condition.verificationStatus","","","",0,1,"","Y","Y","CodeableConcept {[]} {[]}
+"Condition.verificationStatus","Condition.verificationStatus","","","",0,1,"Y","Y","Y","CodeableConcept {[]} {[]}
 ","Estado de verificación de la condición o diagnóstico: unconfirmed | provisional | differential | confirmed | refuted | entered-in-error","Estado de verificación de la condición o Diagnóstico","verificationStatus is not required.  For example, when a patient has abdominal pain in the ED, there is not likely going to be a verification status.
 The data type is CodeableConcept because verificationStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.","","","","","","","","",,"required","Códigos definidos por estándar","http://hl7.org/fhir/ValueSet/condition-ver-status","",,,,"Condition.verificationStatus",0,1,"con-3
 con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

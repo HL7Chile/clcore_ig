@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-65",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7dc7aa62-b1bf-43b5-afed-156a0896b780-65",
-  "name" : "UnionPaisOrigenNacionalidadClAndPaisOrigenNacionalidadCl",
-  "title" : "Union of Codigo de Identificación de países And Codigo de Identificación de países",
+  "id" : "73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-53",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-53",
+  "name" : "UnionPaisOrigenNacionalidadClAndPaisDireccion",
+  "title" : "Union of Codigo de Identificación de países And Codigo de Paises",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-27T08:59:40-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -16,8 +16,8 @@
   "snapshot" : {
     "element" : [{
       "path" : "Extension",
-      "short" : "Codigo de Identificación de países",
-      "definition" : "Esta extensión incluye códigos de paises de origen",
+      "short" : "left: Codigo de Identificación de países; right: Codigo de Paises",
+      "definition" : "left: Esta extensión incluye códigos de paises de origen; right: Esta extensión incluye códigos de paises",
       "min" : 0,
       "max" : "*",
       "constraint" : [{
@@ -106,7 +106,7 @@
     {
       "path" : "Extension.url",
       "representation" : ["xmlAttr"],
-      "short" : "left: identifies the meaning of the extension; right: Extensión de Nacionalidad para pacientes extranjeros",
+      "short" : "left: Extensión de Nacionalidad para pacientes extranjeros; right: Extensión de dirección del país",
       "definition" : "Source of the definition for the extension code - a logical name or a URL.",
       "comment" : "The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.",
       "min" : 1,
@@ -128,7 +128,7 @@
     },
     {
       "path" : "Extension.value[x]",
-      "short" : "Código de País",
+      "short" : "left: Código de País; right: Código del País",
       "definition" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility] for a list).",
       "min" : 0,
       "max" : "1",

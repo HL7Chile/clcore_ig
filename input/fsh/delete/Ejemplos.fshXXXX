@@ -458,30 +458,7 @@ Usage: #inline
 * valueCodeableConcept = CSSexoListadoDeis#1 "Masculino"
 
 
-Instance: AuditEventEx
-InstanceOf: AuditEventCl
-Title : "Ejemplo de un Audit-Event Search."
-Description: "Log de Audición de una operacion Search."
-Usage: #example
-* type = http://terminology.hl7.org/CodeSystem/audit-event-type#rest "Restful Operation"
-* subtype = http://hl7.org/fhir/restful-interaction#search "search"
-* action = #E
-* recorded = "2021-08-22T23:42:24Z"
-* outcome = #0
-* agent[0].type = http://terminology.hl7.org/CodeSystem/extra-security-role-type#humanuser "human user"
-* agent[=].who.identifier.value = "95"
-* agent[=].altId = "601847123"
-* agent[=].name = "Grahame Grieve"
-* agent[=].requestor = true
 
-* agent[=].network.address = "Workstation1.ehr.familyclinic.com"
-* agent[=].network.type = #1
-
-
-* source.observer.reference = "Practitioner/3240"
-
-
-* entity.what.reference = "Organization/ORG1"
 
 
 Instance: BundleEx
@@ -622,7 +599,6 @@ InstanceOf : CoreMedicamentoCl
 * code.coding.system = "http://minsal.cl/semantikos/description-id"
 * code.coding.code = #1991971000167110  
 * code.coding.display = "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
-
 
 
 Alias: $description-id = http://minsal.cl/semantikos/description-id

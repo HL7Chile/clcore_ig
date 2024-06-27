@@ -1,12 +1,12 @@
 {
   "package": "hl7.fhir.cl.clcore",
-  "version": "1.8.7",
+  "version": "1.8.12",
   "fhirVersion": "4.0.1",
   "jurisdiction": "CL",
   "extensions": [
     {
       "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
-      "title": "Codigo de Identificación de países",
+      "title": "Codigo de Paises",
       "types": [
         "CodeableConcept",
         "string",
@@ -38,20 +38,6 @@
         "string",
         "boolean",
         "string"
-      ]
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes",
-      "title": "Contacto de los participantes secundarios del encuentro",
-      "types": [
-        "ContactPoint",
-        "string",
-        "Extension",
-        "code",
-        "string",
-        "code",
-        "positiveInt",
-        "Period"
       ]
     },
     {
@@ -146,30 +132,57 @@
       "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero",
       "title": "Identidad De Genero",
       "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
         "CodeableConcept",
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreCampana",
-      "title": "Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)",
-      "types": [
         "Coding",
-        "Coding"
-      ]
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NotasEncuentro",
-      "title": "Notas realizadas en un encuentro por Comité",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ObservacionesDiagnostico",
-      "title": "Observaciones o comentarios simples respecto a un diagnóstico",
-      "types": [
-        "string"
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "CodeableConcept"
       ]
     },
     {
@@ -188,20 +201,6 @@
         "string",
         "boolean",
         "string"
-      ]
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarse",
-      "title": "Código de las razones por la cual no se pudo realizar la atención",
-      "types": [
-        "code"
-      ]
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarseInm",
-      "title": "Razones por las cuales no se pudo realizar la inmunización",
-      "types": [
-        "code"
       ]
     },
     {
@@ -230,34 +229,10 @@
       ]
     },
     {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ServicioSalud",
-      "title": "Sistema Nacional de Servicios de Salud",
-      "types": [
-        "Coding",
-        "Coding"
-      ]
-    },
-    {
       "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico",
       "title": "Sexo Biologico del paciente",
       "types": [
         "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/TiposVacunaRNI",
-      "title": "Código de tipos de Vacunas en Chile",
-      "types": [
-        "code",
-        "code"
-      ]
-    },
-    {
-      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/VSEspecialidadesDeisCL",
-      "title": "Especialidad del médico principal",
-      "types": [
-        "Coding",
-        "Coding"
       ]
     }
   ],
@@ -399,9 +374,6 @@
       "Patient.address.city",
       "Practitioner.address.city"
     ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ContactoParticipantes": [
-      "Encounter.participant"
-    ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto": [
       "Patient.contact"
     ],
@@ -409,27 +381,12 @@
       "Patient",
       "Practitioner"
     ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreCampana": [
-      "Immunization"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NotasEncuentro": [
-      "Encounter"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ObservacionesDiagnostico": [
-      "Encounter.diagnosis"
-    ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl": [
       "Address.district",
       "Location.address.district",
       "Organization.address.district",
       "Patient.address.district",
       "Practitioner.address.district"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarse": [
-      "Encounter.reasonCode"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RazonNOrealizarseInm": [
-      "Immunization.statusReason"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl": [
       "Address.state",
@@ -443,18 +400,9 @@
       "Patient.name.family",
       "Practitioner.name.family"
     ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ServicioSalud": [
-      "Immunization.location"
-    ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico": [
       "Patient",
       "Practitioner"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/TiposVacunaRNI": [
-      "Immunization.vaccineCode"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/VSEspecialidadesDeisCL": [
-      "Encounter.participant"
     ]
   }
 }

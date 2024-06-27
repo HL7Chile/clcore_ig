@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinico"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.8.7"] ; # 
+  fhir:version [ fhir:v "1.8.12"] ; # 
   fhir:name [ fhir:v "VSTiposDocClinico"] ; # 
   fhir:title [ fhir:v "Tipos de Documentos Clínicos"] ; # 
   fhir:status [ fhir:v "active"] ; # 

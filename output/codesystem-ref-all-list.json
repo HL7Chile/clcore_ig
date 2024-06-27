@@ -10,11 +10,11 @@
       "oids" : ["1.2.840.10008.2.16.4"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
-      "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-dicm-405-mediatype.html" : "Media Type Code"
     },
     {
       "url" : "http://hl7.org/fhir/CodeSystem/medication-status",
@@ -122,8 +122,7 @@
       "oids" : ["2.16.840.1.113883.4.642.4.72"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem",
-      "ValueSet-VSContactosec.html" : "Contacto participantes"
+      "http://hl7.org/fhir/R4/valueset-contact-point-system.html" : "ContactPointSystem"
     },
     {
       "url" : "http://hl7.org/fhir/contact-point-use",
@@ -302,8 +301,8 @@
       "description" : "One of the resource types defined as part of this version of FHIR.",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-audit-entity-type.html" : "Audit event entity type",
-      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
+      "http://hl7.org/fhir/R4/valueset-audit-entity-type.html" : "Audit event entity type"
     },
     {
       "url" : "http://hl7.org/fhir/restful-interaction",
@@ -317,18 +316,6 @@
       "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type"
     },
     {
-      "url" : "http://hl7.org/fhir/sid/cvx",
-      "version" : "4.0.0",
-      "status" : "active",
-      "name" : "CVX",
-      "title" : "Vaccine Administered Code Set (CVX)",
-      "description" : "The CDC's National Center of Immunization and Respiratory Diseases (NCIRD - see [https://www.cdc.gov/ncird/](https://www.cdc.gov/ncird/)) developed and maintains the CVX (vaccine administered) code set. It includes both active and inactive vaccines available in the US. CVX codes for inactive vaccines allow transmission of historical immunization records. When a MVX (manufacturer) code is paired with a CVX (vaccine administered) code, the specific trade named vaccine may be indicated. These codes should be used for immunization messages using either HL7 Version 2.3.1 or HL7 Version 2.5.1. CVX is the underlying Master Code System for V2 table 0292 (Vaccines Administered). The machine readable name for CVX in PHIN VADS is PH_VaccinesAdministeredCVX_CDC_NIP. The version of the CVX code set for certification can be found on the archive page:[https://www2a.cdc.gov/vaccines/iis/iisstandards/mu3versioned_codes.asp](https://www2a.cdc.gov/vaccines/iis/iisstandards/mu3versioned_codes.asp) \r\n\r\nThe Status column indicates if the vaccine is currently available in the United States.\r\n\r\n*  Active: A currently available administrable vaccine \r\n\r\n*  Inactive: An administrable vaccine formulation that is no longer available for patient administration, but can be found in historical patient records OR A historical record of a vaccine administered where the exact formulation is unknown \r\n\r\n*  Pending: A vaccine that is expected to become active in the future \r\n\r\n*  Non-US: A vaccine that available outside the US only \r\n\r\n*  Never Active: A vaccine that was never available and is not in the pipeline of new vaccines \r\n\r\nThe Last Updated column indicates the last time this particular vaccine code was updated in this table.\r\n\r\nQuestions regarding this table should be directed to the IIS Technical Assistance Team via iisinfo@cdc.gov (or use mailing address via [https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx#addr](https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx#addr)) \r\n\r\nHL7 Implementers should note that 'Status' IS NOT CONCEPT STATUS as all codes are ACTIVE in this code system.\r\n\r\nThe current code system is available via [https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx](https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx)",
-      "oids" : ["2.16.840.1.113883.12.292"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-vaccine-code.html" : "Vaccine Administered Value Set"
-    },
-    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -338,9 +325,9 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
+      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
       "ValueSet-VSTiposDocClinico.html" : "Tipos de Documentos Clínicos",
-      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
+      "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -352,19 +339,18 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
       "http://hl7.org/fhir/R4/valueset-immunization-reason.html" : "Immunization Reason Codes",
       "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
       "http://hl7.org/fhir/R4/valueset-immunization-target-disease.html" : "Immunization Target Disease Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "ValueSet-VSDiagnosticosSCT.html" : "Diagnósticos SNOMED y Ausente o Desconocido",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes"
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "ValueSet-VSDiagnosticosSCT.html" : "Diagnósticos SNOMED y Ausente o Desconocido"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -460,8 +446,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1201"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
@@ -523,18 +509,6 @@
       "http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html" : "Special arrangements"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/encounter-type",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "EncounterType",
-      "title" : "Encounter type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1088"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-encounter-type.html" : "Encounter type"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
       "version" : "1.0.0",
       "status" : "draft",
@@ -543,8 +517,8 @@
       "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/immunization-funding-source",
@@ -569,18 +543,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-immunization-origin.html" : "Immunization Origin Codes"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "ImmunizationProgramEligibility",
-      "title" : "Immunization Program Eligibility",
-      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the patient's eligibility for a vaccination program. This value set is provided as a suggestive example.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1099"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-immunization-program-eligibility.html" : "Immunization Program Eligibility"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason",
@@ -715,18 +677,6 @@
       "http://hl7.org/fhir/R4/valueset-audit-source-type.html" : "Audit Event Source Type"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/service-type",
-      "version" : "1.1.0",
-      "status" : "draft",
-      "name" : "ServiceType",
-      "title" : "Service type",
-      "description" : "This value set defines an example set of codes of service-types.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1145"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-service-type.html" : "Service type"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
       "version" : "2.0.0",
       "status" : "active",
@@ -772,8 +722,8 @@
       "oids" : ["2.16.840.1.113883.18.108"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
-      "ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos"
+      "ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos",
+      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0443",
@@ -797,9 +747,9 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode",
       "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
-      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
@@ -823,7 +773,6 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
       "http://terminology.hl7.org/5.5.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
     },
     {
@@ -921,8 +870,8 @@
       "oids" : ["2.16.840.1.113883.5.88"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
@@ -934,10 +883,10 @@
       "oids" : ["2.16.840.1.113883.5.90"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
       "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
@@ -949,8 +898,8 @@
       "oids" : ["2.16.840.1.113883.5.110"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -962,9 +911,9 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "http://terminology.hl7.org/5.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
-      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType"
+      "http://hl7.org/fhir/R4/valueset-participation-role-type.html" : "ParticipationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
@@ -980,7 +929,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodComunasCL",
       "title" : "Códigos de Comunas en Chile",
@@ -991,7 +940,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodMadurez",
       "title" : "Códigos de grado de madurez del artefacto",
@@ -1002,7 +951,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodProvinciasCL",
       "title" : "Códigos de Provincias en Chile",
@@ -1013,7 +962,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodRegionCL",
       "title" : "Códigos de Regiones en Chile",
@@ -1023,19 +972,8 @@
       "ValueSet-VSCodigosRegionesCL.html" : "Códigos de Regiones en Chile"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodSSalud",
-      "version" : "1.8.7",
-      "status" : "active",
-      "name" : "CSCodSSaludCL",
-      "title" : "Servicios de Salud Chile",
-      "description" : "Códigos del Sistema Nacional de Servicios de Salud",
-      "uses" : {
-      },
-      "ValueSet-VSCodigosServiciosSalud.html" : "Servicos de Salud en Chile"
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodigoDNI",
       "title" : "Códigos de Documentos DNI para LATAM y el Caribe",
@@ -1046,7 +984,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodServicioCL",
       "title" : "Tipos de Servicios Remotos",
@@ -1057,7 +995,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSTiposVacunaCL",
       "title" : "Códigos de Vacunas RNI",
@@ -1068,7 +1006,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodigoslenguaje",
       "title" : "Codigos Lenguaje",
@@ -1079,7 +1017,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSEspecialidadesDeisCL",
       "title" : "Códigos de Especialidades",
@@ -1090,7 +1028,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSIdentidaddeGenero",
       "title" : "Identidad de Genero",
@@ -1100,19 +1038,8 @@
       "ValueSet-VSIdentidaddeGenero.html" : "Identidad de Genero"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentificadores",
-      "version" : "1.8.7",
-      "status" : "active",
-      "name" : "CSIdentificadores",
-      "title" : "Identificadores",
-      "description" : "Identificadores",
-      "uses" : {
-      },
-      "ValueSet-VSIdentificadores.html" : "Identificadores"
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSNombreCampanaCL",
       "title" : "Campañas Inmunización",
@@ -1122,19 +1049,8 @@
       "ValueSet-VSNombreCampana.html" : "Campañas de Vacunación"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSPrevision",
-      "version" : "1.8.7",
-      "status" : "active",
-      "name" : "CSPrevision",
-      "title" : "Prevision",
-      "description" : "Prevision",
-      "uses" : {
-      },
-      "ValueSet-VSPrevision.html" : "Prevision"
-    },
-    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSRazonNOTinm",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSRazonNOinmunizacionCL",
       "title" : "Razones no Inmunización",
@@ -1145,7 +1061,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSSexoListadoDeis",
       "title" : "Sexo Listado Deis",
@@ -1156,7 +1072,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSTipoIdentificador",
       "title" : "Tipo Identificador",
@@ -1168,7 +1084,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSTiposEncuentroCL",
       "title" : "Tipos de Encuentro",
@@ -1179,7 +1095,7 @@
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
-      "version" : "1.8.7",
+      "version" : "1.8.12",
       "status" : "active",
       "name" : "CSCodPaises",
       "title" : "Códigos de Países",
@@ -1187,17 +1103,6 @@
       "uses" : {
       },
       "ValueSet-CodPais.html" : "Códigos de Países"
-    },
-    {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro",
-      "version" : "1.8.7",
-      "status" : "active",
-      "name" : "CSrazonnoencuentro",
-      "title" : "Razón Encuentro Remoto no Realizado",
-      "description" : "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud",
-      "uses" : {
-      },
-      "ValueSet-VSRazonNOT.html" : "Razones no Atención Remota"
     },
     {
       "url" : "urn:ietf:bcp:47",

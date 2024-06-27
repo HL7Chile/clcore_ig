@@ -14,12 +14,10 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
     * coding MS
       * system and code MS
 
-
 * extension contains IdentidadDeGenero named IdentidadDeGenero 0..1 MS
 * extension contains SexoBiologico named SexoBiologico 0..1 MS
-* extension contains PaisOrigenNacionalidadCl named nacionalidad 0..1 MS
-
-* identifier and identifier.use and identifier.type and identifier.extension MS
+* extension contains CodigoPaises named nacionalidad 0..1 MS
+//* extension contains Nacionalidad named nacionalidad 0..1 MS
 
 * identifier ^short = "Listados de Id de Paciente. De poseer una CI con RUN vigente, este DEBE ser ingresado"
 * identifier ^definition = "Este es el listado de Identificaciones de un paciente. Se procura como R2 el RUN, pero en caso de no existir ese identificador se debe ocupar otro nacional u otro otorgado por país extranjero"
@@ -30,13 +28,11 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 * identifier.use ^comment = "Se definirá como official pues en una primera etapa solo se considerarán los identidicadores en esa categoría. Para una segunda etapa se abrirá este elemento para cualquier clase de identificador" 
 
-
 * identifier.type ^short = "Tipo de documento de Id (Extensible)"
 * identifier.type ^definition = "Se define como tipo de documento de Id, aquel definido en el Sistema de Codificación V2-0203 de Hl7. Este sistema es extensible. Para pacientes sin documeto local deben especificar el de origen. Pacientes sin Id, deben usar el código MR = Local Medical Record, es decir numero del registro clínico abierto en el establecimiento"
 * identifier.type ^comment = "De haber RUN, este se debe usar. De haber Run temporal, se debe usar ese identificador. Pacientes sin identificador Chileno deben usar su CI o Pasaporte de origen. Pacientes sin identificación se debe registrar con el numero de registro clínico generado en el recinto de salud"
 * identifier.type from VSTiposDocumentos (extensible)
 * identifier.type ^binding.description = "Value Set de Tipos de Documentos y CI Nacionales"
-
 
 * identifier.type.coding.system ^short = "Sistema de identificación de tipos de documentos"
 * identifier.type.coding.system ^definition = "Sistema mediante el cual se obtienen los códigos para un determinado tipo de documento"
@@ -45,20 +41,17 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier.type.coding.code ^short = "Código de Tipo de Documento"
 * identifier.type.coding.code ^definition = "Código de Tipo de Documento"
 
-
 * identifier.type.coding.display MS
 * identifier.type.coding.display ^short = "Glosa del Código Documento"
 * identifier.type.coding.display ^definition = "Glosa del Código Documento"
 
-
 * identifier.type.extension ^short = "País de Origen del Documento de Id" 
 
-
 * identifier.type.extension ^definition = "Se usa esta extensión para agregarle al tipo de documento el país de origen de este" 
-* identifier.type.extension contains PaisOrigenNacionalidadCl named paisEmisionDocumento 0..1  MS
+* identifier.type.extension contains CodigoPaises named paisEmisionDocumento 0..1  MS
+//* identifier.type.extension contains PaisEmision named paisEmisionDocumento 0..1  MS
 * identifier.value ^short = "Número o valor de identificación"
 * identifier.value ^definition = "Número o valor de identificación"
-
 
 * name ^slicing.discriminator.type = #value
 * name ^slicing.discriminator.path = "use"
@@ -66,9 +59,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * name ^slicing.description = "Este slice se genera para diferenciar el nombre registrado Versus el nombre social"
 * name contains NombreOficial 0..1 MS and NombreSocial 0..1 MS
 
-* identifier.use ^definition = "Se definirá este uso siempre como \"official\" debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo"
-
-
+//* identifier.use ^definition = "Se definirá este uso siempre como \"official\" debido a que cualquier ID presentado para motivos de este perfil deb ser de este tipo"
 
 * name ^short = "Nombres y Apellidos del Paciente considerando, según el caso: 1er Nombre, Nombres, 1er Apellido y 2o Apellido"
 * name ^definition = "Nombre del Paciente considerando, según el caso: 1er Nombre, Nombres, 1er Apellido y 2o Apellido"
@@ -90,7 +81,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
   * given ^short = "Primer nombre y nombres del Paciente"
   * given ^definition = "Todos los nombres de los pacientes no necesariamente solo el Primer Nombre"
 
-
 * name[NombreSocial] ^short = "Nombre con el cual se identifica al paciente sin ser este oficial. Se especifica slo en el uso del nombre"
 * name[NombreSocial] ^definition = "Nombre con el cual se identifica al paciente sin ser este oficial. Se especifica slo en el uso del nombre"
 * name[NombreSocial] ^short = "nombre recurrente que usa el paciente"
@@ -107,7 +97,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
   * prefix 0..0
   * suffix 0..0
   * period 0..0
- 
  
 * telecom and telecom.system and telecom.value and telecom.use and gender and birthDate  MS
 * telecom ^short = "Detalles de contacto del Paciente"
@@ -133,8 +122,6 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * address only Address or ClAddress
 * address MS
 
-
-
 * contact MS 
 * contact.relationship.coding and contact.relationship MS
 
@@ -156,7 +143,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
     * use = #official
     * use ^short = "uso del nombre del paciente"
     * use ^definition = "Nombre registrado oficialmente en el Registro Civil"
-    * use ^comment = "El use DEBE ser de valor de código ´official´"
+    * use ^comment = "El use DEBE ser de valor de código \"official\""
 
     * family ^short = "1er Apellido"
     * family ^definition = "Se define el primer apellido registrado al momento de nacer o aquel que se ha inscrito legalmente en el Registro Civil"
@@ -181,7 +168,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 
 
 * generalPractitioner 0..* MS
-* generalPractitioner only Reference(Organization or Practitioner)
+* generalPractitioner only Reference(OrganizacionCL or PrestadorCL)
 * generalPractitioner ^short = "Proveedor de Salud designado como principal"
 * generalPractitioner ^definition = "Proveedor de Salud designado como principal"
   * reference MS

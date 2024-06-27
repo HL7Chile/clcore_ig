@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-62",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7dc7aa62-b1bf-43b5-afed-156a0896b780-62",
+  "id" : "73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-50",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-50",
   "name" : "UnionAuditEventClAndAuditEventCl",
   "title" : "Union of CL Auditoria And CL Auditoria",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-27T08:59:40-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -366,7 +366,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "description" : "left: Eventos de auditoría descritos en DICOM; right: Eventos de auditoría descritos en FHIR para DICOM",
+        "description" : "Eventos de auditoría descritos en FHIR para DICOM",
         "valueSet" : "http://hl7.org/fhir/ValueSet/audit-event-type"
       },
       "mapping" : [{
@@ -391,12 +391,18 @@
       }]
     },
     {
+      "id" : "AuditEvent.type.id",
       "path" : "AuditEvent.type.id",
       "representation" : ["xmlAttr"],
       "short" : "Unique id for inter-element referencing",
       "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
@@ -404,7 +410,6 @@
         }],
         "code" : "http://hl7.org/fhirpath/System.String"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -413,7 +418,16 @@
       }]
     },
     {
+      "id" : "AuditEvent.type.extension",
       "path" : "AuditEvent.type.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
       "short" : "Additional content defined by implementations",
       "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
       "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
@@ -421,6 +435,11 @@
       "user content"],
       "min" : 0,
       "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
       "type" : [{
         "code" : "Extension"
       }],
@@ -446,7 +465,6 @@
         "expression" : "extension.exists() != value.exists()",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -455,13 +473,19 @@
       }]
     },
     {
+      "id" : "AuditEvent.type.system",
       "path" : "AuditEvent.type.system",
-      "short" : "left: CodeSystem de los códigos para tipo de Evento; right: Identity of the terminology system",
-      "definition" : "left: Es el Sistema de Codificación sugerido por FHIR extensible a necesidades locales; right: The identification of the code system that defines the meaning of the symbol in the code.",
+      "short" : "Identity of the terminology system",
+      "definition" : "The identification of the code system that defines the meaning of the symbol in the code.",
       "comment" : "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.",
       "requirements" : "Need to be unambiguous about the source of the definition of the symbol.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Coding.system",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "uri"
       }],
@@ -493,12 +517,18 @@
       }]
     },
     {
+      "id" : "AuditEvent.type.version",
       "path" : "AuditEvent.type.version",
       "short" : "Version of the system - if relevant",
       "definition" : "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
       "comment" : "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Coding.version",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "string"
       }],
@@ -513,7 +543,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -530,12 +559,18 @@
       }]
     },
     {
+      "id" : "AuditEvent.type.code",
       "path" : "AuditEvent.type.code",
-      "short" : "left: Código del tipo de registro; right: Symbol in syntax defined by the system",
-      "definition" : "left: Display del código del ejemplo; right: A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+      "short" : "Symbol in syntax defined by the system",
+      "definition" : "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
       "requirements" : "Need to refer to a particular code in the system.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Coding.code",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "code"
       }],
@@ -550,7 +585,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -567,12 +601,22 @@
       }]
     },
     {
+      "id" : "AuditEvent.type.display",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+        "valueBoolean" : true
+      }],
       "path" : "AuditEvent.type.display",
-      "short" : "left: RESTful Operation; right: Representation defined by the system",
+      "short" : "Representation defined by the system",
       "definition" : "A representation of the meaning of the code in the system, following the rules of the system.",
       "requirements" : "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Coding.display",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "string"
       }],
@@ -587,7 +631,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -604,6 +647,7 @@
       }]
     },
     {
+      "id" : "AuditEvent.type.userSelected",
       "path" : "AuditEvent.type.userSelected",
       "short" : "If this coding was chosen directly by the user",
       "definition" : "Indicates that this coding was chosen by a user directly - e.g. off a pick list of available items (codes or displays).",
@@ -611,6 +655,11 @@
       "requirements" : "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
       "min" : 0,
       "max" : "1",
+      "base" : {
+        "path" : "Coding.userSelected",
+        "min" : 0,
+        "max" : "1"
+      },
       "type" : [{
         "code" : "boolean"
       }],
@@ -625,7 +674,6 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -644,7 +692,7 @@
     {
       "path" : "AuditEvent.subtype",
       "short" : "Especificacion mas detallada del evento",
-      "definition" : "Nivel mayor de profundidad del evento",
+      "definition" : "left: Nivel mayor de profundidad del evento; right: Identifier for the category of event.",
       "requirements" : "This field enables queries of messages by implementation-defined event categories.",
       "min" : 0,
       "max" : "*",
@@ -667,7 +715,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "extensible",
-        "description" : "left: Códigos de DICOM; right: Códigos de desarrollados para DICOM",
+        "description" : "Códigos de desarrollados para DICOM",
         "valueSet" : "http://hl7.org/fhir/ValueSet/audit-event-sub-type"
       },
       "mapping" : [{
@@ -824,8 +872,8 @@
     },
     {
       "path" : "AuditEvent.subtype.code",
-      "short" : "left: Codigo; right: Symbol in syntax defined by the system",
-      "definition" : "left: Codigo del Subtipo; right: A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+      "short" : "Symbol in syntax defined by the system",
+      "definition" : "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
       "requirements" : "Need to refer to a particular code in the system.",
       "min" : 0,
       "max" : "1",
@@ -861,8 +909,8 @@
     },
     {
       "path" : "AuditEvent.subtype.display",
-      "short" : "left: Nombre de la desripción del evento; right: Representation defined by the system",
-      "definition" : "left: Nombre de la desripción del evento; right: A representation of the meaning of the code in the system, following the rules of the system.",
+      "short" : "Representation defined by the system",
+      "definition" : "A representation of the meaning of the code in the system, following the rules of the system.",
       "requirements" : "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
       "min" : 0,
       "max" : "1",
@@ -880,7 +928,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -960,7 +1008,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "description" : "left: Códigos fijos extraídos de DICOM; right: Códigos fijos extraídos de un set de DICOM por FHIR",
+        "description" : "Códigos fijos extraídos de un set de DICOM por FHIR",
         "valueSet" : "http://hl7.org/fhir/ValueSet/audit-event-action"
       },
       "mapping" : [{
@@ -1976,7 +2024,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "required",
-        "description" : "left: Códigos extraídos de DICOM; right: Códigos extraídos de un set  DICOM por FHIR",
+        "description" : "Códigos extraídos de un set  DICOM por FHIR",
         "valueSet" : "http://hl7.org/fhir/ValueSet/network-type"
       },
       "mapping" : [{

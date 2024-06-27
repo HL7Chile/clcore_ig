@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-146",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7dc7aa62-b1bf-43b5-afed-156a0896b780-146",
+  "id" : "73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-131",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-131",
   "name" : "UnionSexoBiologicoAndSexoBiologico",
   "title" : "Union of Sexo Biologico del paciente And Sexo Biologico del paciente",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-27T08:59:40-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -151,7 +151,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/7dc7aa62-b1bf-43b5-afed-156a0896b780-149"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/administrative-gender"
       },
       "mapping" : [{
         "identity" : "rim",

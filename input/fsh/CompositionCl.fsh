@@ -1,5 +1,3 @@
-Alias: $loinc = http://loinc.org
-
 Profile: DocumentoCl
 Parent: Composition
 Id: DocumentoCl

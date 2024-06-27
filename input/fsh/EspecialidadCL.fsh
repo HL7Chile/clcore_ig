@@ -27,6 +27,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * practitioner.display ^short = "Nombre del prestador de salud"
 * practitioner.display ^definition = "Nombre completo del prestador de salud"
 
+* organization only Reference(OrganizacionCL)
 * organization and organization.display and organization.reference MS
 * organization ^short = "Referencia a la organización donde el presador cumple roles"
 * organization ^definition = "La referencia a la organización en donde el prestador individual cumple roles."
@@ -35,6 +36,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * organization.display ^short = "Nombre de la organización de salud"
 * organization.display ^definition = "Nombre completo de la organización de salud"
 
+* location only Reference(CoreLocalizacionCl)
 * location and location.reference and location.display MS
 * location ^short = "Referencia a la ubicación donde el presador cumple roles"
 * location ^definition = "La referencia a la ubicación en donde el prestador individual cumple roles."

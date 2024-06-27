@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "7dc7aa62-b1bf-43b5-afed-156a0896b780-26",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7dc7aa62-b1bf-43b5-afed-156a0896b780-26",
+  "id" : "73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-23",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-23",
   "name" : "UnionCSCodigoslenguajeAndCSCodigoslenguaje",
   "title" : "Union of Codigos Lenguaje And Codigos Lenguaje",
   "status" : "active",
-  "date" : "2024-05-08T11:46:42-04:00",
+  "date" : "2024-06-27T08:59:40-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
