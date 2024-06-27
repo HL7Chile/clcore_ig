@@ -8,13 +8,8 @@
 - Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
   - Se incluyeron los ejemplos
   - Cambio cardinalidad **contact.name.given** 0..1 -> 0..*
-
-
   - Se cambió el nombre de la extension identifier.type.extension[paises] -> identifier.type.extension[paisEmisionDocumento]
- 
-
-- Extension "Codigo de Identificación de países", el binding se modifica para dejarlo linkeado al elemento "valueCodeableConcept".
-
+ - Extension "Codigo de Identificación de países", el binding se modifica para dejarlo linkeado al elemento "valueCodeableConcept".
 - [PrestadorCL](StructureDefinition-CorePrestadorCl.html)
   - Se cambia el nombre de los siguientes slices de qualification:
     - Cert -> TituloProfesional
