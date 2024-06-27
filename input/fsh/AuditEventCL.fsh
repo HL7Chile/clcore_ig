@@ -47,6 +47,7 @@ Description: "Perfil para genererar un recurso que permita desarrollar auditorí
 * agent.who MS 
 * agent.who ^short = "Quien realizó la acción"
 * agent.who ^definition = "Referencia al recurso o Identificación de quien realizó la acción"
+* agent.who only Reference(CoreRolClinicoCl or PrestadorCL or CoreOrganizacionCl or CorePacienteCl or Device or RelatedPerson)
 * agent.requestor ^short = "indicador de si Who es quien requirió la acción"
 * agent.requestor ^definition = "indicador de si Who es quien requirió la acción"
 * agent.network MS
@@ -65,6 +66,7 @@ Description: "Perfil para genererar un recurso que permita desarrollar auditorí
 * source ^short = "Quien reporta el evento"
 * source ^definition = "Sitio en donde se reporta el evento"
 * source.observer MS 
+* source.observer only Reference(CoreRolClinicoCl or PrestadorCL or CoreOrganizacionCl or CorePacienteCl or Device or RelatedPerson)
 * source.observer ^short = "Entidad que reporta el evento"
 * source.observer ^definition = "Identificación del Observador donde se reportó el evento"
 

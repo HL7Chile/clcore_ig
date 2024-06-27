@@ -37,6 +37,7 @@
 - Perfil [AuditEventCl](StructureDefinition-AuditEventCl.html)
   - Subtype.system y Type.system se elimina MS
   - Subtype.code MS se elimina
+  - agent.who y source.observer referencian a CoreRolClinicoCl, PrestadorCL, CoreOrganizacionCl, CorePacienteCl, Device y RelatedPerson.
 
 - Perfil [EncounterCL](StructureDefinition-EncounterCL.html)
   - Se depreca el uso de extensiones en el perfil
