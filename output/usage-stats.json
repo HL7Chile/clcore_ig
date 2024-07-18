@@ -132,57 +132,14 @@
       "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero",
       "title": "Identidad De Genero",
       "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreComercial",
+      "title": "Nombre Comercial Fármaco",
+      "types": [
+        "string"
       ]
     },
     {
@@ -258,7 +215,7 @@
     "Medication": [
       {
         "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl",
-        "title": "CL Medicamento"
+        "title": "Medicamento Core CL"
       }
     ],
     "Organization": [
@@ -380,6 +337,9 @@
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero": [
       "Patient",
       "Practitioner"
+    ],
+    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreComercial": [
+      "Medication"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl": [
       "Address.district",

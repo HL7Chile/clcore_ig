@@ -3,7 +3,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="CSCodMadurez"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">1<a name="CSCodMadurez-1"> </a></td></tr><tr><td style="white-space:nowrap">2<a name="CSCodMadurez-2"> </a></td></tr><tr><td style="white-space:nowrap">3<a name="CSCodMadurez-3"> </a></td></tr><tr><td style="white-space:nowrap">4<a name="CSCodMadurez-4"> </a></td></tr><tr><td style="white-space:nowrap">N<a name="CSCodMadurez-N"> </a></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem CSCodMadurez</b></p><a name="CSCodMadurez"> </a><a name="hcCSCodMadurez"> </a><a name="CSCodMadurez-es-CL"> </a><p>This case-sensitive code system <code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">1<a name="CSCodMadurez-1"> </a></td></tr><tr><td style="white-space:nowrap">2<a name="CSCodMadurez-2"> </a></td></tr><tr><td style="white-space:nowrap">3<a name="CSCodMadurez-3"> </a></td></tr><tr><td style="white-space:nowrap">4<a name="CSCodMadurez-4"> </a></td></tr><tr><td style="white-space:nowrap">N<a name="CSCodMadurez-N"> </a></td></tr></table></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez"/>
   <version value="1.8.12"/>

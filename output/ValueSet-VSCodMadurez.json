@@ -3,7 +3,7 @@
   "id" : "VSCodMadurez",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodMadurez.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSCodMadurez</b></p><a name=\"VSCodMadurez\"> </a><a name=\"hcVSCodMadurez\"> </a><a name=\"VSCodMadurez-es-CL\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodMadurez.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez</code></a></li></ul></div>"
   },
   "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodMadurez",
   "version" : "1.8.12",

@@ -105,6 +105,17 @@
       ]
     },
     {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT",
+      "version" : "1.8.12",
+      "status" : "active",
+      "name" : "VSRazonNOencuentro",
+      "title" : "Razones no Atención Remota",
+      "description" : "Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local",
+      "systems" : [
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro"
+      ]
+    },
+    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",
       "version" : "1.8.12",
       "status" : "active",

@@ -127,6 +127,14 @@
       "name" : "CSCodPaises",
       "title" : "Códigos de Países",
       "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro",
+      "version" : "1.8.12",
+      "status" : "active",
+      "name" : "CSrazonnoencuentro",
+      "title" : "Razón Encuentro Remoto no Realizado",
+      "description" : "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"
     }
   ]
 }

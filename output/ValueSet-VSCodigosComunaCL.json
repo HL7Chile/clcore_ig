@@ -3,7 +3,7 @@
   "id" : "VSCodigosComunaCL",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodComunasCL.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSCodigosComunaCL</b></p><a name=\"VSCodigosComunaCL\"> </a><a name=\"hcVSCodigosComunaCL\"> </a><a name=\"VSCodigosComunaCL-es-CL\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodComunasCL.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL</code></a></li></ul></div>"
   },
   "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosComunaCL",
   "version" : "1.8.12",

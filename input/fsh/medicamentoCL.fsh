@@ -1,55 +1,100 @@
-Profile:        MedicamentoCL
-Parent:         Medication
-Id:             CoreMedicamentoCl
-Title:          "CL Medicamento"
-Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de definición de un medicamento."
+Profile: CoreMedicamentoCl
+Parent: Medication
+Title: "Medicamento Core CL"
+Description: "Descriopción Medicamento"
 
-* ^version = "1.10.0"
-* ^status = #active
-* ^publisher = "HL7 Chile"
+//* extension contains NombreComercial named NombreComercial 0..1 MS
 
-* identifier MS
-* identifier ^short  = "Identificadores de fármacos"
+* extension contains NombreComercial named NombreComercial 0..1 MS
 
-* code MS
-* code ^short = "Códificación de para describir un fármaco"
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^short = "Slices definidos para la identificación del fármaco"
+* identifier ^definition = "Slice definidos en base al elemento value, el cual debe ser especifico para cada uno de los slices definidos"
+* identifier ^comment = "Slice definidos en base al elemento value. Sólo se pueden usar los discriminadores definidos para los dos slices generados"
+* identifier contains 
+             ISP 0..1 MS and 
+             IdComer 0..1 and 
+             TFCDId 0..1 MS and 
+             TFCCId 0..1 MS and 
+             Otro 0..1
 
-// * identifier ^slicing.discriminator.type = #value
-// * identifier ^slicing.discriminator.path = "system"
-// * identifier ^slicing.rules = #open
-// * identifier ^short = "Slices definidos para la identificación del fármaco, ya sea por Descripción o por concepto"
-// * identifier ^definition = "Slice defindos en base a el elemento value, el cual debe ser especifico para cada uno de los slices definidos"
-// * identifier ^comment = "Slice defindos en base a el elemento value. Sólo  se pueden usar los discriminadores definidos para los dos slices generados"
-// * identifier contains DescripcionId 0..1 MS and ConceptId 0..1 MS
+* identifier[ISP] ^short = "Número Registro ISP del fármaco"
+* identifier[ISP] ^definition = "Número Registro ISP del fármaco"
+  * value 0..1 MS
+    * ^short = "Valor del número de registro"
+  * system 0..1 MS
+  * system = "http://ISP.cl/registro"
+    * ^short = "URL de validación"
 
-// * identifier[DescripcionId] ^short = "Identificador de Descripción del fármaco"
-// * identifier[DescripcionId] ^definition = "Este identificador se obtiene a travez del TFC por medio de un identificador de Descripción del fármaco"
-// * identifier[DescripcionId].use = #official
-// * identifier[DescripcionId].use ^short = "usual | official | temp | secondary | old"
-// * identifier[DescripcionId].use ^definition = "Para este caso se fuerza a que su uso sea \"official\""
-// * identifier[DescripcionId].system   = "http://minsal.cl/semantikos/description-id"
-// * identifier[DescripcionId].system ^short  = "El system debe tener el siguiente valor \"http://minsal.cl/semantikos/description-id\""
-// * identifier[DescripcionId].system ^definition  = "http://minsal.cl/semantikos/description-id DEBE ser usada para este slice. Estos EndPoint deberán estar disponibles pronto"
-// * identifier[DescripcionId].value ^short = "Valor del código"
-// * identifier[DescripcionId].value ^definition = "Valor del código"
+* identifier[IdComer] ^short = "Identificador asignado por el laboratorio fabricante"
 
-// * identifier[ConceptId] ^short = "Este identificador se obtiene a travez del TFC por medio de un identificador de concepto" 
-// * identifier[ConceptId] ^definition = "Este identificador se obtiene a travez del TFC por medio de un identificador del ConceptId del fármaco según SNOMED-CT"
-// * identifier[ConceptId].use = #official
-// * identifier[ConceptId].use ^short = "usual | official | temp | secondary | old"
-// * identifier[ConceptId].use ^definition = "Para este caso se fuerza a que su uso sea \"official\""
-// * identifier[ConceptId].system  = "http://minsal.cl/semantikos/concept-id"
-// * identifier[ConceptId].system ^short = "El system debe tener el siguiente valor: \"http://minsal.cl/semantikos/concept-id\""
-// * identifier[ConceptId].system ^definition  = "http://minsal.cl/semantikos/concept-id DEBE ser usada para este slice. Estos EndPoint deberán estar disponibles pronto"
-// * identifier[ConceptId].value ^short = "Valor del código"
-// * identifier[ConceptId].value ^definition = "Valor del código"
+  * value 0..1 MS
+    * ^short = "Valor del identificador"
+  * system 0..1 MS
+  * system = "http://fab.cl/registro"
+    * ^short = "URL de validación"
 
-// * code.text ^short = "Descripción del Fármaco según TFC. Se fuerza en este momento TFC"
-// * code.text ^short = "Esto código define el fármaco que contiene el recurso. El código corresponde al determinado en la Termnología Frarmaceutica Chilena (TFC)"
+* identifier[TFCDId] ^short = "Descripción de identificación por medio de DescriptionId según TFC"
+* identifier[TFCDId] ^definition = "La extensión de SNOMED definida como sistema de identificación de fármacos para Chile, denominada TFC es la que se define en este slice para DescriptionId"
+* identifier[TFCDId] ^short = "Identificador de Descripción del fármaco"
+* identifier[TFCDId] ^definition = "Este identificador se obtiene a travez del TFC por medio de un identificador de Descripción del fármaco"
+  * use = #official
+  * use ^short = "usual | official | temp | secondary | old"
+  * use ^definition = "Para este caso se fuerza a que su uso sea \"official\""
+  * system   = "http://minsal.cl/semantikos/description-id"
+  * system ^short  = "El system debe tener el siguiente valor \"http://minsal.cl/semantikos/description-id\""
+  * system ^definition  = "http://minsal.cl/semantikos/description-id DEBE ser usada para este slice. Estos EndPoint deberán estar disponibles pronto"
+  * value ^short = "Valor del código"
+  * value ^definition = "Valor del código"
 
-// * code.coding.system ^short = "En principio el endPoint puede ser este, pero cada sistema localmente puede generar su TFC. \"http://minsal.cl/semantikos/description-id\""
-// * code.coding.system  ^definition = "Si bien se dispondrá públicamente de un endPoint en el Servidor Semantikos del MINSAL, la BD de la TFC es libre distribución por lo que puede ser levantada Localmente "
-// * code.coding.code ^short = "Código del farmaco desplegado por la TFC"
-// * code.coding.code ^definition = "Código del farmaco desplegado por la TFC"
-// * code.coding.display ^short = "descripción del farmaco entregada por la TFC"
-// * code.coding.display ^definition = "descripción del farmaco entregada por la TFC"
+* identifier[TFCCId] ^short = "Descripción de identificación por medio de ConceptId según TFC"
+* identifier[TFCCId] ^definition = "La extensión de SNOMED definida como sistema de identificación de fármacos para Chile, denominada TFC es la que se define en este slice para ConceptId"
+* identifier[TFCCId] ^short = "Identificador de Descripción del fármaco"
+* identifier[TFCCId] ^definition = "Este identificador se obtiene a travez del TFC por medio de un identificador de Descripción del fármaco"
+  * use = #official
+  * use ^short = "usual | official | temp | secondary | old"
+  * use ^definition = "Para este caso se fuerza a que su uso sea \"official\""
+  * system   = "http://minsal.cl/semantikos/concept-id"
+  * system ^short  = "El system debe tener el siguiente valor: \"http://minsal.cl/semantikos/concept-id\""
+  * system ^definition  = "http://minsal.cl/semantikos/concept-id DEBE ser usada para este slice. Estos EndPoint deberán estar disponibles pronto"
+  * value ^short = "Valor del código"
+  * value ^definition = "Valor del código"
+
+* identifier[Otro] ^short = "Otro identificador asignado"
+* identifier[Otro] ^definition = "Cualquier otro identificador que se haya asignado al fármaco"
+  * value 0..1 MS
+    * ^short = "Valor del identificador"
+  * system 0..1 MS
+  * system = "http://take.cl/registro"
+    * ^short = "URL de validación"
+
+* ingredient 0..* MS
+* ingredient ^short = "Componentes del medicamento"
+  * itemReference 1..1 MS
+  * itemReference ^short = "Componente del fármaco, se usará texto"
+    * display 0..1 MS
+    * display ^short = "descripción del componente"
+  * isActive 0..1 MS
+  * isActive ^short = "Determinación si el componente es componente activo o no"
+  * strength 0..1 MS
+  * strength ^short = "Potencia del componente"
+    * numerator 0..1 MS
+    * numerator ^short = "Numerador de la potencia"
+      * value ^short = "Valor del Numerador"
+      * unit ^short = "Unidad"
+    * denominator 0..1 MS
+    * denominator ^short = "Numerador de la potencia"
+      * value ^short = "Valor del Numerador"
+      * unit ^short = "Unidad"
+
+* form 0..1 MS
+* form ^short = "Forma farmacéutica"
+* form  from http://hl7.org/fhir/ValueSet/medication-form-codes (example)
+
+* manufacturer 0..1 MS
+* manufacturer ^short = "Laboratorio"
+  * reference 0..1 MS
+  * display 0..1 MS
+  * display ^short = "Nombre del laboratorio farmacéutico"

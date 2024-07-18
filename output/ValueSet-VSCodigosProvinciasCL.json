@@ -3,7 +3,7 @@
   "id" : "VSCodigosProvinciasCL",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodProvinciasCL.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSCodigosProvinciasCL</b></p><a name=\"VSCodigosProvinciasCL\"> </a><a name=\"hcVSCodigosProvinciasCL\"> </a><a name=\"VSCodigosProvinciasCL-es-CL\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodProvinciasCL.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL</code></a></li></ul></div>"
   },
   "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosProvinciasCL",
   "version" : "1.8.12",

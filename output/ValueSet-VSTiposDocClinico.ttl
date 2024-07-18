@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "VSTiposDocClinico"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSTiposDocClinico</b></p><a name=\"VSTiposDocClinico\"> </a><a name=\"hcVSTiposDocClinico\"> </a><a name=\"VSTiposDocClinico-es-CL\"> </a><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposDocClinico"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.8.12"] ; # 

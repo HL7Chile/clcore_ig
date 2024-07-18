@@ -38,13 +38,14 @@ Description: "Definición de encuentro clínico genérico para Chile"
 //  * extension ^definition = "Se usa esta extensión para agregar las razones por las cuales no se pudo llevar a cabo el encuentro remoto"
 //  * extension contains RazonNOTatencionCL named reasonCode 0..1
 /*El siguiente Código permite agregar bindings adicionales, pero genera errores de QA Utilizar con precausión*/
-/*
-  * ^binding.extension[0].url = $additional-binding 
-  * ^binding.extension[=].extension[0].url = "purpose"
-  * ^binding.extension[=].extension[=].valueCode = #candidate
-  * ^binding.extension[=].extension[+].url = "valueSet"
-  * ^binding.extension[=].extension[=].valueCanonical = "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT"
-*/  
+
+// * reasonCode ^binding.extension[0].extension[0].url = "purpose"
+// * reasonCode ^binding.extension[=].extension[=].valueCode = #candidate
+// * reasonCode ^binding.extension[=].extension[+].url = "valueSet"
+// * reasonCode ^binding.extension[=].extension[=].valueCanonical = "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT"
+// * reasonCode ^binding.extension[=].extension[+].url = "documentation"
+// * reasonCode ^binding.extension[=].extension[=].valueMarkdown = "razones por las cuales no pudo ser presentado"
+// * reasonCode ^binding.extension[=].url = $additional-binding 
 
 * subject MS
 * subject only Reference (PacienteCl)

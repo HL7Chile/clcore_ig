@@ -4,12 +4,12 @@ Description: "Medicamento comprimido Tareg -D160 referemciado como medicamento e
 InstanceOf : CoreMedicamentoCl
 
 	
-* identifier[0]
+* identifier[TFCDId]
   * use = #official
   * system = "http://minsal.cl/semantikos/description-id"
   * value = "1991971000167110"
 
-* identifier[+]
+* identifier[TFCCId]
   * use = #official
   * system = "http://minsal.cl/semantikos/concept-id"
   * value = "840851000167103"

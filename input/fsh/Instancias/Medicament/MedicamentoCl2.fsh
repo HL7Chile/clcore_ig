@@ -4,12 +4,12 @@ Description: "Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprim
 InstanceOf: CoreMedicamentoCl
 Usage: #example
 
-* identifier[0]
+* identifier[TFCDId]
   * use = #official
   * system = "http://minsal.cl/semantikos/description-id"
   * value = "1703591000167111"
 
-* identifier[+]
+* identifier[TFCCId]
   * use = #official
   * system = "http://minsal.cl/semantikos/concept-id"
   * value = "696681000167108"
