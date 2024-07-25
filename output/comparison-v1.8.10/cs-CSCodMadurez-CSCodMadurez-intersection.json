@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-6",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-6",
+  "id" : "3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-6",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-6",
   "name" : "IntersectionCSCodMadurezAndCSCodMadurez",
   "title" : "Intersection of Códigos de grado de madurez del artefacto And Códigos de grado de madurez del artefacto",
   "status" : "active",
-  "date" : "2024-06-27T08:59:40-04:00",
+  "date" : "2024-07-18T16:08:16-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

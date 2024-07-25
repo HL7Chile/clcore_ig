@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="CodPais"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CodPais.html"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet CodPais</b></p><a name="CodPais"> </a><a name="hcCodPais"> </a><a name="CodPais-es-CL"> </a><ul><li>Include all codes defined in <a href="CodeSystem-CodPais.html"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais</code></a></li></ul></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais"/>
   <version value="1.8.12"/>

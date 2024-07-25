@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="VSCodigoslenguaje"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-CSCodigoslenguaje.html"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VSCodigoslenguaje</b></p><a name="VSCodigoslenguaje"> </a><a name="hcVSCodigoslenguaje"> </a><a name="VSCodigoslenguaje-es-CL"> </a><ul><li>Include all codes defined in <a href="CodeSystem-CSCodigoslenguaje.html"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje</code></a></li></ul></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigoslenguaje"/>
   <version value="1.8.12"/>

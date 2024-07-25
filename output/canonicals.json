@@ -112,6 +112,13 @@
     "name" : "CSCodPaises"
   },
   {
+    "id" : "csrazonnoencuentro",
+    "type" : "CodeSystem",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro",
+    "version" : "1.8.12",
+    "name" : "CSrazonnoencuentro"
+  },
+  {
     "id" : "hl7.fhir.cl.clcore",
     "type" : "ImplementationGuide",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore",
@@ -158,7 +165,7 @@
     "type" : "StructureDefinition",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl",
     "version" : "1.8.12",
-    "name" : "MedicamentoCL"
+    "name" : "CoreMedicamentoCl"
   },
   {
     "id" : "CoreOrganizacionCl",
@@ -222,6 +229,13 @@
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL",
     "version" : "1.8.12",
     "name" : "ImmunizationCL"
+  },
+  {
+    "id" : "NombreComercial",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreComercial",
+    "version" : "1.8.12",
+    "name" : "NombreComercial"
   },
   {
     "id" : "ProvenanceCl",
@@ -334,6 +348,13 @@
     "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSNombreCampana",
     "version" : "1.8.12",
     "name" : "VSNombreCampanaCL"
+  },
+  {
+    "id" : "VSRazonNOT",
+    "type" : "ValueSet",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT",
+    "version" : "1.8.12",
+    "name" : "VSRazonNOencuentro"
   },
   {
     "id" : "VSRazonNOTinm",

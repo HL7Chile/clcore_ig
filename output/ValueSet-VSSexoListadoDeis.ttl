@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "VSSexoListadoDeis"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSSexoListadoDeis.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSSexoListadoDeis</b></p><a name=\"VSSexoListadoDeis\"> </a><a name=\"hcVSSexoListadoDeis\"> </a><a name=\"VSSexoListadoDeis-es-CL\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSSexoListadoDeis.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.8.12"] ; # 

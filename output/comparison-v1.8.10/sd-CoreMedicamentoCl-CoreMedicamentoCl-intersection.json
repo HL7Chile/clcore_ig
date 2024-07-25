@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-72",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-72",
-  "name" : "IntersectionMedicamentoCLAndMedicamentoCL",
-  "title" : "Intersection of CL Medicamento And CL Medicamento",
+  "id" : "3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-75",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-75",
+  "name" : "IntersectionMedicamentoCLAndCoreMedicamentoCl",
+  "title" : "Intersection of CL Medicamento And Medicamento Core CL",
   "status" : "active",
-  "date" : "2024-06-27T08:59:40-04:00",
+  "date" : "2024-07-18T16:08:16-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -260,8 +260,8 @@
     },
     {
       "path" : "Medication.extension",
-      "short" : "Additional content defined by implementations",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "short" : "left: Additional content defined by implementations; right: Extension",
+      "definition" : "left: May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.; right: An Extension",
       "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
       "alias" : ["extensions",
       "user content"],
@@ -345,9 +345,9 @@
     },
     {
       "path" : "Medication.identifier",
-      "short" : "left: Slices definidos para la identificación del fármaco, ya sea por Descripción o por concepto; right: Identificadores de fármacos",
-      "definition" : "left: Slice defindos en base a el elemento value, el cual debe ser especifico para cada uno de los slices definidos; right: Business identifier for this medication.",
-      "comment" : "left: Slice defindos en base a el elemento value. Sólo  se pueden usar los discriminadores definidos para los dos slices generados; right: The serial number could be included as an identifier.",
+      "short" : "left: Slices definidos para la identificación del fármaco, ya sea por Descripción o por concepto; right: Slices definidos para la identificación del fármaco",
+      "definition" : "left: Slice defindos en base a el elemento value, el cual debe ser especifico para cada uno de los slices definidos; right: Slice definidos en base al elemento value, el cual debe ser especifico para cada uno de los slices definidos",
+      "comment" : "left: Slice defindos en base a el elemento value. Sólo  se pueden usar los discriminadores definidos para los dos slices generados; right: Slice definidos en base al elemento value. Sólo se pueden usar los discriminadores definidos para los dos slices generados",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -364,7 +364,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -378,7 +378,7 @@
     },
     {
       "path" : "Medication.code",
-      "short" : "left: Codes that identify this medication; right: Códificación de para describir un fármaco",
+      "short" : "Codes that identify this medication",
       "definition" : "A code (or set of codes) that specify this medication, or a textual description if no code is available. Usage note: This could be a standard medication code such as a code from RxNorm, SNOMED CT, IDMP etc. It could also be a national or local formulary code, optionally with translations to other code systems.",
       "comment" : "Depending on the context of use, the code that was actually selected by the user (prescriber, dispenser, etc.) will have the coding.userSelected set to true.  As described in the coding datatype: \"A coding may be marked as a \"userSelected\" if a user selected the particular coded value in a user interface (e.g. the user selects an item in a pick-list). If a user selected coding exists, it is the preferred choice for performing translations etc. Other codes can only be literal translations to alternative code systems, or codes at a lower level of granularity (e.g. a generic code for a vendor-specific primary one).",
       "min" : 0,
@@ -462,7 +462,7 @@
     },
     {
       "path" : "Medication.manufacturer",
-      "short" : "Manufacturer of the item",
+      "short" : "left: Manufacturer of the item; right: Laboratorio",
       "definition" : "Describes the details of the manufacturer of the medication product.  This is not intended to represent the distributor of a medication product.",
       "min" : 0,
       "max" : "1",
@@ -481,7 +481,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "mapping" : [{
@@ -503,7 +503,7 @@
     },
     {
       "path" : "Medication.form",
-      "short" : "powder | tablets | capsule +",
+      "short" : "left: powder | tablets | capsule +; right: Forma farmacéutica",
       "definition" : "Describes the form of the item.  Powder; tablets; capsule.",
       "comment" : "When Medication is referenced from MedicationRequest, this is the ordered form.  When Medication is referenced within MedicationDispense, this is the dispensed form.  When Medication is referenced within MedicationAdministration, this is administered form.",
       "min" : 0,
@@ -522,7 +522,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
@@ -577,7 +577,7 @@
     },
     {
       "path" : "Medication.ingredient",
-      "short" : "Active or inactive ingredient",
+      "short" : "left: Active or inactive ingredient; right: Componentes del medicamento",
       "definition" : "Identifies a particular constituent of interest in the product.",
       "comment" : "The ingredients need not be a complete list.  If an ingredient is not specified, this does not indicate whether an ingredient is present or absent.  If an ingredient is specified it does not mean that all ingredients are specified.  It is possible to specify both inactive and active ingredients.",
       "min" : 0,
@@ -596,7 +596,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -758,7 +758,7 @@
     },
     {
       "path" : "Medication.ingredient.isActive",
-      "short" : "Active ingredient indicator",
+      "short" : "left: Active ingredient indicator; right: Determinación si el componente es componente activo o no",
       "definition" : "Indication of whether this ingredient affects the therapeutic action of the drug.",
       "requirements" : "True indicates that the ingredient affects the therapeutic action of the drug (i.e. active). \rFalse indicates that the ingredient does not affect the therapeutic action of the drug (i.e. inactive).",
       "min" : 0,
@@ -777,7 +777,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{
@@ -787,7 +787,7 @@
     },
     {
       "path" : "Medication.ingredient.strength",
-      "short" : "Quantity of ingredient present",
+      "short" : "left: Quantity of ingredient present; right: Potencia del componente",
       "definition" : "Specifies how many (or how much) of the items there are in this Medication.  For example, 250 mg per tablet.  This is expressed as a ratio where the numerator is 250mg and the denominator is 1 tablet.",
       "min" : 0,
       "max" : "1",
@@ -805,7 +805,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : false,
       "mapping" : [{

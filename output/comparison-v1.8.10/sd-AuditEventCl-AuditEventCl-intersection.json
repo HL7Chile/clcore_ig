@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-51",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-51",
+  "id" : "3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-54",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-54",
   "name" : "IntersectionAuditEventClAndAuditEventCl",
   "title" : "Intersection of CL Auditoria And CL Auditoria",
   "status" : "active",
-  "date" : "2024-06-27T08:59:40-04:00",
+  "date" : "2024-07-18T16:08:16-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1234,11 +1234,11 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/Organization",
+        "targetProfile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl",
+        "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl",
+        "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl",
+        "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl",
         "http://hl7.org/fhir/StructureDefinition/Device",
-        "http://hl7.org/fhir/StructureDefinition/Patient",
         "http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
       }],
       "constraint" : [{
@@ -1988,11 +1988,11 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-        "http://hl7.org/fhir/StructureDefinition/Practitioner",
-        "http://hl7.org/fhir/StructureDefinition/Organization",
+        "targetProfile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl",
+        "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl",
+        "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl",
+        "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl",
         "http://hl7.org/fhir/StructureDefinition/Device",
-        "http://hl7.org/fhir/StructureDefinition/Patient",
         "http://hl7.org/fhir/StructureDefinition/RelatedPerson"]
       }],
       "constraint" : [{

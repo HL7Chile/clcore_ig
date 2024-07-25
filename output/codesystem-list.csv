@@ -15,3 +15,4 @@ https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis,1.8.12,active,,C
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador,1.8.12,active,,CSTipoIdentificador,Tipo Identificador,"Tipo Identificador",
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL,1.8.12,active,,CSTiposEncuentroCL,Tipos de Encuentro,"Códigos de Encuentros según MINSAL",
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais,1.8.12,active,,CSCodPaises,Códigos de Países,"Codigos definidos para la identificación de países segun norma ISO3166-N",
+https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro,1.8.12,active,,CSrazonnoencuentro,Razón Encuentro Remoto no Realizado,"Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud",

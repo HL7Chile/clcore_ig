@@ -251,6 +251,20 @@
       "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTFormCodes",
+      "title" : "SNOMED CT Form Codes",
+      "description" : "This value set includes all dose form codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.374"],
+      "sources" : ["2.16.840.1.113883.4.642.3.374"],
+      "uses" : {
+      },
+      "StructureDefinition-CoreMedicamentoCl.html" : "Medicamento Core CL"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/network-type",
       "version" : "4.0.1",
       "status" : "draft",
@@ -492,6 +506,17 @@
       "uses" : {
       },
       "StructureDefinition-ImmunizationCL.html" : "CL Inmunización"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT",
+      "version" : "1.8.12",
+      "status" : "active",
+      "name" : "VSRazonNOencuentro",
+      "title" : "Razones no Atención Remota",
+      "description" : "Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local",
+      "systems" : [
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro"
+      ]
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOTinm",

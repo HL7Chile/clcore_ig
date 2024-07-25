@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-12",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/73c3333d-5bdf-4abd-b7c3-e8c82167c8e5-12",
+  "id" : "3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-12",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-12",
   "name" : "IntersectionCSCodRegionCLAndCSCodRegionCL",
   "title" : "Intersection of Códigos de Regiones en Chile And Códigos de Regiones en Chile",
   "status" : "active",
-  "date" : "2024-06-27T08:59:40-04:00",
+  "date" : "2024-07-18T16:08:16-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

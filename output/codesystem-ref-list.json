@@ -10,9 +10,9 @@
       "oids" : ["1.2.840.10008.2.16.4"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
       "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
     },
     {
       "url" : "http://hl7.org/fhir/administrative-gender",
@@ -180,7 +180,8 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-VSDiagnosticosSCT.html" : "Diagnósticos SNOMED y Ausente o Desconocido"
+      "ValueSet-VSDiagnosticosSCT.html" : "Diagnósticos SNOMED y Ausente o Desconocido",
+      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/audit-event-type",
@@ -208,8 +209,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-      "version" : "2.0.0",
-      "status" : "draft",
+      "version" : "2.0.1",
+      "status" : "active",
       "name" : "ConditionVerificationStatus",
       "title" : "ConditionVerificationStatus",
       "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
@@ -232,8 +233,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ContractSignerTypeCodes",
       "title" : "Contract Signer Type Codes",
       "description" : "This value set includes sample Contract Signer Type codes.",
@@ -244,8 +245,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "SecurityRoleType",
       "title" : "Security Role Type",
       "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
@@ -266,8 +267,8 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.0.1",
+      "status" : "active",
       "name" : "ParticipantType",
       "title" : "Participant type",
       "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
@@ -278,11 +279,11 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
-      "version" : "1.0.0",
-      "status" : "draft",
+      "version" : "1.1.0",
+      "status" : "active",
       "name" : "ProvenanceParticipantType",
       "title" : "Provenance participant type",
-      "description" : "The type of participation a provenance participant.",
+      "description" : "These codes define the type of participation by an agent in a provenance activity. An agent is something that bears the responsibility identified by the type of participation in the activity taking place, for the existence of an entity, or for another agent's activity. An Agent may be An agent, device, system, organization, group, care-team, or other identifiable thing.",
       "oids" : ["2.16.840.1.113883.4.642.1.1131"],
       "uses" : {
       },
@@ -322,8 +323,8 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
-      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+      "http://terminology.hl7.org/6.0.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
@@ -372,8 +373,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
@@ -551,8 +552,8 @@
       "description" : "Tipo Identificador",
       "uses" : {
       },
-      "ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos",
-      "ValueSet-VSTipoIdentificador.html" : "Tipo Identificador"
+      "ValueSet-VSTipoIdentificador.html" : "Tipo Identificador",
+      "ValueSet-VSTiposDocumentos.html" : "Tipos de Documentos"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTiposEncuentroCL",
@@ -575,6 +576,17 @@
       "uses" : {
       },
       "ValueSet-CodPais.html" : "Códigos de Países"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro",
+      "version" : "1.8.12",
+      "status" : "active",
+      "name" : "CSrazonnoencuentro",
+      "title" : "Razón Encuentro Remoto no Realizado",
+      "description" : "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud",
+      "uses" : {
+      },
+      "ValueSet-VSRazonNOT.html" : "Razones no Atención Remota"
     },
     {
       "url" : "urn:iso-astm:E1762-95:2013",

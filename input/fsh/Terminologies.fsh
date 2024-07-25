@@ -1505,6 +1505,8 @@ Description: "Contacto telefónico o correo de los participantes"
 
 * include codes from system ContactPointSystem
 	
+*/
+
 ValueSet: VSRazonNOencuentro
 Id: VSRazonNOT
 Title: "Razones no Atención Remota"
@@ -1539,7 +1541,6 @@ Description: "Códigos de las razones por la cual un encuentro remoto no pudo re
 * #problcon "El participante tuvo problemas de conexión a internet" "Indica que existieron problemas de conexión a internet para conectarse con el médico"
 * #medicoproblcon "Tuve problemas de conexión a internet" "Indica problemas de conexión a internet que tuvo el médico"
 * #otros "Otros, texto libre" "Cualquier otro motivo"
-*/
 
 ValueSet: VSTipoIdentificador
 Id: VSTipoIdentificador
