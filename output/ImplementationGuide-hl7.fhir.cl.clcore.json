@@ -10,7 +10,7 @@
   "name" : "clcore",
   "title" : "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)",
   "status" : "active",
-  "date" : "2024-07-18T16:07:51-04:00",
+  "date" : "2024-07-26T10:55:50-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -43,7 +43,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.0.0"
+    "version" : "6.0.2"
   },
   {
     "id" : "hl7ext",
@@ -793,7 +793,7 @@
         "reference" : "StructureDefinition/CorePacienteCl"
       },
       "name" : "CL Paciente",
-      "description" : "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional",
+      "description" : "Este Perfil se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional",
       "exampleBoolean" : false
     },
     {
@@ -829,7 +829,7 @@
         "reference" : "StructureDefinition/CoreRolClinicoCl"
       },
       "name" : "CL RolClinico",
-      "description" : "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Especialidad Médica para la denominación de Prescriptor en Chile",
+      "description" : "Este Perfil se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Especialidad Médica para la denominación de Prestador en una organización de salud Chile (Hospital, Clínica, Cesfam, etc)",
       "exampleBoolean" : false
     },
     {
@@ -1642,6 +1642,15 @@
         }],
         "nameUrl" : "changes.html",
         "title" : "Historial de Cambios",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Notas-MS.html"
+        }],
+        "nameUrl" : "Notas-MS.html",
+        "title" : "Must Support",
         "generation" : "markdown"
       }]
     },

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-92",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-92",
+  "id" : "cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-92",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-92",
   "name" : "UnionEncounterCLAndEncounterCL",
   "title" : "Union of Encuentro Clínico And Encuentro Clínico",
   "status" : "active",
-  "date" : "2024-07-18T16:08:16-04:00",
+  "date" : "2024-07-26T10:56:06-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -884,7 +884,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "The type of encounter.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-95"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-95"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -929,7 +929,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Broad categorization of the service that is to be provided.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-98"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-98"
       },
       "mapping" : [{
         "identity" : "workflow",

@@ -385,8 +385,8 @@
       "systems" : ["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"],
       "uses" : {
       },
-      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
-      "StructureDefinition-CodigoPaises.html" : "Codigo de Paises"
+      "StructureDefinition-CodigoPaises.html" : "Codigo de Paises",
+      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodMadurez",

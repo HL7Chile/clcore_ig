@@ -64,7 +64,7 @@
   <name value="PacienteCl"/>
   <title value="CL Paciente"/>
   <status value="active"/>
-  <date value="2024-07-18T16:07:51-04:00"/>
+  <date value="2024-07-26T10:55:50-04:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -77,7 +77,7 @@
       <value value="chair@hl7chile.cl"/>
     </telecom>
   </contact>
-  <description value="Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"/>
+  <description value="Este Perfil se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

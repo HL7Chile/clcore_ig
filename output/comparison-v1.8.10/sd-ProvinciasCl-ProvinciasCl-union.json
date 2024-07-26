@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-125",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-125",
+  "id" : "cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-125",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-125",
   "name" : "UnionProvinciasClAndProvinciasCl",
   "title" : "Union of Códigos para Provincias en Chile And Códigos para Provincias en Chile",
   "status" : "active",
-  "date" : "2024-07-18T16:08:16-04:00",
+  "date" : "2024-07-26T10:56:06-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

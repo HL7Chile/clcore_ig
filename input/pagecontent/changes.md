@@ -21,6 +21,7 @@
   - Se genera [Ejemplo de Recurso Paciente Nacional](Patient-PacienteCL.html)
 
 - Perfil [CoreRolClinicoCl](StructureDefinition-CoreRolClinicoCl.html)
+  - Se modifica la descripción
   - Se modifica la referencia organization al **OrganizationCL**
   - Se modifica la referencia location al **CoreLocalizacionCl**
   - Se genera ejemplo [Ejemplo de Recurso de especialidad](PractitionerRole-EjemploEspecialidadCL.html)

@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-33",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3a7ae2cd-e24b-4715-a6bb-3cdeea4cf12b-33",
+  "id" : "cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-33",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-33",
   "name" : "IntersectionCSNombreCampanaCLAndCSNombreCampanaCL",
   "title" : "Intersection of Campañas Inmunización And Campañas Inmunización",
   "status" : "active",
-  "date" : "2024-07-18T16:08:16-04:00",
+  "date" : "2024-07-26T10:56:05-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

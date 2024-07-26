@@ -2,7 +2,7 @@ Profile:        CoreRolClinicoCl
 Parent:         PractitionerRole
 Id:             CoreRolClinicoCl
 Title:          "CL RolClinico"
-Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Especialidad Médica para la denominación de Prescriptor en Chile"
+Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Especialidad Médica para la denominación de Prestador en una organización de salud Chile (Hospital, Clínica, Cesfam, etc)"
 
 * active = true
 * active MS

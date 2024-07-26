@@ -69,14 +69,14 @@
 
     <style type="text/css">
         h2 {
-            --heading-prefix:"9.7"
+            --heading-prefix:"10.7"
         }
         
         h3,
         h4,
         h5,
         h6 {
-            --heading-prefix:"9.7"
+            --heading-prefix:"10.7"
         }
     </style>
     <div id="segment-header" class="segment">
@@ -285,7 +285,7 @@
         
           Active
           
-            as of 2024-07-18
+            as of 2024-07-26
           
         
       </td>
@@ -306,7 +306,7 @@
   </table>
 
 <p>
-<p>Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional</p>
+<p>Este Perfil se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional</p>
 
 </p>
 
@@ -320,7 +320,6 @@
 <div style="display:inline-block" markdown="1">
 
 <h4 id="ejemplos-de-uso-en-diferentes-escenarios">Ejemplos de uso en Diferentes Escenarios</h4>
-<p><br /></p>
 
 <ul>
   <li>Búsqueda de Datos demográficos de un paciente, haciendo uso de su identificación como <em>RUN</em> o <em>Documento de Identificación</em></li>
@@ -328,28 +327,7 @@
   <li>Busqueda de <strong>Id</strong> de recurso por medio de algún parámetro de búsqueda, para busqueda de documentos o datos clínicos asociados al paciente.</li>
 </ul>
 
-<p><br />
-<br /></p>
-
-<h3 id="elementos-mandatorios-y-must-support">Elementos Mandatorios y Must Support</h3>
-<p><br /></p>
-
-<p>El perfil presenta una serie de elementos de datos que siempre deben estar presentes en cada recurso que se genere desde este perfil. Estos elementos denominados como <strong>Mandatorios</strong> se pueden observar en elperfil con cardinalidad de valor inicial <em>1</em>. 
-Los elementos que deben ser Soportados, si la data esta presente en el recuso generado, se denominan (<a href="http://hl7.org/fhir/R4/profiling.html#mustsupport">Must Support</a>), y estos se expresan mediante la letra <strong>S</strong> en cada elemento o FhirPath que tiene esta categoría. Un elemento <em>Must Support</em> implica:</p>
-
-<ul>
-  <li>El sistema que recibe un recurso con un elemento <em>Must Support</em> debe almacearlo.</li>
-  <li>El sistema que recibe un recurso con un elemento <em>Must Support</em> debe poder hacer procesamiento de este elemento</li>
-  <li>El sistema que genera un recurso, no se ve obligado a definir los elementos <em>Must Support</em> a menos que estos sean <em>Mandatorios</em></li>
-  <li>Un elemento <em>Must Support</em> no implica que sus rutas derivadas lo sea por herencia</li>
-</ul>
-
-<p>La definición formal del Perfil en la legueta <em>Text Summary</em> indica cuantos de estos elementos hay distribuidos como elementos o rutas de estos.
-<br />
-<br /></p>
-
 <h3 id="notas-adicionales">Notas Adicionales</h3>
-<p><br /></p>
 
 <p>Consideraciones para la implementación:</p>
 
@@ -4009,13 +3987,9 @@ Summary
 <div style="display:inline-block" markdown="1">
 
 <h4 id="notas-de-implementación">Notas de Implementación</h4>
-<p><br /></p>
 
-<p>Se describe abajo un resumen de las interacciones de un Server RESTful FHIR con este perfil, como lo son los parámetors de búsqueda y el soporte para este perfil de uso nacional.
-<br /></p>
-
-<h4 id="search-parameters-mandatorios">Search Parameters Mandatorios</h4>
-<p><br /></p>
+<h5 id="search-parameters-mandatorios">Search Parameters Mandatorios</h5>
+<p>Se describe abajo un resumen de las interacciones de un Server RESTful FHIR con este perfil, como lo son los parámetors de búsqueda y el soporte para este perfil de uso nacional.</p>
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -4088,7 +4062,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 18, 2024 16:07-0400">2024-07-18</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 10:55-0400">2024-07-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
