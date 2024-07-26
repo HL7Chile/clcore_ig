@@ -72,7 +72,7 @@ Description: "Descriopción Medicamento"
 
 * ingredient 0..* MS
 * ingredient ^short = "Componentes del medicamento"
-  * itemReference 1..1 MS
+  * itemReference 0..1 MS
   * itemReference ^short = "Componente del fármaco, se usará texto"
     * display 0..1 MS
     * display ^short = "descripción del componente"
