@@ -63,7 +63,7 @@ Description: "Definición de encuentro clínico genérico para Chile"
   * type ^short = "Rol del participante en el encuentro"
   * individual 1..1 MS
   * individual ^short = "Referencia al participante"
-  * individual  only Reference (PrestadorCL or CoreRolClinicoCl)
+  * individual  only Reference(PrestadorCL or CoreRolClinicoCl)
 
 // * participant ^slicing.discriminator.type = #value
 // * participant ^slicing.discriminator.path = "type.coding.code"
@@ -99,12 +99,12 @@ Description: "Definición de encuentro clínico genérico para Chile"
 * diagnosis ^short = "Diagnóstico relevante para este encuentro"
 * diagnosis ^definition = "Diagnóstico relevante para este encuentro"
 * diagnosis.condition ^short = "El diagnóstico o procedimiento relevante para el encuentro"
-* diagnosis.condition only Reference (DiagnosticoCl)
+* diagnosis.condition only Reference(DiagnosticoCl)
 //* diagnosis.extension contains ObservacionesNotas named observaciones 0..1
 
 * serviceProvider MS
 * serviceProvider ^short = "La organización (instalación) responsable de este encuentro"
-* serviceProvider only Reference (OrganizacionCL)
+* serviceProvider only Reference(OrganizacionCL)
 
 * period 0..1 MS
 * period ^short = "La hora de inicio y finalización del encuentro"
