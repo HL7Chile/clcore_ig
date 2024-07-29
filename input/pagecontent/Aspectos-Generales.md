@@ -49,15 +49,15 @@ En la vista de la **Snapshot Table**, todos los elementos obligatorios definidos
 </div>
 <br>
 
-##### Vista Snapshot (Must Support) 
+##### Vista Key Elements
 
-En la vista **Snapshot Table (Must Support)**, todos los elementos presentados en la vista son obligatorios o deben ser compatibles con el perfil.
+En la vista **Key Elements Table**, todos los elementos presentados en la vista son obligatorios o deben ser compatibles con el perfil.
 
 
 <br>
 <div align="center" >
   <img  style="border: 1px solid; color: black;" src="SnapMS.png"> 
-  <p>Vista Snapshot (Must Support) de un perfil</p>
+  <p>Vista Key Elements de un perfil</p>
 </div>
 
 ### Definición del Conjunto Mínimo de Datos
@@ -199,95 +199,264 @@ Además cada ejemplo viene descrito en 4 formatos:
 
 ~~~
 {
-  "resourceType" : "Patient",
-  "id" : "PacienteCL",
-  "meta" : {
-    "profile" : [
-      "http://core.hl7chile.cl/StructureDefinition/CorePacienteCl"
+  "resourceType": "Patient",
+  "id": "PacienteCL",
+  "meta": {
+    "profile": [
+      "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl"
     ]
   },
-  "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: NNCH: 15.236.327-k (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Marietta María Ximena Rosales (OFFICIAL), Xime </p><p><b>telecom</b>: ph: 943561833(MOBILE), <a href=\"mailto:mariRosal@mimail.com\">mariRosal@mimail.com</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1983-03-24</p><p><b>address</b>: Av Los Chirimoyos, 32, casa 4 5101 5 152 (HOME)</p></div>"
-  },
-  "identifier" : [
+  "name": [
     {
-      "use" : "official",
-      "type" : {
-        "extension" : [
+      "use": "official",
+      "family": "Rosales",
+      "_family": {
+        "extension": [
           {
-            "url" : "http://core.hl7chile.cl/StructureDefinition/CodigoPaises",
-            "valueCodeableConcept" : {
-              "coding" : [
-                {
-                  "code" : "152",
-                  "display" : "Chile"
-                }
-              ]
-            }
-          }
-        ],
-        "coding" : [
-          {
-            "code" : "NNCH"
+            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+            "valueString": "Bosh"
           }
         ]
       },
-      "value" : "15.236.327-k"
-    }
-  ],
-  "active" : true,
-  "name" : [
-    {
-      "use" : "official",
-      "family" : "Rosales",
-      "_family" : {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
-            "valueString" : "Bosh"
-          }
-        ]
-      },
-      "given" : [
+      "given": [
         "Marietta",
         "María",
         "Ximena"
       ]
     },
     {
-      "use" : "usual",
-      "given" : [
+      "use": "usual",
+      "given": [
         "Xime"
       ]
     }
   ],
-  "telecom" : [
+  "contact": [
     {
-      "system" : "phone",
-      "value" : "943561833",
-      "use" : "mobile"
-    },
-    {
-      "system" : "email",
-      "value" : "mariRosal@mimail.com",
-      "use" : "work"
+      "name": {
+        "use": "official",
+        "family": "Calleja",
+        "_family": {
+          "extension": [
+            {
+              "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+              "valueString": "Morales"
+            }
+          ]
+        },
+        "given": [
+          "Juana",
+          "Josefa"
+        ]
+      },
+      "extension": [
+        {
+          "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto",
+          "extension": [
+            {
+              "url": "tutId",
+              "valueIdentifier": {
+                "type": {
+                  "coding": [
+                    {
+                      "code": "NNCHL",
+                      "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI",
+                      "display": "Chile"
+                    }
+                  ]
+                },
+                "system": "http://regcivil.cl/Validacion/RUN",
+                "value": "8987321-7"
+              }
+            },
+            {
+              "url": "docProc",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "152",
+                    "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                    "display": "Chile"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "relationship": [
+        {
+          "coding": [
+            {
+              "code": "N",
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+              "display": "Next-of-Kin"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "gender" : "female",
-  "birthDate" : "1983-03-24",
-  "address" : [
+  "extension": [
     {
-      "use" : "home",
-      "line" : [
+      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "1",
+            "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero",
+            "display": "Masculino"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "male",
+            "system": "http://hl7.org/fhir/administrative-gender",
+            "display": "Male"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "extension": [
+          {
+            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "152",
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                  "display": "Chile"
+                }
+              ]
+            }
+          }
+        ],
+        "coding": [
+          {
+            "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI",
+            "code": "NNCHL",
+            "display": "Chile"
+          }
+        ]
+      },
+      "system": "http://regcivil.cl/Validacion/RUN",
+      "value": "15.236.327-k"
+    }
+  ],
+  "active": true,
+  "telecom": [
+    {
+      "system": "phone",
+      "use": "mobile",
+      "value": "943561833"
+    },
+    {
+      "system": "email",
+      "use": "work",
+      "value": "mariRosal@mimail.com"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1983-03-24",
+  "address": [
+    {
+      "use": "home",
+      "line": [
         "Av Los Chirimoyos, 32, casa 4"
       ],
-      "city" : "5101",
-      "district" : "051",
-      "state" : "5",
-      "country" : "152"
+      "_city": {
+        "extension": [
+          {
+            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "05602",
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+                  "display": "Algarrobo"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_district": {
+        "extension": [
+          {
+            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "056",
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
+                  "display": "San Antonio"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_state": {
+        "extension": [
+          {
+            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "05",
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+                  "display": "Valparaíso"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_country": {
+        "extension": [
+          {
+            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "152",
+                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                  "display": "Chile"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "es-CL",
+            "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje",
+            "display": "Spanish"
+          }
+        ]
+      }
+    }
+  ],
+  "generalPractitioner": [
+    {
+      "reference": "Organization/OrganizacionClEjemplo1"
     }
   ]
 }
-
 ~~~
