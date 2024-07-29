@@ -48,7 +48,7 @@ Description: "Definición de encuentro clínico genérico para Chile"
 // * reasonCode ^binding.extension[=].url = $additional-binding 
 
 * subject MS
-* subject only Reference (PacienteCl)
+* subject only Reference(PacienteCl)
   * ^short = "Referencia al paciente del encuentro"
   * ^definition = "La referencia al paciente que está presente en el encuentro clínico sobre un paciente nacional."
 
