@@ -222,6 +222,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Perfil <a href="StructureDefinition-CoreMedicamentoCl.html">MedicamentoCL</a>
     <ul>
       <li>Se elimina los Slice de <strong>DescriptionID</strong> y <strong>ConceptID</strong>.</li>
+      <li>Se agregan al MS los siguientes datos:
+        <ul>
+          <li>code</li>
+          <li>form</li>
+          <li>manufacture</li>
+          <li>ingredent:
+            <ul>
+              <li>item</li>
+              <li>isActive</li>
+              <li>strength</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
       <li>Se cambian las descripciones y definiciones que referencien a la TFC.</li>
       <li>Se habilitan los ejemplo:
         <ul>
@@ -440,7 +454,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 26, 2024 10:55-0400">2024-07-26</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.8.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 29, 2024 12:24-0400">2024-07-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

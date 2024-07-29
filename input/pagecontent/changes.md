@@ -2,6 +2,14 @@
 
 - Perfil [MedicamentoCL](StructureDefinition-CoreMedicamentoCl.html)
   - Se elimina los Slice de **DescriptionID** y **ConceptID**.
+  - Se agregan al MS los siguientes datos:
+    - code
+    - form
+    - manufacture
+    - ingredent:
+      - item
+      - isActive
+      - strength
   - Se cambian las descripciones y definiciones que referencien a la TFC.
   - Se habilitan los ejemplo:
     * [Medicamento comprimido Tareg - D 160](Medication-MedicamentoCl.html)

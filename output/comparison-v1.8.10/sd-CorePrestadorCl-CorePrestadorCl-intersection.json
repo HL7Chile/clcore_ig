@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-81",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-81",
+  "id" : "4af440d3-2a6e-45f7-a25f-a865e277bf60-81",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4af440d3-2a6e-45f7-a25f-a865e277bf60-81",
   "name" : "IntersectionPrestadorCLAndPrestadorCL",
   "title" : "Intersection of CL Prestador And CL Prestador",
   "status" : "active",
-  "date" : "2024-07-26T10:56:05-04:00",
+  "date" : "2024-07-29T12:24:22-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -511,7 +511,7 @@
       "isSummary" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-84"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/4af440d3-2a6e-45f7-a25f-a865e277bf60-84"
       },
       "mapping" : [{
         "identity" : "v2",

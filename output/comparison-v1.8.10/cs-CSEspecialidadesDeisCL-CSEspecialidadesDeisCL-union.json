@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-26",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-26",
+  "id" : "4af440d3-2a6e-45f7-a25f-a865e277bf60-26",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/4af440d3-2a6e-45f7-a25f-a865e277bf60-26",
   "name" : "UnionCSEspecialidadesDeisCLAndCSEspecialidadesDeisCL",
   "title" : "Union of Códigos de Especialidades And Códigos de Especialidades",
   "status" : "active",
-  "date" : "2024-07-26T10:56:05-04:00",
+  "date" : "2024-07-29T12:24:22-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

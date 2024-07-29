@@ -4,14 +4,15 @@ Description: "Medicamento comprimido Tareg -D160 referemciado como medicamento e
 InstanceOf : CoreMedicamentoCl
 
 	
-* identifier[TFCDId]
+* identifier[0]
   * use = #official
   * system = "http://minsal.cl/semantikos/description-id"
   * value = "1991971000167110"
 
-* identifier[TFCCId]
+* identifier[1]
   * use = #official
   * system = "http://minsal.cl/semantikos/concept-id"
   * value = "840851000167103"
 
 * code.text = "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
+* manufacturer = Reference (EjemploLaboratorio1)

@@ -10,7 +10,7 @@
   "name" : "clcore",
   "title" : "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)",
   "status" : "active",
-  "date" : "2024-07-26T10:55:50-04:00",
+  "date" : "2024-07-29T12:24:08-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -718,6 +718,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/CoreAletgiaIntCl"
+      },
+      "name" : "CL Alergias e Intolerancias",
+      "description" : "Este Perfil ha sido desarrollado para cubrir las necesidades para describir una Alergia o alguna Intolerancia definida en un paciente.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/AuditEventCl"
       },
       "name" : "CL Auditoria",
@@ -1147,6 +1159,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AllergyIntolerance"
+      }],
+      "reference" : {
+        "reference" : "AllergyIntolerance/AllergyIntoleranceEj"
+      },
+      "name" : "Ejemplo de Recurso AllergyIntolerance Core",
+      "description" : "AllergyIntolerance ficticio",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreAletgiaIntCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "PractitionerRole"
       }],
       "reference" : {
@@ -1263,6 +1287,18 @@
       "name" : "Ejemplo Localización Farmacia",
       "description" : "Ejemplo de la localización relacionada con una Farmacia específica ubicada en la comuna de Viña del Mar",
       "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreLocalizacionCl"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/EjemploLaboratorio1"
+      },
+      "name" : "Ejemplo Organización Laboratorio",
+      "description" : "Laboratorio",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl"
     },
     {
       "extension" : [{

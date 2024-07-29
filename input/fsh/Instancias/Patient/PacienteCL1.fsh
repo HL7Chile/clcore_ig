@@ -57,7 +57,7 @@ Usage : #example
 * contact.name.given[0] = "Juana"
 * contact.name.given[+] = "Josefa"
 
-* communication.language.coding = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje#es-CL "Spanish"
+* communication.language.coding = CSCodigoslenguaje#es-CL "Spanish"
 
 * generalPractitioner = Reference(OrganizacionClEjemplo1)
 

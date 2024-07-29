@@ -147,6 +147,13 @@
     "name" : "ComunasCl"
   },
   {
+    "id" : "CoreAletgiaIntCl",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreAletgiaIntCl",
+    "version" : "1.8.12",
+    "name" : "AlergiaIntCL"
+  },
+  {
     "id" : "CoreDiagnosticoCl",
     "type" : "StructureDefinition",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl",

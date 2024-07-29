@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-65",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/cc7c5ed3-ec34-4a4f-a6a1-a9dc3e5d8407-65",
+  "id" : "4af440d3-2a6e-45f7-a25f-a865e277bf60-65",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4af440d3-2a6e-45f7-a25f-a865e277bf60-65",
   "name" : "UnionPacienteClAndPacienteCl",
   "title" : "Union of CL Paciente And CL Paciente",
   "status" : "active",
-  "date" : "2024-07-26T10:56:05-04:00",
+  "date" : "2024-07-29T12:24:22-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

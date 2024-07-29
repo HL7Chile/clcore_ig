@@ -200,6 +200,12 @@
         "title": "CL Auditoria"
       }
     ],
+    "AllergyIntolerance": [
+      {
+        "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreAletgiaIntCl",
+        "title": "CL Alergias e Intolerancias"
+      }
+    ],
     "Condition": [
       {
         "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl",
