@@ -1,4 +1,4 @@
-### Versión 1.8.12
+### Versión 1.9.0
 
 - Perfil [MedicamentoCL](StructureDefinition-CoreMedicamentoCl.html)
   - Se elimina los Slice de **DescriptionID** y **ConceptID**.
