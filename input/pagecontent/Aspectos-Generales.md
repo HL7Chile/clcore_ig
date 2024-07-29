@@ -13,12 +13,12 @@ Los perfiles contienen ciertos elementos que son importantes de comprender a la 
 
 Al revisar un perfil nos encontramos con la posibilidad de ver múltiples vistas de este.
 
-##### Resumen de Texto
+##### Statistics/References
 
 Esta vista permite ver un resumen del Perfil como de que recurso proviene elementos *mandatorios*, *eliminados* y que deben ser *soportados*. Además, resume las *extensiones* y *slices* generados en el diseño.
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="Resumen.png"> 
+  <img  style="border: 1px solid; color: black;" src="Stactics-Reference.png"> 
   <p>Visión Resumen de un Perfil</p>
 </div>
 <br>
