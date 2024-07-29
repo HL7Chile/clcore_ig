@@ -15,7 +15,7 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * identifier ^definition = "Es el número de identificación del evento donde a un paciente se le administra una vacuna o registro de inmunización" 
 
 * patient MS
-* patient only Reference (PacienteCl)
+* patient only Reference(PacienteCl)
 * patient ^short = "Paciente inmunizado"
 * patient ^definition = "El paciente que recibió o no recibió la inmunización"
 
@@ -23,7 +23,7 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * performer ^short = "Quién realizó la inmunización"
 * performer ^definition = "Indica quién realizó el evento de inmunización"
 * performer.actor MS
-* performer.actor only Reference (PrestadorCL or OrganizacionCL)
+* performer.actor only Reference(PrestadorCL or OrganizacionCL)
 * performer.actor ^short = "Prestador personal u organizacional que realizó la acción"
 * performer.actor ^definition = "Prestador personal u organizacional que realizó la acción"
 
@@ -82,7 +82,7 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * location 0..1 MS
 * location ^short = "Dónde se produjo la inmunización"
 * location ^definition = "El lugar donde se produjo la administración de la vacuna"
-* location only Reference (LocalizacionCL)
+* location only Reference(LocalizacionCL)
 
 // * location.extension ^short = "Extensión para los Sistemas de Salud, por ejemplo: S.S Viña del mar Quillota"
 // * location.extension contains ServicioSaludCL named ssalud 0..1 
