@@ -2,7 +2,7 @@ Profile:        CoreRolClinicoCl
 Parent:         PractitionerRole
 Id:             CoreRolClinicoCl
 Title:          "CL RolClinico"
-Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Especialidad Médica para la denominación de Prestador en una organización de salud Chile (Hospital, Clínica, Cesfam, etc)"
+Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades la función de Prestador en una organización de Chile por ejemplo: Hospital, Clínica, Cesfam, farmacias, etc"
 
 * active = true
 * active MS
