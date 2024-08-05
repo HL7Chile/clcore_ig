@@ -45,11 +45,14 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 * location.display ^short = "Nombre de la ubicación"
 * location.display ^definition = "Nombre completo de la ubicación de salud"
 
+* code MS
+  * ^short = "Rol que cumple un profesional en una organización"
+  * ^definition = "Rol que cumple un profesional en una organización."  
 
 * specialty MS
 * specialty ^short = "Definición de la especialidad médica según DEIS"
 * specialty ^definition = "Definición de la especialidad médica según DEIS, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta"
-* specialty from VSEspecialidadesDeisCL (required)
+* specialty from VSEspecialidadesDeisCL (preferred)
 * specialty ^binding.description = "Códigos de Especialidad DEIS" 
 
 

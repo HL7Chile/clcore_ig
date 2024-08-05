@@ -59,7 +59,7 @@ Description: "Definición de encuentro clínico genérico para Chile"
 * participant MS
 * participant ^short = "Participantes involucrados en el encuentro sin considerar al paciente"
   * type MS
-  * type from http://hl7.org/fhir/ValueSet/encounter-participant-type
+  * type from http://hl7.org/fhir/ValueSet/encounter-participant-type (extensible)
   * type ^short = "Rol del participante en el encuentro"
   * individual 1..1 MS
   * individual ^short = "Referencia al participante"

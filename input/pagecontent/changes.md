@@ -32,6 +32,8 @@
   - Se modifica la descripción
   - Se modifica la referencia organization al **OrganizationCL**
   - Se modifica la referencia location al **CoreLocalizacionCl**
+  - Se modifica specialty binding de **required** a **preferred**
+  - Se agrega MS el dato **code**
   - Se genera ejemplo [Ejemplo de Recurso de especialidad](PractitionerRole-EjemploEspecialidadCL.html)
   - Se genera ejemplo [Ejemplo de Especialidad Medicina Familiar](PractitionerRole-EjemploEspecialidadCL2.html)
 
@@ -63,7 +65,7 @@
   - Se cambia la referencia de agent.who y signature.who a los perfiles que existan en la guía y aquellos que no, se referencian al estandar.
 
 - Perfil [DocumentoCL](StructureDefinition-DocumentoCL.html)
-  - Se cambian las referencia de Subject de PacienteCL a Cualquier Recurso
+  - Se cambian las referencia de Subject de PacienteCL a cualquier recurso
   - Se cambia las referencia de author a las siguientes: CL Prestador | CL RolClinico | Device | CL Paciente | CL Prestador | CL Organización
   - Se cambia las referencia de attester.party: CL Paciente | RelatedPerson | CL Prestador | CL RolClinico | CL Organización
 
