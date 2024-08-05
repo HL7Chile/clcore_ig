@@ -62,6 +62,11 @@
   - Se cambia la referencia de location al perfil de la guía
   - Se cambia la referencia de agent.who y signature.who a los perfiles que existan en la guía y aquellos que no, se referencian al estandar.
 
+- Perfil [DocumentoCL](StructureDefinition-DocumentoCL.html)
+  - Se cambian las referencia de Subject de PacienteCL a Cualquier Recurso
+  - Se cambia las referencia de author a las siguientes: CL Prestador | CL RolClinico | Device | CL Paciente | CL Prestador | CL Organización
+  - Se cambia las referencia de attester.party: CL Paciente | RelatedPerson | CL Prestador | CL RolClinico | CL Organización
+
 - Se vuelve habilitar los siguientes ejemplos corregidos:
  - [Localización de Farmacia](Location-LocalizacionEjemploCL1.html)
  - [Inmunización](Immunization-ImmunizationEj.html)

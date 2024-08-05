@@ -29,8 +29,8 @@ Description: "De un formato genérico para documento clínico en Chile."
 //* ---- Paciente ----- 
 //* subject only Reference(PacienteCl)
 * subject MS
-* subject ^definition = "Paciente sobre el cual se ha generado este documento. Este debe ser basado en el perfil de paciente Chileno."
-* subject ^short = "Paciente sobre el cual se ha generado este documento. Este debe ser basado en el perfil del paciente Chileno."
+* subject ^definition = "Recurso sobre el cual se ha generado este documento."
+* subject ^short = "Recurso sobre el cual se ha generado este documento. Es deseable que el recurso cumpla con un perfil Chileno."
 
 
 * encounter 0..1 
