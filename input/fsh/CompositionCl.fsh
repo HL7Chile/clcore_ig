@@ -77,7 +77,7 @@ Description: "De un formato genérico para documento clínico en Chile."
 * custodian MS
   * ^short = "Organización que mantiene los documentos"
   * ^definition = "Referencia a la organización según perfil nacional"
-* custodian only Reference(OrganizationCL)
+* custodian only Reference(CoreOrganizacionCl)
 
 
 * section 1.. MS
