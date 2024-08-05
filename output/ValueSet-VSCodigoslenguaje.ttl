@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSCodigoslenguaje</b></p><a name=\"VSCodigoslenguaje\"> </a><a name=\"hcVSCodigoslenguaje\"> </a><a name=\"VSCodigoslenguaje-es-CL\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodigoslenguaje.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigoslenguaje"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.8.12"] ; # 
+  fhir:version [ fhir:v "1.9.0"] ; # 
   fhir:name [ fhir:v "VSCodigoslenguaje"] ; # 
   fhir:title [ fhir:v "Codigos Lenguaje"] ; # 
   fhir:status [ fhir:v "active"] ; # 

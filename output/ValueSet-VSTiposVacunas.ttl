@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSTiposVacunas</b></p><a name=\"VSTiposVacunas\"> </a><a name=\"hcVSTiposVacunas\"> </a><a name=\"VSTiposVacunas-es-CL\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodigoVacunas.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposVacunas"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.8.12"] ; # 
+  fhir:version [ fhir:v "1.9.0"] ; # 
   fhir:name [ fhir:v "VSTiposVacunasCL"] ; # 
   fhir:title [ fhir:v "Tipos de Vacunas RNI"] ; # 
   fhir:status [ fhir:v "active"] ; # 

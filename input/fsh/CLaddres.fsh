@@ -6,6 +6,7 @@ Description: "Variable dirección"
 * ^version = "1.0.0"
 * . ^comment = "Variable dirección"
 * . ^short = "Tipo de dato para agragar la dirección de un paciente"
+* extension contains http://hl7.org/fhir/StructureDefinition/geolocation named Geolocalizacion 0..1 MS
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -49,4 +50,3 @@ Description: "Variable dirección"
 * country.extension ^short = "Código de Países"
 * country.extension ^definition = "Código de Países"
 
-* extension contains http://hl7.org/fhir/StructureDefinition/geolocation named Geolocalizacion 0..1 MS

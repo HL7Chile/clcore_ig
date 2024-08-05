@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSTiposServicio</b></p><a name=\"VSTiposServicio\"> </a><a name=\"hcVSTiposServicio\"> </a><a name=\"VSTiposServicio-es-CL\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodigoServicio.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio</code></a></li></ul></div>"
   },
   "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposServicio",
-  "version" : "1.8.12",
+  "version" : "1.9.0",
   "name" : "VSTiposServicioCL",
   "title" : "Tipos de Servicios Remotos",
   "status" : "active",

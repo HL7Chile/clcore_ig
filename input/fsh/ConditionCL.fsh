@@ -21,7 +21,7 @@ Description:    "Condicion o Diagnósticos de Pacientes"
 * verificationStatus ^binding.description = "Códigos definidos por estándar"
 
 //---paciente
-* subject only Reference(PacienteCl)
+* subject only Reference(PacienteCl or Group)
 * subject MS
 * subject.reference MS
 * subject.identifier and subject.display MS

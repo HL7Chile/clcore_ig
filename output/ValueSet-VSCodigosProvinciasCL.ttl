@@ -13,7 +13,7 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSCodigosProvinciasCL</b></p><a name=\"VSCodigosProvinciasCL\"> </a><a name=\"hcVSCodigosProvinciasCL\"> </a><a name=\"VSCodigosProvinciasCL-es-CL\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSCodProvinciasCL.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosProvinciasCL"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.8.12"] ; # 
+  fhir:version [ fhir:v "1.9.0"] ; # 
   fhir:name [ fhir:v "VSCodigosProvinciasCL"] ; # 
   fhir:title [ fhir:v "Códigos de Provincias en Chile"] ; # 
   fhir:status [ fhir:v "active"] ; # 

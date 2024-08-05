@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VSCodigosComunaCL</b></p><a name="VSCodigosComunaCL"> </a><a name="hcVSCodigosComunaCL"> </a><a name="VSCodigosComunaCL-es-CL"> </a><ul><li>Include all codes defined in <a href="CodeSystem-CSCodComunasCL.html"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL</code></a></li></ul></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosComunaCL"/>
-  <version value="1.8.12"/>
+  <version value="1.9.0"/>
   <name value="VSCodigosComunaCL"/>
   <title value="Códigos de Comunas en Chile"/>
   <status value="active"/>

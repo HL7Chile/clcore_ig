@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.cl.clcore",
-  "version": "1.8.12",
+  "version": "1.9.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "CL",
   "extensions": [

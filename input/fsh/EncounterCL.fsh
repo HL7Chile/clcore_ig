@@ -48,7 +48,7 @@ Description: "Definición de encuentro clínico genérico para Chile"
 // * reasonCode ^binding.extension[=].url = $additional-binding 
 
 * subject MS
-* subject only Reference(PacienteCl)
+* subject only Reference(PacienteCl or Group)
   * ^short = "Referencia al paciente del encuentro"
   * ^definition = "La referencia al paciente que está presente en el encuentro clínico sobre un paciente nacional."
 
@@ -63,7 +63,7 @@ Description: "Definición de encuentro clínico genérico para Chile"
   * type ^short = "Rol del participante en el encuentro"
   * individual 1..1 MS
   * individual ^short = "Referencia al participante"
-  * individual  only Reference(PrestadorCL or CoreRolClinicoCl)
+  * individual  only Reference(PrestadorCL or CoreRolClinicoCl or RelatedPerson)
 
 // * participant ^slicing.discriminator.type = #value
 // * participant ^slicing.discriminator.path = "type.coding.code"

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "4af440d3-2a6e-45f7-a25f-a865e277bf60-89",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4af440d3-2a6e-45f7-a25f-a865e277bf60-89",
+  "id" : "c65fcd6f-6da1-43b2-ab22-ef5a9ea81ed6-89",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c65fcd6f-6da1-43b2-ab22-ef5a9ea81ed6-89",
   "name" : "UnionDocumentoClAndDocumentoCl",
   "title" : "Union of CL Documento And CL Documento",
   "status" : "active",
-  "date" : "2024-07-29T12:24:22-04:00",
+  "date" : "2024-08-05T12:01:30-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -551,8 +551,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl",
-        "#sd-CorePacienteCl-CorePacienteCl"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Resource"]
       }],
       "constraint" : [{
         "extension" : [{

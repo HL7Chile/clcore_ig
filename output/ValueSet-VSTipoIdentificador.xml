@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VSTipoIdentificador</b></p><a name="VSTipoIdentificador"> </a><a name="hcVSTipoIdentificador"> </a><a name="VSTipoIdentificador-es-CL"> </a><ul><li>Include all codes defined in <a href="CodeSystem-CSTipoIdentificador.html"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</code></a></li></ul></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTipoIdentificador"/>
-  <version value="1.8.12"/>
+  <version value="1.9.0"/>
   <name value="VSTipoIdentificador"/>
   <title value="Tipo Identificador"/>
   <status value="active"/>

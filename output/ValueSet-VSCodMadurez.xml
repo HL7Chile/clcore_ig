@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VSCodMadurez</b></p><a name="VSCodMadurez"> </a><a name="hcVSCodMadurez"> </a><a name="VSCodMadurez-es-CL"> </a><ul><li>Include all codes defined in <a href="CodeSystem-CSCodMadurez.html"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodMadurez</code></a></li></ul></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodMadurez"/>
-  <version value="1.8.12"/>
+  <version value="1.9.0"/>
   <name value="VSCodMadurez"/>
   <title value="Códigos de grado de madurez del artefacto"/>
   <status value="active"/>

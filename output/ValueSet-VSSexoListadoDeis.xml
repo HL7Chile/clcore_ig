@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet VSSexoListadoDeis</b></p><a name="VSSexoListadoDeis"> </a><a name="hcVSSexoListadoDeis"> </a><a name="VSSexoListadoDeis-es-CL"> </a><ul><li>Include all codes defined in <a href="CodeSystem-CSSexoListadoDeis.html"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis</code></a></li></ul></div>
   </text>
   <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSSexoListadoDeis"/>
-  <version value="1.8.12"/>
+  <version value="1.9.0"/>
   <name value="VSSexoListadoDeis"/>
   <title value="Sexo Listado Deis"/>
   <status value="active"/>

@@ -27,7 +27,7 @@ Description: "De un formato genérico para documento clínico en Chile."
 
 
 //* ---- Paciente ----- 
-* subject only Reference(PacienteCl)
+//* subject only Reference(PacienteCl)
 * subject MS
 * subject ^definition = "Paciente sobre el cual se ha generado este documento. Este debe ser basado en el perfil de paciente Chileno."
 * subject ^short = "Paciente sobre el cual se ha generado este documento. Este debe ser basado en el perfil del paciente Chileno."
@@ -70,12 +70,14 @@ Description: "De un formato genérico para documento clínico en Chile."
   * time ^short = "Fecha y Hora de la validación"
   * time ^definition = "Fecha y Hora de la validación"
   * party MS
+  * party only Reference(PacienteCl or RelatedPerson or PrestadorCL or CoreRolClinicoCl or OrganizacionCL)
   * party ^short = "Quien validó"
   * party ^definition = "Quien validó"
 
 * custodian MS
   * ^short = "Organización que mantiene los documentos"
   * ^definition = "Referencia a la organización según perfil nacional"
+* custodian only Reference(OrganizationCL)
 
 
 * section 1.. MS

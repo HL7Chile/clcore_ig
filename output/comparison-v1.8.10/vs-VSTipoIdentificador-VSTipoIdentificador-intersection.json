@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "4af440d3-2a6e-45f7-a25f-a865e277bf60-177",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/4af440d3-2a6e-45f7-a25f-a865e277bf60-177",
+  "id" : "c65fcd6f-6da1-43b2-ab22-ef5a9ea81ed6-177",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/c65fcd6f-6da1-43b2-ab22-ef5a9ea81ed6-177",
   "name" : "IntersectionVSTipoIdentificadorAndVSTipoIdentificador",
   "title" : "Intersection of Tipo Identificador And Tipo Identificador",
   "status" : "active",
-  "date" : "2024-07-29T12:24:22-04:00",
+  "date" : "2024-08-05T12:01:30-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

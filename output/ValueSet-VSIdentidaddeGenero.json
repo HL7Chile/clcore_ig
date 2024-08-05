@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet VSIdentidaddeGenero</b></p><a name=\"VSIdentidaddeGenero\"> </a><a name=\"hcVSIdentidaddeGenero\"> </a><a name=\"VSIdentidaddeGenero-es-CL\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-CSIdentidaddeGenero.html\"><code>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero</code></a></li></ul></div>"
   },
   "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero",
-  "version" : "1.8.12",
+  "version" : "1.9.0",
   "name" : "VSIdentidaddeGenero",
   "title" : "Identidad de Genero",
   "status" : "active",

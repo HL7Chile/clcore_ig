@@ -52,6 +52,7 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 
 
 * managingOrganization  MS
+* managingOrganization only Reference(CoreOrganizacionCl)
 * managingOrganization ^short = "Organización a la cual la ubicación pertenece, si es el caso. Esta relación se hace en base a una referencia a una Orgaización"
 * managingOrganization ^definition = "La organización responsable de la localización."
 * managingOrganization ^comment = "Se puede usar para indicar la organzación jerárquica superior. Siempre debe existir una Organizacion jerarquicamente sobre la localizacion y en caso de no existir esta jerquia, se debe crear la organizacion, con los mismos datos del location."
