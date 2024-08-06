@@ -41,8 +41,8 @@
       "uses" : {
       },
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-SexoBiologico.html" : "Sexo Biologico del paciente"
+      "StructureDefinition-SexoBiologico.html" : "Sexo Biologico del paciente",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
@@ -379,8 +379,8 @@
       "uses" : {
       },
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -395,8 +395,8 @@
       "uses" : {
       },
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -645,11 +645,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-CoreMedicamentoCl.html" : "Medicamento Core CL",
+      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CoreMedicamentoCl.html" : "Medicamento Core CL",
       "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente"
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -663,12 +663,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-CoreMedicamentoCl.html" : "Medicamento Core CL",
+      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-CoreMedicamentoCl.html" : "Medicamento Core CL",
       "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente"
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
@@ -814,19 +814,19 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización",
-      "StructureDefinition-CoreMedicamentoCl.html" : "Medicamento Core CL",
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-ProvenanceCl.html" : "CL Provenance",
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico",
-      "StructureDefinition-AuditEventCl.html" : "CL Auditoria",
-      "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CoreAletgiaIntCl.html" : "CL Alergias e Intolerancias",
       "StructureDefinition-DocumentoCl.html" : "CL Documento",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
+      "StructureDefinition-AuditEventCl.html" : "CL Auditoria",
       "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
+      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico",
+      "StructureDefinition-ProvenanceCl.html" : "CL Provenance",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
+      "StructureDefinition-CoreMedicamentoCl.html" : "Medicamento Core CL",
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-CoreAletgiaIntCl.html" : "CL Alergias e Intolerancias"
+      "StructureDefinition-ImmunizationCL.html" : "CL Inmunización",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -1232,12 +1232,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
+      "StructureDefinition-ProvenanceCl.html" : "CL Provenance",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
       "StructureDefinition-CoreMedicamentoCl.html" : "Medicamento Core CL",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-ProvenanceCl.html" : "CL Provenance"
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",
@@ -1458,8 +1458,8 @@
       "systems" : ["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"],
       "uses" : {
       },
-      "StructureDefinition-CodigoPaises.html" : "Codigo de Paises",
-      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente"
+      "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
+      "StructureDefinition-CodigoPaises.html" : "Codigo de Paises"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodMadurez",

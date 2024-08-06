@@ -61,7 +61,6 @@
       <sch:assert test="count(f:onBehalfOf) &lt;= 1">onBehalfOf: maximum cardinality of 'onBehalfOf' is 1</sch:assert>
       <sch:assert test="count(f:targetFormat) &lt;= 1">targetFormat: maximum cardinality of 'targetFormat' is 1</sch:assert>
       <sch:assert test="count(f:sigFormat) &lt;= 1">sigFormat: maximum cardinality of 'sigFormat' is 1</sch:assert>
-      <sch:assert test="count(f:data) &gt;= 1">data: minimum cardinality of 'data' is 1</sch:assert>
       <sch:assert test="count(f:data) &lt;= 1">data: maximum cardinality of 'data' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

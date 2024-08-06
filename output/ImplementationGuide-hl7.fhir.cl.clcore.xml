@@ -11,7 +11,7 @@
   <name value="clcore"/>
   <title value="Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"/>
   <status value="active"/>
-  <date value="2024-08-05T12:01:08-04:00"/>
+  <date value="2024-08-06T12:35:59-04:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -655,7 +655,7 @@
         <reference value="StructureDefinition/CoreRolClinicoCl"/>
       </reference>
       <name value="CL RolClinico"/>
-      <description value="Este Perfil se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso de Especialidad Médica para la denominación de Prestador en una organización de salud Chile (Hospital, Clínica, Cesfam, etc)"/>
+      <description value="Este Perfil se ha modelado con el fin de cubrir las necesidades la función de Prestador en una organización de Chile por ejemplo: Hospital, Clínica, Cesfam, farmacias, etc"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1150,7 +1150,7 @@
         <reference value="StructureDefinition/CoreMedicamentoCl"/>
       </reference>
       <name value="Medicamento Core CL"/>
-      <description value="Descriopción Medicamento"/>
+      <description value="Descripción de un Medicamento"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

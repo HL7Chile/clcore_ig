@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "c65fcd6f-6da1-43b2-ab22-ef5a9ea81ed6-2",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/c65fcd6f-6da1-43b2-ab22-ef5a9ea81ed6-2",
+  "id" : "1d92ff7f-885a-499e-97a2-b865570afaa2-2",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1d92ff7f-885a-499e-97a2-b865570afaa2-2",
   "name" : "UnionCSCodComunasCLAndCSCodComunasCL",
   "title" : "Union of Códigos de Comunas en Chile And Códigos de Comunas en Chile",
   "status" : "active",
-  "date" : "2024-08-05T12:01:30-04:00",
+  "date" : "2024-08-06T12:36:18-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

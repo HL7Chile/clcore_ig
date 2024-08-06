@@ -10,6 +10,8 @@
       - item
       - isActive
       - strength
+  - ingredent.itemReference referencia a **MedicamentoCL** o **Substance**
+  - ingredent.itemCodeableConcept a http://hl7.org/fhir/ValueSet/medication-codes como example
   - Se cambian las descripciones y definiciones que referencien a la TFC.
   - Se habilitan los ejemplo:
     * [Medicamento comprimido Tareg - D 160](Medication-MedicamentoCl.html)

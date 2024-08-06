@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "c65fcd6f-6da1-43b2-ab22-ef5a9ea81ed6-122",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/c65fcd6f-6da1-43b2-ab22-ef5a9ea81ed6-122",
+  "id" : "1d92ff7f-885a-499e-97a2-b865570afaa2-122",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1d92ff7f-885a-499e-97a2-b865570afaa2-122",
   "name" : "UnionProvenanceCLAndProvenanceCL",
   "title" : "Union of CL Provenance And CL Provenance",
   "status" : "active",
-  "date" : "2024-08-05T12:01:30-04:00",
+  "date" : "2024-08-06T12:36:18-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -1002,7 +1002,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
@@ -1193,7 +1193,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
@@ -1980,7 +1980,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : false,
+      "mustSupport" : true,
       "isModifier" : false,
       "isSummary" : true,
       "binding" : {
@@ -2327,7 +2327,7 @@
       "short" : "Contenido de la firma (XML DigSig.JWS, imagem, etc.)",
       "definition" : "La codificación base64 del contenido de la firma. Si la firma no se registra electrónicamente, este elemento estará vacío.",
       "comment" : "Where the signature type is an XML DigSig, the signed content is a FHIR Resource(s), the signature is of the XML form of the Resource(s) using  XML-Signature (XMLDIG) \"Detached Signature\" form.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "base64Binary"

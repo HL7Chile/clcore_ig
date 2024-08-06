@@ -266,8 +266,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Perfil <a href="StructureDefinition-CoreRolClinicoCl.html">CoreRolClinicoCl</a>
     <ul>
       <li>Se modifica la descripción</li>
+      <li>Se elimina el required Pattern = true</li>
       <li>Se modifica la referencia organization al <strong>OrganizationCL</strong></li>
       <li>Se modifica la referencia location al <strong>CoreLocalizacionCl</strong></li>
+      <li>Se modifica specialty binding de <strong>required</strong> a <strong>preferred</strong></li>
+      <li>Se agrega MS el dato <strong>code</strong></li>
       <li>Se genera ejemplo <a href="PractitionerRole-EjemploEspecialidadCL.html">Ejemplo de Recurso de especialidad</a></li>
       <li>Se genera ejemplo <a href="PractitionerRole-EjemploEspecialidadCL2.html">Ejemplo de Especialidad Medicina Familiar</a></li>
     </ul>
@@ -309,6 +312,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <ul>
       <li>Se cambia la referencia de location al perfil de la guía</li>
       <li>Se cambia la referencia de agent.who y signature.who a los perfiles que existan en la guía y aquellos que no, se referencian al estandar.</li>
+    </ul>
+  </li>
+  <li>Perfil <a href="StructureDefinition-DocumentoCL.html">DocumentoCL</a>
+    <ul>
+      <li>Se cambian las referencia de Subject de PacienteCL a cualquier recurso</li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>Se cambia las referencia de author a las siguientes: CL Prestador</td>
+              <td>CL RolClinico</td>
+              <td>Device</td>
+              <td>CL Paciente</td>
+              <td>CL Prestador</td>
+              <td>CL Organización</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+      <li>
+        <table>
+          <tbody>
+            <tr>
+              <td>Se cambia las referencia de attester.party: CL Paciente</td>
+              <td>RelatedPerson</td>
+              <td>CL Prestador</td>
+              <td>CL RolClinico</td>
+              <td>CL Organización</td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
     </ul>
   </li>
   <li>Se vuelve habilitar los siguientes ejemplos corregidos:</li>
@@ -454,7 +489,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 5, 2024 12:01-0400">2024-08-05</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 6, 2024 12:35-0400">2024-08-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
