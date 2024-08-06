@@ -84,7 +84,7 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 * signature.sigFormat ^definition = "Un tipo mime que indica el formato técnico de la firma. Los tipos mime importantes son application/signature+xml para X ML DigSig, application/jose para JWS, e image/* para una imagen gráfica de una firma, etc"
 * signature.sigFormat ^comment = "Se sugiere hacer uso de application/jose" 
 
-* signature.data 1..1 MS
+* signature.data 0..1 MS
 * signature.data ^short = "Contenido de la firma (XML DigSig.JWS, imagem, etc.)"
 * signature.data ^definition = "La codificación base64 del contenido de la firma. Si la firma no se registra electrónicamente, este elemento estará vacío."
 
