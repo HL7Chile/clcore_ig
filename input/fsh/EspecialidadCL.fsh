@@ -4,7 +4,7 @@ Id:             CoreRolClinicoCl
 Title:          "CL RolClinico"
 Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades la función de Prestador en una organización de Chile por ejemplo: Hospital, Clínica, Cesfam, farmacias, etc"
 
-* active = true
+//* active = true
 * active MS
 * period MS
   * start MS

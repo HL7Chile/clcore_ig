@@ -30,6 +30,7 @@
 
 - Perfil [CoreRolClinicoCl](StructureDefinition-CoreRolClinicoCl.html)
   - Se modifica la descripción
+  - Se elimina el required Pattern = true
   - Se modifica la referencia organization al **OrganizationCL**
   - Se modifica la referencia location al **CoreLocalizacionCl**
   - Se modifica specialty binding de **required** a **preferred**
