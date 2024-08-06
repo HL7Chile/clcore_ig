@@ -409,8 +409,8 @@ Description: "Codigos definidos para la identificación de países segun norma I
 * #887 "Yemen"
 * #894 "Zambia"
 
-ValueSet: VSEspecialidades
-Id: VSEspecialidades
+ValueSet: VSEspecialidadesCL
+Id: VSEspecialidadesCL
 Title: "Códigos de Especialidades"
 Description: "Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO"
 * ^experimental = false
@@ -1742,7 +1742,7 @@ Description: "Códigos a usar para las Especialidades provenientes de La Corpora
 CodeSystem: CSEspecialidadOdontologica
 Id: CSEspecialidadOdontologica
 Title: "Especialidad Odontologica"
-Description: "Especialidad Odontologica"
+Description: "Especialidad de Odontologica"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"

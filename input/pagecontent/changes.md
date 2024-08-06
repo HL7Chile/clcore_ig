@@ -30,7 +30,7 @@
   - Especialidad Odontológica
   - Especialidad Especialidad Farmacia
 
-- Se cambia el VSEspecialidadesDeisCL a VSEspecialidades para incluir aquellas que no están consideradas por el DEIS
+- Se cambia el VSEspecialidadesDeisCL a VSEspecialidadesCL para incluir aquellas que no están consideradas por el DEIS
 
 - Se modifica y agregan nuevos terminos en "CSTipoIdentificador"
 - Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
