@@ -11,7 +11,7 @@
   <name value="clcore"/>
   <title value="Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"/>
   <status value="active"/>
-  <date value="2024-08-06T12:35:59-04:00"/>
+  <date value="2024-08-06T16:31:07-04:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -729,10 +729,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VSEspecialidadesDeisCL"/>
+        <reference value="ValueSet/VSEspecialidades"/>
       </reference>
       <name value="Códigos de Especialidades"/>
-      <description value="Códigos de especialidades médicas descritas según DEIS"/>
+      <description value="Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -744,6 +744,17 @@
       </reference>
       <name value="Códigos de Especialidades"/>
       <description value="Códigos de especialidades médicas descritas según DEIS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/EspecialidadesConacemConaceoCS"/>
+      </reference>
+      <name value="Códigos de Especialidades de CONACEM y CONACEO"/>
+      <description value="Códigos a usar para las Especialidades provenientes de La Corporación Nacional Autónoma de Certificación de Especialidades Médicas (CONACEM) y de La Corporación Nacional Autónoma de Certificación de Especialidades Odontológicas (CONACEO) de Chile"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1096,6 +1107,28 @@
       </reference>
       <name value="Encuentro Clínico"/>
       <description value="Definición de encuentro clínico genérico para Chile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSEspecialidadFarma"/>
+      </reference>
+      <name value="Especialidad Farmacia"/>
+      <description value="Especialidad de Farmacia"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSEspecialidadOdontologica"/>
+      </reference>
+      <name value="Especialidad Odontologica"/>
+      <description value="Especialidad Odontologica"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

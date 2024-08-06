@@ -1,9 +1,9 @@
 clcore : Validation Results
 =========================================
 
-err = 0, warn = 4, info = 1
+err = 0, warn = 9, info = 1
 IG Publisher Version: 1.6.18 Out of date - current version is 1.6.19
-Generated Tue Aug 06 12:38:47 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.9.0 (canonical = https://hl7chile.cl/fhir/ig/clcore)
+Generated Tue Aug 06 16:33:40 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.9.0 (canonical = https://hl7chile.cl/fhir/ig/clcore)
  Build Errors : 0 / 1 / 0
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\AllergyIntolerance-AllergyIntoleranceEj : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\AuditEvent-AuditEventEx : 0 / 0 / 2
@@ -15,6 +15,8 @@ Generated Tue Aug 06 12:38:47 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodigoServicio : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodigoVacunas : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSCodigoslenguaje : 0 / 0 / 1
+ C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSEspecialidadFarma : 0 / 0 / 1
+ C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSEspecialidadOdontologica : 0 / 5 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSEspecialidadesDeisCL : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSIdentidaddeGenero : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSNombreCampana : 0 / 0 / 1
@@ -23,6 +25,7 @@ Generated Tue Aug 06 12:38:47 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSTipoIdentificador : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CSTiposEncuentroCL : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-CodPais : 0 / 0 / 1
+ C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-EspecialidadesConacemConaceoCS : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CodeSystem-csrazonnoencuentro : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Composition-DocumentoEjemplo1 : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Condition-DiagnosticoEj : 0 / 0 / 1
@@ -71,7 +74,7 @@ Generated Tue Aug 06 12:38:47 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSCodigosRegionesCL : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSCodigoslenguaje : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSDiagnosticosSCT : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSEspecialidadesDeisCL : 0 / 0 / 1
+ C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSEspecialidades : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSIdentidaddeGenero : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSNombreCampana : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ValueSet-VSRazonNOT : 0 / 0 / 1
@@ -97,6 +100,13 @@ INFORMATION: AuditEvent/AuditEventEx: AuditEvent.agent[0].type: Reference to exp
 == fsh-generated\resources\CodeSystem-CSCodigoServicio.json ==
 == fsh-generated\resources\CodeSystem-CSCodigoVacunas.json ==
 == fsh-generated\resources\CodeSystem-CSCodigoslenguaje.json ==
+== fsh-generated\resources\CodeSystem-CSEspecialidadFarma.json ==
+== fsh-generated\resources\CodeSystem-CSEspecialidadOdontologica.json ==
+WARNING: CodeSystem/CSEspecialidadOdontologica: CodeSystem.concept[5].display: el valor no puede empezar o terminar con espacios en blanco ' Odontología legal'
+WARNING: CodeSystem/CSEspecialidadOdontologica: CodeSystem.concept[6].display: el valor no puede empezar o terminar con espacios en blanco ' Odontopediatría'
+WARNING: CodeSystem/CSEspecialidadOdontologica: CodeSystem.concept[7].display: el valor no puede empezar o terminar con espacios en blanco ' Ortodoncia y Ortopedia Dento Máxilo Facial'
+WARNING: CodeSystem/CSEspecialidadOdontologica: CodeSystem.concept[10].display: el valor no puede empezar o terminar con espacios en blanco ' Rehabilitación Oral'
+WARNING: CodeSystem/CSEspecialidadOdontologica: CodeSystem.concept[12].display: el valor no puede empezar o terminar con espacios en blanco ' Somato-Prótesis'
 == fsh-generated\resources\CodeSystem-CSEspecialidadesDeisCL.json ==
 == fsh-generated\resources\CodeSystem-CSIdentidaddeGenero.json ==
 == fsh-generated\resources\CodeSystem-CSNombreCampana.json ==
@@ -105,6 +115,7 @@ INFORMATION: AuditEvent/AuditEventEx: AuditEvent.agent[0].type: Reference to exp
 == fsh-generated\resources\CodeSystem-CSTipoIdentificador.json ==
 == fsh-generated\resources\CodeSystem-CSTiposEncuentroCL.json ==
 == fsh-generated\resources\CodeSystem-CodPais.json ==
+== fsh-generated\resources\CodeSystem-EspecialidadesConacemConaceoCS.json ==
 == fsh-generated\resources\CodeSystem-csrazonnoencuentro.json ==
 == fsh-generated\resources\Composition-DocumentoEjemplo1.json ==
 == fsh-generated\resources\Condition-DiagnosticoEj.json ==
@@ -156,7 +167,7 @@ WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/Str
 == fsh-generated\resources\ValueSet-VSCodigosRegionesCL.json ==
 == fsh-generated\resources\ValueSet-VSCodigoslenguaje.json ==
 == fsh-generated\resources\ValueSet-VSDiagnosticosSCT.json ==
-== fsh-generated\resources\ValueSet-VSEspecialidadesDeisCL.json ==
+== fsh-generated\resources\ValueSet-VSEspecialidades.json ==
 == fsh-generated\resources\ValueSet-VSIdentidaddeGenero.json ==
 == fsh-generated\resources\ValueSet-VSNombreCampana.json ==
 == fsh-generated\resources\ValueSet-VSRazonNOT.json ==

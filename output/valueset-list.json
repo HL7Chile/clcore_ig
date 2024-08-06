@@ -72,14 +72,17 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL",
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidades",
       "version" : "1.9.0",
       "status" : "active",
-      "name" : "VSEspecialidadesDeisCL",
+      "name" : "VSEspecialidades",
       "title" : "Códigos de Especialidades",
-      "description" : "Códigos de especialidades médicas descritas según DEIS",
+      "description" : "Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO",
       "systems" : [
-        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica",
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL",
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/EspecialidadesConacemConaceoCS",
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadFarma"
       ]
     },
     {

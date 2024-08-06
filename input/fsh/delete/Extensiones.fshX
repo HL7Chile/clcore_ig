@@ -135,10 +135,10 @@ Description: "Esta extensión incluye códigos de servicios que se entregan de f
 * valueCode from VSTiposServicio (extensible)
 
 Extension: EspecialidadCL
-Id: VSEspecialidadesDeisCL
+Id: VSEspecialidades
 Title: "Especialidad del médico principal"
 Description: "Esta extensión incluye los códigos de las especialidades que puede tener el medico principal"
-* valueCoding from VSEspecialidadesDeisCL (extensible)
+* valueCoding from VSEspecialidades (extensible)
 
 Extension: ContactopartCL
 Id: ContactoParticipantes

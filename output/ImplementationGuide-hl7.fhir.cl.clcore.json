@@ -10,7 +10,7 @@
   "name" : "clcore",
   "title" : "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)",
   "status" : "active",
-  "date" : "2024-08-06T12:35:59-04:00",
+  "date" : "2024-08-06T16:31:07-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -922,10 +922,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/VSEspecialidadesDeisCL"
+        "reference" : "ValueSet/VSEspecialidades"
       },
       "name" : "Códigos de Especialidades",
-      "description" : "Códigos de especialidades médicas descritas según DEIS",
+      "description" : "Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO",
       "exampleBoolean" : false
     },
     {
@@ -938,6 +938,18 @@
       },
       "name" : "Códigos de Especialidades",
       "description" : "Códigos de especialidades médicas descritas según DEIS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/EspecialidadesConacemConaceoCS"
+      },
+      "name" : "Códigos de Especialidades de CONACEM y CONACEO",
+      "description" : "Códigos a usar para las Especialidades provenientes de La Corporación Nacional Autónoma de Certificación de Especialidades Médicas (CONACEM) y de La Corporación Nacional Autónoma de Certificación de Especialidades Odontológicas (CONACEO) de Chile",
       "exampleBoolean" : false
     },
     {
@@ -1322,6 +1334,30 @@
       },
       "name" : "Encuentro Clínico",
       "description" : "Definición de encuentro clínico genérico para Chile",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSEspecialidadFarma"
+      },
+      "name" : "Especialidad Farmacia",
+      "description" : "Especialidad de Farmacia",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSEspecialidadOdontologica"
+      },
+      "name" : "Especialidad Odontologica",
+      "description" : "Especialidad Odontologica",
       "exampleBoolean" : false
     },
     {

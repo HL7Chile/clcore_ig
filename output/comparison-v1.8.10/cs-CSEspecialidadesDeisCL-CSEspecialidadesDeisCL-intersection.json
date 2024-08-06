@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "1d92ff7f-885a-499e-97a2-b865570afaa2-27",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/1d92ff7f-885a-499e-97a2-b865570afaa2-27",
+  "id" : "a036e0c2-c900-455e-8e66-8f832c863e92-27",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/a036e0c2-c900-455e-8e66-8f832c863e92-27",
   "name" : "IntersectionCSEspecialidadesDeisCLAndCSEspecialidadesDeisCL",
   "title" : "Intersection of Códigos de Especialidades And Códigos de Especialidades",
   "status" : "active",
-  "date" : "2024-08-06T12:36:18-04:00",
+  "date" : "2024-08-06T16:31:28-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -14,42 +14,6 @@
     }]
   }],
   "concept" : [{
-    "code" : "01",
-    "display" : "Anatomía Patológica"
-  },
-  {
-    "code" : "02",
-    "display" : "Anestesiología"
-  },
-  {
-    "code" : "03",
-    "display" : "Cardiología"
-  },
-  {
-    "code" : "04",
-    "display" : "Cirugía General"
-  },
-  {
-    "code" : "05",
-    "display" : "Cirugía de Cabeza, Cuello y Maxilofacial"
-  },
-  {
-    "code" : "06",
-    "display" : "Cirugía Cardiovascular"
-  },
-  {
-    "code" : "07",
-    "display" : "Cirugía  de Tórax"
-  },
-  {
-    "code" : "08",
-    "display" : "Cirugía Plástica y Reparadora"
-  },
-  {
-    "code" : "09",
-    "display" : "Cirugía Pediátrica"
-  },
-  {
     "code" : "10",
     "display" : "Cirugía Vascular Periférica"
   },

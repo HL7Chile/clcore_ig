@@ -236,6 +236,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           </li>
         </ul>
       </li>
+      <li>ingredent.itemReference referencia a <strong>MedicamentoCL</strong> o <strong>Substance</strong></li>
+      <li>ingredent.itemCodeableConcept a http://hl7.org/fhir/ValueSet/medication-codes como example</li>
       <li>Se cambian las descripciones y definiciones que referencien a la TFC.</li>
       <li>Se habilitan los ejemplo:
         <ul>
@@ -256,6 +258,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p>Value set de problemas sin informar o desconocidos</p>
   </li>
+  <li>Se crean nuevos CodeSystem:
+    <ul>
+      <li>Códigos de Especialidades de CONACEM y CONACEO</li>
+      <li>Especialidad Odontológica</li>
+      <li>Especialidad Especialidad Farmacia</li>
+    </ul>
+  </li>
+  <li>
+    <p>Se cambia el VSEspecialidadesDeisCL a VSEspecialidades para incluir aquellas que no están consideradas por el DEIS</p>
+  </li>
   <li>Se modifica y agregan nuevos terminos en “CSTipoIdentificador”</li>
   <li>Perfil <a href="StructureDefinition-CorePacienteCl.html">PacienteCL</a>
     <ul>
@@ -271,6 +283,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se modifica la referencia location al <strong>CoreLocalizacionCl</strong></li>
       <li>Se modifica specialty binding de <strong>required</strong> a <strong>preferred</strong></li>
       <li>Se agrega MS el dato <strong>code</strong></li>
+      <li>Se cambia el binding a VSEspecialidades (Preferred)</li>
       <li>Se genera ejemplo <a href="PractitionerRole-EjemploEspecialidadCL.html">Ejemplo de Recurso de especialidad</a></li>
       <li>Se genera ejemplo <a href="PractitionerRole-EjemploEspecialidadCL2.html">Ejemplo de Especialidad Medicina Familiar</a></li>
     </ul>
@@ -489,7 +502,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 6, 2024 12:35-0400">2024-08-06</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 6, 2024 16:31-0400">2024-08-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

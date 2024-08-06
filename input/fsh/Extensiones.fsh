@@ -197,14 +197,14 @@ Context: EncounterCL.serviceType
 * valueCode from VSTiposServicio (extensible)
 
 Extension: EspecialidadCL
-Id: VSEspecialidadesDeisCL
+Id: VSEspecialidades
 Title: "Especialidad del médico principal"
 Description: "Esta extensión incluye los códigos de las especialidades que puede tener el medico principal"
 Context: EncounterCL.participant
 
 // * ^context.type = #element
 // * ^context.expression = "EncounterCL.participant"
-* valueCoding from VSEspecialidadesDeisCL (extensible)
+* valueCoding from VSEspecialidades (extensible)
 
 Extension: ContactopartCL
 Id: ContactoParticipantes

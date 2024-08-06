@@ -409,10 +409,10 @@ Description: "Codigos definidos para la identificación de países segun norma I
 * #887 "Yemen"
 * #894 "Zambia"
 
-ValueSet: VSEspecialidadesDeisCL
-Id: VSEspecialidadesDeisCL
+ValueSet: VSEspecialidades
+Id: VSEspecialidades
 Title: "Códigos de Especialidades"
-Description: "Códigos de especialidades médicas descritas según DEIS"
+Description: "Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO"
 * ^experimental = false
 * ^version = "1.0.0"
 * ^status = #active
@@ -423,6 +423,9 @@ Description: "Códigos de especialidades médicas descritas según DEIS"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * codes from system CSEspecialidadesDeisCL
+* codes from system CSEspecialidadOdontologica
+* codes from system CSEspecialidadFarma
+* codes from system EspecialidadesConacemConaceoCS
 
 CodeSystem: CSEspecialidadesDeisCL
 Id: CSEspecialidadesDeisCL
@@ -439,15 +442,15 @@ Description: "Códigos de especialidades médicas descritas según DEIS"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 
-* #01 "Anatomía Patológica"
-* #02 "Anestesiología"
-* #03 "Cardiología"
-* #04 "Cirugía General"
-* #05 "Cirugía de Cabeza, Cuello y Maxilofacial"
-* #06 "Cirugía Cardiovascular"
-* #07 "Cirugía  de Tórax"
-* #08 "Cirugía Plástica y Reparadora"
-* #09 "Cirugía Pediátrica"
+* #1 "Anatomía Patológica"
+* #2 "Anestesiología"
+* #3 "Cardiología"
+* #4 "Cirugía General"
+* #5 "Cirugía de Cabeza, Cuello y Maxilofacial"
+* #6 "Cirugía Cardiovascular"
+* #7 "Cirugía  de Tórax"
+* #8 "Cirugía Plástica y Reparadora"
+* #9 "Cirugía Pediátrica"
 * #10 "Cirugía Vascular Periférica"
 * #11 "Coloproctología"
 * #12 "Dermatología"
@@ -1697,3 +1700,90 @@ Description: "Prevision"
 * #99	"DESCONOCIDO"
 */
 
+CodeSystem:  EspecialidadesConacemConaceoCS
+Id:          EspecialidadesConacemConaceoCS
+Title:       "Códigos de Especialidades de CONACEM y CONACEO"
+Description: "Códigos a usar para las Especialidades provenientes de La Corporación Nacional Autónoma de Certificación de Especialidades Médicas (CONACEM) y de La Corporación Nacional Autónoma de Certificación de Especialidades Odontológicas (CONACEO) de Chile"
+* ^version = "1.0"
+* ^caseSensitive = true
+* ^experimental = true
+* ^status = #active
+* ^publisher = "HL7 Chile"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile" 
+
+* #1 "Adolescencia"
+* #14 "Dermatología y Venerología"
+* #16 "Endocrinología"
+* #18 "Enfermedades Respiratorias"
+* #19 "Enfermedades Respiratorias Pediátricas"
+* #20 "Gastroenterología"
+* #24 "Ginecología Oncológica"
+* #30 "Inmunología Clínica"
+* #32 "Mastología"
+* #34 "Medicina Física y Rehabilitación"
+* #35 "Medicina Intensiva"
+* #39 "Medicina Materno Fetal"
+* #41 "Medicina Paliativa Del Adulto"
+* #42 "Medicina Reproductiva"
+* #43 "Nefrología"
+* #44 "Nefrología Pediátrica"
+* #47 "Neurología"
+* #49 "Neurorradiología"
+* #50 "Nutrición Clínica del Adulto"
+* #51 "Nutrición Clínica Pediátrica"
+* #58 "Psiquiatría"
+* #59 "Psiquiatría Infantil y de la Adolescencia"
+* #3 "Imagenología Maxilofacial"
+* #8 "Patología Oral y Maxilofacial"
+
+CodeSystem: CSEspecialidadOdontologica
+Id: CSEspecialidadOdontologica
+Title: "Especialidad Odontologica"
+Description: "Especialidad Odontologica"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Cirugía y Traumatología Buco Maxilofacial"
+* #2 "Cirugía Bucal"
+* #3 "Endodoncia"
+* #4 "Imagenología Oral y Maxilofacial"
+* #5 "Implantología Buco Maxilofacial"
+* #6 "Odontología legal"
+* #7 "Odontopediatría"
+* #8 "Ortodoncia y Ortopedia Dento Máxilo Facial"
+* #9 "Patología Oral"
+* #10 "Periodoncia"
+* #11 "Rehabilitación Oral"
+* #12 "Salud Pública"
+* #13 "Somato-Prótesis"
+* #14 "Trastornos Temporomandibulares Y Dolor Orofacial"
+
+CodeSystem: CSEspecialidadFarma
+Id: CSEspecialidadFarma
+Title: "Especialidad Farmacia"
+Description: "Especialidad de Farmacia"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Farmacia Clínica"
+* #2 "Farmacia Hospitalaria"
+* #3 "Laboratorio Clínico"
+* #4 "Salud Pública"
+* #5 "Laboratorio Forense"

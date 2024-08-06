@@ -6,7 +6,7 @@ https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosProvinciasCL,1.9.0,active,,
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosRegionesCL,1.9.0,active,,VSCodigosRegionesCL,Códigos de Regiones en Chile,"Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior",,"Internal"
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigoslenguaje,1.9.0,active,,VSCodigoslenguaje,Codigos Lenguaje,"Códigos de leguaje",,"Internal"
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSDiagnosticosSCT,1.9.0,active,,VSDiagnosticosSCT,Diagnósticos SNOMED y Ausente o Desconocido,"Diagnósticos definidos en Snomed-CT.",,"SCT"
-https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL,1.9.0,active,,VSEspecialidadesDeisCL,Códigos de Especialidades,"Códigos de especialidades médicas descritas según DEIS",,"Internal"
+https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidades,1.9.0,active,,VSEspecialidades,Códigos de Especialidades,"Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO",,"Internal"
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSIdentidaddeGenero,1.9.0,active,,VSIdentidaddeGenero,Identidad de Genero,"Identidad de Genero",,"Internal"
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSNombreCampana,1.9.0,active,,VSNombreCampanaCL,Campañas de Vacunación,"Campañas de Inmunización utilizada en Chile según CodeSystem local",,"Internal"
 https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSRazonNOT,1.9.0,active,,VSRazonNOencuentro,Razones no Atención Remota,"Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local",,"Internal"

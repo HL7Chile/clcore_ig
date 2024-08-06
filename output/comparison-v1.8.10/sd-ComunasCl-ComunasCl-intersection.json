@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "1d92ff7f-885a-499e-97a2-b865570afaa2-60",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1d92ff7f-885a-499e-97a2-b865570afaa2-60",
+  "id" : "a036e0c2-c900-455e-8e66-8f832c863e92-60",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a036e0c2-c900-455e-8e66-8f832c863e92-60",
   "name" : "IntersectionComunasClAndComunasCl",
   "title" : "Intersection of Códigos para Comunas en Chile And Códigos para Comunas en Chile",
   "status" : "active",
-  "date" : "2024-08-06T12:36:18-04:00",
+  "date" : "2024-08-06T16:31:28-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

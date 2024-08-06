@@ -56,6 +56,20 @@
     "name" : "CSCodigoslenguaje"
   },
   {
+    "id" : "CSEspecialidadFarma",
+    "type" : "CodeSystem",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadFarma",
+    "version" : "1.9.0",
+    "name" : "CSEspecialidadFarma"
+  },
+  {
+    "id" : "CSEspecialidadOdontologica",
+    "type" : "CodeSystem",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica",
+    "version" : "1.9.0",
+    "name" : "CSEspecialidadOdontologica"
+  },
+  {
     "id" : "CSEspecialidadesDeisCL",
     "type" : "CodeSystem",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL",
@@ -110,6 +124,13 @@
     "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
     "version" : "1.9.0",
     "name" : "CSCodPaises"
+  },
+  {
+    "id" : "EspecialidadesConacemConaceoCS",
+    "type" : "CodeSystem",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/EspecialidadesConacemConaceoCS",
+    "version" : "1.9.0",
+    "name" : "EspecialidadesConacemConaceoCS"
   },
   {
     "id" : "csrazonnoencuentro",
@@ -336,11 +357,11 @@
     "name" : "VSDiagnosticosSCT"
   },
   {
-    "id" : "VSEspecialidadesDeisCL",
+    "id" : "VSEspecialidades",
     "type" : "ValueSet",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidades",
     "version" : "1.9.0",
-    "name" : "VSEspecialidadesDeisCL"
+    "name" : "VSEspecialidades"
   },
   {
     "id" : "VSIdentidaddeGenero",

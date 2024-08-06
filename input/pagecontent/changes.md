@@ -25,6 +25,13 @@
  - Se filtra a solo hallazgos clínicos
  - Value set de problemas sin informar o desconocidos
 
+- Se crean nuevos CodeSystem:
+  - Códigos de Especialidades de CONACEM y CONACEO
+  - Especialidad Odontológica
+  - Especialidad Especialidad Farmacia
+
+- Se cambia el VSEspecialidadesDeisCL a VSEspecialidades para incluir aquellas que no están consideradas por el DEIS
+
 - Se modifica y agregan nuevos terminos en "CSTipoIdentificador"
 - Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
   - Se cambio referencia de **generalPractitioner** de Organization -> OrganizacionCL y Practitioner -> PrestadorCL
@@ -37,6 +44,7 @@
   - Se modifica la referencia location al **CoreLocalizacionCl**
   - Se modifica specialty binding de **required** a **preferred**
   - Se agrega MS el dato **code**
+  - Se cambia el binding a VSEspecialidades (Preferred)
   - Se genera ejemplo [Ejemplo de Recurso de especialidad](PractitionerRole-EjemploEspecialidadCL.html)
   - Se genera ejemplo [Ejemplo de Especialidad Medicina Familiar](PractitionerRole-EjemploEspecialidadCL2.html)
 
@@ -67,7 +75,7 @@
   - Se cambia la referencia de location al perfil de la guía
   - Se cambia la referencia de agent.who y signature.who a los perfiles que existan en la guía y aquellos que no, se referencian al estandar.
 
-- Perfil [DocumentoCL](StructureDefinition-DocumentoCL.html)
+- Perfil [DocumentoCL](StructureDefinition-DocumentoCl.html)
   - Se cambian las referencia de Subject de PacienteCL a cualquier recurso
   - Se cambia las referencia de author a las siguientes: CL Prestador | CL RolClinico | Device | CL Paciente | CL Prestador | CL Organización
   - Se cambia las referencia de attester.party: CL Paciente | RelatedPerson | CL Prestador | CL RolClinico | CL Organización

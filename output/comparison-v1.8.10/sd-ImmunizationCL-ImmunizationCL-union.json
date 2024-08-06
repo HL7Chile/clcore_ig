@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "1d92ff7f-885a-499e-97a2-b865570afaa2-107",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1d92ff7f-885a-499e-97a2-b865570afaa2-107",
+  "id" : "a036e0c2-c900-455e-8e66-8f832c863e92-110",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a036e0c2-c900-455e-8e66-8f832c863e92-110",
   "name" : "UnionImmunizationCLAndImmunizationCL",
   "title" : "Union of CL Inmunización And CL Inmunización",
   "status" : "active",
-  "date" : "2024-08-06T12:36:18-04:00",
+  "date" : "2024-08-06T16:31:28-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -447,7 +447,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "The reason why a vaccine was not administered.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1d92ff7f-885a-499e-97a2-b865570afaa2-110"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a036e0c2-c900-455e-8e66-8f832c863e92-113"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -649,7 +649,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "The code for vaccine product administered.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1d92ff7f-885a-499e-97a2-b865570afaa2-113"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a036e0c2-c900-455e-8e66-8f832c863e92-116"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -2262,7 +2262,7 @@
       "isSummary" : false,
       "binding" : {
         "strength" : "example",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/1d92ff7f-885a-499e-97a2-b865570afaa2-119"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/a036e0c2-c900-455e-8e66-8f832c863e92-122"
       },
       "mapping" : [{
         "identity" : "v2",

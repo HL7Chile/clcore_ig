@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "clcore"] ; # 
   fhir:title [ fhir:v "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-08-06T12:35:59-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-06T16:31:07-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;
@@ -821,11 +821,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL> ;
-         fhir:reference [ fhir:v "ValueSet/VSEspecialidadesDeisCL" ]
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidades> ;
+         fhir:reference [ fhir:v "ValueSet/VSEspecialidades" ]
        ] ;
        fhir:name [ fhir:v "Códigos de Especialidades" ] ;
-       fhir:description [ fhir:v "Códigos de especialidades médicas descritas según DEIS" ] ;
+       fhir:description [ fhir:v "Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -838,6 +838,18 @@
        ] ;
        fhir:name [ fhir:v "Códigos de Especialidades" ] ;
        fhir:description [ fhir:v "Códigos de especialidades médicas descritas según DEIS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/CodeSystem/EspecialidadesConacemConaceoCS> ;
+         fhir:reference [ fhir:v "CodeSystem/EspecialidadesConacemConaceoCS" ]
+       ] ;
+       fhir:name [ fhir:v "Códigos de Especialidades de CONACEM y CONACEO" ] ;
+       fhir:description [ fhir:v "Códigos a usar para las Especialidades provenientes de La Corporación Nacional Autónoma de Certificación de Especialidades Médicas (CONACEM) y de La Corporación Nacional Autónoma de Certificación de Especialidades Odontológicas (CONACEO) de Chile" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1276,6 +1288,30 @@
        ] ;
        fhir:name [ fhir:v "Encuentro Clínico" ] ;
        fhir:description [ fhir:v "Definición de encuentro clínico genérico para Chile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadFarma> ;
+         fhir:reference [ fhir:v "CodeSystem/CSEspecialidadFarma" ]
+       ] ;
+       fhir:name [ fhir:v "Especialidad Farmacia" ] ;
+       fhir:description [ fhir:v "Especialidad de Farmacia" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica> ;
+         fhir:reference [ fhir:v "CodeSystem/CSEspecialidadOdontologica" ]
+       ] ;
+       fhir:name [ fhir:v "Especialidad Odontologica" ] ;
+       fhir:description [ fhir:v "Especialidad Odontologica" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

@@ -233,8 +233,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -248,8 +248,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -582,14 +582,17 @@
       "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesDeisCL",
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidades",
       "version" : "1.9.0",
       "status" : "active",
-      "name" : "VSEspecialidadesDeisCL",
+      "name" : "VSEspecialidades",
       "title" : "Códigos de Especialidades",
-      "description" : "Códigos de especialidades médicas descritas según DEIS",
+      "description" : "Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO",
       "systems" : [
-        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL"
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica",
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL",
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/EspecialidadesConacemConaceoCS",
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadFarma"
       ],
       "uses" : {
       },

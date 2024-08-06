@@ -9,7 +9,7 @@ Define los sets de códigos para el uso terminológico de esta Guía
 | [Códigos de Provincias en Chile](ValueSet-VSCodigosProvinciasCL.html "ValueSet/VSCodigosProvinciasCL") | Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior |
 | [Códigos de Regiones en Chile](ValueSet-VSCodigosRegionesCL.html "ValueSet/VSCodigosRegionesCL") | Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior |
 | [Campañas de vacunación que se realizan según RNI](ValueSet-VSNombreCampana.html "ValueSet/VSNombreCampana") | Campañas de Inmunización utilizada en Chile según CodeSystem local |
-| [Códigos de Especialidades](ValueSet-VSEspecialidadesDeisCL.html "ValueSet/VSEspecialidadesDeisCL") | Códigos de especialidades médicas descritas según DEIS |
+| [Códigos de Especialidades](ValueSet-VSEspecialidades.html "ValueSet/VSEspecialidades") | Códigos de especialidades médicas descritas según DEIS |
 | [Tipos de Documentos Clínicos](ValueSet-VSTiposEncuentroCL.html "ValueSet-VSTiposEncuentroCL.html") | Tipos de Documentos clínicos para Composition. Se trae todo Loinc, se requerirá un VS específico |
 | [Tipos de Documentos](ValueSet-VSTiposDocumentos.html "ValueSet/VSTiposDocumentos") | Tipos de Documentos para identificación según tabla HL7 V3 y CodeSystem local. |
 | [Códigos de Tipos de Encuentro](ValueSet-VSTiposEncuentroCL.html "ValueSet-VSTiposEncuentroCL.html") | Códigos de Encuentros según Minsal |

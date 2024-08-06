@@ -65,6 +65,22 @@
       "description" : "Codigoslenguaje"
     },
     {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadFarma",
+      "version" : "1.9.0",
+      "status" : "active",
+      "name" : "CSEspecialidadFarma",
+      "title" : "Especialidad Farmacia",
+      "description" : "Especialidad de Farmacia"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica",
+      "version" : "1.9.0",
+      "status" : "active",
+      "name" : "CSEspecialidadOdontologica",
+      "title" : "Especialidad Odontologica",
+      "description" : "Especialidad Odontologica"
+    },
+    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL",
       "version" : "1.9.0",
       "status" : "active",
@@ -127,6 +143,14 @@
       "name" : "CSCodPaises",
       "title" : "Códigos de Países",
       "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/EspecialidadesConacemConaceoCS",
+      "version" : "1.9.0",
+      "status" : "active",
+      "name" : "EspecialidadesConacemConaceoCS",
+      "title" : "Códigos de Especialidades de CONACEM y CONACEO",
+      "description" : "Códigos a usar para las Especialidades provenientes de La Corporación Nacional Autónoma de Certificación de Especialidades Médicas (CONACEM) y de La Corporación Nacional Autónoma de Certificación de Especialidades Odontológicas (CONACEO) de Chile"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/csrazonnoencuentro",
