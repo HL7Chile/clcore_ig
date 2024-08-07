@@ -8,7 +8,7 @@ https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoServicio,1.9.0,active,,CSC
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoVacunas,1.9.0,active,,CSTiposVacunaCL,Códigos de Vacunas RNI,"Códigos de las vacunas o inmunizaciones según indicaciones del Ministerio de Salud",
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje,1.9.0,active,,CSCodigoslenguaje,Codigos Lenguaje,"Codigoslenguaje",
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadFarma,1.9.0,active,,CSEspecialidadFarma,Especialidad Farmacia,"Especialidad de Farmacia",
-https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica,1.9.0,active,,CSEspecialidadOdontologica,Especialidad Odontologica,"Especialidad Odontologica",
+https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica,1.9.0,active,,CSEspecialidadOdontologica,Especialidad Odontologica,"Especialidad de Odontologica",
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL,1.9.0,active,,CSEspecialidadesDeisCL,Códigos de Especialidades,"Códigos de especialidades médicas descritas según DEIS",
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero,1.9.0,active,,CSIdentidaddeGenero,Identidad de Genero,"Identidad de Genero",
 https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSNombreCampana,1.9.0,active,,CSNombreCampanaCL,Campañas Inmunización,"Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud",

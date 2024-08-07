@@ -1,5 +1,19 @@
 [
   {
+    "id" : "cl-core-client",
+    "type" : "CapabilityStatement",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/CapabilityStatement/cl-core-client",
+    "version" : "1.9.0",
+    "name" : "ClCoreClienteCapabilityStatement"
+  },
+  {
+    "id" : "cl-core-server",
+    "type" : "CapabilityStatement",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/CapabilityStatement/cl-core-server",
+    "version" : "1.9.0",
+    "name" : "ClCoreServidorCapabilityStatement"
+  },
+  {
     "id" : "CSCodComunasCL",
     "type" : "CodeSystem",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
@@ -357,11 +371,11 @@
     "name" : "VSDiagnosticosSCT"
   },
   {
-    "id" : "VSEspecialidades",
+    "id" : "VSEspecialidadesCL",
     "type" : "ValueSet",
-    "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidades",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesCL",
     "version" : "1.9.0",
-    "name" : "VSEspecialidades"
+    "name" : "VSEspecialidadesCL"
   },
   {
     "id" : "VSIdentidaddeGenero",

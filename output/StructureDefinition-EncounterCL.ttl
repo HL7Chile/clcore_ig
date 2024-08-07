@@ -15,9 +15,9 @@
   fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.9.0"] ; # 
   fhir:name [ fhir:v "EncounterCL"] ; # 
-  fhir:title [ fhir:v "Encuentro Clínico"] ; # 
+  fhir:title [ fhir:v "CL Encuentro Clínico"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-08-06T16:31:07-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-07T09:55:47-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;

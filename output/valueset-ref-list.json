@@ -233,8 +233,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -248,8 +248,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -294,7 +294,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
+      "StructureDefinition-EncounterCL.html" : "CL Encuentro Clínico"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
@@ -308,7 +308,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.246"],
       "uses" : {
       },
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
+      "StructureDefinition-EncounterCL.html" : "CL Encuentro Clínico"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
@@ -350,7 +350,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.375"],
       "uses" : {
       },
-      "StructureDefinition-CoreMedicamentoCl.html" : "Medicamento Core CL"
+      "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
@@ -364,7 +364,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.374"],
       "uses" : {
       },
-      "StructureDefinition-CoreMedicamentoCl.html" : "Medicamento Core CL"
+      "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/network-type",
@@ -489,7 +489,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
       "uses" : {
       },
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
+      "StructureDefinition-EncounterCL.html" : "CL Encuentro Clínico"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais",
@@ -582,10 +582,10 @@
       "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico"
     },
     {
-      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidades",
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesCL",
       "version" : "1.9.0",
       "status" : "active",
-      "name" : "VSEspecialidades",
+      "name" : "VSEspecialidadesCL",
       "title" : "Códigos de Especialidades",
       "description" : "Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO",
       "systems" : [
@@ -716,7 +716,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
+      "StructureDefinition-EncounterCL.html" : "CL Encuentro Clínico"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposServicio",
@@ -730,7 +730,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-EncounterCL.html" : "Encuentro Clínico"
+      "StructureDefinition-EncounterCL.html" : "CL Encuentro Clínico"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTiposVacunas",

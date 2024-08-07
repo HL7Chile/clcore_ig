@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b568b007-6871-47c5-9efa-17b14269547c"/>
+  <id value="96c3d99a-0402-4901-a175-ee44ef61503f"/>
   <meta>
-    <lastUpdated value="2024-08-06T16:31:07.122-04:00"/>
+    <lastUpdated value="2024-08-07T09:55:47.405-04:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -2042,8 +2042,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:983ebea4-5525-41ea-8eda-7da1581879ea"/>
-          <timestamp value="2024-08-06T16:32:19-04:00"/>
+          <identifier value="urn:uuid:8813aa9f-0af1-4b0a-a973-519435e250d5"/>
+          <timestamp value="2024-08-07T09:57:11-04:00"/>
           <total value="249"/>
           <offset value="0"/>
           <parameter>
@@ -3395,8 +3395,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:36b5b5f1-270c-4b4b-8784-da06bca01812"/>
-          <timestamp value="2024-08-06T16:32:20-04:00"/>
+          <identifier value="urn:uuid:623e5612-bccf-4ef3-a13e-41522529aaa5"/>
+          <timestamp value="2024-08-07T09:57:13-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -6256,8 +6256,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1a481b22-ed86-49f8-a9a9-47e75b2f3973"/>
-          <timestamp value="2024-08-06T16:32:20-04:00"/>
+          <identifier value="urn:uuid:f4e65c41-ac68-43ea-a02e-de403a494e72"/>
+          <timestamp value="2024-08-07T09:57:13-04:00"/>
           <total value="346"/>
           <offset value="0"/>
           <parameter>
@@ -8502,8 +8502,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d3562ac0-ab08-4bc1-aded-4a5164561dbf"/>
-          <timestamp value="2024-08-06T16:32:22-04:00"/>
+          <identifier value="urn:uuid:f2b4d983-0988-4938-b54d-07c4a3e1714d"/>
+          <timestamp value="2024-08-07T09:57:14-04:00"/>
           <total value="56"/>
           <offset value="0"/>
           <parameter>
@@ -8978,8 +8978,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a28cd183-8731-4261-988a-1e24a06a0d9b"/>
-          <timestamp value="2024-08-06T16:32:22-04:00"/>
+          <identifier value="urn:uuid:263d6f64-d704-4e9a-a3ba-3bdaae8f2fed"/>
+          <timestamp value="2024-08-07T09:57:15-04:00"/>
           <total value="16"/>
           <offset value="0"/>
           <parameter>
@@ -9871,8 +9871,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ce7dfb77-8f4b-4f74-9402-ea0255d50999"/>
-          <timestamp value="2024-08-06T16:32:22-04:00"/>
+          <identifier value="urn:uuid:1e4c6418-2994-4830-8ea0-0613561feb00"/>
+          <timestamp value="2024-08-07T09:57:15-04:00"/>
           <total value="53"/>
           <offset value="0"/>
           <parameter>
@@ -18205,8 +18205,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:2ed75ef9-ff8c-4c54-a305-56580048669c"/>
-          <timestamp value="2024-08-06T16:32:23-04:00"/>
+          <identifier value="urn:uuid:fb4f057b-172f-4e6f-bf9f-ba45136f8e6a"/>
+          <timestamp value="2024-08-07T09:57:15-04:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -23241,7 +23241,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidades"/>
+    <fullUrl value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesCL"/>
     <resource>
       <ValueSet>
         <text>
@@ -23870,7 +23870,7 @@
                   <a href="CodeSystem-CSEspecialidadOdontologica.html#CSEspecialidadOdontologica-6">6</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica</td>
-                <td> Odontología legal</td>
+                <td>Odontología legal</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -23878,7 +23878,7 @@
                   <a href="CodeSystem-CSEspecialidadOdontologica.html#CSEspecialidadOdontologica-7">7</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica</td>
-                <td> Odontopediatría</td>
+                <td>Odontopediatría</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -23886,7 +23886,7 @@
                   <a href="CodeSystem-CSEspecialidadOdontologica.html#CSEspecialidadOdontologica-8">8</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica</td>
-                <td> Ortodoncia y Ortopedia Dento Máxilo Facial</td>
+                <td>Ortodoncia y Ortopedia Dento Máxilo Facial</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -23910,7 +23910,7 @@
                   <a href="CodeSystem-CSEspecialidadOdontologica.html#CSEspecialidadOdontologica-11">11</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica</td>
-                <td> Rehabilitación Oral</td>
+                <td>Rehabilitación Oral</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -23926,7 +23926,7 @@
                   <a href="CodeSystem-CSEspecialidadOdontologica.html#CSEspecialidadOdontologica-13">13</a>
                 </td>
                 <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica</td>
-                <td> Somato-Prótesis</td>
+                <td>Somato-Prótesis</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -24171,9 +24171,9 @@
             </table>
           </div>
         </text>
-        <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidades"/>
+        <url value="https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesCL"/>
         <version value="1.9.0"/>
-        <name value="VSEspecialidades"/>
+        <name value="VSEspecialidadesCL"/>
         <title value="Códigos de Especialidades"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -24186,8 +24186,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:940d7f87-9462-4834-aa81-b23c99de9f0c"/>
-          <timestamp value="2024-08-06T16:32:28-04:00"/>
+          <identifier value="urn:uuid:6ecbeb04-bf5e-4275-9c0f-e2273cee9d84"/>
+          <timestamp value="2024-08-07T09:57:26-04:00"/>
           <total value="111"/>
           <offset value="0"/>
           <parameter>
@@ -24590,17 +24590,17 @@
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica"/>
             <code value="6"/>
-            <display value=" Odontología legal"/>
+            <display value="Odontología legal"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica"/>
             <code value="7"/>
-            <display value=" Odontopediatría"/>
+            <display value="Odontopediatría"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica"/>
             <code value="8"/>
-            <display value=" Ortodoncia y Ortopedia Dento Máxilo Facial"/>
+            <display value="Ortodoncia y Ortopedia Dento Máxilo Facial"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica"/>
@@ -24615,7 +24615,7 @@
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica"/>
             <code value="11"/>
-            <display value=" Rehabilitación Oral"/>
+            <display value="Rehabilitación Oral"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica"/>
@@ -24625,7 +24625,7 @@
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica"/>
             <code value="13"/>
-            <display value=" Somato-Prótesis"/>
+            <display value="Somato-Prótesis"/>
           </contains>
           <contains>
             <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadOdontologica"/>
@@ -24881,8 +24881,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d44d315f-b6b8-4222-af19-3ba95f265b33"/>
-          <timestamp value="2024-08-06T16:32:29-04:00"/>
+          <identifier value="urn:uuid:09b13c95-5a11-4cb5-bbe9-5ee4834fbf99"/>
+          <timestamp value="2024-08-07T09:57:27-04:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -25272,8 +25272,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a8697d8a-8d0f-424d-9c0c-915a7f4bb0d3"/>
-          <timestamp value="2024-08-06T16:32:29-04:00"/>
+          <identifier value="urn:uuid:acef09e3-34a3-4fed-a6af-e4a0649dc1d6"/>
+          <timestamp value="2024-08-07T09:57:27-04:00"/>
           <total value="36"/>
           <offset value="0"/>
           <parameter>
@@ -25593,8 +25593,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:31fb1a95-73c6-43b8-bcfc-858902bb4d08"/>
-          <timestamp value="2024-08-06T16:32:29-04:00"/>
+          <identifier value="urn:uuid:5cf7c1e7-602d-4f27-bce6-6483529686ee"/>
+          <timestamp value="2024-08-07T09:57:27-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -25718,8 +25718,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1d45eac7-3b15-4710-a647-a4a93be06fae"/>
-          <timestamp value="2024-08-06T16:32:29-04:00"/>
+          <identifier value="urn:uuid:56f055dd-2b3a-408c-acb1-1bc8ea0c4687"/>
+          <timestamp value="2024-08-07T09:57:27-04:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -25846,8 +25846,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6cafba06-2dbb-4bee-b966-d6bb4dc16a84"/>
-          <timestamp value="2024-08-06T16:32:29-04:00"/>
+          <identifier value="urn:uuid:1b21055d-1ea7-426f-912c-cd4e5de68426"/>
+          <timestamp value="2024-08-07T09:57:27-04:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -26138,8 +26138,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8db2a5f4-808d-407b-b037-9d183024c33a"/>
-          <timestamp value="2024-08-06T16:32:30-04:00"/>
+          <identifier value="urn:uuid:626e7964-29ab-4cc1-84f9-fa97f4c305f6"/>
+          <timestamp value="2024-08-07T09:57:28-04:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -41854,8 +41854,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1e49b6b3-8d0b-47df-86e9-5a5453c91b3a"/>
-          <timestamp value="2024-08-06T16:32:32-04:00"/>
+          <identifier value="urn:uuid:564926f1-ea1b-46d9-ade8-5a074ce76f54"/>
+          <timestamp value="2024-08-07T09:57:34-04:00"/>
           <total value="185"/>
           <offset value="0"/>
           <parameter>
@@ -42879,8 +42879,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d9459c68-68ac-4f47-9da0-6bcefc2f44a4"/>
-          <timestamp value="2024-08-06T16:32:33-04:00"/>
+          <identifier value="urn:uuid:43a7f11f-dfa1-4ab9-93a1-5097fbf77c59"/>
+          <timestamp value="2024-08-07T09:57:35-04:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -43074,8 +43074,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b0d6df38-8fab-4188-ad20-e9da26b66bab"/>
-          <timestamp value="2024-08-06T16:32:33-04:00"/>
+          <identifier value="urn:uuid:06d359f6-a8dd-403b-8252-7efdffa9321c"/>
+          <timestamp value="2024-08-07T09:57:35-04:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -43844,8 +43844,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f9fa35ba-2c9b-4490-9492-d36a92274b60"/>
-          <timestamp value="2024-08-06T16:32:33-04:00"/>
+          <identifier value="urn:uuid:8085c2f7-fe01-4c10-851b-e14ff1676449"/>
+          <timestamp value="2024-08-07T09:57:35-04:00"/>
           <total value="79"/>
           <offset value="0"/>
           <parameter>

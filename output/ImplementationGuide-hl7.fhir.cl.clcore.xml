@@ -11,7 +11,7 @@
   <name value="clcore"/>
   <title value="Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"/>
   <status value="active"/>
-  <date value="2024-08-06T16:31:07-04:00"/>
+  <date value="2024-08-07T09:55:47-04:00"/>
   <publisher value="HL7 Chile"/>
   <contact>
     <name value="HL7 Chile"/>
@@ -528,6 +528,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/cl-core-client"/>
+      </reference>
+      <name value="CapabilityStatement Cliente Cl Core"/>
+      <description value="CapabilityStatement para definir las caracteristicas mínimas de un cliente con todas las interacciones posibles hacía un servidor"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/cl-core-server"/>
+      </reference>
+      <name value="CapabilityStatement Servidor Cl Core"/>
+      <description value="CapabilityStatement para definir las caracteristicas mínimas del servidor para ver las interacciones posibles"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -586,6 +608,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/EncounterCL"/>
+      </reference>
+      <name value="CL Encuentro Clínico"/>
+      <description value="Definición de encuentro clínico genérico para Chile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ImmunizationCL"/>
       </reference>
       <name value="CL Inmunización"/>
@@ -601,6 +634,17 @@
       </reference>
       <name value="CL Localización"/>
       <description value="Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CoreMedicamentoCl"/>
+      </reference>
+      <name value="CL Medicamento"/>
+      <description value="Descripción de un Medicamento"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -729,7 +773,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VSEspecialidades"/>
+        <reference value="ValueSet/VSEspecialidadesCL"/>
       </reference>
       <name value="Códigos de Especialidades"/>
       <description value="Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO"/>
@@ -1100,17 +1144,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/EncounterCL"/>
-      </reference>
-      <name value="Encuentro Clínico"/>
-      <description value="Definición de encuentro clínico genérico para Chile"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -1128,7 +1161,7 @@
         <reference value="CodeSystem/CSEspecialidadOdontologica"/>
       </reference>
       <name value="Especialidad Odontologica"/>
-      <description value="Especialidad Odontologica"/>
+      <description value="Especialidad de Odontologica"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1173,17 +1206,6 @@
       </reference>
       <name value="Identificación del Contacto de un Paciente"/>
       <description value="Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/CoreMedicamentoCl"/>
-      </reference>
-      <name value="Medicamento Core CL"/>
-      <description value="Descripción de un Medicamento"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1409,6 +1431,14 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Notas-MS.html"/>
+        </extension>
+        <nameUrl value="Notas-MS.html"/>
+        <title value="Notas del Must Support"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="Aspectos-Generales.html"/>
         </extension>
         <nameUrl value="Aspectos-Generales.html"/>
@@ -1417,50 +1447,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Extensiones.html"/>
-        </extension>
-        <nameUrl value="Extensiones.html"/>
-        <title value="Extensiones"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Set-De-Validacion-ValueSets.html"/>
-        </extension>
-        <nameUrl value="Set-De-Validacion-ValueSets.html"/>
-        <title value="CodeSystems/ValueSets"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Perfiles.html"/>
-        </extension>
-        <nameUrl value="Perfiles.html"/>
-        <title value="Perfiles"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Set-Ejemplos.html"/>
-        </extension>
-        <nameUrl value="Set-Ejemplos.html"/>
-        <title value="Ejemplos"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="changes.html"/>
         </extension>
         <nameUrl value="changes.html"/>
         <title value="Historial de Cambios"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Notas-MS.html"/>
-        </extension>
-        <nameUrl value="Notas-MS.html"/>
-        <title value="Must Support"/>
         <generation value="markdown"/>
       </page>
     </page>

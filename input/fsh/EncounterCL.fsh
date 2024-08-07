@@ -3,7 +3,7 @@ Alias: $additional-binding = http://hl7.org/fhir/tools/StructureDefinition/addit
 Profile: EncounterCL
 Parent: Encounter
 Id: EncounterCL
-Title: "Encuentro Clínico"
+Title: "CL Encuentro Clínico"
 Description: "Definición de encuentro clínico genérico para Chile"
 
 * identifier 0..* MS

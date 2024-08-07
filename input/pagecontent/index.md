@@ -10,16 +10,16 @@ Esta Guía sigue un formato especificado para **FHIR R4**, y se divide en varias
 
 * [Home](index.html): Provee la introducción acerca de esta guía.
 * [Objetivos](Alcances-Objetivos.html): Describe los objetivos estratégicos de HL7, HL7 Internacional y el como esta guía se engancha con los objetivos estratégicos nacionales y organizacionales.
+* [Must Support](Notas-MS.html.html): Describe el uso del Must Support para los perfiles de esta guía.
 * [Generalidades](Aspectos-Generales.html): Se especifican algunos conceptos importantes para poder comprender la lectura de los artefactos con el fin de hacer uso de la guía con objetivos de implementación
 * Operaciones: Define las operaciones más usadas para el intercambo, manejo, consulta, actualización, etc. de Recursos Generados en un servidor.
 * Artefactos: Estas páginas proveen descripciones detalladas y definiciones formales para los artefectos FHIR definidos en la guía.
-    * [Perfiles](Perfiles.html): Descripción de los perfiles Core generados para Chile
-    * [Extensiones](Extensiones.html): Descripción de todas las extensiones creadas para satisfacer las necesidades nacionales para los perfiles creados
-    * [ValueSets](Set-De-Validacion-ValueSets.html): Descripción de los sets de valores creados para poder hacer uso dentro de las necesidades locales de los perfiles creados.
-    * [Ejemplos](Set-Ejemplos.html): Listado de ejemplos descritos a lo largo de la guía
+    * [Perfiles](artifacts.html#structures-resource-profiles): Descripción de los perfiles Core generados para Chile
+    * [Extensiones](artifacts.html#structures-extension-definitions): Descripción de todas las extensiones creadas para satisfacer las necesidades nacionales para los perfiles creados
+    * [ValueSets](artifacts.html#terminology-value-sets): Descripción de los sets de valores creados para poder hacer uso dentro de las necesidades locales de los perfiles creados.
+    * [CodeSystems](artifacts.html#terminology-code-systems): Describe todos los sistemas de códificación para las necesidades locales de los perfiles creados.
+    * [Ejemplos](artifacts.html#example-example-instances): Listado de ejemplos descritos a lo largo de la guía
 <br>
-<br>
-
 
 ### Perfiles de la Guía
 
@@ -27,10 +27,11 @@ Cada perfil define los elementos obligatorios mínimos, extensiones y requerimie
 
 Tambien se presenta una tabla jerárquica con una vista lógica del contenido como *Snapshot* y *Differential* . Para cada perfil también expresamos el conjunto de interacciones FHIR Restful asociadas (búsquedas, operaciones u otras interacciones)
 
+* [CL Alergias e Intolerancias](StructureDefinition-CoreAletgiaIntCl.html)
 * [CL Auditoría](StructureDefinition-AuditEventCl.html)
 * [CL Documento](StructureDefinition-DocumentoCl.html)
 * [CL Diagnóstico-Condición](StructureDefinition-CoreDiagnosticoCl.html)
-* [CL Encuetro](StructureDefinition-EncounterCL.html)
+* [CL Encuetro Clínico](StructureDefinition-EncounterCL.html)
 * [CL RolClinico](StructureDefinition-CoreRolClinicoCl.html)
 * [CL Inmunizacion](StructureDefinition-ImmunizationCL.html)
 * [CL Localización](StructureDefinition-CoreLocalizacionCl.html)

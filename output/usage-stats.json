@@ -221,7 +221,7 @@
     "Medication": [
       {
         "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl",
-        "title": "Medicamento Core CL"
+        "title": "CL Medicamento"
       }
     ],
     "Organization": [
@@ -257,7 +257,7 @@
     "Encounter": [
       {
         "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL",
-        "title": "Encuentro Clínico"
+        "title": "CL Encuentro Clínico"
       }
     ],
     "Immunization": [
@@ -274,6 +274,18 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.format",
+      "CapabilityStatement.patchFormat",
+      "CapabilityStatement.rest.interaction",
+      "CapabilityStatement.rest.resource",
+      "CapabilityStatement.rest.resource.interaction",
+      "CapabilityStatement.rest.resource.referencePolicy",
+      "CapabilityStatement.rest.resource.searchInclude",
+      "CapabilityStatement.rest.resource.searchParam",
+      "CapabilityStatement.rest.resource.searchRevInclude",
+      "CapabilityStatement.rest.resource.supportedProfile"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],

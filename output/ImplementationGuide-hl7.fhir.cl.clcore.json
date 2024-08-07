@@ -10,7 +10,7 @@
   "name" : "clcore",
   "title" : "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)",
   "status" : "active",
-  "date" : "2024-08-06T16:31:07-04:00",
+  "date" : "2024-08-07T09:55:47-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -703,6 +703,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/cl-core-client"
+      },
+      "name" : "CapabilityStatement Cliente Cl Core",
+      "description" : "CapabilityStatement para definir las caracteristicas mínimas de un cliente con todas las interacciones posibles hacía un servidor",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/cl-core-server"
+      },
+      "name" : "CapabilityStatement Servidor Cl Core",
+      "description" : "CapabilityStatement para definir las caracteristicas mínimas del servidor para ver las interacciones posibles",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
@@ -766,6 +790,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/EncounterCL"
+      },
+      "name" : "CL Encuentro Clínico",
+      "description" : "Definición de encuentro clínico genérico para Chile",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ImmunizationCL"
       },
       "name" : "CL Inmunización",
@@ -782,6 +818,18 @@
       },
       "name" : "CL Localización",
       "description" : "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CoreMedicamentoCl"
+      },
+      "name" : "CL Medicamento",
+      "description" : "Descripción de un Medicamento",
       "exampleBoolean" : false
     },
     {
@@ -922,7 +970,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/VSEspecialidades"
+        "reference" : "ValueSet/VSEspecialidadesCL"
       },
       "name" : "Códigos de Especialidades",
       "description" : "Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO",
@@ -1327,18 +1375,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/EncounterCL"
-      },
-      "name" : "Encuentro Clínico",
-      "description" : "Definición de encuentro clínico genérico para Chile",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1357,7 +1393,7 @@
         "reference" : "CodeSystem/CSEspecialidadOdontologica"
       },
       "name" : "Especialidad Odontologica",
-      "description" : "Especialidad Odontologica",
+      "description" : "Especialidad de Odontologica",
       "exampleBoolean" : false
     },
     {
@@ -1406,18 +1442,6 @@
       },
       "name" : "Identificación del Contacto de un Paciente",
       "description" : "Identificación de contacto de paciente en especial para casos en los cuales este actúa como Tutor Legal",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/CoreMedicamentoCl"
-      },
-      "name" : "Medicamento Core CL",
-      "description" : "Descripción de un Medicamento",
       "exampleBoolean" : false
     },
     {
@@ -1665,6 +1689,15 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Notas-MS.html"
+        }],
+        "nameUrl" : "Notas-MS.html",
+        "title" : "Notas del Must Support",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "Aspectos-Generales.html"
         }],
         "nameUrl" : "Aspectos-Generales.html",
@@ -1674,55 +1707,10 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Extensiones.html"
-        }],
-        "nameUrl" : "Extensiones.html",
-        "title" : "Extensiones",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Set-De-Validacion-ValueSets.html"
-        }],
-        "nameUrl" : "Set-De-Validacion-ValueSets.html",
-        "title" : "CodeSystems/ValueSets",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Perfiles.html"
-        }],
-        "nameUrl" : "Perfiles.html",
-        "title" : "Perfiles",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Set-Ejemplos.html"
-        }],
-        "nameUrl" : "Set-Ejemplos.html",
-        "title" : "Ejemplos",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "changes.html"
         }],
         "nameUrl" : "changes.html",
         "title" : "Historial de Cambios",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Notas-MS.html"
-        }],
-        "nameUrl" : "Notas-MS.html",
-        "title" : "Must Support",
         "generation" : "markdown"
       }]
     },

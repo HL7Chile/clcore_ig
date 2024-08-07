@@ -40,8 +40,6 @@ Esta vista permite observar todos aquellos elmentos de un recurso que han sido m
 
 En la vista de la **Snapshot Table**, todos los elementos obligatorios definidos para el perfil, y cualquier elemento obligatorio o que deba ser apoyado heredado de un perfil base, están marcados con una **S**. 
 
-
-
 <br>
 <div align="center" >
   <img  style="border: 1px solid; color: black;" src="Snap.png"> 
@@ -52,7 +50,6 @@ En la vista de la **Snapshot Table**, todos los elementos obligatorios definidos
 ##### Vista Key Elements
 
 En la vista **Key Elements Table**, todos los elementos presentados en la vista son obligatorios o deben ser compatibles con el perfil.
-
 
 <br>
 <div align="center" >
@@ -117,9 +114,6 @@ Lo anterior es aplicable para un recurso ya creado el cual se alamacena con una 
     Ejemplo:
 
     1.  GET [base]/Patient?name=Villanueva
-
-    
-
 
 ### Agregado de Recursos (Creando Recursos para ser almacenados)
 

@@ -65,14 +65,14 @@
 
     <style type="text/css">
         h2 {
-            --heading-prefix:"10"
+            --heading-prefix:"6"
         }
         
         h3,
         h4,
         h5,
         h6 {
-            --heading-prefix:"10.0"
+            --heading-prefix:"6.0"
         }
     </style>
     <div id="segment-header" class="segment">
@@ -136,10 +136,23 @@
     <a href="index.html">Inicio</a>
   </li>
   <li>
-    <a href="Aspectos-Generales.html">Generalidades</a>
+    <a href="Alcances-Objetivos.html">Objetivos</a>
   </li>
   <li>
-    <a href="Alcances-Objetivos.html">Objetivos</a>
+    <a href="Notas-MS.html">Must Support</a>
+  </li>
+  <li>
+    <a href="Aspectos-Generales.html">Generalidades</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">CapabilityStatement
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CapabilityStatement-cl-core-server.html">CapabilityStatement Servidor</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
@@ -200,22 +213,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Structures: Data Type Profiles</a>
+         <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Structures: Extension Definitions</a>
+         <a href="#3">Structures: Data Type Profiles</a>
       </li>
       <li>
-         <a href="#4">Terminology: Value Sets</a>
+         <a href="#4">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#5">Terminology: Code Systems</a>
+         <a href="#5">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#6">Example: Example Instances</a>
+         <a href="#6">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -224,6 +240,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Behavior: Capability Statements </h3>
+    <p>The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide.  Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-cl-core-client.html"
+                  title="CapabilityStatement/cl-core-client">CapabilityStatement Cliente Cl Core</a>
+            </td>
+            <td>
+<p>CapabilityStatement para definir las caracteristicas mínimas de un cliente con todas las interacciones posibles hacía un servidor</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-cl-core-server.html"
+                  title="CapabilityStatement/cl-core-server">CapabilityStatement Servidor Cl Core</a>
+            </td>
+            <td>
+<p>CapabilityStatement para definir las caracteristicas mínimas del servidor para ver las interacciones posibles</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -267,6 +309,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-EncounterCL.html"
+                  title="StructureDefinition/EncounterCL">CL Encuentro Clínico</a>
+            </td>
+            <td>
+<p>Definición de encuentro clínico genérico para Chile</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-ImmunizationCL.html"
                   title="StructureDefinition/ImmunizationCL">CL Inmunización</a>
             </td>
@@ -281,6 +332,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-CoreMedicamentoCl.html"
+                  title="StructureDefinition/CoreMedicamentoCl">CL Medicamento</a>
+            </td>
+            <td>
+<p>Descripción de un Medicamento</p>
 </td>
          </tr>
          <tr>
@@ -328,27 +388,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Este Perfil se ha modelado con el fin de cubrir las necesidades la función de Prestador en una organización de Chile por ejemplo: Hospital, Clínica, Cesfam, farmacias, etc</p>
 </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-EncounterCL.html"
-                  title="StructureDefinition/EncounterCL">Encuentro Clínico</a>
-            </td>
-            <td>
-<p>Definición de encuentro clínico genérico para Chile</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-CoreMedicamentoCl.html"
-                  title="StructureDefinition/CoreMedicamentoCl">Medicamento Core CL</a>
-            </td>
-            <td>
-<p>Descripción de un Medicamento</p>
-</td>
-         </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Structures: Data Type Profiles </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -365,7 +407,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -454,7 +496,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -488,7 +530,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-VSEspecialidades.html" title="ValueSet/VSEspecialidades">Códigos de Especialidades</a>
+               <a href="ValueSet-VSEspecialidadesCL.html"
+                  title="ValueSet/VSEspecialidadesCL">Códigos de Especialidades</a>
             </td>
             <td>
 <p>Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO</p>
@@ -625,7 +668,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -740,7 +783,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="CodeSystem/CSEspecialidadOdontologica">Especialidad Odontologica</a>
             </td>
             <td>
-<p>Especialidad Odontologica</p>
+<p>Especialidad de Odontologica</p>
 </td>
          </tr>
          <tr>
@@ -807,7 +850,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -899,7 +942,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="Patient-PacienteCL.html" title="Patient/PacienteCL">Ejemplo de Recurso Paciente Nacional</a>
             </td>
             <td>
-<p>Paciente ficticio nacional CI Chilena, sin sistema de validación “http://regcivil.cl/Validacion/RUN” ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real</p>
+<p>Paciente ficticio nacional CI Chilena, sin sistema de validación "http://regcivil.cl/Validacion/RUN" ficticio , cuyo nombre se decribe mediante el oficial y uno social. La dirección tampoco es Real</p>
 </td>
          </tr>
          <tr>
@@ -908,7 +951,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="Practitioner/EjemploPrestadorCL2">Ejemplo de Recurso Prestador 2 como base para un Core Nacional</a>
             </td>
             <td>
-<p>Ejemplo de un Prestador no Real con identificadores en Systemas con APIs “no disponibles”</p>
+<p>Ejemplo de un Prestador no Real con identificadores en Systemas con APIs "no disponibles"</p>
 </td>
          </tr>
          <tr>
@@ -917,7 +960,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="Practitioner/EjemploPrestadorCL">Ejemplo de Recurso Prestador como base para un Core Nacional</a>
             </td>
             <td>
-<p>Ejemplo de un Prestador no Real con identificadores en Systemas con API”s no disponibles</p>
+<p>Ejemplo de un Prestador no Real con identificadores en Systemas con API"s no disponibles</p>
 </td>
          </tr>
          <tr>
@@ -990,7 +1033,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 6, 2024 16:31-0400">2024-08-06</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 7, 2024 09:55-0400">2024-08-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

@@ -27,25 +27,24 @@ license: CC0-1.0
 
 #dependencies:
 #  hl7.fhir.uv.ips: 1.0.0
-
 pages:
   index.md:
     title: Inicio
   Alcances-Objetivos.md:
     title: Objetivos
+  Notas-MS.md:
+    title: Notas del Must Support
   Aspectos-Generales.md:
     title: Generalidades
-  Extensiones.md:
-  Set-De-Validacion-ValueSets.md:
-    title: CodeSystems/ValueSets
-  Perfiles.md:
-    title: Perfiles
-  Set-Ejemplos.md:
-    title: Ejemplos
+  #Extensiones.md:
+  #Set-De-Validacion-ValueSets.md:
+  #  title: CodeSystems/ValueSets
+  #Perfiles.md:
+  #  title: Perfiles
+  #Set-Ejemplos.md:
+  #  title: Ejemplos
   changes.md:
     title: Historial de Cambios
-  Notas-MS.md:
-    title: Must Support
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
@@ -53,8 +52,12 @@ pages:
 
 menu:
   Inicio: index.html
-  Generalidades: Aspectos-Generales.html
   Objetivos: Alcances-Objetivos.html
+  Must Support: Notas-MS.html
+  Generalidades: Aspectos-Generales.html
+  CapabilityStatement:
+    CapabilityStatement Servidor: CapabilityStatement-cl-core-server.html
+    CapabilityStatement Cliente: CapabilityStatement-cl-core-client.html
   Artefactos: artifacts.html
     #Perfiles: Perfiles.html
     #Extensiones: Extensiones.html

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "a036e0c2-c900-455e-8e66-8f832c863e92-137",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a036e0c2-c900-455e-8e66-8f832c863e92-137",
+  "id" : "12d65754-8218-41ce-a6b3-a3cee9852fd1-137",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/12d65754-8218-41ce-a6b3-a3cee9852fd1-137",
   "name" : "UnionSexoBiologicoAndSexoBiologico",
   "title" : "Union of Sexo Biologico del paciente And Sexo Biologico del paciente",
   "status" : "active",
-  "date" : "2024-08-06T16:31:28-04:00",
+  "date" : "2024-08-07T09:56:09-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

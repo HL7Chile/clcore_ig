@@ -65,14 +65,14 @@
 
     <style type="text/css">
         h2 {
-            --heading-prefix:"8"
+            --heading-prefix:"5"
         }
         
         h3,
         h4,
         h5,
         h6 {
-            --heading-prefix:"8"
+            --heading-prefix:"5"
         }
     </style>
     <div id="segment-header" class="segment">
@@ -136,10 +136,23 @@
     <a href="index.html">Inicio</a>
   </li>
   <li>
-    <a href="Aspectos-Generales.html">Generalidades</a>
+    <a href="Alcances-Objetivos.html">Objetivos</a>
   </li>
   <li>
-    <a href="Alcances-Objetivos.html">Objetivos</a>
+    <a href="Notas-MS.html">Must Support</a>
+  </li>
+  <li>
+    <a href="Aspectos-Generales.html">Generalidades</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">CapabilityStatement
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="CapabilityStatement-cl-core-server.html">CapabilityStatement Servidor</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
@@ -217,7 +230,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <h3 id="versión-190">Versión 1.9.0</h3>
-
 <ul>
   <li>Perfil <a href="StructureDefinition-CoreMedicamentoCl.html">MedicamentoCL</a>
     <ul>
@@ -266,9 +278,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </ul>
   </li>
   <li>
-    <p>Se cambia el VSEspecialidadesDeisCL a VSEspecialidades para incluir aquellas que no están consideradas por el DEIS</p>
+    <p>Se cambia el VSEspecialidadesDeisCL a VSEspecialidadesCL para incluir aquellas que no están consideradas por el DEIS</p>
   </li>
-  <li>Se modifica y agregan nuevos terminos en “CSTipoIdentificador”</li>
+  <li>Se modifica y agregan nuevos terminos en "CSTipoIdentificador"</li>
   <li>Perfil <a href="StructureDefinition-CorePacienteCl.html">PacienteCL</a>
     <ul>
       <li>Se cambio referencia de <strong>generalPractitioner</strong> de Organization -&gt; OrganizacionCL y Practitioner -&gt; PrestadorCL</li>
@@ -327,7 +339,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se cambia la referencia de agent.who y signature.who a los perfiles que existan en la guía y aquellos que no, se referencian al estandar.</li>
     </ul>
   </li>
-  <li>Perfil <a href="StructureDefinition-DocumentoCL.html">DocumentoCL</a>
+  <li>Perfil <a href="StructureDefinition-DocumentoCl.html">DocumentoCL</a>
     <ul>
       <li>Se cambian las referencia de Subject de PacienteCL a cualquier recurso</li>
       <li>
@@ -381,6 +393,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Códigos de razones por la cuales el encuentro remoto no se pudo llevar a cabo</li>
     </ul>
   </li>
+  <li>Se crea el <a href="CapabilityStatement-cl-core-server.html">CapibilityStatement Servidor CL Core</a> para las indicaciones de un servidor oficial de HL7 Chile.</li>
 </ul>
 
 <h3 id="version-189">Version 1.8.9</h3>
@@ -397,7 +410,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se cambió el nombre de la extension identifier.type.extension[paises] -&gt; identifier.type.extension[paisEmisionDocumento]</li>
     </ul>
   </li>
-  <li>Extension “Codigo de Identificación de países”, el binding se modifica para dejarlo linkeado al elemento “valueCodeableConcept”.</li>
+  <li>Extension "Codigo de Identificación de países", el binding se modifica para dejarlo linkeado al elemento "valueCodeableConcept".</li>
   <li><a href="StructureDefinition-CorePrestadorCl.html">PrestadorCL</a>
     <ul>
       <li>Se cambia el nombre de los siguientes slices de qualification:
@@ -432,7 +445,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
   <li>El elemento <strong>gender</strong> del perfil <a href="StructureDefinition-CorePrestadorCl.html">PrestadorCL</a> y <a href="StructureDefinition-CorePacienteCl.html">PacienteCl</a> es reincluido para el sexo Registral(Registro Civil). Deprecando la extensión <strong>SexoRegistral</strong></li>
   <li>Se depreca el perfil <strong>BundleCL</strong>.</li>
-  <li>CodeSystem “Tipo Identificador”, se modifican los valores.</li>
+  <li>CodeSystem "Tipo Identificador", se modifican los valores.</li>
   <li>Se agrega en la pagina inicial la lista de dependencias</li>
   <li>Se elimina la dependencia de la guia IPS v1.0.0</li>
 </ul>
@@ -469,7 +482,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="version-182">Version 1.8.2</h3>
 <ul>
   <li>Se agrega CodeSystem y ValueSet <em>Tipo Identificador</em>, segun tabla maestra DEIS</li>
-  <li>Se modifica la fuerza del ValueSet <em>Patient.indentifier.type</em> de <em>“Required”</em> -&gt; <em>“Extensible”</em></li>
+  <li>Se modifica la fuerza del ValueSet <em>Patient.indentifier.type</em> de <em>"Required"</em> -&gt; <em>"Extensible"</em></li>
 </ul>
 
 <h3 id="version-181">Version 1.8.1</h3>
@@ -480,8 +493,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="versión-180">Versión 1.8.0</h3>
 
 <ul>
-  <li>Se realiza cambio del <em>Computable Name</em> a “clcore”</li>
-  <li>Se realiza cambio del <em>id</em> a “hl7.fhir.cl.clcore”</li>
+  <li>Se realiza cambio del <em>Computable Name</em> a "clcore"</li>
+  <li>Se realiza cambio del <em>id</em> a "hl7.fhir.cl.clcore"</li>
 </ul>
 
 
@@ -502,7 +515,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 6, 2024 16:31-0400">2024-08-06</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7chile.cl">HL7 Chile</a>.  Package hl7.fhir.cl.clcore#1.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 7, 2024 09:55-0400">2024-08-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

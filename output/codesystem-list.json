@@ -78,7 +78,7 @@
       "status" : "active",
       "name" : "CSEspecialidadOdontologica",
       "title" : "Especialidad Odontologica",
-      "description" : "Especialidad Odontologica"
+      "description" : "Especialidad de Odontologica"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSEspecialidadesDeisCL",

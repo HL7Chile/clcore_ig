@@ -1,5 +1,4 @@
 ### Versión 1.9.0
-
 - Perfil [MedicamentoCL](StructureDefinition-CoreMedicamentoCl.html)
   - Se elimina los Slice de **DescriptionID** y **ConceptID**.
   - Se agregan al MS los siguientes datos:
@@ -94,6 +93,10 @@
 - CodeSystem deprecados:
   - Códigos del Sistema Nacional de Servicios de Salud
   - Códigos de razones por la cuales el encuentro remoto no se pudo llevar a cabo
+
+- Se crea los siguientes CapabilityStatement:
+  - [CapibilityStatement Servidor CL Core](CapabilityStatement-cl-core-server.html): para las indicaciones de un servidor oficial de HL7 Chile.
+  - [CapabilityStatement Cliente Cl Core](CapabilityStatement-cl-core-client.html): para las iteraciones de un cliente con un servidor oficial de HL7 Chile.
 
 ### Version 1.8.9
 - Version de prueba debido a cambios en los publicadores

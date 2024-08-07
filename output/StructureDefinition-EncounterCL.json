@@ -8,9 +8,9 @@
   "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL",
   "version" : "1.9.0",
   "name" : "EncounterCL",
-  "title" : "Encuentro Clínico",
+  "title" : "CL Encuentro Clínico",
   "status" : "active",
-  "date" : "2024-08-06T16:31:07-04:00",
+  "date" : "2024-08-07T09:55:47-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
