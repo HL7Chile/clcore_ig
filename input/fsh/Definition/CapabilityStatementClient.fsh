@@ -54,7 +54,7 @@ Usage: #definition
 * implementationGuide.extension.valueCode = #SHOULD
 */
 * rest
-  * mode = #server
+  * mode = #client
 
 * rest.documentation = """
 El Cliente de la CL Core **DEBERÁ**:
