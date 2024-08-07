@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "clcore"] ; # 
   fhir:title [ fhir:v "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-08-07T09:55:47-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-07T14:23:12-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;
@@ -730,6 +730,18 @@
        ] ;
        fhir:name [ fhir:v "CL Medicamento" ] ;
        fhir:description [ fhir:v "Descripción de un Medicamento" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreObservacionCL> ;
+         fhir:reference [ fhir:v "StructureDefinition/CoreObservacionCL" ]
+       ] ;
+       fhir:name [ fhir:v "CL Observación" ] ;
+       fhir:description [ fhir:v "Perfil para definir un mínimo para cualquier observación." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

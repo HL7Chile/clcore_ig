@@ -210,6 +210,13 @@
     "name" : "CoreMedicamentoCl"
   },
   {
+    "id" : "CoreObservacionCL",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreObservacionCL",
+    "version" : "1.9.0",
+    "name" : "ObservacionCL"
+  },
+  {
     "id" : "CoreOrganizacionCl",
     "type" : "StructureDefinition",
     "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl",

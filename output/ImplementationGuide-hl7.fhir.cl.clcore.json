@@ -10,7 +10,7 @@
   "name" : "clcore",
   "title" : "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)",
   "status" : "active",
-  "date" : "2024-08-07T09:55:47-04:00",
+  "date" : "2024-08-07T14:23:12-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -830,6 +830,18 @@
       },
       "name" : "CL Medicamento",
       "description" : "Descripción de un Medicamento",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CoreObservacionCL"
+      },
+      "name" : "CL Observación",
+      "description" : "Perfil para definir un mínimo para cualquier observación.",
       "exampleBoolean" : false
     },
     {

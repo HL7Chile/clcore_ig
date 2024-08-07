@@ -1,10 +1,10 @@
 clcore : Validation Results
 =========================================
 
-err = 0, warn = 4, info = 1
+err = 0, warn = 5, info = 1
 IG Publisher Version: 1.6.18 Out of date - current version is 1.6.19
-Generated Wed Aug 07 09:58:45 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.9.0 (canonical = https://hl7chile.cl/fhir/ig/clcore)
- Build Errors : 1 / 1 / 0
+Generated Wed Aug 07 14:25:55 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.9.0 (canonical = https://hl7chile.cl/fhir/ig/clcore)
+ Build Errors : 0 / 1 / 0
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\AllergyIntolerance-AllergyIntoleranceEj : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\AuditEvent-AuditEventEx : 0 / 0 / 2
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\CapabilityStatement-cl-core-client : 0 / 0 / 1
@@ -53,6 +53,7 @@ Generated Wed Aug 07 09:58:45 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreDiagnosticoCl : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreLocalizacionCl : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreMedicamentoCl : 0 / 0 / 1
+ C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreObservacionCL : 0 / 1 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreOrganizacionCl : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CorePacienteCl : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CorePrestadorCl : 0 / 0 / 1
@@ -91,7 +92,6 @@ Generated Wed Aug 07 09:58:45 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
 </table>
 == n/a ==
 WARNING: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\CodeSystem-CSCodigoslenguaje.html: The html source has duplicate anchor Ids: CSCodigoslenguaje-es-CL
-ERROR: C:\Users\franco.ulloa\Documents\sushi\clcore_ig\output\index.html#/html/body/div/div/div/div/div/ul/li/a at Line 292, column 8: The link 'Notas-MS.html.html' for "Must Support" cannot be resolved
 == fsh-generated\resources\AllergyIntolerance-AllergyIntoleranceEj.json ==
 == fsh-generated\resources\AuditEvent-AuditEventEx.json ==
 INFORMATION: AuditEvent/AuditEventEx: AuditEvent.agent[0].type: Reference to experimental CodeSystem http://terminology.hl7.org/CodeSystem/extra-security-role-type|1.0.1
@@ -143,6 +143,8 @@ WARNING: StructureDefinition/CodigoPaises: StructureDefinition.context[0]: Revie
 == fsh-generated\resources\StructureDefinition-CoreDiagnosticoCl.json ==
 == fsh-generated\resources\StructureDefinition-CoreLocalizacionCl.json ==
 == fsh-generated\resources\StructureDefinition-CoreMedicamentoCl.json ==
+== fsh-generated\resources\StructureDefinition-CoreObservacionCL.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreObservacionCL'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-CoreOrganizacionCl.json ==
 == fsh-generated\resources\StructureDefinition-CorePacienteCl.json ==
 == fsh-generated\resources\StructureDefinition-CorePrestadorCl.json ==

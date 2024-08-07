@@ -10,9 +10,9 @@
       "oids" : ["1.2.840.10008.2.16.4"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID",
       "http://hl7.org/fhir/R4/valueset-audit-event-sub-type.html" : "Audit Event Sub-Type",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
     },
     {
       "url" : "http://hl7.org/fhir/administrative-gender",
@@ -171,6 +171,18 @@
       "http://hl7.org/fhir/R4/valueset-network-type.html" : "AuditEventAgentNetworkType"
     },
     {
+      "url" : "http://hl7.org/fhir/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "oids" : ["2.16.840.1.113883.4.642.4.401"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/reaction-event-severity",
       "version" : "4.0.1",
       "status" : "draft",
@@ -203,6 +215,7 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
       "ValueSet-VSTiposDocClinico.html" : "Tipos de Documentos Clínicos",
       "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes"
     },
@@ -216,11 +229,11 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
+      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
       "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
       "ValueSet-VSDiagnosticosSCT.html" : "Diagnósticos SNOMED y Ausente o Desconocido",
-      "http://hl7.org/fhir/R4/valueset-medication-form-codes.html" : "SNOMED CT Form Codes",
-      "http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html" : "AllergyIntolerance Substance/Product, Condition and Negation Codes"
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
@@ -329,6 +342,18 @@
       "http://hl7.org/fhir/R4/valueset-audit-event-type.html" : "Audit Event ID"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
       "version" : "1.0.1",
       "status" : "active",
@@ -386,8 +411,8 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-      "http://terminology.hl7.org/6.0.2/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+      "http://terminology.hl7.org/6.0.2/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
@@ -414,6 +439,18 @@
       "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ObservationInterpretation",
+      "title" : "ObservationInterpretation",
+      "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+      "oids" : ["2.16.840.1.113883.5.83"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
       "version" : "3.0.0",
       "status" : "active",
@@ -435,9 +472,9 @@
       "oids" : ["2.16.840.1.113883.5.90"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
       "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",

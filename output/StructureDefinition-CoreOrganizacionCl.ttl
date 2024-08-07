@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "OrganizacionCL"] ; # 
   fhir:title [ fhir:v "CL Organización"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-08-07T09:55:47-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-07T14:23:12-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;

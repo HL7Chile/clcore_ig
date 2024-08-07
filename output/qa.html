@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 1, errors = 0, warn = 4, info = 1-->
+<!-- broken links = 0, errors = 0, warn = 5, info = 1-->
 <head>
   <title>clcore : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for clcore</h1>
- <p>Generated Wed Aug 07 09:58:45 CLT 2024, FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.9.0 (canonical = <a href="https://hl7chile.cl/fhir/ig/clcore">https://hl7chile.cl/fhir/ig/clcore</a> (<a href="https://hl7chile.cl/fhir/ig/clcore/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Aug 07 14:25:55 CLT 2024, FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.9.0 (canonical = <a href="https://hl7chile.cl/fhir/ig/clcore">https://hl7chile.cl/fhir/ig/clcore</a> (<a href="https://hl7chile.cl/fhir/ig/clcore/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.6.18, which is out of date. The current version is v1.6.19 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.cl.clcore, Canonical = https://hl7chile.cl/fhir/ig/clcore</td></tr>
@@ -169,13 +169,13 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (2 uses),     <a href="http://hl7.org/fhir/R4/codesystem-signature-type.html">SignatureTypeCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/auditevent.html">AuditEvent</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
- (14 uses),     <a href="http://hl7.org/fhir/R4/valueset-audit-event-action.html">AuditEventAction</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/valueset-audit-event-action.html">AuditEventAction</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-audit-event-outcome.html">AuditEventOutcome</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-participation-role-type.html">ParticipationRoleType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType</a>
  (4 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
- (13 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
- (20 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (22 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
  (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-network-type.html">AuditEventAgentNetworkType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-audit-entity-type.html">AuditEventEntityType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-object-role.html">AuditEventEntityRole</a>
@@ -199,8 +199,8 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-category.html">ConditionCategoryCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/DiagnosisSeverity</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
- (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/group.html">Group</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/clinicalimpression.html">ClinicalImpression</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a>
@@ -215,7 +215,31 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (4 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-status.html">Medication Status Codes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-form-codes.html">SNOMEDCTFormCodes</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/substance.html">Substance</a>
- (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-organization-type.html">OrganizationType</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/nutritionorder.html">NutritionOrder</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-category.html">ObservationCategoryCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-codes.html">LOINCCodes</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-observation-methods.html">ObservationMethods</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/devicemetric.html">DeviceMetric</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/molecularsequence.html">MolecularSequence</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/media.html">Media</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-organization-type.html">OrganizationType</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/extension-regex.html">regex</a>
  (7 uses),     <a href="http://hl7.org/fhir/R4/valueset-practitioner-role.html">PractitionerRole</a>
@@ -230,12 +254,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-list-empty-reason.html">ListEmptyReasons</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a>
  (3 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-diagnosis-role.html">DiagnosisRole</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-admit-source.html">AdmitSource</a>
@@ -244,8 +265,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html">SpecialArrangements</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html">DischargeDisposition</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-location-status.html">EncounterLocationStatus</a>
- (1 uses),     <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
- (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-status.html">ImmunizationStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-status.html">ImmunizationStatusCodes</a>
  (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-origin.html">ImmunizationOriginCodes</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-site.html">CodesForImmunizationSiteOfAdministration</a>
  (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-immunization-route.html">ImmunizationRouteCodes</a>
@@ -267,7 +287,7 @@ hl7.fhir.uv.extensions.r4#5.1.0:     <a href="http://hl7.org/fhir/extensions/5.1
   </li>
   <li>
 hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (82 uses)
+ (83 uses)
   </li>
   <li>
 hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSystem-extra-security-role-type.html">SecurityRoleType</a>
@@ -279,14 +299,14 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
  <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v1.8.10/index.html">Comparison with version 1.8.10</a></td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 4, info = 1, broken links = 1</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 5, info = 1, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_AllergyIntolerance-AllergyIntoleranceEj"><b>C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\AllergyIntolerance-AllergyIntoleranceEj</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -433,6 +453,9 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
      <td><a href="#C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CoreMedicamentoCl"><b>C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreMedicamentoCl</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CoreObservacionCL"><b>C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreObservacionCL</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
      <td><a href="#C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CoreOrganizacionCl"><b>C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreOrganizacionCl</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
@@ -545,9 +568,6 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
  <table class="grid">
    <tr style="background-color: #ffebcc">
      <td><b>output\CodeSystem-CSCodigoslenguaje&#8203;.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: CSCodigoslenguaje-es-CL</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#l430">output\index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/ul&#8203;/li&#8203;/a at Line 292, column 8</a></b></td><td><b>error</b></td><td><b>The link 'Notas-MS.html.html' for &quot;Must Support&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -853,7 +873,7 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide (l1/c43040)</b></td><td><b>warning</b></td><td title=""><b>!!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló</b></td>
+     <td><b>ImplementationGuide (l1/c43365)</b></td><td><b>warning</b></td><td title=""><b>!!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló</b></td>
    </tr>
 </table>
 <hr/>
@@ -1040,18 +1060,21 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CoreOrganizacionCl"> </a>
-<h2><a href="StructureDefinition-CoreOrganizacionCl.html">fsh-generated\resources\StructureDefinition-CoreOrganizacionCl.json</a> <span id="svi49" class="toggle" onclick="toggle('vi49')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi49')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CoreObservacionCL"> </a>
+<h2><a href="StructureDefinition-CoreObservacionCL.html">fsh-generated\resources\StructureDefinition-CoreObservacionCL.json</a> <span id="svi49" class="toggle" onclick="toggle('vi49')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi49')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi49"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/CoreObservacionCL')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CorePacienteCl"> </a>
-<h2><a href="StructureDefinition-CorePacienteCl.html">fsh-generated\resources\StructureDefinition-CorePacienteCl.json</a> <span id="svi50" class="toggle" onclick="toggle('vi50')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi50')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CoreOrganizacionCl"> </a>
+<h2><a href="StructureDefinition-CoreOrganizacionCl.html">fsh-generated\resources\StructureDefinition-CoreOrganizacionCl.json</a> <span id="svi50" class="toggle" onclick="toggle('vi50')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi50')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi50"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1060,8 +1083,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CorePrestadorCl"> </a>
-<h2><a href="StructureDefinition-CorePrestadorCl.html">fsh-generated\resources\StructureDefinition-CorePrestadorCl.json</a> <span id="svi51" class="toggle" onclick="toggle('vi51')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi51')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CorePacienteCl"> </a>
+<h2><a href="StructureDefinition-CorePacienteCl.html">fsh-generated\resources\StructureDefinition-CorePacienteCl.json</a> <span id="svi51" class="toggle" onclick="toggle('vi51')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi51')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi51"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1070,8 +1093,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CoreRolClinicoCl"> </a>
-<h2><a href="StructureDefinition-CoreRolClinicoCl.html">fsh-generated\resources\StructureDefinition-CoreRolClinicoCl.json</a> <span id="svi52" class="toggle" onclick="toggle('vi52')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi52')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CorePrestadorCl"> </a>
+<h2><a href="StructureDefinition-CorePrestadorCl.html">fsh-generated\resources\StructureDefinition-CorePrestadorCl.json</a> <span id="svi52" class="toggle" onclick="toggle('vi52')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi52')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi52"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1080,8 +1103,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-DocumentoCl"> </a>
-<h2><a href="StructureDefinition-DocumentoCl.html">fsh-generated\resources\StructureDefinition-DocumentoCl.json</a> <span id="svi53" class="toggle" onclick="toggle('vi53')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi53')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CoreRolClinicoCl"> </a>
+<h2><a href="StructureDefinition-CoreRolClinicoCl.html">fsh-generated\resources\StructureDefinition-CoreRolClinicoCl.json</a> <span id="svi53" class="toggle" onclick="toggle('vi53')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi53')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi53"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1090,8 +1113,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-EncounterCL"> </a>
-<h2><a href="StructureDefinition-EncounterCL.html">fsh-generated\resources\StructureDefinition-EncounterCL.json</a> <span id="svi54" class="toggle" onclick="toggle('vi54')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi54')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-DocumentoCl"> </a>
+<h2><a href="StructureDefinition-DocumentoCl.html">fsh-generated\resources\StructureDefinition-DocumentoCl.json</a> <span id="svi54" class="toggle" onclick="toggle('vi54')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi54')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi54"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1100,8 +1123,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-IdContacto"> </a>
-<h2><a href="StructureDefinition-IdContacto.html">fsh-generated\resources\StructureDefinition-IdContacto.json</a> <span id="svi55" class="toggle" onclick="toggle('vi55')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi55')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-EncounterCL"> </a>
+<h2><a href="StructureDefinition-EncounterCL.html">fsh-generated\resources\StructureDefinition-EncounterCL.json</a> <span id="svi55" class="toggle" onclick="toggle('vi55')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi55')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi55"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1110,8 +1133,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-IdentidadDeGenero"> </a>
-<h2><a href="StructureDefinition-IdentidadDeGenero.html">fsh-generated\resources\StructureDefinition-IdentidadDeGenero.json</a> <span id="svi56" class="toggle" onclick="toggle('vi56')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi56')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-IdContacto"> </a>
+<h2><a href="StructureDefinition-IdContacto.html">fsh-generated\resources\StructureDefinition-IdContacto.json</a> <span id="svi56" class="toggle" onclick="toggle('vi56')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi56')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi56"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1120,8 +1143,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-ImmunizationCL"> </a>
-<h2><a href="StructureDefinition-ImmunizationCL.html">fsh-generated\resources\StructureDefinition-ImmunizationCL.json</a> <span id="svi57" class="toggle" onclick="toggle('vi57')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi57')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-IdentidadDeGenero"> </a>
+<h2><a href="StructureDefinition-IdentidadDeGenero.html">fsh-generated\resources\StructureDefinition-IdentidadDeGenero.json</a> <span id="svi57" class="toggle" onclick="toggle('vi57')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi57')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi57"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1130,9 +1153,19 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-NombreComercial"> </a>
-<h2><a href="StructureDefinition-NombreComercial.html">fsh-generated\resources\StructureDefinition-NombreComercial.json</a> <span id="svi58" class="toggle" onclick="toggle('vi58')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi58')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-ImmunizationCL"> </a>
+<h2><a href="StructureDefinition-ImmunizationCL.html">fsh-generated\resources\StructureDefinition-ImmunizationCL.json</a> <span id="svi58" class="toggle" onclick="toggle('vi58')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi58')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi58"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-NombreComercial"> </a>
+<h2><a href="StructureDefinition-NombreComercial.html">fsh-generated\resources\StructureDefinition-NombreComercial.json</a> <span id="svi59" class="toggle" onclick="toggle('vi59')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi59')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi59"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1144,17 +1177,7 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
 </table>
 <hr/>
 <a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-ProvenanceCl"> </a>
-<h2><a href="StructureDefinition-ProvenanceCl.html">fsh-generated\resources\StructureDefinition-ProvenanceCl.json</a> <span id="svi59" class="toggle" onclick="toggle('vi59')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi59')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi59"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-ProvinciasCl"> </a>
-<h2><a href="StructureDefinition-ProvinciasCl.html">fsh-generated\resources\StructureDefinition-ProvinciasCl.json</a> <span id="svi60" class="toggle" onclick="toggle('vi60')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi60')">(1)</span></h2>
+<h2><a href="StructureDefinition-ProvenanceCl.html">fsh-generated\resources\StructureDefinition-ProvenanceCl.json</a> <span id="svi60" class="toggle" onclick="toggle('vi60')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi60')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi60"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1163,8 +1186,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-RegionesCl"> </a>
-<h2><a href="StructureDefinition-RegionesCl.html">fsh-generated\resources\StructureDefinition-RegionesCl.json</a> <span id="svi61" class="toggle" onclick="toggle('vi61')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi61')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-ProvinciasCl"> </a>
+<h2><a href="StructureDefinition-ProvinciasCl.html">fsh-generated\resources\StructureDefinition-ProvinciasCl.json</a> <span id="svi61" class="toggle" onclick="toggle('vi61')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi61')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi61"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1173,8 +1196,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-SegundoApellido"> </a>
-<h2><a href="StructureDefinition-SegundoApellido.html">fsh-generated\resources\StructureDefinition-SegundoApellido.json</a> <span id="svi62" class="toggle" onclick="toggle('vi62')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi62')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-RegionesCl"> </a>
+<h2><a href="StructureDefinition-RegionesCl.html">fsh-generated\resources\StructureDefinition-RegionesCl.json</a> <span id="svi62" class="toggle" onclick="toggle('vi62')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi62')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi62"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1183,8 +1206,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-SexoBiologico"> </a>
-<h2><a href="StructureDefinition-SexoBiologico.html">fsh-generated\resources\StructureDefinition-SexoBiologico.json</a> <span id="svi63" class="toggle" onclick="toggle('vi63')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi63')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-SegundoApellido"> </a>
+<h2><a href="StructureDefinition-SegundoApellido.html">fsh-generated\resources\StructureDefinition-SegundoApellido.json</a> <span id="svi63" class="toggle" onclick="toggle('vi63')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi63')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi63"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1193,8 +1216,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-cl-address"> </a>
-<h2><a href="StructureDefinition-cl-address.html">fsh-generated\resources\StructureDefinition-cl-address.json</a> <span id="svi64" class="toggle" onclick="toggle('vi64')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi64')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-SexoBiologico"> </a>
+<h2><a href="StructureDefinition-SexoBiologico.html">fsh-generated\resources\StructureDefinition-SexoBiologico.json</a> <span id="svi64" class="toggle" onclick="toggle('vi64')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi64')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi64"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
@@ -1203,9 +1226,9 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-CodPais"> </a>
-<h2><a href="ValueSet-CodPais.html">fsh-generated\resources\ValueSet-CodPais.json</a> <span id="svi65" class="toggle" onclick="toggle('vi65')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi65')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi65"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-cl-address"> </a>
+<h2><a href="StructureDefinition-cl-address.html">fsh-generated\resources\StructureDefinition-cl-address.json</a> <span id="svi65" class="toggle" onclick="toggle('vi65')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi65')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi65"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -1213,8 +1236,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSCodMadurez"> </a>
-<h2><a href="ValueSet-VSCodMadurez.html">fsh-generated\resources\ValueSet-VSCodMadurez.json</a> <span id="svi66" class="toggle" onclick="toggle('vi66')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi66')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-CodPais"> </a>
+<h2><a href="ValueSet-CodPais.html">fsh-generated\resources\ValueSet-CodPais.json</a> <span id="svi66" class="toggle" onclick="toggle('vi66')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi66')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi66"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1223,8 +1246,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSCodigosComunaCL"> </a>
-<h2><a href="ValueSet-VSCodigosComunaCL.html">fsh-generated\resources\ValueSet-VSCodigosComunaCL.json</a> <span id="svi67" class="toggle" onclick="toggle('vi67')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi67')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSCodMadurez"> </a>
+<h2><a href="ValueSet-VSCodMadurez.html">fsh-generated\resources\ValueSet-VSCodMadurez.json</a> <span id="svi67" class="toggle" onclick="toggle('vi67')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi67')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi67"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1233,8 +1256,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSCodigosProvinciasCL"> </a>
-<h2><a href="ValueSet-VSCodigosProvinciasCL.html">fsh-generated\resources\ValueSet-VSCodigosProvinciasCL.json</a> <span id="svi68" class="toggle" onclick="toggle('vi68')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi68')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSCodigosComunaCL"> </a>
+<h2><a href="ValueSet-VSCodigosComunaCL.html">fsh-generated\resources\ValueSet-VSCodigosComunaCL.json</a> <span id="svi68" class="toggle" onclick="toggle('vi68')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi68')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi68"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1243,8 +1266,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSCodigosRegionesCL"> </a>
-<h2><a href="ValueSet-VSCodigosRegionesCL.html">fsh-generated\resources\ValueSet-VSCodigosRegionesCL.json</a> <span id="svi69" class="toggle" onclick="toggle('vi69')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi69')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSCodigosProvinciasCL"> </a>
+<h2><a href="ValueSet-VSCodigosProvinciasCL.html">fsh-generated\resources\ValueSet-VSCodigosProvinciasCL.json</a> <span id="svi69" class="toggle" onclick="toggle('vi69')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi69')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi69"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1253,8 +1276,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSCodigoslenguaje"> </a>
-<h2><a href="ValueSet-VSCodigoslenguaje.html">fsh-generated\resources\ValueSet-VSCodigoslenguaje.json</a> <span id="svi70" class="toggle" onclick="toggle('vi70')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi70')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSCodigosRegionesCL"> </a>
+<h2><a href="ValueSet-VSCodigosRegionesCL.html">fsh-generated\resources\ValueSet-VSCodigosRegionesCL.json</a> <span id="svi70" class="toggle" onclick="toggle('vi70')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi70')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi70"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1263,8 +1286,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSDiagnosticosSCT"> </a>
-<h2><a href="ValueSet-VSDiagnosticosSCT.html">fsh-generated\resources\ValueSet-VSDiagnosticosSCT.json</a> <span id="svi71" class="toggle" onclick="toggle('vi71')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi71')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSCodigoslenguaje"> </a>
+<h2><a href="ValueSet-VSCodigoslenguaje.html">fsh-generated\resources\ValueSet-VSCodigoslenguaje.json</a> <span id="svi71" class="toggle" onclick="toggle('vi71')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi71')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi71"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1273,8 +1296,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSEspecialidadesCL"> </a>
-<h2><a href="ValueSet-VSEspecialidadesCL.html">fsh-generated\resources\ValueSet-VSEspecialidadesCL.json</a> <span id="svi72" class="toggle" onclick="toggle('vi72')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi72')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSDiagnosticosSCT"> </a>
+<h2><a href="ValueSet-VSDiagnosticosSCT.html">fsh-generated\resources\ValueSet-VSDiagnosticosSCT.json</a> <span id="svi72" class="toggle" onclick="toggle('vi72')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi72')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi72"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1283,8 +1306,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSIdentidaddeGenero"> </a>
-<h2><a href="ValueSet-VSIdentidaddeGenero.html">fsh-generated\resources\ValueSet-VSIdentidaddeGenero.json</a> <span id="svi73" class="toggle" onclick="toggle('vi73')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi73')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSEspecialidadesCL"> </a>
+<h2><a href="ValueSet-VSEspecialidadesCL.html">fsh-generated\resources\ValueSet-VSEspecialidadesCL.json</a> <span id="svi73" class="toggle" onclick="toggle('vi73')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi73')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi73"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1293,8 +1316,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSNombreCampana"> </a>
-<h2><a href="ValueSet-VSNombreCampana.html">fsh-generated\resources\ValueSet-VSNombreCampana.json</a> <span id="svi74" class="toggle" onclick="toggle('vi74')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi74')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSIdentidaddeGenero"> </a>
+<h2><a href="ValueSet-VSIdentidaddeGenero.html">fsh-generated\resources\ValueSet-VSIdentidaddeGenero.json</a> <span id="svi74" class="toggle" onclick="toggle('vi74')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi74')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi74"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1303,8 +1326,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSRazonNOT"> </a>
-<h2><a href="ValueSet-VSRazonNOT.html">fsh-generated\resources\ValueSet-VSRazonNOT.json</a> <span id="svi75" class="toggle" onclick="toggle('vi75')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi75')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSNombreCampana"> </a>
+<h2><a href="ValueSet-VSNombreCampana.html">fsh-generated\resources\ValueSet-VSNombreCampana.json</a> <span id="svi75" class="toggle" onclick="toggle('vi75')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi75')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi75"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1313,8 +1336,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSRazonNOTinm"> </a>
-<h2><a href="ValueSet-VSRazonNOTinm.html">fsh-generated\resources\ValueSet-VSRazonNOTinm.json</a> <span id="svi76" class="toggle" onclick="toggle('vi76')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi76')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSRazonNOT"> </a>
+<h2><a href="ValueSet-VSRazonNOT.html">fsh-generated\resources\ValueSet-VSRazonNOT.json</a> <span id="svi76" class="toggle" onclick="toggle('vi76')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi76')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi76"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1323,8 +1346,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSSexoListadoDeis"> </a>
-<h2><a href="ValueSet-VSSexoListadoDeis.html">fsh-generated\resources\ValueSet-VSSexoListadoDeis.json</a> <span id="svi77" class="toggle" onclick="toggle('vi77')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi77')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSRazonNOTinm"> </a>
+<h2><a href="ValueSet-VSRazonNOTinm.html">fsh-generated\resources\ValueSet-VSRazonNOTinm.json</a> <span id="svi77" class="toggle" onclick="toggle('vi77')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi77')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi77"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1333,8 +1356,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSTipoIdentificador"> </a>
-<h2><a href="ValueSet-VSTipoIdentificador.html">fsh-generated\resources\ValueSet-VSTipoIdentificador.json</a> <span id="svi78" class="toggle" onclick="toggle('vi78')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi78')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSSexoListadoDeis"> </a>
+<h2><a href="ValueSet-VSSexoListadoDeis.html">fsh-generated\resources\ValueSet-VSSexoListadoDeis.json</a> <span id="svi78" class="toggle" onclick="toggle('vi78')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi78')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi78"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1343,8 +1366,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSTiposDocClinico"> </a>
-<h2><a href="ValueSet-VSTiposDocClinico.html">fsh-generated\resources\ValueSet-VSTiposDocClinico.json</a> <span id="svi79" class="toggle" onclick="toggle('vi79')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi79')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSTipoIdentificador"> </a>
+<h2><a href="ValueSet-VSTipoIdentificador.html">fsh-generated\resources\ValueSet-VSTipoIdentificador.json</a> <span id="svi79" class="toggle" onclick="toggle('vi79')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi79')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi79"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1353,8 +1376,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSTiposDocumentos"> </a>
-<h2><a href="ValueSet-VSTiposDocumentos.html">fsh-generated\resources\ValueSet-VSTiposDocumentos.json</a> <span id="svi80" class="toggle" onclick="toggle('vi80')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi80')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSTiposDocClinico"> </a>
+<h2><a href="ValueSet-VSTiposDocClinico.html">fsh-generated\resources\ValueSet-VSTiposDocClinico.json</a> <span id="svi80" class="toggle" onclick="toggle('vi80')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi80')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi80"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1363,8 +1386,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSTiposEncuentroCL"> </a>
-<h2><a href="ValueSet-VSTiposEncuentroCL.html">fsh-generated\resources\ValueSet-VSTiposEncuentroCL.json</a> <span id="svi81" class="toggle" onclick="toggle('vi81')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi81')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSTiposDocumentos"> </a>
+<h2><a href="ValueSet-VSTiposDocumentos.html">fsh-generated\resources\ValueSet-VSTiposDocumentos.json</a> <span id="svi81" class="toggle" onclick="toggle('vi81')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi81')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi81"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1373,8 +1396,8 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSTiposServicio"> </a>
-<h2><a href="ValueSet-VSTiposServicio.html">fsh-generated\resources\ValueSet-VSTiposServicio.json</a> <span id="svi82" class="toggle" onclick="toggle('vi82')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi82')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSTiposEncuentroCL"> </a>
+<h2><a href="ValueSet-VSTiposEncuentroCL.html">fsh-generated\resources\ValueSet-VSTiposEncuentroCL.json</a> <span id="svi82" class="toggle" onclick="toggle('vi82')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi82')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi82"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
@@ -1383,9 +1406,19 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSTiposVacunas"> </a>
-<h2><a href="ValueSet-VSTiposVacunas.html">fsh-generated\resources\ValueSet-VSTiposVacunas.json</a> <span id="svi83" class="toggle" onclick="toggle('vi83')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi83')">(1)</span></h2>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSTiposServicio"> </a>
+<h2><a href="ValueSet-VSTiposServicio.html">fsh-generated\resources\ValueSet-VSTiposServicio.json</a> <span id="svi83" class="toggle" onclick="toggle('vi83')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi83')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi83"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_ValueSet-VSTiposVacunas"> </a>
+<h2><a href="ValueSet-VSTiposVacunas.html">fsh-generated\resources\ValueSet-VSTiposVacunas.json</a> <span id="svi84" class="toggle" onclick="toggle('vi84')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi84')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi84"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
 </div>
  <table class="grid">
    <tr>

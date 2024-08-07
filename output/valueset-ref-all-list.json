@@ -238,6 +238,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
+      "StructureDefinition-CoreObservacionCL.html" : "CL Observación",
       "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico"
     },
     {
@@ -378,8 +379,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
@@ -394,8 +395,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
@@ -411,6 +412,20 @@
       "uses" : {
       },
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-CoreObservacionCL.html" : "CL Observación"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -647,9 +662,9 @@
       },
       "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
       "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización"
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -665,9 +680,9 @@
       },
       "StructureDefinition-IdContacto.html" : "Identificación del Contacto de un Paciente",
       "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
       "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
     },
     {
@@ -814,19 +829,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
-      "StructureDefinition-DocumentoCl.html" : "CL Documento",
-      "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
-      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
-      "StructureDefinition-ProvenanceCl.html" : "CL Provenance",
-      "StructureDefinition-AuditEventCl.html" : "CL Auditoria",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
-      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
-      "StructureDefinition-CoreAletgiaIntCl.html" : "CL Alergias e Intolerancias",
       "StructureDefinition-ImmunizationCL.html" : "CL Inmunización",
+      "StructureDefinition-DocumentoCl.html" : "CL Documento",
+      "StructureDefinition-ProvenanceCl.html" : "CL Provenance",
+      "StructureDefinition-CoreLocalizacionCl.html" : "CL Localización",
+      "StructureDefinition-CoreAletgiaIntCl.html" : "CL Alergias e Intolerancias",
+      "StructureDefinition-EncounterCL.html" : "CL Encuentro Clínico",
+      "StructureDefinition-AuditEventCl.html" : "CL Auditoria",
+      "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
       "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
-      "StructureDefinition-EncounterCL.html" : "CL Encuentro Clínico"
+      "StructureDefinition-CoreOrganizacionCl.html" : "CL Organización",
+      "StructureDefinition-CoreObservacionCL.html" : "CL Observación",
+      "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -1077,6 +1093,78 @@
       "StructureDefinition-AuditEventCl.html" : "CL Auditoria"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-CoreObservacionCL.html" : "CL Observación"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-CoreObservacionCL.html" : "CL Observación"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-CoreObservacionCL.html" : "CL Observación"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-CoreObservacionCL.html" : "CL Observación"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-CoreObservacionCL.html" : "CL Observación"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
       "version" : "4.0.1",
       "status" : "draft",
@@ -1221,6 +1309,39 @@
       "StructureDefinition-CoreAletgiaIntCl.html" : "CL Alergias e Intolerancias"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-CoreObservacionCL.html" : "CL Observación"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-CoreObservacionCL.html" : "CL Observación"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
       "version" : "4.0.1",
       "status" : "active",
@@ -1232,12 +1353,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico",
+      "StructureDefinition-ProvenanceCl.html" : "CL Provenance",
+      "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
       "StructureDefinition-CorePrestadorCl.html" : "CL Prestador",
       "StructureDefinition-CoreDiagnosticoCl.html" : "CL Condición-Diagnóstico",
-      "StructureDefinition-CoreMedicamentoCl.html" : "CL Medicamento",
-      "StructureDefinition-ProvenanceCl.html" : "CL Provenance",
-      "StructureDefinition-CorePacienteCl.html" : "CL Paciente"
+      "StructureDefinition-CorePacienteCl.html" : "CL Paciente",
+      "StructureDefinition-CoreRolClinicoCl.html" : "CL RolClinico"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/route-codes",
