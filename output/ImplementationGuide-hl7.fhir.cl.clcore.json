@@ -10,7 +10,7 @@
   "name" : "clcore",
   "title" : "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)",
   "status" : "active",
-  "date" : "2024-08-07T14:23:12-04:00",
+  "date" : "2024-08-08T12:45:25-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -1467,6 +1467,18 @@
       "name" : "Nombre Comercial Fármaco",
       "description" : "Nombre comercial del fármaco prescrito",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ObservacinEjemplo"
+      },
+      "name" : "Observación Ejemplo",
+      "description" : "Ejemplo de una observación",
+      "exampleCanonical" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreObservacionCL"
     },
     {
       "extension" : [{

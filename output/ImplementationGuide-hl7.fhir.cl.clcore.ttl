@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "clcore"] ; # 
   fhir:title [ fhir:v "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-08-07T14:23:12-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-08T12:45:25-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;
@@ -1421,6 +1421,21 @@
        fhir:name [ fhir:v "Nombre Comercial Fármaco" ] ;
        fhir:description [ fhir:v "Nombre comercial del fármaco prescrito" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/Observation/ObservacinEjemplo> ;
+         fhir:reference [ fhir:v "Observation/ObservacinEjemplo" ]
+       ] ;
+       fhir:name [ fhir:v "Observación Ejemplo" ] ;
+       fhir:description [ fhir:v "Ejemplo de una observación" ] ;
+       fhir:example [
+         fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreObservacionCL"^^xsd:anyURI ;
+         fhir:link <https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreObservacionCL>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

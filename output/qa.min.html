@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 5, info = 1-->
+<!-- broken links = 0, errors = 0, warn = 4, info = 1-->
 <head>
   <title>clcore : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for clcore</h1>
- <p>Generated Wed Aug 07 14:25:55 CLT 2024, FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.9.0 (canonical = <a href="https://hl7chile.cl/fhir/ig/clcore">https://hl7chile.cl/fhir/ig/clcore</a> (<a href="https://hl7chile.cl/fhir/ig/clcore/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Thu Aug 08 12:48:43 CLT 2024, FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.9.0 (canonical = <a href="https://hl7chile.cl/fhir/ig/clcore">https://hl7chile.cl/fhir/ig/clcore</a> (<a href="https://hl7chile.cl/fhir/ig/clcore/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.6.18, which is out of date. The current version is v1.6.19 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = hl7.fhir.cl.clcore, Canonical = https://hl7chile.cl/fhir/ig/clcore</td></tr>
@@ -62,16 +62,16 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (15 uses),     <a href="http://hl7.org/fhir/R4/codesystem-allergy-intolerance-type.html">AllergyIntoleranceType</a>
  (1 uses),     <code>clinical-status</code>
  (2 uses),     <code>patient</code>
- (6 uses),     <code>verification-status</code>
+ (8 uses),     <code>verification-status</code>
  (2 uses),     <code>severity</code>
  (2 uses),     <code>date</code>
- (6 uses),     <code>manifestation</code>
+ (8 uses),     <code>manifestation</code>
  (2 uses),     <code>code</code>
- (6 uses),     <code>criticality</code>
+ (8 uses),     <code>criticality</code>
  (2 uses),     <code>type</code>
  (6 uses),     <code>onset</code>
  (2 uses),     <code>_id</code>
- (26 uses),     <code>date</code>
+ (28 uses),     <code>date</code>
  (2 uses),     <code>type</code>
  (2 uses),     <code>subtype</code>
  (2 uses),     <code>patient</code>
@@ -87,9 +87,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (2 uses),     <code>attester</code>
  (2 uses),     <code>author</code>
  (2 uses),     <code>encounter</code>
- (2 uses),     <code>entry</code>
+ (4 uses),     <code>entry</code>
  (2 uses),     <code>identifier</code>
- (6 uses),     <code>status</code>
+ (8 uses),     <code>status</code>
  (2 uses),     <code>onset-date</code>
  (2 uses),     <code>subject</code>
  (2 uses),     <code>clinical-status</code>
@@ -123,6 +123,29 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  (2 uses),     <code>ingredient</code>
  (2 uses),     <code>ingredient-code</code>
  (2 uses),     <code>form</code>
+ (2 uses),     <code>performer</code>
+ (2 uses),     <code>specimen</code>
+ (2 uses),     <code>category</code>
+ (2 uses),     <code>subject</code>
+ (4 uses),     <code>code-value-concept</code>
+ (2 uses),     <code>component-code-value-concept</code>
+ (2 uses),     <code>combo-code-value-concept</code>
+ (2 uses),     <code>code-value-quantity</code>
+ (2 uses),     <code>combo-code-value-quantity</code>
+ (2 uses),     <code>component-code-value-quantity</code>
+ (2 uses),     <code>code-value-date</code>
+ (2 uses),     <code>code-value-string</code>
+ (2 uses),     <code>value-string</code>
+ (2 uses),     <code>value-quantity</code>
+ (2 uses),     <code>combo-value-quantity</code>
+ (2 uses),     <code>component-value-quantity</code>
+ (2 uses),     <code>value-date</code>
+ (2 uses),     <code>combo-code</code>
+ (2 uses),     <code>component-code</code>
+ (2 uses),     <code>combo-value-concept</code>
+ (2 uses),     <code>component-value-concept</code>
+ (2 uses),     <code>value-concept</code>
+ (2 uses),     <code>status</code>
  (2 uses),     <code>address-state</code>
  (2 uses),     <code>address-country</code>
  (2 uses),     <code>address-city</code>
@@ -287,7 +310,7 @@ hl7.fhir.uv.extensions.r4#5.1.0:     <a href="http://hl7.org/fhir/extensions/5.1
   </li>
   <li>
 hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
- (83 uses)
+ (84 uses)
   </li>
   <li>
 hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSystem-extra-security-role-type.html">SecurityRoleType</a>
@@ -299,7 +322,7 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
  <tr><td>Previous Version Comparison:</td><td> <a href="comparison-v1.8.10/index.html">Comparison with version 1.8.10</a></td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 5, info = 1, broken links = 0</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 4, info = 1, broken links = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -313,9 +336,6 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CodigoPaises"><b>C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CodigoPaises</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CoreObservacionCL"><b>C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreObservacionCL</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-NombreComercial"><b>C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-NombreComercial</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -340,7 +360,7 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide (l1/c43365)</b></td><td><b>warning</b></td><td title=""><b>!!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló</b></td>
+     <td><b>ImplementationGuide (l1/c43710)</b></td><td><b>warning</b></td><td title=""><b>!!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló</b></td>
    </tr>
 </table>
 <hr/>
@@ -357,22 +377,9 @@ hl7.terminology.r4#6.0.2:     <a href="http://terminology.hl7.org/6.0.2/CodeSyst
    </tr>
 </table>
 <hr/>
-<a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-CoreObservacionCL"> </a>
-<h2><a href="StructureDefinition-CoreObservacionCL.html">fsh-generated\resources\StructureDefinition-CoreObservacionCL.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-</div>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7chile&#8203;.cl&#8203;/fhir&#8203;/ig&#8203;/clcore&#8203;/StructureDefinition&#8203;/CoreObservacionCL')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
-   </tr>
-</table>
-<hr/>
 <a name="C__Users_franco.ulloa_Documents_sushi_clcore_ig_fsh-generated_resources_StructureDefinition-NombreComercial"> </a>
-<h2><a href="StructureDefinition-NombreComercial.html">fsh-generated\resources\StructureDefinition-NombreComercial.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+<h2><a href="StructureDefinition-NombreComercial.html">fsh-generated\resources\StructureDefinition-NombreComercial.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>

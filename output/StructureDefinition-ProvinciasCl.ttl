@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ProvinciasCl"] ; # 
   fhir:title [ fhir:v "Códigos para Provincias en Chile"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-08-07T14:23:12-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-08T12:45:25-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;

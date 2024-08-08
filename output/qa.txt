@@ -1,9 +1,9 @@
 clcore : Validation Results
 =========================================
 
-err = 0, warn = 5, info = 1
+err = 0, warn = 4, info = 1
 IG Publisher Version: 1.6.18 Out of date - current version is 1.6.19
-Generated Wed Aug 07 14:25:55 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.9.0 (canonical = https://hl7chile.cl/fhir/ig/clcore)
+Generated Thu Aug 08 12:48:43 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcore#1.9.0 (canonical = https://hl7chile.cl/fhir/ig/clcore)
  Build Errors : 0 / 1 / 0
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\AllergyIntolerance-AllergyIntoleranceEj : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\AuditEvent-AuditEventEx : 0 / 0 / 2
@@ -38,6 +38,7 @@ Generated Wed Aug 07 14:25:55 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Location-LocalizacionEjemploCL1 : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Medication-MedicamentoCl : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Medication-MedicamentoCl-2 : 0 / 0 / 1
+ C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Observation-ObservacinEjemplo : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Organization-EjemploLaboratorio1 : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Organization-OrganizacionClEjemplo1 : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\Patient-PacienteCL : 0 / 0 / 1
@@ -53,7 +54,7 @@ Generated Wed Aug 07 14:25:55 CLT 2024. FHIR version 4.0.1 for hl7.fhir.cl.clcor
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreDiagnosticoCl : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreLocalizacionCl : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreMedicamentoCl : 0 / 0 / 1
- C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreObservacionCL : 0 / 1 / 1
+ C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreObservacionCL : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CoreOrganizacionCl : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CorePacienteCl : 0 / 0 / 1
  C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CorePrestadorCl : 0 / 0 / 1
@@ -127,6 +128,7 @@ WARNING: ImplementationGuide/hl7.fhir.cl.clcore: ImplementationGuide: !!La regla
 == fsh-generated\resources\Location-LocalizacionEjemploCL1.json ==
 == fsh-generated\resources\Medication-MedicamentoCl.json ==
 == fsh-generated\resources\Medication-MedicamentoCl-2.json ==
+== fsh-generated\resources\Observation-ObservacinEjemplo.json ==
 == fsh-generated\resources\Organization-EjemploLaboratorio1.json ==
 == fsh-generated\resources\Organization-OrganizacionClEjemplo1.json ==
 == fsh-generated\resources\Patient-PacienteCL.json ==
@@ -144,7 +146,6 @@ WARNING: StructureDefinition/CodigoPaises: StructureDefinition.context[0]: Revie
 == fsh-generated\resources\StructureDefinition-CoreLocalizacionCl.json ==
 == fsh-generated\resources\StructureDefinition-CoreMedicamentoCl.json ==
 == fsh-generated\resources\StructureDefinition-CoreObservacionCL.json ==
-WARNING: StructureDefinition.where(url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreObservacionCL'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-CoreOrganizacionCl.json ==
 == fsh-generated\resources\StructureDefinition-CorePacienteCl.json ==
 == fsh-generated\resources\StructureDefinition-CorePrestadorCl.json ==

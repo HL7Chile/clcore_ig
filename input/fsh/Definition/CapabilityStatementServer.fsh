@@ -204,7 +204,7 @@ El Servidor Cl Core **DEBERÍA**:
   * searchParam[0]
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-      * valueCode = #MAY
+      * valueCode = #SHALL
     * name = "clinical-status"
     * definition = "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-clinical-status"
     * type = #token
@@ -2033,6 +2033,222 @@ El Servidor Cl Core **DEBERÍA**:
     * definition = "http://hl7.org/fhir/SearchParameter/Resource-id"
     * type = #token
     * documentation =  "Id logico de este artefacto"
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "date"
+    * definition =  "http://hl7.org/fhir/SearchParameter/clinical-date"
+    * type = #date
+    * documentation = "Un cliente **DEBERÁ** proporcionar un valor preciso hasta el *segundo + desplazamiento de tiempo*.\n\nUn servidor **DEBERÁ** soportar un valor preciso hasta el *segundo + desplazamiento de tiempo*"
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "patient"
+    * definition = "http://hl7.org/fhir/SearchParameter/clinical-patient"
+    * type = #reference
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de id y **PODRÁ** proporcionar tanto los valores de Tipo como de id.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "performer"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-performer"
+    * type = #reference
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de id y **PODRÁ** proporcionar tanto los valores de Tipo como de id.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "encounter"
+    * definition = "http://hl7.org/fhir/SearchParameter/clinical-encounter"
+    * type = #reference
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de id y **PODRÁ** proporcionar tanto los valores de Tipo como de id.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "specimen"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-specimen"
+    * type = #reference
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de id y **PODRÁ** proporcionar tanto los valores de Tipo como de id.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "category"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-category"
+    * type = #token
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de código y **PODRÁ** proporcionar tanto los valores de sistema como de código.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "subject"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-subject"
+    * type = #reference
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de id y **PODRÁ** proporcionar tanto los valores de Tipo como de id.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "has-member"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-subject"
+    * type = #reference
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de id y **PODRÁ** proporcionar tanto los valores de Tipo como de id.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "code-value-concept"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-code-value-concept"
+    * type = #composite
+    * documentation = "El cliente **DEBERÁ** proporcionar un Código y un parametro de valor codificado.\n\nEl servidor **DEBERÁ** soportar la recepción y procesamiento un Código y un parametro de valor codificado"
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "component-code-value-concept"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept"
+    * type = #composite
+    * documentation = "El cliente **DEBERÁ** proporcionar un Código y un parametro de valor codificado.\n\nEl servidor **DEBERÁ** soportar la recepción y procesamiento un Código y un parametro de valor codificado, que se encuentra en el componente."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "combo-code-value-concept"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-concept"
+    * type = #composite
+    * documentation = "El cliente **DEBERÁ** proporcionar un Código y un parametro de valor codificado.\n\nEl servidor **DEBERÁ** soportar la recepción y procesamiento un Código y un parametro de valor codificado, incluyendo si se encuentra en el componente."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "code-value-quantity"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-code-value-quantity"
+    * type = #composite
+    * documentation = "El cliente **DEBERÁ** proporcionar un Código y un parametro de valor de cantidad.\n\nEl servidor **DEBERÁ** soportar la recepción y procesamiento un Código y un parametro de valor de cantidad."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "combo-code-value-quantity"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-quantity"
+    * type = #composite
+    * documentation = "El cliente **DEBERÁ** proporcionar un Código y un parametro de valor de cantidad.\n\nEl servidor **DEBERÁ** soportar la recepción y procesamiento un Código y un parametro de valor de cantidad, incluyendo si se encuentra en el componente."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "component-code-value-quantity"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity"
+    * type = #composite
+    * documentation = "El cliente **DEBERÁ** proporcionar un Código y un parametro de valor de cantidad del componente.\n\nEl servidor **DEBERÁ** soportar la recepción y procesamiento un Código y un parametro de valor de cantidad, que se encuentra en el componente."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "code-value-date"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-code-value-date"
+    * type = #composite
+    * documentation = "El cliente **DEBERÁ** proporcionar un Código y un parametro de valor fecha/hora.\n\nEl servidor **DEBERÁ** soportar la recepción y procesamiento de un Código y un parametro de valor fecha/hora."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "code-value-string"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-code-value-string"
+    * type = #composite
+    * documentation = "El cliente **DEBERÁ** proporcionar un Código y un parametro de valor de texto.\n\nEl servidor **DEBERÁ** soportar la recepción y procesamiento un Código y un parametro de valor de texto."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "value-string"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-value-string"
+    * type = #string
+    * documentation = "Un servidor **DEBERÁ** soportar un valor preciso."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "value-quantity"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-value-quantity"
+    * type = #quantity
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor entero o decimal.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "combo-value-quantity"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-combo-value-quantity"
+    * type = #quantity
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor entero o decimal.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "component-value-quantity"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-component-value-quantity"
+    * type = #quantity
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor entero o decimal.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "value-date"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-value-date"
+    * type = #date
+    * documentation = "Un cliente **DEBERÁ** proporcionar un valor preciso hasta el *segundo + desplazamiento de tiempo*.\n\nUn servidor **DEBERÁ** soportar un valor preciso hasta el *segundo + desplazamiento de tiempo*"
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "combo-code"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-combo-code"
+    * type = #token
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de código y **PODRÁ** proporcionar tanto los valores de sistema como de código.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "component-code"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-component-code"
+    * type = #token
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de código y **PODRÁ** proporcionar tanto los valores de sistema como de código.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "combo-value-concept"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept"
+    * type = #token
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de código y **PODRÁ** proporcionar tanto los valores de sistema como de código.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "component-value-concept"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-component-value-concept"
+    * type = #token
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de código y **PODRÁ** proporcionar tanto los valores de sistema como de código.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "value-concept"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-value-concept"
+    * type = #token
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de código y **PODRÁ** proporcionar tanto los valores de sistema como de código.\n\nEl servidor **DEBERÁ** soportar ambos."
+  * searchParam[+]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * name = "status"
+    * definition = "http://hl7.org/fhir/SearchParameter/Observation-status"
+    * type = #token
+    * documentation = "El cliente **DEBERÁ** proporcionar al menos un valor de código y **PODRÁ** proporcionar tanto los valores de sistema como de código.\n\nEl servidor **DEBERÁ** soportar ambos."
 * rest.resource[+] //Organization
   * extension[0]
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "4cc67c92-2ec3-42e4-bf30-2a6630f54890-77",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/4cc67c92-2ec3-42e4-bf30-2a6630f54890-77",
+  "id" : "aeca3dfb-9bdf-458a-80b0-f6c3cfad012a-77",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/aeca3dfb-9bdf-458a-80b0-f6c3cfad012a-77",
   "name" : "UnionOrganizacionCLAndOrganizacionCL",
   "title" : "Union of CL Organización And CL Organización",
   "status" : "active",
-  "date" : "2024-08-07T14:23:29-04:00",
+  "date" : "2024-08-08T12:45:49-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
