@@ -3528,7 +3528,7 @@ El Cliente de la CL Core **DEBERÁ**:
     * name = "recorded"
     * definition = "http://hl7.org/fhir/SearchParameter/Provenance-recorded"
     * type = #date
-    * documentation = "A client **SHALL** provide a value precise*.\n\nA server **SHALL** support a value precise*."
+    * documentation = "Un cliente **DEBERÁ** proporcionar un valor preciso hasta el *segundo + desplazamiento de tiempo*.\n\nUn servidor **DEBERÁ** soportar un valor preciso hasta el *segundo + desplazamiento de tiempo*"
   * searchParam[+]
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
