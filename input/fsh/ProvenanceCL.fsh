@@ -2,7 +2,7 @@ Profile:        ProvenanceCL
 Parent:         Provenance
 Id:             ProvenanceCl
 Title:          "CL Provenance"
-Description:    "Este Perfil describe la forma de validación respecto a la procedencia de un recurso genrado durante un acto clínico."
+Description:    "Este Perfil describe la forma de validación respecto a la procedencia de un recurso generado durante un acto clínico."
 
 //Target
 * target MS

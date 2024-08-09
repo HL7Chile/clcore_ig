@@ -2,7 +2,7 @@ Profile:        LocalizacionCL
 Parent:         Location
 Id:             CoreLocalizacionCl
 Title:          "CL Localización"
-Description:    "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico"
+Description:    "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular una localización con una organización o espacio físico específico"
 
 * ^version = "1.9.0"
 * ^status = #active

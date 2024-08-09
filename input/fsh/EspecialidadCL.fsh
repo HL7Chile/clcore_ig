@@ -20,7 +20,7 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
   * reference MS
   * display MS
 * practitioner only Reference(PrestadorCL)
-* practitioner ^short = "Referencia al Prestador  especialidad"
+* practitioner ^short = "Referencia al Prestador"
 * practitioner ^definition = "La referencia al prestador de salud, al cual se le quieren asignar funciones o actividades de especialidad."
 * practitioner.reference ^short = "Referencia al uri del recurso Practitioner del prestador en cuestión"
 * practitioner.reference ^definition = "La referencia es una URI comunmente, la cual hace referencia al Prestador en cuestion"	
@@ -29,7 +29,7 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 
 * organization only Reference(OrganizacionCL)
 * organization and organization.display and organization.reference MS
-* organization ^short = "Referencia a la organización donde el presador cumple roles"
+* organization ^short = "Referencia a la organización donde el prestador cumple roles"
 * organization ^definition = "La referencia a la organización en donde el prestador individual cumple roles."
 * organization.reference ^short = "Referencia al uri del recurso organization del prestador en cuestión"
 * organization.reference ^definition = "La referencia es una URI comunmente, la cual hace referencia al organización en cuestion"	
@@ -38,7 +38,7 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 
 * location only Reference(CoreLocalizacionCl)
 * location and location.reference and location.display MS
-* location ^short = "Referencia a la ubicación donde el presador cumple roles"
+* location ^short = "Referencia a la ubicación donde el prestador cumple roles"
 * location ^definition = "La referencia a la ubicación en donde el prestador individual cumple roles."
 * location.reference ^short = "Referencia al uri del recurso location del prestador en cuestión"
 * location.reference ^definition = "La referencia es una URI comunmente, la cual hace referencia a la ubicación en cuestion"	
@@ -50,10 +50,10 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
   * ^definition = "Rol que cumple un profesional en una organización."  
 
 * specialty MS
-* specialty ^short = "Definición de la especialidad médica según DEIS"
-* specialty ^definition = "Definición de la especialidad médica según DEIS, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta"
+* specialty ^short = "Definición de la especialidad"
+* specialty ^definition = "Definición de la especialidad, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta"
 * specialty from VSEspecialidadesCL (preferred)
-* specialty ^binding.description = "Códigos de Especialidad DEIS"
+* specialty ^binding.description = "Códigos de Especialidades"
 
 
 

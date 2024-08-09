@@ -9,7 +9,7 @@ Esta Guía sigue un formato especificado para **FHIR R4**, y se divide en varias
 <br>
 
 * [Home](index.html): Provee la introducción acerca de esta guía.
-* [Objetivos](Alcances-Objetivos.html): Describe los objetivos estratégicos de HL7, HL7 Internacional y el como esta guía se engancha con los objetivos estratégicos nacionales y organizacionales.
+* [Objetivos](Alcances-Objetivos.html): Describe los objetivos estratégicos de HL7, HL7 Internacional y el como esta guía se alinea con los objetivos estratégicos nacionales y organizacionales.
 * [Must Support](Notas-MS.html): Describe el uso del Must Support para los perfiles de esta guía.
 * [Generalidades](Aspectos-Generales.html): Se especifican algunos conceptos importantes para poder comprender la lectura de los artefactos con el fin de hacer uso de la guía con objetivos de implementación
 * Operaciones: Define las operaciones más usadas para el intercambo, manejo, consulta, actualización, etc. de Recursos Generados en un servidor.
