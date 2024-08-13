@@ -351,8 +351,13 @@ El Servidor Cl Core **DEBERÍA**:
   * referencePolicy[=].extension
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
     * valueCode = #SHOULD
-  * searchInclude[0] = "AuditEvent.agent"
+  * searchInclude[0] = "*"
   * searchInclude[0]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+  * searchInclude[+] = "AuditEvent.agent"
+  * searchInclude[+]
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #SHALL
@@ -2386,6 +2391,16 @@ El Servidor Cl Core **DEBERÍA**:
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #SHALL
+  * searchRevInclude[+] = "Observation:focus"
+  * searchRevInclude[=]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+  * searchRevInclude[+] = "Observation:performer"
+  * searchRevInclude[=]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
   * searchRevInclude[+] = "Organization:partof"
   * searchRevInclude[=]
     * extension
@@ -2674,6 +2689,26 @@ El Servidor Cl Core **DEBERÍA**:
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #SHALL
   * searchRevInclude[+] = "Immunization:patient"
+  * searchRevInclude[=]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+  * searchRevInclude[+] = "Observation:focus"
+  * searchRevInclude[=]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+  * searchRevInclude[+] = "Observation:patient"
+  * searchRevInclude[=]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+  * searchRevInclude[+] = "Observation:performer"
+  * searchRevInclude[=]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+  * searchRevInclude[+] = "Observation:subject"
   * searchRevInclude[=]
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
@@ -2989,6 +3024,16 @@ El Servidor Cl Core **DEBERÍA**:
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #SHALL
+  * searchRevInclude[+] = "Observation:focus"
+  * searchRevInclude[=]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+  * searchRevInclude[+] = "Observation:performer"
+  * searchRevInclude[=]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
   * searchRevInclude[+] = "Patient:general-practitioner"
   * searchRevInclude[=]
     * extension
@@ -3299,6 +3344,16 @@ El Servidor Cl Core **DEBERÍA**:
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #SHALL
+  * searchRevInclude[+] = "Observation:focus"
+  * searchRevInclude[=]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+  * searchRevInclude[+] = "Observation:performer"
+  * searchRevInclude[=]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
   * searchRevInclude[+] = "Patient:general-practitioner"
   * searchRevInclude[=]
     * extension
@@ -3496,6 +3551,11 @@ El Servidor Cl Core **DEBERÍA**:
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
       * valueCode = #SHALL
   * searchRevInclude[+] = "Condition:evidence-detail"
+  * searchRevInclude[=]
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+  * searchRevInclude[+] = "Observation:focus"
   * searchRevInclude[=]
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"

@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "aeca3dfb-9bdf-458a-80b0-f6c3cfad012a-144",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/aeca3dfb-9bdf-458a-80b0-f6c3cfad012a-144",
+  "id" : "09e2c5e1-b86a-473a-82b7-156f6f2349f5-144",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/09e2c5e1-b86a-473a-82b7-156f6f2349f5-144",
   "name" : "IntersectionVSCodMadurezAndVSCodMadurez",
   "title" : "Intersection of Códigos de grado de madurez del artefacto And Códigos de grado de madurez del artefacto",
   "status" : "active",
-  "date" : "2024-08-08T12:45:49-04:00",
+  "date" : "2024-08-13T08:05:45-04:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

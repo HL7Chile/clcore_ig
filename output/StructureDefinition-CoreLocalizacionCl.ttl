@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "LocalizacionCL"] ; # 
   fhir:title [ fhir:v "CL Localización"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-08-08T12:45:25-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-13T08:05:28-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;
@@ -29,7 +29,7 @@
        fhir:value [ fhir:v "chair@hl7chile.cl" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico"] ; # 
+  fhir:description [ fhir:v "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular una localización con una organización o espacio físico específico"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;

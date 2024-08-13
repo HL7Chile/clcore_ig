@@ -10,7 +10,7 @@
   "name" : "clcore",
   "title" : "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)",
   "status" : "active",
-  "date" : "2024-08-08T12:45:25-04:00",
+  "date" : "2024-08-13T08:05:28-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -817,7 +817,7 @@
         "reference" : "StructureDefinition/CoreLocalizacionCl"
       },
       "name" : "CL Localización",
-      "description" : "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico",
+      "description" : "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular una localización con una organización o espacio físico específico",
       "exampleBoolean" : false
     },
     {
@@ -889,7 +889,7 @@
         "reference" : "StructureDefinition/ProvenanceCl"
       },
       "name" : "CL Provenance",
-      "description" : "Este Perfil describe la forma de validación respecto a la procedencia de un recurso genrado durante un acto clínico.",
+      "description" : "Este Perfil describe la forma de validación respecto a la procedencia de un recurso generado durante un acto clínico.",
       "exampleBoolean" : false
     },
     {

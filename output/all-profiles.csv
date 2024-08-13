@@ -2642,7 +2642,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "CoreRolClinicoCl","PractitionerRole.practitioner","PractitionerRole.practitioner","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl]]}
-","Referencia al Prestador  especialidad","La referencia al prestador de salud, al cual se le quieren asignar funciones o actividades de especialidad.","","","","","","","","","",,,,,"",,,,"PractitionerRole.practitioner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Referencia al Prestador","La referencia al prestador de salud, al cual se le quieren asignar funciones o actividades de especialidad.","","","","","","","","","",,,,,"",,,,"PractitionerRole.practitioner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "CoreRolClinicoCl","PractitionerRole.practitioner.id","PractitionerRole.practitioner.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -2673,7 +2673,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Nombre del prestador de salud","Nombre completo del prestador de salud","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "CoreRolClinicoCl","PractitionerRole.organization","PractitionerRole.organization","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl]]}
-","Referencia a la organización donde el presador cumple roles","La referencia a la organización en donde el prestador individual cumple roles.","","","","","","","","","",,,,,"",,,,"PractitionerRole.organization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Referencia a la organización donde el prestador cumple roles","La referencia a la organización en donde el prestador individual cumple roles.","","","","","","","","","",,,,,"",,,,"PractitionerRole.organization",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "CoreRolClinicoCl","PractitionerRole.organization.id","PractitionerRole.organization.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -2707,10 +2707,10 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Rol que cumple un profesional en una organización","Rol que cumple un profesional en una organización.","A person may have more than one role.","Need to know what authority the practitioner has - what can they do?","","","","","","","",,"example","The role a person plays representing an organization.","http://hl7.org/fhir/ValueSet/practitioner-role","",,,,"PractitionerRole.code",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "CoreRolClinicoCl","PractitionerRole.specialty","PractitionerRole.specialty","","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
-","Definición de la especialidad médica según DEIS","Definición de la especialidad médica según DEIS, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta","","","","","","","","","",,"preferred","Códigos de Especialidad DEIS","https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesCL","",,,,"PractitionerRole.specialty",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Definición de la especialidad","Definición de la especialidad, en el decreto correspondiete. la tabla sigue siendo extensible ante futuros elementos agregados a esta","","","","","","","","","",,"preferred","Códigos de Especialidades","https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSEspecialidadesCL","",,,,"PractitionerRole.specialty",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "CoreRolClinicoCl","PractitionerRole.location","PractitionerRole.location","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreLocalizacionCl]]}
-","Referencia a la ubicación donde el presador cumple roles","La referencia a la ubicación en donde el prestador individual cumple roles.","","","","","","","","","",,,,,"",,,,"PractitionerRole.location",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Referencia a la ubicación donde el prestador cumple roles","La referencia a la ubicación en donde el prestador individual cumple roles.","","","","","","","","","",,,,,"",,,,"PractitionerRole.location",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "CoreRolClinicoCl","PractitionerRole.location.id","PractitionerRole.location.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""

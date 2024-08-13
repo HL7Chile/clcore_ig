@@ -3,7 +3,7 @@ clcore
 
 Generic: line 0, col 0, Warning - The html source has duplicate anchor Ids: CSCodigoslenguaje-es-CL (BUSINESSRULE)
 C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\AuditEvent-AuditEventEx.json: line 26, col 8, Info - Reference to experimental CodeSystem http://terminology.hl7.org/CodeSystem/extra-security-role-type|1.0.1 (BUSINESSRULE)
-C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.clcore.json: line 1, col 43710, Warning - !!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló (INVARIANT)
+C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\ImplementationGuide-hl7.fhir.cl.clcore.json: line 1, col 43701, Warning - !!La regla ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' falló (INVARIANT)
 C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-CodigoPaises.json: line 0, col 0, Warning - Review the extension type for CodigoPaises: extensions should not have a context of Element unless it's really intended that they can be used anywhere (BUSINESSRULE)
 C:\Users\franco.ulloa\Documents\sushi\clcore_ig\fsh-generated\resources\StructureDefinition-NombreComercial.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
 

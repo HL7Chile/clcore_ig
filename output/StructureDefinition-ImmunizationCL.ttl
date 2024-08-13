@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ImmunizationCL"] ; # 
   fhir:title [ fhir:v "CL Inmunización"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-08-08T12:45:25-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-13T08:05:28-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;

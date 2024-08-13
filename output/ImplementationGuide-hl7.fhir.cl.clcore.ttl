@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "clcore"] ; # 
   fhir:title [ fhir:v "Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-08-08T12:45:25-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-13T08:05:28-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Chile" ] ;
@@ -717,7 +717,7 @@
          fhir:reference [ fhir:v "StructureDefinition/CoreLocalizacionCl" ]
        ] ;
        fhir:name [ fhir:v "CL Localización" ] ;
-       fhir:description [ fhir:v "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular la localización especifica con una organización o espacio físico específico" ] ;
+       fhir:description [ fhir:v "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular una localización con una organización o espacio físico específico" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -789,7 +789,7 @@
          fhir:reference [ fhir:v "StructureDefinition/ProvenanceCl" ]
        ] ;
        fhir:name [ fhir:v "CL Provenance" ] ;
-       fhir:description [ fhir:v "Este Perfil describe la forma de validación respecto a la procedencia de un recurso genrado durante un acto clínico." ] ;
+       fhir:description [ fhir:v "Este Perfil describe la forma de validación respecto a la procedencia de un recurso generado durante un acto clínico." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

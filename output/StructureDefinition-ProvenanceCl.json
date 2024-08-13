@@ -10,7 +10,7 @@
   "name" : "ProvenanceCL",
   "title" : "CL Provenance",
   "status" : "active",
-  "date" : "2024-08-08T12:45:25-04:00",
+  "date" : "2024-08-13T08:05:28-04:00",
   "publisher" : "HL7 Chile",
   "contact" : [{
     "name" : "HL7 Chile",
@@ -23,7 +23,7 @@
       "value" : "chair@hl7chile.cl"
     }]
   }],
-  "description" : "Este Perfil describe la forma de validación respecto a la procedencia de un recurso genrado durante un acto clínico.",
+  "description" : "Este Perfil describe la forma de validación respecto a la procedencia de un recurso generado durante un acto clínico.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
