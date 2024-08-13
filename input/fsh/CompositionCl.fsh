@@ -47,7 +47,7 @@ Description: "De un formato genérico para documento clínico en Chile."
 //* encounter
 
 //* --- Author : referencia a un practitioner----
-* author only Reference(PrestadorCL or CoreRolClinicoCl or Device or PacienteCl or PrestadorCL or OrganizacionCL)
+* author only Reference(PrestadorCL or CoreRolClinicoCl or Device or PacienteCl or OrganizacionCL)
 * author MS
 * author ^short = "Quien Ha creado el documento"
 * author ^definition = "Identifica al responsable de los datos ingresados al documento."
