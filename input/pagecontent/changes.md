@@ -28,6 +28,9 @@
   - Códigos de Especialidades de CONACEM y CONACEO
   - Especialidad Odontológica
   - Especialidad Especialidad Farmacia
+  - Especialidad de Enfermería
+
+- Se modifica CSEspecialidadesDeisCL según decreto Supremo N° 30
 
 - Se cambia el VSEspecialidadesDeisCL a VSEspecialidadesCL para incluir aquellas que no están consideradas por el DEIS
 
