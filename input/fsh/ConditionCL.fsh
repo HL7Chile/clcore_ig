@@ -24,13 +24,13 @@ Description:    "Condicion o Diagnósticos de Pacientes"
 * subject only Reference(PacienteCl or Group)
 * subject MS
 * subject.reference MS
-* subject.identifier and subject.display MS
+// * subject.identifier and subject.display MS
 
 * subject ^short = "Paciente sobre al que corresponde la condición." 
 * subject ^definition = "Paciente sobre al que corresponde la condición." 
   * reference ^short = "Referencia al recurso del Paciente al cual se indica el diagnóstico o condicón"
-  * identifier ^short = "Identificador del paciente"
-  * display ^short = "Texto alternativo para el recurso"
+  // * identifier ^short = "Identificador del paciente"
+  // * display ^short = "Texto alternativo para el recurso"
 
 //----Code
 

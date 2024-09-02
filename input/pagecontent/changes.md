@@ -67,6 +67,7 @@
 
 - Perfil [CL Condición-Diagnóstico](StructureDefinition-CoreDiagnosticoCl.html)
   - Paso el verification Status a MS
+  - Se eliminan los MS de Condition.subject.display, y Condition.subject.identifier.
   - Ejemplo: [Ejemplo de Un Diagnóstico de hipertensión](Condition-DiagnosticoEj.html)
   - Ejemplo: [Ejemplo de Un Diagnóstico de Faringoamigdalitis](Condition-DiagnosticoEj2.html)
 
