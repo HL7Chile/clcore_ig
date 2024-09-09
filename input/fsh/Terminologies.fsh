@@ -1,3 +1,40 @@
+CodeSystem: CSClaseVacuna
+Id: CSClaseVacuna
+Title: "Códigos de clases de Vacuna"
+Description: "Códigos de clase de vacuna"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #programatica "Vacuna Programática"
+* #internacional "Vacuna Internacional"
+* #campaña "Vacunación Campaña"
+
+
+ValueSet: VSClaseVacuna
+Id: VSClaseVacuna
+Title: "Códigos de clases de Vacuna"
+Description: "Códigos de clase de vacuna"
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-07-25T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement" 
+
+* ^experimental = false //dependera del uso que le den al codesystem
+
+* codes from system CSClaseVacuna
+
 ValueSet: VSCodMadurez
 Id: VSCodMadurez
 Title: "Códigos de grado de madurez del artefacto"

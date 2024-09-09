@@ -9,9 +9,16 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * ^publisher = "HL7 Chile"
 
 //* extension contains NombreCampanaCL named campana 0..1
+* extension contains 
+            ClaseVacuna named ClaseVacuna 0..1 MS and
+            Campana named Campana 0..1 MS and
+            Dosis named Dosis 0..1 MS and
+            ProxFecha named ProxFecha 0..1 MS
+            
+
 
 * identifier MS
-* identifier ^short = "Identificador(es) por los que se conoce este registro de Inmunización"
+* identifier ^short = "Identificador(es) por los que se conoce este registro de Inmunización. En el caso del sistema público correspondería al ID del Registro de Inmunización"
 * identifier ^definition = "Es el número de identificación del evento donde a un paciente se le administra una vacuna o registro de inmunización" 
 
 * patient MS
@@ -36,6 +43,8 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * vaccineCode ^short = "Vacuna que se administró o se iba a administrar"
 * vaccineCode ^definition = "Vacuna que se administró o se iba a administrar. Se proporciona valores que utilizan en el RNI (Registro Nacional de Inmunizaciones)"
 * vaccineCode from VSTiposVacunasCL (example)
+* vaccineCode.text MS
+  * ^short = "Nombre normalizado a nivel nacional de la vacuna"
 //* vaccineCode.extension ^short = "Nombre de vacuna administrada"
 //* vaccineCode.extension contains TiposVacunaCL named tipov 1..1 
 
@@ -71,18 +80,38 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * statusReason ^short = "Razón de no realizarse la inmunización"
 * statusReason ^definition = "Indica la razón por la que no se realizó el evento de inmunización"
 * statusReason from VSRazonNOTinm (example)
+  * text MS
+    * ^short = "Descripción de la razon por la cual noi se produjo la inmunizción"  
 // * statusReason.extension ^short = "Motivo de no realizar la inmunización"
 // * statusReason.extension contains RazonNOTinmunizacionCL named statusReason 0..1
+* reportOrigin MS
+  * ^short = "Fuente de registro"
+  * ^definition = "También pude ser considerado como registro secundario"
 
 * reaction MS
 * reaction ^short = "Detalles de una reacción que proviene de la inmunización"
-* reaction.date ^short = "Cuándo comenzó la reacción"
-* reaction.date ^definition = "Fecha de reacción a la inmunización"
+  * date ^short = "Cuándo comenzó la reacción"
+  * date ^definition = "Fecha de reacción a la inmunización"
+  * reported ^short = "Indica si se reporto reacción adversa a la vacuna"
+  * reported ^definition = "Reporte de reacción adversa a la vacuna"
 
 * location 0..1 MS
 * location ^short = "Dónde se produjo la inmunización"
 * location ^definition = "El lugar donde se produjo la administración de la vacuna"
 * location only Reference(LocalizacionCL)
+
+* programEligibility 0.. MS
+  * ^short = "Corresponde al Id del criterio de elegibilidad de la vacuna administrada"
+* programEligibility from http://hl7.org/fhir/ValueSet/immunization-program-eligibility (example)
+  * coding.code 0.. MS
+    * ^short = "Código identificador del criterio"
+  * coding.display 0.. MS
+    * ^short = "Descripción del programa asociado al identificador del criterio"
+
+  
+  
+
+
 
 // * location.extension ^short = "Extensión para los Sistemas de Salud, por ejemplo: S.S Viña del mar Quillota"
 // * location.extension contains ServicioSaludCL named ssalud 0..1 

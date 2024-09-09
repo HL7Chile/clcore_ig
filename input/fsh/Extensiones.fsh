@@ -292,5 +292,38 @@ Context: HumanName.family
 * value[x] only string
 * valueString ^short = "Segundo apellido de la persona"
 
+Extension: ClaseVacuna
+Id: ClaseVacuna
+Title: "Clase de Vacuna"
+Description: "Corresponde a un Id creado por el equipo de gestión de datos del Deis"
+Context: ImmunizationCL
+
+* value[x] only Coding
+* valueCoding ^short = "Código clase de Vacuna"
+
+* valueCoding from VSClaseVacuna (required)
 
 
+Extension: Campana
+Id: Campana
+Title: "Nombre Campaña de Vacunación"
+Description: "Nombre Campaña de Vacunación"
+Context: ImmunizationCL
+* value[x] only string
+* valueString ^short = "Nombre campaña inmunización"
+
+Extension: Dosis
+Id: Dosis
+Title: "Dosis Administrada"
+Description: "Definición de la dosis administrada"
+Context: ImmunizationCL
+* value[x] only string
+* valueString ^short = "Dosis administrada"
+
+Extension: ProxFecha
+Id: ProxFecha
+Title: "Proxima fecha de vacunación"
+Description: "Fecha de la próxima fecha de vacunación si corresponde"
+Context: ImmunizationCL
+* value[x] only date
+* valueDate ^short = "Fecha de próxima vacunación"

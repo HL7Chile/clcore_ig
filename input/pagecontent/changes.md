@@ -1,3 +1,17 @@
+### Versión 1.9.1
+- Perfil [InmunizacionCL](StructureDefinition-CoreInmunizacionCl.html)
+  - Se agregan a la diferencial los siguientes elementos:
+    - vaccineCode.text
+    - programEligibility
+    - reaction
+    - reportOrigin
+  - Se agregan 4 extensiones:
+    - [ClaseVacuna](StructureDefinition-ClaseVacuna.html)
+    - [Campaña](StructureDefinition-Campana.html)
+    - [Dosis](StructureDefinition-Dosis.html)
+    - [ProximaVacuna](StructureDefinition-ProxVacuna.html)
+
+
 ### Versión 1.9.0
 - Perfil [MedicamentoCL](StructureDefinition-CoreMedicamentoCl.html)
   - Se elimina los Slice de **DescriptionID** y **ConceptID**.
