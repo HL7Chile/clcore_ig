@@ -5,7 +5,7 @@ Title: "CL Address"
 Description: "Variable dirección"
 * ^version = "1.0.0"
 * . ^comment = "Variable dirección"
-* . ^short = "Tipo de dato para agragar la dirección de un paciente"
+* . ^short = "Tipo de dato para agregar la dirección"
 * extension contains http://hl7.org/fhir/StructureDefinition/geolocation named Geolocalizacion 0..1 MS
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
