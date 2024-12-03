@@ -14,9 +14,7 @@ Description: "Definición de un evento de inmunización para las necesidades de 
             Campana named Campana 0..1 MS and
             Dosis named Dosis 0..1 MS and
             ProxFecha named ProxFecha 0..1 MS
-            
-
-
+          
 * identifier MS
 * identifier ^short = "Identificador(es) por los que se conoce este registro de Inmunización. En el caso del sistema público correspondería al ID del Registro de Inmunización"
 * identifier ^definition = "Es el número de identificación del evento donde a un paciente se le administra una vacuna o registro de inmunización" 

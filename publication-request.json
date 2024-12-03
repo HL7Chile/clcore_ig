@@ -7,9 +7,6 @@
     "status": "draft",
     "sequence": "STU2",
     "first": false,
-    "category": "National Base",
-    "title": "Chile Core",
-    "introduction": "Versiones publicadas guias core Chile",
-    "ci-build": "http://build.fhir.org/ig/HL7Chile/clcore",
+    "mode": "working",
     "fhirversion": "4.0.1"
 }

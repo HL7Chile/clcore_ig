@@ -5,7 +5,7 @@
   - extension nacionalidad 0..1 -> 0..*
 
 ### Versión 1.9.1
-- Perfil [InmunizacionCL](StructureDefinition-CoreInmunizacionCl.html)
+- Perfil [InmunizacionCL](StructureDefinition-ImmunizationCL.html)
   - Se agregan a la diferencial los siguientes elementos:
     - vaccineCode.text
     - programEligibility
@@ -15,7 +15,7 @@
     - [ClaseVacuna](StructureDefinition-ClaseVacuna.html)
     - [Campaña](StructureDefinition-Campana.html)
     - [Dosis](StructureDefinition-Dosis.html)
-    - [ProximaVacuna](StructureDefinition-ProxVacuna.html)
+    - [ProxFecha](StructureDefinition-ProxFecha.html)
 
 
 ### Versión 1.9.0

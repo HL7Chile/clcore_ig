@@ -27,7 +27,7 @@ Cada perfil define los elementos obligatorios mínimos, extensiones y requerimie
 
 Tambien se presenta una tabla jerárquica con una vista lógica del contenido como *Snapshot* y *Differential* . Para cada perfil también expresamos el conjunto de interacciones FHIR Restful asociadas (búsquedas, operaciones u otras interacciones)
 
-* [CL Alergias e Intolerancias](StructureDefinition-CoreAletgiaIntCl.html)
+* [CL Alergias e Intolerancias](StructureDefinition-CoreAlergiaIntCl.html)
 * [CL Auditoría](StructureDefinition-AuditEventCl.html)
 * [CL Documento](StructureDefinition-DocumentoCl.html)
 * [CL Diagnóstico-Condición](StructureDefinition-CoreDiagnosticoCl.html)
