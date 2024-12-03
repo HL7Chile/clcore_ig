@@ -1,7 +1,7 @@
 Instance : AllergyIntoleranceEj
 Title : "Ejemplo de Recurso AllergyIntolerance Core"
 Description: "AllergyIntolerance ficticio"
-InstanceOf : CoreAletgiaIntCl
+InstanceOf : CoreAlergiaIntCl
 Usage : #example
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active

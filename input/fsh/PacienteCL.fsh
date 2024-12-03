@@ -5,7 +5,7 @@ Title:          "CL Paciente"
 Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"
 
 
-* ^version = "1.9.0"
+* ^version = "1.9.2"
 * ^status = #active
 * ^publisher = "HL7 Chile"
 
@@ -16,7 +16,7 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 
 * extension contains IdentidadDeGenero named IdentidadDeGenero 0..1 MS
 * extension contains SexoBiologico named SexoBiologico 0..1 MS
-* extension contains CodigoPaises named nacionalidad 0..1 MS
+* extension contains CodigoPaises named nacionalidad 0..* MS
 //* extension contains Nacionalidad named nacionalidad 0..1 MS
 
 * identifier ^short = "Listados de Id de Paciente. De poseer una CI con RUN vigente, este DEBE ser ingresado"
@@ -131,8 +131,7 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
   * extension[IdContacto] 0..* MS
   * extension[IdContacto] ^short = "Identificación del Contacto"
   * extension[IdContacto] ^definition = "Extensión para declarar identificación del contacto y la procedencia de esta"
-  * relationship ^short = "Relación entre el contacto y el paciente"
-  * relationship ^short = "Relación legal o de paretezco entre el contacto y el paciente"
+  * relationship ^short = "Relación legal o de parentesco entre el contacto y el paciente"
   * relationship from 	http://hl7.org/fhir/ValueSet/patient-contactrelationship
   * relationship ^binding.description = "VS FHIR para relación del contacto con el Paciente"
 

@@ -2,7 +2,7 @@ Profile:        LocalizacionCL
 Parent:         Location
 Id:             CoreLocalizacionCl
 Title:          "CL Localización"
-Description:    "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vinlcular una localización con una organización o espacio físico específico"
+Description:    "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vincular una localización con una organización o espacio físico específico"
 
 * ^version = "1.9.0"
 * ^status = #active
@@ -43,7 +43,7 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 
 * position 0..1
 * position and position.longitude and position.latitude MS
-* position ^short = "Geoposisionamiento del objeto, infraestructura o evento en longitud y latitud"
+* position ^short = "Geoposicionamiento del objeto, infraestructura o evento en longitud y latitud"
 * position ^definition = "La localización geográfica absoluta de la Ubicación, expresada utilizando el datum WGS84 (Este es el mismo sistema de coordenadas utilizado en KML)"
 * position.longitude ^short = "Longitud valor decimal en WGS84 datum (World Geodetic System 1984)"
 * position.longitude ^definition = "Longitud. El dominio del valor y la interpretación son los mismos que para el texto del elemento longitud en KML"
@@ -53,7 +53,7 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 
 * managingOrganization  MS
 * managingOrganization only Reference(CoreOrganizacionCl)
-* managingOrganization ^short = "Organización a la cual la ubicación pertenece, si es el caso. Esta relación se hace en base a una referencia a una Orgaización"
+* managingOrganization ^short = "Organización a la cual la ubicación pertenece, si es el caso. Esta relación se hace en base a una referencia a una Organización"
 * managingOrganization ^definition = "La organización responsable de la localización."
 * managingOrganization ^comment = "Se puede usar para indicar la organzación jerárquica superior. Siempre debe existir una Organizacion jerarquicamente sobre la localizacion y en caso de no existir esta jerquia, se debe crear la organizacion, con los mismos datos del location."
 

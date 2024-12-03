@@ -1,6 +1,6 @@
 Profile:        AlergiaIntCL
 Parent:         AllergyIntolerance
-Id:             CoreAletgiaIntCl
+Id:             CoreAlergiaIntCl
 Title:          "CL Alergias e Intolerancias"
 Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades para describir una Alergia o alguna Intolerancia definida en un paciente."
 

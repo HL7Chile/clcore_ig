@@ -8,7 +8,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * active ^definition = "Indicador si una organización sigue vigente en su rol dentro del sistema de salud"
 
 * identifier and identifier.system and identifier.value MS
-* identifier ^short = "Identificador de organizacion de salud (DEIS, RUT, Códigos para cietos tipos de Recintos, etc.)"
+* identifier ^short = "Identificador de organización de salud (DEIS, RUT, Códigos para ciertos tipos de Recintos, etc.)"
 * identifier ^definition = "Identificador universal de la organización en Chile"
 * identifier.system ^short = "indicador del sistema de indentificación usado pora determinar el valor del identificador"
 * identifier.system ^definition = "Se debe aun definir un ValueSet para estos casos"
@@ -29,7 +29,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * telecom.system ^definition = "Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto."
 * telecom.system from  http://hl7.org/fhir/ValueSet/contact-point-system (required)
 * telecom.system ^binding.description = "VS HL7 FHIR tipos diferentes de medios de contacto" 
-* telecom.value ^short = "Dato del contato de la ubicación descrita"
+* telecom.value ^short = "Dato del contacto de la ubicación descrita"
 * telecom.value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email de Organiación"
 
 * address MS
@@ -57,5 +57,5 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * contact.telecom.system ^short = "phone | fax | email | pager | url | sms | other"
 * contact.telecom.system ^definition = "Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto."
 * contact.telecom.system from  http://hl7.org/fhir/ValueSet/contact-point-system (required)
-* contact.telecom.value ^short = "Dato del contato del paciente descrito"
+* contact.telecom.value ^short = "Dato del contacto de la Organización"
 * contact.telecom.value ^definition = "Valor del contacto como por ejemplo el numero de telefono fijo o de móvil o el email del Paciente"

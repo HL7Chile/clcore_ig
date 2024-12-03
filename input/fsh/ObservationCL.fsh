@@ -18,7 +18,7 @@ Description: "Perfil para definir un mínimo para cualquier observación."
 * code MS
   * ^short = "Tipo de observación (code/type)"
 * code from http://hl7.org/fhir/ValueSet/observation-codes (example)
-  * ^binding.description = "Códigos de identficación simple para el nombre de una observación"	
+  * ^binding.description = "Códigos de identificación simple para el nombre de una observación"	
 * subject MS
   * ^short = "Sobre Quien o Que se esta realizando la observación"
 * subject only Reference(CorePacienteCl or Group or Device or CoreLocalizacionCl)
@@ -36,7 +36,7 @@ Description: "Perfil para definir un mínimo para cualquier observación."
   * ^short = "Alta, baja, normal, etc"
   * ^definition = "Interpretación del valor de la observación"
 * interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)
-  * ^binding.description = "Códigos de identificción para la interpretación de la observación"
+  * ^binding.description = "Códigos de identificación para la interpretación de la observación"
 * note MS
   * ^short = "Comentarios sobre la observación"
 * specimen MS
@@ -49,11 +49,11 @@ Description: "Perfil para definir un mínimo para cualquier observación."
   * code MS
     * ^short = "Tipo de componente de la observación (code/type)"    
   * code from http://hl7.org/fhir/ValueSet/observation-codes (example)
-    * ^binding.description = "Códigos de identficación simple para el nombre de una observación"	
+    * ^binding.description = "Códigos de identificación simple para el nombre de una observación"	
   * value[x] MS
     * ^short = "Actual Resultado del componente"
   * interpretation MS
     * ^short = "Alta, baja, normal, etc"
     * ^definition = "Interpretación del valor del componente de la observación"
   * interpretation from http://hl7.org/fhir/ValueSet/observation-interpretation (extensible)
-    * ^binding.description = "Códigos de identificción para la interpretación de la observación"
+    * ^binding.description = "Códigos de identificación para la interpretación de la observación"

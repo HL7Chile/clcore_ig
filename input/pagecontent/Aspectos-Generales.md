@@ -87,27 +87,11 @@ Lo anterior es aplicable para un recurso ya creado el cual se alamacena con una 
 
 2.  Los servidores **DEBEN** soportar buscar un recurso Patient por un identificador como el numero RUN de la Cédula de Identidad Nacional, utilizando el parámetro de búsqueda **[`identifier`]:
 
-    `GET [base]/Patient?identifier={system|}[code]`
+    `GET [base]/Patient?identifier={system}[value]`
 
     Ejemplo:
 
-    1.  <table>
-
-        <tbody>
-
-        <tr>
-
-        <td>GET [base]/Patient?identifier=http://minsal.cl/API/Paciente</td>
-
-        <td>|99999999</td>
-
-        </tr>
-
-        </tbody>
-
-        </table>
-
-    
+    1. GET [base]/Patient?identifier=http://minsal.cl/API/Paciente|99999999
 
 3.  Ejemplos de búsquedas por otros parámetros
 
@@ -146,7 +130,7 @@ De esta forma nos encontramos con varias situaciones
 
 ~~~
  
- {0..1} : El elemento se Puede no ser descrito en el recurso (valor 0 inicial), pero de usarse Debe ser desarrollado solo una vez (1 final)
+ {0..1}: El elemento puede no estar presente en el recurso (valor 0 inicial), pero si se utiliza, debe ser desarrollado solo una vez (valor 1 final).
  {1..1} : El elemento es obligatorio pero solo se puede desplegar 1 sola vez
  {0..3} : Elemento no obligatorio que se puede repetir hasta 3 veces
  {1..3} : Elemento obligatorio que puede repetirse hasta 3 veces

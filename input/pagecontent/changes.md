@@ -1,3 +1,9 @@
+### Versión 1.9.2
+
+- Correcciones ortográficas
+- Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
+  - extension nacionalidad 0..1 -> 0..*
+
 ### Versión 1.9.1
 - Perfil [InmunizacionCL](StructureDefinition-CoreInmunizacionCl.html)
   - Se agregan a la diferencial los siguientes elementos:

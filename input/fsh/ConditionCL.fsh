@@ -28,7 +28,7 @@ Description:    "Condicion o Diagnósticos de Pacientes"
 
 * subject ^short = "Paciente sobre al que corresponde la condición." 
 * subject ^definition = "Paciente sobre al que corresponde la condición." 
-  * reference ^short = "Referencia al recurso del Paciente al cual se indica el diagnóstico o condicón"
+  * reference ^short = "Referencia al recurso del Paciente al cual se indica el diagnóstico o condición"
   // * identifier ^short = "Identificador del paciente"
   // * display ^short = "Texto alternativo para el recurso"
 
@@ -41,8 +41,8 @@ Description:    "Condicion o Diagnósticos de Pacientes"
 * code ^comment = "Se agregan los códigos no conocido o no presente"
 
 * code from VSDiagnosticosSCT (example)
-* code ^short = "Códigos de SOMED-CT y adicionales de ausente o desconocido"
-* code ^binding.description = "Diagósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido"
+* code ^short = "Códigos de SNOMED-CT y adicionales de ausente o desconocido"
+* code ^binding.description = "Diagnósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido"
 
 * onset[x] MS
 * onset[x] ^short = "Fecha para determinación Diagnóstica a definir entre fecha única o período"
