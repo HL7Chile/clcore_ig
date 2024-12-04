@@ -2,7 +2,8 @@
 
 - Correcciones ortográficas
 - Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
-  - extension nacionalidad 0..1 -> 0..*
+  - extension nacionalidad 0..1 -> 0..*      
+- Se corrige error ortográfico en la url del perfil [CL Alergias e Intolerancias](StructureDefinition-CoreAlergiaIntCl.html)
 
 ### Versión 1.9.1
 - Perfil [InmunizacionCL](StructureDefinition-ImmunizationCL.html)
