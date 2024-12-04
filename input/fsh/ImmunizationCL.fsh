@@ -66,7 +66,7 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * occurrenceString ^short = "Momento de la administración"
 
 * recorded MS
-* recorded ^short = "Cuando se realizo el regstro del la inmunización"
+* recorded ^short = "Cuando realizó el registro de la inmunización"
 * recorded ^definition = "La fecha en que se registró por primera vez la ocurrencia de la inmunización, potencialmente significativamente después de la ocurrencia del evento"
 
 * status MS
@@ -79,7 +79,7 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * statusReason ^definition = "Indica la razón por la que no se realizó el evento de inmunización"
 * statusReason from VSRazonNOTinm (example)
   * text MS
-    * ^short = "Descripción de la razon por la cual noi se produjo la inmunizción"  
+    * ^short = "Descripción de la razón por la cual no se produjo la inmunización"  
 // * statusReason.extension ^short = "Motivo de no realizar la inmunización"
 // * statusReason.extension contains RazonNOTinmunizacionCL named statusReason 0..1
 * reportOrigin MS
@@ -90,7 +90,7 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * reaction ^short = "Detalles de una reacción que proviene de la inmunización"
   * date ^short = "Cuándo comenzó la reacción"
   * date ^definition = "Fecha de reacción a la inmunización"
-  * reported ^short = "Indica si se reporto reacción adversa a la vacuna"
+  * reported ^short = "Indica si se reportó reacción adversa a la vacuna"
   * reported ^definition = "Reporte de reacción adversa a la vacuna"
 
 * location 0..1 MS

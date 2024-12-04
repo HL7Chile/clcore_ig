@@ -85,7 +85,7 @@ Los Métodos y los parámetros para la consulta de recursos se describen a conti
 
 Lo anterior es aplicable para un recurso ya creado el cual se almacena con una identificación generada en ese momento
 
-2.  Los servidores **DEBEN** soportar buscar un recurso Patient por un identificador como el numero RUN de la Cédula de Identidad Nacional, utilizando el parámetro de búsqueda **[`identifier`]:
+2.  Los servidores **DEBEN** soportar buscar un recurso Patient por un identificador como el número RUN de la Cédula de Identidad Nacional, utilizando el parámetro de búsqueda **[`identifier`]:
 
     `GET [base]/Patient?identifier={system}[value]`
 

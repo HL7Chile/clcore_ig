@@ -20,7 +20,7 @@ Description: "Perfil para definir un mínimo para cualquier observación."
 * code from http://hl7.org/fhir/ValueSet/observation-codes (example)
   * ^binding.description = "Códigos de identificación simple para el nombre de una observación"	
 * subject MS
-  * ^short = "Sobre Quien o Que se esta realizando la observación"
+  * ^short = "Sobre Quien o Que se está realizando la observación"
 * subject only Reference(CorePacienteCl or Group or Device or CoreLocalizacionCl)
 * encounter MS
   * ^short = "Evento clínico durante el cual se hizo esta observación"

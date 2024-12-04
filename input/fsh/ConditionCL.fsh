@@ -2,7 +2,7 @@ Profile:        DiagnosticoCl
 Parent:         Condition
 Id:             CoreDiagnosticoCl
 Title:          "CL Condición-Diagnóstico"
-Description:    "Condicion o Diagnósticos de Pacientes"
+Description:    "Condición o Diagnósticos de Pacientes"
 
 * ^version = "1.9.0"
 * ^status = #active

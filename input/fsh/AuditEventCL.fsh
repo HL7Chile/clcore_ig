@@ -4,9 +4,9 @@ Profile: AuditEventCl
 Parent: AuditEvent
 Id: AuditEventCl
 Title: "CL Auditoria"
-Description: "Perfil para genererar un recurso que permita desarrollar auditoría de las transacciones realizadas"
+Description: "Perfil para generar un recurso que permita desarrollar auditoría de las transacciones realizadas"
 
-* ^version = "1.9.1"
+* ^version = "1.9.2"
 * ^status = #active
 * ^publisher = "HL7 Chile"
 
@@ -17,9 +17,9 @@ Description: "Perfil para genererar un recurso que permita desarrollar auditorí
 * type ^binding.description = "Eventos de auditoría descritos en FHIR para DICOM"
 
 * subtype MS
-* subtype ^short = "Especificacion mas detallada del evento"
+* subtype ^short = "Especificación más detallada del evento"
 * subtype.system ^short = "Sistema de Códigos"
-* subtype.system ^definition = "Sistema de ejemplo de códigos que describen con mas detalle el evento"
+* subtype.system ^definition = "Sistema de ejemplo de códigos que describen con más detalle el evento"
 * subtype from http://hl7.org/fhir/ValueSet/audit-event-sub-type (extensible)
 * subtype ^binding.description = "Códigos de desarrollados para DICOM"
 

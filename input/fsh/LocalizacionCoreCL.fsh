@@ -2,7 +2,7 @@ Profile:        LocalizacionCL
 Parent:         Location
 Id:             CoreLocalizacionCl
 Title:          "CL Localización"
-Description:    "Este perfil determina la ubicación especifica para un evento, objeto o Infraestructura específica. Este perfil permite vincular una localización con una organización o espacio físico específico"
+Description:    "Este perfil determina la ubicación específica para un evento, objeto o Infraestructura específica. Este perfil permite vincular una localización con una organización o espacio físico específico"
 
 * ^version = "1.9.0"
 * ^status = #active
@@ -10,7 +10,7 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 //Identifier
 * identifier and identifier.system and identifier.value MS 
 * identifier 0..* 
-  * ^short = "Corresponde a un numero de identificación de la locación indicada"
+  * ^short = "Corresponde a un número de identificación de la locación indicada"
   * ^definition = "Es el número de identificación la localización de Recinto, Edificio, ubicación, etc"
 
 
@@ -22,20 +22,20 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 
 * name and alias MS
 
-  * ^short = "Nombre oficial de la localizacion"
-  * ^definition = "Nombre de la localizacion, ya sea del edificio, del la zona gegráfica como un parque o de un sector específico llamado de cierta forma" 
+  * ^short = "Nombre oficial de la localización"
+  * ^definition = "Nombre de la localización, ya sea del edificio, de la zona geográfica como un parque o de un sector específico llamado de cierta forma" 
 
 * alias ^short = "Nombre de fantasía de la localización"
 * alias ^definition = "Nombre no oficial del sector, que puede ser identificado de manera polular para contar con una referencia de la comunidad"
 
 * type and type.coding.code MS
 * type ^short = "Tipo de la localización, según V3 Value SetServiceDeliveryLocationRoleType (Extensible)"
-* type ^definition = "Indica el tipo o función que se ejecuta en la locacalización"
+* type ^definition = "Indica el tipo o función que se ejecuta en la localización"
 
 
 * telecom MS
 * telecom ^short = "Detalles de contacto de la ubicación"
-* telecom ^definition = "Detalles de contacto para la ubicación comunmente el o los mas usados (Ej: Teléfono fijo, móvil, email, etc.)"
+* telecom ^definition = "Detalles de contacto para la ubicación comúnmente el o los mas usados (Ej: Teléfono fijo, móvil, email, etc.)"
 
 
 * address MS
@@ -55,11 +55,11 @@ Description:    "Este perfil determina la ubicación especifica para un evento, 
 * managingOrganization only Reference(CoreOrganizacionCl)
 * managingOrganization ^short = "Organización a la cual la ubicación pertenece, si es el caso. Esta relación se hace en base a una referencia a una Organización"
 * managingOrganization ^definition = "La organización responsable de la localización."
-* managingOrganization ^comment = "Se puede usar para indicar la organzación jerárquica superior. Siempre debe existir una Organizacion jerarquicamente sobre la localizacion y en caso de no existir esta jerquia, se debe crear la organizacion, con los mismos datos del location."
+* managingOrganization ^comment = "Se puede usar para indicar la Organización jerárquica superior. Siempre debe existir una Organización jerarquicamente sobre la localización y en caso de no existir esta jerquia, se debe crear la Organización, con los mismos datos del location."
 
 
 * hoursOfOperation MS
-* hoursOfOperation ^short = "Horario de atención de la localizacion."
+* hoursOfOperation ^short = "Horario de atención de la localización."
 * hoursOfOperation ^definition = "¿Qué días/horas de la semana suele estar abierto este local?."
 
 * availabilityExceptions MS

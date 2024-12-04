@@ -1,8 +1,8 @@
 /*Por problemas en más de un servidor las extensiones deben utilizar el recurso base en los contextos*/
 Extension: IdentidadDeGenero
 Id: IdentidadDeGenero
-Title: "Identidad De Genero"
-Description: "Identidad De Genero"
+Title: "Identidad De Género"
+Description: "Identidad De Género"
 Context: Patient, Practitioner
 //Context: Patient, RelatedPerson, Person, Practitioner, FamilyMemberHistory
 // * ^context[0].type = #element
@@ -10,7 +10,7 @@ Context: Patient, Practitioner
 // * ^context[+].type = #element
 // * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner"
 * value[x] only CodeableConcept
-* valueCodeableConcept ^short = "Identidad De Genero"
+* valueCodeableConcept ^short = "Identidad De Género"
 * valueCodeableConcept from  VSIdentidaddeGenero
 
 Extension: SexoBiologico
@@ -77,8 +77,8 @@ Context: CoreMedicamentoCl
 
 Extension:   PaisDireccion
 Id:          CodigoPaises
-Title:       "Codigo de Paises"
-Description: "Esta extensión incluye códigos de paises"
+Title:       "Código de Países"
+Description: "Esta extensión incluye códigos de países"
 //Context: Address.country
 * value[x] only CodeableConcept
 * value[x] ^short = "Código del País"

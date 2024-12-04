@@ -14,7 +14,7 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 
 //Registro
 * recorded MS
-* recorded ^short = "Cuando se desarrollo el envío o actualización del Recurso" 
+* recorded ^short = "Cuando se desarrolló el envío o actualización del Recurso" 
 * recorded ^definition = "Instancia de tiempo en que fue notificado el cambio"
 
 // ubicación
@@ -41,7 +41,7 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 * agent.type.coding from http://hl7.org/fhir/ValueSet/provenance-agent-type (extensible)
 * agent.type.coding ^binding.description = "VS HL7 FHIR, tipo de agente"
 * agent.type ^short = "Referencia a lo que ejecuta el actor"
-* agent.type ^definition = "participacion del actor, que rol cumple"
+* agent.type ^definition = "participación del actor, que rol cumple"
 
 * agent.role 0..1 MS
 * agent.role.coding from http://hl7.org/fhir/ValueSet/security-role-type (example)
@@ -53,7 +53,7 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 * agent.who  only Reference(CorePrestadorCl or CoreRolClinicoCl or RelatedPerson or CorePacienteCl or Device or CoreOrganizacionCl)
 * agent.who ^short = "Quien emite el recurso"
 * agent.who ^definition = "Definición mediate la id de un recurso al emisor de receta"
-* agent.who.reference ^short = "Referencia al misor del recurso"
+* agent.who.reference ^short = "Referencia al emisor del recurso"
 * agent.who.reference ^definition = "Recurso que indica al practitioner que genera el recurso a validar"
 
 
@@ -68,8 +68,8 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 
 
 * signature.when MS
-* signature.when ^short = "Hora y Fecha de cuando se firmó la validacion"
-* signature.when ^definition = "Hora y Fecha de cuando se firmó la validacion"
+* signature.when ^short = "Hora y Fecha de cuando se firmó la validación"
+* signature.when ^definition = "Hora y Fecha de cuando se firmó la validación"
 
 * signature.who MS
 * signature.who only Reference(CorePrestadorCl or CoreRolClinicoCl or RelatedPerson or CorePacienteCl or Device or CoreOrganizacionCl)

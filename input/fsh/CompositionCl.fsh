@@ -4,14 +4,14 @@ Id: DocumentoCl
 Title: "CL Documento"
 Description: "De un formato genérico para documento clínico en Chile."
 
-* ^version = "1.9.0"
+* ^version = "1.9.2"
 * ^status = #active
 * ^publisher = "HL7 Chile"
 //* text MS
 //* identifier MS
 
 * identifier 0..1 MS
-* identifier ^short = "Identificador local para recurso de documeto que puede ser distinto para cada versión del mismo"
+* identifier ^short = "Identificador local para recurso de documento que puede ser distinto para cada versión del mismo"
 * identifier ^definition = "Identificador para el recurso que contiene documento, puede ser usado de manera local. Este idetificador es independiente de la versión del documento"
 * status MS
 * status ^short = "Estado, valores posibles: preliminary | final | amended | entered-in-error"
@@ -30,13 +30,13 @@ Description: "De un formato genérico para documento clínico en Chile."
 //* subject only Reference(PacienteCl)
 * subject MS
 * subject ^definition = "Recurso sobre el cual se ha generado este documento."
-* subject ^short = "Recurso sobre el cual se ha generado este documento. Es deseable que el recurso cumpla con un perfil Chileno."
+* subject ^short = "Recurso sobre el cual se ha generado este documento. Es deseable que el recurso cumpla con un perfil chileno."
 
 
 * encounter 0..1 
 * encounter only Reference(EncounterCL)
 * encounter MS
-* encounter ^definition = "Contexto en el cual se generó  el documento."
+* encounter ^definition = "Contexto en el cual se generó el documento."
 * encounter ^short = "Contexto asistencial en el cual se generó Documento."
 
 
