@@ -8,6 +8,5 @@
     "sequence": "STU2",
     "first": false,
     "mode": "milestone",
-    "fhirversion": "4.0.1",
-    "ci-build": "https://build.fhir.org/ig/HL7Chile/clcore_ig/"
+    "fhirversion": "4.0.1"
 }
