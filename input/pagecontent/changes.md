@@ -72,7 +72,7 @@
   - Se creo ejemplo [Ejemplo Organización Prestadora de Salud](Organization-OrganizacionClEjemplo1.html)
 
 - Perfil [PrestadorCL](StructureDefinition-CorePrestadorCl.html)
-  - Se corrije los identifier.type según el code nuevo correspondiente del codesystem
+  - Se corrige los identifier.type según el code nuevo correspondiente del codesystem
   - Se genera Ejemplo [Ejemplo de un profecional de salud](Practitioner-EjemploPrestadorCL.html)
   - Se genera Ejemplo [Ejemplo de Recurso Prestador 2 como base para un Core Nacional](Practitioner-EjemploPrestadorCL2.html)
 

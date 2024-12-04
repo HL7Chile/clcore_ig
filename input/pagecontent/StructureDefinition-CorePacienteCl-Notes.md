@@ -1,7 +1,7 @@
 #### Notas de Implementación
 
 ##### Search Parameters Mandatorios
-Se describe abajo un resumen de las interacciones de un Server RESTful FHIR con este perfil, como lo son los parámetors de búsqueda y el soporte para este perfil de uso nacional.
+Se describe abajo un resumen de las interacciones de un Server RESTful FHIR con este perfil, como lo son los parámetros de búsqueda y el soporte para este perfil de uso nacional.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}

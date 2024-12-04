@@ -29,13 +29,14 @@ Define los códigos de sistemas para uso terminológico en esta Guía
 | [Códigos de Provincias en Chile](CodeSystem-CSCodProvinciasCL.html "CodeSystem/CSCodProvinciasCL") | Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior |
 | [Códigos de Regiones en Chile](CodeSystem-CSCodRegionCL.html "CodeSystem/CSCodRegionCL") | Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior |
 | [Códigos de Servicios para encuentros remotos](CodeSystem-CSCodigoServicio.html "CodeSystem/CSCodigoServicio") | Códigos para los Servicios realizados en un encuentro remoto según indicaciones del Ministerio de Salud |
-| [Códigos de Documentos DNI para LATAM y el Caribe](CodeSystem-CSCodigoDNI.html "CodeSystem/CSCodigoDNI") | Códigos para los DNI de países de America Latina y el Caribe según indicaciones de VS HL7 de V3 |
+| [Códigos de Documentos DNI para LATAM y el Caribe](CodeSystem-CSCodigoDNI.html "CodeSystem/CSCodigoDNI") | Códigos para los DNI de países de América Latina y el Caribe según indicaciones de VS HL7 de V3 |
 | [Códigos de Especialidades](CodeSystem-CSEspecialidadesDeisCL.html "CodeSystem/CSEspecialidadesDeisCL") | Códigos de especialidades médicas descritas según DEIS |
 | [Nombre de Campañas de Inmunización de RNI](CodeSystem-CSNombreCampana.html "CodeSystem/CSNombreCampana") | Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud |
-| [Códigos de Tipos de Encuentro](CodeSystem-CSTiposEncuentroCL.html "CodeSystem-CSTiposEncuentroCL.html") | Códigos de Encuentros según Minsal |
+| [Códigos de Tipos de Encuentro](CodeSystem-CSTiposEncuentroCL.html "CodeSystem-CSTiposEncuentroCL.html") | Códigos de Encuentros según MINSAL |
 | [Códigos de Vacunas RNI](CodeSystem-CSCodigoVacunas.html "CodeSystem/CSCodigoVacunas") | Códigos de las vacunas o inmunizaciones según indicaciones del Ministerio de Salud |
 | [Códigos de Lenguajes](CodeSystem-CSCodigoslenguaje.html "CodeSystem/CSCodigoslenguaje") | Códigos de Lenguaje para definir la lengua con la cual se expresa una persona |
 | [Códigos de razones por las cuales el registro de inmunización no se pudo llevar a cabo](CodeSystem-CSRazonNOTinm.html "CodeSystem/CSRazonNOTinm") | Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud |
+
 
 <!--| [Códigos de Servicos de Salud en Chile](ValueSet-VSCodigosServiciosSalud.html "ValueSet/VSCodigosServiciosSalud") | Códigos de Servicios de Salud que existen en Chile |
 | [Contacto participantes](ValueSet-VSContactosec.html "ValueSet/VSContactosec") | Contacto telefonico o correo de los participantes |

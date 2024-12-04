@@ -4,16 +4,16 @@ Los perfiles presentan una serie de elementos de datos que siempre deben estar p
 
 ### Elementos Must Support:
 
-Los elementos que deben ser Soportados, si la data esta presente en el recuso generado, se denominan ([Must Support](http://hl7.org/fhir/R4/profiling.html#mustsupport)), y estos se expresan mediante la letra **S** en cada elemento o FhirPath que tiene esta categoría. Un elemento *Must Support* implica:
+Los elementos que deben ser Soportados, si la data está presente en el recuso generado, se denominan ([Must Support](http://hl7.org/fhir/R4/profiling.html#mustsupport)), y estos se expresan mediante la letra **S** en cada elemento o FhirPath que tiene esta categoría. Un elemento *Must Support* implica:
 
 * El sistema que recibe un recurso con un elemento *Must Support* debe almacenarlo.
 * El sistema que recibe un recurso con un elemento *Must Support* debe poder hacer procesamiento de este elemento
 * El sistema que genera un recurso, no se ve obligado a definir los elementos *Must Support* a menos que estos sean *Mandatorios*
-* Un elemento *Must Support* no implica que sus rutas derivadas lo sea por herencia
+* Un elemento *Must Support* no implica que sus rutas derivadas lo sean por herencia
 
-La definición formal del Perfil en la lengueta *Statistics/References* indica cuantos de estos elementos hay distribuidos como elementos o rutas de estos.
+La definición formal del Perfil en la lengüeta *Statistics/References* indica cuantos de estos elementos hay distribuidos como elementos o rutas de estos.
 <br>
 <div align="center" >
   <img  style="border: 1px solid; color: black;" src="Stactics-Reference.png"> 
-  <p>Vista "Statics/Reference"</p>
+  <p>Vista "Statistics/References"</p>
 </div>

@@ -1,7 +1,7 @@
 ### Aspectos a Considerar
 <br>
 
-Esta sección describe definiciones, interpretaciones y requisitos importantes comunes a todos los actores del clcore, utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
+Esta sección describe definiciones, interpretaciones y requisitos importantes comunes a todos los actores del clcore, utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición) *, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
 <br>
 ### Definiciones Para comprender la Guía
 
@@ -25,9 +25,9 @@ Esta vista permite ver un resumen del Perfil como de que recurso proviene elemen
 
 ##### Vista Diferencial 
 
-Esta vista permite observar todos aquellos elmentos de un recurso que han sido modificadas o adecuadas para la realidad local. Esto incluye cambios como cardinalidad, explicaciones, MS o cualquier otro. Los elementos que se han mantenido tal cual en el recurso madre no figuran en esta vista. 
+Esta vista permite observar todos aquellos elementos de un recurso que han sido modificadas o adecuadas para la realidad local. Esto incluye cambios como cardinalidad, explicaciones, MS o cualquier otro. Los elementos que se han mantenido tal cual en el recurso madre no figuran en esta vista. 
 
-*Por razon de lenguaje, toda traducción de la descripción de un elemento se considera un cambio y figura en esta vista.*
+*Por razón de lenguaje, toda traducción de la descripción de un elemento se considera un cambio y figura en esta vista.*
 
 <br>
 <div align="center" >
@@ -72,9 +72,9 @@ La existencia de un elemento o ruta con **MS** no determina la obligatoriedad de
 
 ### Búsquedas Soportadas
 
-Los Métodos y los parámetros para la consulta de recursos se describen a continuación y se basan en la busqueda sobre recurso Paciente:
+Los Métodos y los parámetros para la consulta de recursos se describen a continuación y se basan en la búsqueda sobre recurso Paciente:
 
-1.  En este caso los servidores **DEBEN** soportar buscar un recurso Patient usando el parametro de búsqueda **[`_id`]:
+1.  En este caso los servidores **DEBEN** soportar buscar un recurso Patient usando el parámetro de búsqueda **[`_id`]:
 
     `GET [base]/Patient[id]`
 
@@ -83,7 +83,7 @@ Los Métodos y los parámetros para la consulta de recursos se describen a conti
     1.  GET [base]/Patient/1032702
     2.  GET [base]/Patient?_id=1032702
 
-Lo anterior es aplicable para un recurso ya creado el cual se alamacena con una identificación generada en ese momento    
+Lo anterior es aplicable para un recurso ya creado el cual se almacena con una identificación generada en ese momento
 
 2.  Los servidores **DEBEN** soportar buscar un recurso Patient por un identificador como el numero RUN de la Cédula de Identidad Nacional, utilizando el parámetro de búsqueda **[`identifier`]:
 
@@ -105,17 +105,17 @@ POST [base]/Patient En el Body, un recurso paciente compatible con el/los perfil
 
 ### Vocabularios
 
-_Definición de Medicamentos:_ Se utiliza la Terminología de Farmacos Chilena (TFC), expuesta por medio de un servicio de terminolgía Local o desde MINSAL
+_Definición de Medicamentos:_ Se utiliza la Terminología de Fármacos Chilena (TFC), expuesta por medio de un servicio de terminología Local o desde MINSAL.
 
-_Profesionales de la Salud:_ desplegados a travez de la Super Intendencia y el sistema Midas, este registro se expone por medio del recurso  FHIR Practitioner, y la especialidad por medio dek recurso PractitionerRole.
+_Profesionales de la Salud:_ desplegados a través de la Super Intendencia y el sistema Midas, este registro se expone por medio del recurso  FHIR Practitioner, y la especialidad por medio del recurso PractitionerRole.
 
-_Establecimientos de Salud_: utiliza su identificación por medio de código DEIS, y su registro se expone a traves de los recursos FHIR Location y Organization, según corresponda.
+_Establecimientos de Salud:_ utiliza su identificación por medio de código DEIS, y su registro se expone a través de los recursos FHIR Location y Organization, según corresponda.
 
-_Farmacias_: utiliza el registro de farmacias Farmanet y se expone como como los recursos FHIR Location y Organization.
+_Farmacias:_ utiliza el registro de farmacias Farmanet y se expone como como los recursos FHIR Location y Organization.
 
-_Pacientes:_ Se identifican por medio de su número identificador que pude ser cualquier tipo de documento especificado en las tablas de HL7 V3 relcionados con identificadores de personas.
+_Pacientes:_ Se identifican por medio de su número identificador que pude ser cualquier tipo de documento especificado en las tablas de HL7 V3 relacionados con identificadores de personas.
 
-_Tablas Maestras específicas:_ se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional que son expuestas en la GI y que deben ser en muchos casos levantadas a nivel local
+_Tablas Maestras específicas:_ se incluyen las de comunas, provincias y regiones, entre otras pertenecientes a la normativa Nacional que son expuestas en la GI y que deben ser en muchos casos levantadas a nivel local.
 
 
 ### Cardinalidad
@@ -124,7 +124,7 @@ _Tablas Maestras específicas:_ se incluyen las de comunas, provincias y regione
 La cardinalidad define dos aspectos de un elemento dentro de un perfil 
 
 * Cantidad de veces que un elemento se **Puede** repetir.
-* La minima cantidad de veces que un elemento **Debe** ser decrito al generar un recurso
+* La mínima cantidad de veces que un elemento **Debe** ser descrito al generar un recurso
 
 De esta forma nos encontramos con varias situaciones
 
@@ -134,14 +134,15 @@ De esta forma nos encontramos con varias situaciones
  {1..1} : El elemento es obligatorio pero solo se puede desplegar 1 sola vez
  {0..3} : Elemento no obligatorio que se puede repetir hasta 3 veces
  {1..3} : Elemento obligatorio que puede repetirse hasta 3 veces
- {1..*} : Elemento obligatorio que se puede repetir infintas veces
+ {1..*} : Elemento obligatorio que se puede repetir infinitas veces
+
 
 ~~~
 
 ### Bindings
 <br>
 
-La vinculación obligatoria a una definición de conjunto de valores significa que SE **DEBE** utilizar uno de los códigos del conjunto de valores especificado. En el caso de +CodeableConcept+, no es válido utilizar sólo texto, pero se permiten múltiples codificaciones (traducciones).
+La vinculación obligatoria a una definición de conjunto de valores significa que SE **DEBE** utilizar uno de los códigos del conjunto de valores especificado. En el caso de *CodeableConcept*, no es válido utilizar sólo texto, pero se permiten múltiples codificaciones (traducciones).
 
 La *vinculación extensible* a una definición de conjunto de valores significa que uno de los códigos del conjunto de valores especificado **SE DEBE USAR** si existe un concepto aplicable, pero si no existe un código adecuado en el conjunto de valores, se **PUEDE** proporcionar un código o códigos alternativos en su lugar. Para *CodeableConcept* se permiten múltiples codificaciones y esta regla se aplica a una de ellas. También en el caso de *CodeableConcept*, si sólo se dispone de texto, se puede utilizar sólo el texto.
 
@@ -166,7 +167,7 @@ La guía desarrolla una serie de ejemplos por perfil desarrollado. Este ejemplo 
 <br>
 
 <br>
-Además cada ejemplo viene descrito en 4 formatos:
+Además, cada ejemplo viene descrito en 4 formatos:
 <br>
 
 * Narrativa del ejemplo: Texto Legible
