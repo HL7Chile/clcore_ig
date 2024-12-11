@@ -1,4 +1,4 @@
-#### Ejemplos de uso en Diferentes Escenarios
+### Ejemplos de uso en Diferentes Escenarios
 
  * Búsqueda de Datos demográficos de un paciente, haciendo uso de su identificación como *RUN* o *Documento de Identificación* 
  * Búsquedas varias para datos demográficos específicos de Pacientes como *Apellidos*, *Nombres* o *Dirección*

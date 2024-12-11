@@ -1,4 +1,4 @@
-#### Ejemplos de uso en Diferentes Escenarios
+### Ejemplos de uso en Diferentes Escenarios
 
  * Búsqueda de Profesional de la Salud por *RUN*, *RNPI*, *PASAPORTE* u *OTRO IDENTIFICADOR*
  * Determinación de Certificados que acredita el Prestador 
