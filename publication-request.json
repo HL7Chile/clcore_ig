@@ -1,12 +1,12 @@
 {
     "package-id": "hl7.fhir.cl.clcore",
-    "version": "1.9.2",
+    "version": "1.9.3",
     "desc": "Versión de desarrollo",
-    "path": "https://hl7chile.cl/fhir/ig/clcore/1.9.2",
+    "path": "https://hl7chile.cl/fhir/ig/clcore/1.9.3",
     "changes": "changes.html",
     "status": "draft",
     "sequence": "STU2",
     "first": false,
-    "mode": "milestone",
+    "mode": "technical-correction",
     "fhirversion": "4.0.1"
 }

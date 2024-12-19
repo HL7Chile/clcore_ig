@@ -1,3 +1,7 @@
+### Versión 1.9.3
+
+ - Correción del contexto para la extensión [Código de Países](StructureDefinition-CodigoPaises.html)
+
 ### Versión 1.9.2
 
 - Correcciones ortográficas

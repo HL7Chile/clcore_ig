@@ -79,7 +79,7 @@ Extension:   PaisDireccion
 Id:          CodigoPaises
 Title:       "Código de Países"
 Description: "Esta extensión incluye códigos de países"
-//Context: Address.country
+Context: DomainResource, Extension, Address.country, CodeableConcept, Identifier.type
 * value[x] only CodeableConcept
 * value[x] ^short = "Código del País"
 //* url 1..1 MS
