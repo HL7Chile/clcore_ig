@@ -10,3 +10,6 @@ java.lang.IllegalArgumentException: package entry in package-registry.json is mi
         at org.hl7.fhir.igtools.web.PackageRegistryBuilder.update(PackageRegistryBuilder.java:39)
         at org.hl7.fhir.igtools.web.PackageRegistryBuilder.update(PackageRegistryBuilder.java:31)
         at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:551)
+
+
+        pirilojo
