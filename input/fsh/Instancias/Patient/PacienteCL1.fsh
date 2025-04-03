@@ -57,7 +57,7 @@ Usage : #example
 * contact.name.given[0] = "Juana"
 * contact.name.given[+] = "Josefa"
 
-* communication.language.coding = CSCodigoslenguaje#es-CL "Spanish"
+* communication.language.coding = urn:ietf:bcp:47#es-CL "Spanish (Chile)"
 
 * generalPractitioner = Reference(OrganizacionClEjemplo1)
 
