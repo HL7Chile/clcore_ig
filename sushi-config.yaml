@@ -72,3 +72,6 @@ parameters:
   show-inherited-invariants: false
   excludettl: true
   generate: genExamples
+  path-resource:
+    - input/resources
+    - fsh-generated/resources

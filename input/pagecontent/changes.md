@@ -1,6 +1,7 @@
 ### Versión 1.9.3
 
  - Correción del contexto para la extensión [Código de Países](StructureDefinition-CodigoPaises.html)
+ - Se depreca el Code System de Países quedando todo con el CS de la ISO 3166
 
 ### Versión 1.9.2
 

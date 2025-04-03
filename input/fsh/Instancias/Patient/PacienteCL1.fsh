@@ -65,7 +65,7 @@ Instance: PaisEmisionDocumentoPacienteCL
 InstanceOf: CodigoPaises
 Usage: #inline
 
-* valueCodeableConcept = CSCodPaises#152 "Chile"
+* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: SegundoApellidoPacienteCL
 InstanceOf: SegundoApellido
@@ -106,7 +106,7 @@ Instance: CodigoPaisesPacienteCL
 InstanceOf: CodigoPaises
 Usage: #inline
 
-* valueCodeableConcept = CSCodPaises#152 "Chile"
+* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: IdentificacionContactoPacienteCL
 InstanceOf: IdentificacionContactoCl
@@ -117,7 +117,7 @@ Usage: #inline
   * system = "http://regcivil.cl/Validacion/RUN"
   * value = "8987321-7"
 
-* extension[docProc].valueCodeableConcept = CSCodPaises#152 "Chile"
+* extension[docProc].valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: SegundoApellidoContactoPacienteCL
 InstanceOf: SegundoApellido
