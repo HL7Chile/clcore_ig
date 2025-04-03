@@ -50,4 +50,4 @@ Instance: CodigoPaisesOrganization2
 InstanceOf: CodigoPaises
 Usage: #inline
 
-* valueCodeableConcept = Urn:iso:std:iso:3166#152 "Chile"
+* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
