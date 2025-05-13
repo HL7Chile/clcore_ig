@@ -8,10 +8,10 @@ canonical: https://hl7chile.cl/fhir/ig/clcore
 name: clcore
 title: Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)
 status: active # draft | active | retired | unknown
-version: 1.9.3
+version: 1.9.35
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
-releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:

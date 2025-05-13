@@ -4,8 +4,8 @@ Id:             CorePacienteCl
 Title:          "CL Paciente"
 Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"
 
-
-* ^version = "1.9.2"
+* ^language = #es-CL
+//* ^version = "1.9.3"
 * ^status = #active
 * ^publisher = "HL7 Chile"
 
@@ -132,7 +132,7 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
   * extension[IdContacto] ^short = "Identificación del Contacto"
   * extension[IdContacto] ^definition = "Extensión para declarar identificación del contacto y la procedencia de esta"
   * relationship ^short = "Relación legal o de parentesco entre el contacto y el paciente"
-  * relationship from 	http://hl7.org/fhir/ValueSet/patient-contactrelationship
+  * relationship from 	VSContactoRelacion
   * relationship ^binding.description = "VS FHIR para relación del contacto con el Paciente"
 
   * name 0..1 MS 

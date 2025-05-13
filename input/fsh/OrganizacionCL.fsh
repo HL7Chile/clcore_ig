@@ -3,6 +3,7 @@ Parent:         Organization
 Id:             CoreOrganizacionCl
 Title:          "CL Organización"
 Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado para también cubrir las necesidades nacionales de un Recurso de Organización en Salud"
+* ^language = #es-CL
 
 * active ^short = "Estado de si es una Organización Validada o no (true|false)"
 * active ^definition = "Indicador si una organización sigue vigente en su rol dentro del sistema de salud"

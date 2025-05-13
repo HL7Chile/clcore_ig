@@ -1,3 +1,11 @@
+### Versión 1.9.35
+
+- El VS de la extensión *sexoBiologico* se cambia de fuerza a **preferred**
+- Se agrega *CodeSystem* de Otros Tipos de Contacto para relación con paciente *(Patient.contact.relationship)*, que incluye Tutor Legal y No Responde. Se expande a *ValueSet* [ContactoRelación](ValueSet-VSContactoRelacion.html) 
+- Se llevan todas las versiones de los artefactos a la versión de la GI
+- Se agrega diferencial de cambio con versión anterior, en el texto y en elementos de Conformidad en base a resaltado de color del texto
+- Se declara lenguage en todos los artefactos (es-CL)
+
 ### Versión 1.9.3
 
  - Correción del contexto para la extensión [Código de Países](StructureDefinition-CodigoPaises.html)

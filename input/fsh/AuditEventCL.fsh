@@ -5,8 +5,8 @@ Parent: AuditEvent
 Id: AuditEventCl
 Title: "CL Auditoria"
 Description: "Perfil para generar un recurso que permita desarrollar auditoría de las transacciones realizadas"
-
-* ^version = "1.9.2"
+* ^language = #es-CL
+//* ^version = "1.9.2"
 * ^status = #active
 * ^publisher = "HL7 Chile"
 

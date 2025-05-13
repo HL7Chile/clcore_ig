@@ -2,8 +2,9 @@ ValueSet: CodPaises
 Id: CodPais
 Title: "Códigos de Países"
 Description: "Codigos definidos para la identificación de países segun norma ISO3166-N"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+//* ^version = "1.0.0"
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"

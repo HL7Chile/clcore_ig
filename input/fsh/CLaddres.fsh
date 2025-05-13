@@ -3,7 +3,7 @@ Parent: Address
 Id: cl-address
 Title: "CL Address"
 Description: "Variable dirección"
-* ^version = "1.0.0"
+* ^language = #es-CL
 * . ^comment = "Variable dirección"
 * . ^short = "Tipo de dato para agregar la dirección"
 * extension contains http://hl7.org/fhir/StructureDefinition/geolocation named Geolocalizacion 0..1 MS

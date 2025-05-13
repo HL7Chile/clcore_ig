@@ -3,8 +3,8 @@ Parent:         Location
 Id:             CoreLocalizacionCl
 Title:          "CL Localización"
 Description:    "Este perfil determina la ubicación específica para un evento, objeto o Infraestructura específica. Este perfil permite vincular una localización con una organización o espacio físico específico"
-
-* ^version = "1.9.0"
+* ^language = #es-CL
+//* ^version = "1.9.0"
 * ^status = #active
 * ^publisher = "HL7 Chile"
 //Identifier

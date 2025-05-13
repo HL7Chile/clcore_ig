@@ -45,6 +45,12 @@ También se presenta una tabla jerárquica con una vista lógica del contenido c
 ### Requerimientos de Conformidad
 
 Los requerimientos de conformidad describen las expectativas sobre la funcionalidad de las aplicaciones servidor/cliente, identificando los perfiles específicos y las interacciones que deben implementar. Los perfiles individuales identifican los requerimientos estructurales y terminológicos. Las definiciones de parámetros de búsqueda y operaciones especifican cómo son implementados por los servidores.
+<br>
+
+### Sobre Control de Cambios
+
+La Guía posee Control de Cambio en donde se pueden observar las modificaciones generadas entre versiones. Si se han desarrollado cambios respecto a la versión anterior, en el texto o en algunas declaraciónes de conformidad, este <span style="background-color: Oldlace;">quedará remarcado de esta forma</span> 
+
 
 ###	 Autores y Colaboradores
 

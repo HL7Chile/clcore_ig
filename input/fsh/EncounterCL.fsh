@@ -5,6 +5,7 @@ Parent: Encounter
 Id: EncounterCL
 Title: "CL Encuentro Clínico"
 Description: "Definición de encuentro clínico genérico para Chile"
+* ^language = #es-CL
 
 * identifier 0..* MS
   * ^short = "Identificador(es) por los que se conoce este encuentro"

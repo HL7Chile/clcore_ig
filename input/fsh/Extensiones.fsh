@@ -21,7 +21,7 @@ Description: "Sexo Biologico del paciente"
 Context: Patient, Practitioner
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "SexoBiologico"
-* valueCodeableConcept from VSadministrative-gender
+* valueCodeableConcept from VSadministrative-gender (preferred)
 
 Extension:   NombreComercial
 Id:          NombreComercial

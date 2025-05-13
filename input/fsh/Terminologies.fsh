@@ -1,10 +1,73 @@
+ValueSet: VSContactoRelacion
+Id: VSContactoRelacion
+Title: "Códigos de relación del contacto con el paciente"
+Description: "Códigos de relación del contacto con el paciente"
+* ^language = #es-CL
+* ^experimental = false
+//* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-07-25T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+//* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement" 
+
+* ^experimental = false //dependera del uso que le den al codesystem
+
+* codes from system http://terminology.hl7.org/CodeSystem/v2-0131
+* codes from system CSOtrosContactos
+
+
+
+
+CodeSystem: CSOtrosContactos
+Id: CSOtrosContactos
+Title: "Códigos de otros contactos del paciente"
+Description: "Códigos de contactos adicionales usados en Chile para paciente"
+* ^experimental = false
+* ^caseSensitive = true
+
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^language = #es-CL
+
+* #tut "Tutor Legal"
+* #nr "No Registrdo"
+
+
+
+ValueSet: VSOtrosContactos
+Id: VSOtrosContactos
+Title: "Códigos de otros contactos del paciente"
+Description: "Códigos de contactos adicionales usados en Chile para paciente"
+* ^experimental = false
+
+* ^language = #es-CL
+* ^status = #active
+* ^date = "2022-07-25T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement" 
+
+* ^experimental = false //dependera del uso que le den al codesystem
+
+* codes from system CSOtrosContactos
+
 CodeSystem: CSClaseVacuna
 Id: CSClaseVacuna
 Title: "Códigos de clases de Vacuna"
 Description: "Códigos de clase de vacuna"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -21,8 +84,9 @@ ValueSet: VSClaseVacuna
 Id: VSClaseVacuna
 Title: "Códigos de clases de Vacuna"
 Description: "Códigos de clase de vacuna"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-07-25T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -40,8 +104,9 @@ Id: VSCodMadurez
 Title: "Códigos de grado de madurez del artefacto"
 Description: "Códigos de grado de madurez del artefacto"
 
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-07-25T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -58,9 +123,10 @@ CodeSystem: CSCodMadurez
 Id: CSCodMadurez
 Title: "Códigos de grado de madurez del artefacto"
 Description: "Códigos de grado de madurez del artefacto"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -79,8 +145,9 @@ ValueSet: VSDiagnosticosSCT
 Id: VSDiagnosticosSCT
 Title: "Diagnósticos SNOMED y Ausente o Desconocido"
 Description: "Diagnósticos definidos en Snomed-CT."
+* ^language = #es-CL
 * ^experimental = false //dependera del uso que le den al codesystem
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-07-25T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -100,8 +167,9 @@ ValueSet: VSTiposDocumentos
 Id: VSTiposDocumentos
 Title: "Tipos de Documentos"
 Description: "Tipos de Documentos para identificación según tabla HL7 V3 y CodeSystem local."
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -120,9 +188,10 @@ CodeSystem: CSCodigoDNI
 Id: CSCodigoDNI
 Title: "Códigos de Documentos DNI para LATAM y el Caribe"
 Description: "Códigos para los DNI de países de America Latina y el Caribe según indicaciones de VS HL7 de V3"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -450,8 +519,9 @@ ValueSet: VSEspecialidadesCL
 Id: VSEspecialidadesCL
 Title: "Códigos de Especialidades"
 Description: "Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -468,9 +538,10 @@ CodeSystem: CSEspecialidadesDeisCL
 Id: CSEspecialidadesDeisCL
 Title: "Códigos de Especialidades"
 Description: "Códigos de especialidades médicas descritas según DEIS"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -553,8 +624,9 @@ ValueSet: VSCodigosRegionesCL
 Id: VSCodigosRegionesCL
 Title: "Códigos de Regiones en Chile"
 Description:  "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -568,9 +640,10 @@ CodeSystem: CSCodRegionCL
 Id: CSCodRegionCL
 Title: "Códigos de Regiones en Chile"
 Description:  "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -599,8 +672,9 @@ ValueSet: VSCodigosProvinciasCL
 Id: VSCodigosProvinciasCL
 Title: "Códigos de Provincias en Chile"
 Description:  "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -614,9 +688,10 @@ CodeSystem: CSCodProvinciasCL
 Id: CSCodProvinciasCL
 Title: "Códigos de Provincias en Chile"
 Description:  "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -686,8 +761,9 @@ ValueSet: VSCodigosComunaCL
 Id: VSCodigosComunaCL
 Title: "Códigos de Comunas en Chile"
 Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -701,9 +777,10 @@ CodeSystem: CSCodComunasCL
 Id: CSCodComunasCL
 Title: "Códigos de Comunas en Chile"
 Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-01-18T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1064,8 +1141,9 @@ ValueSet: VSTiposDocClinico
 Id: VSTiposDocClinico
 Title: "Tipos de Documentos Clínicos"
 Description: "Tipos de Documentos clínicos para Composition. Se trae todo Loinc, se requerirá un VS específico"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-05-21T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1102,8 +1180,9 @@ ValueSet: VSTiposVacunasCL
 Id: VSTiposVacunas
 Title: "Tipos de Vacunas RNI"
 Description: "Tipos de Vacunas utilizadas en Chile según CodeSystem local"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-06-05T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1117,9 +1196,10 @@ CodeSystem: CSTiposVacunaCL
 Id: CSCodigoVacunas
 Title: "Códigos de Vacunas RNI"
 Description: "Códigos de las vacunas o inmunizaciones según indicaciones del Ministerio de Salud"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-06-05T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1211,8 +1291,9 @@ ValueSet: VSNombreCampanaCL
 Id: VSNombreCampana
 Title: "Campañas de Vacunación"
 Description: "Campañas de Inmunización utilizada en Chile según CodeSystem local"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-06-05T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1226,9 +1307,10 @@ CodeSystem: CSNombreCampanaCL
 Id: CSNombreCampana
 Title: "Campañas Inmunización"
 Description: "Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-06-05T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1278,8 +1360,9 @@ ValueSet: VSRazonNOTinmCL
 Id: VSRazonNOTinm
 Title: "Razones no Inmunización"
 Description: "Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-06-08T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1293,9 +1376,10 @@ CodeSystem: CSRazonNOinmunizacionCL
 Id: CSRazonNOTinm
 Title: "Razones no Inmunización"
 Description: "Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-06-10T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1373,8 +1457,9 @@ ValueSet: VSCodigoslenguaje
 Id: VSCodigoslenguaje
 Title: "Codigos Lenguaje"
 Description:  "Códigos de leguaje"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-06-10T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1457,8 +1542,9 @@ ValueSet: VSTiposEncuentroCL
 Id: VSTiposEncuentroCL
 Title: "Tipos de Encuentro"
 Description: "Códigos de Encuentros según MINSAL"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-05-21T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1472,9 +1558,10 @@ CodeSystem: CSTiposEncuentroCL
 Id: CSTiposEncuentroCL
 Title: "Tipos de Encuentro"
 Description: "Códigos de Encuentros según MINSAL"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-05-21T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1491,8 +1578,9 @@ ValueSet: VSTiposServicioCL
 Id: VSTiposServicio
 Title: "Tipos de Servicios Remotos"
 Description: "Tipos de Servicios para encuentro remoto según CodeSystem local"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-05-22T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1506,9 +1594,10 @@ CodeSystem: CSCodServicioCL
 Id: CSCodigoServicio
 Title: "Tipos de Servicios Remotos"
 Description: "Códigos para los Servicios realizados en un encuentro remoto según indicaciones del Ministerio de Salud"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-05-22T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1553,8 +1642,9 @@ ValueSet: VSRazonNOencuentro
 Id: VSRazonNOT
 Title: "Razones no Atención Remota"
 Description: "Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-05-22T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1568,9 +1658,10 @@ CodeSystem: CSrazonnoencuentro
 Id: csrazonnoencuentro
 Title: "Razón Encuentro Remoto no Realizado"
 Description: "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2022-05-22T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -1588,8 +1679,9 @@ ValueSet: VSTipoIdentificador
 Id: VSTipoIdentificador
 Title: "Tipo Identificador"
 Description: "Tipo Identificador"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2023-07-03T00:00:00-03:00"
 * ^contact.name = "MINSAL TIC/Interoperabilidad"
@@ -1603,9 +1695,10 @@ CodeSystem: CSTipoIdentificador
 Id: CSTipoIdentificador
 Title: "Tipo Identificador"
 Description: "Tipo Identificador"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "1.0.0"
+
 * ^status = #active
 * ^date = "2023-07-03T00:00:00-03:00"
 * ^contact.name = "MINSAL TIC/Interoperabilidad"
@@ -1632,8 +1725,9 @@ ValueSet: VSIdentidaddeGenero
 Id: VSIdentidaddeGenero
 Title: "Identidad de Genero"
 Description: "Identidad de Genero"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "0.1"
+
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1647,9 +1741,10 @@ CodeSystem: CSIdentidaddeGenero
 Id: CSIdentidaddeGenero
 Title: "Identidad de Genero"
 Description: "Identidad de Genero"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1669,8 +1764,9 @@ ValueSet: VSSexoListadoDeis
 Id: VSSexoListadoDeis
 Title: "Sexo Listado Deis"
 Description: "Sexo Listado Deis"
+* ^language = #es-CL
 * ^experimental = false
-* ^version = "0.1"
+
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1684,9 +1780,10 @@ CodeSystem: CSSexoListadoDeis
 Id: CSSexoListadoDeis
 Title: "Sexo Listado Deis"
 Description: "Sexo Listado Deis"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1743,7 +1840,8 @@ CodeSystem:  EspecialidadesConacemConaceoCS
 Id:          EspecialidadesConacemConaceoCS
 Title:       "Códigos de Especialidades de CONACEM y CONACEO"
 Description: "Códigos a usar para las Especialidades provenientes de La Corporación Nacional Autónoma de Certificación de Especialidades Médicas (CONACEM) y de La Corporación Nacional Autónoma de Certificación de Especialidades Odontológicas (CONACEO) de Chile"
-* ^version = "1.0"
+* ^language = #es-CL
+
 * ^caseSensitive = true
 * ^experimental = true
 * ^status = #active
@@ -1782,9 +1880,10 @@ CodeSystem: CSEspecialidadOdontologica
 Id: CSEspecialidadOdontologica
 Title: "Especialidad Odontologica"
 Description: "Especialidad de Odontologica"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
@@ -1811,9 +1910,10 @@ CodeSystem: CSEspecialidadFarma
 Id: CSEspecialidadFarma
 Title: "Especialidad Farmacia"
 Description: "Especialidad de Farmacia"
+* ^language = #es-CL
 * ^experimental = false
 * ^caseSensitive = true
-* ^version = "0.9"
+
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"

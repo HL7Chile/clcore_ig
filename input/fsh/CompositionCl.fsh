@@ -3,8 +3,8 @@ Parent: Composition
 Id: DocumentoCl
 Title: "CL Documento"
 Description: "De un formato genérico para documento clínico en Chile."
-
-* ^version = "1.9.2"
+* ^language = #es-CL
+//* ^version = "1.9.2"
 * ^status = #active
 * ^publisher = "HL7 Chile"
 //* text MS

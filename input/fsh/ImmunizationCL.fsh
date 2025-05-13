@@ -3,8 +3,8 @@ Parent: Immunization
 Id: ImmunizationCL
 Title: "CL Inmunización"
 Description: "Definición de un evento de inmunización para las necesidades de interoperabilidad en Chile."
-
-* ^version = "1.10.0"
+* ^language = #es-CL
+//* ^version = "1.10.0"
 * ^status = #active
 * ^publisher = "HL7 Chile"
 
