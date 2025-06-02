@@ -1,4 +1,4 @@
-Instance:    ObservacinEjemplo
+Instance:    ObservacionEjemplo
 InstanceOf:  CoreObservacionCL
 Usage:       #example
 Title:       "Observación Ejemplo"

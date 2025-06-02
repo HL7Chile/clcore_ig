@@ -424,7 +424,7 @@ Además, cada ejemplo viene descrito en 4 formatos:
       "language": {
         "coding": [
           {
-            "code": "es-CL",
+            "code": "es",
             "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje",
             "display": "Spanish"
           }

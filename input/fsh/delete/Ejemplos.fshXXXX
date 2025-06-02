@@ -91,7 +91,7 @@ Usage : #example
 * contact.name.given[+] = "Josefa"
 
 * communication.language.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje"
-* communication.language.coding.code = #es-CL "Spanish"
+* communication.language.coding.code = #es "Spanish"
 * communication.language.coding.display = "Spanish"
 
 * generalPractitioner.reference = "Organization/ORG1"

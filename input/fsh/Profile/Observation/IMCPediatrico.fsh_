@@ -1,0 +1,21 @@
+Profile:        CLCoreIMCPediatrico
+Parent:         CLCoreSignosVitalesPerfil  
+Id:             IMCPediatrico
+Title:          "CL Percentil del IMC en Niños y Adolescentes"
+Description:    """
+El Perfil de Observación del IMC Pediátrico por Edad de la Core CL, hereda del Perfil de CL Signos Vitales. Este perfil establece las expectativas mínimas para el recurso de Observación para registrar, buscar y obtener el percentil del índice de masa corporal (IMC) pediátrico por edad y sexo para observaciones de jóvenes de 0 a 18 años en FHIR utilizando un código LOINC estándar y unidades de medida UCUM. Especifica qué elementos centrales adicionales, extensiones, vocabularios y conjuntos de valores DEBEN estar presentes en el recurso y restringe cómo se utilizan los elementos. Proporcionar la base para el desarrollo de estándares para casos de uso específicos promueve la interoperabilidad y la adopción.
+"""
+* code 1..1 MS
+* code = $loinc#59576-9
+* value[x] only Quantity
+* valueQuantity MS
+  * value 1..1 MS
+    * ^short = "Valor numerico"
+  * unit 1..1 MS
+    * ^short = "unidad representativa"
+  * system 1..1 MS
+    * ^short = "Sistema definido en el código de la unidad"
+  * system = $ucum
+  * code 1..1 MS
+    * ^short = "Respuestas codificadas de las unidades UCUM comunes para el conjunto de valores de signos vitales."
+  * code = #%

@@ -1,15 +1,13 @@
-### Versión 1.9.35
+### Versión 1.9.3
 
 - El VS de la extensión *sexoBiologico* se cambia de fuerza a **preferred**
 - Se agrega *CodeSystem* de Otros Tipos de Contacto para relación con paciente *(Patient.contact.relationship)*, que incluye Tutor Legal y No Responde. Se expande a *ValueSet* [ContactoRelación](ValueSet-VSContactoRelacion.html) 
 - Se llevan todas las versiones de los artefactos a la versión de la GI
 - Se agrega diferencial de cambio con versión anterior, en el texto y en elementos de Conformidad en base a resaltado de color del texto
-- Se declara lenguage en todos los artefactos (es-CL)
-
-### Versión 1.9.3
-
- - Correción del contexto para la extensión [Código de Países](StructureDefinition-CodigoPaises.html)
- - Se depreca el Code System de Países quedando todo con el CS de la ISO 3166
+- Se declara lenguage en todos los artefactos (es) 
+- Correción del contexto para la extensión [Código de Países](StructureDefinition-CodigoPaises.html)
+- Se depreca el Code System de Países quedando todo con el CS de la ISO 3166
+- Se crea el perfil base de [Cl Signos Vitales](StructureDefinition-cl-core-signos-vitales.html) junto con el [Set de Valores Signos Vitales](ValueSet-cl-core-vs-signos-vitales.html)
 
 ### Versión 1.9.2
 
