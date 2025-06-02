@@ -1,7 +1,7 @@
 {
     "package-id": "hl7.fhir.cl.clcore",
     "version": "1.9.3",
-    "desc": "Versión de desarrollo",
+    "desc": "Versión modificada según correcciones técnicas de la versión 1.9.2 del IG CL Core",
     "path": "https://hl7chile.cl/fhir/ig/clcore/1.9.3",
     "changes": "changes.html",
     "status": "draft",
