@@ -19,7 +19,7 @@ publisher:
   url: http://hl7chile.cl
   email: chair@hl7chile.cl
 
-description: "Guía de Implementación Versión de Desarrollo Sobre STU 1, para los perfiles Core que se van a requerir a nivel de desarrollo Nacional para Sistemas que Intercambien datos en estandar FHIR-R4"
+description: "Guía de Implementación de FHIR R4 para Chile, versión 2.0.0, que contiene los recursos básicos de FHIR necesarios para la interoperabilidad en el contexto chileno. Esta guía es una evolución de la versión 1.0.0, incorporando mejoras y correcciones basadas en la experiencia adquirida en su uso."
 jurisdiction: urn:iso:std:iso:3166#CL "Chile"
 copyright: "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."
 license: CC0-1.0
@@ -36,6 +36,8 @@ pages:
     title: Notas del Must Support
   Aspectos-Generales.md:
     title: Generalidades
+  ImplementationGuide-hl7.fhir.cl.clcore.md:
+    title: Recursos ImplementationGuide Cl Core
   #Extensiones.md:
   #Set-De-Validacion-ValueSets.md:
   #  title: CodeSystems/ValueSets
