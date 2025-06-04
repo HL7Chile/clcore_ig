@@ -1,3 +1,5 @@
+Alias: EspeMedicVS = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSEspecialidadMedica
+
 Profile:        CoreRolClinicoCl
 Parent:         PractitionerRole
 Id:             CoreRolClinicoCl
@@ -53,7 +55,7 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 * specialty MS
 * specialty ^short = "Definición de la especialidad"
 * specialty ^definition = "Definición de la especialidad, en el decreto correspondiente. la tabla sigue siendo extensible ante futuros elementos agregados a esta"
-* specialty from VSEspecialidadesCL (preferred)
+* specialty from EspeMedicVS (preferred)
 * specialty ^binding.description = "Códigos de Especialidades"
 
 
