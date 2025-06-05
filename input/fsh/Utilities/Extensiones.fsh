@@ -13,11 +13,8 @@ Id: IdentidadDeGenero
 Title: "Identidad De Género"
 Description: "Identidad De Género"
 Context: Patient, Practitioner
-//Context: Patient, RelatedPerson, Person, Practitioner, FamilyMemberHistory
-// * ^context[0].type = #element
-// * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl#Patient"
-// * ^context[+].type = #element
-// * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner"
+* ^experimental = true
+
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Identidad De Género"
 * valueCodeableConcept from  IdentGenVS (preferred)
@@ -26,19 +23,24 @@ Extension: SexoBiologico
 Id: SexoBiologico
 Title: "Sexo Biologico del paciente"
 Description: "Sexo Biologico del paciente"
-//Context: Patient
 Context: Patient, Practitioner
+
+* ^experimental = true
+
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "SexoBiologico"
 * valueCodeableConcept from SexBiolVS (preferred)
 
-* valueCodeableConcept ^binding.extension.extension[0].url = "purpose"
+* valueCodeableConcept ^binding.extension.extension[0].url = "key"
+* valueCodeableConcept ^binding.extension.extension[=].valueId = "FHIRGender"
+* valueCodeableConcept ^binding.extension.extension[+].url = "purpose"
 * valueCodeableConcept ^binding.extension.extension[=].valueCode = #candidate
 * valueCodeableConcept ^binding.extension.extension[+].url = "valueSet"
-* valueCodeableConcept ^binding.extension.extension[=].valueCanonical = FhirGenderVS
+* valueCodeableConcept ^binding.extension.extension[=].valueCanonical = "http://hl7.org/fhir/ValueSet/administrative-gender"
 * valueCodeableConcept ^binding.extension.extension[+].url = "documentation"
 * valueCodeableConcept ^binding.extension.extension[=].valueMarkdown = "Una vinculación adicional alternativa al código \"Sexo Biológico\" de FHIR, mantenida para compatibilidad retroactiva."
 * valueCodeableConcept ^binding.extension.url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+
 
 Extension:   NombreComercial
 Id:          NombreComercial
@@ -140,10 +142,8 @@ Context: Patient.contact
 * extension[tutId].value[x] only Identifier
 * extension[tutId].valueIdentifier 1..1 MS
 * extension[tutId].valueIdentifier.type 1..1 MS
-* extension[tutId].valueIdentifier.type.coding.code 1..1 MS
-* extension[tutId].valueIdentifier.type.coding.system 1..1 MS
-* extension[tutId].valueIdentifier.type.coding.display 0..1 MS
-* extension[tutId].valueIdentifier.system 1..1 MS
+
+* extension[tutId].valueIdentifier.system 0..1 MS
 * extension[tutId].valueIdentifier.value 1..1 MS
 
 //* extension[docProc].url = "docProc"
@@ -153,9 +153,7 @@ Context: Patient.contact
 * extension[docProc].valueCodeableConcept from PaisesVS (required)
 * extension[docProc].valueCodeableConcept 1..1 MS
 * extension[docProc].valueCodeableConcept.coding 1..1 MS
-* extension[docProc].valueCodeableConcept.coding.code 1..1 MS
-* extension[docProc].valueCodeableConcept.coding.system 1..1 MS
-* extension[docProc].valueCodeableConcept.coding.display 0..1 MS
+
 /*
 Extension: TiposEncuentroRemotoCL
 Id: TiposEncuentro

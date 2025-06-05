@@ -10,6 +10,7 @@ Description: "Perfil para generar un recurso que permita desarrollar auditoría 
 * ^status = #active
 * ^publisher = "HL7 Chile"
 
+* entity.lifecycle ^binding.valueSet = "http://hl7.org/fhir/ValueSet/object-lifecycle-events|5.2.0"
 * type MS
 * type ^short = "Tipo/identificación del Evento"
 * type ^definition = "Identificador de una familia del evento. Por ejemplo, un elemento de menú, un programa, una regla, una política, un código de función, un nombre de aplicación o una URL. Identifica la función realizada."

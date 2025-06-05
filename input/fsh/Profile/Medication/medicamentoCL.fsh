@@ -27,7 +27,9 @@ Description: "Descripción de un Medicamento"
 * ingredient ^short = "Componentes del medicamento"
   * item[x] MS
   * item[x] ^short = "Componente del fármaco"
+  * itemCodeableConcept MS
   * itemCodeableConcept from http://hl7.org/fhir/ValueSet/medication-codes (example)
+  * itemReference MS
   * itemReference only Reference(Substance or CoreMedicamentoCl)
   * isActive 0..1 MS
   * isActive ^short = "Determinación si el componente es componente activo o no"

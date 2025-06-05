@@ -77,3 +77,4 @@ parameters:
   path-resource:
     - input/resources
     - fsh-generated/resources
+  expansion-parameter: "system-version=http://snomed.info/sct|http://snomed.info/sct/version/20240501"

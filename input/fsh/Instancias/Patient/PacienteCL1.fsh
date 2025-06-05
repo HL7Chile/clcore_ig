@@ -114,8 +114,8 @@ Usage: #inline
 
 * extension[tutId].valueIdentifier
   * type = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI#NNCHL "Chile"
-  * system = "http://regcivil.cl/Validacion/RUN"
-  * value = "8987321-7"
+  //* system = "http://regcivil.cl/Validacion/RUN"
+* extension[tutId].valueIdentifier.value = "8987321-7"
 
 * extension[docProc].valueCodeableConcept = PaisesCS#152 "Chile"
 

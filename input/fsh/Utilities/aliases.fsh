@@ -27,6 +27,8 @@ Alias:   m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
 Alias: CSIdentidaddeGenero = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSIdentidadGenero
 Alias: CSSexoBiologico = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSSexoBiologico
 Alias: CSEspecialidades = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSEspecialidadMedica
+Alias: ClaseVacCS = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSClaseVacuna
+
 RuleSet: RuleSetMeta
 * ^version = "0.5.0"
 * ^status = #draft

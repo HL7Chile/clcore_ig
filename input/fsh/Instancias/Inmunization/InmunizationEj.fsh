@@ -4,6 +4,10 @@ Description: "Immunization ficticio"
 InstanceOf : ImmunizationCL
 Usage : #example
 
+* extension[ClaseVacuna].valueCoding = ClaseVacCS#internacional "Vacuna Internacional"
+* extension[Campana].valueString =  "No Aplica Campaña"
+* extension[Dosis].valueString = "Primera"
+* extension[ProxFecha].valueDate = "2022-07-06"
 * status = #completed
 * patient = Reference(PacienteCL)
 * vaccineCode
@@ -13,3 +17,5 @@ Usage : #example
 
 * occurrenceDateTime = "2022-07-06T14:30:00+01:00"
 * recorded = "2022-07-06T14:40:00+01:00"
+
+* programEligibility.coding = CSNombreCampanaCL#hepatiA "Hepatitis A"

@@ -6,7 +6,7 @@ Description:    """
 El Perfil de Observación de la Temperatura Corporal de la Core CL, hereda del Perfil de CL Signos Vitales. Este perfil establece expectativas mínimas para el recurso *Observation* para registrar, buscar y obtener observaciones de la temperatura con códigos LOINC estándar y unidades de medida UCUM. Especifica qué elementos centrales adicionales, extensiones, vocabularios y conjuntos de valores DEBEN estar presentes en el recurso y restringe cómo se utilizan los elementos. Proporcionar la base para el desarrollo de estándares para casos de uso específicos promueve la interoperabilidad y la adopción.
 """
 * code 1..1 MS
-* code = $loinc#8302-2
+* code = $loinc#8310-5
 * value[x] only Quantity
 * valueQuantity MS
   * value 1..1 MS
