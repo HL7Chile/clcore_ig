@@ -3,7 +3,7 @@ Parent: Immunization
 Id: ImmunizationCL
 Title: "CL Inmunización"
 Description: "Definición de un evento de inmunización para las necesidades de interoperabilidad en Chile."
-* ^language = #es-CL
+* ^language = #es
 //* ^version = "1.10.0"
 * ^status = #active
 * ^publisher = "HL7 Chile"
@@ -62,7 +62,9 @@ Description: "Definición de un evento de inmunización para las necesidades de 
 * occurrence[x] ^short = "Momento de administración de la vacuna" 
 * occurrence[x] ^definition = "Momento en la que se realiza la inmunización o se administra la vacuna"
 
+* occurrenceDateTime MS
 * occurrenceDateTime ^short = "Fecha y hora de la administración"
+* occurrenceString MS
 * occurrenceString ^short = "Momento de la administración"
 
 * recorded MS

@@ -7,11 +7,11 @@ id: hl7.fhir.cl.clcore
 canonical: https://hl7chile.cl/fhir/ig/clcore
 name: clcore
 title: Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)
-status: active # draft | active | retired | unknown
-version: 2.0.0-ballot
+status: draft # draft | active | retired | unknown
+version: 2.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
-releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
@@ -19,14 +19,14 @@ publisher:
   url: http://hl7chile.cl
   email: chair@hl7chile.cl
 
-description: "Guía de Implementación Versión de Desarrollo Sobre STU 1, para los perfiles Core que se van a requerir a nivel de desarrollo Nacional para Sistemas que Intercambien datos en estandar FHIR-R4"
+description: "Guía de Implementación de FHIR R4 para Chile, versión 2.0.0, que contiene los recursos básicos de FHIR necesarios para la interoperabilidad en el contexto chileno. Esta guía es una evolución de la versión 1.0.0, incorporando mejoras y correcciones basadas en la experiencia adquirida en su uso."
 jurisdiction: urn:iso:std:iso:3166#CL "Chile"
 copyright: "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."
 license: CC0-1.0
 
 
-#dependencies:
-#  hl7.fhir.uv.ips: 1.0.0
+dependencies:
+  hl7.fhir.cl.minsal.eis: 0.1.0
 pages:
   index.md:
     title: Inicio
@@ -36,6 +36,8 @@ pages:
     title: Notas del Must Support
   Aspectos-Generales.md:
     title: Generalidades
+  ImplementationGuide-hl7.fhir.cl.clcore.md:
+    title: Recursos ImplementationGuide Cl Core
   #Extensiones.md:
   #Set-De-Validacion-ValueSets.md:
   #  title: CodeSystems/ValueSets
@@ -75,3 +77,4 @@ parameters:
   path-resource:
     - input/resources
     - fsh-generated/resources
+  expansion-parameter: "system-version=http://snomed.info/sct|http://snomed.info/sct/version/20240501"

@@ -3,7 +3,7 @@ Parent:      Observation
 Id:          CoreObservacionCL
 Title:       "CL Observación"
 Description: "Perfil para definir un mínimo para cualquier observación."
-* ^language = #es-CL
+* ^language = #es
 
 * identifier MS
   * ^short = "Identificación para la observación"
