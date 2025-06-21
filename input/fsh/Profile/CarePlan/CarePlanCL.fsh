@@ -12,6 +12,6 @@ El Perfil **Cl Plan de Cuidados** hereda del recurso [CarePlan](https://hl7.org/
 * ^extension[1].valueCode = #draft
 
 * ^status = #draft
-* ^language = #es
+//* ^language = #es
 * ^experimental = false
 

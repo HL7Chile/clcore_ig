@@ -4,7 +4,7 @@ Id:             CorePacienteCl
 Title:          "CL Paciente"
 Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"
 
-* ^language = #es
+//* ^language = #es
 //* ^version = "1.9.3"
 * ^status = #active
 * ^publisher = "HL7 Chile"

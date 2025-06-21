@@ -3,7 +3,7 @@ Parent:         AllergyIntolerance
 Id:             CoreAlergiaIntCl
 Title:          "CL Alergias e Intolerancias"
 Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades para describir una Alergia o alguna Intolerancia definida en un paciente."
-* ^language = #es
+//* ^language = #es
 
 * clinicalStatus MS
   * ^short = "active | inactive | resolved"

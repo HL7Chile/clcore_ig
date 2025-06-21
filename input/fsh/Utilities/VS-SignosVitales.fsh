@@ -5,7 +5,7 @@ Description:    "Este set de valores LOINC utilizados para identificar los signo
 
 * insert SetCopyrightLOINC
 
-* ^language = #es
+//* ^language = #es
 * ^experimental = false
 //* ^version = "1.0.0"
 * ^status = #active

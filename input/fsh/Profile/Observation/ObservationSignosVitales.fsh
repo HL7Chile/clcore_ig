@@ -11,7 +11,7 @@ Este perfil está basado en el [FHIR Vital Signs Profile](https://hl7.org/fhir/R
 * ^extension[1].valueCode = #draft
 
 * ^status = #draft
-* ^language = #es
+//* ^language = #es
 * ^experimental = false
 
 * status 1..1 MS

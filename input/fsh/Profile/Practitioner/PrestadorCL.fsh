@@ -8,7 +8,7 @@ Parent:         Practitioner
 Id:             CorePrestadorCl
 Title:          "CL Prestador"
 Description:    "Este Perfil fue creado para cubrir la descripción de un Prestador a nivel Nacional"
-* ^language = #es
+//* ^language = #es
 
 * extension contains IdentidadDeGenero named IdentidadDeGenero 0..1 MS
 * extension ^definition = "Extensión para almacenar la identidad de género de cada profesional"

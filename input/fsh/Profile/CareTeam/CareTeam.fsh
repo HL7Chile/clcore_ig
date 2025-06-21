@@ -12,7 +12,7 @@ El Perfil **Cl Equipo de Cuidados** hereda del recurso [CareTeam](https://hl7.or
 * ^extension[1].valueCode = #draft
 
 * ^status = #draft
-* ^language = #es
+//* ^language = #es
 * ^experimental = false
 
 * status MS

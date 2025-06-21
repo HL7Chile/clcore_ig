@@ -1,3 +1,9 @@
+### Versión 2.0.0
+
+- Perfil [AuditEventCl](StructureDefinition-AuditEventCl.html)
+  - Se incluye la extensión para el ciclo de vida del evento
+
+
 ### Versión 1.9.3
 
 - El VS de la extensión *sexoBiologico* se cambia de fuerza a **preferred**

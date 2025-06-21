@@ -3,7 +3,7 @@ Parent:         Condition
 Id:             CoreDiagnosticoCl
 Title:          "CL Condición-Diagnóstico"
 Description:    "Condición o Diagnósticos de Pacientes"
-* ^language = #es
+//* ^language = #es
 //* ^version = "1.9.0"
 * ^status = #active
 * ^publisher = "HL7 Chile"
