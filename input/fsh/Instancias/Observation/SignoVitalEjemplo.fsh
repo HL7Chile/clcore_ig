@@ -225,15 +225,15 @@ Description: "Ejemplo de una observación de presión sanguínea de paciente"
 
 * effectiveDateTime = "2024-01-17T15:00:00-03:00"
 
-* component[0].code = http://loinc.org#8480-6 "Systolic blood pressure"
-* component[=].valueQuantity
+* component[sistolica].code = http://loinc.org#8480-6 "Systolic blood pressure"
+* component[sistolica].valueQuantity
   * value = 12.4
   * unit = "mm[Hg]"
   * system = "http://unitsofmeasure.org"
   * code = #mm[Hg]
   
-* component[+].code = http://loinc.org#8462-4 "Diastolic blood pressure"
-* component[=].valueQuantity
+* component[diastolica].code = http://loinc.org#8462-4 "Diastolic blood pressure"
+* component[diastolica].valueQuantity
   * value = 8.2
   * unit = "mm[Hg]"
   * system = "http://unitsofmeasure.org"

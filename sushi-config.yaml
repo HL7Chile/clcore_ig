@@ -6,9 +6,9 @@
 id: hl7.fhir.cl.clcore
 canonical: https://hl7chile.cl/fhir/ig/clcore
 name: clcore
-title: Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)
+title: Guía de Implementación \"cl core\" FHIR R4, (Versión Evolutiva)
 status: draft # draft | active | retired | unknown
-version: 2.0.0
+version: 2.0.0-ballot
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
