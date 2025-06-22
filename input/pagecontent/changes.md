@@ -3,6 +3,7 @@
 - Perfil [AuditEventCl](StructureDefinition-AuditEventCl.html)
   - Se incluye la extensión para el ciclo de vida del evento
 
+- Se crean perfiles especificos en base al [Cl Signos Vitales](StructureDefinition-cl-core-signos-vitales.html) con sus ejemplos.
 
 ### Versión 1.9.3
 
@@ -30,10 +31,10 @@
     - reaction
     - reportOrigin
   - Se agregan 4 extensiones:
-    - [ClaseVacuna](StructureDefinition-ClaseVacuna.html)
-    - [Campaña](StructureDefinition-Campana.html)
-    - [Dosis](StructureDefinition-Dosis.html)
-    - [ProxFecha](StructureDefinition-ProxFecha.html)
+    - ClaseVacuna
+    - Campaña
+    - Dosis
+    - ProxFecha
 
 
 ### Versión 1.9.0

@@ -63,7 +63,7 @@ echo ---------------------------------------------------------------
 
 
 IF NOT "%jar_location%"=="not_found" (
-    FOR /F "tokens=*" %%i IN ('java "-Dfile.encoding=UTF-8" -jar "%jar_location%" -v 2^>^&1') DO SET "publisher_version=%%i"
+    FOR /F "tokens=*" %%i IN ('java "-Xms19000m -Xmx19000m -Dfile.encoding=UTF-8" -jar "%jar_location%" -v 2^>^&1') DO SET "publisher_version=%%i"
     SET "publisher_version=!publisher_version:"=!"
     ECHO Detected publisher version: !publisher_version!
 ) ELSE (

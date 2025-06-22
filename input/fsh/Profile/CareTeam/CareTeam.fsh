@@ -12,7 +12,7 @@ El Perfil **Cl Equipo de Cuidados** hereda del recurso [CareTeam](https://hl7.or
 * ^extension[1].valueCode = #draft
 
 * ^status = #draft
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * status MS
@@ -20,8 +20,10 @@ El Perfil **Cl Equipo de Cuidados** hereda del recurso [CareTeam](https://hl7.or
 
 * subject 1..1 MS
   * ^short = "Para quien es el equipo de cuidados"
-  * ^type[0].profile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-  * ^type[=].profile[=].extension.valueBoolean = true
+  * ^type[0].targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+  * ^type[=].targetProfile[=].extension.valueBoolean = true
+  * ^type[=].targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+  * ^type[=].targetProfile[=].extension.valueBoolean = false
 * subject only Reference(PacienteCl or Group)
 
 * encounter only Reference(EncounterCL)
@@ -33,17 +35,21 @@ El Perfil **Cl Equipo de Cuidados** hereda del recurso [CareTeam](https://hl7.or
   * member 1..1 MS
   * member only Reference(PrestadorCL or OrganizacionCL or PacienteCl or CoreRolClinicoCl or ClCareTeamPerfil or RelatedPerson)
     * ^short = "Quien está involucrado"
-    * ^type[0].profile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-    * ^type[=].profile[=].extension.valueBoolean = true
-    * ^type[=].profile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-    * ^type[=].profile[=].extension.valueBoolean = false
-    * ^type[=].profile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-    * ^type[=].profile[=].extension.valueBoolean = false
-    * ^type[=].profile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-    * ^type[=].profile[=].extension.valueBoolean = true
+    * ^type[0].targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+    * ^type[=].targetProfile[=].extension.valueBoolean = true
+    * ^type[=].targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+    * ^type[=].targetProfile[=].extension.valueBoolean = false
+    * ^type[=].targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+    * ^type[=].targetProfile[=].extension.valueBoolean = false
+    * ^type[=].targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+    * ^type[=].targetProfile[=].extension.valueBoolean = true
+    * ^type[=].targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+    * ^type[=].targetProfile[=].extension.valueBoolean = false
+    * ^type[=].targetProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+    * ^type[=].targetProfile[=].extension.valueBoolean = false
   * onBehalfOf only Reference(OrganizacionCL)
     * ^short = "Organización del Profesional"
 * reasonReference only Reference(DiagnosticoCl)
-* reasonReference ^short = "Porque por el cual existe el equipo"
+* reasonReference ^short = "El por que existe el equipo"
 * managingOrganization only Reference(OrganizacionCL)
 * managingOrganization ^short = "Organización responsable del equipo"

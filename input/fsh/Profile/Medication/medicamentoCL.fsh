@@ -3,7 +3,7 @@ Parent: Medication
 Id: CoreMedicamentoCl
 Title: "CL Medicamento"
 Description: "Descripción de un Medicamento"
-//* ^language = #es
+* ^language = #es
 //* extension contains NombreComercial named NombreComercial 0..1 MS
 
 * extension contains NombreComercial named NombreComercial 0..1 MS

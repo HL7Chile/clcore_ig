@@ -3,7 +3,7 @@ Parent: Address
 Id: cl-address
 Title: "CL Address"
 Description: "Variable dirección"
-//* ^language = #es
+* ^language = #es
 * . ^comment = "Variable dirección"
 * . ^short = "Tipo de dato para agregar la dirección"
 

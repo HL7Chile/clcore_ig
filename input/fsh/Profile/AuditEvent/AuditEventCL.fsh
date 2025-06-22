@@ -5,7 +5,7 @@ Parent: AuditEvent
 Id: AuditEventCl
 Title: "CL Auditoria"
 Description: "Perfil para generar un recurso que permita desarrollar auditoría de las transacciones realizadas"
-//* ^language = #es
+* ^language = #es
 //* ^version = "1.9.2"
 * ^status = #active
 * ^publisher = "HL7 Chile"
@@ -67,7 +67,7 @@ Description: "Perfil para generar un recurso que permita desarrollar auditoría 
 * source ^short = "Quien reporta el evento"
 * source ^definition = "Sitio en donde se reporta el evento"
 * source.observer MS 
-* source.observer only Reference(CoreRolClinicoCl or PrestadorCL or CoreOrganizacionCl or CorePgitacienteCl or Device or RelatedPerson)
+* source.observer only Reference(CoreRolClinicoCl or PrestadorCL or CoreOrganizacionCl or CorePacienteCl or Device or RelatedPerson)
 * source.observer ^short = "Entidad que reporta el evento"
 * source.observer ^definition = "Identificación del Observador donde se reportó el evento"
 

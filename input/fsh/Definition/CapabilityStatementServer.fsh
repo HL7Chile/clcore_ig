@@ -1837,8 +1837,12 @@ El Servidor Cl Core **DEBERÍA**:
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
     * valueCode = #SHALL
   * type = #Observation
-  * supportedProfile = Canonical(CoreObservacionCL)
-  * supportedProfile.extension
+  * supportedProfile[0] = Canonical(CoreObservacionCL)
+  * supportedProfile[=].extension
+    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+    * valueCode = #SHALL
+  * supportedProfile[+] = Canonical(CLCoreSignosVitalesPerfil)
+  * supportedProfile[=].extension
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
     * valueCode = #SHALL
   * interaction[0]

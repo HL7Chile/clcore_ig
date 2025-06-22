@@ -1,10 +1,10 @@
 resourceType: ImplementationGuide
 id: hl7.fhir.cl.clcore
 url: 'https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore'
-version: 2.0.0
+version: 2.0.0-ballot
 name: clcore
-title: 'Guía de Implementación "cl core" FHIR R4, (Versión Evolutiva)'
-status: active
+title: 'Guía de Implementación cl core FHIR R4, (Versión Evolutiva)'
+status: draft
 publisher: HL7 Chile
 contact:
   - name: HL7 Chile
@@ -30,6 +30,12 @@ packageId: hl7.fhir.cl.clcore
 license: CC0-1.0
 fhirVersion:
   - 4.0.1
+dependsOn:
+  - packageId: hl7.fhir.cl.minsal.eis
+    version: 0.1.0
+    uri: >-
+      https://interoperabilidad.minsal.cl/fhir/ig/eis/ImplementationGuide/hl7.fhir.cl.minsal.eis
+    id: hl7_fhir_cl_minsal_eis
 definition:
   resource:
     - reference:
@@ -122,6 +128,22 @@ definition:
       description: Definición de encuentro clínico genérico para Chile
       exampleBoolean: false
     - reference:
+        reference: StructureDefinition/cl-core-care-team
+      name: Cl Equipo de Cuidados
+      description: >-
+        El Perfil **Cl Equipo de Cuidados** hereda del recurso
+        [CareTeam](https://hl7.org/fhir/R4/careteam.html) de FHIR; consulte
+        dicho recurso para conocer su alcance y definiciones de uso. Este perfil
+        establece las expectativas mínimas para el recurso CareTeam con el
+        objetivo de identificar a los miembros del equipo de atención asociados
+        a un paciente, promoviendo así la interoperabilidad y la adopción
+        mediante una implementación común. Especifica qué elementos centrales,
+        extensiones, vocabularios y conjuntos de valores DEBEN estar presentes
+        en el recurso y cómo deben utilizarse dichos elementos. Establecer esta
+        base mínima para el desarrollo de estándares en casos de uso específicos
+        promueve la interoperabilidad y su adopción.
+      exampleBoolean: false
+    - reference:
         reference: StructureDefinition/cl-core-frecuencia-cardiaca
       name: CL Frecuencia Cardiaca
       description: >-
@@ -202,6 +224,21 @@ definition:
         y restringe cómo se utilizan los elementos. Proporcionar la base para el
         desarrollo de estándares para casos de uso específicos promueve la
         interoperabilidad y la adopción.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-plan-cuidados
+      name: CL Plan de Atención
+      description: >-
+        El Perfil **Cl Plan de Atención** hereda del recurso
+        [CarePlan](https://hl7.org/fhir/R4/careplan.html) de FHIR; consulte
+        dicho recurso para conocer su alcance y definiciones de uso. Este perfil
+        establece las expectativas mínimas para el recurso CarePlan con el fin
+        de registrar, buscar y recuperar datos de evaluación y plan de
+        tratamiento asociados a un paciente. Especifica qué elementos
+        principales, extensiones, vocabularios y conjuntos de valores DEBEN
+        estar presentes y restringe cómo se utilizan estos elementos.
+        Proporcionar esta base para el desarrollo de estándares en casos de uso
+        específicos promueve la interoperabilidad y la adopción.
       exampleBoolean: false
     - reference:
         reference: StructureDefinition/cl-core-presion-en-sangre
@@ -320,37 +357,11 @@ definition:
       description: Códigos de clase de vacuna
       exampleBoolean: false
     - reference:
-        reference: ValueSet/VSCodigosComunaCL
-      name: Códigos de Comunas en Chile
-      description: >-
-        Códigos de Comunas para Chile según Códigos Únicos Territoriales
-        Actualizados, por Decreto exento No 817 del Ministerio del Interior
-      exampleBoolean: false
-    - reference:
-        reference: CodeSystem/CSCodComunasCL
-      name: Códigos de Comunas en Chile
-      description: >-
-        Códigos de Comunas para Chile según Códigos Únicos Territoriales
-        Actualizados, por Decreto exento No 817 del Ministerio del Interior
-      exampleBoolean: false
-    - reference:
         reference: CodeSystem/CSCodigoDNI
       name: Códigos de Documentos DNI para LATAM y el Caribe
       description: >-
         Códigos para los DNI de países de America Latina y el Caribe según
         indicaciones de VS HL7 de V3
-      exampleBoolean: false
-    - reference:
-        reference: ValueSet/VSEspecialidadesCL
-      name: Códigos de Especialidades
-      description: >-
-        Códigos de especialidades médicas descritas según DEIS, la CONACEM y
-        CONACEO
-      exampleBoolean: false
-    - reference:
-        reference: CodeSystem/CSEspecialidadesDeisCL
-      name: Códigos de Especialidades
-      description: Códigos de especialidades médicas descritas según DEIS
       exampleBoolean: false
     - reference:
         reference: CodeSystem/EspecialidadesConacemConaceoCS
@@ -385,34 +396,6 @@ definition:
         reference: ValueSet/CodPais
       name: Códigos de Países
       description: Codigos definidos para la identificación de países segun norma ISO3166-N
-      exampleBoolean: false
-    - reference:
-        reference: ValueSet/VSCodigosProvinciasCL
-      name: Códigos de Provincias en Chile
-      description: >-
-        Códigos de Provincias para Chile según Códigos Únicos Territoriales
-        Actualizados, por Decreto exento No 817 del Ministerio del Interior
-      exampleBoolean: false
-    - reference:
-        reference: CodeSystem/CSCodProvinciasCL
-      name: Códigos de Provincias en Chile
-      description: >-
-        Códigos de Provincias para Chile según Códigos Únicos Territoriales
-        Actualizados, por Decreto exento No 817 del Ministerio del Interior
-      exampleBoolean: false
-    - reference:
-        reference: ValueSet/VSCodigosRegionesCL
-      name: Códigos de Regiones en Chile
-      description: >-
-        Códigos de Regiones para Chile según Códigos Únicos Territoriales
-        Actualizados, por Decreto exento No 817 del Ministerio del Interior
-      exampleBoolean: false
-    - reference:
-        reference: CodeSystem/CSCodRegionCL
-      name: Códigos de Regiones en Chile
-      description: >-
-        Códigos de Regiones para Chile según Códigos Únicos Territoriales
-        Actualizados, por Decreto exento No 817 del Ministerio del Interior
       exampleBoolean: false
     - reference:
         reference: ValueSet/VSContactoRelacion
@@ -458,10 +441,24 @@ definition:
       description: Definición de la dosis administrada
       exampleBoolean: false
     - reference:
+        reference: Observation/observacion-signos-vitales-altura-ejemplo
+      name: Ejemplo de Altura de Paciente
+      description: Ejemplo de una observación de signo vital de atura de paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-altura-corporal
+    - reference:
         reference: Composition/DocumentoEjemplo1
       name: Ejemplo de Cabecera de Documento
       description: Este es el ejemplo de la cabecera de un documento
       exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl'
+    - reference:
+        reference: Observation/observacion-signos-vitales-circunferencia-cabeza-ejemplo
+      name: Ejemplo de circunferencia de cabeza de paciente
+      description: >-
+        Ejemplo de una observación de signo vital de tamaño circunferencia de
+        cabeza de paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-circunferencia-cabeza
     - reference:
         reference: Medication/MedicamentoCl
       name: Ejemplo de comprimido Tareg - D 160
@@ -477,6 +474,22 @@ definition:
         en un establecimiento de salud
       exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl'
     - reference:
+        reference: Observation/observacion-signos-vitales-frec-card-ejemplo
+      name: Ejemplo de frecuencia cardiaca de paciente
+      description: >-
+        Ejemplo de una observación de signo vital de frecuencia cardiaca de
+        paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-frecuencia-cardiaca
+    - reference:
+        reference: Observation/observacion-signos-vitales-frec-resp-ejemplo
+      name: Ejemplo de frecuencia respiratoria de paciente
+      description: >-
+        Ejemplo de una observación de signo vital de frecuencia respiratoria de
+        paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-frecuencia-respiratoria
+    - reference:
         reference: Medication/MedicamentoCl-2
       name: Ejemplo de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido
       description: >-
@@ -491,6 +504,12 @@ definition:
         Ejemplo de un documento, en la cual el prestador que la ha desarollado
         genera una validación por medio de una firma
       exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl'
+    - reference:
+        reference: Observation/observacion-signos-vitales-presion-sangre-ejemplo
+      name: Ejemplo de presión sanguínea de paciente
+      description: Ejemplo de una observación de presión sanguínea de paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-presion-en-sangre
     - reference:
         reference: AllergyIntolerance/AllergyIntoleranceEj
       name: Ejemplo de Recurso AllergyIntolerance Core
@@ -557,6 +576,31 @@ definition:
       description: Diagnóstico Confirmado de Hipertesión
       exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl'
     - reference:
+        reference: Observation/observacion-signos-vitales-imc-ejemplo
+      name: Ejemplo de índice de masa corporal de paciente
+      description: >-
+        Ejemplo de una observación de signo vital de índice de masa corporal de
+        paciente
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-imc'
+    - reference:
+        reference: Observation/observacion-signos-vitales-peso-ejemplo
+      name: Ejemplo de índice de peso de paciente
+      description: Ejemplo de una observación de signo vital de peso de paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-peso-corporal
+    - reference:
+        reference: Observation/observacion-signos-vitales-saturacionO2-ejemplo
+      name: Ejemplo de índice de saturación de oxígeno de paciente
+      description: Ejemplo de una observación de saturación de oxígeno de paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-saturacion-oxigeno
+    - reference:
+        reference: Observation/observacion-signos-vitales-temperatura-ejemplo
+      name: Ejemplo de índice de temperatura corporal de paciente
+      description: Ejemplo de una observación de temperatura corporal de paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-temperatura-corporal
+    - reference:
         reference: Location/LocalizacionEjemploCL1
       name: Ejemplo Localización Farmacia
       description: >-
@@ -576,26 +620,6 @@ definition:
       description: CESFAM Rio Bueno (Ficticio) con ID DEIS no real
       exampleCanonical: >-
         https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl
-    - reference:
-        reference: CodeSystem/CSEspecialidadFarma
-      name: Especialidad Farmacia
-      description: Especialidad de Farmacia
-      exampleBoolean: false
-    - reference:
-        reference: CodeSystem/CSEspecialidadOdontologica
-      name: Especialidad Odontologica
-      description: Especialidad de Odontologica
-      exampleBoolean: false
-    - reference:
-        reference: ValueSet/VSIdentidaddeGenero
-      name: Identidad de Genero
-      description: Identidad de Genero
-      exampleBoolean: false
-    - reference:
-        reference: CodeSystem/CSIdentidaddeGenero
-      name: Identidad de Genero
-      description: Identidad de Genero
-      exampleBoolean: false
     - reference:
         reference: StructureDefinition/IdentidadDeGenero
       name: Identidad De Género
@@ -670,16 +694,6 @@ definition:
         reference: StructureDefinition/SexoBiologico
       name: Sexo Biologico del paciente
       description: Sexo Biologico del paciente
-      exampleBoolean: false
-    - reference:
-        reference: ValueSet/VSSexoListadoDeis
-      name: Sexo Listado Deis
-      description: Sexo Listado Deis
-      exampleBoolean: false
-    - reference:
-        reference: CodeSystem/CSSexoListadoDeis
-      name: Sexo Listado Deis
-      description: Sexo Listado Deis
       exampleBoolean: false
     - reference:
         reference: ValueSet/VSTipoIdentificador
@@ -759,7 +773,7 @@ definition:
     - code: copyrightyear
       value: 2024+
     - code: releaselabel
-      value: ballot
+      value: ci-build
     - code: apply-publisher
       value: 'true'
     - code: apply-contact
@@ -774,3 +788,6 @@ definition:
       value: input/resources
     - code: path-resource
       value: fsh-generated/resources
+    - code: expansion-parameter
+      value: >-
+        system-version=http://snomed.info/sct|http://snomed.info/sct/version/20240501

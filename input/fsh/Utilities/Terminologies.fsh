@@ -2,7 +2,7 @@ ValueSet: VSContactoRelacion
 Id: VSContactoRelacion
 Title: "Códigos de relación del contacto con el paciente"
 Description: "Códigos de relación del contacto con el paciente"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 //* ^version = "1.0.0"
 * ^status = #active
@@ -34,7 +34,7 @@ Description: "Códigos de contactos adicionales usados en Chile para paciente"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-//* ^language = #es
+* ^language = #es
 
 * #tut "Tutor Legal" "Tutor Legal"
 * #nr "No Registrdo" "No Registrdo"
@@ -47,7 +47,7 @@ Title: "Códigos de otros contactos del paciente"
 Description: "Códigos de contactos adicionales usados en Chile para paciente"
 * ^experimental = false
 
-//* ^language = #es
+* ^language = #es
 * ^status = #active
 * ^date = "2022-07-25T00:00:00-03:00"
 * ^contact.name = "HL7 Chile"
@@ -64,7 +64,7 @@ CodeSystem: CSClaseVacuna
 Id: CSClaseVacuna
 Title: "Códigos de clases de Vacuna"
 Description: "Códigos de clase de vacuna"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -84,7 +84,7 @@ ValueSet: VSClaseVacuna
 Id: VSClaseVacuna
 Title: "Códigos de clases de Vacuna"
 Description: "Códigos de clase de vacuna"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -104,7 +104,7 @@ Id: VSCodMadurez
 Title: "Códigos de grado de madurez del artefacto"
 Description: "Códigos de grado de madurez del artefacto"
 
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -123,7 +123,7 @@ CodeSystem: CSCodMadurez
 Id: CSCodMadurez
 Title: "Códigos de grado de madurez del artefacto"
 Description: "Códigos de grado de madurez del artefacto"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -145,7 +145,7 @@ ValueSet: VSDiagnosticosSCT
 Id: VSDiagnosticosSCT
 Title: "Diagnósticos SNOMED y Ausente o Desconocido"
 Description: "Diagnósticos definidos en Snomed-CT."
-//* ^language = #es
+* ^language = #es
 * ^experimental = false //dependera del uso que le den al codesystem
 
 * ^status = #active
@@ -167,7 +167,7 @@ ValueSet: VSTiposDocumentos
 Id: VSTiposDocumentos
 Title: "Tipos de Documentos"
 Description: "Tipos de Documentos para identificación según tabla HL7 V3 y CodeSystem local."
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -188,7 +188,7 @@ CodeSystem: CSCodigoDNI
 Id: CSCodigoDNI
 Title: "Códigos de Documentos DNI para LATAM y el Caribe"
 Description: "Códigos para los DNI de países de America Latina y el Caribe según indicaciones de VS HL7 de V3"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -239,7 +239,7 @@ ValueSet: VSEspecialidadesCL
 Id: VSEspecialidadesCL
 Title: "Códigos de Especialidades"
 Description: "Códigos de especialidades médicas descritas según DEIS, la CONACEM y CONACEO"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -258,7 +258,7 @@ CodeSystem: CSEspecialidadesDeisCL
 Id: CSEspecialidadesDeisCL
 Title: "Códigos de Especialidades"
 Description: "Códigos de especialidades médicas descritas según DEIS"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -344,7 +344,7 @@ ValueSet: VSCodigosRegionesCL
 Id: VSCodigosRegionesCL
 Title: "Códigos de Regiones en Chile"
 Description:  "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -360,7 +360,7 @@ CodeSystem: CSCodRegionCL
 Id: CSCodRegionCL
 Title: "Códigos de Regiones en Chile"
 Description:  "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -392,7 +392,7 @@ ValueSet: VSCodigosProvinciasCL
 Id: VSCodigosProvinciasCL
 Title: "Códigos de Provincias en Chile"
 Description:  "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -408,7 +408,7 @@ CodeSystem: CSCodProvinciasCL
 Id: CSCodProvinciasCL
 Title: "Códigos de Provincias en Chile"
 Description:  "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -481,7 +481,7 @@ ValueSet: VSCodigosComunaCL
 Id: VSCodigosComunaCL
 Title: "Códigos de Comunas en Chile"
 Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -497,7 +497,7 @@ CodeSystem: CSCodComunasCL
 Id: CSCodComunasCL
 Title: "Códigos de Comunas en Chile"
 Description:  "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -862,7 +862,7 @@ ValueSet: VSTiposDocClinico
 Id: VSTiposDocClinico
 Title: "Tipos de Documentos Clínicos"
 Description: "Tipos de Documentos clínicos para Composition. Se trae todo Loinc, se requerirá un VS específico"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -901,7 +901,7 @@ ValueSet: VSTiposVacunasCL
 Id: VSTiposVacunas
 Title: "Tipos de Vacunas RNI"
 Description: "Tipos de Vacunas utilizadas en Chile según CodeSystem local"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -917,7 +917,7 @@ CodeSystem: CSTiposVacunaCL
 Id: CSCodigoVacunas
 Title: "Códigos de Vacunas RNI"
 Description: "Códigos de las vacunas o inmunizaciones según indicaciones del Ministerio de Salud"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -1013,7 +1013,7 @@ ValueSet: VSNombreCampanaCL
 Id: VSNombreCampana
 Title: "Campañas de Vacunación"
 Description: "Campañas de Inmunización utilizada en Chile según CodeSystem local"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -1029,7 +1029,7 @@ CodeSystem: CSNombreCampanaCL
 Id: CSNombreCampana
 Title: "Campañas Inmunización"
 Description: "Códigos de las campañas de vacunas o inmunizaciones según indicaciones del Ministerio de Salud"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -1083,7 +1083,7 @@ ValueSet: VSRazonNOTinmCL
 Id: VSRazonNOTinm
 Title: "Razones no Inmunización"
 Description: "Razones por la que no se lleva a cabo la administración de una vacuna o registro de una inmunización según CodeSystem local"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -1099,7 +1099,7 @@ CodeSystem: CSRazonNOinmunizacionCL
 Id: CSRazonNOTinm
 Title: "Razones no Inmunización"
 Description: "Códigos de las razones por la cual el registro de inmunización no pudo realizarse según indicaciones del Ministerio de Salud"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -1180,7 +1180,7 @@ ValueSet: VSCodigoslenguaje
 Id: VSCodigoslenguaje
 Title: "Codigos Lenguaje"
 Description:  "Códigos de leguaje"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -1265,7 +1265,7 @@ ValueSet: VSTiposEncuentroCL
 Id: VSTiposEncuentroCL
 Title: "Tipos de Encuentro"
 Description: "Códigos de Encuentros según MINSAL"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -1281,7 +1281,7 @@ CodeSystem: CSTiposEncuentroCL
 Id: CSTiposEncuentroCL
 Title: "Tipos de Encuentro"
 Description: "Códigos de Encuentros según MINSAL"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -1301,7 +1301,7 @@ ValueSet: VSTiposServicioCL
 Id: VSTiposServicio
 Title: "Tipos de Servicios Remotos"
 Description: "Tipos de Servicios para encuentro remoto según CodeSystem local"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -1317,7 +1317,7 @@ CodeSystem: CSCodServicioCL
 Id: CSCodigoServicio
 Title: "Tipos de Servicios Remotos"
 Description: "Códigos para los Servicios realizados en un encuentro remoto según indicaciones del Ministerio de Salud"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -1365,7 +1365,7 @@ ValueSet: VSRazonNOencuentro
 Id: VSRazonNOT
 Title: "Razones no Atención Remota"
 Description: "Razones por la que no se lleva a cabo un encuentro remoto según CodeSystem local"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -1381,7 +1381,7 @@ CodeSystem: CSrazonnoencuentro
 Id: csrazonnoencuentro
 Title: "Razón Encuentro Remoto no Realizado"
 Description: "Códigos de las razones por la cual un encuentro remoto no pudo realizarse según indicaciones del Ministerio de Salud"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -1402,7 +1402,7 @@ ValueSet: VSTipoIdentificador
 Id: VSTipoIdentificador
 Title: "Tipo Identificador"
 Description: "Tipo Identificador"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -1418,7 +1418,7 @@ CodeSystem: CSTipoIdentificador
 Id: CSTipoIdentificador
 Title: "Tipo Identificador"
 Description: "Tipo Identificador"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -1448,7 +1448,7 @@ ValueSet: VSIdentidaddeGenero
 Id: VSIdentidaddeGenero
 Title: "Identidad de Genero"
 Description: "Identidad de Genero"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -1464,7 +1464,7 @@ CodeSystem: CSIdentidaddeGenero
 Id: CSIdentidaddeGenero
 Title: "Identidad de Genero"
 Description: "Identidad de Genero"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -1487,7 +1487,7 @@ ValueSet: VSSexoListadoDeis
 Id: VSSexoListadoDeis
 Title: "Sexo Listado Deis"
 Description: "Sexo Listado Deis"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 
 * ^status = #active
@@ -1503,7 +1503,7 @@ CodeSystem: CSSexoListadoDeis
 Id: CSSexoListadoDeis
 Title: "Sexo Listado Deis"
 Description: "Sexo Listado Deis"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -1563,7 +1563,7 @@ CodeSystem:  EspecialidadesConacemConaceoCS
 Id:          EspecialidadesConacemConaceoCS
 Title:       "Códigos de Especialidades de CONACEM y CONACEO"
 Description: "Códigos a usar para las Especialidades provenientes de La Corporación Nacional Autónoma de Certificación de Especialidades Médicas (CONACEM) y de La Corporación Nacional Autónoma de Certificación de Especialidades Odontológicas (CONACEO) de Chile"
-//* ^language = #es
+* ^language = #es
 
 * ^caseSensitive = true
 * ^experimental = true
@@ -1603,7 +1603,7 @@ CodeSystem: CSEspecialidadOdontologica
 Id: CSEspecialidadOdontologica
 Title: "Especialidad Odontologica"
 Description: "Especialidad de Odontologica"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
@@ -1633,7 +1633,7 @@ CodeSystem: CSEspecialidadFarma
 Id: CSEspecialidadFarma
 Title: "Especialidad Farmacia"
 Description: "Especialidad de Farmacia"
-//* ^language = #es
+* ^language = #es
 * ^experimental = false
 * ^caseSensitive = true
 
