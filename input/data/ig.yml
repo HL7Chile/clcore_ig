@@ -790,4 +790,4 @@ definition:
       value: fsh-generated/resources
     - code: expansion-parameter
       value: >-
-        system-version=http://snomed.info/sct|http://snomed.info/sct/version/20240501
+        system-version=http://snomed.info/sct|http://snomed.info/sct/11000201108/version/20250615

@@ -15,7 +15,7 @@ Usage : #example
 * identifier.type.coding.display = "Chile"
 
 //* identifier.system = "http://regcivil.cl/Validacion/RUN"
-* identifier.value = "15.236.327-k"
+* identifier.value = "15236327-k"
 
 //registro de paciente activo
 * active = true

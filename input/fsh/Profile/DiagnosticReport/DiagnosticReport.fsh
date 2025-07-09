@@ -1,9 +1,9 @@
-Profile:        InformeBiopsia
+Profile:        CLReporteDiagnostico
 Parent:         DiagnosticReport
-Id:             riap-informe-biopsia
-Title:          "CL Perfil Reporte Diagnóstico para el Intercambio de Informes y Notas*"
+Id:             cl-core-reporte-diagnostico
+Title:          "CL Perfil Reporte Diagnóstico para el Intercambio de Informes y Notas"
 Description:    """
-El ***CL Perfil Reporte Diagnóstico para el Intercambio de Informes y Notas** hereda del recurso [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html) de FHIR; consulte dicho recurso para conocer su alcance y definiciones de uso. Este perfil establece las expectativas mínimas para la búsqueda y recuperación de Informes Diagnósticos y Notas utilizando el recurso DiagnosticReport. Especifica qué elementos centrales, extensiones, vocabularios y conjuntos de valores DEBEN estar presentes en el recurso y restringe cómo deben utilizarse dichos elementos. Establecer esta base mínima para el desarrollo de estándares en casos de uso específicos promueve la interoperabilidad y la adopción.
+El **CL Perfil Reporte Diagnóstico para el Intercambio de Informes y Notas** hereda del recurso [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html) de FHIR; consulte dicho recurso para conocer su alcance y definiciones de uso. Este perfil establece las expectativas mínimas para la búsqueda y recuperación de Informes Diagnósticos y Notas utilizando el recurso DiagnosticReport. Especifica qué elementos centrales, extensiones, vocabularios y conjuntos de valores DEBEN estar presentes en el recurso y restringe cómo deben utilizarse dichos elementos. Establecer esta base mínima para el desarrollo de estándares en casos de uso específicos promueve la interoperabilidad y la adopción.
 """
 
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
@@ -30,31 +30,36 @@ El ***CL Perfil Reporte Diagnóstico para el Intercambio de Informes y Notas** h
 * category 1.. MS
   * ^short = "Categoría del Informe"
   
-* code 1..1 MS
+* code MS
   * ^short = "Código del Informe"
-* code from ReporteBiopsiaVS (extensible)
+* code from VsTipoReporteCL (preferred)
 
 * subject 1..1 MS
   * ^short = "Paciente del Informe"
-* subject only Reference(MINSALPaciente)
+* subject only Reference(PacienteCl)
 
-* issued 1..1 MS
+* issued MS
   * ^short = "Fecha de Emisión del Informe"
 
-* performer 1..1 MS
+* performer MS
   * ^short = "Profesional o Entidad que emite el Informe"
-* performer only Reference(RolProfesioAnalRIAP or MINSALPrestadorProfesional or MINSALPrestadorOrganizacional)
+* performer only Reference(PrestadorCL or CoreRolClinicoCl or OrganizacionCL)
 
-* specimen 1..1 MS
+* specimen MS
   * ^short = "Muestra utilizada para el informe"
-* specimen only Reference(MuestraRIAP)
+* specimen only Reference(CLMuestra)
 
 * result MS
+  * ^short = "Resultados del Informe como Observaciones"
+* result only Reference(ObservacionCL)
+
 
 * conclusion MS
   * ^short = "Conclusión narrativa del informe"
 
 * conclusionCode MS
+  * ^short = "Código de conclusión del informe"
+* conclusionCode from VSDiagnosticosSCT (example)
 
 * presentedForm MS
   * ^short = "Representación del Informe de Anatomía Patológica"

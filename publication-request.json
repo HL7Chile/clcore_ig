@@ -1,11 +1,11 @@
 {
     "package-id": "hl7.fhir.cl.clcore",
-    "version": "2.0.0-ballot",
+    "version": "2.0.0",
     "desc": "Versión de desarrollo",
-    "path": "https://hl7chile.cl/fhir/ig/clcore/2.0.0-ballot",
+    "path": "https://hl7chile.cl/fhir/ig/clcore/2.0.0",
     "changes": "changes.html",
     "status": "draft",
-    "sequence": "STU3",
+    "sequence": "STU4",
     "first": false,
     "mode": "working",
     "fhirversion": "4.0.1"

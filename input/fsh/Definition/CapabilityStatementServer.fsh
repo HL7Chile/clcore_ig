@@ -3663,20 +3663,20 @@ El Servidor Cl Core **DEBERÍA**:
 * rest.interaction[0]
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-    * valueCode = #MAY
+    * valueCode = #SHOULD
   * code = #transaction
 * rest.interaction[+]
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-    * valueCode = #MAY
+    * valueCode = #SHOULD
   * code = #batch
 * rest.interaction[+]
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-    * valueCode = #MAY
+    * valueCode = #SHOULD
   * code = #search-system
 * rest.interaction[+]
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-    * valueCode = #MAY
+    * valueCode = #SHOULD
   * code = #history-system

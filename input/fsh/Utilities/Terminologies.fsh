@@ -161,7 +161,7 @@ Description: "Diagnósticos definidos en Snomed-CT."
 // * codes from system https://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html
 * include codes from system http://snomed.info/sct where concept descendent-of #404684003
 //* include codes from valueset http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips
-* http://snomed.info/sct#160245001 "No current problems or disability"
+* http://snomed.info/sct#160245001 
 
 ValueSet: VSTiposDocumentos
 Id: VSTiposDocumentos
@@ -180,7 +180,7 @@ Description: "Tipos de Documentos para identificación según tabla HL7 V3 y Cod
 * ^experimental = false //dependera del uso que le den al codesystem
 
 * codes from system CSCodigoDNI
-* codes from system http://terminology.hl7.org/CodeSystem/v2-0203
+* codes from system http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0
 * codes from system CSTipoIdentificador
 
 
@@ -910,8 +910,11 @@ Description: "Tipos de Vacunas utilizadas en Chile según CodeSystem local"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* insert SetCopyrightSCTHL7
 
 * codes from system CSTiposVacunaCL
+//* codes from system http://snomed.info/sct where concept in #661000325101
+* include codes from system http://snomed.info/sct where concept in #661000325101
 
 CodeSystem: CSTiposVacunaCL
 Id: CSCodigoVacunas
@@ -1650,3 +1653,46 @@ Description: "Especialidad de Farmacia"
 * #4 "Salud Pública"
 * #5 "Laboratorio Forense"
 */
+
+ValueSet:       VsTipoReporteCL
+Id:             cl-core-tipo-reporte
+Title:          "Set de Valores de Tipo de Reporte"
+Description:    "Este conjunto de valores define los tipos de reporte que pueden ser generados por el sistema de interoperabilidad del MINSAL, basado en el estándar LOINC."
+
+* ^language = #es
+* ^experimental = false
+
+* ^status = #active
+* ^date = "2025-07-08T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* insert SetCopyrightLOINC
+
+* include codes from system http://loinc.org where CLASSTYPE = "Laboratory class"
+* include codes from system http://loinc.org where CLASSTYPE = "Radiology class"
+
+ValueSet:       VsTipoEspecimenCL
+Id:             cl-core-tipo-especimen-vs
+Title:          "Set de Valores de los Tipos de Especimen"
+Description:    "Códigos de tipos de especimen en Snomed"
+
+// * insert SetCopyrightSCT
+// * ^experimental = true
+// * include codes from system $snomed where concept descendent-of #86273004
+
+* insert SetCopyrightSCT
+
+* ^language = #es
+* ^experimental = false
+
+* ^status = #active
+* ^date = "2025-07-08T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* include codes from system SCT where concept descendent-of #123038009

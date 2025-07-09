@@ -68,8 +68,6 @@ Context: DomainResource, Extension, Address.country, CodeableConcept, Identifier
   * system 0..1 MS
   * display 0..1 MS
 
-* url ^short = "Extensión de dirección del país"
-
 //* valueCodeableConcept.coding.system from CodPaises (extensible)
 
 /* 		Extension 		*/
@@ -77,7 +75,7 @@ Context: DomainResource, Extension, Address.country, CodeableConcept, Identifier
 Extension:   ComunasCl
 Id:          ComunasCl
 Title:       "Códigos para Comunas en Chile"
-Description: "Esta extensión que permite codiificar las Comunas en Chile en el campo de Dirección"
+Description: "Esta extensión que permite codificar las Comunas en Chile en el campo de Dirección"
 Context: Address.city
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de Comunas"

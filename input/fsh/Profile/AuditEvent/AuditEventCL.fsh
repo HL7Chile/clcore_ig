@@ -1,4 +1,4 @@
-Alias: $lifecycle = http://hl7.org/fhir/StructureDefinition/auditevent-Lifecycle
+Alias: $lifecycle = http://hl7.org/fhir/StructureDefinition/auditevent-Lifecycle|5.2.0
 
 Profile: AuditEventCl
 Parent: AuditEvent
@@ -73,8 +73,8 @@ Description: "Perfil para generar un recurso que permita desarrollar auditoría 
 
 
 * entity MS
-* entity.extension contains $lifecycle named cicloDeVida 0..1 MS
-* entity.extension[cicloDeVida] ^short = "Un ciclo de vida del evento asiciado con el participante del evento"
+// * entity.extension contains $lifecycle named cicloDeVida 0..1 MS
+// * entity.extension[cicloDeVida] ^short = "Un ciclo de vida del evento asiciado con el participante del evento"
 * entity ^short = "Entidad que registra la ocurrencia del Evento"
 * entity ^definition = "Entidad que registra la ocurrencia del Evento"
 * entity.what MS
