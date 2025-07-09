@@ -16,7 +16,7 @@ Establecer esta base mínima para el desarrollo de estándares en casos de uso e
 * ^extension[=].valueCode = #draft
 
 * ^status = #draft
-* ^experimental = true
+* ^experimental = false
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * identifier MS

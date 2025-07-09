@@ -1,9 +1,13 @@
 ### Versión 2.0.0
 
-- Perfil [AuditEventCl](StructureDefinition-AuditEventCl.html)
-  - Se incluye la extensión para el ciclo de vida del evento
-
 - Se crean perfiles especificos en base al [Cl Signos Vitales](StructureDefinition-cl-core-signos-vitales.html) con sus ejemplos.
+- Se crean los siguientes perfiles con sus ejemplos:
+
+  - [CL Perfil Reporte Diagnóstico para el Intercambio de Informes y Notas](StructureDefinition-cl-core-reporte-diagnostico.html)
+  - [CL Perfil de Muestra](StructureDefinition-cl-core-muestra.html)
+  - [CL Perfil Servicio de Cuidados de Salud](StructureDefinition-cl-core-servicio-cuidados-salud.html)
+  - [CL Plan de Atención](StructureDefinition-cl-core-plan-cuidados.html)
+  - [CL Equipo de Cuidados](StructureDefinition-cl-core-equipo-cuidados.html)
 
 ### Versión 1.9.3
 
