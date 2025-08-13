@@ -913,7 +913,6 @@ Description: "Tipos de Vacunas utilizadas en Chile según CodeSystem local"
 * insert SetCopyrightSCTHL7
 
 * codes from system CSTiposVacunaCL
-//* codes from system http://snomed.info/sct where concept in #661000325101
 * include codes from system http://snomed.info/sct where concept in #661000325101
 
 CodeSystem: CSTiposVacunaCL
