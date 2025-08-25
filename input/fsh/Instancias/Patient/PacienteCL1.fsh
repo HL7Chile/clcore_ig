@@ -7,6 +7,7 @@ Usage : #example
 
 * extension[IdentidadDeGenero] = IdentidadDeGeneroPacienteCl
 * extension[SexoBiologico] = SexoBiologicoPacienteCl
+* extension[Nacionalidad] = NacionalidadPacienteCl
 //Identificación por Cédula Chilena
 * identifier.use = #official    //obligado
 * identifier.type.extension[paisEmisionDocumento] = PaisEmisionDocumentoPacienteCL
@@ -60,6 +61,12 @@ Usage : #example
 * communication.language.coding = urn:ietf:bcp:47#es-CL "Spanish (Chile)"
 
 * generalPractitioner = Reference(OrganizacionClEjemplo1)
+
+Instance: NacionalidadPacienteCl
+InstanceOf: Nacionalidad
+Usage: #inline
+
+* extension[code].valueCodeableConcept = PaisesCS#152 "Chile"
 
 Instance: PaisEmisionDocumentoPacienteCL
 InstanceOf: CodigoPaises

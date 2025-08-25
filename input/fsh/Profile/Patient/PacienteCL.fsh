@@ -16,7 +16,7 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 
 * extension contains IdentidadDeGenero named IdentidadDeGenero 0..1 MS
 * extension contains SexoBiologico named SexoBiologico 0..1 MS
-* extension contains CodigoPaises named nacionalidad 0..* MS
+* extension contains Nacionalidad named nacionalidad 0..* MS
 //* extension contains Nacionalidad named nacionalidad 0..1 MS
 
 * identifier ^short = "Listados de Id de Paciente. De poseer una CI con RUN vigente, este DEBE ser ingresado"

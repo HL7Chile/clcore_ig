@@ -53,6 +53,17 @@ Context: Medication
 * valueString 1..1 MS
 
 
+Extension:   Nacionalidad
+Parent:      $nacionality
+Id:          Nacionalidad
+Title:       "Código de Nacionalidad"
+Description: "Esta extensión incluye códigos de nacionalidades de los pacienter y profesionales de salud"
+Context: Patient,  Practitioner
+* extension[code] MS
+  * value[x] only CodeableConcept
+  * value[x] ^short = "Código de la Nacionalidad"
+  * valueCodeableConcept from PaisesVS (example)
+
 
 Extension:   PaisDireccion
 Id:          CodigoPaises

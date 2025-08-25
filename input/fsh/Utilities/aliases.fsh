@@ -28,6 +28,8 @@ Alias: CSIdentidaddeGenero = https://interoperabilidad.minsal.cl/fhir/ig/eis/Cod
 Alias: CSSexoBiologico = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSSexoBiologico
 Alias: CSEspecialidades = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSEspecialidadMedica
 Alias: ClaseVacCS = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSClaseVacuna
+Alias: $nacionality = http://hl7.org/fhir/StructureDefinition/patient-nationality
+
 
 RuleSet: RuleSetMeta
 * ^version = "0.5.0"
