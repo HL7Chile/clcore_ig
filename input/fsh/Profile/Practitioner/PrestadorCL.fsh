@@ -16,6 +16,9 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * extension contains SexoBiologico named SexoBiologico 0..1 MS
 * extension ^definition = "Extensión para almacenar el sexo biológico del profesional"
 
+// * extension contains NacionalidadProfesional named NacionalidadProfesional 0..1 MS
+
+
 * identifier  MS
 * identifier ^short = "Identificación de los prestadores"
 * identifier ^definition = "El identificador oficial para cada prestador en Chile es el Registro Nacional de Prestadores Institucionales (NRPI). Además, existe el identificador nacional chileno, el Registro Único Nacional (RUN). Y por último puede ingresar un número de pasaporte y un ID extra para cada prestador."

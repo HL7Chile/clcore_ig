@@ -9,6 +9,8 @@
   - [CL Plan de Atención](StructureDefinition-cl-core-plan-cuidados.html)
   - [CL Equipo de Cuidados](StructureDefinition-cl-core-equipo-cuidados.html)
 
+- Se actualiza la nacionalidad de paciente y profesionales utilizando la extensión de [nationality](https://www.hl7.org/fhir/R4/extension-patient-nationality.html) de base. 
+
 ### Versión 1.9.3
 
 - El VS de la extensión *sexoBiologico* se cambia de fuerza a **preferred**

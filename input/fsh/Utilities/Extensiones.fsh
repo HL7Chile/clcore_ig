@@ -57,13 +57,33 @@ Extension:   Nacionalidad
 Parent:      $nacionality
 Id:          Nacionalidad
 Title:       "Código de Nacionalidad"
-Description: "Esta extensión incluye códigos de nacionalidades de los pacienter y profesionales de salud"
-Context: Patient,  Practitioner
+Description: "Esta extensión incluye códigos de nacionalidades de los pacientes"
+Context: Patient
 * extension[code] MS
+  * ^short = "Código de la Nacionalidad"
   * value[x] only CodeableConcept
   * value[x] ^short = "Código de la Nacionalidad"
   * valueCodeableConcept from PaisesVS (example)
 
+* extension[period] 
+  * ^short = "Período de vigencia de la nacionalidad"
+  * value[x] only Period
+  * value[x] ^short = "Período de vigencia de la nacionalidad"
+  
+
+// Extension:   NacionalidadProfesional
+// Id:          nacionalidad-profesional
+// Title:       "Código de Nacionalidad"
+// Description: "Esta extensión incluye códigos de nacionalidades de los profesionales de salud"
+// Context: Practitioner
+// * extension contains code 0..1 and period 0..1
+// * extension[code] MS
+//   * value[x] only CodeableConcept
+//   * value[x] ^short = "Código de la Nacionalidad"
+//   * valueCodeableConcept from PaisesVS (example)
+// * extension[period] MS
+//   * value[x] only Period
+//   * value[x] ^short = "Período de vigencia de la nacionalidad"
 
 Extension:   PaisDireccion
 Id:          CodigoPaises
