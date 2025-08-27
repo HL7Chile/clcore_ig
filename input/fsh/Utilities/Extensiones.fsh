@@ -93,7 +93,7 @@ Context: DomainResource, Extension, Address.country, CodeableConcept, Identifier
 * value[x] only CodeableConcept
 * value[x] ^short = "Código del País"
 //* url 1..1 MS
-* valueCodeableConcept from PaisesVS
+* valueCodeableConcept from PaisesVS (preferred)
 * valueCodeableConcept.coding 0..1 MS
   * code 0..1 MS
   * system 0..1 MS
@@ -179,7 +179,7 @@ Context: Patient.contact
 * extension[docProc] ^short = "País de procedencia del documento"
 * extension[docProc].value[x] only CodeableConcept
 * extension[docProc].url MS
-* extension[docProc].valueCodeableConcept from PaisesVS (required)
+* extension[docProc].valueCodeableConcept from PaisesVS (preferred)
 * extension[docProc].valueCodeableConcept 1..1 MS
 * extension[docProc].valueCodeableConcept.coding 1..1 MS
 
