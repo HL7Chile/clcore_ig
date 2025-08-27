@@ -11,6 +11,8 @@
 
 - Se actualiza la nacionalidad de pacientes utilizando la extensión de [nationality](https://www.hl7.org/fhir/R4/extension-patient-nationality.html) de base. 
 
+- Se actualización de bidings relacionado a paises para que queden en **preferred**
+
 ### Versión 1.9.3
 
 - El VS de la extensión *sexoBiologico* se cambia de fuerza a **preferred**
