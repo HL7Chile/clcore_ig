@@ -9,7 +9,7 @@ Description: "Este es el ejemplo de la cabecera de un documento"
 
 * status = #preliminary
 * type 
-  * coding = http://loinc.org#11503-0 "Registros médicos"
+  * coding = http://loinc.org#11503-0 "Registros médicos: Paciente:-:Tipo:Documento:"
   * text = "Registro Médico"
 * subject = Reference(PacienteCL)
 * encounter = Reference(EjemploEncounterCL)
@@ -19,7 +19,7 @@ Description: "Este es el ejemplo de la cabecera de un documento"
 * custodian = Reference(OrganizacionClEjemplo1)
 * section[0]
   * code
-    * coding = http://loinc.org#70004-7 "Nota de estudio de diagnóstico"
+    * coding = http://loinc.org#70004-7 "Nota de estudio de diagnóstico:{Configuración} :Punto temporal:Tipo:Documento:{Role}"
     * text = "Diagnostico Estudio"
   * text
     * status = #additional
@@ -28,7 +28,7 @@ Description: "Este es el ejemplo de la cabecera de un documento"
 
 * section[1]
   * code
-    * coding = http://loinc.org#57852-6 "Lista de problemas"
+    * coding = http://loinc.org#57852-6 "Lista de problemas: Paciente:Punto temporal:Tipo:Narrativo:Reported"
     * text = "Listado de problemas"
   * text
     * status = #additional
