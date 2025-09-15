@@ -1606,7 +1606,7 @@ Description: "Códigos para los Servicios realizados en un encuentro remoto seg�
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * #nutINTA	"Nutrición INTA"
-* #nedINTA	"Medicina INTA"
+* #medINTA	"Medicina INTA"
 * #medInt	"Medicina Interna"
 * #saludMDigital "Salud Mental Digital"
 * #medGen	"Medicina General"

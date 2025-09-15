@@ -16,7 +16,7 @@ Description: "Variable dirección"
 * use ^short = "Definición del tipo de domicilio home | work | temp | old (requerido)"
 * use ^definition = "Se especifica el tipo de dirección notificada. Esto debe ser segn los códigos definidos por HL7 FHIR"
  
-* line 0..1 MS
+* line 0..* MS
 * line ^short = "Calle o avenida, número y casa o depto"
 * line ^definition = "Aquí se escribe toda la dirección completa"
 

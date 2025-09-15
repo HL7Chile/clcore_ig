@@ -83,7 +83,7 @@ Context: DomainResource, Extension, Address.country, CodeableConcept, Identifier
 * value[x] only CodeableConcept
 * value[x] ^short = "Código del País"
 //* url 1..1 MS
-* valueCodeableConcept from CodPais
+* valueCodeableConcept from CodPais (preferred)
 * valueCodeableConcept.coding 0..1 MS
   * code 0..1 MS
   * system 0..1 MS
@@ -301,7 +301,7 @@ Context: Immunization
 * value[x] only Coding
 * valueCoding ^short = "Código clase de Vacuna"
 
-* valueCoding from VSClaseVacuna (required)
+* valueCoding from VSClaseVacuna (preferred)
 
 
 Extension: Campana
