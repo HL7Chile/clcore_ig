@@ -6,7 +6,10 @@ Description: "Variable dirección"
 * ^language = #es
 * . ^comment = "Variable dirección"
 * . ^short = "Tipo de dato para agregar la dirección"
-* extension contains http://hl7.org/fhir/StructureDefinition/geolocation named Geolocalizacion 0..1 MS
+
+
+* extension contains http://hl7.org/fhir/StructureDefinition/geolocation|5.2.0 named geoLocation 0..1 MS
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

@@ -8,7 +8,7 @@
 
 Consideraciones para la implementación:
 
-* Nacionalidad se agrega como una extensión local que figura como un *slice* de nombre **CodigoPaises**.
+* Nacionalidad se agrega como una extensión perfilada que figura como un *slice* de nombre **Nacionalida**, está es la extensión de HL7 Internacional [nationality](https://www.hl7.org/fhir/R4/extension-patient-nationality.html).
   * *system* para esta extensión corresponde a uno local creado con la ISO-3166-N
   * *ValueSet* para código es una expansión completa del *CodeSystem*
 * Considerar para el *identifier*.

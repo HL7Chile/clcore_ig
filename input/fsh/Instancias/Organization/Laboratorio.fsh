@@ -7,7 +7,7 @@ Usage : #example
 
 * active = true
 * identifier
-  * system = "https://sii.cl"
+  //* system = "https://sii.cl"
   * value = "785943520-7"
 
 * name = "Laboratorio ACME de Chile"	
@@ -32,22 +32,22 @@ Instance: ComunasClOrganization2
 InstanceOf: ComunasCl
 Usage: #inline
 
-* valueCodeableConcept = CSCodComunasCL#13120 "ÑuÑoa"
+* valueCodeableConcept = ComunasCS#13120 "ÑuÑoa"
 
 Instance: ProvinciasClOrganization2
 InstanceOf: ProvinciasCl
 Usage: #inline
 
-* valueCodeableConcept = CSCodProvinciasCL#131 "Santiago"
+* valueCodeableConcept = ProvinciasCS#131 "Santiago"
 
 Instance: RegionesClOrganization2
 InstanceOf: RegionesCl
 Usage: #inline
 
-* valueCodeableConcept = CSCodRegionCL#13 "Metropolitana de Santiago"
+* valueCodeableConcept = RegionesCS#13 "Metropolitana de Santiago"
 
 Instance: CodigoPaisesOrganization2
 InstanceOf: CodigoPaises
 Usage: #inline
 
-* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
+* valueCodeableConcept = PaisesCS#152 "Chile"

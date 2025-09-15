@@ -1,0 +1,793 @@
+resourceType: ImplementationGuide
+id: hl7.fhir.cl.clcore
+url: 'https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore'
+version: 2.0.0-ballot
+name: clcore
+title: 'Guía de Implementación cl core FHIR R4, (Versión Evolutiva)'
+status: draft
+publisher: HL7 Chile
+contact:
+  - name: HL7 Chile
+    telecom:
+      - system: url
+        value: 'http://hl7chile.cl'
+      - system: email
+        value: chair@hl7chile.cl
+description: >-
+  Guía de Implementación de FHIR R4 para Chile, versión 2.0.0, que contiene los
+  recursos básicos de FHIR necesarios para la interoperabilidad en el contexto
+  chileno. Esta guía es una evolución de la versión 1.0.0, incorporando mejoras
+  y correcciones basadas en la experiencia adquirida en su uso.
+jurisdiction:
+  - coding:
+      - code: CL
+        system: 'urn:iso:std:iso:3166'
+        display: Chile
+copyright: >-
+  Usado con el permiso de HL7 International, todos los derechos resevados en los
+  Licencias de HL7 Internacional.
+packageId: hl7.fhir.cl.clcore
+license: CC0-1.0
+fhirVersion:
+  - 4.0.1
+dependsOn:
+  - packageId: hl7.fhir.cl.minsal.eis
+    version: 0.1.0
+    uri: >-
+      https://interoperabilidad.minsal.cl/fhir/ig/eis/ImplementationGuide/hl7.fhir.cl.minsal.eis
+    id: hl7_fhir_cl_minsal_eis
+definition:
+  resource:
+    - reference:
+        reference: ValueSet/VSNombreCampana
+      name: Campañas de Vacunación
+      description: Campañas de Inmunización utilizada en Chile según CodeSystem local
+      exampleBoolean: false
+    - reference:
+        reference: CodeSystem/CSNombreCampana
+      name: Campañas Inmunización
+      description: >-
+        Códigos de las campañas de vacunas o inmunizaciones según indicaciones
+        del Ministerio de Salud
+      exampleBoolean: false
+    - reference:
+        reference: CapabilityStatement/cl-core-client
+      name: CapabilityStatement Cliente Cl Core
+      description: >-
+        CapabilityStatement para definir las caracteristicas mínimas de un
+        cliente con todas las interacciones posibles hacía un servidor
+      exampleBoolean: false
+    - reference:
+        reference: CapabilityStatement/cl-core-server
+      name: CapabilityStatement Servidor Cl Core
+      description: >-
+        CapabilityStatement para definir las caracteristicas mínimas del
+        servidor para ver las interacciones posibles
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-address
+      name: CL Address
+      description: Variable dirección
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/CoreAlergiaIntCl
+      name: CL Alergias e Intolerancias
+      description: >-
+        Este Perfil ha sido desarrollado para cubrir las necesidades para
+        describir una Alergia o alguna Intolerancia definida en un paciente.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-altura-corporal
+      name: CL Altura Corporal
+      description: >-
+        El Perfil de Observación de la Altura Corporal de la Core CL, hereda del
+        Perfil de CL Signos Vitales. Este perfil establece expectativas mínimas
+        para el recurso *Observation* para registrar, buscar y obtener
+        observaciones de la altura con códigos LOINC estándar y unidades de
+        medida UCUM. Especifica qué elementos centrales adicionales,
+        extensiones, vocabularios y conjuntos de valores DEBEN estar presentes
+        en el recurso y restringe cómo se utilizan los elementos. Proporcionar
+        la base para el desarrollo de estándares para casos de uso específicos
+        promueve la interoperabilidad y la adopción.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/AuditEventCl
+      name: CL Auditoria
+      description: >-
+        Perfil para generar un recurso que permita desarrollar auditoría de las
+        transacciones realizadas
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-circunferencia-cabeza
+      name: CL Circunferencia de Cabeza
+      description: >-
+        El Perfil de Observación de la Circunferencia de Cabeza de la Core CL,
+        hereda del Perfil de CL Signos Vitales. Este perfil establece
+        expectativas mínimas para el recurso *Observation* para registrar,
+        buscar y obtener observaciones de la circunferencia de cabeza con
+        códigos LOINC estándar y unidades de medida UCUM. Especifica qué
+        elementos centrales adicionales, extensiones, vocabularios y conjuntos
+        de valores DEBEN estar presentes en el recurso y restringe cómo se
+        utilizan los elementos. Proporcionar la base para el desarrollo de
+        estándares para casos de uso específicos promueve la interoperabilidad y
+        la adopción.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/CoreDiagnosticoCl
+      name: CL Condición-Diagnóstico
+      description: Condición o Diagnósticos de Pacientes
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/DocumentoCl
+      name: CL Documento
+      description: De un formato genérico para documento clínico en Chile.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/EncounterCL
+      name: CL Encuentro Clínico
+      description: Definición de encuentro clínico genérico para Chile
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-care-team
+      name: Cl Equipo de Cuidados
+      description: >-
+        El Perfil **Cl Equipo de Cuidados** hereda del recurso
+        [CareTeam](https://hl7.org/fhir/R4/careteam.html) de FHIR; consulte
+        dicho recurso para conocer su alcance y definiciones de uso. Este perfil
+        establece las expectativas mínimas para el recurso CareTeam con el
+        objetivo de identificar a los miembros del equipo de atención asociados
+        a un paciente, promoviendo así la interoperabilidad y la adopción
+        mediante una implementación común. Especifica qué elementos centrales,
+        extensiones, vocabularios y conjuntos de valores DEBEN estar presentes
+        en el recurso y cómo deben utilizarse dichos elementos. Establecer esta
+        base mínima para el desarrollo de estándares en casos de uso específicos
+        promueve la interoperabilidad y su adopción.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-frecuencia-cardiaca
+      name: CL Frecuencia Cardiaca
+      description: >-
+        El Perfil de Observación de la Frecuencia Cardiaca de la Core CL, hereda
+        del Perfil de CL Signos Vitales. Este perfil establece expectativas
+        mínimas para el recurso *Observation* para registrar, buscar y obtener
+        observaciones de la frecuencia cardiaca con códigos LOINC estándar y
+        unidades de medida UCUM. Especifica qué elementos centrales adicionales,
+        extensiones, vocabularios y conjuntos de valores DEBEN estar presentes
+        en el recurso y restringe cómo se utilizan los elementos. Proporcionar
+        la base para el desarrollo de estándares para casos de uso específicos
+        promueve la interoperabilidad y la adopción.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-frecuencia-respiratoria
+      name: CL Frecuencia Respiratoria
+      description: >-
+        El Perfil de Observación de la Frecuencia Respiratoria de la Core CL,
+        hereda del Perfil de CL Signos Vitales. Este perfil establece
+        expectativas mínimas para el recurso *Observation* para registrar,
+        buscar y obtener observaciones de la frecuencia respiratoria con códigos
+        LOINC estándar y unidades de medida UCUM. Especifica qué elementos
+        centrales adicionales, extensiones, vocabularios y conjuntos de valores
+        DEBEN estar presentes en el recurso y restringe cómo se utilizan los
+        elementos. Proporcionar la base para el desarrollo de estándares para
+        casos de uso específicos promueve la interoperabilidad y la adopción.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/ImmunizationCL
+      name: CL Inmunización
+      description: >-
+        Definición de un evento de inmunización para las necesidades de
+        interoperabilidad en Chile.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/CoreLocalizacionCl
+      name: CL Localización
+      description: >-
+        Este perfil determina la ubicación específica para un evento, objeto o
+        Infraestructura específica. Este perfil permite vincular una
+        localización con una organización o espacio físico específico
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/CoreMedicamentoCl
+      name: CL Medicamento
+      description: Descripción de un Medicamento
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/CoreObservacionCL
+      name: CL Observación
+      description: Perfil para definir un mínimo para cualquier observación.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/CoreOrganizacionCl
+      name: CL Organización
+      description: >-
+        Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de
+        Uso de Receta Electrónica. Sin embargo, se ha modelado para también
+        cubrir las necesidades nacionales de un Recurso de Organización en Salud
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/CorePacienteCl
+      name: CL Paciente
+      description: >-
+        Este Perfil se ha modelado con el fin de cubrir las necesidades
+        nacionales de un Recurso Paciente para un Historial Clínico Nacional
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-peso-corporal
+      name: CL Peso Corporal
+      description: >-
+        El Perfil de Observación de la Peso Corporal de la Core CL, hereda del
+        Perfil de CL Signos Vitales. Este perfil establece expectativas mínimas
+        para el recurso *Observation* para registrar, buscar y obtener
+        observaciones de la peso con códigos LOINC estándar y unidades de medida
+        UCUM. Especifica qué elementos centrales adicionales, extensiones,
+        vocabularios y conjuntos de valores DEBEN estar presentes en el recurso
+        y restringe cómo se utilizan los elementos. Proporcionar la base para el
+        desarrollo de estándares para casos de uso específicos promueve la
+        interoperabilidad y la adopción.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-plan-cuidados
+      name: CL Plan de Atención
+      description: >-
+        El Perfil **Cl Plan de Atención** hereda del recurso
+        [CarePlan](https://hl7.org/fhir/R4/careplan.html) de FHIR; consulte
+        dicho recurso para conocer su alcance y definiciones de uso. Este perfil
+        establece las expectativas mínimas para el recurso CarePlan con el fin
+        de registrar, buscar y recuperar datos de evaluación y plan de
+        tratamiento asociados a un paciente. Especifica qué elementos
+        principales, extensiones, vocabularios y conjuntos de valores DEBEN
+        estar presentes y restringe cómo se utilizan estos elementos.
+        Proporcionar esta base para el desarrollo de estándares en casos de uso
+        específicos promueve la interoperabilidad y la adopción.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-presion-en-sangre
+      name: CL Presion En Sangre
+      description: >-
+        El perfil de presión arterial de la CL Core hereda del perfil de CL
+        Signos Vitales. Este perfil establece expectativas mínimas para que el
+        recurso de observación registre, busque y obtenga observaciones de
+        presión arterial diastólica y sistólica con códigos LOINC estándar y
+        unidades de medida UCUM. Especifica qué elementos principales
+        adicionales, extensiones, vocabularios y conjuntos de valores **DEBEN**
+        estar presentes en el recurso y restringe cómo se usan los elementos.
+        Proporcionar el espacio para el desarrollo de estándares para casos de
+        uso específicos promueve la interoperabilidad y la adopción.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/CorePrestadorCl
+      name: CL Prestador
+      description: >-
+        Este Perfil fue creado para cubrir la descripción de un Prestador a
+        nivel Nacional
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/ProvenanceCl
+      name: CL Provenance
+      description: >-
+        Este Perfil describe la forma de validación respecto a la procedencia de
+        un recurso generado durante un acto clínico.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/CoreRolClinicoCl
+      name: CL RolClinico
+      description: >-
+        Este Perfil se ha modelado con el fin de cubrir las necesidades la
+        función de Prestador en una organización de Chile, por ejemplo:
+        Hospital, Clínica, Cesfam, farmacias, etc
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-saturacion-oxigeno
+      name: CL Saturación de Oxígeno
+      description: >-
+        El Perfil de Observación de la Saturación de Oxígeno de la Core CL,
+        hereda del Perfil de CL Signos Vitales. Este perfil establece
+        expectativas mínimas para el recurso *Observation* para registrar,
+        buscar y obtener observaciones de la saturación de oxígeno con códigos
+        LOINC estándar y unidades de medida UCUM. Especifica qué elementos
+        centrales adicionales, extensiones, vocabularios y conjuntos de valores
+        DEBEN estar presentes en el recurso y restringe cómo se utilizan los
+        elementos. Proporcionar la base para el desarrollo de estándares para
+        casos de uso específicos promueve la interoperabilidad y la adopción.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-signos-vitales
+      name: CL Signos Vitales
+      description: >-
+        Este perfil está basado en el [FHIR Vital Signs
+        Profile](https://hl7.org/fhir/R4/observation-vitalsigns.html) y
+        definiendo *indicaciones* *adiccionales* en el recurso Observation que
+        representa las observaciones de signos vitales. Esto especifica cuales
+        son los elementos principales, extensiones, vocabularios y set de
+        valores que **DEBE** estar presentes en el recurso y restricciones.
+        Proveendo un piso para estandarizar los desarrollos para casos de uso
+        especificos fomentando la interoperabilidad y su adopción. 
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-temperatura-corporal
+      name: CL Temperatura Corporal
+      description: >-
+        El Perfil de Observación de la Temperatura Corporal de la Core CL,
+        hereda del Perfil de CL Signos Vitales. Este perfil establece
+        expectativas mínimas para el recurso *Observation* para registrar,
+        buscar y obtener observaciones de la temperatura con códigos LOINC
+        estándar y unidades de medida UCUM. Especifica qué elementos centrales
+        adicionales, extensiones, vocabularios y conjuntos de valores DEBEN
+        estar presentes en el recurso y restringe cómo se utilizan los
+        elementos. Proporcionar la base para el desarrollo de estándares para
+        casos de uso específicos promueve la interoperabilidad y la adopción.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/cl-core-imc
+      name: CL Índice de Masa Corporal
+      description: >-
+        El Perfil de Observación del IMC de la Core CL, hereda del Perfil de CL
+        Signos Vitales. Este perfil establece expectativas mínimas para el
+        recurso *Observation* para registrar, buscar y obtener observaciones del
+        índice de masa corporal (IMC) con códigos LOINC estándar y unidades de
+        medida UCUM. Especifica qué elementos centrales adicionales,
+        extensiones, vocabularios y conjuntos de valores DEBEN estar presentes
+        en el recurso y restringe cómo se utilizan los elementos. Proporcionar
+        la base para el desarrollo de estándares para casos de uso específicos
+        promueve la interoperabilidad y la adopción.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/ClaseVacuna
+      name: Clase de Vacuna
+      description: Corresponde a un Id creado por el equipo de gestión de datos del Deis
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSCodigoslenguaje
+      name: Codigos Lenguaje
+      description: Códigos de leguaje
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/CodigoPaises
+      name: Código de Países
+      description: Esta extensión incluye códigos de países
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSClaseVacuna
+      name: Códigos de clases de Vacuna
+      description: Códigos de clase de vacuna
+      exampleBoolean: false
+    - reference:
+        reference: CodeSystem/CSClaseVacuna
+      name: Códigos de clases de Vacuna
+      description: Códigos de clase de vacuna
+      exampleBoolean: false
+    - reference:
+        reference: CodeSystem/CSCodigoDNI
+      name: Códigos de Documentos DNI para LATAM y el Caribe
+      description: >-
+        Códigos para los DNI de países de America Latina y el Caribe según
+        indicaciones de VS HL7 de V3
+      exampleBoolean: false
+    - reference:
+        reference: CodeSystem/EspecialidadesConacemConaceoCS
+      name: Códigos de Especialidades de CONACEM y CONACEO
+      description: >-
+        Códigos a usar para las Especialidades provenientes de La Corporación
+        Nacional Autónoma de Certificación de Especialidades Médicas (CONACEM) y
+        de La Corporación Nacional Autónoma de Certificación de Especialidades
+        Odontológicas (CONACEO) de Chile
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSCodMadurez
+      name: Códigos de grado de madurez del artefacto
+      description: Códigos de grado de madurez del artefacto
+      exampleBoolean: false
+    - reference:
+        reference: CodeSystem/CSCodMadurez
+      name: Códigos de grado de madurez del artefacto
+      description: Códigos de grado de madurez del artefacto
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSOtrosContactos
+      name: Códigos de otros contactos del paciente
+      description: Códigos de contactos adicionales usados en Chile para paciente
+      exampleBoolean: false
+    - reference:
+        reference: CodeSystem/CSOtrosContactos
+      name: Códigos de otros contactos del paciente
+      description: Códigos de contactos adicionales usados en Chile para paciente
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/CodPais
+      name: Códigos de Países
+      description: Codigos definidos para la identificación de países segun norma ISO3166-N
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSContactoRelacion
+      name: Códigos de relación del contacto con el paciente
+      description: Códigos de relación del contacto con el paciente
+      exampleBoolean: false
+    - reference:
+        reference: CodeSystem/CSCodigoVacunas
+      name: Códigos de Vacunas RNI
+      description: >-
+        Códigos de las vacunas o inmunizaciones según indicaciones del
+        Ministerio de Salud
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/ComunasCl
+      name: Códigos para Comunas en Chile
+      description: >-
+        Esta extensión que permite codiificar las Comunas en Chile en el campo
+        de Dirección
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/ProvinciasCl
+      name: Códigos para Provincias en Chile
+      description: >-
+        Esta extensión que permite codificar las Provincias en Chile en el campo
+        de Dirección
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/RegionesCl
+      name: Códigos para Regiones en Chile
+      description: >-
+        Esta extensión que permite codificar las Regiones en Chile en el campo
+        de Dirección
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSDiagnosticosSCT
+      name: Diagnósticos SNOMED y Ausente o Desconocido
+      description: Diagnósticos definidos en Snomed-CT.
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/Dosis
+      name: Dosis Administrada
+      description: Definición de la dosis administrada
+      exampleBoolean: false
+    - reference:
+        reference: Observation/observacion-signos-vitales-altura-ejemplo
+      name: Ejemplo de Altura de Paciente
+      description: Ejemplo de una observación de signo vital de atura de paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-altura-corporal
+    - reference:
+        reference: Composition/DocumentoEjemplo1
+      name: Ejemplo de Cabecera de Documento
+      description: Este es el ejemplo de la cabecera de un documento
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/DocumentoCl'
+    - reference:
+        reference: Observation/observacion-signos-vitales-circunferencia-cabeza-ejemplo
+      name: Ejemplo de circunferencia de cabeza de paciente
+      description: >-
+        Ejemplo de una observación de signo vital de tamaño circunferencia de
+        cabeza de paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-circunferencia-cabeza
+    - reference:
+        reference: Medication/MedicamentoCl
+      name: Ejemplo de comprimido Tareg - D 160
+      description: >-
+        Medicamento comprimido Tareg -D160 referemciado como medicamento en la
+        TFC, considerando el de 25 comprimidos
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl'
+    - reference:
+        reference: PractitionerRole/EjemploEspecialidadCL2
+      name: Ejemplo de Especialidad Medicina Familiar
+      description: >-
+        Define la especialidad de medicina familiar que cumnple un profesional
+        en un establecimiento de salud
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl'
+    - reference:
+        reference: Observation/observacion-signos-vitales-frec-card-ejemplo
+      name: Ejemplo de frecuencia cardiaca de paciente
+      description: >-
+        Ejemplo de una observación de signo vital de frecuencia cardiaca de
+        paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-frecuencia-cardiaca
+    - reference:
+        reference: Observation/observacion-signos-vitales-frec-resp-ejemplo
+      name: Ejemplo de frecuencia respiratoria de paciente
+      description: >-
+        Ejemplo de una observación de signo vital de frecuencia respiratoria de
+        paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-frecuencia-respiratoria
+    - reference:
+        reference: Medication/MedicamentoCl-2
+      name: Ejemplo de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido
+      description: >-
+        Definición de Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido
+        Código de descripción = 1703591000167111 y de Cocepto = 696681000167108
+        según TFC
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreMedicamentoCl'
+    - reference:
+        reference: Provenance/EjemplValidacionProvCl
+      name: Ejemplo de la Validación de un documento por medio del Autor
+      description: >-
+        Ejemplo de un documento, en la cual el prestador que la ha desarollado
+        genera una validación por medio de una firma
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvenanceCl'
+    - reference:
+        reference: Observation/observacion-signos-vitales-presion-sangre-ejemplo
+      name: Ejemplo de presión sanguínea de paciente
+      description: Ejemplo de una observación de presión sanguínea de paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-presion-en-sangre
+    - reference:
+        reference: AllergyIntolerance/AllergyIntoleranceEj
+      name: Ejemplo de Recurso AllergyIntolerance Core
+      description: AllergyIntolerance ficticio
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreAlergiaIntCl'
+    - reference:
+        reference: PractitionerRole/EjemploEspecialidadCL
+      name: Ejemplo de Recurso de especialidad
+      description: Define la especialidad que cumnple en un establecimiento de salud
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreRolClinicoCl'
+    - reference:
+        reference: Encounter/EjemploEncounterCL
+      name: Ejemplo de Recurso Encuentro
+      description: Encuentro remoto ficticio del paciente
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/EncounterCL'
+    - reference:
+        reference: Immunization/ImmunizationEj
+      name: Ejemplo de Recurso Immunization
+      description: Immunization ficticio
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ImmunizationCL'
+    - reference:
+        reference: Patient/PacienteCL
+      name: Ejemplo de Recurso Paciente Nacional
+      description: >-
+        Paciente ficticio nacional CI Chilena, sin sistema de validación
+        "http://regcivil.cl/Validacion/RUN" ficticio , cuyo nombre se decribe
+        mediante el oficial y uno social. La dirección tampoco es Real
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl'
+    - reference:
+        reference: Practitioner/EjemploPrestadorCL2
+      name: Ejemplo de Recurso Prestador 2 como base para un Core Nacional
+      description: >-
+        Ejemplo de un Prestador no Real con identificadores en Systemas con APIs
+        "no disponibles"
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl'
+    - reference:
+        reference: Practitioner/EjemploPrestadorCL
+      name: Ejemplo de Recurso Prestador como base para un Core Nacional
+      description: >-
+        Ejemplo de un Prestador no Real con identificadores en Systemas con
+        API"s no disponibles
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl'
+    - reference:
+        reference: Observation/observacion-signos-vitales-ejemplo
+      name: Ejemplo de Signo Vital
+      description: >-
+        Ejemplo de una observación de signo vital de saturación de oxígeno en
+        sangre
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-signos-vitales
+    - reference:
+        reference: AuditEvent/AuditEventEx
+      name: Ejemplo de un Audit-Event Search.
+      description: Log de Audición de una operacion Search.
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/AuditEventCl'
+    - reference:
+        reference: Condition/DiagnosticoEj2
+      name: Ejemplo de Un Diagnóstico de Faringoamigdalitis
+      description: Diagnóstico Confirmado de Faringoamigdalitis
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl'
+    - reference:
+        reference: Condition/DiagnosticoEj
+      name: Ejemplo de Un Diagnóstico de hipertensión
+      description: Diagnóstico Confirmado de Hipertesión
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreDiagnosticoCl'
+    - reference:
+        reference: Observation/observacion-signos-vitales-imc-ejemplo
+      name: Ejemplo de índice de masa corporal de paciente
+      description: >-
+        Ejemplo de una observación de signo vital de índice de masa corporal de
+        paciente
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-imc'
+    - reference:
+        reference: Observation/observacion-signos-vitales-peso-ejemplo
+      name: Ejemplo de índice de peso de paciente
+      description: Ejemplo de una observación de signo vital de peso de paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-peso-corporal
+    - reference:
+        reference: Observation/observacion-signos-vitales-saturacionO2-ejemplo
+      name: Ejemplo de índice de saturación de oxígeno de paciente
+      description: Ejemplo de una observación de saturación de oxígeno de paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-saturacion-oxigeno
+    - reference:
+        reference: Observation/observacion-signos-vitales-temperatura-ejemplo
+      name: Ejemplo de índice de temperatura corporal de paciente
+      description: Ejemplo de una observación de temperatura corporal de paciente
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-core-temperatura-corporal
+    - reference:
+        reference: Location/LocalizacionEjemploCL1
+      name: Ejemplo Localización Farmacia
+      description: >-
+        Ejemplo de la localización relacionada con una Farmacia específica
+        ubicada en la comuna de Viña del Mar
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreLocalizacionCl
+    - reference:
+        reference: Organization/EjemploLaboratorio1
+      name: Ejemplo Organización Laboratorio
+      description: Laboratorio
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl
+    - reference:
+        reference: Organization/OrganizacionClEjemplo1
+      name: Ejemplo Organización Prestadora de Salud
+      description: CESFAM Rio Bueno (Ficticio) con ID DEIS no real
+      exampleCanonical: >-
+        https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreOrganizacionCl
+    - reference:
+        reference: StructureDefinition/IdentidadDeGenero
+      name: Identidad De Género
+      description: Identidad De Género
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/IdContacto
+      name: Identificación del Contacto de un Paciente
+      description: >-
+        Identificación de contacto de paciente en especial para casos en los
+        cuales este actúa como Tutor Legal
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/Campana
+      name: Nombre Campaña de Vacunación
+      description: Nombre Campaña de Vacunación
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/NombreComercial
+      name: Nombre Comercial Fármaco
+      description: Nombre comercial del fármaco prescrito
+      exampleBoolean: false
+    - reference:
+        reference: Observation/ObservacionEjemplo
+      name: Observación Ejemplo
+      description: Ejemplo de una observación
+      exampleCanonical: 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CoreObservacionCL'
+    - reference:
+        reference: StructureDefinition/ProxFecha
+      name: Proxima fecha de vacunación
+      description: Fecha de la próxima fecha de vacunación si corresponde
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSRazonNOT
+      name: Razones no Atención Remota
+      description: >-
+        Razones por la que no se lleva a cabo un encuentro remoto según
+        CodeSystem local
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSRazonNOTinm
+      name: Razones no Inmunización
+      description: >-
+        Razones por la que no se lleva a cabo la administración de una vacuna o
+        registro de una inmunización según CodeSystem local
+      exampleBoolean: false
+    - reference:
+        reference: CodeSystem/CSRazonNOTinm
+      name: Razones no Inmunización
+      description: >-
+        Códigos de las razones por la cual el registro de inmunización no pudo
+        realizarse según indicaciones del Ministerio de Salud
+      exampleBoolean: false
+    - reference:
+        reference: CodeSystem/csrazonnoencuentro
+      name: Razón Encuentro Remoto no Realizado
+      description: >-
+        Códigos de las razones por la cual un encuentro remoto no pudo
+        realizarse según indicaciones del Ministerio de Salud
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/SegundoApellido
+      name: Segundo Apellido
+      description: Segundo Apellido
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/cl-core-vs-signos-vitales
+      name: Set de Valores Signos Vitales
+      description: Este set de valores LOINC utilizados para identificar los signos vitales
+      exampleBoolean: false
+    - reference:
+        reference: StructureDefinition/SexoBiologico
+      name: Sexo Biologico del paciente
+      description: Sexo Biologico del paciente
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSTipoIdentificador
+      name: Tipo Identificador
+      description: Tipo Identificador
+      exampleBoolean: false
+    - reference:
+        reference: CodeSystem/CSTipoIdentificador
+      name: Tipo Identificador
+      description: Tipo Identificador
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSTiposDocumentos
+      name: Tipos de Documentos
+      description: >-
+        Tipos de Documentos para identificación según tabla HL7 V3 y CodeSystem
+        local.
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSTiposDocClinico
+      name: Tipos de Documentos Clínicos
+      description: >-
+        Tipos de Documentos clínicos para Composition. Se trae todo Loinc, se
+        requerirá un VS específico
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSTiposEncuentroCL
+      name: Tipos de Encuentro
+      description: Códigos de Encuentros según MINSAL
+      exampleBoolean: false
+    - reference:
+        reference: CodeSystem/CSTiposEncuentroCL
+      name: Tipos de Encuentro
+      description: Códigos de Encuentros según MINSAL
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSTiposServicio
+      name: Tipos de Servicios Remotos
+      description: Tipos de Servicios para encuentro remoto según CodeSystem local
+      exampleBoolean: false
+    - reference:
+        reference: CodeSystem/CSCodigoServicio
+      name: Tipos de Servicios Remotos
+      description: >-
+        Códigos para los Servicios realizados en un encuentro remoto según
+        indicaciones del Ministerio de Salud
+      exampleBoolean: false
+    - reference:
+        reference: ValueSet/VSTiposVacunas
+      name: Tipos de Vacunas RNI
+      description: Tipos de Vacunas utilizadas en Chile según CodeSystem local
+      exampleBoolean: false
+  page:
+    nameUrl: toc.html
+    title: Table of Contents
+    generation: html
+    page:
+      - nameUrl: index.html
+        title: Inicio
+        generation: markdown
+      - nameUrl: Alcances-Objetivos.html
+        title: Objetivos
+        generation: markdown
+      - nameUrl: Notas-MS.html
+        title: Notas del Must Support
+        generation: markdown
+      - nameUrl: Aspectos-Generales.html
+        title: Generalidades
+        generation: markdown
+      - nameUrl: ImplementationGuide-hl7.fhir.cl.clcore.html
+        title: Recursos ImplementationGuide Cl Core
+        generation: markdown
+      - nameUrl: changes.html
+        title: Historial de Cambios
+        generation: markdown
+  parameter:
+    - code: copyrightyear
+      value: 2024+
+    - code: releaselabel
+      value: ci-build
+    - code: apply-publisher
+      value: 'true'
+    - code: apply-contact
+      value: 'true'
+    - code: show-inherited-invariants
+      value: 'false'
+    - code: excludettl
+      value: 'true'
+    - code: generate
+      value: genExamples
+    - code: path-resource
+      value: input/resources
+    - code: path-resource
+      value: fsh-generated/resources
+    - code: expansion-parameter
+      value: >-
+        system-version=http://snomed.info/sct|http://snomed.info/sct/11000201108/version/20250615

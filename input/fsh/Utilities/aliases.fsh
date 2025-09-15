@@ -17,10 +17,20 @@ Alias: MT = http://hl7.org/fhir/ValueSet/mimetypes
 Alias: VSadministrative-gender = http://hl7.org/fhir/ValueSet/administrative-gender
 Alias: CSadministrative-gender = http://hl7.org/fhir/administrative-gender
 Alias: Canonical = https://hl7chile.cl/fhir/ig/clcore
-
+Alias: ComunasCS = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSComunas
+Alias: ProvinciasCS = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSProvincia
+Alias: RegionesCS = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSRegion
+Alias: PaisesCS = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSPaises
 Alias:   SCT = http://snomed.info/sct
 Alias:   ATC = http://www.whocc.no/atc
 Alias:   m49.htm = http://unstats.un.org/unsd/methods/m49/m49.htm
+Alias: CSIdentidaddeGenero = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSIdentidadGenero
+Alias: CSSexoBiologico = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSSexoBiologico
+Alias: CSEspecialidades = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSEspecialidadMedica
+Alias: ClaseVacCS = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSClaseVacuna
+Alias: $nacionality = http://hl7.org/fhir/StructureDefinition/patient-nationality
+
+
 RuleSet: RuleSetMeta
 * ^version = "0.5.0"
 * ^status = #draft
@@ -64,3 +74,6 @@ Alias: $be-vs-score = https://www.ehealth.fgov.be/standards/fhir/core/ValueSet/b
 Alias: $hl7chile = http://www.hl7chile.cl
 Alias: $vitalsignsunit = http://hl7.org/fhir/ValueSet/ucum-vitals-common
 Alias: $ucum = http://unitsofmeasure.org
+Alias: $ucum-altura = http://hl7.org/fhir/ValueSet/ucum-bodylength
+Alias: $ucum-temperatura = http://hl7.org/fhir/ValueSet/ucum-bodytemp
+Alias: $ucum-peso = http://hl7.org/fhir/ValueSet/ucum-bodyweight

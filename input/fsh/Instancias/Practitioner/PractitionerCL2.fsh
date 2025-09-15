@@ -99,25 +99,25 @@ Instance: ComunasClPrestadorCL2
 InstanceOf: ComunasCl
 Usage: #inline
 
-* valueCodeableConcept = CSCodComunasCL#13101 "Santiago Centro"
+* valueCodeableConcept = ComunasCS#13101 "Santiago"
 
 Instance: ProvinciasClPrestadorCL2
 InstanceOf: ProvinciasCl
 Usage: #inline
 
-* valueCodeableConcept = CSCodProvinciasCL#131 "Santiago"
+* valueCodeableConcept = ProvinciasCS#131 "Santiago"
 
 Instance: RegionesClPrestadorCL2
 InstanceOf: RegionesCl
 Usage: #inline
 
-* valueCodeableConcept = CSCodRegionCL#13 "Metropolitana de Santiago"
+* valueCodeableConcept = RegionesCS#13 "Metropolitana de Santiago"
 
 Instance: CodigoPaisesPrestadorCL2
 InstanceOf: CodigoPaises
 Usage: #inline
 
-* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
+* valueCodeableConcept = PaisesCS#152 "Chile"
 
 Instance: SegundoApellidoPrestadorCL2
 InstanceOf: SegundoApellido
