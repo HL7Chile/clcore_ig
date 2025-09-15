@@ -6,12 +6,12 @@ Usage: #example
 
 * identifier[0]
   * use = #official
-  //* system = "http://minsal.cl/semantikos/description-id"
+  * system = "http://minsal.cl/semantikos/description-id"
   * value = "1703591000167111"
 
 * identifier[1]
   * use = #official
-  //* system = "http://minsal.cl/semantikos/concept-id"
+  * system = "http://minsal.cl/semantikos/concept-id"
   * value = "696681000167108"
 
 * code.text = "Hidroclorotiazida 25 mg + Valsartán 160 mg comprimido"

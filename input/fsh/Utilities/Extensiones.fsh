@@ -1,46 +1,27 @@
-Alias: IdentGenVS =  https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSIdentidadGenero
-Alias: SexBiolVS = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSSexoBiologico
-Alias: FhirGenderVS = http://hl7.org/fhir/ValueSet/administrative-gender
-Alias: PaisesVS = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSPaises
-Alias: ComunasVS = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSComunas
-Alias: ProvinciasVS = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSProvincia
-Alias: RegionesVS = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSRegion
-
-
 /*Por problemas en más de un servidor las extensiones deben utilizar el recurso base en los contextos*/
 Extension: IdentidadDeGenero
 Id: IdentidadDeGenero
 Title: "Identidad De Género"
 Description: "Identidad De Género"
 Context: Patient, Practitioner
-* ^experimental = true
-
+//Context: Patient, RelatedPerson, Person, Practitioner, FamilyMemberHistory
+// * ^context[0].type = #element
+// * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl#Patient"
+// * ^context[+].type = #element
+// * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner"
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "Identidad De Género"
-* valueCodeableConcept from  IdentGenVS (preferred)
+* valueCodeableConcept from  VSIdentidaddeGenero
 
 Extension: SexoBiologico
 Id: SexoBiologico
 Title: "Sexo Biologico del paciente"
 Description: "Sexo Biologico del paciente"
+//Context: Patient
 Context: Patient, Practitioner
-
-* ^experimental = true
-
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "SexoBiologico"
-* valueCodeableConcept from SexBiolVS (preferred)
-
-* valueCodeableConcept ^binding.extension.extension[0].url = "key"
-* valueCodeableConcept ^binding.extension.extension[=].valueId = "FHIRGender"
-* valueCodeableConcept ^binding.extension.extension[+].url = "purpose"
-* valueCodeableConcept ^binding.extension.extension[=].valueCode = #candidate
-* valueCodeableConcept ^binding.extension.extension[+].url = "valueSet"
-* valueCodeableConcept ^binding.extension.extension[=].valueCanonical = "http://hl7.org/fhir/ValueSet/administrative-gender"
-* valueCodeableConcept ^binding.extension.extension[+].url = "documentation"
-* valueCodeableConcept ^binding.extension.extension[=].valueMarkdown = "Una vinculación adicional alternativa al código \"Sexo Biológico\" de FHIR, mantenida para compatibilidad retroactiva."
-* valueCodeableConcept ^binding.extension.url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
-
+* valueCodeableConcept from VSadministrative-gender (preferred)
 
 Extension:   NombreComercial
 Id:          NombreComercial
@@ -52,38 +33,47 @@ Context: Medication
 * url 1..1 MS
 * valueString 1..1 MS
 
+// Extension: SexoRegistral
+// Id: SexoRegistral
+// Title: "Sexo Registral del paciente"
+// Description: "Sexo Registral del paciente"
 
-Extension:   Nacionalidad
-Parent:      $nacionality
-Id:          Nacionalidad
-Title:       "Código de Nacionalidad"
-Description: "Esta extensión incluye códigos de nacionalidades de los pacientes"
-Context: Patient
-* extension[code] MS
-  * ^short = "Código de la Nacionalidad"
-  * value[x] only CodeableConcept
-  * value[x] ^short = "Código de la Nacionalidad"
-  * valueCodeableConcept from PaisesVS (example)
+// * value[x] only CodeableConcept
+// * valueCodeableConcept ^short = "SexoRegistral"
+// * valueCodeableConcept from http://hl7.org/fhir/ValueSet/administrative-gender
 
-* extension[period] 
-  * ^short = "Período de vigencia de la nacionalidad"
-  * value[x] only Period
-  * value[x] ^short = "Período de vigencia de la nacionalidad"
-  
+// Extensiones necesarias para evitar errores de QA y malos contextos de las extensiones
 
-// Extension:   NacionalidadProfesional
-// Id:          nacionalidad-profesional
-// Title:       "Código de Nacionalidad"
-// Description: "Esta extensión incluye códigos de nacionalidades de los profesionales de salud"
-// Context: Practitioner
-// * extension contains code 0..1 and period 0..1
-// * extension[code] MS
-//   * value[x] only CodeableConcept
-//   * value[x] ^short = "Código de la Nacionalidad"
-//   * valueCodeableConcept from PaisesVS (example)
-// * extension[period] MS
-//   * value[x] only Period
-//   * value[x] ^short = "Período de vigencia de la nacionalidad"
+// Extension:   PaisEmision
+// Id:          PaisEmision
+// Title:       "Código de la Emición de un Identificador"
+// Description: "Esta extensión incluye los códigos de paises de emición de un documento"
+// Context: Identifier.type
+// * value[x] only CodeableConcept
+// * value[x] ^short = "Código de País de Emición"
+// //* url 1..1 MS
+// * valueCodeableConcept from CodPais
+// * valueCodeableConcept.coding 0..1 MS
+//   * code 0..1 MS
+//   * system 0..1 MS
+//   * display 0..1 MS
+// * url ^short = "Extensión de país de Emición de un documento"
+
+// Extension:   PaisNacionalidadCl
+// Id:          Nacionalidad
+// Title:       "Codigo de Nacionalidad"
+// Description: "Esta extensión incluye códigos de nacionalidad que pueda tener un pacient"
+// //Context: CorePacienteCl, ClAddress.country.extension.paises, Location, Organization
+// Context: CorePacienteCl
+// * value[x] only CodeableConcept
+// * value[x] ^short = "Código de País"
+// //* url 1..1 MS
+// * valueCodeableConcept from CodPais
+// * valueCodeableConcept.coding 0..1 MS
+//   * code 0..1 MS
+//   * system 0..1 MS
+//   * display 0..1 MS
+// * url ^short = "Extensión de Nacionalidad para pacientes"
 
 Extension:   PaisDireccion
 Id:          CodigoPaises
@@ -99,6 +89,8 @@ Context: DomainResource, Extension, Address.country, CodeableConcept, Identifier
   * system 0..1 MS
   * display 0..1 MS
 
+* url ^short = "Extensión de dirección del país"
+
 //* valueCodeableConcept.coding.system from CodPaises (extensible)
 
 /* 		Extension 		*/
@@ -106,17 +98,17 @@ Context: DomainResource, Extension, Address.country, CodeableConcept, Identifier
 Extension:   ComunasCl
 Id:          ComunasCl
 Title:       "Códigos para Comunas en Chile"
-Description: "Esta extensión que permite codificar las Comunas en Chile en el campo de Dirección"
+Description: "Esta extensión que permite codiificar las Comunas en Chile en el campo de Dirección"
 Context: Address.city
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de Comunas"
 * url 1..1 MS
-* valueCodeableConcept from ComunasVS
+* valueCodeableConcept from VSCodigosComunaCL
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
   * system 0..1 MS
   * display 0..1 MS
-
+//* valueCodeableConcept.coding.system from VSCodigosComunaCL (extensible)
 
 /* 		Extension 		*/
 /*	Provincias Chile	*/
@@ -128,7 +120,7 @@ Context: Address.district
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de Provincias"
 * url 1..1 MS
-* valueCodeableConcept from ProvinciasVS
+* valueCodeableConcept from VSCodigosProvinciasCL
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
   * system 0..1 MS
@@ -145,7 +137,7 @@ Context: Address.state
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de Provincias"
 * url 1..1 MS
-* valueCodeableConcept from RegionesVS
+* valueCodeableConcept from VSCodigosRegionesCL
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
   * code 
@@ -171,18 +163,22 @@ Context: Patient.contact
 * extension[tutId].value[x] only Identifier
 * extension[tutId].valueIdentifier 1..1 MS
 * extension[tutId].valueIdentifier.type 1..1 MS
-
-* extension[tutId].valueIdentifier.system 0..1 MS
+* extension[tutId].valueIdentifier.type.coding.code 1..1 MS
+* extension[tutId].valueIdentifier.type.coding.system 1..1 MS
+* extension[tutId].valueIdentifier.type.coding.display 0..1 MS
+* extension[tutId].valueIdentifier.system 1..1 MS
 * extension[tutId].valueIdentifier.value 1..1 MS
 
 //* extension[docProc].url = "docProc"
 * extension[docProc] ^short = "País de procedencia del documento"
 * extension[docProc].value[x] only CodeableConcept
 * extension[docProc].url MS
-* extension[docProc].valueCodeableConcept from PaisesVS (preferred)
+* extension[docProc].valueCodeableConcept from CodPaises (required)
 * extension[docProc].valueCodeableConcept 1..1 MS
 * extension[docProc].valueCodeableConcept.coding 1..1 MS
-
+* extension[docProc].valueCodeableConcept.coding.code 1..1 MS
+* extension[docProc].valueCodeableConcept.coding.system 1..1 MS
+* extension[docProc].valueCodeableConcept.coding.display 0..1 MS
 /*
 Extension: TiposEncuentroRemotoCL
 Id: TiposEncuentro

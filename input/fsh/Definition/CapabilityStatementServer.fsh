@@ -1837,12 +1837,8 @@ El Servidor Cl Core **DEBERÍA**:
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
     * valueCode = #SHALL
   * type = #Observation
-  * supportedProfile[0] = Canonical(CoreObservacionCL)
-  * supportedProfile[=].extension
-    * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-    * valueCode = #SHALL
-  * supportedProfile[+] = Canonical(CLCoreSignosVitalesPerfil)
-  * supportedProfile[=].extension
+  * supportedProfile = Canonical(CoreObservacionCL)
+  * supportedProfile.extension
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
     * valueCode = #SHALL
   * interaction[0]
@@ -3663,20 +3659,20 @@ El Servidor Cl Core **DEBERÍA**:
 * rest.interaction[0]
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-    * valueCode = #SHOULD
+    * valueCode = #MAY
   * code = #transaction
 * rest.interaction[+]
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-    * valueCode = #SHOULD
+    * valueCode = #MAY
   * code = #batch
 * rest.interaction[+]
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-    * valueCode = #SHOULD
+    * valueCode = #MAY
   * code = #search-system
 * rest.interaction[+]
   * extension
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-    * valueCode = #SHOULD
+    * valueCode = #MAY
   * code = #history-system

@@ -28,8 +28,19 @@ Cada perfil define los elementos obligatorios mínimos, extensiones y requerimie
 
 También se presenta una tabla jerárquica con una vista lógica del contenido como *Snapshot* y *Differential*. Para cada perfil también expresamos el conjunto de interacciones FHIR Restful asociadas (búsquedas, operaciones u otras interacciones)
 
-{% include sd-list-generator.md %}
-
+* [CL Alergias e Intolerancias](StructureDefinition-CoreAlergiaIntCl.html)
+* [CL Auditoría](StructureDefinition-AuditEventCl.html)
+* [CL Documento](StructureDefinition-DocumentoCl.html)
+* [CL Diagnóstico-Condición](StructureDefinition-CoreDiagnosticoCl.html)
+* [CL Encuetro Clínico](StructureDefinition-EncounterCL.html)
+* [CL RolClinico](StructureDefinition-CoreRolClinicoCl.html)
+* [CL Inmunizacion](StructureDefinition-ImmunizationCL.html)
+* [CL Localización](StructureDefinition-CoreLocalizacionCl.html)
+* [CL Medicamento](StructureDefinition-CoreMedicamentoCl.html) 
+* [CL Organización](StructureDefinition-CoreOrganizacionCl.html)
+* [CL Paciente](StructureDefinition-CorePacienteCl.html)
+* [CL Prestador](StructureDefinition-CorePrestadorCl.html)
+* [CL Provenance](StructureDefinition-ProvenanceCl.html)
 
 ### Requerimientos de Conformidad
 
@@ -72,7 +83,7 @@ La Guía posee Control de Cambio en donde se pueden observar las modificaciones 
 {% include ip-statements.xhtml %}
 
 
-### Recursos a Disposiciónext-list-generator.md
+### Recursos a Disposición
 [Ministerio de Salud de Chile](http://www.minsal.cl)
 
 [Capítulo Chileno de HL7, HL7 Chile](http://hl7chile.cl)

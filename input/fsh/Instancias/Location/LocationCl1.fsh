@@ -4,7 +4,7 @@ Description: "Ejemplo de la localización relacionada con una Farmacia específi
 InstanceOf : CoreLocalizacionCl
 
 * identifier.value = "23144561"
-//* identifier.system = "http://miderfarm.cl/validador_id"
+* identifier.system = "http://miderfarm.cl/validador_id"
 * status = #active
 * name = "Gran Farmacia Gran"
 * alias = "La gran"
@@ -49,22 +49,22 @@ Instance: ComunasClLocation
 InstanceOf: ComunasCl
 Usage: #inline
 
-* valueCodeableConcept = ComunasCS#5109 "Viña del Mar"
+* valueCodeableConcept = CSCodComunasCL#05109 "Viña del Mar"
 
 Instance: ProvinciasClLocation
 InstanceOf: ProvinciasCl
 Usage: #inline
 
-* valueCodeableConcept = ProvinciasCS#051 "Valparaíso"
+* valueCodeableConcept = CSCodProvinciasCL#051 "Valparaíso"
 
 Instance: RegionesClLocation
 InstanceOf: RegionesCl
 Usage: #inline
 
-* valueCodeableConcept = RegionesCS#5 "Valparaíso"
+* valueCodeableConcept = CSCodRegionCL#05 "Valparaíso"
 
 Instance: CodigoPaisesLocation
 InstanceOf: CodigoPaises
 Usage: #inline
 
-* valueCodeableConcept = PaisesCS#152 "Chile"
+* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"

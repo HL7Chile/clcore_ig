@@ -1,8 +1,3 @@
-Alias: TitProf = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSTituloProfesional
-Alias: EspMedVs = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSEspecialidadMedica
-
-
-
 Profile:        PrestadorCL
 Parent:         Practitioner
 Id:             CorePrestadorCl
@@ -16,9 +11,6 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * extension contains SexoBiologico named SexoBiologico 0..1 MS
 * extension ^definition = "Extensión para almacenar el sexo biológico del profesional"
 
-// * extension contains NacionalidadProfesional named NacionalidadProfesional 0..1 MS
-
-
 * identifier  MS
 * identifier ^short = "Identificación de los prestadores"
 * identifier ^definition = "El identificador oficial para cada prestador en Chile es el Registro Nacional de Prestadores Institucionales (NRPI). Además, existe el identificador nacional chileno, el Registro Único Nacional (RUN). Y por último puede ingresar un número de pasaporte y un ID extra para cada prestador."
@@ -27,7 +19,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.rules = #open
 * identifier contains run 0..1 MS and rnpi 0..1 MS and pasaporte 0..1 MS and otro 0..1 MS
-* identifier.type from VSTipoIdentificador (extensible)
+* identifier.type from VSTipoIdentificador
 
 * identifier[run]
   * use MS
@@ -124,7 +116,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 
 
 * qualification contains TituloProfesional 0..* MS and EspecialidadMedica 0..* MS and Subespecialidad 0..* MS
-* qualification[TituloProfesional].code from TitProf (example)
+
 * qualification[TituloProfesional] ^short = "Especificación de los Títulos o Certificados Profesionales que tiene el Prestador"
 * qualification[TituloProfesional] ^definition = "Listado de Títulos o Certificados Profesionales que tiene el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
 * qualification[TituloProfesional].identifier MS
@@ -138,7 +130,6 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
     * system MS
     * display MS
   * text MS
-
 * qualification[TituloProfesional].code.text ^short = "Nombre del título entregado por la Super Intendencia de Salud"
 * qualification[TituloProfesional].code.coding.system ^short = "El sistema sobre el cual se verificarán los títulos o certificados de los Prestadores"
 * qualification[TituloProfesional].code.coding.system ^definition = "La url sobre la cual se encuentra el endPoint para el acceso a  los códigos de títulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  \"https://api.minsal.cl/v1/catalogos/profesiones/\""
@@ -161,7 +152,6 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[EspecialidadMedica].identifier.value = "esp"
 * qualification[EspecialidadMedica].identifier.value ^short = "Valor del tipo de calificación, en este caso esp"
 * qualification[EspecialidadMedica].identifier.value ^definition = "Valor del tipo de calificación, en este caso esp"
-* qualification[EspecialidadMedica].code from https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSEspecialidadMedica (example)
 * qualification[EspecialidadMedica].code MS
   * coding MS
     * code MS
@@ -189,7 +179,6 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * qualification[Subespecialidad].identifier.value = "subesp"
 * qualification[Subespecialidad].identifier.value ^short = "Valor del tipo de calificación, en este caso subesp"
 * qualification[Subespecialidad].identifier.value ^definition = "Valor del tipo de calificación, en este caso subesp"
-* qualification[Subespecialidad].code from https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/VSEspecialidadMedica (example)
 * qualification[Subespecialidad].code MS
   * coding MS
     * code MS

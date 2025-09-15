@@ -1,18 +1,3 @@
-### Versión 2.0.0
-
-- Se crean perfiles especificos en base al [Cl Signos Vitales](StructureDefinition-cl-core-signos-vitales.html) con sus ejemplos.
-- Se crean los siguientes perfiles con sus ejemplos:
-
-  - [CL Perfil Reporte Diagnóstico para el Intercambio de Informes y Notas](StructureDefinition-cl-core-reporte-diagnostico.html)
-  - [CL Perfil de Muestra](StructureDefinition-cl-core-muestra.html)
-  - [CL Perfil Servicio de Cuidados de Salud](StructureDefinition-cl-core-servicio-cuidados-salud.html)
-  - [CL Plan de Atención](StructureDefinition-cl-core-plan-cuidados.html)
-  - [CL Equipo de Cuidados](StructureDefinition-cl-core-equipo-cuidados.html)
-
-- Se actualiza la nacionalidad de pacientes utilizando la extensión de [nationality](https://www.hl7.org/fhir/R4/extension-patient-nationality.html) de base. 
-
-- Se actualización de bidings relacionado a paises para que queden en **preferred**
-
 ### Versión 1.9.3
 
 - El VS de la extensión *sexoBiologico* se cambia de fuerza a **preferred**
@@ -39,10 +24,10 @@
     - reaction
     - reportOrigin
   - Se agregan 4 extensiones:
-    - ClaseVacuna
-    - Campaña
-    - Dosis
-    - ProxFecha
+    - [ClaseVacuna](StructureDefinition-ClaseVacuna.html)
+    - [Campaña](StructureDefinition-Campana.html)
+    - [Dosis](StructureDefinition-Dosis.html)
+    - [ProxFecha](StructureDefinition-ProxFecha.html)
 
 
 ### Versión 1.9.0

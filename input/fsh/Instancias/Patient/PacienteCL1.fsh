@@ -7,7 +7,6 @@ Usage : #example
 
 * extension[IdentidadDeGenero] = IdentidadDeGeneroPacienteCl
 * extension[SexoBiologico] = SexoBiologicoPacienteCl
-* extension[Nacionalidad] = NacionalidadPacienteCl
 //Identificación por Cédula Chilena
 * identifier.use = #official    //obligado
 * identifier.type.extension[paisEmisionDocumento] = PaisEmisionDocumentoPacienteCL
@@ -15,8 +14,8 @@ Usage : #example
 * identifier.type.coding.code = #NNCHL
 * identifier.type.coding.display = "Chile"
 
-//* identifier.system = "http://regcivil.cl/Validacion/RUN"
-* identifier.value = "15236327-k"
+* identifier.system = "http://regcivil.cl/Validacion/RUN"
+* identifier.value = "15.236.327-k"
 
 //registro de paciente activo
 * active = true
@@ -62,17 +61,11 @@ Usage : #example
 
 * generalPractitioner = Reference(OrganizacionClEjemplo1)
 
-Instance: NacionalidadPacienteCl
-InstanceOf: Nacionalidad
-Usage: #inline
-
-* extension[code].valueCodeableConcept = PaisesCS#152 "Chile"
-
 Instance: PaisEmisionDocumentoPacienteCL
 InstanceOf: CodigoPaises
 Usage: #inline
 
-* valueCodeableConcept = PaisesCS#152 "Chile"
+* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: SegundoApellidoPacienteCL
 InstanceOf: SegundoApellido
@@ -95,25 +88,25 @@ Instance: ComunasClPacienteCL
 InstanceOf: ComunasCl
 Usage: #inline
 
-* valueCodeableConcept = ComunasCS#5602 "Algarrobo"
+* valueCodeableConcept = CSCodComunasCL#05602 "Algarrobo"
 
 Instance: ProvinciasClPacienteCL
 InstanceOf: ProvinciasCl
 Usage: #inline
 
-* valueCodeableConcept = ProvinciasCS#056 "San Antonio"
+* valueCodeableConcept = CSCodProvinciasCL#056 "San Antonio"
 
 Instance: RegionesClPacienteCL
 InstanceOf: RegionesCl
 Usage: #inline
 
-* valueCodeableConcept = RegionesCS#5 "Valparaíso"
+* valueCodeableConcept = CSCodRegionCL#05 "Valparaíso"
 
 Instance: CodigoPaisesPacienteCL
 InstanceOf: CodigoPaises
 Usage: #inline
 
-* valueCodeableConcept = PaisesCS#152 "Chile"
+* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: IdentificacionContactoPacienteCL
 InstanceOf: IdentificacionContactoCl
@@ -121,10 +114,10 @@ Usage: #inline
 
 * extension[tutId].valueIdentifier
   * type = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI#NNCHL "Chile"
-  //* system = "http://regcivil.cl/Validacion/RUN"
-* extension[tutId].valueIdentifier.value = "8987321-7"
+  * system = "http://regcivil.cl/Validacion/RUN"
+  * value = "8987321-7"
 
-* extension[docProc].valueCodeableConcept = PaisesCS#152 "Chile"
+* extension[docProc].valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: SegundoApellidoContactoPacienteCL
 InstanceOf: SegundoApellido
