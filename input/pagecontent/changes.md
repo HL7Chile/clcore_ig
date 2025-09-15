@@ -1,3 +1,17 @@
+### Versión 1.9.4
+
+- Correciones ortográficas.
+- Perfil [EncounterCL] 
+  - La descripción del elemento *status*, se añade un "+" para indicar que se muestran todas las opciones posibles.
+  - Se corrige el código del elemento *serviceType* de "nedINTA" a "medINTA", para referenciar correctamente la Medicina INTA.
+- Perfil [PacienteCL]
+  - Se corrgie el binding del elemento *communication.language* para que los códigos sean visibles.
+  - El elemento *nacionalidad* pasa de ser requierred a **preferred**
+- Perfil [Provenance]
+  - El elemento *sigFormat* permite visualizar el código requerido.
+- Extensión [ClAddress]
+  - La cardinalidad del elemento *line* se ajusta de 0..1 -> 0..* , para permitir múltiples lineas de dirección.
+
 ### Versión 1.9.3
 
 - El VS de la extensión *sexoBiologico* se cambia de fuerza a **preferred**
