@@ -58,11 +58,11 @@ La Guía posee Control de Cambio en donde se pueden observar las modificaciones 
   - **Pablo Pizarro (MINSAL)** [ppizarro.delgado@minsal.cl](mailto:ppizarro.delgado@minsal.cl)
   - **Nicolás Soto (MINSAL)** [nicolas.soto@minsal.cl](mailto:nicolas.soto@minsal.cl)
   - **César Galindo (HL7 Chile)** [cgalindo@uv.cl](mailto:cgalindo@uv.cl)
-  - **Jorge Mansilla (HL7 Chile)** [jorgemansillas@gmail.com](mailto:jorgemansillas@gmail.com)
+  - **Jorge Mansilla (MINSAL/HL7 Chile)** [jorgemansillas@gmail.com](mailto:jorgemansillas@gmail.com)
+  - **Franco Ulloa (MINSAL/HL7 Chile)** [francoulloamedina@gmail.com](mailto:francoulloamedina@gmail.com)
 
 - Colaboradores:
   - Diego Olea (MINSAL)
-  - Franco Ulloa (MINSAL)
   - Diego Kaminker (HL7 Internacional)
   - Yanara Salinas (UV)
 
@@ -84,6 +84,7 @@ La Guía posee Control de Cambio en donde se pueden observar las modificaciones 
 
 
 ### Recursos a Disposición
+
 [Ministerio de Salud de Chile](http://www.minsal.cl)
 
 [Capítulo Chileno de HL7, HL7 Chile](http://hl7chile.cl)
