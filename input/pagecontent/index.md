@@ -84,6 +84,7 @@ La Guía posee Control de Cambio en donde se pueden observar las modificaciones 
 
 
 ### Recursos a Disposición
+
 [Ministerio de Salud de Chile](http://www.minsal.cl)
 
 [Capítulo Chileno de HL7, HL7 Chile](http://hl7chile.cl)
