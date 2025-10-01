@@ -58,36 +58,5 @@ Description:    "Este Perfil describe la forma de validación respecto a la proc
 
 
 * signature MS
-* signature ^short = "firma del target"
-* signature ^definition = "Una firma digital en la(s) Referencia(s) de destino. El firmante debe coincidir con un Provenance.agent. Se indica la finalidad de la firma."
-* signature.type MS
-* signature.type ^short = "Indicación de la razón por la que la entidad firmó el objeto o los objetos"
-* signature.type ^definition = "Indicación del motivo por el que la entidad ha firmado este documento. Puede incluirse explícitamente como parte de la información de la firma y puede utilizarse a la hora de determinar la responsabilidad de diversas acciones relativas al documento."
-* signature.type from http://hl7.org/fhir/ValueSet/signature-type (preferred)
-* signature.type ^binding.description = "VS Propósito de la firma"
-
-
-* signature.when MS
-* signature.when ^short = "Hora y Fecha de cuando se firmó la validación"
-* signature.when ^definition = "Hora y Fecha de cuando se firmó la validación"
-
-* signature.who MS
-* signature.who only Reference(CorePrestadorCl or CoreRolClinicoCl or RelatedPerson or CorePacienteCl or Device or CoreOrganizacionCl)
-* signature.who ^short = "Referencia al firmante"
-* signature.who ^definition = "Referencia al recurso del validador mediante la firma"
-
-* signature.who.reference ^short = "Referencia/identificación al recurso que identifica al  firmante"
-* signature.who.reference ^definition = "Referencia/identificación al recurso del validador mediante la firma"
-
-* signature.sigFormat MS
-* signature.sigFormat ^short = "Formato técnico de la firma"
-* signature.sigFormat ^definition = "Un tipo mime que indica el formato técnico de la firma. Los tipos mime importantes son application/signature+xml para X ML DigSig, application/jose para JWS, e image/* para una imagen gráfica de una firma, etc"
-* signature.sigFormat ^comment = "Se sugiere hacer uso de application/json" 
-* signature.sigFormat from http://hl7.org/fhir/ValueSet/mimetypes (required)
-
-* signature.data 0..1 MS
-* signature.data ^short = "Contenido de la firma (XML DigSig.JWS, imagem, etc.)"
-* signature.data ^definition = "La codificación base64 del contenido de la firma. Si la firma no se registra electrónicamente, este elemento estará vacío."
-
 
 

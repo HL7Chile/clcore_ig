@@ -3,7 +3,7 @@ Parent:         Condition
 Id:             CoreDiagnosticoCl
 Title:          "CL Condición-Diagnóstico"
 Description:    "Condición o Diagnósticos de Pacientes"
-* ^language = #es
+//* ^language = #es
 //* ^version = "1.9.0"
 * ^status = #active
 * ^publisher = "HL7 Chile"
@@ -40,7 +40,7 @@ Description:    "Condición o Diagnósticos de Pacientes"
 * code ^short = "Condición de la persona en Código o no conocido"
 * code ^comment = "Se agregan los códigos no conocido o no presente"
 
-* code from VSDiagnosticosSCT (example)
+* code from http://hl7.org/fhir/ValueSet/condition-code (example)
 * code ^short = "Códigos de SNOMED-CT y adicionales de ausente o desconocido"
 * code ^binding.description = "Diagnósticos en SNOMED-CT. El ValueSet trae toda la terminología + Problema Ausente o Desconocido"
 

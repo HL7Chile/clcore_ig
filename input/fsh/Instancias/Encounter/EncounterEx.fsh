@@ -10,7 +10,7 @@ Usage : #example
 //Clase de encuentro, en este caso es Virtual
 * class.code = #VR 
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-* class.display = "Virtual"
+* class.display = "virtual"
 
 * type 
   * coding[0] = CSTiposEncuentroCL#PR "Programada"

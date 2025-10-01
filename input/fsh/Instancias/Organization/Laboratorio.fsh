@@ -7,7 +7,7 @@ Usage : #example
 
 * active = true
 * identifier
-  * system = "https://sii.cl"
+  //* system = "https://sii.cl"
   * value = "785943520-7"
 
 * name = "Laboratorio ACME de Chile"	

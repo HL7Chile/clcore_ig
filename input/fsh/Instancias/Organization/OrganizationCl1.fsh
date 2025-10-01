@@ -6,7 +6,7 @@ Usage : #example
 
 * active = true
 * identifier
-  * system = "https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes/resource/2c44d782-3365-44e3-aefb-2c8b8363a1bc"
+  //* system = "https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes/resource/2c44d782-3365-44e3-aefb-2c8b8363a1bc"
   * value = "111372"
 
 * name = "Centro de Salud Familiar Arauco"	

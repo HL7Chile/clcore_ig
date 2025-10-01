@@ -102,7 +102,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
 * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
-* address only Address or ClAddress
+* address only ClAddress
 * address MS
 
 * qualification MS

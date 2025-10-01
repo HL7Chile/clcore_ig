@@ -13,7 +13,7 @@ Usage : #example
   * text = "Confirmado"
 
 * code 
-  * coding = http://snomed.info/sct#38341003 "High blood pressure"
+  * coding = http://snomed.info/sct#234072000 "Venous hypertension"
   * text = "Diagnóstico de Hipertensión Confirmada"
 
 * subject = Reference(PacienteCL)

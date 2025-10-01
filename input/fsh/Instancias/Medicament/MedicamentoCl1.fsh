@@ -6,13 +6,16 @@ InstanceOf : CoreMedicamentoCl
 	
 * identifier[0]
   * use = #official
-  * system = "http://minsal.cl/semantikos/description-id"
+  //* system = "http://minsal.cl/semantikos/description-id"
   * value = "1991971000167110"
 
 * identifier[1]
   * use = #official
-  * system = "http://minsal.cl/semantikos/concept-id"
+  //* system = "http://minsal.cl/semantikos/concept-id"
   * value = "840851000167103"
 
+* extension[NombreComercial]
+  * url = 	"https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreComercial"
+  * valueString = "Tareg - D"
 * code.text = "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
 * manufacturer = Reference (EjemploLaboratorio1)

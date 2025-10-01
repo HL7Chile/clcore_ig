@@ -14,7 +14,7 @@ Usage : #example
 * identifier.type.coding.code = #NNCHL
 * identifier.type.coding.display = "Chile"
 
-* identifier.system = "http://regcivil.cl/Validacion/RUN"
+//* identifier.system = "http://regcivil.cl/Validacion/RUN"
 * identifier.value = "15.236.327-k"
 
 //registro de paciente activo
@@ -114,7 +114,7 @@ Usage: #inline
 
 * extension[tutId].valueIdentifier
   * type = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI#NNCHL "Chile"
-  * system = "http://regcivil.cl/Validacion/RUN"
+  * system = "https://www.chileatiende.gob.cl/instituciones/AK002"
   * value = "8987321-7"
 
 * extension[docProc].valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"

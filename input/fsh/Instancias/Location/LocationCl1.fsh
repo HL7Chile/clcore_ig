@@ -4,7 +4,7 @@ Description: "Ejemplo de la localización relacionada con una Farmacia específi
 InstanceOf : CoreLocalizacionCl
 
 * identifier.value = "23144561"
-* identifier.system = "http://miderfarm.cl/validador_id"
+//* identifier.system = "http://miderfarm.cl/validador_id"
 * status = #active
 * name = "Gran Farmacia Gran"
 * alias = "La gran"

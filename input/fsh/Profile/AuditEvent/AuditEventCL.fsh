@@ -41,6 +41,7 @@ Description: "Perfil para generar un recurso que permita desarrollar auditoría 
 * outcome from http://hl7.org/fhir/ValueSet/audit-event-outcome
 * outcome ^binding.description = "Códigos extraídos de DICOM" 
 
+
 * agent MS
 * agent ^short = "Quienes actuaron en el evento"
 * agent ^definition = "Mínimo debe indicar quien requirió del recurso"
@@ -54,6 +55,7 @@ Description: "Perfil para generar un recurso que permita desarrollar auditoría 
 * agent.network ^short = "Ubicación de la Red de la Aplicación"
 * agent.network ^definition = "Ubicación de red lógica para la actividad de la aplicación, si la actividad tiene una ubicación de red."
 * agent.network.address MS
+
 * agent.network.address ^short = "Dirección del Punto de Acceso"
 * agent.network.address ^definition = "Un identificador para el tipo de punto de acceso a la red que originó el evento de auditoría."
 * agent.network.type MS

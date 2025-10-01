@@ -71,3 +71,4 @@ parameters:
     - input/resources
     - fsh-generated/resources
   path-expansion-params: '../../input/_resources/exp-params.json'
+  pin-canonicals : pin-multiples
