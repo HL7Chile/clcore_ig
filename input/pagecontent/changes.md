@@ -1,15 +1,15 @@
 ### Versión 1.9.4
 
 - Correciones ortográficas.
-- Perfil [EncounterCL] 
+- Perfil [EncounterCL](StructureDefinition-EncounterCL.html)
   - La descripción del elemento *status*, se añade un "+" para indicar que se muestran todas las opciones posibles.
   - Se corrige el código del elemento *serviceType* de "nedINTA" a "medINTA", para referenciar correctamente la Medicina INTA.
-- Perfil [PacienteCL]
+- Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
   - Se corrgie el binding del elemento *communication.language* para que los códigos sean visibles.
   - El elemento *nacionalidad* pasa de ser requierred a **preferred**
-- Perfil [Provenance]
+- Perfil [Provenance](StructureDefinition-ProvenanceCl.html)
   - El elemento *sigFormat* permite visualizar el código requerido.
-- Extensión [ClAddress]
+- Extensión [ClAddress](StructureDefinition-cl-address.html)
   - La cardinalidad del elemento *line* se ajusta de 0..1 -> 0..* , para permitir múltiples lineas de dirección.
 
 ### Versión 1.9.3
