@@ -1926,3 +1926,26 @@ Description: "Especialidad de Farmacia"
 * #3 "Laboratorio Clínico" "Laboratorio Clínico"
 * #4 "Salud Pública" "Salud Pública"
 * #5 "Laboratorio Forense" "Laboratorio Forense"
+
+ValueSet:       VsTipoEspecimenCL
+Id:             cl-core-tipo-especimen-vs
+Title:          "Set de Valores de los Tipos de Especimen"
+Description:    "Códigos de tipos de especimen en Snomed"
+
+// * insert SetCopyrightSCT
+// * ^experimental = true
+// * include codes from system $snomed where concept descendent-of #86273004
+
+* insert SetCopyrightSCT
+
+* ^language = #es
+* ^experimental = false
+
+* ^status = #active
+* ^date = "2025-07-08T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* include codes from system SCT where concept descendent-of #123038009

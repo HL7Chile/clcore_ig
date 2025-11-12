@@ -16,8 +16,8 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 
 * extension contains IdentidadDeGenero named IdentidadDeGenero 0..1 MS
 * extension contains SexoBiologico named SexoBiologico 0..1 MS
-//* extension contains CodigoPaises named nacionalidad 0..* MS
-* extension contains Nacionalidad named nacionalidad 0..1 MS
+* extension contains Nacionalidad named nacionalidad 0..* MS
+//* extension contains Nacionalidad named nacionalidad 0..1 MS
 
 * identifier ^short = "Listados de Id de Paciente. De poseer una CI con RUN vigente, este DEBE ser ingresado"
 * identifier ^definition = "Este es el listado de Identificaciones de un paciente. Se procura como R2 el RUN, pero en caso de no existir ese identificador se debe ocupar otro nacional u otro otorgado por país extranjero"
@@ -132,7 +132,7 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
   * extension[IdContacto] ^short = "Identificación del Contacto"
   * extension[IdContacto] ^definition = "Extensión para declarar identificación del contacto y la procedencia de esta"
   * relationship ^short = "Relación legal o de parentesco entre el contacto y el paciente"
-  * relationship from 	VSContactoRelacion
+  * relationship from VSContactoRelacion (extensible)
   * relationship ^binding.description = "VS FHIR para relación del contacto con el Paciente"
 
   * name 0..1 MS 
