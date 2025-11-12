@@ -9,5 +9,5 @@ InstanceOf :  CoreRolClinicoCl
 * practitioner = Reference(EjemploPrestadorCL)
 * organization = Reference(OrganizacionClEjemplo1)
 
-* specialty = CSEspecialidades#45 "Oncología Médica"
+* specialty = CSEspecialidadesDeisCL#45 "Oncología Médica"
 * specialty.text = "Oncología"

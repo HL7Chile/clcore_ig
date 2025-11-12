@@ -1,15 +1,16 @@
-### Versión 2.0.0
+### Versión 1.9.4
 
-- Se crean perfiles especificos en base al [Cl Signos Vitales](StructureDefinition-cl-core-signos-vitales.html) con sus ejemplos.
-- Se crean los siguientes perfiles con sus ejemplos:
-
-  - [CL Perfil Reporte Diagnóstico para el Intercambio de Informes y Notas](StructureDefinition-cl-core-reporte-diagnostico.html)
-  - [CL Perfil de Muestra](StructureDefinition-cl-core-muestra.html)
-  - [CL Perfil Servicio de Cuidados de Salud](StructureDefinition-cl-core-servicio-cuidados-salud.html)
-  - [CL Plan de Atención](StructureDefinition-cl-core-plan-cuidados.html)
-  - [CL Equipo de Cuidados](StructureDefinition-cl-core-equipo-cuidados.html)
-
-- Se actualiza la nacionalidad de paciente y profesionales utilizando la extensión de [nationality](https://www.hl7.org/fhir/R4/extension-patient-nationality.html) de base. 
+- Correciones ortográficas.
+- Perfil [EncounterCL](StructureDefinition-EncounterCL.html)
+  - La descripción del elemento *status*, se añade un "+" para indicar que se muestran todas las opciones posibles.
+  - Se corrige el código del elemento *serviceType* de "nedINTA" a "medINTA", para referenciar correctamente la Medicina INTA.
+- Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
+  - Se corrgie el binding del elemento *communication.language* para que los códigos sean visibles.
+  - El elemento *nacionalidad* pasa de ser requierred a **preferred**
+- Perfil [Provenance](StructureDefinition-ProvenanceCl.html)
+  - El elemento *sigFormat* permite visualizar el código requerido.
+- Extensión [ClAddress](StructureDefinition-cl-address.html)
+  - La cardinalidad del elemento *line* se ajusta de 0..1 -> 0..* , para permitir múltiples lineas de dirección.
 
 ### Versión 1.9.3
 
@@ -37,10 +38,10 @@
     - reaction
     - reportOrigin
   - Se agregan 4 extensiones:
-    - ClaseVacuna
-    - Campaña
-    - Dosis
-    - ProxFecha
+    - [ClaseVacuna](StructureDefinition-ClaseVacuna.html)
+    - [Campaña](StructureDefinition-Campana.html)
+    - [Dosis](StructureDefinition-Dosis.html)
+    - [ProxFecha](StructureDefinition-ProxFecha.html)
 
 
 ### Versión 1.9.0

@@ -3,8 +3,7 @@ Title : "Ejemplo de comprimido Tareg - D 160"
 Description: "Medicamento comprimido Tareg -D160 referemciado como medicamento en la TFC, considerando el de 25 comprimidos"
 InstanceOf : CoreMedicamentoCl
 
-
-* extension[NombreComercial].valueString = "Tareg D 160"	
+	
 * identifier[0]
   * use = #official
   //* system = "http://minsal.cl/semantikos/description-id"
@@ -15,5 +14,8 @@ InstanceOf : CoreMedicamentoCl
   //* system = "http://minsal.cl/semantikos/concept-id"
   * value = "840851000167103"
 
+* extension[NombreComercial]
+  * url = 	"https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/NombreComercial"
+  * valueString = "Tareg - D"
 * code.text = "Tareg - D 160 / 25 comprimido recubierto (Novartis)"
 * manufacturer = Reference (EjemploLaboratorio1)

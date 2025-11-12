@@ -6,10 +6,7 @@ Description: "Variable dirección"
 * ^language = #es
 * . ^comment = "Variable dirección"
 * . ^short = "Tipo de dato para agregar la dirección"
-
-
-* extension contains http://hl7.org/fhir/StructureDefinition/geolocation|5.2.0 named geoLocation 0..1 MS
-
+* extension contains http://hl7.org/fhir/StructureDefinition/geolocation named Geolocalizacion 0..1 MS
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
@@ -19,7 +16,7 @@ Description: "Variable dirección"
 * use ^short = "Definición del tipo de domicilio home | work | temp | old (requerido)"
 * use ^definition = "Se especifica el tipo de dirección notificada. Esto debe ser segn los códigos definidos por HL7 FHIR"
  
-* line 0..1 MS
+* line 0..* MS
 * line ^short = "Calle o avenida, número y casa o depto"
 * line ^definition = "Aquí se escribe toda la dirección completa"
 

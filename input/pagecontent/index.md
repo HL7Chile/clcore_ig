@@ -28,8 +28,19 @@ Cada perfil define los elementos obligatorios mínimos, extensiones y requerimie
 
 También se presenta una tabla jerárquica con una vista lógica del contenido como *Snapshot* y *Differential*. Para cada perfil también expresamos el conjunto de interacciones FHIR Restful asociadas (búsquedas, operaciones u otras interacciones)
 
-{% include sd-list-generator.md %}
-
+* [CL Alergias e Intolerancias](StructureDefinition-CoreAlergiaIntCl.html)
+* [CL Auditoría](StructureDefinition-AuditEventCl.html)
+* [CL Documento](StructureDefinition-DocumentoCl.html)
+* [CL Diagnóstico-Condición](StructureDefinition-CoreDiagnosticoCl.html)
+* [CL Encuetro Clínico](StructureDefinition-EncounterCL.html)
+* [CL RolClinico](StructureDefinition-CoreRolClinicoCl.html)
+* [CL Inmunizacion](StructureDefinition-ImmunizationCL.html)
+* [CL Localización](StructureDefinition-CoreLocalizacionCl.html)
+* [CL Medicamento](StructureDefinition-CoreMedicamentoCl.html) 
+* [CL Organización](StructureDefinition-CoreOrganizacionCl.html)
+* [CL Paciente](StructureDefinition-CorePacienteCl.html)
+* [CL Prestador](StructureDefinition-CorePrestadorCl.html)
+* [CL Provenance](StructureDefinition-ProvenanceCl.html)
 
 ### Requerimientos de Conformidad
 
@@ -44,20 +55,24 @@ La Guía posee Control de Cambio en donde se pueden observar las modificaciones 
 ###	 Autores y Colaboradores
 
 - Autores de la guia:
-  - **Pablo Pizarro (MINSAL)** [ppizarro.delgado@minsal.cl](mailto:ppizarro.delgado@minsal.cl)
-  - **Nicolás Soto (MINSAL)** [nicolas.soto@minsal.cl](mailto:nicolas.soto@minsal.cl)
+  - **Franco Ulloa (HL7 Chile/MINSAL)**[francoulloamedina@gmail.com](mailto:francoulloamedina@gmail.com)
   - **César Galindo (HL7 Chile)** [cgalindo@uv.cl](mailto:cgalindo@uv.cl)
-  - **Jorge Mansilla (HL7 Chile)** [jorgemansillas@gmail.com](mailto:jorgemansillas@gmail.com)
+  - **Jorge Mansilla (HL7 Chile/MINSAL)** [jorgemansillas@gmail.com](mailto:jorgemansillas@gmail.com)
 
 - Colaboradores:
-  - Diego Olea (MINSAL)
-  - Franco Ulloa (MINSAL)
+  - Diego Olea 
+  - Pablo Pizarro
+  - Nicolás Soto
   - Diego Kaminker (HL7 Internacional)
-  - Yanara Salinas (UV)
+  - Yanara Salinas
 
 ### Dependencias
 
 {% include dependency-table.xhtml %}
+
+### Parametros de Expansión
+
+{% include expansion-params.xhtml %}
 
 ### Analisis de versiones cruzadas
 
@@ -72,7 +87,8 @@ La Guía posee Control de Cambio en donde se pueden observar las modificaciones 
 {% include ip-statements.xhtml %}
 
 
-### Recursos a Disposiciónext-list-generator.md
+### Recursos a Disposición
+
 [Ministerio de Salud de Chile](http://www.minsal.cl)
 
 [Capítulo Chileno de HL7, HL7 Chile](http://hl7chile.cl)

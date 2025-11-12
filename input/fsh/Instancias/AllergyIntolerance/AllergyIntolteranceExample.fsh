@@ -10,12 +10,12 @@ Usage : #example
 * category = #medication
 * criticality = #high
 * code
-  * coding = SCT#387517004
-  * text = "Paracetamol"
+  * coding = SCT#896008
+  * text = "Ice"
 * patient = Reference(PacienteCL)
 * onsetDateTime = "2014-10-08"
 * reaction 
   * manifestation
-    * coding = SCT#15919481000119106
-    * text = "anafilaxis causada por analgésico"
+    * coding = SCT#3644009
+    * text = "Macerated skin"
   * severity = #severe

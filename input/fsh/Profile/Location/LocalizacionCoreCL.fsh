@@ -8,6 +8,7 @@ Description:    "Este perfil determina la ubicación específica para un evento,
 * ^status = #active
 * ^publisher = "HL7 Chile"
 //Identifier
+
 * identifier and identifier.system and identifier.value MS 
 * identifier 0..* 
   * ^short = "Corresponde a un número de identificación de la locación indicada"
@@ -39,7 +40,7 @@ Description:    "Este perfil determina la ubicación específica para un evento,
 
 
 * address MS
-* address only Address or ClAddress
+* address only ClAddress
 
 * position 0..1
 * position and position.longitude and position.latitude MS

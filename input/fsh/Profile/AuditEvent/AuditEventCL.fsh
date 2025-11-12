@@ -1,4 +1,4 @@
-Alias: $lifecycle = http://hl7.org/fhir/StructureDefinition/auditevent-Lifecycle|5.2.0
+Alias: $auditevent = http://minsal.cl/auditevent
 
 Profile: AuditEventCl
 Parent: AuditEvent
@@ -10,7 +10,6 @@ Description: "Perfil para generar un recurso que permita desarrollar auditoría 
 * ^status = #active
 * ^publisher = "HL7 Chile"
 
-//* entity ^binding.valueSet = "http://hl7.org/fhir/ValueSet/object-lifecycle-events|5.2.0"
 * type MS
 * type ^short = "Tipo/identificación del Evento"
 * type ^definition = "Identificador de una familia del evento. Por ejemplo, un elemento de menú, un programa, una regla, una política, un código de función, un nombre de aplicación o una URL. Identifica la función realizada."
@@ -42,6 +41,7 @@ Description: "Perfil para generar un recurso que permita desarrollar auditoría 
 * outcome from http://hl7.org/fhir/ValueSet/audit-event-outcome
 * outcome ^binding.description = "Códigos extraídos de DICOM" 
 
+
 * agent MS
 * agent ^short = "Quienes actuaron en el evento"
 * agent ^definition = "Mínimo debe indicar quien requirió del recurso"
@@ -55,6 +55,7 @@ Description: "Perfil para generar un recurso que permita desarrollar auditoría 
 * agent.network ^short = "Ubicación de la Red de la Aplicación"
 * agent.network ^definition = "Ubicación de red lógica para la actividad de la aplicación, si la actividad tiene una ubicación de red."
 * agent.network.address MS
+
 * agent.network.address ^short = "Dirección del Punto de Acceso"
 * agent.network.address ^definition = "Un identificador para el tipo de punto de acceso a la red que originó el evento de auditoría."
 * agent.network.type MS
@@ -72,9 +73,7 @@ Description: "Perfil para generar un recurso que permita desarrollar auditoría 
 * source.observer ^definition = "Identificación del Observador donde se reportó el evento"
 
 
-* entity MS
-// * entity.extension contains $lifecycle named cicloDeVida 0..1 MS
-// * entity.extension[cicloDeVida] ^short = "Un ciclo de vida del evento asiciado con el participante del evento"
+* entity MS 
 * entity ^short = "Entidad que registra la ocurrencia del Evento"
 * entity ^definition = "Entidad que registra la ocurrencia del Evento"
 * entity.what MS

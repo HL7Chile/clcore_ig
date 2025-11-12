@@ -5,14 +5,14 @@ Parent: Encounter
 Id: EncounterCL
 Title: "CL Encuentro Clínico"
 Description: "Definición de encuentro clínico genérico para Chile"
-* ^language = #es
+//* ^language = #es
 
 * identifier 0..* MS
   * ^short = "Identificador(es) por los que se conoce este encuentro"
   * ^definition = "Es el número de identificación del encuentro realizado"
 
 * status MS
-  * ^short = "planned | arrived | triaged | in-progress | onleave | finished | cancelled"
+  * ^short = "planned | arrived | triaged | in-progress | onleave | finished | cancelled +"
   * ^definition = "Determina el estado del encuentro remoto conforme a los códigos definidos por el estándar" 
 * status from http://hl7.org/fhir/ValueSet/encounter-status (required)
   * ^binding.description = "Códigos requeridos por FHIR"

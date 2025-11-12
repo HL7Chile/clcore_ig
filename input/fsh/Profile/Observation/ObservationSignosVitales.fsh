@@ -19,13 +19,13 @@ Este perfil está basado en el [FHIR Vital Signs Profile](https://hl7.org/fhir/R
   * ^binding.description = "Códigos de identificación simple para el nombre de una observación"
 * subject 1..1 MS
   * ^short = "Paciente al cual se le toman los signos vitales"
-* subject only Reference(PacienteCl)
+* subject only Reference(CorePacienteCl)
 * effective[x] 1..1 MS
   * ^short = "A menudo solo una fecha y hora para los signos vitales"
 * effective[x] only dateTime or Period
 * performer MS
   * ^short = "Quien es responsable por la observación"
-* performer only Reference(PrestadorCL or CoreRolClinicoCl or OrganizacionCL or ClCareTeamPerfil or PacienteCl or RelatedPerson)
+* performer only Reference(CorePrestadorCl or CoreRolClinicoCl or CoreOrganizacionCl or CareTeam or CorePacienteCl or RelatedPerson)
 * value[x] MS
   * ^short = "Valor del signo vital"
   * ^type[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
