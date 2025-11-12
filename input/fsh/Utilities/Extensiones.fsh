@@ -1,5 +1,17 @@
 /*Por problemas en más de un servidor las extensiones deben utilizar el recurso base en los contextos*/
+
+Extension: Nacionalidad
+Parent: $patient-nationality
+Id: Nacionalidad
+Title: "Nacionalidad del Paciente"
+Description: "Nacionalidad del Paciente"
+
+* extension[code].value[x] from CodPaises (example)
+* extension[code].value[x] ^short = "Código de Nacionalidad"
+
+
 Extension: IdentidadDeGenero
+Parent: http://hl7.org/fhir/StructureDefinition/individual-genderIdentity
 Id: IdentidadDeGenero
 Title: "Identidad De Género"
 Description: "Identidad De Género"
@@ -9,9 +21,14 @@ Context: Patient, Practitioner
 // * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl#Patient"
 // * ^context[+].type = #element
 // * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner"
-* value[x] only CodeableConcept
-* valueCodeableConcept ^short = "Identidad De Género"
-* valueCodeableConcept from  VSIdentidaddeGenero
+* extension[value].value[x] from VSIdentidaddeGenero (example)
+* extension[value].value[x] ^short = "Identidad De Género"
+// * value[x] only CodeableConcept
+// * valueCodeableConcept ^short = "Identidad De Género"
+// * valueCodeableConcept from  VSIdentidaddeGenero
+
+
+
 
 Extension: SexoBiologico
 Id: SexoBiologico

@@ -7,6 +7,7 @@ Usage : #example
 
 * extension[IdentidadDeGenero] = IdentidadDeGeneroPacienteCl
 * extension[SexoBiologico] = SexoBiologicoPacienteCl
+* extension[nacionalidad] = NacionalidadPacienteCl
 //Identificación por Cédula Chilena
 * identifier.use = #official    //obligado
 * identifier.type.extension[paisEmisionDocumento] = PaisEmisionDocumentoPacienteCL
@@ -129,8 +130,13 @@ Instance: IdentidadDeGeneroPacienteCl
 InstanceOf: IdentidadDeGenero
 Usage: #inline
 
-* valueCodeableConcept = CSIdentidaddeGenero#1 "Masculino"
+* extension[value].valueCodeableConcept = CSIdentidaddeGenero#1 "Masculino"
 
+Instance: NacionalidadPacienteCl
+InstanceOf: Nacionalidad
+Usage: #inline
+
+* extension[code].valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: SexoBiologicoPacienteCl
 InstanceOf: SexoBiologico

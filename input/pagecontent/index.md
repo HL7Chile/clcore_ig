@@ -55,20 +55,24 @@ La Guía posee Control de Cambio en donde se pueden observar las modificaciones 
 ###	 Autores y Colaboradores
 
 - Autores de la guia:
-  - **Pablo Pizarro (MINSAL)** [ppizarro.delgado@minsal.cl](mailto:ppizarro.delgado@minsal.cl)
-  - **Nicolás Soto (MINSAL)** [nicolas.soto@minsal.cl](mailto:nicolas.soto@minsal.cl)
+  - **Franco Ulloa (HL7 Chile/MINSAL)**[francoulloamedina@gmail.com](mailto:francoulloamedina@gmail.com)
   - **César Galindo (HL7 Chile)** [cgalindo@uv.cl](mailto:cgalindo@uv.cl)
-  - **Jorge Mansilla (HL7 Chile)** [jorgemansillas@gmail.com](mailto:jorgemansillas@gmail.com)
+  - **Jorge Mansilla (HL7 Chile/MINSAL)** [jorgemansillas@gmail.com](mailto:jorgemansillas@gmail.com)
 
 - Colaboradores:
-  - Diego Olea (MINSAL)
-  - Franco Ulloa (MINSAL)
+  - Diego Olea 
+  - Pablo Pizarro
+  - Nicolás Soto
   - Diego Kaminker (HL7 Internacional)
-  - Yanara Salinas (UV)
+  - Yanara Salinas
 
 ### Dependencias
 
 {% include dependency-table.xhtml %}
+
+### Parametros de Expansión
+
+{% include expansion-params.xhtml %}
 
 ### Analisis de versiones cruzadas
 

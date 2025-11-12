@@ -8,7 +8,7 @@ canonical: https://hl7chile.cl/fhir/ig/clcore
 name: clcore
 title: Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)
 status: active # draft | active | retired | unknown
-version: 1.9.4
+version: 2.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: trial-use # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -36,6 +36,8 @@ pages:
     title: Notas del Must Support
   Aspectos-Generales.md:
     title: Generalidades
+  Seguridad.md:
+    title: Seguridad
   ImplementationGuide-hl7.fhir.cl.clcore.md:
     title: Recursos ImplementationGuide Cl Core
   changes.md:
@@ -50,6 +52,7 @@ menu:
   Objetivos: Alcances-Objetivos.html
   Must Support: Notas-MS.html
   Generalidades: Aspectos-Generales.html
+  Seguridad: Seguridad.html
   CapabilityStatement:
     CapabilityStatement Servidor: CapabilityStatement-cl-core-server.html
     CapabilityStatement Cliente: CapabilityStatement-cl-core-client.html
