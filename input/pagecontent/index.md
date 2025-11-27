@@ -43,9 +43,9 @@ La Guía posee Control de Cambio en donde se pueden observar las modificaciones 
 ###	 Autores y Colaboradores
 
 - Autores de la guia:
-  - **Franco Ulloa (HL7 Chile/MINSAL)**[francoulloamedina@gmail.com](mailto:francoulloamedina@gmail.com)
   - **César Galindo (HL7 Chile)** [cgalindo@uv.cl](mailto:cgalindo@uv.cl)
   - **Jorge Mansilla (HL7 Chile/MINSAL)** [jorgemansillas@gmail.com](mailto:jorgemansillas@gmail.com)
+  - **Franco Ulloa (HL7 Chile/MINSAL)** [francoulloamedina@gmail.com](mailto:francoulloamedina@gmail.com)
 
 - Colaboradores:
   - Diego Olea 

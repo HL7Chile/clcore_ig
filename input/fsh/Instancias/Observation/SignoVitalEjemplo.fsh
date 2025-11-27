@@ -39,7 +39,7 @@ Description: "Ejemplo de una observación de signo vital de atura de paciente"
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
 * code
-  * coding = http://loinc.org#8302-2 "Body height"
+  * coding = http://loinc.org#8302-2 "altura corporal:longitud:punto en el tiempo:^paciente:cuantitativo:"
 
 
 * subject = Reference(PacienteCL)
@@ -68,7 +68,7 @@ Description: "Ejemplo de una observación de signo vital de tamaño circunferenc
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
 * code
-  * coding = http://loinc.org#9843-4 "Head Occipital-frontal circumference"
+  * coding = http://loinc.org#9843-4 "Circunferencia occipital-frontal:Cabeza :Punto temporal:Len:Cuantitativo:"
 
 
 * subject = Reference(PacienteCL)
@@ -98,7 +98,7 @@ Description: "Ejemplo de una observación de signo vital de frecuencia cardiaca 
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
 * code
-  * coding = http://loinc.org#8867-4 "Heart rate"
+  * coding = http://loinc.org#8867-4 "latido cardíaco:índice numérico:punto en el tiempo:XXX:cuantitativo:"
 
 
 * subject = Reference(PacienteCL)
@@ -127,7 +127,7 @@ Description: "Ejemplo de una observación de signo vital de frecuencia respirato
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
 * code
-  * coding = http://loinc.org#9279-1 "Respiratory rate"
+  * coding = http://loinc.org#9279-1 "respiraciones:índice numérico:punto en el tiempo:aparato respiratorio:cuantitativo:"
 
 
 * subject = Reference(PacienteCL)
@@ -156,7 +156,7 @@ Description: "Ejemplo de una observación de signo vital de índice de masa corp
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
 * code
-  * coding = http://loinc.org#39156-5 "Body mass index (BMI) [Ratio]"
+  * coding = http://loinc.org#39156-5 "Índice de masa corporal: Paciente:Punto temporal:Proporción:Cuantitativo:"
 
 
 * subject = Reference(PacienteCL)
@@ -185,7 +185,7 @@ Description: "Ejemplo de una observación de signo vital de peso de paciente"
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
 * code
-  * coding = http://loinc.org#29463-7 "Body weight"
+  * coding = http://loinc.org#29463-7 "peso corporal:masa:punto en el tiempo:^paciente:cuantitativo:"
 
 
 * subject = Reference(PacienteCL)
@@ -214,7 +214,7 @@ Description: "Ejemplo de una observación de presión sanguínea de paciente"
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
 * code
-  * coding = http://loinc.org#85354-9 "Blood pressure panel with all children optional"
+  * coding = http://loinc.org#85354-9 "Panel de presión arterial con todos los niños opcional:Sistema arterial :Punto temporal:-:Cuantitativo:"
 
 
 * subject = Reference(PacienteCL)
@@ -225,14 +225,14 @@ Description: "Ejemplo de una observación de presión sanguínea de paciente"
 
 * effectiveDateTime = "2024-01-17T15:00:00-03:00"
 
-* component[sistolica].code = http://loinc.org#8480-6 "Systolic blood pressure"
+* component[sistolica].code = http://loinc.org#8480-6 "sistólico intravascular:presión:punto en el tiempo:sistema arterial:cuantitativo:"
 * component[sistolica].valueQuantity
   * value = 12.4
   * unit = "mm[Hg]"
   * system = "http://unitsofmeasure.org"
   * code = #mm[Hg]
   
-* component[diastolica].code = http://loinc.org#8462-4 "Diastolic blood pressure"
+* component[diastolica].code = http://loinc.org#8462-4 "diastólico intravascular:presión:punto en el tiempo:sistema arterial:cuantitativo:"
 * component[diastolica].valueQuantity
   * value = 8.2
   * unit = "mm[Hg]"
@@ -251,7 +251,7 @@ Description: "Ejemplo de una observación de saturación de oxígeno de paciente
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
 * code
-  * coding = http://loinc.org#2708-6 "Oxygen saturation in Arterial blood"
+  * coding = http://loinc.org#2708-6 "saturación de oxígeno:fracción de sustancia:punto en el tiempo:sangre arterial:cuantitativo:"
 
 
 * subject = Reference(PacienteCL)
@@ -281,7 +281,7 @@ Description: "Ejemplo de una observación de temperatura corporal de paciente"
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
 
 * code
-  * coding = http://loinc.org#8310-5 "Body temperature"
+  * coding = http://loinc.org#8310-5 "temperatura corporal:temperatura:punto en el tiempo:^paciente:cuantitativo:"
 
 
 * subject = Reference(PacienteCL)

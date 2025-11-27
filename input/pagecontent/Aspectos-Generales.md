@@ -1,16 +1,13 @@
 ### Aspectos a Considerar
 <br>
-
 Esta sección describe definiciones, interpretaciones y requisitos importantes comunes a todos los actores del clcore, utilizados en esta guía. Los verbos de conformidad - **SHALL** *(Debe)*, **SHOULD** *(Debería Si Condición)*, **MAY** *(Podría)* - utilizados en esta guía se definen en las reglas de conformidad de FHIR.
 <br>
 ### Definiciones Para comprender la Guía
 
 Los perfiles contienen ciertos elementos que son importantes de comprender a la hora de usarlos para implementación
 <br>
-
 #### Vistas de los perfiles
 <br>
-
 Al revisar un perfil nos encontramos con la posibilidad de ver múltiples vistas de este.
 
 ##### Statistics/References
@@ -39,7 +36,6 @@ Esta vista permite observar todos aquellos elementos de un recurso que han sido 
 ##### Vista Snapshot 
 
 En la vista de la **Snapshot Table**, todos los elementos obligatorios definidos para el perfil, y cualquier elemento obligatorio o que deba ser apoyado heredado de un perfil base, están marcados con una **S**. 
-
 <br>
 <div align="center" >
   <img  style="border: 1px solid; color: black;" src="Snap.png"> 

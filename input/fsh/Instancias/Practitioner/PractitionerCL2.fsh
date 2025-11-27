@@ -7,7 +7,7 @@ InstanceOf : CorePrestadorCl
 * identifier[run]
   * use = #official
   * value = "17435678-2"
-  * type = CSTipoIdentificador#01 "RUN"
+  * type = CSTipoIdentificador#1 "RUN"
 
 * identifier[rnpi]
   * use = #official

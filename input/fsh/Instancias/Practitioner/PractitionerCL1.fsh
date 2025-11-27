@@ -7,7 +7,7 @@ InstanceOf : CorePrestadorCl
 * identifier[run]
   * use = #official
   * value = "8336277-3"
-  * type = CSTipoIdentificador#01 "RUN"
+  * type = CSTipoIdentificador#1 "RUN"
 
 //registro de prestador activo
 * active = true
