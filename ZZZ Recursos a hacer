@@ -1,0 +1,21 @@
+ImagingStudy		César
+MedicationDispense		César
+Questionnaire		César
+Claim		César
+Account		César
+AppointmentResponse		César
+Diagnostic Report		Franco
+MedicationStatement		Franco
+Device		Franco
+Coverage		Franco
+Communication		Franco
+Appointment		Franco
+
+
+Composition	Revisar	Jorge
+MedicationRequest		Jorge
+ServiceRequest		Jorge
+Procedure	Revisar	Jorge
+QuestionnaireResponse		Jorge
+ClaimResponse		Jorge
+DocumentReference		Jorge
