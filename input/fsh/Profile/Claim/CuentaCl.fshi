@@ -1,0 +1,57 @@
+Profile:        ClCuentaPerfil
+Parent:         Claim
+Id:             ClCuentaPerfil
+Title:          "CL cuenta asociada a prestación de servicios"
+Description:    """
+El Perfil **CL Cuenta** hereda del recurso [Claim](https://hl7.org/fhir/R4/claim.html) de FHIR; consulte dicho recurso para conocer su alcance y definiciones de uso. Este perfil establece las expectativas mínimas para el recurso Claim con el objetivo de identificar las cuentas asociadas a prestaciones de servicios, promoviendo así la interoperabilidad y la adopción mediante una implementación común. Especifica qué elementos centrales, extensiones, vocabularios y conjuntos de valores DEBEN estar presentes en el recurso y cómo deben utilizarse dichos elementos. Establecer esta base mínima para el desarrollo de estándares en casos de uso específicos promueve la interoperabilidad y su adopción.
+"""
+
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[0].valueInteger = 1
+* ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[1].valueCode = #draft
+
+* ^status = #draft
+* ^language = #es
+* ^experimental = false
+
+* identifier 0..* MS
+  * ^short = "Identificador local para la cuenta que puede ser distinto para cada versión del mismo"
+  * ^definition = "Identificador para la cuenta, puede ser usado de manera local. Este identificador es independiente de la versión de la cuenta" 
+
+* status MS
+  * ^short = "Estado de la cuenta, valores posibles: active | cancelled | draft | entered-in-error" 
+  * ^binding.description = "Indica la cuenta o el estado de una cuenta asociada a prestación de servicios. Obligado por estándar"
+* status from http://hl7.org/fhir/ValueSet/fm-status (required)
+
+
+* type MS
+  * ^short = "Tipo de cuenta asociada a prestación de servicios. Códigos del estándar, solo extensibles"
+  * ^binding.description = "Indica el tipo de cuenta asociada a prestación de servicios. Obligado por estándar. Si se desea un set de códigos distinto se sugiere agregar una extensión"
+* type from 	http://hl7.org/fhir/ValueSet/claim-type (extensible)
+
+* use MS
+  * ^short = "Indica el uso de la cuenta, valores posibles: claim | preauthorization | predetermination"
+  * ^binding.description = "Indica el uso de la cuenta, valores posibles: claim | preauthorization | predetermination. Obligado por estándar"
+* use from http://hl7.org/fhir/ValueSet/claim-use (required)
+
+* patient only Reference(PacienteCl or Patient)
+  * ^short = "Paciente asociado a la cuenta"
+  * ^definition = "Paciente asociado a la cuenta, recurso sobre el cual se ha generado esta cuenta. Es deseable que el recurso cumpla con un perfil chileno."
+
+* created MS
+  * ^short = "Fecha en la cual se creó la cuenta"
+  * ^definition = "Fecha de creación de la cuenta, cuando esta fue creada por el sistema"
+
+* insurer 
+  * ^short = "Aseguradora"
+* insurer only Reference(OrganizacionCL or Organization)
+
+* provider only Reference(Practitioner or PractitionerRole or Organization or PrestadorCl or EspecialidadCl or OrganizacionCl)
+  * ^short = "Emisor de la Cuenta"
+
+* priority 
+  * ^short = "Urgencia en aprobación"
+* priority from https://hl7.org/fhir/ValueSet/process-priority (example)
+
+
