@@ -74,7 +74,7 @@ InstanceOf : CorePrestadorCl
 */
 
 Instance: AddressPrestadorCL
-InstanceOf: ClAddress
+InstanceOf: $direccion
 Usage: #inline
 
 * use = #home

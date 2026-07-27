@@ -29,8 +29,13 @@ Alias: CSSexoBiologico = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSys
 Alias: CSEspecialidades = https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/CSEspecialidadMedica
 Alias: ClaseVacCS = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSClaseVacuna
 Alias: $nacionality = http://hl7.org/fhir/StructureDefinition/patient-nationality
-
-
+Alias: $direccion = https://interoperabilidad.minsal.cl/fhir/ig/eis/StructureDefinition/eis-direccion
+Alias: $sexoRegistral = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/SexoRegistralVS
+Alias: $sexoBiologico = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/SexoBiologicoVS
+Alias: $identidadGenero = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/IdentidadGeneroVS
+Alias: $nacionalidad = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-nacionalidad-vs
+Alias: $deis.id = https://interoperabilidad.minsal.cl/fhir/ig/eis/StructureDefinition/deis-identifier
+Alias: $paisEmisionDocumento = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-pais-emision-vs
 RuleSet: RuleSetMeta
 * ^version = "0.5.0"
 * ^status = #draft

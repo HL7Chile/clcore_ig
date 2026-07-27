@@ -1,3 +1,5 @@
+Alias: $direccion = https://interoperabilidad.minsal.cl/fhir/ig/eis/StructureDefinition/eis-direccion
+
 Profile:        PrestadorCL
 Parent:         Practitioner
 Id:             CorePrestadorCl
@@ -102,7 +104,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
 * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
-* address only ClAddress
+* address only $direccion
 * address MS
 
 * qualification MS

@@ -1,3 +1,24 @@
+Extension: PaisEmisionDoc
+Id: PaisEmisionDoc
+Title: "País de Emisión del Documento de Identificación"  
+Description: "País que ha emitido el documento de identificación del paciente"
+Context: Patient.identifier.type, Practitioner.identifier.type
+
+* value[x] only code
+* value[x] from $paisEmisionDocumento (required)
+* value[x] ^short = "Código de País de Emisión"
+
+
+
+Extension: SexoRegistral
+Id: SexoRegistral
+Title: "Sexo Registral del paciente"
+Description: "Sexo Registral del paciente"
+Context: Patient, Practitioner
+
+* value[x] only code
+* value[x] from $sexoRegistral (required)
+* value[x] ^short = "Código de Sexo Registrado por el paciente"
 /*Por problemas en más de un servidor las extensiones deben utilizar el recurso base en los contextos*/
 
 Extension: Nacionalidad
@@ -5,8 +26,9 @@ Parent: $patient-nationality
 Id: Nacionalidad
 Title: "Nacionalidad del Paciente"
 Description: "Nacionalidad del Paciente"
+Context: Patient, Practitioner
 
-* extension[code].value[x] from CodPaises (example)
+* extension[code].value[x] from $nacionalidad (required)
 * extension[code].value[x] ^short = "Código de Nacionalidad"
 
 
@@ -21,7 +43,7 @@ Context: Patient, Practitioner
 // * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl#Patient"
 // * ^context[+].type = #element
 // * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner"
-* extension[value].value[x] from VSIdentidaddeGenero (preferred)
+* extension[value].value[x] from $identidadGenero (required)
 * extension[value].value[x] ^short = "Identidad De Género"
 // * value[x] only CodeableConcept
 // * valueCodeableConcept ^short = "Identidad De Género"
@@ -38,7 +60,7 @@ Description: "Sexo Biologico del paciente"
 Context: Patient, Practitioner
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "SexoBiologico"
-* valueCodeableConcept from VSadministrative-gender (preferred)
+* valueCodeableConcept from $sexoBiologico (required)
 
 Extension:   NombreComercial
 Id:          NombreComercial

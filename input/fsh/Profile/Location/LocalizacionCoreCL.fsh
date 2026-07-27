@@ -1,3 +1,5 @@
+Alias: $direccion = https://interoperabilidad.minsal.cl/fhir/ig/eis/StructureDefinition/eis-direccion
+
 Profile:        LocalizacionCL
 Parent:         Location
 Id:             CoreLocalizacionCl
@@ -40,7 +42,7 @@ Description:    "Este perfil determina la ubicación específica para un evento,
 
 
 * address MS
-* address only ClAddress
+* address only $direccion
 
 * position 0..1
 * position and position.longitude and position.latitude MS

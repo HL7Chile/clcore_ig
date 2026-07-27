@@ -15,7 +15,7 @@ Usage : #example
 * address = AddressOrganization2
 	
 Instance: AddressOrganization2
-InstanceOf: ClAddress
+InstanceOf: $direccion
 Usage: #inline
 
 * line[0] = "Irrarazaval 1234"

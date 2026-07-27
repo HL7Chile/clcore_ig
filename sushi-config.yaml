@@ -26,7 +26,11 @@ license: CC0-1.0
 
 
 dependencies:
-  hl7.fhir.cl.minsal.eis: 0.1.0
+  hl7.fhir.cl.minsal.eis:
+    id: eis
+    uri: https://interoperabilidad.minsal.cl/fhir/ig/eis/ImplementationGuide/hl7.fhir.cl.minsal.eis
+    version: current
+
 pages:
   index.md:
     title: Inicio

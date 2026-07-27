@@ -33,7 +33,7 @@ InstanceOf : CoreLocalizacionCl
 * hoursOfOperation.openingTime = 19:00:00
 
 Instance: AddressLocation
-InstanceOf: ClAddress
+InstanceOf: $direccion
 Usage: #inline
 * line = "Calle 10 Norte, 1240, Viña del Mar"
 * city = "Viña del Mar"

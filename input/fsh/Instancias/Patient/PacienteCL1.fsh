@@ -9,14 +9,14 @@ Usage : #example
 * extension[SexoBiologico] = SexoBiologicoPacienteCl
 * extension[nacionalidad] = NacionalidadPacienteCl
 //Identificación por Cédula Chilena
-* identifier.use = #official    //obligado
-* identifier.type.extension[paisEmisionDocumento] = PaisEmisionDocumentoPacienteCL
-* identifier.type.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI"
+/* identifier.use = #official    //obligado
+* identifier.type.extension[PaisEmisor] = PaisEmisionDoc
+* identifier.type.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/eis/CodeSystem/eis-pais-emision-cs"
 * identifier.type.coding.code = #NNCHL
 * identifier.type.coding.display = "Chile"
-
+*/
 //* identifier.system = "http://regcivil.cl/Validacion/RUN"
-* identifier.value = "15.236.327-k"
+//* identifier.value = "15.236.327-k"
 
 //registro de paciente activo
 * active = true
@@ -75,7 +75,7 @@ Usage: #inline
 * valueString = "Bosh"
 
 Instance: AddressPacienteCL
-InstanceOf: ClAddress
+InstanceOf: $direccion
 Usage: #inline
 
 * use = #home

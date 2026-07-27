@@ -1,3 +1,5 @@
+Alias: $direccion = https://interoperabilidad.minsal.cl/fhir/ig/eis/StructureDefinition/eis-direccion
+
 Profile:        OrganizacionCL
 Parent:         Organization
 Id:             CoreOrganizacionCl
@@ -34,7 +36,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * telecom.value ^definition = "Valor del contacto como por ejemplo el número de teléfono fijo o de móvil o el email de Organización"
 
 * address MS
-* address only ClAddress
+* address only $direccion
 
 
 * contact MS

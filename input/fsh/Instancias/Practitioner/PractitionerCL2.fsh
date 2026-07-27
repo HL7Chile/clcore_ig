@@ -85,7 +85,7 @@ InstanceOf : CorePrestadorCl
 */
 
 Instance: AddressPrestadorCL2
-InstanceOf: ClAddress
+InstanceOf: $direccion
 Usage: #inline
 
 * use = #home

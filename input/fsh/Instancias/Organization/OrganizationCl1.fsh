@@ -15,7 +15,7 @@ Usage : #example
 * address = AddressOrganization
 	
 Instance: AddressOrganization
-InstanceOf: ClAddress
+InstanceOf: $direccion
 Usage: #inline
 
 * line[0] = "Sepúlveda Leyton 3288"
