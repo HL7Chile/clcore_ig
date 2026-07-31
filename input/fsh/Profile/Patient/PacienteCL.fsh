@@ -19,9 +19,13 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 
 * extension contains IdentidadDeGenero named IdentidadDeGenero 0..1 MS
 * extension contains SexoBiologico named SexoBiologico 0..1 MS
-* extension contains Nacionalidad named nacionalidad 0..* MS
 * extension contains SexoRegistral named sexoRegistral 0..1 MS
-//* extension contains Nacionalidad named nacionalidad 0..1 MS
+* extension contains Nacionalidad named nacionalidad 0..* MS
+* extension contains PaisNacimiento named paisNacimiento 0..1 MS
+* extension contains EstadoCivil named estadoCivil 0..1 MS
+* extension contains PueblosIndigenas named pueblosIndigenas 0..1 MS
+* extension contains ReligionesCultos named religionesCultos 0..1 MS
+* extension contains PueblosTribales named pueblosTribales 0..1 MS
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type.coding.code"

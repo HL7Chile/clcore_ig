@@ -1,3 +1,58 @@
+Extension: PueblosIndigenas
+Id: PueblosIndigenas
+Title: "Pueblos Indígenas"  
+Description: "Descendientes de agrupaciones humanas que pertenecían al país"
+Context: Patient
+
+* value[x] only code
+* value[x] from $indigenas (required)
+* value[x] ^short = "Código de Estado Civil"
+
+Extension: ReligionesCultos
+Id: ReligionesCultos
+Title: "Religiones y Cultos" 
+Description: "Religiones y cultos a los que la persona se vincula espiritualmente"
+Context: Patient
+* value[x] only code
+* value[x] from $religiones (required)
+* value[x] ^short = "Código de Religión o Culto"
+
+
+Extension: PueblosTribales
+Id: PueblosTribales
+Title: "Pueblos Tribales o Afrodescendientes"  
+Description: "Pueblos tribales a los que la persona pertenece o con los que se identifica"
+Context: Patient
+
+* value[x] only code
+* value[x] from $pueblosTribales (required)
+* value[x] ^short = "Código de Pueblo Tribal o Afrodescendiente"
+
+
+
+Extension: EstadoCivil
+Id: EstadoCivil
+Title: "Estado Civil"  
+Description: "Estado civil cocomo la situación jurídica de la persona"
+Context: Patient
+
+* value[x] only code
+* value[x] from $estadoCivil (required)
+* value[x] ^short = "Código de Estado Civil"
+
+
+Extension: PaisNacimiento 
+Id: PaisNacimiento
+Title: "País de Nacimiento"  
+Description: "País donde nació el paciente"
+Context: Patient
+
+* value[x] only code
+* value[x] from $paisNacimiento (required)
+* value[x] ^short = "Código de País de Nacimiento"
+
+
+
 Extension: PaisEmisionDoc
 Id: PaisEmisionDoc
 Title: "País de Emisión del Documento de Identificación"  

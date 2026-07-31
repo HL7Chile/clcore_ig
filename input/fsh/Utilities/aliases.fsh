@@ -36,6 +36,12 @@ Alias: $identidadGenero = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueS
 Alias: $nacionalidad = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-nacionalidad-vs
 Alias: $deis.id = https://interoperabilidad.minsal.cl/fhir/ig/eis/StructureDefinition/deis-identifier
 Alias: $paisEmisionDocumento = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-pais-emision-vs
+Alias: $paisNacimiento = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-pais-nacimiento-vs
+Alias: $estadoCivil = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-EstadoCivil-VS
+Alias: $indigenas = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-PuebloAfrodescendienteChileno-VS
+Alias: $religiones = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-religion-vs
+Alias: $pueblosTribales = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-PueblosOriginarios-VS
+
 RuleSet: RuleSetMeta
 * ^version = "0.5.0"
 * ^status = #draft
