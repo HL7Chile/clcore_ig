@@ -29,7 +29,10 @@ dependencies:
   hl7.fhir.cl.minsal.eis:
     id: eis
     uri: https://interoperabilidad.minsal.cl/fhir/ig/eis/ImplementationGuide/hl7.fhir.cl.minsal.eis
-    version: current
+    version: dev
+
+
+
 
 pages:
   index.md:
