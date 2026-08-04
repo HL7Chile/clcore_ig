@@ -1467,7 +1467,7 @@ Description:  "Códigos de leguaje"
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system urn:ietf:bcp:47
+* include codes from valueset http://hl7.org/fhir/ValueSet/all-languages
 
 // CodeSystem: CSCodigoslenguaje
 // Id: CSCodigoslenguaje

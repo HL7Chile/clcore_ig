@@ -58,7 +58,7 @@ Usage : #example
 * contact.name.given[0] = "Juana"
 * contact.name.given[+] = "Josefa"
 
-* communication.language.coding = urn:ietf:bcp:47#es-CL "Spanish (Chile)"
+* communication.language.coding = urn:ietf:bcp:47#es-CL "Español (Chile)"
 
 * generalPractitioner = Reference(OrganizacionClEjemplo1)
 
@@ -69,7 +69,7 @@ Usage: #inline
 * valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: SegundoApellidoPacienteCL
-InstanceOf: SegundoApellido
+InstanceOf: $segundoApellido
 Usage: #inline
 
 * valueString = "Bosh"
@@ -80,23 +80,27 @@ Usage: #inline
 
 * use = #home
 * line[0] = "Av Los Chirimoyos, 32, casa 4"
-* city.extension = ComunasClPacienteCL
-* district.extension = ProvinciasClPacienteCL
-* state.extension = RegionesClPacienteCL
-* country.extension = CodigoPaisesPacienteCL
+* city.extension[comunas] = ComunasClPacienteCL
+* district.extension[provincias] = ProvinciasClPacienteCL
+* state.extension[regiones] = RegionesClPacienteCL
+* country.extension[paises] = CodigoPaisesPacienteCL
 
 Instance: ComunasClPacienteCL
-InstanceOf: ComunasCl
+InstanceOf: $comunasExt
 Usage: #inline
 
-* valueCodeableConcept = CSCodComunasCL#05602 "Algarrobo"
+* valueCodeableConcept = CSComunasEIS#5602 "Algarrobo"
 
 Instance: ProvinciasClPacienteCL
-InstanceOf: ProvinciasCl
+InstanceOf: $provinciasExt
 Usage: #inline
 
-* valueCodeableConcept = CSCodProvinciasCL#056 "San Antonio"
+* valueCodeableConcept = CSProvinciasEIS#56 "San antonio"
 
+// NOTA: el ValueSet https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-regiones-vs (paquete
+// hl7.fhir.cl.minsal.eis#current) está mal vinculado río arriba: apunta al CodeSystem eis-PrevisiondeSalud-CS
+// (Fonasa/Isapre) en lugar de un listado de regiones. Por eso se mantiene el extension local RegionesCl aquí;
+// no es posible satisfacer el slice oficial "eis-regiones" hasta que MINSAL corrija ese defecto en su IG.
 Instance: RegionesClPacienteCL
 InstanceOf: RegionesCl
 Usage: #inline
@@ -104,10 +108,10 @@ Usage: #inline
 * valueCodeableConcept = CSCodRegionCL#05 "Valparaíso"
 
 Instance: CodigoPaisesPacienteCL
-InstanceOf: CodigoPaises
+InstanceOf: $paisesExt
 Usage: #inline
 
-* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
+* valueCodeableConcept = CSPaisesEIS#152 "Chile"
 
 Instance: IdentificacionContactoPacienteCL
 InstanceOf: IdentificacionContactoCl
@@ -121,7 +125,7 @@ Usage: #inline
 * extension[docProc].valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: SegundoApellidoContactoPacienteCL
-InstanceOf: SegundoApellido
+InstanceOf: $segundoApellido
 Usage: #inline
 
 * valueString = "Morales"
@@ -130,16 +134,16 @@ Instance: IdentidadDeGeneroPacienteCl
 InstanceOf: IdentidadDeGenero
 Usage: #inline
 
-* extension[value].valueCodeableConcept = CSIdentidaddeGenero#1 "Masculino"
+* extension[value].valueCodeableConcept = CSIdentidadGeneroEIS#1 "Masculino"
 
 Instance: NacionalidadPacienteCl
 InstanceOf: Nacionalidad
 Usage: #inline
 
-* extension[code].valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
+* extension[code].valueCodeableConcept = CSNacionalidadEIS#152 "Chile"
 
 Instance: SexoBiologicoPacienteCl
 InstanceOf: SexoBiologico
 Usage: #inline
 
-* valueCodeableConcept = CSadministrative-gender#male "Male"
+* valueCodeableConcept = CSSexoBiologico#2 "Mujer"

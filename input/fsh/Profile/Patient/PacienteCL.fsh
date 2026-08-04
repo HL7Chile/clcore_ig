@@ -177,5 +177,5 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
   * reference ^short = "URI de referencia a la Organización o a un Médico"
   * reference ^definition = "URI de referencia a la Organización o a un Médico"
   * display MS
-  * display ^short = "Texto alternativo a la referencia"
-  * display ^definition = "Texto alternativo a la referencia"
+  * display ^short = "Texto alternativo a la referencia."
+  * display ^definition = "Texto alternativo a la referencia."
