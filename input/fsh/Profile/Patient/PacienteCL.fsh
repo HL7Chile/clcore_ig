@@ -8,7 +8,7 @@ Title:          "CL Paciente"
 Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"
 
 * ^language = #es
-//* ^version = "1.9.3"
+* ^version = "2.0.1"
 * ^status = #active
 * ^publisher = "HL7 Chile"
 
@@ -23,16 +23,15 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 * extension contains Nacionalidad named nacionalidad 0..* MS
 * extension contains PaisNacimiento named paisNacimiento 0..1 MS
 * extension contains EstadoCivil named estadoCivil 0..1 MS
-* extension contains PueblosIndigenas named pueblosIndigenas 0..1 MS
-* extension contains ReligionesCultos named religionesCultos 0..1 MS
-* extension contains PueblosTribales named pueblosTribales 0..1 MS
+* extension contains PueblosIndigenas named pueblosIndigenas 0..* MS
+* extension contains ReligionesCultos named religionesCultos 0..* MS
+* extension contains PueblosTribales named pueblosTribales 0..* MS
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.ordered = false
 * identifier ^slicing.description = "Se diferencia el RUN de otros identificadores"
-* identifier contains RUN 0..1 MS
 
 * identifier ^short = "Listados de Id de Paciente. De poseer una CI con RUN vigente, este DEBE ser ingresado en el Slice Asignado"
 * identifier ^definition = "Este es el listado de Identificaciones de un paciente. Se procura como R2 el RUN, pero en caso de no existir ese identificador se debe ocupar otro nacional u otro otorgado por país extranjero"
@@ -51,7 +50,18 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 * identifier.value ^short = "Número o valor de identificación"
 * identifier.value ^definition = "Número o valor de identificación"
 
-* identifier[RUN] only $deis.id
+
+
+//* identifier contains Normativo 0..* MS
+//* identifier[Normativo] only $deis.id
+//* identifier[Normativo] ^short = "Identificador de Paciente con RUN"
+//
+//* identifier contains Identificador 0..* MS
+//* identifier[Identificador]
+
+
+* identifier contains RUN 0..* MS
+* identifier[RUN] only $deisIdDigit
 * identifier[RUN] ^short = "Identificador de Paciente con RUN"
 
 

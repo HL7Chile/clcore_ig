@@ -5,7 +5,7 @@ Description: "Descendientes de agrupaciones humanas que pertenecían al país"
 Context: Patient
 
 * value[x] only code
-* value[x] from $indigenas (required)
+* value[x] from $pueblosIndigenasOriginarios (required)
 * value[x] ^short = "Código de Estado Civil"
 
 Extension: ReligionesCultos
@@ -25,7 +25,7 @@ Description: "Pueblos tribales a los que la persona pertenece o con los que se i
 Context: Patient
 
 * value[x] only code
-* value[x] from $pueblosTribales (required)
+* value[x] from $pueblosTribalesAfrodescendientes (required)
 * value[x] ^short = "Código de Pueblo Tribal o Afrodescendiente"
 
 

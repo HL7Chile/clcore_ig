@@ -3,10 +3,14 @@
 # │  used properties are included. For a list of all supported properties and their functions,     │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
 id: hl7.fhir.cl.clcore
 canonical: https://hl7chile.cl/fhir/ig/clcore
 name: clcore
-title: Guía de Implementación ''cl core'' FHIR R4, (Versión Evolutiva)
+title: clcore - Guía de Implementación FHIR R4
+description: Guía de Implementación de FHIR R4 para Chile, versión 2.0.0, que contiene los recursos básicos de FHIR necesarios para la interoperabilidad en el contexto chileno. Esta guía es una evolución de la versión 1.0.0, incorporando mejoras y correcciones basadas en la experiencia adquirida en su uso.
+
 status: active # draft | active | retired | unknown
 version: 2.0.0  
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -19,20 +23,17 @@ publisher:
   url: http://hl7chile.cl
   email: chair@hl7chile.cl
 
-description: "Guía de Implementación de FHIR R4 para Chile, versión 2.0.0, que contiene los recursos básicos de FHIR necesarios para la interoperabilidad en el contexto chileno. Esta guía es una evolución de la versión 1.0.0, incorporando mejoras y correcciones basadas en la experiencia adquirida en su uso."
 jurisdiction: urn:iso:std:iso:3166#CL "Chile"
 copyright: "Usado con el permiso de HL7 International, todos los derechos resevados en los Licencias de HL7 Internacional."
 license: CC0-1.0
 
 
 dependencies:
-  hl7.fhir.cl.minsal.eis:
-    id: eis
+  #hl7.fhir.cl.minsal.eis: 0.2.0
+  hl7.fhir.cl.minsal.eis: 
+    id: EstandaresdeInformaciondeSalud
     uri: https://interoperabilidad.minsal.cl/fhir/ig/eis/ImplementationGuide/hl7.fhir.cl.minsal.eis
     version: dev
-
-
-
 
 pages:
   index.md:
@@ -74,6 +75,7 @@ menu:
 parameters:
   apply-publisher: true
   apply-contact: true
+  apply-version: false
   show-inherited-invariants: false
   excludettl: true
   generate: genExamples
