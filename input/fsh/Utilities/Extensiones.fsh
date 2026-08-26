@@ -1,6 +1,6 @@
 Extension: PueblosIndigenas
 Id: PueblosIndigenas
-Title: "Pueblos Indígenas"  
+Title: "Pueblos Indígenas"
 Description: "Descendientes de agrupaciones humanas que pertenecían al país"
 Context: Patient
 
