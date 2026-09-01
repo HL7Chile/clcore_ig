@@ -48,7 +48,7 @@ Description: "País donde nació el paciente"
 Context: Patient
 
 * value[x] only code
-* value[x] from $paisNacimiento (required)
+* value[x] from $paises (required)
 * value[x] ^short = "Código de País de Nacimiento"
 
 
@@ -60,7 +60,7 @@ Description: "País que ha emitido el documento de identificación del paciente"
 Context: Patient.identifier.type, Practitioner.identifier.type
 
 * value[x] only code
-* value[x] from $paisEmisionDocumento (required)
+* value[x] from $paises (required)
 * value[x] ^short = "Código de País de Emisión"
 
 
@@ -83,7 +83,7 @@ Title: "Nacionalidad del Paciente"
 Description: "Nacionalidad del Paciente"
 Context: Patient, Practitioner
 
-* extension[code].value[x] from $nacionalidad (required)
+* extension[code].value[x] from $paises (required)
 * extension[code].value[x] ^short = "Código de Nacionalidad"
 
 
@@ -421,3 +421,5 @@ Description: "Fecha de la próxima fecha de vacunación si corresponde"
 Context: Immunization
 * value[x] only date
 * valueDate ^short = "Fecha de próxima vacunación"
+
+

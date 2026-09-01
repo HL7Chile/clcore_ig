@@ -22,7 +22,7 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 * extension contains SexoRegistral named sexoRegistral 0..1 MS
 * extension contains Nacionalidad named nacionalidad 0..* MS
 * extension contains PaisNacimiento named paisNacimiento 0..1 MS
-* extension contains EstadoCivil named estadoCivil 0..1 MS
+//* extension contains EstadoCivil named estadoCivil 0..1 MS
 * extension contains PueblosIndigenas named pueblosIndigenas 0..* MS
 * extension contains ReligionesCultos named religionesCultos 0..* MS
 * extension contains PueblosTribales named pueblosTribales 0..* MS
@@ -189,3 +189,6 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
   * display MS
   * display ^short = "Texto alternativo a la referencia."
   * display ^definition = "Texto alternativo a la referencia."
+
+* maritalStatus 0..1 MS
+* maritalStatus from $estadoCivil (required)

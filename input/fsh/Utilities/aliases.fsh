@@ -44,7 +44,7 @@ Alias: $identidadGenero = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueS
 Alias: $nacionalidad = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-nacionalidad-vs
 Alias: $deisIdDigit = https://interoperabilidad.minsal.cl/fhir/ig/eis/StructureDefinition/deis-identifier-digit
 Alias: $deisId = https://interoperabilidad.minsal.cl/fhir/ig/eis/StructureDefinition/deis-identifier
-
+Alias: $paises = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-paises-vs
 
 Alias: $paisEmisionDocumento = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-pais-emision-vs
 Alias: $paisNacimiento = https://interoperabilidad.minsal.cl/fhir/ig/eis/ValueSet/eis-pais-nacimiento-vs
