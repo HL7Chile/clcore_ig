@@ -1,3 +1,9 @@
+### Verisón 2.0.0 
+
+  - Nombre computable de clcore a Hl7FhirClcore
+  - Nuevo Título de la Guía
+
+
 ### Versión 1.9.4
 
 - Correciones ortográficas.
@@ -85,7 +91,7 @@
 - Perfil [CoreRolClinicoCl](StructureDefinition-CoreRolClinicoCl.html)
   - Se modifica la descripción
   - Se elimina el required Pattern = true
-  - Se modifica la referencia organization al **OrganizationCL**
+  - Se modifica la referencia organization al **OrganizacionCL**
   - Se modifica la referencia location al **CoreLocalizacionCl**
   - Se modifica specialty binding de **required** a **preferred**
   - Se agrega MS el dato **code**

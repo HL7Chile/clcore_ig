@@ -1,8 +1,3 @@
-### Versión de Desarrollo
-<br>
-
-Esta Guía es la continuación de la versión 1.0.0 STU baloteada en diciembre del 2021, y agrega nuevos perfiles, permitiendo ir mejorando las capacidades de la CORE en función de las necesidades del medio.
-
 ### Cómo leer esta Guía
 <br>
 

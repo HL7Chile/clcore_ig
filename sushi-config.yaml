@@ -7,8 +7,8 @@
 
 id: hl7.fhir.cl.clcore
 canonical: https://hl7chile.cl/fhir/ig/clcore
-name: clcore
-title: clcore - Guía de Implementación FHIR R4
+name: Hl7FhirClcore
+title: Guía /"Core/" de Chile (Cl Core)
 description: Guía de Implementación de FHIR R4 para Chile, versión 2.0.0, que contiene los recursos básicos de FHIR necesarios para la interoperabilidad en el contexto chileno. Esta guía es una evolución de la versión 1.0.0, incorporando mejoras y correcciones basadas en la experiencia adquirida en su uso.
 
 status: active # draft | active | retired | unknown

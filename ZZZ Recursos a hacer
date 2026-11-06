@@ -1,17 +1,15 @@
-ImagingStudy		César
+ImagingStudy	Listo	César  
 MedicationDispense		César
 Questionnaire		César
 Claim		César
 Account		César
 AppointmentResponse		César
-Diagnostic Report		Franco
-MedicationStatement		Franco
-Device		Franco
-Coverage		Franco
+Diagnostic Report	Listo	Franco 
+MedicationStatement	Listo	Franco 
+Device	Listo	Franco
+Coverage	Listo	Franco
 Communication		Franco
 Appointment		Franco
-
-
 Composition	Revisar	Jorge
 MedicationRequest		Jorge
 ServiceRequest		Jorge
