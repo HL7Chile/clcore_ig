@@ -49,8 +49,8 @@ Description:    "Describe una comunicación realizada entre un paciente y un pro
 * recipient MS
   * ^short = "Destinatario de la Comunicación"
   * ^definition = "Destinatario de la Comunicación"
-* recipient only Reference(PacienteCl or PrestadorCL or CoreRolClinicoCl or RelatedPerson or ClDispositivo or OrganizacionCL or RelatedPerson or Group or ClServicioCuidadosSalud or ClCareTeamPerfil or Group)
-* sender only Reference(PacienteCl or PrestadorCL or CoreRolClinicoCl or RelatedPerson or ClDispositivo or OrganizacionCL or RelatedPerson or Group or ClServicioCuidadosSalud or ClCareTeamPerfil)
+* recipient only Reference(PacienteCl or PrestadorCL or CoreRolClinicoCl or RelatedPerson or ClDispositivo or OrganizacionCL or RelatedPerson or ClServicioCuidadosSalud or ClCareTeamPerfil or Group)
+* sender only Reference(PacienteCl or PrestadorCL or CoreRolClinicoCl or RelatedPerson or ClDispositivo or OrganizacionCL or RelatedPerson or ClServicioCuidadosSalud)
 * sender MS
   * ^short = "Remitente de la Comunicación"
   * ^definition = "Remitente de la Comunicación"
@@ -58,4 +58,10 @@ Description:    "Describe una comunicación realizada entre un paciente y un pro
 * reasonReference MS
   * ^short = "Referencia a la razón de la Comunicación"
   * ^definition = "Referencia a la razón de la Comunicación"
-* reasonReference only Reference(DiagnosticoCl or  
+* reasonReference only Reference(DiagnosticoCl or ObservacionCL or CLDiagnosticReport or DocumentReference)
+* reasonCode MS
+  * ^short = "Código de la razón de la Comunicación"
+  * ^definition = "Código de la razón de la Comunicación"
+* payload MS
+  * ^short = "Contenido de la Comunicación"
+  * ^definition = "Contenido de la Comunicación"
