@@ -12,7 +12,7 @@ title: Guía Core de Chile (Cl Core)
 description: Guía de Implementación de FHIR R4 para Chile, versión 2.0.0, que contiene los recursos básicos de FHIR necesarios para la interoperabilidad en el contexto chileno. Esta guía es una evolución de la versión 1.0.0, incorporando mejoras y correcciones basadas en la experiencia adquirida en su uso.
 
 status: active # draft | active | retired | unknown
-version: 2.0.0  
+version: 2.0.0-ci-build  
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2026+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -75,7 +75,7 @@ menu:
 parameters:
   apply-publisher: true
   apply-contact: true
-  apply-version: false
+  apply-version: true
   show-inherited-invariants: false
   excludettl: true
   generate: genExamples
