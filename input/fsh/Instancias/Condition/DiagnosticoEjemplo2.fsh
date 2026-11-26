@@ -13,7 +13,7 @@ Usage : #example
   * text = "Sin Confirmar"
 
 * code 
-  * coding = http://snomed.info/sct#878818001 "Pharyngotonsillitis (disorder)"
+  * coding = http://snomed.info/sct#878818001 "faringoamigdalitis"
   * text = "faringoamigdalitis"
 
 * category

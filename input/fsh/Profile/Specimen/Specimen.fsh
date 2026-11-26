@@ -50,7 +50,7 @@ Establecer esta base mínima para el desarrollo de estándares en casos de uso e
     * ^short = "Fecha y hora de la colección de la muestra"
   * bodySite MS
   * method MS
-  * fastingStatus[x] from http://terminology.hl7.org/ValueSet/v2-0916|2.0.0 (extensible)
+  * fastingStatus[x] from http://terminology.hl7.org/ValueSet/v2-0916|3.0.0 (extensible)
 
 * note 0..* MS
   * ^short = "Nota de texto libre para describir la muestra, por ejemplo el detalle de topografico"

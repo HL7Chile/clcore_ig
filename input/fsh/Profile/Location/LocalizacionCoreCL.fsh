@@ -23,7 +23,7 @@ Description:    "Este perfil determina la ubicación específica para un evento,
   * ^short = "active | suspended | inactive"
   * ^definition = "Determina el estado de la localización conforme a los códigos definidos por el estándar. Existen los estados de \"activo | suspendido | inactivo\""
 
-* name and alias MS
+* name MS
 
   * ^short = "Nombre oficial de la localización"
   * ^definition = "Nombre de la localización, ya sea del edificio, de la zona geográfica como un parque o de un sector específico llamado de cierta forma" 
@@ -42,7 +42,7 @@ Description:    "Este perfil determina la ubicación específica para un evento,
 
 
 * address MS
-* address only $direccion
+* address ^comment = "CL Core no exige un perfil de dirección. Para datos normalizados se recomienda el tipo de dato eis-direccion de EIS; las guías que lo requieran, como NID, lo hacen obligatorio."
 
 * position 0..1
 * position and position.longitude and position.latitude MS
@@ -54,6 +54,10 @@ Description:    "Este perfil determina la ubicación específica para un evento,
 * position.latitude ^definition = "Latitud. El dominio del valor y la interpretación son los mismos que para el texto del elemento latitud en KML"
 
 
+* partOf MS
+* partOf only Reference(LocalizacionCL)
+* partOf ^short = "Localización que la contiene físicamente"
+
 * managingOrganization  MS
 * managingOrganization only Reference(CoreOrganizacionCl)
 * managingOrganization ^short = "Organización a la cual la ubicación pertenece, si es el caso. Esta relación se hace en base a una referencia a una Organización"
@@ -61,11 +65,9 @@ Description:    "Este perfil determina la ubicación específica para un evento,
 * managingOrganization ^comment = "Se puede usar para indicar la Organización jerárquica superior. Siempre debe existir una Organización jerarquicamente sobre la localización y en caso de no existir esta jerquia, se debe crear la Organización, con los mismos datos del location."
 
 
-* hoursOfOperation MS
 * hoursOfOperation ^short = "Horario de atención de la localización."
 * hoursOfOperation ^definition = "¿Qué días/horas de la semana suele estar abierto este local?."
 
-* availabilityExceptions MS
 * availabilityExceptions ^short = "Descripción de Excepciones de ubicación habilitada."
 * availabilityExceptions ^definition = "Una descripción de los casos en los que la apertura de los lugares es diferente a la normal, por ejemplo, la disponibilidad de los días festivos. Una descripción sucinta de todas las posibles excepciones a la disponibilidad normal del centro, tal y como se detalla en el horario de apertura."
 

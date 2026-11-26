@@ -1,6 +1,6 @@
-Profile:      Covertura
+Profile:      Cobertura
 Parent:       Coverage
-Id:           cl-core-covertur    
+Id:           cl-core-cobertura    
 Title:        "CL Perfil Cobertura"
 Description:  "Describe la cobertura de un paciente, incluyendo información sobre el tipo de cobertura, el beneficiario y el período de validez"
 

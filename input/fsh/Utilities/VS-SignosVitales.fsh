@@ -3,6 +3,7 @@ Id:             cl-core-vs-signos-vitales
 Title:          "Set de Valores Signos Vitales"
 Description:    "Este set de valores LOINC utilizados para identificar los signos vitales"
 
+* ^version = "2.0.0"
 * insert SetCopyrightLOINC
 
 * ^language = #es

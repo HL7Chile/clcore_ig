@@ -17,7 +17,7 @@ Usage : #example
   * valueString = "Primera"
 * vaccineCode
   * coding[0] = CSTiposVacunaCL#hep_B_adult "Hepatitis B adulto" 
-  * coding[1] = http://snomed.info/sct#836374004 "Hepatitis B virus antigen-containing vaccine product"
+  * coding[1] = http://snomed.info/sct#836374004 "vacuna que contiene antígeno de virus Hepatitis B"
   * text = "vacuna con antígeno de virus Hepatitis B"
 
 * occurrenceDateTime = "2022-07-06T14:30:00+01:00"

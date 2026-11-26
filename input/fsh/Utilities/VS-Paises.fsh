@@ -2,6 +2,7 @@ ValueSet: CodPaises
 Id: CodPais
 Title: "Códigos de Países"
 Description: "Codigos definidos para la identificación de países segun norma ISO3166-N"
+* ^version = "2.0.0"
 * ^language = #es
 * ^experimental = false
 //* ^version = "1.0.0"

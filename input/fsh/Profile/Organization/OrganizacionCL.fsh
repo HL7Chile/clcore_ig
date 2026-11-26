@@ -7,6 +7,7 @@ Title:          "CL Organización"
 Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades del Caso de Uso de Receta Electrónica. Sin embargo, se ha modelado para también cubrir las necesidades nacionales de un Recurso de Organización en Salud"
 * ^language = #es
 
+* active MS
 * active ^short = "Estado de si es una Organización Validada o no (true|false)"
 * active ^definition = "Indicador si una organización sigue vigente en su rol dentro del sistema de salud"
 
@@ -16,7 +17,7 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * identifier.system ^short = "indicador del sistema de identificación usado para determinar el valor del identificador"
 * identifier.system ^definition = "Se debe aún definir un ValueSet para estos casos"
 
-* name and alias MS
+* name MS
 * name ^short = "Nombre Legal de la Organización" 
 * name ^definition = "Nombre Legal de la Organización"
 * alias ^short = "Nombre de Fantasía" 
@@ -36,22 +37,18 @@ Description:    "Este Perfil ha sido desarrollado para cubrir las necesidades de
 * telecom.value ^definition = "Valor del contacto como por ejemplo el número de teléfono fijo o de móvil o el email de Organización"
 
 * address MS
-* address only $direccion
+* address ^comment = "CL Core no exige un perfil de dirección. Para datos normalizados se recomienda el tipo de dato eis-direccion de EIS; las guías que lo requieran, como NID, lo hacen obligatorio."
 
 
-* contact MS
 * contact ^short = "Contacto de la Organización para ciertos propósitos"
 * contact ^definition = "Contacto de la Organización para ciertos propósitos"
-* contact.purpose MS
 * contact.purpose ^short = "El tipo de contacto"
 * contact.purpose ^definition = "El propósito mediante el cual el contacto puede ser alcanzado"
 * contact.purpose from http://hl7.org/fhir/ValueSet/contactentity-type (extensible)
 * contact.purpose ^binding.description = "Códigos del propósito del contacto, HL7 FHIR"
-* contact.name MS
 * contact.name ^short = "Nombre asociado al contacto"
 * contact.name ^definition = "Nombre asociado al contacto"
 
-* contact.telecom  MS
 * contact.telecom ^short = "Detalles de contacto de la Organización"
 * contact.telecom ^definition = "Detalles del contacto de la Organización comúnmente el o los mas usados (Ej: Teléfono fijo, móvil, email, etc.)"
 * contact.telecom.use ^short = "home | work | temp | old | mobile" 

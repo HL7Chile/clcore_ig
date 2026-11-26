@@ -10,11 +10,11 @@ Esta Guía sigue un formato especificado para **FHIR R4**, y se divide en varias
 * [Generalidades](Aspectos-Generales.html): Se especifican algunos conceptos importantes para poder comprender la lectura de los artefactos con el fin de hacer uso de la guía con objetivos de implementación.
 * Operaciones: Define las operaciones más usadas para el intercambio, manejo, consulta, actualización, etc. de Recursos Generados en un servidor.
 * Artefactos: Estas páginas proveen descripciones detalladas y definiciones formales para los artefactos FHIR definidos en la guía.
-    * [Perfiles](artifacts.html#structures-resource-profiles): Descripción de los perfiles Core generados para Chile.
-    * [Extensiones](artifacts.html#structures-extension-definitions): Descripción de todas las extensiones creadas para satisfacer las necesidades nacionales para los perfiles creados
-    * [ValueSets](artifacts.html#terminology-value-sets): Descripción de los sets de valores creados para poder hacer uso dentro de las necesidades locales de los perfiles creados.
-    * [CodeSystems](artifacts.html#terminology-code-systems): Describe todos los sistemas de códificación para las necesidades locales de los perfiles creados.
-    * [Ejemplos](artifacts.html#example-example-instances): Listado de ejemplos descritos a lo largo de la guía.
+    * [Perfiles](artifacts.html#estructuras-perfiles-de-recursos): Descripción de los perfiles Core generados para Chile.
+    * [Extensiones](artifacts.html#estructuras-definiciones-de-ampliación): Descripción de todas las extensiones creadas para satisfacer las necesidades nacionales para los perfiles creados
+    * [ValueSets](artifacts.html#terminología-conjuntos-de-valores): Descripción de los sets de valores creados para poder hacer uso dentro de las necesidades locales de los perfiles creados.
+    * [CodeSystems](artifacts.html#terminología-sistemas-de-códigos): Describe todos los sistemas de códificación para las necesidades locales de los perfiles creados.
+    * [Ejemplos](artifacts.html#ejemplos-instancias-de-ejemplo): Listado de ejemplos descritos a lo largo de la guía.
 <br>
 
 ### Perfiles de la Guía

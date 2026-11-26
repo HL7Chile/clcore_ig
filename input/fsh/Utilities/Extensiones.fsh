@@ -5,7 +5,7 @@ Description: "Descendientes de agrupaciones humanas que pertenecían al país"
 Context: Patient
 
 * value[x] only code
-* value[x] from $pueblosIndigenasOriginarios (required)
+* value[x] from $pueblosIndigenasOriginarios (preferred)
 * value[x] ^short = "Código de Estado Civil"
 
 Extension: ReligionesCultos
@@ -14,7 +14,7 @@ Title: "Religiones y Cultos"
 Description: "Religiones y cultos a los que la persona se vincula espiritualmente"
 Context: Patient
 * value[x] only code
-* value[x] from $religiones (required)
+* value[x] from $religiones (preferred)
 * value[x] ^short = "Código de Religión o Culto"
 
 
@@ -25,7 +25,7 @@ Description: "Pueblos tribales a los que la persona pertenece o con los que se i
 Context: Patient
 
 * value[x] only code
-* value[x] from $pueblosTribalesAfrodescendientes (required)
+* value[x] from $pueblosTribalesAfrodescendientes (preferred)
 * value[x] ^short = "Código de Pueblo Tribal o Afrodescendiente"
 
 
@@ -37,7 +37,7 @@ Description: "Estado civil cocomo la situación jurídica de la persona"
 Context: Patient
 
 * value[x] only code
-* value[x] from $estadoCivil (required)
+* value[x] from $estadoCivil (preferred)
 * value[x] ^short = "Código de Estado Civil"
 
 
@@ -48,7 +48,7 @@ Description: "País donde nació el paciente"
 Context: Patient
 
 * value[x] only code
-* value[x] from $paises (required)
+* value[x] from $paises (preferred)
 * value[x] ^short = "Código de País de Nacimiento"
 
 
@@ -60,7 +60,7 @@ Description: "País que ha emitido el documento de identificación del paciente"
 Context: Patient.identifier.type, Practitioner.identifier.type
 
 * value[x] only code
-* value[x] from $paises (required)
+* value[x] from $paises (preferred)
 * value[x] ^short = "Código de País de Emisión"
 
 
@@ -72,7 +72,7 @@ Description: "Sexo Registral del paciente"
 Context: Patient, Practitioner
 
 * value[x] only code
-* value[x] from $sexoRegistral (required)
+* value[x] from $sexoRegistral (preferred)
 * value[x] ^short = "Código de Sexo Registrado por el paciente"
 /*Por problemas en más de un servidor las extensiones deben utilizar el recurso base en los contextos*/
 
@@ -83,7 +83,7 @@ Title: "Nacionalidad del Paciente"
 Description: "Nacionalidad del Paciente"
 Context: Patient, Practitioner
 
-* extension[code].value[x] from $paises (required)
+* extension[code].value[x] from $paises (preferred)
 * extension[code].value[x] ^short = "Código de Nacionalidad"
 
 
@@ -98,7 +98,7 @@ Context: Patient, Practitioner
 // * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePacienteCl#Patient"
 // * ^context[+].type = #element
 // * ^context[=].expression = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CorePrestadorCl#Practitioner"
-* extension[value].value[x] from $identidadGenero (required)
+* extension[value].value[x] from $identidadGenero (preferred)
 * extension[value].value[x] ^short = "Identidad De Género"
 // * value[x] only CodeableConcept
 // * valueCodeableConcept ^short = "Identidad De Género"
@@ -115,7 +115,7 @@ Description: "Sexo Biologico del paciente"
 Context: Patient, Practitioner
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "SexoBiologico"
-* valueCodeableConcept from $sexoBiologico (required)
+* valueCodeableConcept from $sexoBiologico (preferred)
 
 Extension:   NombreComercial
 Id:          NombreComercial

@@ -8,7 +8,6 @@ Title:          "CL Paciente"
 Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades nacionales de un Recurso Paciente para un Historial Clínico Nacional"
 
 * ^language = #es
-* ^version = "2.0.1"
 * ^status = #active
 * ^publisher = "HL7 Chile"
 
@@ -32,6 +31,9 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 * identifier ^slicing.rules = #open
 * identifier ^slicing.ordered = false
 * identifier ^slicing.description = "Se diferencia el RUN de otros identificadores"
+* identifier contains RUN 0..* MS
+* identifier[RUN].type.coding.code = #1
+* identifier[RUN] ^short = "Identificador de Paciente con RUN"
 
 * identifier ^short = "Listados de Id de Paciente. De poseer una CI con RUN vigente, este DEBE ser ingresado en el Slice Asignado"
 * identifier ^definition = "Este es el listado de Identificaciones de un paciente. Se procura como R2 el RUN, pero en caso de no existir ese identificador se debe ocupar otro nacional u otro otorgado por país extranjero"
@@ -60,9 +62,6 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 //* identifier[Identificador]
 
 
-* identifier contains RUN 0..* MS
-* identifier[RUN] only $deisIdDigit
-* identifier[RUN] ^short = "Identificador de Paciente con RUN"
 
 
 
@@ -132,7 +131,7 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
 * birthDate ^short = "Fecha de nacimiento del Paciente."
 * birthDate ^definition = "Fecha de nacimiento del Paciente."
 
-* address only $direccion
+* address ^comment = "CL Core no exige un perfil de dirección. Para datos normalizados se recomienda el tipo de dato eis-direccion de EIS; las guías que lo requieran, como NID, lo hacen obligatorio."
 * address MS
 
 * contact MS 
@@ -191,4 +190,4 @@ Description:    "Este Perfil se ha modelado con el fin de cubrir las necesidades
   * display ^definition = "Texto alternativo a la referencia."
 
 * maritalStatus 0..1 MS
-* maritalStatus from $estadoCivil (required)
+* maritalStatus ^comment = "CL Core mantiene el conjunto de valores de FHIR. Se recomienda agregar el coding de estado civil de EIS; las guías que lo requieran, como NID, lo hacen obligatorio."

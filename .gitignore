@@ -7,3 +7,5 @@ Thumbs.db
 /output
 *jar
 *.jar
+*.bat
+*.sh

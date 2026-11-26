@@ -21,7 +21,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.rules = #open
 * identifier contains run 0..1 MS and rnpi 0..1 MS and pasaporte 0..1 MS and otro 0..1 MS
-* identifier.type from VSTipoIdentificador //(preferred)
+* identifier.type from VSTipoIdentificador (extensible)
 
 * identifier[run]
   * use MS
@@ -104,7 +104,7 @@ Description:    "Este Perfil fue creado para cubrir la descripción de un Presta
 * birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
 * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
-* address only $direccion
+* address ^comment = "CL Core no exige un perfil de dirección. Para datos normalizados se recomienda el tipo de dato eis-direccion de EIS; las guías que lo requieran, como NID, lo hacen obligatorio."
 * address MS
 
 * qualification MS

@@ -8,7 +8,7 @@ Description:    "Servicio de laboratorio clínico que ofrece análisis y pruebas
 * providedBy = Reference(EjemploLaboratorio1)
 * category = http://terminology.hl7.org/CodeSystem/service-category#25 "Respite/Carer Support"
 * type = http://terminology.hl7.org/CodeSystem/service-type#581 "Haematology"
-* specialty = http://snomed.info/sct#394916005 "Hematopathology"
+* specialty = http://snomed.info/sct#394916005 "hematopatología (especialidad)"
 * name = "Servicio de Hematopatología del Laboratorio Clínico Ejemplo"
 * availableTime
   * daysOfWeek[0] = #mon

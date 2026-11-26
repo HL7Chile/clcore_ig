@@ -3,6 +3,17 @@
   - Nombre computable de clcore a Hl7FhirClcore
   - Nuevo Título de la Guía
 
+  - **EIS como referencia, no como obligación.** Las guías que deben exigir EIS, como NID, lo hacen en sus propios perfiles:
+    - `address` deja de exigir `eis-direccion` en los perfiles de Paciente, Prestador, Organización y Localización.
+    - `Patient.maritalStatus` deja de exigir el estado civil de EIS y vuelve al conjunto de valores de FHIR.
+    - El slice `identifier[RUN]` deja de exigir `deis-identifier-digit` y se reconoce por el código de tipo `1`.
+    - Los valores de las extensiones de sexo, identidad de género, nacionalidad, país, pueblos, religión y estado civil pasan de `required` a `preferred`.
+  - `Practitioner.identifier.type` pasa a `extensible`, de modo que el tipo de identificador admite códigos de EIS.
+  - Los códigos de `CSTipoIdentificador` pasan de `01`, `02`… a `1`, `2`… **Este cambio no es compatible con 1.9.4.**
+  - **Localización y Organización:** Must Support solo en el núcleo transversal. Dejan de serlo `alias`, `hoursOfOperation`, `availabilityExceptions` y `contact`; pasan a serlo `Location.partOf` y `Organization.active`.
+  - Perfil de cobertura: se corrige el nombre y el id (`Cobertura`, `cl-core-cobertura`).
+  - Sigue dependiendo de EIS `dev`: el paquete 0.2.0 publicado no incluye `deis-identifier-digit` ni los conjuntos de pueblos indígenas y tribales.
+
 
 ### Versión 1.9.4
 
@@ -15,7 +26,7 @@
   - El elemento *nacionalidad* pasa de ser requierred a **preferred**
 - Perfil [Provenance](StructureDefinition-ProvenanceCl.html)
   - El elemento *sigFormat* permite visualizar el código requerido.
-- Extensión [ClAddress](StructureDefinition-cl-address.html)
+- Extensión ClAddress
   - La cardinalidad del elemento *line* se ajusta de 0..1 -> 0..* , para permitir múltiples lineas de dirección.
 
 ### Versión 1.9.3
