@@ -85,3 +85,4 @@ parameters:
     - fsh-generated/resources
   path-expansion-params: '../../input/_resources/exp-params.json'
   pin-canonicals : pin-multiples
+  auto-oid-root: 2.16.840.1.113883.2.22.40.2
